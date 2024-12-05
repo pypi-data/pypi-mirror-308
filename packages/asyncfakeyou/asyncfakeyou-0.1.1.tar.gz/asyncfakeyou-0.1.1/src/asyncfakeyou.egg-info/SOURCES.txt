@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/asyncfakeyou/__init__.py
+src/asyncfakeyou/asyncfakeyou.py
+src/asyncfakeyou/utils.py
+src/asyncfakeyou.egg-info/PKG-INFO
+src/asyncfakeyou.egg-info/SOURCES.txt
+src/asyncfakeyou.egg-info/dependency_links.txt
+src/asyncfakeyou.egg-info/requires.txt
+src/asyncfakeyou.egg-info/top_level.txt
