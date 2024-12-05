@@ -1,0 +1,28 @@
+datasetinfo:
+  mpi_and_partial_indices: "https://ophi.org.uk/sites/default/files/2024-10/Table%205%20Subnational%20Results%20MPI%202024.xlsx"
+  trend_over_time: "https://ophi.org.uk/sites/default/files/2024-10/Table%206%20Trends%20Over%20Time%20MPI%202024_3.xlsx"
+  format: "xlsx"
+  headers:
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+  mpi_sheet: "5.1 MPI Region"
+  trend_sheet: "6.4 Harmonised MPI Region"
+
+hxltags:
+  "country_code": "#country+code"
+  "admin1_code": "#adm1+code"
+  "admin1_name": "#adm1+name"
+  "mpi": "#indicator+mpi"
+  "headcount_ratio": "#indicator+headcount_ratio"
+  "intensity_of_deprivation": "#indicator+intensity_of_deprivation"
+  "vulnerable_to_poverty": "#indicator+vulnerable_to_poverty"
+  "in_severe_poverty": "#indicator+in_severe_poverty"
+  "reference_period_start": "#date+start"
+  "reference_period_end": "#date+end"
+
+resource_description: "This resource contains standardised MPI estimates by admin one unit and also shows the proportion of people who are MPI poor and experience deprivations in each of the indicators by admin one unit."
+trends_resource_description: "This table shows global mpi harmonized level estimates and their changes over time"
+mpi_resource_description: "This table shows the MPI and its partial indices disaggregated by subnational regions"
