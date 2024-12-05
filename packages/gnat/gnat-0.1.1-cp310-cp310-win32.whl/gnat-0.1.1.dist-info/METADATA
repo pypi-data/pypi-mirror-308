@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gnat
+Version: 0.1.1
+Summary: Python bindings for the GNAT data structure
+Home-page: https://github.com/ZhuoyunZhong/gnat
+Author: Zhuoyun Zhong
+Author-email: zzy905954450@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pybind11
+Requires-Dist: scikit-build
+
