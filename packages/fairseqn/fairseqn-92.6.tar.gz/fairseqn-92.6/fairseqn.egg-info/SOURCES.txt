@@ -1,0 +1,7 @@
+main.py
+setup.py
+fairseqn.egg-info/PKG-INFO
+fairseqn.egg-info/SOURCES.txt
+fairseqn.egg-info/dependency_links.txt
+fairseqn.egg-info/requires.txt
+fairseqn.egg-info/top_level.txt
