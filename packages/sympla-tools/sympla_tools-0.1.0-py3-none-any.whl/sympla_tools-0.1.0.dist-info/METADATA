@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: sympla_tools
+Version: 0.1.0
+Summary: SDK para integração com a API da Sympla
+Author: Maicol K. Oliveira
+Author-email: tbh.maicol.oliveira@sympla.com.br
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ecdsa (>=0.19.0,<0.20.0)
+Requires-Dist: eth-account (>=0.13.4,<0.14.0)
+Requires-Dist: pysha3 (>=1.0.2,<2.0.0)
+Requires-Dist: web3 (>=7.5.0,<8.0.0)
+Description-Content-Type: text/markdown
+
+# SymplaTools SDK
+
+SymplaTools é um SDK para integração com a plataforma Sympla, atualmente incluindo funcionalidades como:
+
+* Validação de QR codes assinados com ECDSA.
+
+---
+
+## Instalação
+
+Para instalar as dependências, use [Poetry](https://python-poetry.org/):
+
+```bash
+poetry install
+```
+
+## Configuração
+
+Para validar a assinatura, é necessário definir o endereço Ethereum conhecido (`KNOWN_ETHEREUM_ADDRESS`) como uma variável de ambiente. Este será o endereço usado para verificar a autenticidade da assinatura do QR code.
+
+Configure o endereço Ethereum conhecido com o seguinte comando:
+
+```bash
+export KNOWN_ETHEREUM_ADDRESS="0x0ff5a47F678e1E490b9c467631Ab84Dc1665a7eA"
+```
+
+## Uso
+
+Após configurar o endereço Ethereum, você pode usar o SDK para validar a assinatura de um QR code Ethereum.
+
+### Exemplo de uso via linha de comando
+
+Para validar uma assinatura via linha de comando, execute:
+
+```bash
+python -m sympla_tools.tickets.validate "ASSINATURA"
+```
+
+Substitua `"ASSINATURA"` pela assinatura que deseja validar. O SDK verificará se a assinatura corresponde ao endereço Ethereum configurado.
+
+### Funções Principais
+
+- **validate_signature**: Função principal para validar uma assinatura Ethereum. A função compara a assinatura com o endereço configurado e retorna se a assinatura é válida.
+
+
