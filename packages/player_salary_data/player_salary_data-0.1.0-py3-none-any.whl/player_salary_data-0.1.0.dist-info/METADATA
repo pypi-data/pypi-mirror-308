@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: player_salary_data
+Version: 0.1.0
+Summary: Football player salary database and analysis tools
+Author: Samran Ali
+Author-email: samali323@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Project-URL: repository, https://github.com/samali323/football_player_salaries
+Description-Content-Type: text/markdown
+
+# Player Salary Data
+
+Football player salary database and analysis tools.
+
+## Installation
+
+```bash
+pip install player_salary_data
