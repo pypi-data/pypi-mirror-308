@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: celery-valkey-backend
+Version: 0.1.0
+Summary: A custom Celery result backend using Valkey as the storage engine
+Home-page: https://github.com/vuonglv1612/celery-valkey-backend
+Author: vuonglv
+Author-email: it.vuonglv@gmail.com
+Project-URL: Bug Tracker, https://github.com/vuonglv1612/celery-valkey-backend/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: celery>=4.4.0
+Requires-Dist: valkey>=6.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Requires-Dist: tox>=3.24.0; extra == "dev"
+Requires-Dist: testcontainers>=3.7.1; extra == "dev"
+Requires-Dist: redis>=5.2.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+
+# Celery ValKey Backend
+
+A custom result backend for Celery using ValKey as the storage engine. This backend provides a scalable, high-performance alternative to traditional result backends by leveraging ValKey's distributed key-value store capabilities.
+
+## Requirements
+
+- Python >= 3.8
+- Celery >= 4.4.0
+- ValKey >= 6.0.0
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install celery-valkey-backend
+```
+
+## Quick Start
+
+Use the ValKey backend in your Celery application:
+
+```python
+from celery import Celery
+
+app = Celery('your_app', backend='valkey://localhost:6379/0')
+
+@app.task
+def add(x, y):
+    return x + y
+
+# Using the task
+result = add.delay(4, 4)
+print(result.get())  # Output: 8
+```
+
+## URL Format
+
+The backend URL format:
+```
+valkey://host:port/db
+```
+
+Example:
+```
+valkey://localhost:6379/0
+```
+
+## Development
+
+```bash
+# Clone the repository
+git clone https://github.com/vuonglv1612/celery-valkey-backend.git
+cd celery-valkey-backend
+
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+If you encounter any problems or have questions, please open an issue on [GitHub Issues](https://github.com/vuonglv1612/celery-valkey-backend/issues).

@@ -1,0 +1,2 @@
+[celery.result_backends]
+valkey = celery_valkey_backend.valkey_backend:ValKeyBackend
