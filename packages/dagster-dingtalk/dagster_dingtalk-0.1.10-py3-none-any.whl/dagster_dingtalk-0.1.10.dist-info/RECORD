@@ -1,0 +1,8 @@
+dagster_dingtalk/__init__.py,sha256=X7r8JoydXOsT9Sis4rBpVSKQeKJnnZ_t_qFae-ASF7E,466
+dagster_dingtalk/app_client.py,sha256=U4rEmfpG9J0rqoksWCZxQg6QkdHICwLtBzQL64MjvUY,6749
+dagster_dingtalk/operations.py,sha256=3cCZCxh-dAdzzb75WCTKVdzeMV8yu_JJpIeULS7XaNg,761
+dagster_dingtalk/resources.py,sha256=Z7TtBjliXrU9hglzohymYmg_Itd6PnogpvJE9xO7IjQ,9781
+dagster_dingtalk/version.py,sha256=z0zCHFTcKSR0tJ6h5qrpNmRVP21QIPP8N0p7quCnnm0,23
+dagster_dingtalk-0.1.10.dist-info/METADATA,sha256=4fjDXlG6sooFgoxCnbFOXlY0x2hBiEiBaMHRA4ojn_A,1221
+dagster_dingtalk-0.1.10.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dagster_dingtalk-0.1.10.dist-info/RECORD,,
