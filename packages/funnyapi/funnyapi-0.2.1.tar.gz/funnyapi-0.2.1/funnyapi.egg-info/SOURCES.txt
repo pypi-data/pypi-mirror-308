@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+funnyapi/__init__.py
+funnyapi/core.py
+funnyapi/periodic.py
+funnyapi.egg-info/PKG-INFO
+funnyapi.egg-info/SOURCES.txt
+funnyapi.egg-info/dependency_links.txt
+funnyapi.egg-info/top_level.txt
