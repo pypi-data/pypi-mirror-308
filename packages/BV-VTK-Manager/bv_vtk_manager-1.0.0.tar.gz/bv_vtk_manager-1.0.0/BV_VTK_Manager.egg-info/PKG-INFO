@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BV_VTK_Manager
+Version: 1.0.0
+Author: Flavio Pasquetti
+Author-email: <flavio.pasquetti@bureauveritas.com>
+Requires-Dist: pandas
+Requires-Dist: vtk
+Requires-Dist: numpy
+Requires-Dist: vtk-module

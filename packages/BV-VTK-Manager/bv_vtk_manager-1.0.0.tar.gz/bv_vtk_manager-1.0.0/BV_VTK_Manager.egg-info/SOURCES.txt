@@ -1,0 +1,14 @@
+setup.py
+BV_VTK_Manager/__init__.py
+BV_VTK_Manager/tester.py
+BV_VTK_Manager/vtk_calculation.py
+BV_VTK_Manager/vtk_modifications.py
+BV_VTK_Manager/vtk_own_structure.py
+BV_VTK_Manager/vtk_reader.py
+BV_VTK_Manager/vtk_visualize.py
+BV_VTK_Manager/vtk_writer.py
+BV_VTK_Manager.egg-info/PKG-INFO
+BV_VTK_Manager.egg-info/SOURCES.txt
+BV_VTK_Manager.egg-info/dependency_links.txt
+BV_VTK_Manager.egg-info/requires.txt
+BV_VTK_Manager.egg-info/top_level.txt
