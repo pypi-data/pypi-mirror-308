@@ -1,0 +1,26 @@
+[package]
+name = "taiao-declare-service-py"
+version = "0.8.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "taiao_declare_service_py"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+apache-avro = { workspace = true }
+exactly-n = { version = "0.1.0", registry = "dev-registry" }
+log = "0.4.21"
+rrule = { workspace = true }
+pyo3 = { workspace = true, features = ["py-clone", "chrono"] }
+pyo3-async-runtimes = { workspace = true, features = ["tokio-runtime"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+taiao-declare-service-macro = { version = "0.1.0", registry = "dev-registry" }
+taiao-error = { version = "0.1.0", registry = "dev-registry" }
+taiao-service = { version = "0.1.0", registry = "dev-registry" }
+taiao-service-result = { version = "0.1.0", registry = "dev-registry" }
+taiao-storage = { version = "0.1.0", registry = "dev-registry", features = ["avro-chrono"] }
+taiao-types = { version = "0.1.0", registry = "dev-registry" }
+tokio = { workspace = true }
