@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: opencivicdata
+Version: 3.4.0
+Summary: python opencivicdata library
+Home-page: UNKNOWN
+Author: James Turk
+Author-email: james@openstates.org
+License: BSD
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=3.2)
+Requires-Dist: psycopg2-binary
+Provides-Extra: dev
+Requires-Dist: coveralls (==3.2.0) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-django ; extra == 'dev'
+Requires-Dist: pytest (>=3.6) ; extra == 'dev'
+
+UNKNOWN
+
+
