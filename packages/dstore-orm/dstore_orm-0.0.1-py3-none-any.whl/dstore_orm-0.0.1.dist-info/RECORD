@@ -1,0 +1,9 @@
+dstore/DStore.py,sha256=ogbTPgTTyNdotyR2EMBKgIRRTz3DWyI5DVFROxFRmw0,14776
+dstore/__init__.py,sha256=2lAM6oY1zsik-jfBnAR5OLhCz6jpFuG9BLygdQw72q0,29
+dstore/dstProcessor.py,sha256=XQ8TYuUuuVtdfSKWkvmVC-fv6IHhgGTiMjjwAnihRUY,1732
+dstore/relationalMapper.py,sha256=huK6QaP2ashrOq80nV3Zy_l9uEgVoRIPG2d6l0zLM24,7550
+dstore_orm-0.0.1.dist-info/LICENSE,sha256=V0bk8L9iRokaF7wx4cH9aGp9YJdCsf6LYS2dVOydK70,1118
+dstore_orm-0.0.1.dist-info/METADATA,sha256=TRoLaPxgTow_r5TN7h8gVg9Ges3aMyW9lJDmciy63ik,7268
+dstore_orm-0.0.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+dstore_orm-0.0.1.dist-info/top_level.txt,sha256=dopSq0WPyrkgOCTIwkbaDbL8BZ8i1EF0f4ax-Y99JfU,7
+dstore_orm-0.0.1.dist-info/RECORD,,
