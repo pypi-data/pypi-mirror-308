@@ -1,0 +1,95 @@
+{
+  "status": "ok",
+  "proofs": [
+    {
+      "root": {
+        "value": "f70d7e27b65e44b7c6091e1502f2e09ee19751d1e14651f2dc032398017009a3",
+        "tree_name": "tree1",
+        "tree_size": 2
+      },
+      "consistency_proof": null
+    },
+    {
+      "root": {
+        "value": "310576648ad8fa4a5577b5079203d8658c53c3914a7f9f2089090892d6862dbc",
+        "tree_name": "tree1",
+        "tree_size": 4
+      },
+      "consistency_proof": {
+        "metadata": {
+          "timestamp": 1692555033,
+          "algorithm": "sha256",
+          "encoding": "utf_8",
+          "security": true
+        },
+        "offset": 0,
+        "path": [
+          [
+            1,
+            "f70d7e27b65e44b7c6091e1502f2e09ee19751d1e14651f2dc032398017009a3"
+          ],
+          [
+            1,
+            "7eebbe187a1760d9235ff0bdf89f5186bb6f53c3106be56375aa429d757e9292"
+          ]
+        ]
+      }
+    },
+    {
+      "root": {
+        "value": "28580b26a56e02a03620ebfc3dcdb612b2ab1a94baf6a5c7307dbae6eb1b9540",
+        "tree_name": "tree1",
+        "tree_size": 6
+      },
+      "consistency_proof": {
+        "metadata": {
+          "timestamp": 1692555066,
+          "algorithm": "sha256",
+          "encoding": "utf_8",
+          "security": true
+        },
+        "offset": 0,
+        "path": [
+          [
+            1,
+            "310576648ad8fa4a5577b5079203d8658c53c3914a7f9f2089090892d6862dbc"
+          ],
+          [
+            1,
+            "040dcb35ba245b308d81b45af042c9b28420db46be1bd8170b081530a52aa2f7"
+          ]
+        ]
+      }
+    },
+    {
+      "root": {
+        "value": "6bf36a95a0a155fb48adca146b4054c582229fac6d30a4ec0a0a0b98f4abbbcf",
+        "tree_name": "tree1",
+        "tree_size": 8
+      },
+      "consistency_proof": {
+        "metadata": {
+          "timestamp": 1692573956,
+          "algorithm": "sha256",
+          "encoding": "utf_8",
+          "security": true
+        },
+        "offset": 1,
+        "path": [
+          [
+            1,
+            "310576648ad8fa4a5577b5079203d8658c53c3914a7f9f2089090892d6862dbc"
+          ],
+          [
+            1,
+            "040dcb35ba245b308d81b45af042c9b28420db46be1bd8170b081530a52aa2f7"
+          ],
+          [
+            -1,
+            "76d69bc76c9099cddee4065c7417a24ea00060837a40530218371365249ec275"
+          ]
+        ]
+      }
+    }
+  ]
+}

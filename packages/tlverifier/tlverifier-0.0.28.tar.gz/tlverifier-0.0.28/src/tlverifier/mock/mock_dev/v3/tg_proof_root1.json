@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "proof": {
+    "metadata": {
+      "timestamp": 1693413914,
+      "algorithm": "sha256",
+      "encoding": "utf_8",
+      "security": true
+    },
+    "offset": 2,
+    "path": [
+      [
+        1,
+        "332baaef7c879136c6f74bd04a1a3bba8db336ab6139bf5a821e82d12e488716"
+      ],
+      [
+        -1,
+        "70490059416afaf57d032b303d61c53dd32419ec03b821a855a51428b773304f"
+      ],
+      [
+        -1,
+        "fc0a42aa2d31efb3a6245c98f7a69345d98883a50558d80bbb71184b671ea6f7"
+      ],
+      [
+        -1,
+        "7bc9533eddd2cac686edb8d66f7aff78aa0cac5a668e55a3120607862c33b9ea"
+      ]
+    ]
+  }
+}

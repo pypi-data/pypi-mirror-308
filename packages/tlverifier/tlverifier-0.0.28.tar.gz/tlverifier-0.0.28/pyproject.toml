@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tlverifier"
+version = "0.0.28"
+authors = [
+  { name="K. A. Khalil", email="kha.devel@gmail.com" },
+]
+description = "Tool for transparent logs"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["./src/tlverifier/requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://github.com/larc-logs-transparentes/tlverifier.git"
