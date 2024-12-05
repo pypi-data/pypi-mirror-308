@@ -1,0 +1,8 @@
+setup.py
+paulius_employee_module/__init__.py
+paulius_employee_module/employee.py
+paulius_employee_module/main.py
+paulius_employee_module.egg-info/PKG-INFO
+paulius_employee_module.egg-info/SOURCES.txt
+paulius_employee_module.egg-info/dependency_links.txt
+paulius_employee_module.egg-info/top_level.txt
