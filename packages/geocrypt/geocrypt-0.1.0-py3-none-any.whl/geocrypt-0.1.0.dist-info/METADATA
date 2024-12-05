@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: geocrypt
+Version: 0.1.0
+Summary: Securely encode and decode hexadecimal with geometric figure.
+Home-page: https://github.com/lolo859/geocrypt
+Author: lolo859
+Keywords: geocrypt geo crypt
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: sympy >=1.13.3
+
+# Geocrypt
+
+## Installation
+To install, use  :
+```bash
+pip install geocrypt
+```
+Geocrypt require sympy.
+## Use
+Geocrypt can only encode hexadecimal (with capital letter).
+To generate key, use :
+```python
+k=geocrypt.Key()
+k.generate()
+```
+To encode a string:
+```python
+text="Hello world!"
+ctext=geocrypt.encode(text,k)
+```
+To decode a string :
+```python
+dtext=geocrypt.decode(ctext,k)
+```
+Complet exemple :
+```python
+import geocrypt
+k=geocrypt.Key()
+k.generate()
+text="Hello world!"
+ctext=geocrypt.encode(text,k)
+dtext=geocrypt.decode(ctext,k)
+```
+## Source
+Geocrypt's code is available [here](github.com/lolo859/geocrypt).
