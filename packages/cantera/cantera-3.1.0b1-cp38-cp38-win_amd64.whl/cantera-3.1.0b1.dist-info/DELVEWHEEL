@@ -1,0 +1,2 @@
+Version: 1.8.3
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7m5yey5m\\cp38-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', 'D:\\a\\_temp/cache/hdf5/1.14.4.3\\lib;D:\\a\\_temp\\zlib-msvc-x64\\build\\native\\bin_release', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7m5yey5m\\cp38-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7m5yey5m\\cp38-win_amd64\\built_wheel\\cantera-3.1.0b1-cp38-cp38-win_amd64.whl']
