@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+simplempi/__init__.py
+simplempi/parfor.py
+simplempi/simpleMPI.py
+simplempi.egg-info/PKG-INFO
+simplempi.egg-info/SOURCES.txt
+simplempi.egg-info/dependency_links.txt
+simplempi.egg-info/requires.txt
+simplempi.egg-info/top_level.txt

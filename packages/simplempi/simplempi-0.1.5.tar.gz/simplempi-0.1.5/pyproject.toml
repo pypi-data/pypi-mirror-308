@@ -1,0 +1,23 @@
+[project]
+name = "simplempi"
+version = "0.1.5"
+dependencies = [
+    "mpi4py",
+]
+dynamic = ["authors","license","classifiers","readme"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "bump2version",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.black]
+line-length = 80
+target-version = ['py37']
