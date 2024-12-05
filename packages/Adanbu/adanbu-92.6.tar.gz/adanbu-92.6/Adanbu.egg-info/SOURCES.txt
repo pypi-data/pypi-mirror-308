@@ -1,0 +1,7 @@
+main.py
+setup.py
+Adanbu.egg-info/PKG-INFO
+Adanbu.egg-info/SOURCES.txt
+Adanbu.egg-info/dependency_links.txt
+Adanbu.egg-info/requires.txt
+Adanbu.egg-info/top_level.txt
