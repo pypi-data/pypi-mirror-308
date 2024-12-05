@@ -1,0 +1,10 @@
+README.md
+setup.py
+openv6ddns/__init__.py
+openv6ddns/api.py
+openv6ddns/parser.py
+openv6ddns.egg-info/PKG-INFO
+openv6ddns.egg-info/SOURCES.txt
+openv6ddns.egg-info/dependency_links.txt
+openv6ddns.egg-info/requires.txt
+openv6ddns.egg-info/top_level.txt
