@@ -1,0 +1,8 @@
+paulius_employee_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paulius_employee_module/employee.py,sha256=jmC5zf6eZi7nq_MdWh3CMITduMm13SC4lUZCyrrr2VY,613
+paulius_employee_module/main.py,sha256=n9xLBSIuq90TzyS7TEvucWRUXXoSjnExP-KC96EJJz4,218
+paulius_employee_module/subpackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paulius_employee_module-0.1.4.dist-info/METADATA,sha256=o9D41dbuPA5vO3rY68c-eONd02iXcwFj0YLd_y80oFY,192
+paulius_employee_module-0.1.4.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+paulius_employee_module-0.1.4.dist-info/top_level.txt,sha256=aIQUD4_C0ToI4P-RNcUpjn9nqf3mt_fUsnVTYkv81so,24
+paulius_employee_module-0.1.4.dist-info/RECORD,,

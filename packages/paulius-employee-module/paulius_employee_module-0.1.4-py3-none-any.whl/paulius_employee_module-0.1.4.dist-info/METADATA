@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: paulius_employee_module
+Version: 0.1.4
+Author: PowFox
+Requires-Python: >=3.6
+Requires-Dist: CurrencyConverter ==0.17.34
+Requires-Dist: setuptools ==75.3.0
+
