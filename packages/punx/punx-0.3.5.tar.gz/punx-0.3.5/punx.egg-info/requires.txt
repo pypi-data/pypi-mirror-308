@@ -1,0 +1,7 @@
+h5py
+hdf5plugin
+lxml
+numpy
+PyQt5
+pyRestTable
+requests
