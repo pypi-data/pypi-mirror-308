@@ -1,0 +1,25 @@
+[project]
+name = "xspin"
+version = "1.0.2"
+description = "Python module for creating console spinners."
+readme = "README.md"
+keywords = [ "console", "terminal", "cli", "python", "commandline", "spinners", "utilites",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Topic :: Terminals", "Topic :: Utilities", "Environment :: Console", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+authors = []
+maintainers = []
+
+[build-system]
+requires = [ "setuptools", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+homepage = "https://github.com/glamorie/xspin"
+documentation = "https://github.com/glamorie/xspin"
+repository = "https://github.com/glamorie/xspin"
+changelog = "https://github.com/glamorie/xspin/releases"
+
+[project.optional-dependencies]
+dev = [ "toml",]
