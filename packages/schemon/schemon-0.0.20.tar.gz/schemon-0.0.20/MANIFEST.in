@@ -1,0 +1,10 @@
+# Include only essential files
+include setup.py
+include LICENSE
+include NOTICE
+include README.md
+
+# Exclude all source files and directories
+prune src
+exclude *.py
+exclude **/*.py
