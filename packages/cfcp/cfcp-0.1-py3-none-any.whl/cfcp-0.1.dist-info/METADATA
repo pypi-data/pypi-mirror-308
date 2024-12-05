@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cfcp
+Version: 0.1
+Summary: A Python-based consultant bot for programming courses
+Author: Santas7
+Author-email: your.email@example.com
+Requires-Python: >=3.7
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: deep-translator
+Requires-Dist: langchain
+

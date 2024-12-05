@@ -1,0 +1,2 @@
+[console_scripts]
+consultant_bot = bot.main:run
