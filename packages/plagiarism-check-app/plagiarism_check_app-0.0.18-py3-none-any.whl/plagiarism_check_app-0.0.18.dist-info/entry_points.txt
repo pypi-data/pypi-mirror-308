@@ -1,0 +1,2 @@
+[console_scripts]
+start-plagiarism-check-app = app.main:main
