@@ -1,0 +1,16 @@
+bulkflow/__init__.py,sha256=j8sv47zCAz7-WYvdjoQVz6U9UVMSZZypxcWP4c8T1bo,276
+bulkflow/main.py,sha256=Z-l7dKx3N0svXTlwLYxdvtUW7GqH5DHLReohWHQQt-c,4148
+bulkflow/database/__init__.py,sha256=v-29JtpoXYwfGEpPGdV81W-LsdFxY1t4MNajrLQYYZM,125
+bulkflow/database/db_utils.py,sha256=ga4LiIrRucd-0f7bnEkXR91L_lp7SYuYLc3hGT8qCNs,976
+bulkflow/database/postgres_loader.py,sha256=jZyYNYMRdgoi6ilfhU7x76tqODF1LYx9vqb6NuCsG2g,4804
+bulkflow/models/__init__.py,sha256=iI3WJ6hx7tSZhuwCDKPINqsiA8rRCovfaHwQGs2SVlU,77
+bulkflow/models/processing_state.py,sha256=Keb7pVc5sgw70ik7FD2p3miYGolBB0m1O-Hcn-fYZpw,697
+bulkflow/processors/__init__.py,sha256=Qb9VPlc30J4mHLZM2puXFyHm3d6j99oXLb4PxUv269g,127
+bulkflow/processors/csv_processor.py,sha256=BgN0TxuWeU5og-JvQz_iesCk6XlauENRXpeBFmh_gho,8766
+bulkflow/processors/import_manager.py,sha256=N-OgVGoJeonE0SZRtsGmrHbQAeo2WFM1MFqezfee8YE,5485
+bulkflow-0.1.0.dist-info/LICENSE,sha256=qevXRo4hTds8fCRmUNKprt8WFL1uZ8N0xLXti4sLzrI,1073
+bulkflow-0.1.0.dist-info/METADATA,sha256=JS03N2hJoTlYBCSrVm8Ou6B7lIyI9dnrpITiRvSq4Ws,5098
+bulkflow-0.1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+bulkflow-0.1.0.dist-info/entry_points.txt,sha256=fAZj5Sdu8vkzByd8u4v-4weIeCMurYnjKILhO-baa5s,48
+bulkflow-0.1.0.dist-info/top_level.txt,sha256=W9wrTueyrvmFACuq1YmDAK_1ACmOwjEA2uvG3DB1yX0,9
+bulkflow-0.1.0.dist-info/RECORD,,
