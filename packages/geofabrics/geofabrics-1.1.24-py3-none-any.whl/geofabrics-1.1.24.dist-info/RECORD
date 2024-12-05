@@ -1,0 +1,15 @@
+benchmarking.py,sha256=HkNq7E8e0YapAA4xgRA7Z_y1ikiqTQRphRmC0SWX84o,4844
+geofabrics/__init__.py,sha256=50skG49yO5OQZyumGhFim-edPPgCLE_XTi3_EBJt6OQ,575
+geofabrics/__main__.py,sha256=Lnjm9cvUdUz_4W6xNhhPTvbdy6iRU0dfx8_QVKcNPN8,1527
+geofabrics/bathymetry_estimation.py,sha256=xvbKHTFOE_KZ4swjStsbP2DNyTMGWWsVYu_kIdfu82k,89706
+geofabrics/dem.py,sha256=qOC8NBz4Ej47vOi_JFqxXyJIUUn4GbbIMJnlAZOvBYA,143664
+geofabrics/geometry.py,sha256=Iu7O58v6KqN_DEhD3bohdaVx9ELEJngXdmukf3m-PZ0,45644
+geofabrics/processor.py,sha256=pvec5Ms0THFL-0klfeF28biXkHkhhuR3JoLbjRTY9t4,182675
+geofabrics/runner.py,sha256=2VsCG6W6vwodvbVoCpQF7AC7WrtWXPaBmrAqWp1h-FE,10800
+geofabrics/version.py,sha256=b62sncfbTcmhBWOVT9VbYV1fh_xsdHF2zGG_L2TmmKQ,103
+geofabrics-1.1.24.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+geofabrics-1.1.24.dist-info/METADATA,sha256=yzsFEUc7W4q2XFV_dzzSG0-k9kQfJ0XF5kCSothXqpg,47143
+geofabrics-1.1.24.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+geofabrics-1.1.24.dist-info/entry_points.txt,sha256=XCwtL8T9bEs4QIHTnHa_y8cmd9gp5RIxW9xMWCl9jdE,140
+geofabrics-1.1.24.dist-info/top_level.txt,sha256=PK-pRSpDVvlCPRgr2Rk8Rb2bDGGdyUoLrFFMWiKX5Xc,24
+geofabrics-1.1.24.dist-info/RECORD,,
