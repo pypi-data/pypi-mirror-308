@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytimetag
+Version: 2.1.4
+Summary: A data processing lib for TimeTag.
+Author: Hwaipy
+Author-email: hwaipy@gmail.com
+License: gpl-3.0
+Keywords: timetag,physics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: msgpack
+Requires-Dist: numba
+
+
+# TimeTag data process for Python
+
+[![](https://img.shields.io/github/workflow/status/hwaipy/InteractionFreePy/Tests)](https://github.com/hwaipy/InteractionFreePy/actions?query=workflow%3ATests)
+[![](https://img.shields.io/pypi/v/interactionfreepy)](https://pypi.org/project/interactionfreepy/)
+[![](https://img.shields.io/pypi/pyversions/interactionfreepy)](https://pypi.org/project/interactionfreepy/)
+[![Coverage badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hwaipy/InteractionFreePy/python-coverage-comment-action-data/endpoint.json)](https://github.com/hwaipy/InteractionFreePy/tree/python-coverage-comment-action-data)
