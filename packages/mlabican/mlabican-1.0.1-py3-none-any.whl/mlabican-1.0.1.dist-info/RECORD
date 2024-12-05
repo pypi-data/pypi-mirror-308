@@ -1,0 +1,11 @@
+mlabican/__init__.py,sha256=8zrG94nwpLLEMDbSNoq9ekOeOYka9lbmB40ADODkByk,134
+mlabican/base_flexcons.py,sha256=mToWP60qfxB5Teh-X10m32gK0s7yi9pQyiX7VTls8Kk,7240
+mlabican/flexcon.py,sha256=SNxX3ZHHccgI477gso3ayInxxFBuBd4315hpx2fjuY0,1737
+mlabican/flexconC.py,sha256=h2lOk0YZz1ehX90wxol-1uyFtcPH4uT-L6xFnkfS3SU,2099
+mlabican/flexconG.py,sha256=mkltVdhIpcyiQSZQ_0-kzNh_pOutb8Vst0mxSH6Wj2Q,1664
+mlabican/selfTrainingInitial.py,sha256=Qn_S65dKe_orHDd_SVVwEuINFjHag93xltqCwl-Beus,3258
+mlabican-1.0.1.dist-info/LICENSE,sha256=nOV265Y7Y8fwWifAk9iZJk3qmtb6OUMaAhKRMs3Iq7o,1069
+mlabican-1.0.1.dist-info/METADATA,sha256=8K1WaIbmiorNi88GTH-ssQxrhJRCGS0XjkCdUz2RnYI,373
+mlabican-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlabican-1.0.1.dist-info/top_level.txt,sha256=on3aDdzLIKbp4bQy3lHUiNGHhUzcg4NeoI3g8nGsZqU,9
+mlabican-1.0.1.dist-info/RECORD,,
