@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+roshinpdf/__init__.py
+roshinpdf/pdf2image.py
+roshinpdf/pdf2text.py
+roshinpdf.egg-info/PKG-INFO
+roshinpdf.egg-info/SOURCES.txt
+roshinpdf.egg-info/dependency_links.txt
+roshinpdf.egg-info/top_level.txt
