@@ -1,0 +1,7 @@
+main.py
+setup.py
+Adandu.egg-info/PKG-INFO
+Adandu.egg-info/SOURCES.txt
+Adandu.egg-info/dependency_links.txt
+Adandu.egg-info/requires.txt
+Adandu.egg-info/top_level.txt
