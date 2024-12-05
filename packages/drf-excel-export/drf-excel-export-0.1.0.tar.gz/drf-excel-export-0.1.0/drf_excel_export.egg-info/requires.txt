@@ -1,0 +1,6 @@
+django
+djangorestframework
+openpyxl
+drf-spectacular
+drf-yasg
+pyyaml
