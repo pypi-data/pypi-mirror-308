@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: onshape-urdf-exporter
+Version: 0.1.0
+Summary: Exports an OnShape assembly to a URDF file with STL meshes
+License: MIT
+Author: Urban Machine
+Author-email: info@urbanmachine.build
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: open3d (==0.16.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: pydantic-yaml (>=1.2.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# OnShape URDF Exporter
+
+[Read the docs here](https://onshape-urdf-exporter.readthedocs.io/en/latest/)
+
+Exports OnShape assemblies into URDF files with STL meshes. This is based off
+of the URDF exporting functionality provided by onshape-to-robot, but with
+some improvements:
+
+- XML document creation is done using Python's XML library, fixing a number of
+  bugs related to characters not being properly escaped
+- Files created by this tool always have valid filenames, even on Windows
+- Uses Open3D for STL simplification instead of MeshLab
+
