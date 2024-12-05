@@ -1,0 +1,7 @@
+main.py
+setup.py
+mega_sparks.egg-info/PKG-INFO
+mega_sparks.egg-info/SOURCES.txt
+mega_sparks.egg-info/dependency_links.txt
+mega_sparks.egg-info/requires.txt
+mega_sparks.egg-info/top_level.txt
