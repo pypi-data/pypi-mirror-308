@@ -1,0 +1,8 @@
+simplempi/__init__.py,sha256=tEX7jpe0bROb1J4vTw2nIyohmUcQ14tDtDLB3nhEf7o,80
+simplempi/parfor.py,sha256=F_yOGpmVLN-0RGrBHhJJvOTIoDgESI_cA5ejx_C2C4s,621
+simplempi/simpleMPI.py,sha256=vmop494dSEoB08cvCi_8aSzlv6rPYHDohow7UP00K58,5381
+simplempi-0.1.5.dist-info/LICENSE,sha256=zY09JqU4MUvLLBC-E7aUHqUXNJITt0IA9z7UBf8UKgM,1524
+simplempi-0.1.5.dist-info/METADATA,sha256=4uVVBGd9XqziGpYKAJwoo9kpm7OKndZT3X6aY-DoFqM,3175
+simplempi-0.1.5.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+simplempi-0.1.5.dist-info/top_level.txt,sha256=IFRTwQ-EDOMgmrP60zuciWKkLhsxWM4cHCLZ12Ev4wU,10
+simplempi-0.1.5.dist-info/RECORD,,
