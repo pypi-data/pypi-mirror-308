@@ -1,0 +1,19 @@
+[project]
+name = "qcir-sim"
+version = "0.1.0"
+description = "Quantum circuit simulation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.1.2"]
+
+
+[tool.uv]
+dev-dependencies = [
+    "bumpver>=2023.1129",
+    "isort>=5.13.2",
+    "ruff>=0.7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
