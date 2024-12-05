@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: python-json-extract
+Version: 0.1.1
+Summary: Simple library to extract value from json.
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Python Json Extract
+
+A minimal library to extract value from `python dict` 
+in a style similar to `json_extract` in sqlite3.
+
+
+
