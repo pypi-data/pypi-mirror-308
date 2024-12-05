@@ -1,0 +1,7 @@
+jack-stubs/METADATA.toml,sha256=_b-BB3qywi8-7AI7syXjC2OhYu61kj-TvyjttBUvoGA,443
+jack-stubs/__init__.pyi,sha256=Tq2ZDvrJH4eePz_Ai_xFkHlNwCmh2M2TZMUKRetyLNk,12131
+jack-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_JACK_Client-0.5.10.20241112.dist-info/METADATA,sha256=JUL2qBXsSHm95NcdGK9mVfqfIwBb61MzK5yCvQGE9Fo,1914
+types_JACK_Client-0.5.10.20241112.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+types_JACK_Client-0.5.10.20241112.dist-info/top_level.txt,sha256=zH6TJbi3lr53eX90hyTdyLe3bc89QR6L03Yv4DZJHV8,11
+types_JACK_Client-0.5.10.20241112.dist-info/RECORD,,
