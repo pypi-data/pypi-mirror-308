@@ -1,0 +1,8 @@
+crevettes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crevettes/harvester.py,sha256=FLUnHLyFRXzkjm3clZAHh_H38pjp4GL40ddznvPc72s,2911
+crevettes/main.py,sha256=vMivmB3im66f4JhQQFqEevdISGRwvKXBbXebh-ZKCjY,470
+crevettes-0.0.4.dist-info/METADATA,sha256=uFNatFbLT5Jjl2zKjLANYClIYoMZDdcDKi__LHg4hOg,891
+crevettes-0.0.4.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+crevettes-0.0.4.dist-info/entry_points.txt,sha256=_28P-j8dBby78ToYdX0rgLaB8xTIWIFuXdpJgxycuMM,50
+crevettes-0.0.4.dist-info/top_level.txt,sha256=TE4aeQzNENjnSrSYDyaWCcoVytmKTxFEyvQrNASpapk,10
+crevettes-0.0.4.dist-info/RECORD,,
