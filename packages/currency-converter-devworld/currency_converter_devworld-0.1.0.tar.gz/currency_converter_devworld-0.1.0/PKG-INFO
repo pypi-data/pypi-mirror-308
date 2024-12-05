@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: currency_converter_devworld
+Version: 0.1.0
+Summary: A simple currency converter package
+Author: kalined
+Author-email: edgar.kalinovski@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: CurrencyConverter
