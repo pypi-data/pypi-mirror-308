@@ -1,0 +1,8 @@
+roshinpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roshinpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roshinpdf/pdf2text.py,sha256=B8KNInc3yutSpl--9Knld5MoadVDujIZKF_tk0t1r5U,49
+roshinpdf-1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+roshinpdf-1.0.dist-info/METADATA,sha256=48fRmz6VM3DWEOwzOkeYGXQ1aitCVXpA7FlP4Cz7g6w,111
+roshinpdf-1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+roshinpdf-1.0.dist-info/top_level.txt,sha256=B17TXFMCITLqbt-BG3Q6baw6HbdztJlxCN161ljTpag,10
+roshinpdf-1.0.dist-info/RECORD,,
