@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "me-gpt"
+version = "0.1.1"
+authors = [
+    { name="Daniel McDonald", email="daniel@danielmcdonald.dev" },
+]
+description = "ME_GPT revolutionizes the way you interact with Chat GPT by introducing a powerful memory storage system and self-cloning functionality. With ME_GPT, you can store your cherished memories in a local vector database and leverage them to give Chat GPT the extraordinary ability to clone your unique personality and knowledge."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "openai==0.27.8",
+    "python-dotenv==1.0.0",
+    "numpy",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/djm93dev/me_gpt"
+"Bug Tracker" = "https://github.com/djm93dev/me_gpt/issues"
