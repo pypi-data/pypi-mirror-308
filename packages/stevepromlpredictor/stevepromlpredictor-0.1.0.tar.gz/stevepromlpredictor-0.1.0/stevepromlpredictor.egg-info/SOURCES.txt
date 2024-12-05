@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+mlpredictor/__init__.py
+mlpredictor/model.py
+stevepromlpredictor.egg-info/PKG-INFO
+stevepromlpredictor.egg-info/SOURCES.txt
+stevepromlpredictor.egg-info/dependency_links.txt
+stevepromlpredictor.egg-info/requires.txt
+stevepromlpredictor.egg-info/top_level.txt
+tests/test_model.py
