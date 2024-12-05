@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+KEGGRESTpy/__init__.py
+KEGGRESTpy/kegg.py
+KEGGRESTpy/parser.py
+KEGGRESTpy/utils.py
+KEGGRESTpy.egg-info/PKG-INFO
+KEGGRESTpy.egg-info/SOURCES.txt
+KEGGRESTpy.egg-info/dependency_links.txt
+KEGGRESTpy.egg-info/requires.txt
+KEGGRESTpy.egg-info/top_level.txt
