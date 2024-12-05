@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "onshape-urdf-exporter"
+version = "1.0.0"
+description = "Exports an OnShape assembly to a URDF file with STL meshes"
+authors = ["Urban Machine <info@urbanmachine.build>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "onshape_urdf_exporter"}]
+
+[tool.poetry.scripts]
+onshape-urdf-exporter = "onshape_urdf_exporter.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+numpy = "^1.26.2"
+colorama = "^0.4.6"
+# Poetry can't figure out dependencies for Open3D 0.17.x
+open3d = "0.16.0"
+pydantic = "^2.5.2"
+pydantic-yaml = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = "^5.12.0"
+mypy = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
