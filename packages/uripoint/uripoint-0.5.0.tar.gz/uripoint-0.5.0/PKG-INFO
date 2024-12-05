@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: uripoint
+Version: 0.5.0
+Summary: A flexible Python library for endpoint management and URI processing
+Home-page: https://github.com/yourusername/uripoint
+Author: Project Maintainer
+Author-email: maintainer@uripoint.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: ffmpeg-python>=0.2.0
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: colorlog>=6.7.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: prometheus_client>=0.19.0
+Requires-Dist: fastapi>=0.104.1
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: docker>=6.0.0
+Requires-Dist: requests>=2.28.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: coverage>=7.2.0; extra == "dev"
+
+# UriPoint
+
+## Overview
+
+UriPoint is a flexible Python library for creating, managing, and interacting with network endpoints across multiple protocols.
+
+## Features
+
+### Endpoint Management
+- Create endpoints using full URI or component-based approach
+- Support for multiple protocols (HTTP, HTTPS, WebSocket, FTP, etc.)
+- Persistent endpoint configuration
+- Easy endpoint listing and serving
+
+## Installation
+
+```bash
+pip install uripoint
+```
+
+## CLI Usage
+
+### Creating Endpoints
+
+1. Full URI Approach
+```bash
+# Create an endpoint with full URI
+uripoint --uri http://localhost:8080/api/status --data '{"status": "OK"}'
+```
+
+2. Component-Based Approach
+```bash
+# Create an endpoint using individual components
+uripoint --hostname localhost --path /api/status --protocol http --port 8000 --data '{"status": "OK"}'
+```
+
+### Managing Endpoints
+
+```bash
+# List all configured endpoints
+uripoint --list
+
+# Serve all configured endpoints
+uripoint --serve
+```
+
+## Example Scenarios
+
+### HTTP Endpoint
+```bash
+# Create a simple HTTP status endpoint
+uripoint --uri http://localhost:8000/health --data '{"status": "healthy"}'
+```
+
+### WebSocket Endpoint
+```bash
+# Create a WebSocket endpoint
+uripoint --protocol ws --hostname localhost --path /socket --port 8765 --data '{"type": "websocket"}'
+```
+
+### FTP Endpoint
+```bash
+# Create an FTP endpoint
+uripoint --protocol ftp --hostname ftp.example.com --path /files --port 21 --data '{"directory": "/public"}'
+```
+
+## Programmatic Usage
+
+```python
+from uripoint import UriPointCLI
+
+# Create CLI instance
+cli = UriPointCLI()
+
+# Create an endpoint
+cli.create_endpoint(
+    uri='http://localhost:8000/api/status',
+    data='{"status": "OK"}'
+)
+
+# List endpoints
+cli.list_endpoints()
+
+# Serve endpoints
+cli.serve()
+```
+
+## Supported Protocols
+- HTTP
+- HTTPS
+- WebSocket (WS)
+- WebSocket Secure (WSS)
+- FTP
+- SFTP
+
+## Contributing
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
+This project is licensed under the terms of the LICENSE file in the project root.
