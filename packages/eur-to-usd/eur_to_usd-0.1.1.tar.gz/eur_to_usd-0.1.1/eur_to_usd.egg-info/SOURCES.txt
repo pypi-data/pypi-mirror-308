@@ -1,0 +1,7 @@
+setup.py
+eur_to_usd.egg-info/PKG-INFO
+eur_to_usd.egg-info/SOURCES.txt
+eur_to_usd.egg-info/__init__.py
+eur_to_usd.egg-info/dependency_links.txt
+eur_to_usd.egg-info/requires.txt
+eur_to_usd.egg-info/top_level.txt
