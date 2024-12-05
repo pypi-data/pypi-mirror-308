@@ -1,0 +1,11 @@
+uripoint/__init__.py,sha256=Cahzu4WR9M9U00azBnggVU0YxktbDzkFDCM0DehnSSs,490
+uripoint/main.py,sha256=9otBZbfClLucxlqmwJXfQqm5nphPmjw__-oA3ZV4gi0,4576
+uripoint/process.py,sha256=uVt2guPhJN7iPJ1Vz2JfypJHeNA_t9JeaVjmuAczN-k,2391
+uripoint/process_utils.py,sha256=3y1_c6NqaAJbZLZ06dcOvaLUM1aweXe6iMaiaJa65bI,1494
+uripoint/router.py,sha256=aRCcwDN_uAo0xiXf8VfnY_INHEI0lKFNfdoMHiNuopo,3105
+uripoint-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uripoint-0.5.0.dist-info/METADATA,sha256=zaXwRu2xrW9jf7noeI5Ahndip5UdK8FV7SIlBv1iUPk,3421
+uripoint-0.5.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+uripoint-0.5.0.dist-info/entry_points.txt,sha256=7UDFioOe56ANal14pdERpPgIU1PiRWXv7N90WbKIx4o,48
+uripoint-0.5.0.dist-info/top_level.txt,sha256=cuvsm5FEc4pD7kfDRSd_jkiZ8zFxc8UxwfF0vP9-bFo,9
+uripoint-0.5.0.dist-info/RECORD,,
