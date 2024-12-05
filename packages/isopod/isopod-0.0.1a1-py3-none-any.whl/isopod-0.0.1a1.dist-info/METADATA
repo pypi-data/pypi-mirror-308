@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: isopod
+Version: 0.0.1a1
+Summary: A middle layer for creating modular data processing pipelines and automating their parallel execution over various multiprocessing backends.
+Author: Matthew Clapp
+License: BSD 3-Clause Clear License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: pathos
+Requires-Dist: pathos; extra == 'pathos'
+Provides-Extra: ray
+Requires-Dist: ray; extra == 'ray'
+Description-Content-Type: text/markdown
+
+# Isopod
+
+A middle layer for creating modular data processing pipelines and automating their parallel execution over various multiprocessing backends.
