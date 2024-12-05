@@ -1,0 +1,13 @@
+petrel_chicks/__init__.py,sha256=2SQut1RRUQ69MmPDTkQE3wO3jFXZVTS158hTD2cirP4,458
+petrel_chicks/calculate_mass_loss_rates.py,sha256=exao5hBE7Y8k4kXgliPHGstFHtNJOSbKnknYdlz17Zc,3284
+petrel_chicks/cli.py,sha256=57iwCDRt2VsQ2hg0PGEAydnl9w0G4aywIOrW-H0d35s,956
+petrel_chicks/error_estimator_function.py,sha256=qF4A5U4F-OOSqWnGIwju2CUcHcSFCWamkkkvS1sOSdY,2752
+petrel_chicks/filter_per_season.py,sha256=biTGeZWCy3jtF5oo2bYNo-nZ1HDmRyuLax-lG0T7Jmk,768
+petrel_chicks/fit_model_for_peak_mass.py,sha256=UbgMhQiURB9B1Pyl73XMnV5HRZXiJyMCowhm-YZBve8,1354
+petrel_chicks/petrel_age_predictor.py,sha256=nQy0hgeh27wR-u2nNhnftcbqg5Cb2XwIDVsqECDLo8o,6810
+petrel_chicks/plot_peak_mass_model.py,sha256=_Hde3TYv3YCvadYRuUxGkvbBM-uumSXE-Y0OySxwHAM,2306
+petrel_chicks-0.4.1.dist-info/entry_points.txt,sha256=DY65fktJ2DI18pfh1XMyLvjTE3_qIbFVuHTnVWdIfH4,55
+petrel_chicks-0.4.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+petrel_chicks-0.4.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+petrel_chicks-0.4.1.dist-info/METADATA,sha256=EERVDcguPkZb6fK7jXA1UOniTk6zDMYsKd32cUX18tQ,1613
+petrel_chicks-0.4.1.dist-info/RECORD,,
