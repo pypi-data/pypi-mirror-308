@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+params_grid/__init__.py
+params_grid/search_space.py
+params_grid.egg-info/PKG-INFO
+params_grid.egg-info/SOURCES.txt
+params_grid.egg-info/dependency_links.txt
+params_grid.egg-info/not-zip-safe
+params_grid.egg-info/requires.txt
+params_grid.egg-info/top_level.txt
+tests/test_init.py
