@@ -1,0 +1,8 @@
+cecil/__init__.py,sha256=9-O5DAnOHvBuzPAjkK10GiOnCY9rb4SW1k0CIrHorr0,53
+cecil/client.py,sha256=4ft1FL6KePfleTf-oepi10yRJ3RdVeZ0qNRdFyLm6c8,5783
+cecil/errors.py,sha256=r9NNRtv_oO_hblnh-VOlAf767cJqmlnbJfHB63OA_zY,1538
+cecil/models.py,sha256=6p9AedCDdkK-ptK2r5pc9AKG8rgZHw-YYDvRgXPAQqI,2544
+cecil-0.0.15.dist-info/METADATA,sha256=wnQowxMqcWRjlNsThxwypFnck_TuDDFmNCzZr34_Y54,2677
+cecil-0.0.15.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cecil-0.0.15.dist-info/licenses/LICENSE.txt,sha256=mUexcmfYx3bG1VIzAdQTOf_NzStYw6-QkKVdUY_d4i4,1066
+cecil-0.0.15.dist-info/RECORD,,
