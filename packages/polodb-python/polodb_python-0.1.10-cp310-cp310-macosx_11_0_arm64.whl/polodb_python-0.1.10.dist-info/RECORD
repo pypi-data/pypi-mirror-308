@@ -1,0 +1,8 @@
+polodb_python-0.1.10.dist-info/METADATA,sha256=jfbRfH1L53W0JZ7G7w7uHG_NXK69R5QsqPIn-edNXAs,1387
+polodb_python-0.1.10.dist-info/WHEEL,sha256=IQ-G-ye1g_mDemVbtoyEXvcGWYyUO86u9CzWCchWqDI,104
+polodb_python-0.1.10.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+polodb/__init__.py,sha256=-uWrXxbr4N4ht041FcysHsD2O2d2MKqnzjSpX9l_p5E,73
+polodb/core.py,sha256=t1VawpX-yWMGPcYtdxVlywSO6aIe-PLMwIMVEIZonKs,2012
+rust_polodb/__init__.py,sha256=-ig8jYr92i4AtyXCjSvTlWC5SVQwKSz8uRW1cbeXkZY,127
+rust_polodb/rust_polodb.cpython-310-darwin.so,sha256=12-mhNVuZ8i0tZD6_TAgoYEtYuYN1Rb_Spdy8bAPRlU,10018904
+polodb_python-0.1.10.dist-info/RECORD,,
