@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "orcalib"
+version = "0.0.74"                              # will be set by CI before building the wheel from the git tag
+description = "client library for Orca DB"
+license = "Apache-2.0"
+authors = ["Orca DB Inc. <dev-rel@orcadb.ai>"]
+readme = "README.md"
+packages = [{ include = "orcalib" }]
+
+[tool.poetry.dependencies]
+orjson = "^3.8.5"
+requests = "^2.28.2"
+pyarrow = "^17.0.0"
+pillow = "^10.4.0"
+scikit-learn = "^1.5.1"
+lancedb = "^0.11.0"
+sentence-transformers = "3.1.1"
+matplotlib = "^3.9.2"
+prettytable = "^3.11.0"
+plotly = "^5.24.0"
+cachetools = "^5.5.0"
+# the following are peer dependencies and should thus not require a too specific version:
+python = "^3.10,<3.13"
+numpy = "^1.24"
+tqdm = "^4.66.5"
+transformers = { extras = ["torch"], version = "4.45.2" }
+pandas = ">=1.5, <3.0"
+torch = "^2.1.1"
+pydantic = ">=1.10, <3.0"
+# TODO: make the following optional dependencies to reduce the size of the package:
+gradio = "^4.14.0"
+datasets = "^2.9"
+python-multipart = "^0.0.12"
+msgpack = "^1.0.7"
+orca_common = "0.1.4"
+huggingface-hub = "0.24.0"
+peewee = "^3.17.5"
+einops = "^0.8.0"
+more-itertools = "^10.5.0"
+pymilvus = "^2.4.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest-env = "^1.0.1"
+pytest = "^7.4.2"
+orca_common = { path = "../orca_common", develop = true }
+ipython = "^8.26.0"
+pyright = "^1.1.0"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+sphinx-rtd-theme = "^2.0.0"
+myst-parser = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+known_first_party = ["orcalib", "orca_common"]
+
+[tool.pytest]
+testpaths = ["orcalib/rac/**test.py", "tests/"]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)s] %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+filterwarnings = ["ignore::DeprecationWarning"]
