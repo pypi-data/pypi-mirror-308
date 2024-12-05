@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+astropy
+astroquery
+grizli
+pathos
+opencv-python
+tqdm

@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/__init__.py
+src/mask_stars_NIRISS.py
+src/mask_stars_NIRISS.egg-info/PKG-INFO
+src/mask_stars_NIRISS.egg-info/SOURCES.txt
+src/mask_stars_NIRISS.egg-info/dependency_links.txt
+src/mask_stars_NIRISS.egg-info/requires.txt
+src/mask_stars_NIRISS.egg-info/top_level.txt
