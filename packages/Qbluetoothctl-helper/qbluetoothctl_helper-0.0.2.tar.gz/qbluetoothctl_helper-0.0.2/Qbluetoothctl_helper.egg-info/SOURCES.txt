@@ -1,0 +1,9 @@
+LICENSE
+Qbluetoothctl_helper.py
+README.md
+setup.py
+Qbluetoothctl_helper.egg-info/PKG-INFO
+Qbluetoothctl_helper.egg-info/SOURCES.txt
+Qbluetoothctl_helper.egg-info/dependency_links.txt
+Qbluetoothctl_helper.egg-info/requires.txt
+Qbluetoothctl_helper.egg-info/top_level.txt
