@@ -1,0 +1,7 @@
+setup.py
+bimbim/__init__.py
+bimbim/bimbim.py
+bimbim.egg-info/PKG-INFO
+bimbim.egg-info/SOURCES.txt
+bimbim.egg-info/dependency_links.txt
+bimbim.egg-info/top_level.txt
