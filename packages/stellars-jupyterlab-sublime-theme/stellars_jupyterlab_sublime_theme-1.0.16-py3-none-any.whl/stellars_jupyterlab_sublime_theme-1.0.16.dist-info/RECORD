@@ -1,0 +1,14 @@
+stellars_jupyterlab_sublime_theme/__init__.py,sha256=ix6uzciYX7CFjx1TuE4oLplohXIMgnIS1tvmvIK2eoQ,625
+stellars_jupyterlab_sublime_theme/_version.py,sha256=tHR5VhSooNAo1zCtTMcUC3uSOWqzeoPbxhJx92EzRBk,172
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/package.json,sha256=kP29RS7ykQU9MNOZV8wynWTj174SAZKxfmH5mgAmazg,5798
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/static/509.3a203a926ad6413f7b60.js,sha256=OiA6kmrWQT97YGHJ_Lk7UDHZ0gproaEdztXUckhdniM,652
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/static/remoteEntry.7db4c11ab70d4789495b.js,sha256=fbTBGrcNR4lJW8rHb_LsZ3I4cWJenXrb5aPMmzy9OiI,6735
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/static/third-party-licenses.json,sha256=MNToQfru1YnHAie-2Virp23yWsc5co3qG0IzrO6SEfw,20
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/themes/@stellars/jupyterlab_sublime_theme/index.css,sha256=riUV7vimAChBuqbKzRLB8JpsC5yQr8WlgG6LwPYOZpI,20790
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/themes/@stellars/jupyterlab_sublime_theme/index.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stellars_jupyterlab_sublime_theme-1.0.16.data/data/share/jupyter/labextensions/@stellars/jupyterlab_sublime_theme/install.json,sha256=9hAljgeR60riIaovDzEdQQ_ZJke2GN1T3tN_7EcNM8o,227
+stellars_jupyterlab_sublime_theme-1.0.16.dist-info/METADATA,sha256=FmJE5PuiO_zofS-Ha3iwDVdLP2pBFfynRX_LMy9DPMA,6722
+stellars_jupyterlab_sublime_theme-1.0.16.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+stellars_jupyterlab_sublime_theme-1.0.16.dist-info/licenses/LICENSE,sha256=MLqt9HRycP6pWogg_RV4fictkLedziOztWQcCCcVtEI,1520
+stellars_jupyterlab_sublime_theme-1.0.16.dist-info/RECORD,,
