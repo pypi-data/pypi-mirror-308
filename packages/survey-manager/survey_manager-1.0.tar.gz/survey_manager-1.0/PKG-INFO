@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: survey_manager
+Version: 1.0
+Summary: survey_manager can split data of soc.surveys and convert it to x,y coords
+Author-email: andreyfakerare@gmail.com

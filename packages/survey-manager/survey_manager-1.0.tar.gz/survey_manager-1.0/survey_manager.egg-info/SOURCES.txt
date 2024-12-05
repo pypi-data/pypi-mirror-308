@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+survey_manager/__init__.py
+survey_manager.egg-info/PKG-INFO
+survey_manager.egg-info/SOURCES.txt
+survey_manager.egg-info/dependency_links.txt
+survey_manager.egg-info/not-zip-safe
+survey_manager.egg-info/top_level.txt
