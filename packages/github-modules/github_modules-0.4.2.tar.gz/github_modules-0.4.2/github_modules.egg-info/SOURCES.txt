@@ -1,0 +1,9 @@
+README.md
+setup.py
+github_module/__init__.py
+github_module/helper.py
+github_modules.egg-info/PKG-INFO
+github_modules.egg-info/SOURCES.txt
+github_modules.egg-info/dependency_links.txt
+github_modules.egg-info/requires.txt
+github_modules.egg-info/top_level.txt
