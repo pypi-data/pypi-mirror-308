@@ -1,0 +1,10 @@
+mean_differences_mc/__init__.py,sha256=9UarLHfaUwZRXblVG0TqrYPt_C3uxeS0drkjv6Ba_Bs,291
+mean_differences_mc/calculate_mean_difference.py,sha256=OM9i9DmCoYcQpfwsNLQmEIzN6O73pGmwTyFAEBtjLQI,1166
+mean_differences_mc/generalized_monte_carlo_test.py,sha256=f_gYhISuKTKu3KCwYn6MqwZnYgS3C6m84XTlCj6Vl7s,703
+mean_differences_mc/index_switch.py,sha256=ft54ImQn9bpKZ9MxmGM6Y0ajWUuMW4sQ-iEMLkG7Kcs,136
+mean_differences_mc/switch_elements.py,sha256=YEq4PwC5oNUtcT9964fcYW6nnijsg76gdvSzlRibxN4,690
+mean_differences_mc/tester_significant_difference.py,sha256=4qndUfStb7z2cZ79UISw_31a0R7HWi96QdisrcNbPK4,1072
+mean_differences_mc-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+mean_differences_mc-0.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+mean_differences_mc-0.1.0.dist-info/METADATA,sha256=rH10mcynfKkDMkcMAck3FKRESkV63uxPY3JE4wzUWSY,459
+mean_differences_mc-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: mean_differences_mc
+Version: 0.1.0
+Summary: A module to test mean differences mc
+Home-page: https://github.com/IslasGECI/mean_differences_mc
+Author: Ciencia de Datos • GECI
+Author-email: ciencia.datos@islas.org.mx
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+mean_differences_mc
+
