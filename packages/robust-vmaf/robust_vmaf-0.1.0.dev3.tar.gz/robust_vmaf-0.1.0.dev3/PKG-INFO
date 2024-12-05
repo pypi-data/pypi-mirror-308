@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: robust_vmaf
+Version: 0.1.0.dev3
+Summary: robust modification of VMAF
+Home-page: https://github.com/Hrebtovmaksim1/robust_vmaf
+Author: Mg_det
+Author-email: hrebtovmaksim1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Robust VMAF
+
+Robust modification of Video Multimethod Assessment Fusion (VMAF)
+
+## Installation
+You should install ffmpeg with VMAF support (guide can be found here https://github.com/netflix/vmaf/blob/master/resource/doc/ffmpeg.md)
+
+## Usage
+
+Example code:
+```
+from robust_vmaf import RobustVMAF
+
+if __name__ == "__main__":
+    rvmaf = RobustVMAF()
+    print(rvmaf.predict("example/reference.mp4", "example/DragoToneMap.mp4"))
+    print(rvmaf.predict("example/reference.mp4", "example/DragoToneMap.mp4", return_vmaf=False, return_vmaf_neg=False))
+```
+
+Output:
+```
+{'model': np.float32(95.81248), 'vmaf': 112.4708638, 'vmaf_neg': 91.1492206}
+95.81248
+```
+
+
+
