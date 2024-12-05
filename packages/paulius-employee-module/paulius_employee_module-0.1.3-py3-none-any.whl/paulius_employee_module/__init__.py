@@ -1,0 +1,1 @@
+from paulius_employee_module.employee import Employee
