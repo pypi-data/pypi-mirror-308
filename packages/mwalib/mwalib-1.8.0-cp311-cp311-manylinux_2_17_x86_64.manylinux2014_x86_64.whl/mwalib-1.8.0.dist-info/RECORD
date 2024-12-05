@@ -1,0 +1,9 @@
+mwalib-1.8.0.dist-info/METADATA,sha256=WDwTxJG3zNNsYKF2wa00B_a473Q0xIogyAUgcYibZbo,17903
+mwalib-1.8.0.dist-info/WHEEL,sha256=lbL5EWTI8o4jAohEMlOu6SEPfbFdTwghtb94Y7b9Hk0,129
+mwalib-1.8.0.dist-info/licenses/LICENSE,sha256=KZyJbAlgeMBp_PbVpt6xxgOP7jz_MviDRbBjSjcFFvA,15332
+mwalib-1.8.0.dist-info/licenses/LICENSE-cfitsio,sha256=w0isP6wary6_mQlkRA9XUiw9v64VCBaxEf7Iajx4oME,1460
+mwalib/__init__.py,sha256=wv10UXB8UcO52swCDYfWpNr2iEttu4HzDTN4UHG0DWw,107
+mwalib/__init__.pyi,sha256=kUAoD98dihDxUy7YCFIQMU_YfyiaqYXSSR6WrxUFG50,19684
+mwalib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwalib/mwalib.cpython-311-x86_64-linux-gnu.so,sha256=c7lriJ4bqQY2n5WhmgZ0m-1QD6jGW6yJr9DF2_Z16XY,5905816
+mwalib-1.8.0.dist-info/RECORD,,
