@@ -1,0 +1,4 @@
+colcon-core~=0.6
+toml~=0.10
+packaging
+setuptools
