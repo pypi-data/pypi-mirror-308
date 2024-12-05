@@ -1,0 +1,7 @@
+setup.py
+pedrusko_operacoes_ifpb2024/__init__.py
+pedrusko_operacoes_ifpb2024/pedrusko_operacoes_ifpb2024.py
+pedrusko_operacoes_ifpb2024.egg-info/PKG-INFO
+pedrusko_operacoes_ifpb2024.egg-info/SOURCES.txt
+pedrusko_operacoes_ifpb2024.egg-info/dependency_links.txt
+pedrusko_operacoes_ifpb2024.egg-info/top_level.txt
