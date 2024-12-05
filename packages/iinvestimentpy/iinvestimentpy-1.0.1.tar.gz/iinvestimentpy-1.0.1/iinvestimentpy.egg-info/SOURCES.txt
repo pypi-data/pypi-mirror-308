@@ -1,0 +1,10 @@
+README.md
+setup.py
+iinvestimentpy.egg-info/PKG-INFO
+iinvestimentpy.egg-info/SOURCES.txt
+iinvestimentpy.egg-info/dependency_links.txt
+iinvestimentpy.egg-info/top_level.txt
+iinvestpy/__init__.py
+iinvestpy/calculos.py
+iinvestpy/dados.py
+iinvestpy/visualizacao.py
