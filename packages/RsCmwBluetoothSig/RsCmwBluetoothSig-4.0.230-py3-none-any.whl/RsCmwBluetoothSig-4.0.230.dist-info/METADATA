@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: RsCmwBluetoothSig
+Version: 4.0.230
+Summary: CMW Bluetooth Signaling Remote-control module
+Author: Rohde & Schwarz GmbH & Co. KG
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: PyVisa >=1.13.0
+Requires-Dist: typing-extensions >=4.0.0
+
+==================================
+ RsCmwBluetoothSig
+==================================
+
+.. image:: https://img.shields.io/pypi/v/RsCmwBluetoothSig.svg
+   :target: https://pypi.org/project/ RsCmwBluetoothSig/
+
+.. image:: https://readthedocs.org/projects/sphinx/badge/?version=master
+   :target: https://RsCmwBluetoothSig.readthedocs.io/
+
+.. image:: https://img.shields.io/pypi/l/RsCmwBluetoothSig.svg
+   :target: https://pypi.python.org/pypi/RsCmwBluetoothSig/
+
+.. image:: https://img.shields.io/pypi/pyversions/pybadges.svg
+   :target: https://img.shields.io/pypi/pyversions/pybadges.svg
+
+.. image:: https://img.shields.io/pypi/dm/RsCmwBluetoothSig.svg
+   :target: https://pypi.python.org/pypi/RsCmwBluetoothSig/
+
+Rohde & Schwarz CMW Bluetooth Signaling RsCmwBluetoothSig instrument driver.
+
+Basic Hello-World code:
+
+.. code-block:: python
+
+    from RsCmwBluetoothSig import *
+
+    instr = RsCmwBluetoothSig('TCPIP::192.168.2.101::hislip0')
+    idn = instr.query('*IDN?')
+    print('Hello, I am: ' + idn)
+
+Supported instruments: CMW500, CMW270
+
+The package is hosted here: https://pypi.org/project/RsCmwBluetoothSig/
+
+Documentation: https://RsCmwBluetoothSig.readthedocs.io/
+
+Examples: https://github.com/Rohde-Schwarz/Examples/
+
+
+Version history
+----------------
+
+Release Notes:
+
+Latest release notes summary: Update for FW version 4.0.230
+
+	Version 4.0.230
+		- Update for FW version 4.0.230
+
+	Version 3.8.xx2
+		- Fixed several misspelled arguments and command headers
+
+	Version 1.0.0.0
+		- First released version
