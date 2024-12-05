@@ -1,0 +1,14 @@
+taiao_declare_service_py-0.8.0.dist-info/METADATA,sha256=gfZAD_XoZJ-vZ0qzDm1r_1RwZTSV2jYDgqz3EwUF9YA,336
+taiao_declare_service_py-0.8.0.dist-info/WHEEL,sha256=9nMhkhjT5-smROE-lOgRy50zrYHdk-fRmS6ah4MLvkg,129
+taiao_declare_service_py/types/__init__.pyi,sha256=0X2ydd7F1_JABuSN6ATcq1GdImQuKUlskVmnX6heiYA,11764
+taiao_declare_service_py/error/__init__.pyi,sha256=fSbIGGnHM8juO4Htgy629NlUa76_UpiW4uvjQfLaGjs,663
+taiao_declare_service_py/service/__init__.pyi,sha256=13GiLrrGvyUEneowAvCJ93M061YfVf_Dl3fEPRiVRsw,577
+taiao_declare_service_py/service/result/__init__.pyi,sha256=P0gUzsUQpyoynOiUwBS754wlTiTXRG9AKwWavRHRask,659
+taiao_declare_service_py/__init__.py,sha256=dZMVoZar_e6LQh3F-O3jGCZiaaivw4ZZVnMahYCQ-iA,40
+taiao_declare_service_py/__init__.pyi,sha256=B75ZTBCLXbt-VsqcHMfuWuwbOhD-j-f2t6qB7KzJ1fw,2191
+taiao_declare_service_py/storage/record/__init__.pyi,sha256=igvCxltoZVuGdLKVYQFQ1jBDxo-KKzwKQQWGkMRW7wQ,1014
+taiao_declare_service_py/storage/__init__.pyi,sha256=yf-t3JDL-TyKel2AnHHHNmIGmR7rX5Z157N3nIHjXhU,2505
+taiao_declare_service_py/storage/impls/stream/__init__.pyi,sha256=VKC8zhlWhNB5TfLOrfg-5axL4L2uaQsXcv5di9sEFXs,3828
+taiao_declare_service_py/storage/impls/__init__.pyi,sha256=mXHfuzg0j9Dyg6W1wuH6Njje1I7ld1WU4925vW66vOc,21
+taiao_declare_service_py/taiao_declare_service_py.cpython-312-x86_64-linux-gnu.so,sha256=unBL7xglDA9Y0QmiBFfhVRcqvRM8B_eqARhq7Pk3S90,16715856
+taiao_declare_service_py-0.8.0.dist-info/RECORD,,
