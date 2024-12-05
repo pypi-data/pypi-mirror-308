@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "225568",
+            "job": "1176842",
+            "commit": "463af5298d8cb1b4e98e1fa09d6bb46e66d3affb",
+            "username": "bode5",
+            "project": "/p/project1/jureap1",
+            "budget": "jureap1",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-10-20T19:42:55+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-10-20T19:42:55+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "21.6259",
+            "parameter": {
+                "nodes": "12",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "20910",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "18.7531",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "20911",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "16.0245",
+            "parameter": {
+                "nodes": "20",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "20912",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "55.5302",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "20908",
+            "queue": "all",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "30.7196",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "72"
+            },
+            "slurm_jobid": "20909",
+            "queue": "all",
+            "metrics": {}
+        }
+    ]
+}

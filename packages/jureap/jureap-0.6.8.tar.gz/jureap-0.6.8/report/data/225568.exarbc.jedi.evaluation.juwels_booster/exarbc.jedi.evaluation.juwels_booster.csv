@@ -1,0 +1,7 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,runtime,success
+juwelsbooster,2024.01,booster,jedi.evaluation.juwels_booster,10468430,16,4,12,33.4971,true
+juwelsbooster,2024.01,booster,jedi.evaluation.juwels_booster,10468431,24,4,12,25.1134,true
+juwelsbooster,2024.01,booster,jedi.evaluation.juwels_booster,10468432,32,4,12,22.5019,true
+juwelsbooster,2024.01,booster,jedi.evaluation.juwels_booster,10468433,40,4,12,21.0157,true
+juwelsbooster,2024.01,booster,jedi.evaluation.juwels_booster,10468429,8,4,12,58.4903,true
+

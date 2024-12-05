@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "225568",
+            "job": "1176844",
+            "commit": "463af5298d8cb1b4e98e1fa09d6bb46e66d3affb",
+            "username": "bode5",
+            "project": "/p/project1/corium",
+            "budget": "corium",
+            "system": "juwelsbooster",
+            "version": "2024.12",
+            "timestamp": "2024-10-20T19:42:53+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "juwelsbooster",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.juwels_booster",
+        "timestamp": "2024-10-20T19:42:53+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "33.4971",
+            "parameter": {
+                "nodes": "16",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10468430",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "25.1134",
+            "parameter": {
+                "nodes": "24",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10468431",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "22.5019",
+            "parameter": {
+                "nodes": "32",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10468432",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "21.0157",
+            "parameter": {
+                "nodes": "40",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10468433",
+            "queue": "booster",
+            "metrics": {}
+        },
+        {
+            "success": "true",
+            "runtime": "58.4903",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10468429",
+            "queue": "booster",
+            "metrics": {}
+        }
+    ]
+}
