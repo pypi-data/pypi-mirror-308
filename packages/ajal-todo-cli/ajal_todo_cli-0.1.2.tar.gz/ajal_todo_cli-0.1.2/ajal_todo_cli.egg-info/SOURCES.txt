@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+ajal_todo_cli/__init__.py
+ajal_todo_cli/__main__.py
+ajal_todo_cli/app.py
+ajal_todo_cli.egg-info/PKG-INFO
+ajal_todo_cli.egg-info/SOURCES.txt
+ajal_todo_cli.egg-info/dependency_links.txt
+ajal_todo_cli.egg-info/entry_points.txt
+ajal_todo_cli.egg-info/requires.txt
+ajal_todo_cli.egg-info/top_level.txt
