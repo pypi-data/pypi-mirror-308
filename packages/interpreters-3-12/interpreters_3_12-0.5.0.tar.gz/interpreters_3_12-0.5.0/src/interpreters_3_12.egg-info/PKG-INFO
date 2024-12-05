@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: interpreters-3-12
+Version: 0.5.0
+Summary: Do not use this directly.  Install and use interpreters-pep-734 instead.
+Author-email: Eric Snow <ericsnowcurrently@gmail.com>
+Project-URL: Homepage, https://github.com/ericsnowcurrently/interpreters
+Project-URL: Bug Tracker, https://github.com/ericsnowcurrently/interpreters/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.12.*
+Description-Content-Type: text/markdown
+
+This is the public implementation of the low-level modules supporting PEP 734.
+
+The modules provided by the package should mostly not be used directly.
+For the high-level modules, see https://pypi.org/project/interpreters-pep-734/.
+
+On Python 3.13+, the low-level modules already ship with Python.
+
+Nearly all development for this project is done in the upstream CPython repo.
