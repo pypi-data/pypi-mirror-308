@@ -1,0 +1,8 @@
+passagemath_mcqd-10.4.58.dist-info/RECORD,,
+passagemath_mcqd-10.4.58.dist-info/WHEEL,sha256=4k9bcGHmX9vT4crRswxTa1PQaLLxUjEwcI8M-37DAME,110
+passagemath_mcqd-10.4.58.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_mcqd-10.4.58.dist-info/METADATA,sha256=QYn76DPgASp6l8gMnjy_SbetSotva1Ww24e3HHJR4zE,2650
+sage/all__sagemath_mcqd.py,sha256=JfNdiXZ8w_OvTD5zRNmHqB7TlKoFuYo0NA9VBP30zdA,43
+sage/graphs/mcqd.pxd,sha256=Nt-y-spw3laVaRSR0syBgMRg1tAxbgVEcLnoD02inFg,228
+sage/graphs/all__sagemath_mcqd.py,sha256=JfNdiXZ8w_OvTD5zRNmHqB7TlKoFuYo0NA9VBP30zdA,43
+sage/graphs/mcqd.cpython-310-darwin.so,sha256=-fBxE9354iCWdKj-koqpv37vD4C2dmiIR33ApfjyWUA,101512
