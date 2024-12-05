@@ -1,0 +1,8 @@
+# Include all HTML files in the package
+include app/templates/*.html
+
+# Include other types of files if necessary
+recursive-include app/static *
+
+# Optionally, include a README or other documentation files
+include README.md
