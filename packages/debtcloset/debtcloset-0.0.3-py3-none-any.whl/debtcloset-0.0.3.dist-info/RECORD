@@ -1,0 +1,10 @@
+debtcloset/__init__.py,sha256=ynlNNwMySjVxDetC9QBCHgXj_jpzuQVSG_i6HdfdPrM,193
+debtcloset/pyright/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debtcloset/pyright/toml.py,sha256=KK_O7Crc3MW41O_MAuI0AYGVj2sOxoAXqDYgcWwCgYY,5654
+debtcloset/ruff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debtcloset/ruff/toml.py,sha256=G_Ok6kNyJpalZusKUsMNrMyIyLmtr9cA5sE8FI4nKYU,5553
+debtcloset/util/listfmt.py,sha256=KbCnFSxQMwcx_cQ3U9vEwom-zf8zK_u2SIS6mxt8PUs,1058
+debtcloset-0.0.3.dist-info/LICENSE,sha256=USUiLP7dhQAhj_5tV3Az-dcvD7Nf_F8eVPcf3BZMj2E,1067
+debtcloset-0.0.3.dist-info/METADATA,sha256=T1op1WJYWlyFYViYYCO4KfVI8hN27F_lJ2XM8_Sgsts,2124
+debtcloset-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+debtcloset-0.0.3.dist-info/RECORD,,
