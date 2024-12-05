@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ajal-todo-cli
+Version: 0.1.1
+Summary: Add your description here
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Topic :: Education
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.13.0
+
+# Ajal Todo CLI
+
+A todo utility - enhanced
+
+## Usage
+
+```shell
+pip install ajal-todo-cli
+ajal-todo --help
+```
+
+And move forward from there

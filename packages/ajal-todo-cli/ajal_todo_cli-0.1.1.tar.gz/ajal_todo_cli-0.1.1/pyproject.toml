@@ -1,0 +1,17 @@
+[project]
+name = "ajal-todo-cli"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.13.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Topic :: Education",
+]
+
+[project.scripts]
+ajal-todo = "ajal_todo_cli:cli"
