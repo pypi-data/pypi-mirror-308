@@ -1,0 +1,14 @@
+a_jupyterlite_session/__init__.py,sha256=vk2mU4ubsq5cWIohGlrw5fP2kU2U4xC7gU8NLXraQ4o,600
+a_jupyterlite_session/_version.py,sha256=aM0QVK4NJP1CO1SzDAG0tn7KvEzshOfEQ6UeJq1gd_Q,172
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/package.json,sha256=6LmhuPJKKqOC2XeISgt09hmPOWkItxj_vfTuOH_7_44,6131
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/262.6d1650602189894e0d47.js,sha256=bRZQYCGJiU4NR-YIy01QUghELRKbUczv7HB5tFQMnpc,9660
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/509.1a9a0f177ce1ac9b9bc4.js,sha256=GpoPF3zhrJubxAg4dROdCp3p4b8LnCT-nSZkiNTkWDs,1255
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/728.968983f111693ffba97f.js,sha256=lomD8RFpP_upfwoKIqxlo9SEH3uQCea5oOkJ-dHSGCk,4013
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/remoteEntry.0897da3e2f8ef811ad4b.js,sha256=CJfaPi-O-BGtSwyeI7JYnNTcT4KVyn6kljleSp5MrAM,7457
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/style.js,sha256=cx7a4tPS7beCWeMUqrxq86kK4vzpMU4MSP1Im43JVsU,164
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/static/third-party-licenses.json,sha256=H3sltovevxuXX81zDkaiI71PBfOQ9nAG8BqfMDSxG9Y,3693
+a_jupyterlite_session-0.1.10.data/data/share/jupyter/labextensions/a-jupyterlite-session/install.json,sha256=Rh9GcU8iSg3qLPl_ToLGD3ygnTM10ZDppvBx9NBkIaw,203
+a_jupyterlite_session-0.1.10.dist-info/METADATA,sha256=P8OtliNWizHM1CE5d3gKyI7IFBz2sr8Hi_Mgx1eteZM,5862
+a_jupyterlite_session-0.1.10.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+a_jupyterlite_session-0.1.10.dist-info/licenses/LICENSE,sha256=EIH1kf95fcnM7-gUGjyW9KqLsY7Q4m17o2sG5ijIokA,1521
+a_jupyterlite_session-0.1.10.dist-info/RECORD,,
