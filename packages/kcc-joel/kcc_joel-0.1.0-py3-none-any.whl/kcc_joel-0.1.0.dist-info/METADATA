@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kcc_joel
+Version: 0.1.0
+Summary: 
+Author: Joel Medina Sanchez
+Author-email: jmedinasanc@alumni.unav.es
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: ipython (==8.18.1)
+Requires-Dist: ipywidgets (==8.1.5)
+Requires-Dist: krakenex (==2.2.2)
+Requires-Dist: matplotlib (==3.9.2)
+Requires-Dist: pandas (==2.2.3)
+Requires-Dist: plotly (==5.24.1)
+Description-Content-Type: text/markdown
+
+Esto es la memoria del proyecto de Python de Joel Medina Sánchez
+
+Este proyecto descarga los datos de monedas de Kraken a través de krakenex y los grafica con matplotlib
+
