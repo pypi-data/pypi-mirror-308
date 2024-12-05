@@ -1,0 +1,10 @@
+passagemath_libbraiding-10.4.58.dist-info/RECORD,,
+passagemath_libbraiding-10.4.58.dist-info/WHEEL,sha256=CozyKmUsMmwMCU0JunQHk0pwok780swP2ZaZzayV2zY,109
+passagemath_libbraiding-10.4.58.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_libbraiding-10.4.58.dist-info/METADATA,sha256=4O3LPuxsDSkiIHAigxCrVsQk3KX81ZKqMcpq6M5MXvc,2660
+passagemath_libbraiding.dylibs/libpari-gmp-tls.dylib,sha256=9owvx-ofiahYvhBjz8fQgKulMsc0dVWZ0IXVxaMMxOQ,9837072
+passagemath_libbraiding.dylibs/libbraiding.0.0.0.dylib,sha256=C79BMmIh28c_KzjnaIBPvxFTiNF4gkFXZixpZpHfHcE,298640
+passagemath_libbraiding.dylibs/libgmp.10.dylib,sha256=PVipDEuZAo1czSyoxQX3XUyfY11A2Ukp6uaJ2DcifLk,606176
+sage/all__sagemath_libbraiding.py,sha256=HzvyH9JZ1Fjh65Qx_jwx_UD5XSJg2iOTg7L5ajVVYvs,50
+sage/libs/braiding.cpython-311-darwin.so,sha256=lpStdY77Cq36HhQTR1QshSGOuhFsKAGVGU7Ioftw5qg,184752
+sage/libs/all__sagemath_libbraiding.py,sha256=HzvyH9JZ1Fjh65Qx_jwx_UD5XSJg2iOTg7L5ajVVYvs,50
