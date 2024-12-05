@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: funnyapi
+Version: 0.3.1
+Summary: A fun API for generating jokes and funny facts
+Home-page: https://github.com/kseniaris/funnyapi
+Author: Ksusha
+Author-email: YlC9L@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# FunnyAPI
+
+**FunnyAPI** is a Python library for generating random jokes and funny facts. Perfect for adding a little humor to your day!
+
+## Installation
+
+```bash
+pip install funnyapi
