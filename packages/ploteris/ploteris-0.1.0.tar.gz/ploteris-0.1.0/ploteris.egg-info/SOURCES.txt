@@ -1,0 +1,10 @@
+setup.py
+ploteris/__init__.py
+ploteris/duomenys.py
+ploteris/main.py
+ploteris/ploteris.py
+ploteris.egg-info/PKG-INFO
+ploteris.egg-info/SOURCES.txt
+ploteris.egg-info/dependency_links.txt
+ploteris.egg-info/requires.txt
+ploteris.egg-info/top_level.txt
