@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: gtap-extractor
+Version: 0.1.0
+Summary: Extract GTAP data from .har files and save it as .nc file.
+Home-page: https://gitlab.pik-potsdam.de/mrio_toolbox/gtap_extractor
+Author: Timothe Beaufils
+Author-email: timothe.beaufils@pik-potsdam.de
+Keywords: GTAP,MRIO,Input-Output,Economics,Industrial Ecology,netcdf,International Trade
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: netcdf4
+Requires-Dist: xarray
+Requires-Dist: mrio_toolbox-1.0.0
+
+# gtap_extractor
+
+GTAP is a licensed database for international economics.
+It is widely used for calibrating Computable General Equilibrium (CGE).
+GTAP is distributed as unusual .har files, usable with the proprietary GTAPAgg software.
+This package aims at simplifying the access to GTAP data, by transferring GTAP data into the standard netCDF data format.
+
+## Usage
+
+The *extract_gtap()* method takes three optional arguments:
+
+source: (path-like)
+    Path to the raw GTAP .har files.
+    You will find these files in your GTAP installation.
+    By default, the current working directory.
+
+destination: (path-like)
+    Path where the netCDF file will be saved.
+    By default, the current working directory.
+
+files: (list of str)
+    List of GTAP files to be extracted.
+    By default, all GTAP files are extracted.
+
+build_mrio: (bool)
+    If True, GTAP data are converted into a simple MRIO table, in basic prices.
+    The built table is saved under <name>_mrio.nc.
+    The table consists in three parts:
+        - The inter-industry matrix t, built from the VDFB and VMFB variables.
+        - The final demand matrix y, built from VMPB, VDPB, VMGB, VDGB, VMIB, VDIB.
+        - The value added matrix va, built from EVFB and VTWR.
+
+    The construction of t and y relies on the import proportionality assumption: trade shares for each imported good are kept constant across imported sectors.
+    As imports (VMSB) and exports (VXSB) diverge, trade shares are computed as the arithmetic average of both.
+    These trade shares are used to ventilate intermediate and final imports.
+
+    The value added array includes:
+        - Primary endownments (EVFB)
+        - The sum of margins and export tariffs (VTWR + XTRV)
+        - Net output taxes and subsidies, estimated as the residual value to balance the table.
+    
+
+name: str
+    Name under which the resulting .nc file is stored
+
+## Dependences 
+
+The package builds on the [HARPY](https://github.com/GEMPACKsoftware/HARPY), [xarray](https://xarray.pydata.org/en/v2024.07.0/index.html) and [netcdf4](http://unidata.github.io/netcdf4-python/) libraries.
+
+Note that the HARPY version on pip is outdated.
+Instead, you can clone the HARPY repository directly using the following command in your terminal:
+
+git clone https://github.com/GEMPACKsoftware/HARPY

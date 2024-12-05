@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gtap_extractor/__init__.py
+gtap_extractor/main.py
+gtap_extractor.egg-info/PKG-INFO
+gtap_extractor.egg-info/SOURCES.txt
+gtap_extractor.egg-info/dependency_links.txt
+gtap_extractor.egg-info/requires.txt
+gtap_extractor.egg-info/top_level.txt
+gtap_extractor/extraction/__init__.py
+gtap_extractor/extraction/extractor.py
+gtap_extractor/gtap_mrio/__init__.py
+gtap_extractor/gtap_mrio/mrio_builder.py
