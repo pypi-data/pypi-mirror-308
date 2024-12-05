@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: event_voxel_builder
+Version: 0.0.4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Dist: numpy
+License-File: LICENSE
+Summary: Fast event voxel builder
+Home-Page: https://codeberg.org/ybh1998/EventVoxelBuilder/
+Author: Bohan Yu
+Author-email: ybh1998@protonmail.com
+License: AGPL-3.0-or-later
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://codeberg.org/ybh1998/EventVoxelBuilder/
+Project-URL: documentation, https://ybh1998.codeberg.page/EventVoxelBuilder/
+
+# Fast Event Voxel Builder
+[\[Codeberg Repo\]](https://codeberg.org/ybh1998/EventVoxelBuilder/)
+[\[API Document\]](https://ybh1998.codeberg.page/EventVoxelBuilder/)
+
+### Warning: Very Unstable API!
+This is currently a rush project for CVPR 2024 and the API will definitely be rewritten after the DDL.
+
+### To run the example Python codes or your own Python code
+1. Download `event-voxel-builder-*.whl` under
+[\[releases\]](https://codeberg.org/ybh1998/EventVoxelBuilder/releases/) and install using `pip install`, or
+install from [\[PyPI\]](https://pypi.org/project/event-voxel-builder/).
+2. Run Python example codes in `examples` or your own codes.
+
+Copyright (c) 2023 Bohan Yu. All rights reserved. \
+EventVoxelBuilder is free software licensed under GNU Affero General Public License version 3 or latter.
+
