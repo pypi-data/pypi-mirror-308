@@ -1,0 +1,3 @@
+[console_scripts]
+body_composition = body_composition.cli:main
+body_composition_batch = body_composition.batch_cli:main
