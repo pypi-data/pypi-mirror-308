@@ -1,0 +1,11 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+celery==5.0.5
+file-processor==2.1.1
+python-dotenv==1.0.1
+pydantic-settings==2.2.1
+tqdm==4.66.2
+kafka-python-ng>=2.2.2,<2.3
+blinker==1.7.0
+tvav-scripts>=0.70.2,<1.0.0

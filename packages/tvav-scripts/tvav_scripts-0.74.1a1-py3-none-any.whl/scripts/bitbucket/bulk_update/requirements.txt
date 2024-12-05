@@ -1,0 +1,6 @@
+atlassian-python-api>=3.41.14,<3.42
+pyyaml>=6.0.2,<6.1
+tqdm>=4.66.5,<4.67
+ipdb
+pydantic-settings>=2.4.0,<2.5.0
+python-dotenv>=1.0.1,<1.1

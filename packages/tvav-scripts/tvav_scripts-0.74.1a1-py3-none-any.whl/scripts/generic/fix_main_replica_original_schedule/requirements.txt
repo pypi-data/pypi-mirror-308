@@ -1,0 +1,6 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+pydantic>=1.0.0,<2.0.0
+pymongo[srv]
+tqdm==4.64.1

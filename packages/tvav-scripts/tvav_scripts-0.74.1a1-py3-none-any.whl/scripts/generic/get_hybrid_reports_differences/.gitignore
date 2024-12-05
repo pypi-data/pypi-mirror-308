@@ -1,0 +1,5 @@
+reportal_reports/
+vericast_reports/
+script_reports/
+*.duckdb
+.env

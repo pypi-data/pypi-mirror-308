@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+    environment {
+
+    }
+    options {
+        timestamps()
+        skipDefaultCheckout(true)
+        buildDiscarder logRotator(
+            artifactDaysToKeepStr: '',
+            artifactNumToKeepStr: '',
+            daysToKeepStr: '5',
+            numToKeepStr: '3'
+        )
+    }
+    parameters {
+        string(
+          name: 'CUSTOMER_NAME',
+          defaultValue: '',
+          description: 'Vericast customer name as displayed in Vericast Admin site.'
+          )
+
+    }
+    stages {
+        stage('Clone repository') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+        stage('Script') {
+            steps {
+                sh '''
+                    cd scripts/generic/get_sigpool_list_for_vericast_customer
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install -q -U -r requirements.txt
+                    python3 main.py
+                '''
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'scripts/generic/get_sigpool_list_for_vericast_customer/**.json', fingerprint: true
+        }
+    }
+}
+

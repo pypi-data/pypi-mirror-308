@@ -1,0 +1,12 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+bazaar>=1.4,<2
+defusedxml>=0.7.1,<1
+python-dotenv==1.0.0
+reportal-model>=6.4.4,<7
+pytz==2023.3.post1
+pydantic<2.0.0
+pymongo[srv]
+tqdm
+slack-sdk

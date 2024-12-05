@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+    environment {
+        MONGO_URI = credentials("MONGO_URI")
+    }
+    options {
+        timestamps()
+        skipDefaultCheckout(true)
+        buildDiscarder logRotator(
+            artifactDaysToKeepStr: '',
+            artifactNumToKeepStr: '',
+            daysToKeepStr: '10',
+            numToKeepStr: '5'
+        )
+    }
+    parameters {
+        string(name: 'PERIOD_START_TIME', defaultValue: '2022-01-25 00:00:00', description: 'UTC start time of period to be analysed. Date format: YYYY-MM-DD HH:mm:ss')
+        string(name: 'PERIOD_END_TIME', defaultValue: '2022-01-25 00:00:00', description: 'UTC end time of period to be analysed. Date format: YYYY-MM-DD HH:mm:ss')
+    }
+    stages {
+        stage('Clone repo') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+        stage('Setup env') {
+            steps {
+                sh """
+                    cd scripts/yle/unapproved_after_reported
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    python3 -m pip install -U -q -r requirements.txt
+                """
+            }
+        }
+        stage('Run script') {
+            steps {
+                script {
+                    def buildNumber = env.BUILD_NUMBER
+                    def startTime = params.PERIOD_START_TIME
+                    def endTime = params.PERIOD_END_TIME
+                    sh """
+                        cd scripts/yle/unapproved_after_reported
+                        . venv/bin/activate
+                        mkdir -p output
+                        python3 unapproved_after_reported.py
+                        mv YLE_reported-but-unapproved_*_build-${buildNumber}.csv output
+                    """
+                }
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'scripts/yle/unapproved_after_reported/output/*.csv', allowEmptyArchive: false
+        }
+    }
+}

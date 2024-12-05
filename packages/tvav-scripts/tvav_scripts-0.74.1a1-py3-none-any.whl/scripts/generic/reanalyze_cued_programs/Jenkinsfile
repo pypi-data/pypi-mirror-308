@@ -1,0 +1,85 @@
+pipeline {
+  agent any
+  environment {
+    MONGODB__CREDS = credentials("TVAV_CUESHEETS_MONGO_CREDS")
+    KAFKA__SASL_PLAIN_USERNAME = credentials("KAFKA_SASL_PLAIN_USERNAME")
+    KAFKA__SASL_PLAIN_PASSWORD = credentials("KAFKA_SASL_PLAIN_PASSWORD")
+    CELERY__CREDS = credentials("CELERY_CREDS")
+    REANALYZE_SCRIPT_PATH = "scripts/generic/reanalyze_cued_programs"
+    REPROCESS_SCRIPT_PATH = "scripts/generic/reprocess_files"
+  }
+
+  options {
+    timestamps()
+    skipDefaultCheckout(true)
+    buildDiscarder logRotator(
+      artifactDaysToKeepStr: '',
+      artifactNumToKeepStr: '',
+      daysToKeepStr: '5',
+      numToKeepStr: '3'
+    )
+  }
+
+  parameters {
+    string(
+      name: 'CLIENT_MONGO_DB',
+      defaultValue: '',
+      description: 'Client MongoDB name'
+    )
+    text(
+      name: 'CUESHEET_URLS',
+      defaultValue: '',
+      description: 'A list of cuesheet urls to re-analyze. Please 1 url per line.'
+    )
+  }
+
+  stages {
+    stage('Clone repository') {
+      steps {
+        cleanWs()
+        checkout scm
+      }
+    }
+
+    stage('Remove results from previous analysis') {
+      steps {
+        sh '''
+          # we need to install the scripts package
+          python3.12 -m venv venv
+          . venv/bin/activate
+
+          # we install now the script requirements
+          cd "${REANALYZE_SCRIPT_PATH}"
+
+          # script expects a CSV file
+          echo "$CUESHEET_URLS" | tr ' ' '\n' > input.csv
+          pip install -q -r requirements.txt
+
+          python main.py
+        '''
+      }
+    }
+    stage('Reprocess files') {
+      steps {
+        sh '''
+          . venv/bin/activate
+
+          # copy the output file from previous step to the input of the next one
+          cp "${REANALYZE_SCRIPT_PATH}/files_to_reprocess.csv" "${REPROCESS_SCRIPT_PATH}/input.csv"
+
+          cd "${REPROCESS_SCRIPT_PATH}"
+
+          pip install -q -r requirements.txt
+
+          python main.py
+        '''
+      }
+    }
+  }
+  post {
+    always {
+      archiveArtifacts artifacts: 'scripts/generic/reanalyze_cued_programs/**.csv', allowEmptyArchive: false
+      archiveArtifacts artifacts: 'scripts/generic/reprocess_files/**.csv', allowEmptyArchive: false
+    }
+  }
+}

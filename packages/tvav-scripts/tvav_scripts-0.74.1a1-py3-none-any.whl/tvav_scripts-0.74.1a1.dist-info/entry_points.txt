@@ -1,0 +1,3 @@
+[console_scripts]
+create_docker_dev_env=scripts.meta.docker_dev_env.create_docker_dev_env:create_docker_dev_env
+

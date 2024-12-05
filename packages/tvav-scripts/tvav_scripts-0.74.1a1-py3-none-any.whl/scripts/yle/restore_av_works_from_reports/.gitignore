@@ -1,0 +1,6 @@
+.env
+*csv
+*.db
+*xml
+stats_reports/
+reports/
