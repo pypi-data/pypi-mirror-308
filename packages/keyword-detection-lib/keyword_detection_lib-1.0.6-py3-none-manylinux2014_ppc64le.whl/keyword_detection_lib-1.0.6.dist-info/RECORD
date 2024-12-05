@@ -1,0 +1,10 @@
+keyword_detection/__init__.py,sha256=zvrDNYa7PIxZxBIp05uQ6vHdUsUT-O27YK1YI4ERpdk,1654
+keyword_detection/keyword_detection.py,sha256=jLRZZ7Q0qdvQoCjfr_z7p5w7Hz3kk-jeKP9YmQH_GLI,95023
+keyword_detection/license_manager.py,sha256=15ca2xUWWWmTAB46htJgcX97AHwavUuK3IV55NthA5I,19649
+keyword_detection/encrypted/detection.wasm,sha256=laJqbB2KbSHBlRBIqQ8Db4GyAehOc3O7-AjSE3wo_cM,3219432
+keyword_detection/pyarmor_runtime_000000/__init__.py,sha256=9z-Z2B-bGM8CMfLXDDvtJmd3gDHAh9LLnKocB1ZVZmU,101
+keyword_detection/pyarmor_runtime_000000/pyarmor_runtime.so,sha256=08HQlyFlpEqoZH7x4IcWOsDAd5wfToV-9-uj8U7_bpo,1068656
+keyword_detection_lib-1.0.6.dist-info/METADATA,sha256=kOlkIqyuFkAjrzmknBASxXbOCd-BPkdlx4x9PP-F2PU,490
+keyword_detection_lib-1.0.6.dist-info/WHEEL,sha256=y_32hOVv17QVnqQHW395tMdMjUZmbxZeWGWSDfAtDhw,109
+keyword_detection_lib-1.0.6.dist-info/top_level.txt,sha256=iw3MW6X0KShS_lDAmQH7_SHYQEL1A2vwZO85XafG8_8,18
+keyword_detection_lib-1.0.6.dist-info/RECORD,,
