@@ -1,0 +1,9 @@
+setup.py
+modules/biudzetas.py
+modules/irasas.py
+modules/islaidu_irasas.py
+modules/pajamu_irasas.py
+saras_salary_module.egg-info/PKG-INFO
+saras_salary_module.egg-info/SOURCES.txt
+saras_salary_module.egg-info/dependency_links.txt
+saras_salary_module.egg-info/top_level.txt
