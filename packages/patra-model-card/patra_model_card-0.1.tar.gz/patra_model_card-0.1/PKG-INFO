@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: patra_model_card
+Version: 0.1
+Summary: Patra Model Card Toolkit
+Home-page: https://github.com/Data-to-Insight-Center/patra-toolkit.git
+Author: Data to Insight Center
+Author-email: d2i@iu.edu
+License: BSD-3-Clause
+License-File: LICENSE
