@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fitgirl
+Version: 0.1.0
+Summary: A small stack of functions that might help to scrap the most popular gaming website, fitgirl-repacks.
+Home-page: https://www.github.com/halfstackpgr/fitgirl
+Author: Parth Mishra
+Author-email: halfstackpgr@gmail.com
+Maintainer: Parth Mishra
+Maintainer-email: halfstackpgr@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: bs4
+
+To Be Written.
