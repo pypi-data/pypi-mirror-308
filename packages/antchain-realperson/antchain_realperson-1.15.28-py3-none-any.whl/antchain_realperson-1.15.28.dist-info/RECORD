@@ -1,0 +1,8 @@
+antchain_sdk_realperson/__init__.py,sha256=1kO7RZQYBY7IeItGdlhCOXv6ReY9Eng_23QO6aJzcgo,23
+antchain_sdk_realperson/client.py,sha256=kNdJ335PzS1CLiQnSenmfKsWQWezyXocqh67MK3Fe38,101645
+antchain_sdk_realperson/models.py,sha256=jcUdWmpBHHNRwc3OChcEJly_dt0G2Ts3wj6PEZ5OzZQ,210047
+antchain_realperson-1.15.28.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+antchain_realperson-1.15.28.dist-info/METADATA,sha256=eRYObqGJgZl-BLPPUfd4YS2A9UC4vpsuY4eTbXT2xuo,2031
+antchain_realperson-1.15.28.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+antchain_realperson-1.15.28.dist-info/top_level.txt,sha256=lAJ80Qil4TIY7RQAnTPOkdcnHQ7QrOPmJhUesvr20Og,24
+antchain_realperson-1.15.28.dist-info/RECORD,,
