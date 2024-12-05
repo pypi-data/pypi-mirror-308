@@ -1,0 +1,14 @@
+extra_platforms/__init__.py,sha256=thaUWhtvJ6BrDhHbnJxnUbvQfEyx9fKinP31MV4I8_8,8702
+extra_platforms/detection.py,sha256=eu2zNrdEncPfqD6KdqA9sxYcZwfcPi3QugwC5W30Mtg,9921
+extra_platforms/docs_update.py,sha256=AxTYY-q6ah6pdYO1IgtcAV9crWpUm4_i7fBXaeQDUi8,6161
+extra_platforms/group.py,sha256=C8pSpq4zictwhRyIsy68Mar69dlLjIiZxSzE7_-hqn8,11818
+extra_platforms/group_data.py,sha256=z52JZlnMFxld4WueZUpKofuTEmXu7vtroGWsG9oAuoM,7062
+extra_platforms/platform.py,sha256=FHV9Hme1lClN1hvY17GjCuhbgbcpry9jattH9Eg-d2c,7945
+extra_platforms/platform_data.py,sha256=PnT_AcFEpB9fvHyhHoh_rewPWYiv6GviXjpR6kyySyQ,3308
+extra_platforms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extra_platforms/pytest.py,sha256=T3eOmBUJ9FcC0VfNZCr5FBkKwQ9BQXL1ijd0tgMh4pU,1982
+extra_platforms-1.6.0.dist-info/METADATA,sha256=YTHOPuDHEN1y1kGJUa0_JCKHAXY0UeoRtX4ZtX-s-IU,31130
+extra_platforms-1.6.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+extra_platforms-1.6.0.dist-info/entry_points.txt,sha256=isBLN3Ql7i0xvHQnB1S36QVWepytJD7GvesLxzhPjCg,52
+extra_platforms-1.6.0.dist-info/top_level.txt,sha256=9182Fz_BFq0UF5vXtcQFkH1lQOeMK29bs3SH3e6tjJA,16
+extra_platforms-1.6.0.dist-info/RECORD,,
