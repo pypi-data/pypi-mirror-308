@@ -1,0 +1,17 @@
+aiohttp
+pandas
+python-keycloak
+requests
+
+[dev]
+pre-commit
+responses
+aioresponses
+pytest
+pytest-asyncio
+
+[doc]
+mkdocs-material
+mkdocstrings-python
+mkdocs-jupyter
+griffe<1.0

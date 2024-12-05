@@ -1,0 +1,36 @@
+[project]
+name = "aiondemand"
+version = "0.1.0b1"
+description = "Python SDK for the AIoD metadata catalogue"
+authors = [
+  { name = "Jean Matias", email = "smatias.jean@gmail.com" },
+  { name = "Pieter Gijsbers", email = "p.gijsbers@tue.nl" },
+]
+readme = "docs/README.md"
+
+requires-python = ">=3.10"
+
+dependencies = ["aiohttp", "pandas", "python-keycloak", "requests"]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "responses",
+    "aioresponses",
+    "pytest",
+    "pytest-asyncio",
+]
+doc = [
+    "mkdocs-material",
+    "mkdocstrings-python",
+    "mkdocs-jupyter",
+    "griffe<1.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0b1"
+version_files = ["pyproject.toml:version", "src/aiod/__version__.py"]
+
+[project.entry-points."mkdocs.plugins"]
+asset-type-replacer = "docs.tools.asset_type_replacer:AssetTypeReplacer"

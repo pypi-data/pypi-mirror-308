@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+asset-type-replacer = docs.tools.asset_type_replacer:AssetTypeReplacer
