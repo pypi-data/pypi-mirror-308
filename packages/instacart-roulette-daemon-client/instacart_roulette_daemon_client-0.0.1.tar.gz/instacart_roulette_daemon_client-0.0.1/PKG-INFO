@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: instacart-roulette-daemon-client
+Version: 0.0.1
+Summary: this is a client for the instacart-roulette-daemon
+Author: admin
+Author-email: pypi@instacart.com
+License: LGPL 3.0
