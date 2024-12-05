@@ -1,0 +1,12 @@
+osdp_sys.pypy39-pp73-win_amd64.pyd,sha256=nC4v0-2wnDIHOoAmqR9u_AjQU4R-8hMvbP5Ho2U_6PY,94720
+osdp/__init__.py,sha256=Z_WXFXNFcz_bIACI8PSueqFHiUsdftxSNGPsxeNJ4cY,690
+osdp/channel.py,sha256=BJhtx1N7M5f-YHYmiioDLABWp2Fe72tSb_1BzX-6EB4,810
+osdp/constants.py,sha256=1gIZzkdJ3p1nX7w3MRBLeZqFPH48AVNeklA_Uu8JJMk,3118
+osdp/control_panel.py,sha256=P86Q914nvkPUk-ilj9TPHvkBbU6Ux2lL574M6ZUotNg,6991
+osdp/helpers.py,sha256=3aAvu4UOcGbvykIZDMIh00ollnWuNqq2lpCIujU9Sqk,2581
+osdp/key_store.py,sha256=MFfNzkhPsVzS54MoxxUlpqGEvvvuVq4vtlN1w5o56k4,1946
+osdp/peripheral_device.py,sha256=jqqGGUuBN23OCiR_n9upVxaJh9yh9W7L1eodXoELTsk,3496
+libosdp-3.0.7.dist-info/METADATA,sha256=umAQLWcH7KAf2JMXVfshMyqJ3SB-Y0Fxq4JcMvuzTcU,3113
+libosdp-3.0.7.dist-info/WHEEL,sha256=pVx6r9EDB2GlFSADjZTSzaCc_kYF7TlP_SXYygy96BU,106
+libosdp-3.0.7.dist-info/top_level.txt,sha256=N-WLeQq6NGZMX7FpCcGVHnrUXx2gITbCyPAqenbnWGg,14
+libosdp-3.0.7.dist-info/RECORD,,
