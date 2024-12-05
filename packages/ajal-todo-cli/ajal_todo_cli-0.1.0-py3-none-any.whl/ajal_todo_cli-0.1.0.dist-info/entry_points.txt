@@ -1,0 +1,2 @@
+[console_scripts]
+ajal-todo = ajal_todo_cli:cli
