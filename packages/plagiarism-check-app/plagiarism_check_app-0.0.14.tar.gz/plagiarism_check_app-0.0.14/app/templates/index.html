@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Text Similarity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        label, input, button {
+            display: block;
+            margin: 5px 0;
+        }
+        textarea {
+
+            width: 100%;          /* Full width */
+            height: 60vh;         /* Two-thirds of the viewport height */
+            box-sizing: border-box; /* Ensures padding and border are included in width/height */
+            resize: none;         /* Optional: Prevents user from resizing */
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Similarity API</h1>
+
+    <div class="form-container">
+        <h2>Add Text</h2>
+        <form id="addTextForm">
+            <label for="textToAdd">Text:</label>
+            <textarea id="textToAdd" name="textToAdd" required></textarea>
+            <button type="submit">Add Text</button>
+        </form>
+        <div id="addTextResult"></div>
+    </div>
+
+    <div class="form-container">
+        <h2>Search Similar Texts by Distance</h2>
+        <form id="searchByDistanceForm">
+            <label for="searchIdDistance">ID:</label>
+            <input type="number" id="searchIdDistance" name="searchIdDistance" required>
+            <label for="thresholdDistance">Threshold:</label>
+            <input type="number" step="0.01" id="thresholdDistance" name="thresholdDistance" value="0.9" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchDistanceResult"></div>
+    </div>
+
+    <div class="form-container">
+        <h2>Search Similar Texts by Exact Words Match</h2>
+        <form id="searchByExactForm">
+            <label for="searchIdExact">ID:</label>
+            <input type="number" id="searchIdExact" name="searchIdExact" required>
+            <label for="thresholdExact">Threshold:</label>
+            <input type="number" step="0.01" id="thresholdExact" name="thresholdExact" value="0.9" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchExactResult"></div>
+    </div>
+
+    <script>
+        const apiBaseUrl = 'http://localhost:8000'; // Update this to match your FastAPI server address
+
+        // Function to handle adding text
+        document.getElementById('addTextForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const textToAdd = document.getElementById('textToAdd').value;
+
+            const response = await fetch(`${apiBaseUrl}/add_text/`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: textToAdd })
+            });
+            const result = await response.json();
+            document.getElementById('addTextResult').innerText = `Added text with ID: ${result.id}`;
+        });
+
+        // Function to handle search by distance
+        document.getElementById('searchByDistanceForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const id = document.getElementById('searchIdDistance').value;
+            const threshold = document.getElementById('thresholdDistance').value;
+
+            const response = await fetch(`${apiBaseUrl}/search_similar_texts_by_distance/`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: parseInt(id), threshold: parseFloat(threshold) })
+            });
+            const results = await response.json();
+            document.getElementById('searchDistanceResult').innerHTML = `<pre>${JSON.stringify(results, null, 2)}</pre>`;
+        });
+
+        // Function to handle search by exact words match
+        document.getElementById('searchByExactForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const id = document.getElementById('searchIdExact').value;
+            const threshold = document.getElementById('thresholdExact').value;
+
+            const response = await fetch(`${apiBaseUrl}/search_similar_texts_by_exact_words_match/`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: parseInt(id), threshold: parseFloat(threshold) })
+            });
+            const results = await response.json();
+            document.getElementById('searchExactResult').innerHTML = `<pre>${JSON.stringify(results, null, 2)}</pre>`;
+        });
+    </script>
+
+</body>
+</html>
