@@ -1,0 +1,60 @@
+include:
+   - project: nse/ci
+     file:
+        - /ci/lib/tox-docker.yml
+        - /ci/jobs/check-version.yml
+        - /ci/jobs/check-packaging.yml
+        - /ci/jobs/lint.yml
+        - /ci/jobs/docs.yml
+        - /ci/jobs/build-package.yml
+        - /ci/jobs/publish-package.yml
+        - /ci/jobs/publish-docs.yml
+        - /ci/jobs/tag.yml
+   - project: neuromath/ci
+     file:
+        - /ci/jobs/auto-release.yml
+        - /ci/jobs/check-merge-request-title.yml
+        - /ci/lib/pytest-template.yml
+        - /ci/jobs/py39.yml
+        - /ci/jobs/py310.yml
+        - /ci/jobs/py311.yml
+        - /ci/jobs/py312.yml
+        - /ci/jobs/min_versions.yml
+        - /ci/jobs/coverage.yml
+
+.tox-template:
+  # Using the same image as DVF
+  image: bbpgitlab.epfl.ch:5050/neuromath/ci/data-validation-framework:latest
+
+.pytest-template:
+  variables:
+    KUBERNETES_CPU_LIMIT: 4
+    KUBERNETES_CPU_REQUEST: 4
+    KUBERNETES_MEMORY_LIMIT: 4Gi
+    KUBERNETES_MEMORY_REQUEST: 4Gi
+
+lint:
+  variables:
+    KUBERNETES_CPU_LIMIT: 1
+    KUBERNETES_CPU_REQUEST: 1
+    KUBERNETES_MEMORY_LIMIT: 4Gi
+    KUBERNETES_MEMORY_REQUEST: 4Gi
+    PYLINT_NPROCS: 1
+
+auto-prepare-release:
+  variables:
+    VERSION_FILE: src/version.py
+
+trigger_synthdb:
+  stage: release
+  needs:
+    - job: tag
+      optional: true
+  variables:
+    USE_PRE_SYNTHESIS_WORKFLOW: "true"
+    SKIP_CHECK_VERSION: "true"
+  trigger:
+    project: neuromath/synthdb
+    strategy: depend
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_PIPELINE_SOURCE != "schedule"'
