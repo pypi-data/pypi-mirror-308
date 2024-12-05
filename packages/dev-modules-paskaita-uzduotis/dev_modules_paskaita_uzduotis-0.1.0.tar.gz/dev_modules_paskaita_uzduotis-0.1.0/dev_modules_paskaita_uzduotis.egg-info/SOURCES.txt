@@ -1,0 +1,8 @@
+README.md
+setup.py
+dev_modules_paskaita_uzduotis/__init__.py
+dev_modules_paskaita_uzduotis/operacijos.py
+dev_modules_paskaita_uzduotis.egg-info/PKG-INFO
+dev_modules_paskaita_uzduotis.egg-info/SOURCES.txt
+dev_modules_paskaita_uzduotis.egg-info/dependency_links.txt
+dev_modules_paskaita_uzduotis.egg-info/top_level.txt
