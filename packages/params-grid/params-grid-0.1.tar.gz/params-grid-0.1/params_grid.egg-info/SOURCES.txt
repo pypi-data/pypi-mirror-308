@@ -1,0 +1,8 @@
+README.md
+setup.py
+params_grid/__init__.py
+params_grid.egg-info/PKG-INFO
+params_grid.egg-info/SOURCES.txt
+params_grid.egg-info/dependency_links.txt
+params_grid.egg-info/not-zip-safe
+params_grid.egg-info/top_level.txt
