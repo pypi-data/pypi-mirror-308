@@ -1,0 +1,5 @@
+coverage<8,>=7.6
+
+[test]
+pytest
+Products.PythonScripts
