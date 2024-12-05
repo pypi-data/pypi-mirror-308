@@ -1,0 +1,12 @@
+osdp_sys.cpython-311-darwin.so,sha256=lwPn-9QGqRNKy_XXdcG6nRdmueVLF1GV6yGKZ3Q__tw,155392
+libosdp-3.0.7.dist-info/RECORD,,
+libosdp-3.0.7.dist-info/WHEEL,sha256=Fk1Lf8ok5hJZa5A6XkrIQRJs3QYnqbg5xUnr-HaqXCs,109
+libosdp-3.0.7.dist-info/top_level.txt,sha256=N-WLeQq6NGZMX7FpCcGVHnrUXx2gITbCyPAqenbnWGg,14
+libosdp-3.0.7.dist-info/METADATA,sha256=4KzVy4AWEqACurTjBs0VxZk3FGq8QtoRxQ2Tny8cm-g,3000
+osdp/peripheral_device.py,sha256=JKa-rfBgIx-CD2tkzibklv5NSx6X0GmOb4WWUEhpoRw,3381
+osdp/channel.py,sha256=HGpjaC-jFy0oh9hTu7-1Ykt_egISrDP0Wu2J8AVQwbo,781
+osdp/constants.py,sha256=YGnC4E_zkZQQnaQVwm_y9MJCPDMSeA6YgZ6Off4vFHI,3029
+osdp/control_panel.py,sha256=Xgz8yGK0Is-ZIkaBJm0uIhE9gTd2rRaku0RkKOOSXG4,6763
+osdp/__init__.py,sha256=2EYr39KQzsr610H16-Wz5rAKd5JCRIEyPnvbTkMQJxk,671
+osdp/helpers.py,sha256=fs1uJg7XcKvOL8f2ILhmrO_UnkgoF0tTsRyF35L7wAw,2499
+osdp/key_store.py,sha256=1ajwAUrYaydy5SR6FQJlcL1C-ZJJxhOSlxFWIaxTTf0,1878
