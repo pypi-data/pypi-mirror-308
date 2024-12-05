@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PlasiaCorrelationProfiler"
+version = "0.1.6"
+description = "Metaplasia Gene Correlation Profiler Tool"
+
+maintainers = [
+    { name = "Pravallika Govada", email = "pravallika2606g@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+license = { text = "BSD-2-Clause" } 
+dependencies = [
+    "pandas >=1.0.0",
+    "openpyxl>=3.0.0"
+]
+
+[tool.setuptools]
+include-package-data = true  # This is important
+
+[tool.setuptools.package-data]
+PlasiaCorrelationProfiler = ["data/Synthetic Benchmark Dataset GSE13898/Barretts.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/Normal.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/Normal_Barretts.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/Normal_StageI.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/Normal_StageII.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/Normal_StageIII.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/P_Normal_StageIII.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/StageI.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/StageII.csv",
+                             "data/Synthetic Benchmark Dataset GSE13898/StageIII.csv"]
