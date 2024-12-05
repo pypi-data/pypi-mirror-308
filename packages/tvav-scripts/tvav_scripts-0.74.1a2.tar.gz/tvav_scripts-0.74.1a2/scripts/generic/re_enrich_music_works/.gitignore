@@ -1,0 +1,7 @@
+reportal_urls.txt
+object_ids.txt
+to_reenrich/*
+.env*
+!.env.template
+*csv
+*txt

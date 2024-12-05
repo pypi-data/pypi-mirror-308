@@ -1,0 +1,11 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+celery==5.2.7
+pymongo==3.12.3
+importlib-metadata==4.13.0  # bugfix celery https://github.com/python/importlib_metadata/issues/411
+python-dotenv==1.0.0
+dnspython==2.3.0
+tqdm==4.65.0
+
+product>=2.0.3

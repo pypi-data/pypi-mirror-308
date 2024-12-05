@@ -1,0 +1,14 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+python-dotenv==1.0.0
+tqdm==4.65.0
+reportal-model>=6.10.0
+av-model>=2.1.6,<3.0.0
+pytz==2024.1
+pydantic==2.5.2
+pydantic-settings==2.1.0
+pytest==8.2.2
+mongoengine==0.28.2
+bson>=0.5.10
+pymongo>=4.8.0

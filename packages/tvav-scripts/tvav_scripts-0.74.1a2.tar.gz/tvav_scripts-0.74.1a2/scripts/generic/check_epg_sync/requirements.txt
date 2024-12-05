@@ -1,0 +1,6 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+product>=2.2.0,<3.0.0
+epg-processor>=3.220.0,<4
+pydantic
+python-dotenv

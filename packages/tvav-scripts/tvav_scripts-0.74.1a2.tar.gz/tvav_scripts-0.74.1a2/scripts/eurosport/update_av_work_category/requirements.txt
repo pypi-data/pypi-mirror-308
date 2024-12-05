@@ -1,0 +1,5 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+eurosport>=2.0.3,<3.0.0
+python-dotenv==0.20.0

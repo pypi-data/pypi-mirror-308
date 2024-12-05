@@ -1,0 +1,15 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+pymongo>=4.9.1,<4.10
+python-dotenv==1.0.1
+tqdm==4.66.2
+tvav-scripts>=0.67.1
+duckdb>=1.1.1,<1.2.0
+openpyxl
+python-dateutil
+pydantic>=2.9.2,<2.10
+pandas>=2.2.3,<2.3
+
+pyright
+ruff-lsp

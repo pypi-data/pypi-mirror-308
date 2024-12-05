@@ -1,0 +1,77 @@
+pipeline {
+  agent any
+  environment {
+    MONGODB_CREDS = credentials("TVAV_CUESHEETS_MONGO_CREDS")
+    EPG_SYNC_USERNAME = credentials("EPG_SYNC_USERNAME")
+    EPG_SYNC_PASSWORD = credentials("EPG_SYNC_PASSWORD")
+  }
+
+  options {
+    timestamps()
+    skipDefaultCheckout(true)
+    buildDiscarder logRotator(
+      artifactDaysToKeepStr: '',
+      artifactNumToKeepStr: '',
+      daysToKeepStr: '5',
+      numToKeepStr: '3'
+    )
+  }
+
+  parameters {
+    string(
+      name: 'MONGODB_NAME',
+      defaultValue: '',
+      description: 'MongoDB customer DB name. REQUIRED'
+    )
+    text(
+      name: 'SCHEDULE_LIST',
+      defaultValue: '',
+      description: 'A list of schedule URLs to re-fetch time_shift to. Please 1 program URL per line.'
+    )
+    string(
+      name: 'MIN_START_TIME',
+      defaultValue: '2024-10-01',
+      description: 'Min start time in UTC timezone. Date format: YYYY-MM-DD OR YYYY-MM-DD HH:mm:ss'
+    )
+    string(
+      name: 'MAX_START_TIME',
+      defaultValue: '2024-10-02',
+      description: 'Max start time in UTC timezone. Date format: YYYY-MM-DD OR YYYY-MM-DD HH:mm:ss'
+    )
+  }
+
+  stages {
+    stage('Clone repository') {
+      steps {
+        cleanWs()
+        checkout scm
+      }
+    }
+
+    stage('Script') {
+      steps {
+        sh '''
+          # we need to install the scripts package
+          python3 -m venv venv
+          . venv/bin/activate
+          pip install -q poetry==1.7.1
+          . venv/bin/activate
+          poetry install -q
+
+          # we install now the script requirements
+          cd scripts/generic/update_schedules_time_shift
+          # script expects a CSV file
+          echo $SCHEDULE_LIST | tr " " "\n" > input.csv
+          pip install -q -U -r requirements.txt
+
+          python3 main.py
+        '''
+      }
+    }
+  }
+  post {
+    always {
+      archiveArtifacts artifacts: 'scripts/generic/update_schedules_time_shift/**.csv', allowEmptyArchive: false
+    }
+  }
+}
