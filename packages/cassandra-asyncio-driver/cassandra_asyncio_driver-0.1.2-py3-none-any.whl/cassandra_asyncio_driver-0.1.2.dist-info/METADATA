@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cassandra-asyncio-driver
+Version: 0.1.2
+Summary: Wrapper for cassandra-driver that makes queries awaitable using asyncio
+Author-Email: Mark Parncutt <me@markparncutt.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: cassandra-driver==3.29.2
+Description-Content-Type: text/markdown
+
+# Cassandra AsyncIO Driver
+
+Wrapper for `cassandra-driver` that makes blocking calls awaitable using `asyncio`
