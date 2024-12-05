@@ -1,0 +1,6 @@
+turihub==2.18.0
+pytorch-lightning[extra]==2.1.1
+tensorboard==2.13.*
+mlflow==2.6.0
+wandb==0.18.5
+tensorflow==2.13.0
