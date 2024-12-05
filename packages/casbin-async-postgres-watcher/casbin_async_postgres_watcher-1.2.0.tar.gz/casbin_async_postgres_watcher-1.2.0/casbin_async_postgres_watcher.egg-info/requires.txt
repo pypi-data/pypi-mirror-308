@@ -1,0 +1,4 @@
+async-timeout==4.0.3
+asyncpg==0.29.0
+casbin==1.36.0
+simpleeval==0.9.13
