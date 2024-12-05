@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "isopod"
+version = "0.0.1a2"
+authors = [
+  { name="Matthew Clapp"},
+]
+description = "A middle layer for creating modular data processing pipelines and automating their parallel execution over various multiprocessing backends."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+license = {text = "BSD 3-Clause Clear License"}
+dependencies = [
+  "numpy",
+  "pandas",
+]
+
+
+[project.optional-dependencies]
+ray = ["ray"]
+pathos = ["pathos"]
