@@ -1,0 +1,7 @@
+main.py
+setup.py
+adandv.egg-info/PKG-INFO
+adandv.egg-info/SOURCES.txt
+adandv.egg-info/dependency_links.txt
+adandv.egg-info/requires.txt
+adandv.egg-info/top_level.txt
