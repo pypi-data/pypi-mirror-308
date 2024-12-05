@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: devworld_python_module
+Version: 0.1.0
+Summary: A simple math operations package
+Author: kalined
+Author-email: edgar.kalinovski@gmail.com
+Requires-Python: >=3.6

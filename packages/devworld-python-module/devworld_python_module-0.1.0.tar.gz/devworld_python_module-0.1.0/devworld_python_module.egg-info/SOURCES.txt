@@ -1,0 +1,8 @@
+README.md
+setup.py
+devworld_python_module/__init__.py
+devworld_python_module/operacijos.py
+devworld_python_module.egg-info/PKG-INFO
+devworld_python_module.egg-info/SOURCES.txt
+devworld_python_module.egg-info/dependency_links.txt
+devworld_python_module.egg-info/top_level.txt
