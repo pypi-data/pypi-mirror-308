@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+audiomatic/client.py
+audiomatic.egg-info/PKG-INFO
+audiomatic.egg-info/SOURCES.txt
+audiomatic.egg-info/dependency_links.txt
+audiomatic.egg-info/requires.txt
+audiomatic.egg-info/top_level.txt
