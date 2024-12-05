@@ -1,0 +1,13 @@
+hdw_tools/__init__.py,sha256=yQqnqxJiNRDkySPjw69PU65l5GpF0e3NShRjluePBpo,51
+hdw_tools/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdw_tools/core/base.py,sha256=I-OgrPzuR1Ccetp7AgFFYh6j27I2h0nmb6nNalzdI1k,1173
+hdw_tools/core/config.py,sha256=hGoAyZeewcIYSPnpgfKnubU20LoCHakP9jyfdIlE9Tg,115
+hdw_tools/core/models.py,sha256=UWx4X0Vzpzpb84Xn2kylBQDcrqX3g7zd2iOTRH7S16g,25774
+hdw_tools/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdw_tools/tools/crewai_linkedin.py,sha256=pVelWMFNm-E76SjEubDHPcgUZ6VYmtE5ikD05F83BoI,5763
+hdw_tools/tools/llama_linkedin.py,sha256=lBbheSnU-axDwNj6-PeekK35iEkSLj49lCrNbRYk3Uc,7931
+hdw_tools-0.0.2.dist-info/LICENSE,sha256=pRSJmJwyJZVkcrmIqLhsKnu0L9xFl7NTUgwp4mIvPHI,1082
+hdw_tools-0.0.2.dist-info/METADATA,sha256=kXZ4PZM9LGf_J9g1UXa5YtNUmBRa86Dnsqtl9rpDufQ,2478
+hdw_tools-0.0.2.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+hdw_tools-0.0.2.dist-info/top_level.txt,sha256=0DUsxJl8OpI93oy4N9BE7ZSCBzpdc9la8srziBNxhLc,10
+hdw_tools-0.0.2.dist-info/RECORD,,
