@@ -1,0 +1,11 @@
+aiolemmy-0.2.3.dist-info/METADATA,sha256=rcOPAmLHGxg0bzOE7SdGJRNQcjc4xfzMv2QEReRcjeg,629
+aiolemmy-0.2.3.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+aiolemmy-0.2.3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+aiolemmy-0.2.3.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aiolemmy/.gitignore,sha256=9iHLtD_a6XKwfLNu10aPpI21-LYbwQG8S04DJ8PJW0o,17
+aiolemmy/__init__.py,sha256=DGqMq0iSGTOAAG0jG9ZZTgGq_tO03y38S7jAlrzi6AI,121
+aiolemmy/_scm_version.py,sha256=zobUzQ8dmi7v_frbQtjAC1pacNJVbwA_3bMaeLotBMU,21
+aiolemmy/_scm_version.pyi,sha256=IVbzb6zeCFf6ypjINvEfiCzkgUd1MVbr1m2Aq_VgD7I,128
+aiolemmy/_version.py,sha256=GqO7xniMCKrBJsJTZmmbuZ0zhLgDNAC2CPadLWphhQY,197
+aiolemmy/lemmy.py,sha256=pN30Y_dMbKbUK-xuOrqr0zjnObvWARqooqdb0k2DpV8,26268
+aiolemmy-0.2.3.dist-info/RECORD,,
