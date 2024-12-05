@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ECOv002_CMR
+Version: 1.0.1
+Summary: Common Metadata Repository (CMR) Search for ECOSTRESS Collection 2
+Author-email: "Gregory H. Halverson" <gregory.h.halverson@jpl.nasa.gov>
+Project-URL: Homepage, https://github.com/ECOSTRESS-Collection-2/ECOv002_CMR
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colored-logging
+Requires-Dist: ECOv002-granules
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: rasters>=1.3.6
+Requires-Dist: requests
+Requires-Dist: sentinel-tiles
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# ECOv002-CMR
+Common Metadata Repository (CMR) Search for ECOSTRESS Collection 2
