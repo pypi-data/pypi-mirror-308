@@ -1,0 +1,5 @@
+pymongo==4.10.1
+langchain-cohere
+langchain-mistralai
+langchain-community
+agent-builder
