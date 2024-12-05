@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: rifex
+Version: 0.0.3
+Summary: A CLI tool for video frame interpolation using RIFE
+Author: dumgum82
+Author-email: dumgum42@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ffmpeg-python
+Requires-Dist: Pillow
+
+
+# RIFEX: A Simple CLI for Vulkan RIFE
+
+A lightweight command-line interface (CLI) for video frame interpolation using the [RIFE](https://github.com/hzwer/RIFE) Vulkan-powered frame interpolation technology.
+
+# Installation
+
+pip install rifex
+
+# Usage
+Run the tool with minimal configuration:
+
+rifex -i <input_video_path> -o <output_video_path> -f <interpolation_factor> -s <scale>
+
+# Example
+Interpolate a video to 4x the original frames with a scale factor of `0.5`:
+
+rifex -i input.mp4 -o output.mp4 -f 4 -s 0.5
+
+# Supported Options
+- `-i`, `--input`: Path to the input video file (required).
+- `-o`, `--output`: Path to save the output video. Defaults to `<Videos Directory>/<input_filename>_rifex.<extension>`.
+- `-f`, `--factor`: Interpolation factor (2x, 3x, or 4x). Defaults to 2.
+- `-s`, `--scale`: Scale factor for RIFE (0.25, 0.5, 1.0, 2.0, or 4.0). Defaults to 0.5.
+
+# Questions?
+This CLI is a simple wrapper for Vulkan-powered RIFE. For detailed documentation, usage instructions, or troubleshooting, refer to the [RIFE GitHub](https://github.com/hzwer/RIFE).
