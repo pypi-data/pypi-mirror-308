@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: dj-cache
+Version: 0.1
+Summary: A Django app that offers a db-backed eventually consistent cache.
+Author-email: Aalekh Patel <aalekh.gwpeck.7998@icloud.com>
+Project-URL: Homepage, https://github.com/aalekhpatel07/dj-cache
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: django>=3.2
+
+# dj-cache
+
+A database-backed eventually consistent Last-Write-Wins cache for Python functions inside a Django application.
+
+## Installation
+
+```sh
+pip install \
+    git+https://github.com/aalekhpatel07/dj-cache.git#subdirectory=dj-cache
+```
+
+## Usage
+
+Example: As a plain decorator on arbitrary functions.
+
+```python
+from dj_cache.decorators import cached
+
+
+@cached(ttl_seconds=10)
+def my_expensive_function():
+    ...
+
+# The expensive function is only called and waited on once.
+# Subsequent calls will be cached and in case the cached value 
+# is expired/stale, an update will be triggered in the background 
+# without blocking the function call, which will return the last stored value.
+# This ensures a Last-Write-Wins cache that is eventually consistent.
+
+# Note: Concurrent calls to update the cache while an update is underway are 
+#       ignored.
+
+```
+
+Example: Caching an expensive function used inside a Django view.
+
+
+```python
+# urls.py
+
+import time
+from django.urls import path
+from django.http import HttpResponse
+
+from dj_cache.decorators import cached
+
+
+@cached(ttl_seconds=60)
+def expensive_function():
+    time.sleep(5)
+    return 42
+
+
+def home(request):
+    value = expensive_function()
+    return HttpResponse(f"Expensive function returned: {value}")
+
+
+urlpatterns = [
+    path("/", home),
+]
+
+```
