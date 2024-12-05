@@ -1,0 +1,8 @@
+setup.py
+co_automation_lib.egg-info/PKG-INFO
+co_automation_lib.egg-info/SOURCES.txt
+co_automation_lib.egg-info/dependency_links.txt
+co_automation_lib.egg-info/requires.txt
+co_automation_lib.egg-info/top_level.txt
+src/create_co.py
+src/test.py
