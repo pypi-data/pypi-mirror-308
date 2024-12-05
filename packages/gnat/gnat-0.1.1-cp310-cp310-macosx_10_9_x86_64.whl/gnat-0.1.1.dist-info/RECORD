@@ -1,0 +1,6 @@
+gnat/__init__.py,sha256=KwvaQv-7GrG4zN6C2WQ8kjdRWFjz7dwx39FDAyhfGPw,40
+gnat/_gnat.cpython-310-darwin.so,sha256=hB3DLtAii9cCoigTHj_gR6R5yDBrdZzLVkwQlYyWy7g,201520
+gnat-0.1.1.dist-info/RECORD,,
+gnat-0.1.1.dist-info/WHEEL,sha256=bnnYJj0zio_Q9akAbyY_A8B9JQOlxJ53zHcxNBeNe9U,105
+gnat-0.1.1.dist-info/top_level.txt,sha256=XOu5_aEOyLNPXWyOwC7FBAFaz_m9Yz7Tsvbl1gbzlAI,5
+gnat-0.1.1.dist-info/METADATA,sha256=_FPn-lUPeIcWQ1N-9Ids1AdXIZTeQ_hWIRUtZTaXMDw,510
