@@ -1,0 +1,3 @@
+from scripts.meta.docker_dev_env.create_docker_dev_env import create_docker_dev_env
+
+create_docker_dev_env()

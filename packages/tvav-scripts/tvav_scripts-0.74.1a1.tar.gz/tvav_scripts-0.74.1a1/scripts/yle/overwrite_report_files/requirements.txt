@@ -1,0 +1,10 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+tvav-scripts>=0.55.6
+bazaar>=1.4,<2
+
+pymongo[srv]
+python-dotenv==1.0.0
+tqdm
+lxml>=5.3.0

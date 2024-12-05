@@ -1,0 +1,366 @@
+Metadata-Version: 2.1
+Name: tvav-scripts
+Version: 0.74.1a1
+Summary: Scripts package for TVAV
+Home-page: https://bitbucket.org/bmat-music/tvav-scripts/src/master
+Author: TVAV-team
+Author-email: tvav-sw@bmat.com
+Maintainer: TVAV-team
+Maintainer-email: tvav-sw@bmat.com
+Requires-Python: >=3.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://bitbucket.org/bmat-music/tvav-scripts/src/master
+Description-Content-Type: text/markdown
+
+[![Extrapypi version](https://img.shields.io/badge/tvav--scripts-0.74.0-informational)](https://extrapypi.tvav.bmat.com/dashboard/tvav-scripts/)
+
+[![Build Status](https://av-cicd.bmat.com/api/badges/bmat-music/tvav-scripts/status.svg)](https://av-cicd.bmat.com/bmat-music/tvav-scripts)
+
+![Python version](https://img.shields.io/badge/Python-3.9+-informational)
+
+![Autohooks](https://img.shields.io/badge/autohooks-False-red)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# TVAV-Scripts
+
+[TOC]
+
+## Content summary
+
+* Generic
+    * [moat](scripts/generic/moat): Run every Celery Task in reportal.
+    * [set_populate_true_if_populated](scripts/generic/set_populate_true_if_populated): sets schedules.populated=True if their av_works are
+    * [copy_backup](scripts/generic/copy_backup): copy documents selectively from origin to target MongoDB servers
+    * [regexp_finder](scripts/generic/regexp_finder): search for any regexp in a collection of files and write the results in "parsed_\[source_filename\]"
+    * [recalculate_aggregations](scripts/generic/recalculate_aggregations): Clean the reports and regenerate them based on different arguments
+    * [replace_music_work](scripts/generic/replace_music_work): Replace music_work on specific av_works
+    * [object_ids_to_reportal_urls](scripts/generic/object_ids_to_reportal_urls): Convert a file of ObjectIds into reportal urls.
+    * [reanalyse_celery_cued](scripts/generic/reanalyse_celery_cued): Script to reanalyze media files (cuenator v1)
+    * [delete_cues_with_missing_cue_id](scripts/generic/delete_cues_with_missing_cue_id): Delete cues with cue._id missing. Will generate a report of programs affected (URLs).
+    * [get_vericast_ingestion_timestamps](scripts/generic/get_vericast_ingestion_timestamps): Report Vericast ingestion timestamps for Cued multimedia
+    * [re_enrich_music_works](scripts/generic/re_enrich_music_works): Re enrich music works from a csv of music_work__single_view_ids
+    * [refactor_music_works](scripts/generic/refactor_music_works): Refactor music_works fields using 1 input CSV for old_value, new_value + MusicWork and AvWork report  
+    * [report_files_received_from_log](scripts/generic/report_files_received_from_log): Generate reports of received files, missing files and meta info from log.
+    * [check_epg_sync](scripts/generic/check_epg_sync): Create Epg Sync packages for missing programs.
+    * [fix_main_replica_original_schedule](scripts/generic/fix_main_replica_original_schedule): Set oldest schedule to be the
+      main_replica and point the av_work to it, for a date range.
+    * [generate_urls_for_main_replicas](scripts/generic/generate_urls_for_main_replicas): Generate CSV report with Schedule URLs for all main_replicas within a date range.
+
+* NRK
+    * [reports_cleanup_and_generate](scripts/nrk/reports_cleanup_and_generate): Clean the reports and regenerate them based on different arguments
+    * [create_unique_program_ids_for_all](tests/scripts/nrk/create_unique_program_ids_for_all): Create unique program_ids for every AvWork that lacks one
+    * [add_channel_codes_to_display_names](tests/scripts/nrk/add_channel_codes_to_display_names): Provide a list of channels by display name and correctly set the name for the report file
+
+* YLE
+    * [generate_reports](scripts/yle/generate_reports): Trigger report generation on YLE STG / PROD
+    * [qa_pre_reporting](scripts/yle/qa_pre_reporting): QA Report for YLE.
+    * [monitor_auto_approved_av_works](scripts/yle/monitor_auto_approved_av_works): Monitor auto approved AvWorks in DB and notify via Slack
+
+* Reportal v1
+    * [v1_re_enrich](scripts/reportal_v1/v1_re_enrich): re-enrich music work from provided single view id
+    * [v1_reimport_reindex](scripts/reportal_v1/v1_reimport_reindex): reimport matches and reset elasticsearch indexes
+
+*NOTE: Some scripts fail because of mongomock. When running them, make sure you don't install it.*
+
+## Contrib instructions
+
+This repository is meant to be used for store and share tvav scripts.
+
+Here we can add the new scripts we are using. We can create PR to upload them. With that we can make sure that they are
+validated (and also, they should be tested)
+
+### Way of work for scripts
+> **Before you begin**, run the `setup_new_script_files.sh` bash script to set the following structure
+> It will also create a new branch for you!!!
+
+To correctly run the script setup_new_script_files.sh you need to be in a docker environment, and run the scrip from there.
+
+Step 1: 
+Start docker environment
+```sh 
+make complete-build
+```
+
+Step 2:
+Enter the docker container 
+```sh 
+make sh
+```
+
+Step 3:
+Run the script
+```sh 
+./setup_new_script_files.sh
+```
+Once you execute the scrip, you will be prompt out with a few questions that will help you set up the proper structure.
+
+
+
+* Inside the scripts package, create a new package with the name of your script.
+* Inside the package, also create 2 requirements:
+    * Requirements list needed for the script.
+    * Requirements list needed for the test. **OPTIONAL - DO NOT ADD IF NO TEST IS NEEDED**
+* In your PR, the tests for that script will pass, but only for this script.
+* It will install only the dependencies for this script
+* **Before merging to master**
+    * Please add a brief description for it in the [Content summary](#content-summary) section.
+* **When merging to master**:
+    * Follow the commit workflow defined in [Commit flux workshop 2 - Gittags of the commits!](https://bmat-music.atlassian.net/wiki/spaces/TVAV/pages/3716808760)
+    * **TL;DR**: just use the right commit title on your git merge commit msg (*feature/bugfix/hotfix/fix/release/BREAKING CHANGE*)
+* **After merging to master**:
+    * The script will be release with the same version as the latest tag on the repo.    
+    * Feel free to run the script!
+    * **TODO** in the future, we will move drone to a separate node, and it will be in charge of running the scripts instead of running them from our locals
+
+### Way of work for jenkins tasks
+
+* TODO

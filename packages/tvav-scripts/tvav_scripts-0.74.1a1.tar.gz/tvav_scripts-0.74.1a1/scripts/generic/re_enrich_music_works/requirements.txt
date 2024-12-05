@@ -1,0 +1,21 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+music-report>=3.11.5
+
+# CHANGE IT WITH YOUR CLIENT PACKAGE
+# trecetv==2.2.0
+# es-reportal==0.9.1
+
+yle-reportal==8.18.1
+
+mongoengine
+pydantic-settings
+
+aiocache==0.12.0
+tqdm==4.64.1
+slack-sdk==3.23.0
+
+# pyyaml is broken with cython 3
+# https://github.com/yaml/pyyaml/issues/724
+pyyaml!=6.0.0,!=5.4.0,!=5.4.1

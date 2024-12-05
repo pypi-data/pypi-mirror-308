@@ -1,0 +1,12 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+tvav-scripts>=0.29.0,<1.0.0
+reportal-model>=6.4.1,<7.0.0
+
+dnspython==2.3.0
+python-dotenv==0.20.0
+tqdm==4.64.1
+slack-sdk==3.23.0
+requests>=2.20,<3.0.0
+pydantic>=1.10.0,<2.0.0

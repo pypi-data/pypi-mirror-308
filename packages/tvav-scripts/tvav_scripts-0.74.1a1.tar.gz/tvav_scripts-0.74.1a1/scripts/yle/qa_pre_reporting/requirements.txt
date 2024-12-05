@@ -1,0 +1,8 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+yle-reportal>=8.13.5,<9.0.0
+python-dotenv>=1.0.1,<1.1.0
+dnspython==2.3.0
+product>=2.0.3
+slack-sdk==3.23.0

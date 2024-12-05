@@ -1,0 +1,10 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+ipdb==0.13.13
+mongomock==4.1.2
+pytest==7.0.1
+pytest-cov==4.0.0
+pytest-xdist==3.0.2
+factory-boy==3.2.1
+reportal-model>=6.0.2

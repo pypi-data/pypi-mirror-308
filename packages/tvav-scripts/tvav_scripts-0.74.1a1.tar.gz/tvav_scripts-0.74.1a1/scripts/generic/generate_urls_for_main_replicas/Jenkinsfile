@@ -1,0 +1,55 @@
+pipeline {
+    agent any
+    environment {
+        MONGO_URI = credentials("MONGO_URI")
+        REPORTAL_DOMAIN_NAME = credentials("REPORTAL_DOMAIN_NAME")
+    }
+    options {
+        timestamps()
+        skipDefaultCheckout(true)
+        buildDiscarder logRotator(
+            artifactDaysToKeepStr: '',
+            artifactNumToKeepStr: '',
+            daysToKeepStr: '5',
+            numToKeepStr: '3'
+        )
+    }
+    parameters {
+        string(
+          name: 'START_DATE',
+          defaultValue: '2024-04-09 00:00:00',
+          description: 'Min start time in UTC timezone. Date format: YYYY-MM-DD HH:mm:ss'
+          )
+        string(
+          name: 'END_DATE',
+          defaultValue: '2024-04-10 00:00:00',
+          description: 'Max start time in UTC timezone. Date format: YYYY-MM-DD HH:mm:ss'
+          )
+
+    }
+    stages {
+        stage('Clone repository') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+        stage('Script') {
+            steps {
+                sh '''
+                    cd scripts/generic/generate_urls_for_main_replicas
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install -q -U -r requirements.txt
+                    python3 generate_urls_for_main_replicas.py
+                '''
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'scripts/generic/generate_urls_for_main_replicas/**.csv', fingerprint: true
+        }
+    }
+}
+
