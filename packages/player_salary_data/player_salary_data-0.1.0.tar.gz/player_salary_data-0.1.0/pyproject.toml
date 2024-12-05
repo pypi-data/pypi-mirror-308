@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "player_salary_data"
+version = "0.1.0"
+description = "Football player salary database and analysis tools"
+authors = ["Samran Ali <samali323@gmail.com>"]
+readme = "README.md"
+packages = [{include = "player_salary_data"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+pandas = "^2.2.3"
+openpyxl = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+repository = "https://github.com/samali323/football_player_salaries"
