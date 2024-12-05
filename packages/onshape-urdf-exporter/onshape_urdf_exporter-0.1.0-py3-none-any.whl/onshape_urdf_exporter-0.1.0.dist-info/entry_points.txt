@@ -1,0 +1,3 @@
+[console_scripts]
+onshape-urdf-exporter=onshape_urdf_exporter.__main__:main
+
