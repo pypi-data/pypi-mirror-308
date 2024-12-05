@@ -1,0 +1,2 @@
+[console_scripts]
+cloudbuild-validator = cloudbuild_validator:main.run
