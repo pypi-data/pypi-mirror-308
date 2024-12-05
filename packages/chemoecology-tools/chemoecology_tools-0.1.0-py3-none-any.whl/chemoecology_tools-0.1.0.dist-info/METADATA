@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: chemoecology-tools
+Version: 0.1.0
+Summary: Chemoecology Tools
+Home-page: https://github.com/wolfffff/chemoecology-tools
+License: MIT
+Author: Scott Wolf
+Author-email: swwolf@princeton.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: h5py (>=3.10.0)
+Requires-Dist: matplotlib (>=3.8.0)
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: openpyxl (>=3.1.2)
+Requires-Dist: pandas (>=2.0.0)
+Requires-Dist: pandas-stubs (>=2.2.3.241009,<3.0.0.0)
+Requires-Dist: pubchempy (>=1.0.4,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: scikit-learn (>=1.3.0)
+Requires-Dist: scipy (>=1.11.0)
+Requires-Dist: seaborn (>=0.13.0)
+Requires-Dist: tqdm (>=4.66.0)
+Requires-Dist: types-pyyaml (>=6.0.12.20240917,<7.0.0.0)
+Requires-Dist: types-seaborn (>=0.13.2.20241003,<0.14.0.0)
+Project-URL: Changelog, https://github.com/wolfffff/chemoecology-tools/releases
+Project-URL: Documentation, https://chemoecology-tools.readthedocs.io
+Project-URL: Repository, https://github.com/wolfffff/chemoecology-tools
+Description-Content-Type: text/markdown
+
+# Chemoecology Tools
+
+[![PyPI](https://img.shields.io/pypi/v/chemoecology-tools.svg)][pypi_]
+[![Status](https://img.shields.io/pypi/status/chemoecology-tools.svg)][status]
+[![Python Version](https://img.shields.io/pypi/pyversions/chemoecology-tools)][python version]
+[![License](https://img.shields.io/pypi/l/chemoecology-tools)][license]
+
+[![Read the documentation at https://chemoecology-tools.readthedocs.io/](https://img.shields.io/readthedocs/chemoecology-tools/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/wolfffff/chemoecology-tools/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/wolfffff/chemoecology-tools/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi_]: https://pypi.org/project/chemoecology-tools/
+[status]: https://pypi.org/project/chemoecology-tools/
+[python version]: https://pypi.org/project/chemoecology-tools
+[read the docs]: https://chemoecology-tools.readthedocs.io/
+[tests]: https://github.com/wolfffff/chemoecology-tools/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/wolfffff/chemoecology-tools
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## ✨ Features
+
+- Load and process GC-MS abundance data
+- Calculate chemical enrichment statistics
+- Perform multivariate analyses (NMDS, PCA)
+- Generate publication-ready visualizations
+- Integrate with PubChem for chemical metadata
+
+## Installation
+
+You can install _Chemoecology Tools_ via [pip](https://pip.pypa.io/) from [PyPI](https://pypi.org/project/chemoecology-tools/) or from source.
+
+```console
+$ pip install chemoecology-tools
+```
+
+```console
+$ pip install git+https://github.com/wolfffff/chemoecology-tools.git
+```
+
+## Documentation
+
+Full documentation is available at [Read the Docs](https://chemoecology-tools.readthedocs.io/).
+
+- See also the example notebook at [example notebook](https://github.com/wolfffff/chemoecology-tools/blob/main/docs/notebooks/example.ipynb).
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide](https://github.com/wolfffff/chemoecology-tools/blob/main/CONTRIBUTING.md).
+
+## License
+
+Distributed under the terms of the [MIT license](https://github.com/wolfffff/chemoecology-tools/blob/main/LICENSE),
+_Chemoecology Tools_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue](https://github.com/wolfffff/chemoecology-tools/issues) along with a detailed description.
+
+<!-- github-only -->
+
