@@ -1,0 +1,3 @@
+[console_scripts]
+aucurriculum=aucurriculum.core.scripts.cli:main
+
