@@ -1,0 +1,15 @@
+PyWindowsCMD/__init__.py,sha256=IePHyDk_pW-UQbVf_2aY563ExO6bfYo6uPJdiKqxmhk,143
+PyWindowsCMD/errors.py,sha256=gzVUQ53JN14XfGQICtVS7utf07I-XdarBxW9GxCbSto,880
+PyWindowsCMD/utilities.py,sha256=01znaRZjHMGB2rJFlDbcTSbZp30dDv3CroWfgfp3sDM,397
+PyWindowsCMD/netstat/__init__.py,sha256=tpHO1s8K57Wr3p4xQ7UQPhe3LgryQ711u4qfJOu2kbI,29699
+PyWindowsCMD/netstat/command.py,sha256=r8AZFVARVugdC1g_9c5rrNIT3BtlhyrLCCtyT3HGZNI,3936
+PyWindowsCMD/shutdown/__init__.py,sha256=e78WuLpPc_j8LW_yiLGe7KWFzZesVVJDaDg9wZ53uXk,2787
+PyWindowsCMD/shutdown/command.py,sha256=Uvvq8a4q2iMhDThiy4V6udVOE1KRLBdbDBWOx14PQTw,5326
+PyWindowsCMD/shutdown/parameters.py,sha256=mMBqwLyDHez6lepnTQRJeV0LETgrI0we2YrKJEaEkJw,3781
+PyWindowsCMD/taskkill/__init__.py,sha256=bXI51uBgMAvpI5VTGXIVLi5nEgOzn5gLp1c8g7D3ZF0,1462
+PyWindowsCMD/taskkill/command.py,sha256=4vCigtRgen7zOJJi-nFeNHMqJa2zlk9v9T3MVaqbGfY,2307
+PyWindowsCMD/taskkill/parameters.py,sha256=IEqcacwx0DHeNC0NyAW5CPTSYOZlf4Cjnz-oS16kbso,16580
+PyWindowsCMD-1.3.5.dist-info/METADATA,sha256=SKcv5KH_UDSYPFTmhdmC5Iz6BJETPL8HD4CgHOX-1hg,2957
+PyWindowsCMD-1.3.5.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+PyWindowsCMD-1.3.5.dist-info/top_level.txt,sha256=m3Uw79EXMMnuUtbes32Tl_idwHKrLj8hDzNQvw_oioU,13
+PyWindowsCMD-1.3.5.dist-info/RECORD,,
