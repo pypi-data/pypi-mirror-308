@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: eur-to-usd
+Version: 0.1.0
+Summary: simple converter eur to usd
+Author: Asasai001
+Requires-Python: >=3.6
+Requires-Dist: currencyconverter
+
