@@ -1,0 +1,12 @@
+pyresidfp-0.14.0.dist-info/RECORD,,
+pyresidfp-0.14.0.dist-info/METADATA,sha256=muXs_0TQASPnFACSQUOqFr_xaJY7lRjELbLJx480LCw,3156
+pyresidfp-0.14.0.dist-info/WHEEL,sha256=foFeyOfKhuffrsG72LxBcK4BVIYaZo8T-Z0_DaODMro,168
+pyresidfp-0.14.0.dist-info/licenses/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pyresidfp/_pyresidfp.pyi,sha256=CRMhtYfMamX7svehrGiMKbtINb3r2A401c3sGsuJQcw,8454
+pyresidfp/_pyresidfp.pypy39-pp73-aarch64-linux-gnu.so,sha256=dHcrXbomdCTPSCmQjN5WtGESwm1LhUnu1-NQgIdP-3c,331912
+pyresidfp/musical_scale.py,sha256=WB4iOCTNfB-kN9NY2snoTc_YATxM5HgRkZN_WT0p9Vs,4092
+pyresidfp/registers.py,sha256=oL7utC9RTfRdyaZ6stjd4ScadR0IMpyUarIaKezI9rw,2863
+pyresidfp/__init__.py,sha256=F6j_oeWOQVXxtuyR1Zycd_wp1UCvxJXGtMNQM-fwaUM,1436
+pyresidfp/sound_interface_device.py,sha256=EorD3KOH9dj_ohaULjAPfDtJs0w7cHr1Kq1VGsIO_tM,11360
+pyresidfp/_version.py,sha256=9XbM6DRatFmjNkeSNxF4a6enpQeo8nPyAy9RTPPwPpY,413
+pyresidfp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
