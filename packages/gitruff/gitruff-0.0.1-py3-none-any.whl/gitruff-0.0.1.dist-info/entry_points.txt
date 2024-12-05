@@ -1,0 +1,2 @@
+[console_scripts]
+gitruff = gitruff.main:main
