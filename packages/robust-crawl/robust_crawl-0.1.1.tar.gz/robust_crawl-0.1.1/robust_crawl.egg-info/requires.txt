@@ -1,0 +1,12 @@
+gevent
+playwright
+tenacity
+brotli
+numpy
+requests
+pyyaml
+bs4
+fake_useragent
+openai
+http[socks]
+requests[socks]
