@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/util_collection/__init__.py
+src/util_collection.egg-info/PKG-INFO
+src/util_collection.egg-info/SOURCES.txt
+src/util_collection.egg-info/dependency_links.txt
+src/util_collection.egg-info/top_level.txt
+src/util_collection/doc_util/__init__.py
+src/util_collection/doc_util/count_pages.py

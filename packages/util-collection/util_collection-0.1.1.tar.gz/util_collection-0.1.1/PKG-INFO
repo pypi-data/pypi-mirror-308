@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: util_collection
+Version: 0.1.1
+Summary: Some util function
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# UtilPackage
+
+Combination some useful function
+
+## Installation 
+
+pip install UtilPackage
