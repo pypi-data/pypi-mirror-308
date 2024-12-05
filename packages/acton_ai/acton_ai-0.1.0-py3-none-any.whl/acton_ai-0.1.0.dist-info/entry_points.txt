@@ -1,0 +1,5 @@
+[console_scripts]
+calibrate_robot=acton_ai.scripts.calibrate_robot:main
+teleop=acton_ai.scripts.teleop:main
+validate_robot=acton_ai.scripts.validate_robot:main
+
