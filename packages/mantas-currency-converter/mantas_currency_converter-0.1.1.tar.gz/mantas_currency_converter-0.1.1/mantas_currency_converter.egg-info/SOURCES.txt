@@ -1,0 +1,9 @@
+setup.py
+mantas_currency_converter/__init__.py
+mantas_currency_converter/converter.py
+mantas_currency_converter/main.py
+mantas_currency_converter.egg-info/PKG-INFO
+mantas_currency_converter.egg-info/SOURCES.txt
+mantas_currency_converter.egg-info/dependency_links.txt
+mantas_currency_converter.egg-info/requires.txt
+mantas_currency_converter.egg-info/top_level.txt

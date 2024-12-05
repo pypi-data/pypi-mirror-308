@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mantas_currency_converter
+Version: 0.1.1
+Author: Meskenaz
+Requires-Python: >=3.9
+Requires-Dist: CurrencyConverter==0.17.34
