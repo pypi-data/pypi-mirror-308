@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: GlobalOptimization-DNLA
+Version: 0.0.1
+Summary: A small package to solve global optimization problems in small dimensions.
+Author-email: Daniel Cortild <d.cortild@rug.nl>
+Project-URL: Homepage, https://github.com/DanielCortild/GlobalOptimization-DNLA
+Project-URL: Bug Tracker, https://github.com/DanielCortild/GlobalOptimization-DNLA/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Global Optimization Algorithm DNLA
+
+This is a preliminary readme file.
