@@ -1,0 +1,12 @@
+hdx/scraper/ophi/__init__.py,sha256=11ozJKiUsqDCZ3_mcAHhGYUyGK_Unl54djVSBBExFB4,59
+hdx/scraper/ophi/__main__.py,sha256=9xwxalun-qis9lfFBWY0bpk7F4pFKbzGvNCe0pADJDw,4287
+hdx/scraper/ophi/_version.py,sha256=uvI6QkGWfvOAIWgO9I5SeFxLYMhXH1hiOW-rDphO3OY,424
+hdx/scraper/ophi/dataset_generator.py,sha256=SAEUpgy4_Mvf4Bxy4P_euHH32mQcUVgHKqNgmf7bcKA,4973
+hdx/scraper/ophi/pipeline.py,sha256=s0zGNGaUVkX3QEkGB4ztJS9v37ZhXEse2GKteEjnVHc,6540
+hdx/scraper/ophi/config/hdx_dataset_static.yaml,sha256=SX_wYsRMSJ2FtTJt3e0faVhFu8oYZeaV0NJF2zEdDAU,1833
+hdx/scraper/ophi/config/project_configuration.yaml,sha256=XZAFKw-_Ny2p2pCr4gOK3keRPmmv9PtAgqdcDN7Ng-w,1300
+hdx_scraper_ophi-0.9.1.dev0.dist-info/METADATA,sha256=tnXuiybCn71_lp9Txj9c-cp353C5Y1z5z_UsMOxgOC8,2062
+hdx_scraper_ophi-0.9.1.dev0.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+hdx_scraper_ophi-0.9.1.dev0.dist-info/entry_points.txt,sha256=m43Y1GiHKN2AqgNkIIxWDbNUo6ZN4aci1AIyK51Bpg8,55
+hdx_scraper_ophi-0.9.1.dev0.dist-info/licenses/LICENSE,sha256=PmkCrMnsGa9Fysu-QRO6TI9WymHphRCaPJMkYib8nro,1099
+hdx_scraper_ophi-0.9.1.dev0.dist-info/RECORD,,

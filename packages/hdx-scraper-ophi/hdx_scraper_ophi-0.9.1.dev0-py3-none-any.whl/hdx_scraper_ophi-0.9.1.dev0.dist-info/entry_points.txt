@@ -1,0 +1,2 @@
+[console_scripts]
+run = hdx.scraper.ophi.__main__:main
