@@ -1,0 +1,78 @@
+Metadata-Version: 2.3
+Name: mkdown
+Version: 0.0.2
+Summary: Tools for (Python-)Markdown
+Project-URL: Documentation, https://phil65.github.io/mkdown/
+Project-URL: Source, https://github.com/phil65/mkdown
+Author-email: Philipp Temminghoff <philipptemminghoff@googlemail.com>
+License: MIT License
+        
+        Copyright (c) 2024, Philipp Temminghoff
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: markdown>=3.7
+Requires-Dist: pymdown-extensions>=10.12
+Description-Content-Type: text/markdown
+
+# mkdown
+
+[![PyPI License](https://img.shields.io/pypi/l/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Package status](https://img.shields.io/pypi/status/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Daily downloads](https://img.shields.io/pypi/dd/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Weekly downloads](https://img.shields.io/pypi/dw/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Monthly downloads](https://img.shields.io/pypi/dm/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Distribution format](https://img.shields.io/pypi/format/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Wheel availability](https://img.shields.io/pypi/wheel/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Python version](https://img.shields.io/pypi/pyversions/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Implementation](https://img.shields.io/pypi/implementation/mkdown.svg)](https://pypi.org/project/mkdown/)
+[![Releases](https://img.shields.io/github/downloads/phil65/mkdown/total.svg)](https://github.com/phil65/mkdown/releases)
+[![Github Contributors](https://img.shields.io/github/contributors/phil65/mkdown)](https://github.com/phil65/mkdown/graphs/contributors)
+[![Github Discussions](https://img.shields.io/github/discussions/phil65/mkdown)](https://github.com/phil65/mkdown/discussions)
+[![Github Forks](https://img.shields.io/github/forks/phil65/mkdown)](https://github.com/phil65/mkdown/forks)
+[![Github Issues](https://img.shields.io/github/issues/phil65/mkdown)](https://github.com/phil65/mkdown/issues)
+[![Github Issues](https://img.shields.io/github/issues-pr/phil65/mkdown)](https://github.com/phil65/mkdown/pulls)
+[![Github Watchers](https://img.shields.io/github/watchers/phil65/mkdown)](https://github.com/phil65/mkdown/watchers)
+[![Github Stars](https://img.shields.io/github/stars/phil65/mkdown)](https://github.com/phil65/mkdown/stars)
+[![Github Repository size](https://img.shields.io/github/repo-size/phil65/mkdown)](https://github.com/phil65/mkdown)
+[![Github last commit](https://img.shields.io/github/last-commit/phil65/mkdown)](https://github.com/phil65/mkdown/commits)
+[![Github release date](https://img.shields.io/github/release-date/phil65/mkdown)](https://github.com/phil65/mkdown/releases)
+[![Github language count](https://img.shields.io/github/languages/count/phil65/mkdown)](https://github.com/phil65/mkdown)
+[![Github commits this week](https://img.shields.io/github/commit-activity/w/phil65/mkdown)](https://github.com/phil65/mkdown)
+[![Github commits this month](https://img.shields.io/github/commit-activity/m/phil65/mkdown)](https://github.com/phil65/mkdown)
+[![Github commits this year](https://img.shields.io/github/commit-activity/y/phil65/mkdown)](https://github.com/phil65/mkdown)
+[![Package status](https://codecov.io/gh/phil65/mkdown/branch/main/graph/badge.svg)](https://codecov.io/gh/phil65/mkdown/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyUp](https://pyup.io/repos/github/phil65/mkdown/shield.svg)](https://pyup.io/repos/github/phil65/mkdown/)
+
+[Read the documentation!](https://phil65.github.io/mkdown/)
+
