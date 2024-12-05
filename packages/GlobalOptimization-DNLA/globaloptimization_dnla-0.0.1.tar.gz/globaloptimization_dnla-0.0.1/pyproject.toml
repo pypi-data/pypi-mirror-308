@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = ["*.sh*"]
+
+[project]
+name = "GlobalOptimization-DNLA"
+version = "0.0.1"
+authors = [
+  { name="Daniel Cortild", email="d.cortild@rug.nl" },
+]
+description = "A small package to solve global optimization problems in small dimensions."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DanielCortild/GlobalOptimization-DNLA"
+"Bug Tracker" = "https://github.com/DanielCortild/GlobalOptimization-DNLA/issues"
+
+[options]
+install_requires = [
+    'numpy',
+    'matplotlib',
+    'tqdm',
+    'multiprocess',
+    'dill',
+    'matplotlib'
+  ]
