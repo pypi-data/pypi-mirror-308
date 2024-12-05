@@ -1,0 +1,12 @@
+requests>=2
+
+[dev]
+black
+mock
+flask
+sphinx
+sphinx_pyproject
+sphinx_rtd_theme
+selenium
+beautifulsoup4
+Pygments
