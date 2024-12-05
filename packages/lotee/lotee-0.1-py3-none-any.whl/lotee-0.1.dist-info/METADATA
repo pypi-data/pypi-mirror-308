@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lotee
+Version: 0.1
+Summary: A package to fetch and save a Jupyter Notebook.
+Home-page: https://github.com/saffuanaanvrr/exam
+Author: Safuan P Anvar
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+
