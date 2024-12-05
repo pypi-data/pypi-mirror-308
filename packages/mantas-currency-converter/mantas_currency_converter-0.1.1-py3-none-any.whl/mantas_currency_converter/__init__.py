@@ -1,0 +1,1 @@
+from mantas_currency_converter.converter import convert_currency
