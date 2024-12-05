@@ -1,0 +1,8 @@
+setup.py
+lotee/__init__.py
+lotee/notebook_fetcher.py
+lotee.egg-info/PKG-INFO
+lotee.egg-info/SOURCES.txt
+lotee.egg-info/dependency_links.txt
+lotee.egg-info/requires.txt
+lotee.egg-info/top_level.txt
