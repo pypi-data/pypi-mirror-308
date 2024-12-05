@@ -1,0 +1,13 @@
+README.md
+setup.py
+fitgirl/__init__.py
+fitgirl/client.py
+fitgirl/py.typed
+fitgirl.egg-info/PKG-INFO
+fitgirl.egg-info/SOURCES.txt
+fitgirl.egg-info/dependency_links.txt
+fitgirl.egg-info/requires.txt
+fitgirl.egg-info/top_level.txt
+fitgirl/core/__init__.py
+fitgirl/core/abc.py
+fitgirl/core/parsers.py
