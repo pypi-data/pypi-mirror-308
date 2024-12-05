@@ -1,0 +1,14 @@
+bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bot/config.py,sha256=QPGz4kFFi0LiPWcySQHNkYKCs1grts_gv1xQC6lOd1M,141
+bot/data.json,sha256=SZEGgK8oy1fuge87y2NscZ1WmeDa4fft0mAdgQMx6LE,1265
+bot/data_handler.py,sha256=H4DDavWksa_Zh05o36p_-bDWEfdcWjsc6GDabdN2vRU,750
+bot/embeddings.py,sha256=zyQTzZHY9bGEDvtTYqWctPco86oKF4e1rXlu9RFDCb0,773
+bot/main.py,sha256=u0J-PNQBKPQL5WPn5Etq1GeTDf_TpybfjBVpAhOYbxI,2358
+bot/response_generator.py,sha256=4x2cF4FMG6PEsP5IiD7RXYf82obPsggZ7FMJGcrEt_Q,1027
+bot/semantic_search.py,sha256=VvZIHsmsi9pjj_p_5Uq0915EJisVKcas7UEDJpponeI,744
+bot/translator.py,sha256=2Ct9txcKHlrLxWKtM6CEpb2aug-gDO4h3diGI8ZwtK8,523
+cfcp-0.1.3.dist-info/METADATA,sha256=5_URGpBuzx3JZHM1IU5pheLWARFEzt36KBQ1SoZzmME,322
+cfcp-0.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cfcp-0.1.3.dist-info/entry_points.txt,sha256=Jlc8g82njOH6QSrupnU8sIr2yBJkqyi1Umiy6JviJW0,38
+cfcp-0.1.3.dist-info/top_level.txt,sha256=BfGEUPXgtCpne5POfPQ8gBzacfrzBulmV45hd8vheOI,4
+cfcp-0.1.3.dist-info/RECORD,,
