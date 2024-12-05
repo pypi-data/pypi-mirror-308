@@ -1,0 +1,13 @@
+classno/__init__.py,sha256=7H81wAlhGrqm2piXZ5VUl7v1frAw1ZsoVW2S7jZO9tc,166
+classno/_casting.py,sha256=1rEeVBF2C9yFFT3QnkSqY_sSWB-QxypbTBTaslFm-HA,1879
+classno/_fields.py,sha256=HXY__QOKLfh9y8F3yaVJZiO7ROuPOXPTIIgjsaO0A14,923
+classno/_getattrs.py,sha256=JZDHf91Thi_cjHqBIGpjoRBcHpBzR08xcUzZRVgsCic,217
+classno/_hooks.py,sha256=JONDBvC7Dbhogv-9dSVCDvbeFpWFPXMLbEn6TXHC_H4,3075
+classno/_setattrs.py,sha256=2b86Kx-x0NFXYjVi6mR8pIokx2WV-2N5XzaemqL1Mp0,1919
+classno/_validation.py,sha256=MkyB8n7wCOJl6xJ9AQWErVq6sdCmv-ALD8MpIKVf3YE,1920
+classno/constants.py,sha256=fgB46l0LAPNyJ_RIPr7PSAuSDcq4saKephBLvVXSJOM,702
+classno/core.py,sha256=mbbmLB8nGcuXWSb_CAOsGNUQMK9l2yQoml0yY978evQ,2887
+classno-0.0.5.dist-info/LICENSE,sha256=fMkr0DSA4VzwUwBonj5IzWHw13YbMw2SQAzkDTOiLQ4,1063
+classno-0.0.5.dist-info/METADATA,sha256=QPVmlqXjPXwgrwqbfto3SQU1OuhHI5l036U2zzXUYSc,5254
+classno-0.0.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+classno-0.0.5.dist-info/RECORD,,
