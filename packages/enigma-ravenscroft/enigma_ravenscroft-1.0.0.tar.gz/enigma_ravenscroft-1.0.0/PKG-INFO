@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: enigma_ravenscroft
+Version: 1.0.0
+Summary: Um jogo de aventura em linha de comando: O Enigma de Ravenscroft Manor
+Home-page: https://github.com/seuusuario/enigma_ravenscroft
+Author: Douglas Araújo
+Author-email: araujodgdev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: colorama

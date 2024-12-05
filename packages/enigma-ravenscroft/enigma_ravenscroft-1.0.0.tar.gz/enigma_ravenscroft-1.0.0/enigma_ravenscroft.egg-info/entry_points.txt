@@ -1,0 +1,2 @@
+[console_scripts]
+enigma = enigma_ravenscroft.main:main
