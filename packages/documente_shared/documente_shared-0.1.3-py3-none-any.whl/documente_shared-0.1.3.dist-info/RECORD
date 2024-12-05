@@ -1,0 +1,13 @@
+documente_shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/domain/base_enum.py,sha256=DojAfn-zQdtjtImeHUpBzE6TBTm07XrbMOdW3h8RVd8,1449
+documente_shared/domain/entities.py,sha256=0Flg2yWYdVM34hAwZmarn8CUKGZ9LchtC6Imeikbthk,3726
+documente_shared/domain/enums.py,sha256=LF-gY3EyucQSmGBxXNy8z4Cb4Ry672muPtz5Xt7e9oo,227
+documente_shared/domain/repositories.py,sha256=h_nArptP5Xh7Jrhden-Ii9rZQqzgLFHhuzj1p78LgmU,365
+documente_shared/infrastructure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/infrastructure/dynamo_repositories.py,sha256=RrJ3T1GsH5NNbaTqBwZ4_h34nWnoQ9mhcd5VDRiiv48,521
+documente_shared/infrastructure/dynamo_table.py,sha256=H4X_SlK3DzOAt4wPQ8u4wkURt00bsKr5mfeSQTTA1O8,2094
+documente_shared/infrastructure/s3_bucket.py,sha256=nJe6OCHhycPcl21gwazC_xxqVQ6y1cRS4T3LH14Hfjk,1180
+documente_shared-0.1.3.dist-info/METADATA,sha256=1sL4e7TIZ29d2o1EEKaOkMLGdWtNMnfKicSX09H5zh0,639
+documente_shared-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+documente_shared-0.1.3.dist-info/RECORD,,
