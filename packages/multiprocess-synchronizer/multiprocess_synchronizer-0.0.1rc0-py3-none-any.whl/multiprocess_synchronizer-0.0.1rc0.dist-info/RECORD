@@ -1,0 +1,9 @@
+synchronizer/__init__.py,sha256=qaxxio_pb-hDTrYt7wB-uzLkBS7-LdDJ3g8PfhVdlJU,51
+synchronizer/fs_synchronizer.py,sha256=EtogO4nYb0Sjd-COmTu0072URfd7wqgZE-AX4Zan8yI,1906
+synchronizer/package_info.py,sha256=m7ZtOBYpLcqBSyH-nYyK7N2_reqcLVxKWL7jPQBLA3E,861
+synchronizer/synchronizer.py,sha256=ZHl-X-1lmkGz9uQzMMbe-vVyxgcEHv3hrUg_7o1ZBD0,869
+multiprocess_synchronizer-0.0.1rc0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+multiprocess_synchronizer-0.0.1rc0.dist-info/METADATA,sha256=2sfxPyfkwxiem5jNxhsPfox6u-tMLfv8h7ZKbJ-uZ64,2120
+multiprocess_synchronizer-0.0.1rc0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+multiprocess_synchronizer-0.0.1rc0.dist-info/top_level.txt,sha256=ssEj_93IgPUF148tbwXLo47HdOSX2TUUk5a1O-qlQsM,13
+multiprocess_synchronizer-0.0.1rc0.dist-info/RECORD,,
