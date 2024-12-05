@@ -1,0 +1,11 @@
+datatalk/__init__.py,sha256=pkvuO7UUmAVawZpas1lRYOlqTJsvV5sBxQdEKwUejJk,377
+datatalk/__version__.py,sha256=Xsa3ayOMVkhUWm4t06YeyHE0apjpZefxLH4ylp0CDtU,22
+datatalk/analyzer.py,sha256=yZgsCzKMR7p57mPv3j-Uny9Uma3pXkK5OJvD1LvnoGs,79
+datatalk/core.py,sha256=mcu9oVzAik1hl7I0SW-KVgBLYTabIAwhqiSkgYjtkYA,1134
+datatalk/exporter.py,sha256=iAnCNnoGAJ3Eju6528nOkKMW4rXQRXp-jk2k9kAE1cA,77
+datatalk/extractor.py,sha256=6IG0QdF-hNDOP1j8H_GpNfO9U4xgzzTuCm0u2tNZ6LQ,62
+datatalk/plugin.py,sha256=vuuEpobUoZTx7A8hjCb3HEYVMiOqg6gYuLvl4SztLn0,457
+datatalk-0.2.5.dist-info/LICENSE,sha256=tJf0Pz8q_65AjEkm3872K1cl4jGil28vJO5Ko_LhUqc,1060
+datatalk-0.2.5.dist-info/METADATA,sha256=qiNWUun5Ev1qC0l1bR73LmkhjMfQj6xHIKueGlRsLg8,1740
+datatalk-0.2.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+datatalk-0.2.5.dist-info/RECORD,,
