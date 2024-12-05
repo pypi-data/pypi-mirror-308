@@ -1,0 +1,6 @@
+[paths]
+source_paths =
+	synthesis_workflow
+	*/site-packages/synthesis_workflow
+	*/synthesis_workflow/synthesis_workflow
+	*/synthesis-workflow/synthesis_workflow

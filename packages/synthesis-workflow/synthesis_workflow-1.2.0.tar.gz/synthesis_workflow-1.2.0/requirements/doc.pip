@@ -1,0 +1,7 @@
+docutils<0.21
+graphviz
+m2r2
+sphinx
+sphinx-argparse
+sphinx-autoapi
+sphinx-bluebrain-theme

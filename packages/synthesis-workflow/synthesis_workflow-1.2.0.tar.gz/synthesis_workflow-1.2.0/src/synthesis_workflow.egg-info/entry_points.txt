@@ -1,0 +1,3 @@
+[console_scripts]
+morph-validation = morphval.cli:main
+synthesis-workflow = synthesis_workflow.tasks.cli:main
