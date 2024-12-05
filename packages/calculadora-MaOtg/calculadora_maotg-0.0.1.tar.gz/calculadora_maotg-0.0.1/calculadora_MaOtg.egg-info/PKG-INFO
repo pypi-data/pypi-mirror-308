@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: calculadora_MaOtg
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/MaOtg/simple-package-template
+Author: Mateus O Mendes
+Author-email: ortega.mat@outlook.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# calculadora_MaOtg
+
+Description. 
+The package calculadora_MaOtg is used to:
+	Calcular:
+		- Soma
+		- SubtraÃ§Ã£o
+		- MultiplicaÃ§Ã£o
+		- DivisÃ£o
+		- PotÃªncia
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install calculadora_MaOtg
+```
+
+## Usage
+
+```python
+from calculadora_MaOtg import calcular as calc
+calc.soma(a, b)
+```
+
+## Author
+Mateus O Mendes
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

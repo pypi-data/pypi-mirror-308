@@ -1,0 +1,8 @@
+README.md
+setup.py
+calculadora_MaOtg/__init__.py
+calculadora_MaOtg/calcular.py
+calculadora_MaOtg.egg-info/PKG-INFO
+calculadora_MaOtg.egg-info/SOURCES.txt
+calculadora_MaOtg.egg-info/dependency_links.txt
+calculadora_MaOtg.egg-info/top_level.txt
