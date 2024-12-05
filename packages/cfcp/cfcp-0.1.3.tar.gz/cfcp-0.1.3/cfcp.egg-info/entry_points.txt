@@ -1,0 +1,2 @@
+[console_scripts]
+cfcp = bot.main:run

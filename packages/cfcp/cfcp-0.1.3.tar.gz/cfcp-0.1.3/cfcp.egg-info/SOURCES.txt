@@ -1,0 +1,16 @@
+setup.py
+bot/__init__.py
+bot/config.py
+bot/data.json
+bot/data_handler.py
+bot/embeddings.py
+bot/main.py
+bot/response_generator.py
+bot/semantic_search.py
+bot/translator.py
+cfcp.egg-info/PKG-INFO
+cfcp.egg-info/SOURCES.txt
+cfcp.egg-info/dependency_links.txt
+cfcp.egg-info/entry_points.txt
+cfcp.egg-info/requires.txt
+cfcp.egg-info/top_level.txt
