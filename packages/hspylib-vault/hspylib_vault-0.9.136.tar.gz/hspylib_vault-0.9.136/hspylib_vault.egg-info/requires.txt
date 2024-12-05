@@ -1,0 +1,7 @@
+hspylib
+hspylib-datasource
+hspylib-clitt
+cryptography>=43.0.3
+cryptocode>=0.1
+keyring>=25.5.0
+pyperclip>=1.9.0
