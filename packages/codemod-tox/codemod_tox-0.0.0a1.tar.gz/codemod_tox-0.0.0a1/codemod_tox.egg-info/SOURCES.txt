@@ -1,0 +1,5 @@
+setup.py
+codemod_tox.egg-info/PKG-INFO
+codemod_tox.egg-info/SOURCES.txt
+codemod_tox.egg-info/dependency_links.txt
+codemod_tox.egg-info/top_level.txt
