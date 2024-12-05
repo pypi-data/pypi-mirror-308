@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+firdawslab3/__init__.py
+firdawslab3/firdawslab3.py
+firdawslab3.egg-info/PKG-INFO
+firdawslab3.egg-info/SOURCES.txt
+firdawslab3.egg-info/dependency_links.txt
+firdawslab3.egg-info/requires.txt
+firdawslab3.egg-info/top_level.txt
