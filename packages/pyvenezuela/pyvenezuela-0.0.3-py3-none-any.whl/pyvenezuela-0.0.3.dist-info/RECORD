@@ -1,0 +1,16 @@
+pyvenezuela/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvenezuela/cache.py,sha256=_Cxg8zrBoter2_l2ptYgz81Is9ggqHCQS0nbkXQBgb8,966
+pyvenezuela/decorators.py,sha256=pqj1ijLk1b-_JiHePtDM3iN30LxV0lhrRCxcoOY_rcw,1573
+pyvenezuela/clients/__init__.py,sha256=LVYqiaSyqoBfL7bv1inwCXD6-yrW9HlqFbJLvaJAtKg,15
+pyvenezuela/clients/bcv.py,sha256=2uPgVc0PSJD2pcT_VV0NrFpiHIXNZPdX70njfpqy6EU,4170
+pyvenezuela/clients/cne.py,sha256=V6-J50oPMYuLNrjGWCI_yV01WfaDzhyRndTllgajkIk,1500
+pyvenezuela/schemas/__init__.py,sha256=j1JiAGSRvcFVj19jHNOZwM0CU6zvPd1TvGzq4ctyVss,15
+pyvenezuela/schemas/bcv.py,sha256=KWtWJAJWdFBAO_2WO7JPFmzwsv0GM8iT3cz3YJ0nZZA,1717
+pyvenezuela/schemas/cache.py,sha256=LJg_N7_qhVf24nsxkjCRtBm42wMfgWaarrlN-ZEAUJg,158
+pyvenezuela/schemas/cne.py,sha256=-3sQKLJp6pJ2rBfqZl1mXhe3cQRt6tpRchiDM9x7I8I,577
+pyvenezuela/schemas/persona.py,sha256=0GyOu38YA3jLb-zjl5iWBnZCdww83K7BNyCKq5FKCFk,76
+pyvenezuela-0.0.3.dist-info/LICENSE,sha256=1rVPPNvcXxOB9kZdQ9AE9SKDeNx7EeRd6YAAcT-C2XM,1086
+pyvenezuela-0.0.3.dist-info/METADATA,sha256=vsz9f8iIhgGsjGOGtYQXm8OtWBzNKcTqZv_UXqXSG5s,1708
+pyvenezuela-0.0.3.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+pyvenezuela-0.0.3.dist-info/top_level.txt,sha256=nwt0gug_plXmilVMf0JaEjMJC_g3VDnkOgjPTF9A-mk,12
+pyvenezuela-0.0.3.dist-info/RECORD,,
