@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: kalmanfilterByRuhail
+Version: 0.1.0
+Summary: A Python library for implementing Kalman and Extended Kalman Filters
+Home-page: https://github.com/ruhail-ali-khan/kalmanfilterByRuhail
+Author: Ruhail Ali Khan
+Author-email: ruhailalik@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# KalmanFilter
+
+A Python library for implementing Kalman Filters and Extended Kalman Filters.
+
+## Features
+- Kalman Filter for linear systems
+- Extended Kalman Filter for non-linear systems
+- Easy-to-use initialization and visualization tools
+
+## Installation
+```bash
+pip install kalmanfilterByRuhail
+```
+
+## Usage
+
+```bash
+from kalmanfilterByRuhail import KalmanFilter, ExtendedKalmanFilter, initialize_kalman, plot_results
+
+```
