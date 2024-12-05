@@ -1,0 +1,2 @@
+[console_scripts]
+rauthenticate = rescalehtc.scripts.rauthenticate:argmain
