@@ -1,0 +1,8 @@
+setup.py
+Marius_valiutu_konvertavimu_modulis/__init__.py
+Marius_valiutu_konvertavimu_modulis/konvertavimas.py
+Marius_valiutu_konvertavimu_modulis/main.py
+Marius_valiutu_konvertavimu_modulis.egg-info/PKG-INFO
+Marius_valiutu_konvertavimu_modulis.egg-info/SOURCES.txt
+Marius_valiutu_konvertavimu_modulis.egg-info/dependency_links.txt
+Marius_valiutu_konvertavimu_modulis.egg-info/top_level.txt
