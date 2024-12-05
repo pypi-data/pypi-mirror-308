@@ -1,0 +1,10 @@
+flowde/__init__.py,sha256=a5XHqlaoEWaQaktpOf3J9tGJW2g5uSDjpRL-Hf3xD18,51
+flowde/__main__.py,sha256=maQzkzU0g23DlzGopSTJMke5Am5IZ2PcAWhJ0DrfcYE,69
+flowde/cli.py,sha256=z-LzkXgx9Yjyd5veB5_9q8VR37MxpM6LqyteKx5xfQc,1253
+flowde/func.py,sha256=7_-z2BzXIlZfGIl_3lG6JvcIJOO-3yoNpigx7Wx3J18,2811
+flowde-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flowde-0.0.6.dist-info/METADATA,sha256=TWNOkRfMHdD9xxaUJTBeKo_zzZ1ERDpCefnpXg5fpH8,2051
+flowde-0.0.6.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+flowde-0.0.6.dist-info/entry_points.txt,sha256=DAz5A1lFeMB0Bm6_CFXu3oTK_TQ1ktfGI2XRrAK1FJ0,43
+flowde-0.0.6.dist-info/top_level.txt,sha256=QjMyxrTnLTTGW0lNIgy0e1qUGA5bXMoJwHdqMd3oDaI,7
+flowde-0.0.6.dist-info/RECORD,,
