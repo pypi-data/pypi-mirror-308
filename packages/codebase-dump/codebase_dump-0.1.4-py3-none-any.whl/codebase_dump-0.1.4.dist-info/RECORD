@@ -1,0 +1,12 @@
+codebase_dump/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codebase_dump/main.py,sha256=fQH67Hz1gtE9t2ILCdc8jx_JIHiZA26D_8sj1SLFsdg,3271
+codebase_dump/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codebase_dump/core/codebase_analysis.py,sha256=hlM8hi_91IpTCKaevxhSGHsmfBRzRQMW31tYzVw9JAE,3242
+codebase_dump/core/ignore_patterns_manager.py,sha256=uwH0S03bcDa3ID6XknaX-9JHEj_2NDFY1-zWP8nrt5Y,3144
+codebase_dump/core/models.py,sha256=mbneBdDm0devotZNEyR14rCFOr7qg0wZTfvuLbW__Ks,3617
+codebase_dump/core/output_formatter.py,sha256=3TIv49YFOtL3_swu5Ur8CYnlGGlkHeuBwHKjLjX3OEc,4335
+codebase_dump-0.1.4.dist-info/METADATA,sha256=zCDawFzTjyQ3rKxrWvcIyvkNLUzRi5yPhpDwG7cPmqs,394
+codebase_dump-0.1.4.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+codebase_dump-0.1.4.dist-info/entry_points.txt,sha256=Xb_R8b7EFPhqA172tHwr597bVTwRid9UW6dOT9l2cgg,58
+codebase_dump-0.1.4.dist-info/top_level.txt,sha256=ewHTOld-CicqAbzAlaJatNoNQoCKQBuCF4fuelwdaWs,14
+codebase_dump-0.1.4.dist-info/RECORD,,
