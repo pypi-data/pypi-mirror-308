@@ -1,0 +1,3 @@
+include kafman/.version
+include kafman/welcome.txt
+recursive-include kafman/resources *
