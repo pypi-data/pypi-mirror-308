@@ -1,0 +1,6 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+
+python-dotenv==0.20.0
+reportal-model>=6.7.1,<7

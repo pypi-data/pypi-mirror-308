@@ -1,0 +1,10 @@
+--trusted-host extrapypi.tvav.bmat.com
+--extra-index-url https://installer:installer@extrapypi.tvav.bmat.com/simple/
+
+python-dotenv==1.0.0
+flatdict==4.0.1
+dnspython==2.3.0
+tqdm==4.65.0
+
+reportal-model>=6.0.15,<7.0.0
+av-model==2.1.1  # Issue with mongoengine

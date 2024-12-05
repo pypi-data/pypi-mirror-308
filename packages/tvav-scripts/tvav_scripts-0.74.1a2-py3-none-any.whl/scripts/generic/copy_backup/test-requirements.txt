@@ -1,0 +1,13 @@
+ipdb==0.13.13
+mongomock==4.1.2
+pytest==7.0.1
+pytest-cov==4.0.0
+pytest-xdist==3.0.2
+factory-boy==3.2.1
+
+# script packages
+python-dotenv==0.20.0
+pymongo==4.1.1
+pymongo[srv]
+dnspython==2.2.1
+tqdm==4.64.1
