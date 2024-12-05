@@ -1,0 +1,2 @@
+[console_scripts]
+rifex = cli.main:main
