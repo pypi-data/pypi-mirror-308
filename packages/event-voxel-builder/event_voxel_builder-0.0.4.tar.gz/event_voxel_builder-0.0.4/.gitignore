@@ -1,0 +1,6 @@
+__pycache__
+Cargo.lock
+/target
+/release
+/cargo_home
+/*.tar.gz

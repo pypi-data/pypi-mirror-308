@@ -1,0 +1,36 @@
+[package]
+name = "event-voxel-builder"
+build = "src/build.rs"
+version = "0.0.4"
+edition = "2021"
+authors = ["Bohan Yu"]
+description = "Fast event voxel builder"
+homepage = "https://codeberg.org/ybh1998/EventVoxelBuilder/"
+documentation = "https://ybh1998.codeberg.page/EventVoxelBuilder/"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+
+[profile.release]
+lto = "thin"
+panic = "abort"
+# strip = "symbols"
+
+[lib]
+name = "event_voxel_builder"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rayon = "1"
+numpy = "0.22"
+tracing = "0.1"
+fastrand = "2"
+itertools = "0.13"
+num-traits = "0.2"
+shadow-rs = "0.35"
+anyhow = { version = "1", features = ["backtrace"] }
+ndarray = { version = "0.16", features = ["rayon"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+pyo3 = { version = "0.22", features = ["extension-module", "abi3-py37", "anyhow"] }
+
+[build-dependencies]
+shadow-rs = "0.35"

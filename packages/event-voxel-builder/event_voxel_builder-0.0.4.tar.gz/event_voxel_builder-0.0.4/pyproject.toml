@@ -1,0 +1,31 @@
+[build-system]
+requires = ["maturin>=1,<2"]
+build-backend = "maturin"
+
+[tool.maturin]
+python-source = "python"
+include = ["LICENSE", "README.md"]
+
+[project]
+name = "event_voxel_builder"
+description = "Fast event voxel builder"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+  {email = "ybh1998@protonmail.com"},
+  {name = "Bohan Yu"}
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Rust",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+]
+dependencies = [
+  "numpy",
+]
+
+[project.urls]
+homepage = "https://codeberg.org/ybh1998/EventVoxelBuilder/"
+documentation = "https://ybh1998.codeberg.page/EventVoxelBuilder/"

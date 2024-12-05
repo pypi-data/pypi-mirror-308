@@ -1,0 +1,5 @@
+* text eol=lf
+examples/event.xz filter=lfs diff=lfs merge=lfs -text
+examples/T-X.png filter=lfs diff=lfs merge=lfs -text
+examples/T-Y.png filter=lfs diff=lfs merge=lfs -text
+examples/X-Y.png filter=lfs diff=lfs merge=lfs -text
