@@ -1,0 +1,13 @@
+even_glasses/__init__.py,sha256=4bDj5b4eqQfYn4a75Yxfg0l46hqTBNPFHn5j3FVVPTQ,327
+even_glasses/bluetooth_manager.py,sha256=QYCQudR66leVskk6NGCGCt1j-r-YyN9p5AL5NKP7I50,10118
+even_glasses/command_logger.py,sha256=oT85dG6tDzCR4ykIoTcUL9OuJzsp5lqnp61ECVOoQz8,8975
+even_glasses/commands.py,sha256=i-9ErEhEvPVFKtMlBQjFORkbfPzm431Aql4m_bD0qvA,6586
+even_glasses/models.py,sha256=V4valEWKMntsmsXY1Cgy3BlvFeuUH0zc5bTab9OhfHo,4487
+even_glasses/notification_handlers.py,sha256=COJj9BlBYgOLidhPKD1oQ8s13VmwwvZycBq3ayBTPBQ,8086
+even_glasses/service_identifiers.py,sha256=N7V5sdQ_QVzfjcElgkEpwhFIR-OPIBtSrUOWxza18FM,236
+even_glasses/utils.py,sha256=SD5YaV3ts1AUWsVpIQ12X-4OhuapUQNHAgFzl8_ypZ4,620
+even_glasses-0.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+even_glasses-0.1.8.dist-info/METADATA,sha256=1xMiNiVBMjv0lE1aszoEZ9kT_5qgBzHLP2-YUQFHGPo,1566
+even_glasses-0.1.8.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+even_glasses-0.1.8.dist-info/top_level.txt,sha256=FIg_wdoVRcTU80_b3s6Eci6Zp6i1K_EiBnL1CofLirY,13
+even_glasses-0.1.8.dist-info/RECORD,,
