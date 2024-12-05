@@ -1,0 +1,2 @@
+[console_scripts]
+featherpy = featherpy.cli:main

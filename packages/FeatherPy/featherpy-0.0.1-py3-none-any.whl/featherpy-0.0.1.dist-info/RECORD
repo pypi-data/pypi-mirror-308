@@ -1,0 +1,15 @@
+featherpy/__init__.py,sha256=-T4G5fms6UR-zN_Imyt8b6ZxCpxpFd2yxsYRCif7O50,220
+featherpy/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+featherpy/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+featherpy/cli.py,sha256=fTCidtdIVE3AIwv4zKcX9DY8lzo5-CIzNpK17gw5RKU,2742
+featherpy/core.py,sha256=-tDlApY0oCAQEBjtS7E7aRxrYqzw2o6BPA2-ZzWasbI,17820
+featherpy/exceptions.py,sha256=pg97kfjXuJCjEzAxdRUxVkaeMnbw6dipr7Zn9Pe2WHM,261
+featherpy/logging.py,sha256=BFd35wBDvxr3bD-6Sme326ibrdCRabt6g9kZiRq5KW8,436
+featherpy/plotting.py,sha256=KzpVfo4QngyII5v9ISjTyjsPaoR7xxbT7HnolvLMMrw,4219
+featherpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+featherpy/weighting.py,sha256=Ilr7rwOFIgQVdmKn85TPQKqsY3Mj-jq3NYIVzlVTXLg,645
+featherpy-0.0.1.dist-info/METADATA,sha256=VGCMrmZ_HahkvSu8yD4FJTtKLaQ-shIr5L25ACGqDeU,6435
+featherpy-0.0.1.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+featherpy-0.0.1.dist-info/entry_points.txt,sha256=M5cwN8qv9gdvhL6GVGDIAtk9EtPWqA2PvMkSsCuOZgA,49
+featherpy-0.0.1.dist-info/licenses/LICENSE,sha256=2np7F_nRzc0lsTWfx6khVsWWtl-pulxmPmGNNr6A_q0,1522
+featherpy-0.0.1.dist-info/RECORD,,
