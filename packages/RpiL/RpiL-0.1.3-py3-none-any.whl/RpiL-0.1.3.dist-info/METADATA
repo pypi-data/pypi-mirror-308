@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: RpiL
+Version: 0.1.3
+Summary: Library for controlling Raspberry Pi hardware. CAN ONLY BE INSTALLED ON RASPBERRY PI (due to dependancies).
+Author: Zevi Berlin
+Author-email: zeviberlin@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: RPi.GPIO
+Requires-Dist: Adafruit-DHT
+
