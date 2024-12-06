@@ -1,0 +1,6 @@
+Click
+requests
+
+[dev]
+pytest
+pytest-mock
