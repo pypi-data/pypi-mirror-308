@@ -1,0 +1,12 @@
+atlas_rucio_policy_package/__init__.py,sha256=GNy-T3tFtDbY31thjEmubO5svxaDSxsjgFZefu_vWlY,944
+atlas_rucio_policy_package/archive_tape_metadata.py,sha256=dKgRf9QCN3fraiyYk1n_SPYLe1JkfcahqqQxbnpW58o,3375
+atlas_rucio_policy_package/non_deterministic_pfn.py,sha256=x8IsVbTUbYCWRpW5gTNs7_bxfIQH3RTJgfIex9Xt8c8,3084
+atlas_rucio_policy_package/permission.py,sha256=PQgj4oYPIi5v77Ih8jszuVDbf0rzreS8N-t1lvwBE_o,55734
+atlas_rucio_policy_package/pfn2lfn.py,sha256=FTfhYq30RgEbzhwz_piP5jSGZBYrIBKhJEB3qm_yGN8,1260
+atlas_rucio_policy_package/schema.py,sha256=YRbg79iCdMZF5eUwWRaS8PjZrUwhVw8pbrf-OXLc1ck,15589
+atlas_rucio_policy_package/scope.py,sha256=fzoiEnoDW_3yXupeayQ3uIjgZavjDb53mRioOUcGmA0,1388
+atlas_rucio_policy_package-0.3.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+atlas_rucio_policy_package-0.3.0.dist-info/METADATA,sha256=sOhdAYrEPKhGH8Y7-O1NjdqwzDeYX1UTOYOuvlQInJ8,13464
+atlas_rucio_policy_package-0.3.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+atlas_rucio_policy_package-0.3.0.dist-info/top_level.txt,sha256=MZTLTUyUWEUioBNmx4CfuiIsTW3rHwq0ftTlzrba9c0,27
+atlas_rucio_policy_package-0.3.0.dist-info/RECORD,,
