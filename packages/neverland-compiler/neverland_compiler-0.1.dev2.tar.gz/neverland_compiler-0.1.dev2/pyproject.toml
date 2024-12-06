@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.0.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neverland-compiler"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "umaru", email = "529280602@qq.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "Cython==3.0.11"
+]
+
+[project.optional-dependencies]
+dev = ["twine==5.1.1", "pre-commit==4.0.1", "pytest==8.3.3","copier==9.4.1"]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+
+[project.scripts]
+"neverland-compiler" = "neverland_compiler.compile:main"
+

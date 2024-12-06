@@ -1,0 +1,16 @@
+.copier-answers.yml
+.gitignore
+LICENSE
+MANIFEST.in
+Makefile
+pre-commit-config.toml
+pyproject.toml
+pytest.ini
+neverland_compiler/__init__.py
+neverland_compiler/compile.py
+neverland_compiler.egg-info/PKG-INFO
+neverland_compiler.egg-info/SOURCES.txt
+neverland_compiler.egg-info/dependency_links.txt
+neverland_compiler.egg-info/entry_points.txt
+neverland_compiler.egg-info/requires.txt
+neverland_compiler.egg-info/top_level.txt
