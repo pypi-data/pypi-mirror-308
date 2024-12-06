@@ -1,0 +1,14 @@
+pyScienceMode/__init__.py,sha256=BtYx-Mil9JSsRrGkJHprUDfDoCiRcKvDNv7WUsumjys,327
+pyScienceMode/acks.py,sha256=sX3zP4lqK8K4KnoZtgCgmrRjzaOn3uSqVmlb0LPSPac,10740
+pyScienceMode/channel.py,sha256=hjeoSEL2GSBvimC8TIUDKsK9Yvm7vEyI1CiOFh8iVNk,18682
+pyScienceMode/enums.py,sha256=khSGR2IiVnxVnm1RwRC6tjSrbmANNFx8nALHt34kVPE,5059
+pyScienceMode/motomed_interface.py,sha256=PIMA-ZW9XCrQtJhPTOX48AyYJS0mocfsewvXMkl1HYw,17498
+pyScienceMode/rehastim2_interface.py,sha256=86RJx5S1aEh9q3XBysBBwge4OXpIbLpxoTOqVwYDlCU,14231
+pyScienceMode/rehastimP24_interface.py,sha256=YvEB4HIgLtjtJZFS4_qwt8Sj2fEIU80SK1Oc4dT9P38,25283
+pyScienceMode/sciencemode.py,sha256=MxrHAeDxcLvvWitBTCvWMzABPhK_eep9SSYcTRHquvc,29788
+pyScienceMode/utils.py,sha256=CGtu87ErdOQ8dntf-U40393pOJuDbUBoNkZhry40K6Y,8180
+pyScienceMode-1.1.dist-info/LICENSE,sha256=N3csH0IBbVHFm_3YVT2mxjPCGOfmYY6BnZJK_wR1TXs,1084
+pyScienceMode-1.1.dist-info/METADATA,sha256=mFcriIt5PFj71Y8OypQ-fO-nw5qVoxyIpJGXjyfcPlM,2285
+pyScienceMode-1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pyScienceMode-1.1.dist-info/top_level.txt,sha256=cEaVpBm1Hc3AGmQYnYEK9r_M5e6Swg4xzw9IEz0Eplc,14
+pyScienceMode-1.1.dist-info/RECORD,,
