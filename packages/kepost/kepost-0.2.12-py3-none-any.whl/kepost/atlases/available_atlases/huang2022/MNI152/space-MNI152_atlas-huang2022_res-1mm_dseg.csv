@@ -1,0 +1,427 @@
+MMP_label,RegionName1,RegionName2,CortexDivision_label,CortexDivision_name,Long_name
+181,L_V1,V1 L,1,Primary_Visual,Primary_Visual_Cortex_L
+184,L_V2,V2 L,2,Early_Visual,Second_Visual_Area_L
+185,L_V3,V3 L,2,Early_Visual,Third_Visual_Area_L
+186,L_V4,V4 L,2,Early_Visual,Fourth_Visual_Area_L
+197,L_IPS1,IPS1 L,3,Dorsal_Stream_Visual,IntraParietal_Sulcus_Area_1_L
+193,L_V3A,V3A L,3,Dorsal_Stream_Visual,Area_V3A_L
+199,L_V3B,V3B L,3,Dorsal_Stream_Visual,Area_V3B_L
+183,L_V6,V6 L,3,Dorsal_Stream_Visual,Sixth_Visual_Area_L
+332,L_V6A,V6A L,3,Dorsal_Stream_Visual,Area_V6A_L
+196,L_V7,V7 L,3,Dorsal_Stream_Visual,Seventh_Visual_Area_L
+198,L_FFC,FFC L,4,Ventral_Stream_Visual,Fusiform_Face_Complex_L
+202,L_PIT,PIT L,4,Ventral_Stream_Visual,Posterior_InferoTemporal_complex_L
+187,L_V8,V8 L,4,Ventral_Stream_Visual,Eighth_Visual_Area_L
+333,L_VMV1,VMV1 L,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_1_L
+340,L_VMV2,VMV2 L,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_2_L
+334,L_VMV3,VMV3 L,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_3_L
+343,L_VVC,VVC L,4,Ventral_Stream_Visual,Ventral_Visual_Complex_L
+337,L_FST,FST L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_FST_L
+200,L_LO1,LO1 L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_1_L
+201,L_LO2,LO2 L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_2_L
+339,L_LO3,LO3 L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_3_L
+182,L_MST,MST L,5,MT+_Complex_and_Neighboring_Visual_Areas,Medial_Superior_Temporal_Area_L
+203,L_MT,MT L,5,MT+_Complex_and_Neighboring_Visual_Areas,Middle_Temporal_Area_L
+318,L_PH,PH L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_PH_L
+338,L_V3CD,V3CD L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_V3CD_L
+336,L_V4t,V4t L,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_V4t_L
+231,L_1,1 L,6,Somatosensory_and_Motor,Area_1_L
+232,L_2,2 L,6,Somatosensory_and_Motor,Area_2_L
+233,L_3a,3a L,6,Somatosensory_and_Motor,Area_3a_L
+189,L_3b,3b L,6,Somatosensory_and_Motor,Primary_Sensory_Cortex_L
+188,L_4,4 L,6,Somatosensory_and_Motor,Primary_Motor_Cortex_L
+218,L_23c,23c L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_23c_L
+220,L_24dd,24dd L,7,Paracentral_Lobular_and_Mid_Cingulate,Dorsal_Area_24d_L
+221,L_24dv,24dv L,7,Paracentral_Lobular_and_Mid_Cingulate,Ventral_Area_24d_L
+219,L_5L,5L L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5L_L
+216,L_5m,5m L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5m_L
+217,L_5mv,5mv L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5m_ventral_L
+224,L_6ma,6ma L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_6m_anterior_L
+235,L_6mp,6mp L,7,Paracentral_Lobular_and_Mid_Cingulate,Area_6mp_L
+223,L_SCEF,SCEF L,7,Paracentral_Lobular_and_Mid_Cingulate,Supplementary_and_Cingulate_Eye_Field_L
+192,L_55b,55b L,8,Premotor,Area_55b_L
+276,L_6a,6a L,8,Premotor,Area_6_anterior_L
+234,L_6d,6d L,8,Premotor,Dorsal_area_6_L
+258,L_6r,6r L,8,Premotor,Rostral_Area_6_L
+236,L_6v,6v L,8,Premotor,Ventral_Area_6_L
+190,L_FEF,FEF L,8,Premotor,Frontal_Eye_Fields_L
+191,L_PEF,PEF L,8,Premotor,Premotor_Eye_Field_L
+279,L_43,43 L,9,Posterior_Opercular,Area_43_L
+293,L_FOP1,FOP1 L,9,Posterior_Opercular,Frontal_Opercular_Area_1_L
+281,L_OP1,OP1 L,9,Posterior_Opercular,Area_OP1-SII_L
+282,L_OP2-3,OP2-3 L,9,Posterior_Opercular,Area_OP2-3-VS_L
+280,L_OP4,OP4 L,9,Posterior_Opercular,Area_OP4-PV_L
+283,L_52,52 L,10,Early_Auditory,Area_52_L
+204,L_A1,A1 L,10,Early_Auditory,Primary_Auditory_Cortex_L
+354,L_LBelt,LBelt L,10,Early_Auditory,Lateral_Belt_Complex_L
+353,L_MBelt,MBelt L,10,Early_Auditory,Medial_Belt_Complex_L
+304,L_PBelt,PBelt L,10,Early_Auditory,ParaBelt_Complex_L
+285,L_PFcm,PFcm L,10,Early_Auditory,Area_PFcm_L
+284,L_RI,RI L,10,Early_Auditory,RetroInsular_Cortex_L
+355,L_A4,A4 L,11,Auditory_Association,Auditory_4_Complex_L
+305,L_A5,A5 L,11,Auditory_Association,Auditory_5_Complex_L
+303,L_STGa,STGa L,11,Auditory_Association,Area_STGa_L
+308,L_STSda,STSda L,11,Auditory_Association,Area_STSd_anterior_L
+309,L_STSdp,STSdp L,11,Auditory_Association,Area_STSd_posterior_L
+356,L_STSva,STSva L,11,Auditory_Association,Area_STSv_anterior_L
+310,L_STSvp,STSvp L,11,Auditory_Association,Area_STSv_posterior_L
+287,L_TA2,TA2 L,11,Auditory_Association,Area_TA2_L
+292,L_AAIC,AAIC L,12,Insular_and_Frontal_Opercular,Anterior_Agranular_Insula_Complex_L
+291,L_AVI,AVI L,12,Insular_and_Frontal_Opercular,Anterior_Ventral_Insular_Area_L
+295,L_FOP2,FOP2 L,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_2_L
+294,L_FOP3,FOP3 L,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_3_L
+288,L_FOP4,FOP4 L,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_4_L
+349,L_FOP5,FOP5 L,12,Insular_and_Frontal_Opercular,Area_Frontal_Opercular_5_L
+348,L_Ig,Ig L,12,Insular_and_Frontal_Opercular,Insular_Granular_Complex_L
+289,L_MI,MI L,12,Insular_and_Frontal_Opercular,Middle_Insular_Area_L
+358,L_PI,PI L,12,Insular_and_Frontal_Opercular,Para-Insular_Area_L
+290,L_Pir,Pir L,12,Insular_and_Frontal_Opercular,Pirform_Cortex_L
+347,L_PoI1,PoI1 L,12,Insular_and_Frontal_Opercular,Area_Posterior_Insular_1_L
+286,L_PoI2,PoI2 L,12,Insular_and_Frontal_Opercular,Posterior_Insular_Area_2_L
+300,L_Hipp,Hipp L,13,Medial_Temporal,Hippocampus_L
+299,L_PreS,PreS L,13,Medial_Temporal,PreSubiculum_L
+298,L_EC,EC L,13,Medial_Temporal,Entorhinal_Cortex_L
+302,L_PeEc,PeEc L,13,Medial_Temporal,Perirhinal_Ectorhinal_Cortex_L
+315,L_TF,TF L,13,Medial_Temporal,Area_TF_L
+306,L_PHA1,PHA1 L,13,Medial_Temporal,ParaHippocampal_Area_1_L
+335,L_PHA2,PHA2 L,13,Medial_Temporal,ParaHippocampal_Area_2_L
+307,L_PHA3,PHA3 L,13,Medial_Temporal,ParaHippocampal_Area_3_L
+317,L_PHT,PHT L,14,Lateral_Temporal,Area_PHT_L
+312,L_TE1a,TE1a L,14,Lateral_Temporal,Area_TE1_anterior_L
+357,L_TE1m,TE1m L,14,Lateral_Temporal,Area_TE1_Middle_L
+313,L_TE1p,TE1p L,14,Lateral_Temporal,Area_TE1_posterior_L
+314,L_TE2a,TE2a L,14,Lateral_Temporal,Area_TE2_anterior_L
+316,L_TE2p,TE2p L,14,Lateral_Temporal,Area_TE2_posterior_L
+311,L_TGd,TGd L,14,Lateral_Temporal,Area_TG_dorsal_L
+352,L_TGv,TGv L,14,Lateral_Temporal,Area_TG_Ventral_L
+205,L_PSL,PSL L,15,Temporo-Parieto_Occipital_Junction,PeriSylvian_Language_Area_L
+208,L_STV,STV L,15,Temporo-Parieto-Occipital_Junction,Superior_Temporal_Visual_Area_L
+319,L_TPOJ1,TPOJ1 L,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_1_L
+320,L_TPOJ2,TPOJ2 L,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_2_L
+321,L_TPOJ3,TPOJ3 L,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_3_L
+222,L_7AL,7AL L,16,Superior_Parietal,Lateral_Area_7A_L
+225,L_7Am,7Am L,16,Superior_Parietal,Medial_Area_7A_L
+227,L_7PC,7PC L,16,Superior_Parietal,Area_7PC_L
+226,L_7PL,7Pl L,16,Superior_Parietal,Lateral_Area_7P_L
+209,L_7Pm,7Pm L,16,Superior_Parietal,Medial_Area_7P_L
+297,L_AIP,AIP L,16,Superior_Parietal,Anterior_IntraParietal_Area_L
+275,L_LIPd,LIPd L,16,Superior_Parietal,Area_Lateral_IntraParietal_dorsal_L
+228,L_LIPv,LIPv L,16,Superior_Parietal,Area_Lateral_IntraParietal_ventral_L
+230,L_MIP,MIP L,16,Superior_Parietal,Medial_IntraParietal_Area_L
+229,L_VIP,VIP L,16,Superior_Parietal,Ventral_IntraParietal_Complex_L
+326,L_IP0,IP0 L,17,Inferior_Parietal,Area_IntraParietal_0_L
+325,L_IP1,IP1 L,17,Inferior_Parietal,Area_IntraParietal_1_L
+324,L_IP2,IP2 L,17,Inferior_Parietal,Area_IntraParietal_2_L
+328,L_PF,PF L,17,Inferior_Parietal,Area_PF_Complex_L
+329,L_PFm,PFm L,17,Inferior_Parietal,Area_PFm_Complex_L
+327,L_PFop,PFop L,17,Inferior_Parietal,Area_PF_Opercular_L
+296,L_PFt,PFt L,17,Inferior_Parietal,Area_PFt_L
+330,L_PGi,PGi L,17,Inferior_Parietal,Area_PGi_L
+323,L_PGp,PGp L,17,Inferior_Parietal,Area_PGp_L
+331,L_PGs,PGs L,17,Inferior_Parietal,Area_PGs_L
+212,L_23d,23d L,18,Posterior_Cingulate,Area_23d_L
+342,L_31a,31a L,18,Posterior_Cingulate,Area_31a_L
+341,L_31pd,31pd L,18,Posterior_Cingulate,Area_31pd_L
+215,L_31pv,31pv L,18,Posterior_Cingulate,Area_31p_ventral_L
+210,L_7m,7m L,18,Posterior_Cingulate,Area_7m_L
+214,L_d23ab,d23ab L,18,Posterior_Cingulate,Area_dorsal_23_a+b_L
+322,L_DVT,DVT L,18,Posterior_Cingulate,Dorsal_Transitional_Visual_Area_L
+207,L_PCV,PCV L,18,Posterior_Cingulate,PreCuneus_Visual_Area_L
+211,L_POS1,POS1 L,18,Posterior_Cingulate,Parieto-Occipital_Sulcus_Area_1_L
+195,L_POS2,POS2 L,18,Posterior_Cingulate,Parieto-Occipital_Sulcus_Area_2_L
+301,L_ProS,ProS L,18,Posterior_Cingulate,ProStriate_Area_L
+194,L_RSC,RSC L,18,Posterior_Cingulate,RetroSplenial_Complex_L
+213,L_v23ab,v23ab L,18,Posterior_Cingulate,Area_ventral_23_a+b_L
+245,L_10r,10r L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_10r_L
+268,L_10v,10v L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_10v_L
+344,L_25,25 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_25_L
+238,L_33pr,33pr L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_33_prime_L
+243,L_8BM,8BM L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_8BM_L
+249,L_9m,9m L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_9_Middle_L
+241,L_a24,a24 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_a24_L
+239,L_a24pr,a24pr L,19,Anterior_Cingulate_and_Medial_Prefrontal,Anterior_24_prime_L
+359,L_a32pr,a32pr L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_anterior_32_prime_L
+242,L_d32,d32 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_dorsal_32_L
+360,L_p24,p24 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_posterior_24_L
+237,L_p24pr,p24pr L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_Posterior_24_prime_L
+244,L_p32,p32 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_p32_L
+240,L_p32pr,p32pr L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_p32_prime_L
+346,L_pOFC,pOFC L,19,Anterior_Cingulate_and_Medial_Prefrontal,Posterior_OFC_Complex_L
+345,L_s32,s32 L,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_s32_L
+252,L_10d,10d L,20,Orbital_and_Polar_Frontal,Area_10d_L
+270,L_10pp,10pp L,20,Orbital_and_Polar_Frontal,Polar_10p_L
+271,L_11l,11l L,20,Orbital_and_Polar_Frontal,Area_11l_L
+272,L_13l,13l L,20,Orbital_and_Polar_Frontal,Area_13l_L
+246,L_47m,47m L,20,Orbital_and_Polar_Frontal,Area_47m_L
+274,L_47s,47s L,20,Orbital_and_Polar_Frontal,Area_47s_L
+269,L_a10p,a10p L,20,Orbital_and_Polar_Frontal,Area_anterior_10p_L
+273,L_OFC,OFC L,20,Orbital_and_Polar_Frontal,Orbital_Frontal_Complex_L
+350,L_p10p,p10p L,20,Orbital_and_Polar_Frontal,Area_posterior_10p_L
+254,L_44,44 L,21,Inferior_Frontal,Area_44_L
+255,L_45,45 L,21,Inferior_Frontal,Area_45_L
+256,L_47l,47l L,21,Inferior_Frontal,Area_47l_(47_lateral)_L
+257,L_a47r,a47r L,21,Inferior_Frontal,Area_anterior_47r_L
+259,L_IFJa,IFJa L,21,Inferior_Frontal,Area_IFJa_L
+260,L_IFJp,IFJp L,21,Inferior_Frontal,Area_IFJp_L
+262,L_IFSa,IFSa L,21,Inferior_Frontal,Area_IFSa_L
+261,L_IFSp,IFSp L,21,Inferior_Frontal,Area_IFSp_L
+351,L_p47r,p47r L,21,Inferior_Frontal,Area_posterior_47r_L
+264,L_46,46 L,22,Dorsolateral_Prefrontal,Area_46_L
+248,L_8Ad,8Ad L,22,Dorsolateral_Prefrontal,Area_8Ad_L
+247,L_8Av,8Av L,22,Dorsolateral_Prefrontal,Area_8Av_L
+250,L_8BL,8BL L,22,Dorsolateral_Prefrontal,Area_8B_Lateral_L
+253,L_8C,8C L,22,Dorsolateral_Prefrontal,Area_8C_L
+266,L_9-46d,9-46d L,22,Dorsolateral_Prefrontal,Area_9-46d_L
+267,L_9a,9a L,22,Dorsolateral_Prefrontal,Area_9_anterior_L
+251,L_9p,9p L,22,Dorsolateral_Prefrontal,Area_9_Posterior_L
+265,L_a9-46v,a9-46v L,22,Dorsolateral_Prefrontal,Area_anterior_9-46v_L
+277,L_i6-8,i6-8 L,22,Dorsolateral_Prefrontal,Inferior_6-8_Transitional_Area_L
+263,L_p9-46v,p9-46v L,22,Dorsolateral_Prefrontal,Area_posterior_9-46v_L
+278,L_s6-8,s6-8 L,22,Dorsolateral_Prefrontal,Superior_6-8_Transitional_Area_L
+206,L_SFL,SFL L,22,Dorsolateral_Prefrontal,Superior_Frontal_Language_Area_L
+1,R_V1,V1 R,1,Primary_Visual,Primary_Visual_Cortex_R
+4,R_V2,V2 R,2,Early_Visual,Second_Visual_Area_R
+5,R_V3,V3 R,2,Early_Visual,Third_Visual_Area_R
+6,R_V4,V4 R,2,Early_Visual,Fourth_Visual_Area_R
+17,R_IPS1,IPS1 R,3,Dorsal_Stream_Visual,IntraParietal_Sulcus_Area_1_R
+13,R_V3A,V3A R,3,Dorsal_Stream_Visual,Area_V3A_R
+19,R_V3B,V3B R,3,Dorsal_Stream_Visual,Area_V3B_R
+3,R_V6,V6 R,3,Dorsal_Stream_Visual,Sixth_Visual_Area_R
+152,R_V6A,V6A R,3,Dorsal_Stream_Visual,Area_V6A_R
+16,R_V7,V7 R,3,Dorsal_Stream_Visual,Seventh_Visual_Area_R
+18,R_FFC,FFC R,4,Ventral_Stream_Visual,Fusiform_Face_Complex_R
+22,R_PIT,PIT R,4,Ventral_Stream_Visual,Posterior_InferoTemporal_complex_R
+7,R_V8,V8 R,4,Ventral_Stream_Visual,Eighth_Visual_Area_R
+153,R_VMV1,VMV1 R,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_1_R
+160,R_VMV2,VMV2 R,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_2_R
+154,R_VMV3,VMV3 R,4,Ventral_Stream_Visual,VentroMedial_Visual_Area_3_R
+163,R_VVC,VVC R,4,Ventral_Stream_Visual,Ventral_Visual_Complex_R
+157,R_FST,FST R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_FST_R
+20,R_LO1,LO1 R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_1_R
+21,R_LO2,LO2 R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_2_R
+159,R_LO3,LO3 R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_Lateral_Occipital_3_R
+2,R_MST,MST R,5,MT+_Complex_and_Neighboring_Visual_Areas,Medial_Superior_Temporal_Area_R
+23,R_MT,MT R,5,MT+_Complex_and_Neighboring_Visual_Areas,Middle_Temporal_Area_R
+138,R_PH,PH R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_PH_R
+158,R_V3CD,V3CD R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_V3CD_R
+156,R_V4t,V4t R,5,MT+_Complex_and_Neighboring_Visual_Areas,Area_V4t_R
+51,R_1,1 R,6,Somatosensory_and_Motor,Area_1_R
+52,R_2,2 R,6,Somatosensory_and_Motor,Area_2_R
+53,R_3a,3a R,6,Somatosensory_and_Motor,Area_3a_R
+9,R_3b,3b R,6,Somatosensory_and_Motor,Primary_Sensory_Cortex_R
+8,R_4,4 R,6,Somatosensory_and_Motor,Primary_Motor_Cortex_R
+38,R_23c,23c R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_23c_R
+40,R_24dd,24dd R,7,Paracentral_Lobular_and_Mid_Cingulate,Dorsal_Area_24d_R
+41,R_24dv,24dv R,7,Paracentral_Lobular_and_Mid_Cingulate,Ventral_Area_24d_R
+39,R_5L,5L R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5L_R
+36,R_5m,5m R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5m_R
+37,R_5mv,5mv R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_5m_ventral_R
+44,R_6ma,6ma R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_6m_anterior_R
+55,R_6mp,6mp R,7,Paracentral_Lobular_and_Mid_Cingulate,Area_6mp_R
+43,R_SCEF,SCEF R,7,Paracentral_Lobular_and_Mid_Cingulate,Supplementary_and_Cingulate_Eye_Field_R
+12,R_55b,55b R,8,Premotor,Area_55b_R
+96,R_6a,6a R,8,Premotor,Area_6_anterior_R
+54,R_6d,6d R,8,Premotor,Dorsal_area_6_R
+78,R_6r,6r R,8,Premotor,Rostral_Area_6_R
+56,R_6v,6v R,8,Premotor,Ventral_Area_6_R
+10,R_FEF,FEF R,8,Premotor,Frontal_Eye_Fields_R
+11,R_PEF,PEF R,8,Premotor,Premotor_Eye_Field_R
+99,R_43,43 R,9,Posterior_Opercular,Area_43_R
+113,R_FOP1,FOP1 R,9,Posterior_Opercular,Frontal_Opercular_Area_1_R
+101,R_OP1,OP1 R,9,Posterior_Opercular,Area_OP1-SII_R
+102,R_OP2-3,OP2-3 R,9,Posterior_Opercular,Area_OP2-3-VS_R
+100,R_OP4,OP4 R,9,Posterior_Opercular,Area_OP4-PV_R
+103,R_52,52 R,10,Early_Auditory,Area_52_R
+24,R_A1,A1 R,10,Early_Auditory,Primary_Auditory_Cortex_R
+174,R_LBelt,LBelt R,10,Early_Auditory,Lateral_Belt_Complex_R
+173,R_MBelt,MBelt R,10,Early_Auditory,Medial_Belt_Complex_R
+124,R_PBelt,PBelt R,10,Early_Auditory,ParaBelt_Complex_R
+105,R_PFcm,PFcm R,10,Early_Auditory,Area_PFcm_R
+104,R_RI,RI R,10,Early_Auditory,RetroInsular_Cortex_R
+175,R_A4,A4 R,11,Auditory_Association,Auditory_4_Complex_R
+125,R_A5,A5 R,11,Auditory_Association,Auditory_5_Complex_R
+123,R_STGa,STGa R,11,Auditory_Association,Area_STGa_R
+128,R_STSda,STSda R,11,Auditory_Association,Area_STSd_anterior_R
+129,R_STSdp,STSdp R,11,Auditory_Association,Area_STSd_posterior_R
+176,R_STSva,STSva R,11,Auditory_Association,Area_STSv_anterior_R
+130,R_STSvp,STSvp R,11,Auditory_Association,Area_STSv_posterior_R
+107,R_TA2,TA2 R,11,Auditory_Association,Area_TA2_R
+112,R_AAIC,AAIC R,12,Insular_and_Frontal_Opercular,Anterior_Agranular_Insula_Complex_R
+111,R_AVI,AVI R,12,Insular_and_Frontal_Opercular,Anterior_Ventral_Insular_Area_R
+115,R_FOP2,FOP2 R,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_2_R
+114,R_FOP3,FOP3 R,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_3_R
+108,R_FOP4,FOP4 R,12,Insular_and_Frontal_Opercular,Frontal_Opercular_Area_4_R
+169,R_FOP5,FOP5 R,12,Insular_and_Frontal_Opercular,Area_Frontal_Opercular_5_R
+168,R_Ig,Ig R,12,Insular_and_Frontal_Opercular,Insular_Granular_Complex_R
+109,R_MI,MI R,12,Insular_and_Frontal_Opercular,Middle_Insular_Area_R
+178,R_PI,PI R,12,Insular_and_Frontal_Opercular,Para-Insular_Area_R
+110,R_Pir,Pir R,12,Insular_and_Frontal_Opercular,Pirform_Cortex_R
+167,R_PoI1,PoI1 R,12,Insular_and_Frontal_Opercular,Area_Posterior_Insular_1_R
+106,R_PoI2,PoI2 R,12,Insular_and_Frontal_Opercular,Posterior_Insular_Area_2_R
+120,R_Hipp,Hipp R,13,Medial_Temporal,Hippocampus_R
+119,R_PreS,PreS R,13,Medial_Temporal,PreSubiculum_R
+118,R_EC,EC R,13,Medial_Temporal,Entorhinal_Cortex_R
+122,R_PeEc,PeEc R,13,Medial_Temporal,Perirhinal_Ectorhinal_Cortex_R
+135,R_TF,TF R,13,Medial_Temporal,Area_TF_R
+126,R_PHA1,PHA1 R,13,Medial_Temporal,ParaHippocampal_Area_1_R
+155,R_PHA2,PHA2 R,13,Medial_Temporal,ParaHippocampal_Area_2_R
+127,R_PHA3,PHA3 R,13,Medial_Temporal,ParaHippocampal_Area_3_R
+137,R_PHT,PHT R,14,Lateral_Temporal,Area_PHT_R
+132,R_TE1a,TE1a R,14,Lateral_Temporal,Area_TE1_anterior_R
+177,R_TE1m,TE1m R,14,Lateral_Temporal,Area_TE1_Middle_R
+133,R_TE1p,TE1p R,14,Lateral_Temporal,Area_TE1_posterior_R
+134,R_TE2a,TE2a R,14,Lateral_Temporal,Area_TE2_anterior_R
+136,R_TE2p,TE2p R,14,Lateral_Temporal,Area_TE2_posterior_R
+131,R_TGd,TGd R,14,Lateral_Temporal,Area_TG_dorsal_R
+172,R_TGv,TGv R,14,Lateral_Temporal,Area_TG_Ventral_R
+25,R_PSL,PSL R,15,Temporo-Parieto-Occipital_Junction,PeriSylvian_Language_Area_R
+28,R_STV,STV R,15,Temporo-Parieto-Occipital_Junction,Superior_Temporal_Visual_Area_R
+139,R_TPOJ1,TPOJ1 R,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_1_R
+140,R_TPOJ2,TPOJ2 R,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_2_R
+141,R_TPOJ3,TPOJ3 R,15,Temporo-Parieto-Occipital_Junction,Area_TemporoParietoOccipital_Junction_3_R
+42,R_7AL,7AL R,16,Superior_Parietal,Lateral_Area_7A_R
+45,R_7Am,7Am R,16,Superior_Parietal,Medial_Area_7A_R
+47,R_7PC,7PC R,16,Superior_Parietal,Area_7PC_R
+46,R_7PL,7Pl R,16,Superior_Parietal,Lateral_Area_7P_R
+29,R_7Pm,7Pm R,16,Superior_Parietal,Medial_Area_7P_R
+117,R_AIP,AIP R,16,Superior_Parietal,Anterior_IntraParietal_Area_R
+95,R_LIPd,LIPd R,16,Superior_Parietal,Area_Lateral_IntraParietal_dorsal_R
+48,R_LIPv,LIPv R,16,Superior_Parietal,Area_Lateral_IntraParietal_ventral_R
+50,R_MIP,MIP R,16,Superior_Parietal,Medial_IntraParietal_Area_R
+49,R_VIP,VIP R,16,Superior_Parietal,Ventral_IntraParietal_Complex_R
+146,R_IP0,IP0 R,17,Inferior_Parietal,Area_IntraParietal_0_R
+145,R_IP1,IP1 R,17,Inferior_Parietal,Area_IntraParietal_1_R
+144,R_IP2,IP2 R,17,Inferior_Parietal,Area_IntraParietal_2_R
+148,R_PF,PF R,17,Inferior_Parietal,Area_PF_Complex_R
+149,R_PFm,PFm R,17,Inferior_Parietal,Area_PFm_Complex_R
+147,R_PFop,PFop R,17,Inferior_Parietal,Area_PF_Opercular_R
+116,R_PFt,PFt R,17,Inferior_Parietal,Area_PFt_R
+150,R_PGi,PGi R,17,Inferior_Parietal,Area_PGi_R
+143,R_PGp,PGp R,17,Inferior_Parietal,Area_PGp_R
+151,R_PGs,PGs R,17,Inferior_Parietal,Area_PGs_R
+32,R_23d,23d R,18,Posterior_Cingulate,Area_23d_R
+162,R_31a,31a R,18,Posterior_Cingulate,Area_31a_R
+161,R_31pd,31pd R,18,Posterior_Cingulate,Area_31pd_R
+35,R_31pv,31pv R,18,Posterior_Cingulate,Area_31p_ventral_R
+30,R_7m,7m R,18,Posterior_Cingulate,Area_7m_R
+34,R_d23ab,d23ab R,18,Posterior_Cingulate,Area_dorsal_23_a+b_R
+142,R_DVT,DVT R,18,Posterior_Cingulate,Dorsal_Transitional_Visual_Area_R
+27,R_PCV,PCV R,18,Posterior_Cingulate,PreCuneus_Visual_Area_R
+31,R_POS1,POS1 R,18,Posterior_Cingulate,Parieto-Occipital_Sulcus_Area_1_R
+15,R_POS2,POS2 R,18,Posterior_Cingulate,Parieto-Occipital_Sulcus_Area_2_R
+121,R_ProS,ProS R,18,Posterior_Cingulate,ProStriate_Area_R
+14,R_RSC,RSC R,18,Posterior_Cingulate,RetroSplenial_Complex_R
+33,R_v23ab,v23ab R,18,Posterior_Cingulate,Area_ventral_23_a+b_R
+65,R_10r,10r R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_10r_R
+88,R_10v,10v R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_10v_R
+164,R_25,25 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_25_R
+58,R_33pr,33pr R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_33_prime_R
+63,R_8BM,8BM R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_8BM_R
+69,R_9m,9m R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_9_Middle_R
+61,R_a24,a24 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_a24_R
+59,R_a24pr,a24pr R,19,Anterior_Cingulate_and_Medial_Prefrontal,Anterior_24_prime_R
+179,R_a32pr,a32pr R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_anterior_32_prime_R
+62,R_d32,d32 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_dorsal_32_R
+180,R_p24,p24 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_posterior_24_R
+57,R_p24pr,p24pr R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_Posterior_24_prime_R
+64,R_p32,p32 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_p32_R
+60,R_p32pr,p32pr R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_p32_prime_R
+166,R_pOFC,pOFC R,19,Anterior_Cingulate_and_Medial_Prefrontal,posterior_OFC_Complex_R
+165,R_s32,s32 R,19,Anterior_Cingulate_and_Medial_Prefrontal,Area_s32_R
+72,R_10d,10d R,20,Orbital_and_Polar_Frontal,Area_10d_R
+90,R_10pp,10pp R,20,Orbital_and_Polar_Frontal,Polar_10p_R
+91,R_11l,11l R,20,Orbital_and_Polar_Frontal,Area_11l_R
+92,R_13l,13l R,20,Orbital_and_Polar_Frontal,Area_13l_R
+66,R_47m,47m R,20,Orbital_and_Polar_Frontal,Area_47m_R
+94,R_47s,47s R,20,Orbital_and_Polar_Frontal,Area_47s_R
+89,R_a10p,a10p R,20,Orbital_and_Polar_Frontal,Area_anterior_10p_R
+93,R_OFC,OFC R,20,Orbital_and_Polar_Frontal,Orbital_Frontal_Complex_R
+170,R_p10p,p10p R,20,Orbital_and_Polar_Frontal,Area_posterior_10p_R
+74,R_44,44 R,21,Inferior_Frontal,Area_44_R
+75,R_45,45 R,21,Inferior_Frontal,Area_45_R
+76,R_47l,47l R,21,Inferior_Frontal,Area_47l_(47_lateral)_R
+77,R_a47r,a47r R,21,Inferior_Frontal,Area_anterior_47r_R
+79,R_IFJa,IFJa R,21,Inferior_Frontal,Area_IFJa_R
+80,R_IFJp,IFJp R,21,Inferior_Frontal,Area_IFJp_R
+82,R_IFSa,IFSa R,21,Inferior_Frontal,Area_IFSa_R
+81,R_IFSp,IFSp R,21,Inferior_Frontal,Area_IFSp_R
+171,R_p47r,p47r R,21,Inferior_Frontal,Area_posterior_47r_R
+84,R_46,46 R,22,Dorsolateral_Prefrontal,Area_46_R
+68,R_8Ad,8Ad R,22,Dorsolateral_Prefrontal,Area_8Ad_R
+67,R_8Av,8Av R,22,Dorsolateral_Prefrontal,Area_8Av_R
+70,R_8BL,8BL R,22,Dorsolateral_Prefrontal,Area_8B_Lateral_R
+73,R_8C,8C R,22,Dorsolateral_Prefrontal,Area_8C_R
+86,R_9-46d,9-46d R,22,Dorsolateral_Prefrontal,Area_9-46d_R
+87,R_9a,9a R,22,Dorsolateral_Prefrontal,Area_9_anterior_R
+71,R_9p,9p R,22,Dorsolateral_Prefrontal,Area_9_Posterior_R
+85,R_a9-46v,a9-46v R,22,Dorsolateral_Prefrontal,Area_anterior_9-46v_R
+97,R_i6-8,i6-8 R,22,Dorsolateral_Prefrontal,Inferior_6-8_Transitional_Area_R
+83,R_p9-46v,p9-46v R,22,Dorsolateral_Prefrontal,Area_posterior_9-46v_R
+98,R_s6-8,s6-8 R,22,Dorsolateral_Prefrontal,Superior_6-8_Transitional_Area_R
+26,R_SFL,SFL R,22,Dorsolateral_Prefrontal,Superior_Frontal_Language_Area_R
+394,L_AV,AV L,23,Thalamic Nuclei,Thal_AnteroventralNucleus_L
+395,L_CeM,CeM L,23,Thalamic Nuclei,Thal_Central_medial_L
+396,L_CL,CL L,23,Thalamic Nuclei,Thal_Central_lateral_L
+397,L_CM,CM L,23,Thalamic Nuclei,Thal_Centralmedian_L
+398,L_LD,LD L,23,Thalamic Nuclei,Thal_Laterodorsal_L
+399,L_LGN,LGN L,23,Thalamic Nuclei,Thal_Lateral_Geniculate_L
+400,L_LP,LP L,23,Thalamic Nuclei,Thal_Lateral_Posterior_L
+401,L_L-Sg,L-Sg L,23,Thalamic Nuclei,Thal_Limitans_Suprageniculate_L
+402,L_MDl,MDl L,23,Thalamic Nuclei,Thal_Mediodorsolateral_parvocellular_L
+403,L_MDm,MDm L,23,Thalamic Nuclei,Thal_Mediodorsomedial_magnocellular_L
+404,L_MGN,MGN L,23,Thalamic Nuclei,Thal_Medial_Geniculate_L
+405,L_MV(Re),MV(Re) L,23,Thalamic Nuclei,Thal_Reuniens_L
+406,L_Pf,Pf L,23,Thalamic Nuclei,Thal_Parafascicular_L
+407,L_PuA,PuA L,23,Thalamic Nuclei,Thal_Pulvinar_anterior_L
+408,L_PuI,PuI L,23,Thalamic Nuclei,Thal_Pulvinar_inferior_L
+409,L_PuL,PuL L,23,Thalamic Nuclei,Thal_Pulvinar_lateral_L
+410,L_PuM,PuM L,23,Thalamic Nuclei,Thal_Pulvinar_medial_L
+411,L_VA,VA L,23,Thalamic Nuclei,Thal_Ventral_Anterior_L
+412,L_VLa,VLa L,23,Thalamic Nuclei,Thal_Ventral_Lateral_Anterior_L
+413,L_VLp,VLp L,23,Thalamic Nuclei,Thal_Ventral_Lateral_Posterior_L
+414,L_VPL,VPL L,23,Thalamic Nuclei,Thal_Ventral_posterolateral_L
+415,L_Putam,Putam L,24,Subcortical Region,Putamen_L
+416,L_Caud,Caud L,24,Subcortical Region,Caudate_L
+417,L_NAc,NAc L,24,Subcortical Region,Nucleus_Accumbens_L
+418,L_Gpe,Gpe L,24,Subcortical Region,Globus_pallidus_externalis_L
+419,L_Gpi,Gpi L,24,Subcortical Region,Globus_pallidus_internalis_L
+420,L_Amyg,Amyg L,24,Subcortical Region,Amygdala_L
+421,L_SNpc,SNpc L,24,Subcortical Region,Substantia_nigra_pars_compacta_L
+422,L_SNpr,SNpr L,24,Subcortical Region,Substantia_nigra_pars_reticulata_L
+423,L_VTA,VTA L,24,Subcortical Region,Ventral_tegmenta_area_L
+424,L_MB,MB L,24,Subcortical Region,Mammillary_bodies_L
+425,L_Septum,Septum L,24,Subcortical Region,Septal_nucleus_L
+426,L_Nb,Nb L,24,Subcortical Region,Nuclei_basal_L
+361,R_AV,AV R,23,Thalamic Nuclei,Thal_AnteroventralNucleus_R
+362,R_CeM,CeM R,23,Thalamic Nuclei,Thal_Central_medial_R
+363,R_CL,CL R,23,Thalamic Nuclei,Thal_Central_lateral_R
+364,R_CM,CM R,23,Thalamic Nuclei,Thal_Centralmedian_R
+365,R_LD,LD R,23,Thalamic Nuclei,Thal_Laterodorsal_R
+366,R_LGN,LGN R,23,Thalamic Nuclei,Thal_Lateral_Geniculate_R
+367,R_LP,LP R,23,Thalamic Nuclei,Thal_Lateral_Posterior_R
+368,R_L-Sg,L-Sg R,23,Thalamic Nuclei,Thal_Limitans_Suprageniculate_R
+369,R_MDl,MDl R,23,Thalamic Nuclei,Thal_Mediodorsolateral_parvocellular_R
+370,R_MDm,MDm R,23,Thalamic Nuclei,Thal_Mediodorsomedial_magnocellular_R
+371,R_MGN,MGN R,23,Thalamic Nuclei,Thal_Medial_Geniculate_R
+372,R_MV(Re),MV(Re) R,23,Thalamic Nuclei,Thal_Reuniens_R
+373,R_Pf,Pf R,23,Thalamic Nuclei,Thal_Parafascicular_R
+374,R_PuA,PuA R,23,Thalamic Nuclei,Thal_Pulvinar_anterior_R
+375,R_PuI,PuI R,23,Thalamic Nuclei,Thal_Pulvinar_inferior_R
+376,R_PuL,PuL R,23,Thalamic Nuclei,Thal_Pulvinar_lateral_R
+377,R_PuM,PuM R,23,Thalamic Nuclei,Thal_Pulvinar_medial_R
+378,R_VA,VA R,23,Thalamic Nuclei,Thal_Ventral_Anterior_R
+379,R_VLa,VLa R,23,Thalamic Nuclei,Thal_Ventral_Lateral_Anterior_R
+380,R_VLp,VLp R,23,Thalamic Nuclei,Thal_Ventral_Lateral_Posterior_R
+381,R_VPL,VPL R,23,Thalamic Nuclei,Thal_Ventral_posterolateral_R
+382,R_Putam,Putam R,24,Subcortical Region,Putamen_R
+383,R_Caud,Caud R,24,Subcortical Region,Caudate_R
+384,R_NAc,NAc R,24,Subcortical Region,Nucleus_Accumbens_R
+385,R_Gpe,Gpe R,24,Subcortical Region,Globus_pallidus_externalis_R
+386,R_Gpi,Gpi R,24,Subcortical Region,Globus_pallidus_internalis_R
+387,R_Amyg,Amyg R,24,Subcortical Region,Amygdala_R
+388,R_SNpc,SNpc R,24,Subcortical Region,Substantia_nigra_pars_compacta_R
+389,R_SNpr,SNpr R,24,Subcortical Region,Substantia_nigra_pars_reticulata_R
+390,R_VTA,VTA R,24,Subcortical Region,Ventral_tegmenta_area_R
+391,R_MB,MB R,24,Subcortical Region,Mammillary_bodies_R
+392,R_Septum,Septum R,24,Subcortical Region,Septal_nucleus_R
+393,R_Nb,Nb R,24,Subcortical Region,Nuclei_basal_R
