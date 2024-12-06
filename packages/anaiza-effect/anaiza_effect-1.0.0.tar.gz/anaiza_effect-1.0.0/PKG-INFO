@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: anaiza_effect
+Version: 1.0.0
+Summary: Display Anaiza Text Effect in the terminal.
+Author: anaiza
+Author-email: test@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyfiglet
+
+# Anaiza Effect
+
+Anaiza Test Effect is a Python library that creates an animated glowing neon effect for terminal text using ASCII art.
+
+## Installation
+
+```bash
+pip install anaiza-effect

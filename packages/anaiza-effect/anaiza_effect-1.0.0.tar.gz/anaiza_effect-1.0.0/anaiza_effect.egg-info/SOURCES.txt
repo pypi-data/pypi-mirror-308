@@ -1,0 +1,8 @@
+setup.py
+anaiza_effect/__init__.py
+anaiza_effect/anaiza.py
+anaiza_effect.egg-info/PKG-INFO
+anaiza_effect.egg-info/SOURCES.txt
+anaiza_effect.egg-info/dependency_links.txt
+anaiza_effect.egg-info/requires.txt
+anaiza_effect.egg-info/top_level.txt
