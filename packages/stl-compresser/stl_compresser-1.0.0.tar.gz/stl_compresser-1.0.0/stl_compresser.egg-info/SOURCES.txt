@@ -1,0 +1,7 @@
+LICENCE
+README.rst
+setup.py
+stl_compresser.egg-info/PKG-INFO
+stl_compresser.egg-info/SOURCES.txt
+stl_compresser.egg-info/dependency_links.txt
+stl_compresser.egg-info/top_level.txt
