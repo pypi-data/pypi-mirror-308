@@ -1,0 +1,11 @@
+COPYING
+pyproject.toml
+setup.py
+pimidipy/__init__.py
+pimidipy/event_wrappers.py
+pimidipy/pimidipy.py
+pimidipy.egg-info/PKG-INFO
+pimidipy.egg-info/SOURCES.txt
+pimidipy.egg-info/dependency_links.txt
+pimidipy.egg-info/requires.txt
+pimidipy.egg-info/top_level.txt
