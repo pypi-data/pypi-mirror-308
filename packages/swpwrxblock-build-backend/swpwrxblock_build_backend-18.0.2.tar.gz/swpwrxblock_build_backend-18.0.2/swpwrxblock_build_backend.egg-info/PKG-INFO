@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: swpwrxblock-build-backend
+Version: 18.0.2
+Summary: Stepwise Power XBlock Build Backend
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+Requires-Dist: XBlock
+Requires-Dist: requests
+
+# Stepwise PWR XBlock Build Backend
+
+This is a [PEP-518](https://peps.python.org/pep-0518/) custom Python 'build backend' for setuptools to transpile swpwr React build assets before building the package.
+This package is published to PyPi as swpwrxblock-build-backend, and is specified in the pyproject.toml configuration of https://github.com/QueriumCorp/swpwrxblock.
+
+## What it does
+
+1. backend.py implements the [PEP-518](https://peps.python.org/pep-0518/) API.
+2. SWPWRXBlockBuildBackend.build_wheel() adds a static asset collection procedure designed by [Kent Fuka](https://github.com/kentfuka) that maps a traditional ReactJS app vite build to a traditional Open edX XBlock folder structure.
+
+## How it works
+
+1.  The backend is specified in pyproject.toml of https://github.com/QueriumCorp/swpwrxblock/
+2.  the build system will call the backend to build the package:
+
+         [build-system]
+         requires = ["setuptools", "wheel", "swpwrxblock-build-backend"]
+         build-backend = "swpwrxblock_build_backend.backend"
+
+    where "swpwrxblock-build-backend" is this repo published to PyPi,
+    and where "swpwrxblock_build_backend.backend" is the path to the module `backend.py` in this repo.
