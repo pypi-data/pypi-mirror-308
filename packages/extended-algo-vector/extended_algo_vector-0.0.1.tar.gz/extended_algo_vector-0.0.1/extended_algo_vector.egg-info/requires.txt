@@ -1,0 +1,8 @@
+pandas
+python-dotenv
+pandas-ta
+extended-chart
+tqdm
+pyarrow
+SQLAlchemy
+mysqlclient
