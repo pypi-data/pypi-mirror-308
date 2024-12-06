@@ -1,0 +1,2 @@
+[console_scripts]
+correct = moveread.pipelines.correct.scripts.cli:main

@@ -1,0 +1,13 @@
+moveread/pipelines/correct/__init__.py,sha256=mF4M_d6EiHbB9U9W_oKlKXYIyh8ZFn3gxe_382VXiLI,95
+moveread/pipelines/correct/__init__.pyi,sha256=0WU-XTR7dVOsKpL16DyoPJaWwpAQ62eALMsR--dtuxQ,374
+moveread/pipelines/correct/_api.py,sha256=p7uQCNPmFVP7EYCdPWQLLmIqjYPqJXyACsbunFinTBE,2924
+moveread/pipelines/correct/pipeline.py,sha256=R3yQ_y8fknu6QScZiygTSah6lcs7uBE2BDjVZKdemnY,471
+moveread/pipelines/correct/sdk.py,sha256=Bdbe_QY1eOPzpDqruMdvbQCcE8vrYUnpSCoVBrsftGI,1970
+moveread/pipelines/correct/types.py,sha256=FSQz-xeFVQNSkXdNLQvZZk0_KCMn-r9HP19oBD9m9gM,1969
+moveread/pipelines/correct/util.py,sha256=wrHkKEXxghv-e7S056dh8rN39pb7u9-SlWrt8e3mSm4,593
+moveread/pipelines/correct/scripts/cli.py,sha256=cxqfCDZsPKuS8zD-nBzoeWjGtgY0hw7ARstYzUDvGrk,2496
+moveread_pipelines_correct-0.1.0.dist-info/METADATA,sha256=2z9-W08R0ny4zBKFbj6vtbN5emtjfcvaVsgzJvh4tvQ,545
+moveread_pipelines_correct-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+moveread_pipelines_correct-0.1.0.dist-info/entry_points.txt,sha256=1XQqYBcyPQPVtCb_0SD6iwx2TTnaFMwPjsrGHLE6JEc,72
+moveread_pipelines_correct-0.1.0.dist-info/top_level.txt,sha256=Nf4zr37sbhc5sbPztUq8FfXD7iyRYJ9bjMTU09166ig,9
+moveread_pipelines_correct-0.1.0.dist-info/RECORD,,
