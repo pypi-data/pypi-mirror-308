@@ -1,0 +1,13 @@
+apsig-0.1.0.dist-info/METADATA,sha256=dhbFVVUJOxoaGaOD5s510O0wVtf4YKHtisa4Btej_ng,591
+apsig-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+apsig-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+apsig-0.1.0.dist-info/licenses/LICENSE,sha256=hTmkZO4bYax5zXpJoz5PnwLRQbM0DYktW1SJnYRIwMo,1082
+http_signactures/__init__.py,sha256=AbsCjVWNnsR5fk3WuqXlzIL9JOOaGIYApWVn1pHBR28,315
+http_signactures/__polyfill/datetime.py,sha256=WNHatYb09CTrCAPvZuNgngvYzWTc4_TqRvuL18hyl0g,362
+http_signactures/__polyfill/jsonld.py,sha256=0WMacdfT2XTJslG8Tg9Q134nK3NqWGjTtseUIcTbYug,873
+http_signactures/draft/sign.py,sha256=ke_966HUCgeFqQwph8XWU66cX8-P1Jy4UBpAO_-CZa4,1537
+http_signactures/draft/verify.py,sha256=YHgBYoBg7HMVUs7jPWlJlZppG_qyuESbBuwpZykC0ck,2767
+http_signactures/ld/ldsig.py,sha256=dMNeuYtBdDlbPFvvquUHM5MiXg5tJqfM6PSlZgRoPkI,2271
+http_signactures/object_integrity_proofs/sign.py,sha256=-UO4QsWcWQC1qOz6nz0RhP9EZqbtoVDm7UICyZqgAkE,1469
+http_signactures/object_integrity_proofs/verify.py,sha256=rUFrA44aAvmfL_Ya-YJXkyGD6SlLDr469UImuLSGkqc,2968
+apsig-0.1.0.dist-info/RECORD,,
