@@ -1,0 +1,11 @@
+README.md
+setup.py
+fastapi/__init__.py
+fastapi/middleware.py
+fastapi/tests/__init__.py
+fastapi/tests/test_middleware.py
+telex_python_apm.egg-info/PKG-INFO
+telex_python_apm.egg-info/SOURCES.txt
+telex_python_apm.egg-info/dependency_links.txt
+telex_python_apm.egg-info/requires.txt
+telex_python_apm.egg-info/top_level.txt
