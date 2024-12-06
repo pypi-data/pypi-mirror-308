@@ -1,0 +1,2 @@
+[certbot.plugins]
+standalone-nfq = certbot_standalone_nfq.auth:Authenticator
