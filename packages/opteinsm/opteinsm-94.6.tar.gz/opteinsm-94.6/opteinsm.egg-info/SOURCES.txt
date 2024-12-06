@@ -1,0 +1,7 @@
+main.py
+setup.py
+opteinsm.egg-info/PKG-INFO
+opteinsm.egg-info/SOURCES.txt
+opteinsm.egg-info/dependency_links.txt
+opteinsm.egg-info/requires.txt
+opteinsm.egg-info/top_level.txt
