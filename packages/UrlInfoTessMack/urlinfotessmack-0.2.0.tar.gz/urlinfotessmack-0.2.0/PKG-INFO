@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: UrlInfoTessMack
+Version: 0.2.0
+Summary: A simple python package to get informations about a url
+Author-Email: Macktireh <abdimack97@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/Macktireh/UrlInfoTessMack
+Project-URL: Documentation, https://github.com/Macktireh/UrlInfoTessMack#readme
+Project-URL: Repository, https://github.com/Macktireh/UrlInfoTessMack
+Project-URL: Issues, https://github.com/Macktireh/UrlInfoTessMack/issues
+Requires-Python: >=3.10
+Requires-Dist: validators>=0.34.0
+Description-Content-Type: text/markdown
+
+# UrlInfoTessMack
+
+A simple python package to get informations about a url
+
+## Installation
+
+```bash
+pip install UrlInfoTessMack
+```
+
+## Usage
+
+```python
+from urlinfotessmack import UrlInfo
+url = "https://www.google.com/search?q=test"
+url_info = UrlInfo(url)
+print(url_info.get_protocol())
+print(url_info.get_domain())
+print(url_info.get_path())
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
