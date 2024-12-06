@@ -1,0 +1,10 @@
+Click
+docker
+fastr>=3.4.0
+gitpython
+schema
+pyyaml
+ruamel.yaml
+tabulate
+requests
+questionary
