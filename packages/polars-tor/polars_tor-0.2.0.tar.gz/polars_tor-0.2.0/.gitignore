@@ -1,0 +1,11 @@
+.env
+*.so
+*.pyc
+target
+venv
+.venv
+*.so
+*.dll
+*.pyd
+tor_exit_nodes.txt
+tor_nodes.txt

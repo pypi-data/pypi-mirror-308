@@ -1,0 +1,73 @@
+version = 1
+requires-python = ">=3.8"
+
+[[package]]
+name = "maturin"
+version = "1.7.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tomli", marker = "python_full_version < '3.11'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/51/28/31a650d9209d873b6aec759c944bd284155154d7a01f7f541786d7c435ca/maturin-1.7.4.tar.gz", hash = "sha256:2b349d742a07527d236f0b4b6cab26f53ebecad0ceabfc09ec4c6a396e3176f9", size = 191145 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/85/19/b5be36f3cb30ba72aa2232492d4462409955da134ea25083f0e625618082/maturin-1.7.4-py3-none-linux_armv6l.whl", hash = "sha256:eb7b7753b733ae302c08f80bca7b0c3fda1eea665c2b1922c58795f35a54c833", size = 8215481 },
+    { url = "https://files.pythonhosted.org/packages/4f/0a/1b2a2fda3f338dedd219de358d77b01f1138bc4bc6b4c73b6ea01d8ddd9e/maturin-1.7.4-py3-none-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:0182a9638399c8835afd39d2aeacf56908e37cba3f7abb15816b9df6774fab81", size = 15930801 },
+    { url = "https://files.pythonhosted.org/packages/21/df/f75dcd8472f3be5b528942b11444eb4a82aa1aced7d105a8ba39bb85ece8/maturin-1.7.4-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:41a29c5b23f3ebdfe7633637e3de256579a1b2700c04cd68c16ed46934440c5a", size = 8166643 },
+    { url = "https://files.pythonhosted.org/packages/87/43/52baa75e6dae9848ea22ae6bd405e7f7da091ba63409b07912048fde2083/maturin-1.7.4-py3-none-manylinux_2_12_i686.manylinux2010_i686.musllinux_1_1_i686.whl", hash = "sha256:23fae44e345a2da5cb391ae878726fb793394826e2f97febe41710bd4099460e", size = 8560688 },
+    { url = "https://files.pythonhosted.org/packages/84/97/5e2bfbcf42725ba5f64310423edcf00d90e684a61d55dd0a26b2313a44b6/maturin-1.7.4-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:8b441521c151f0dbe70ed06fb1feb29b855d787bda038ff4330ca962e5d56641", size = 8939107 },
+    { url = "https://files.pythonhosted.org/packages/34/59/e0d58ce67a8a6245dcb74ffb81cb12f0cda8b622c8d902f2371de742ae04/maturin-1.7.4-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:7ccb66d0c5297cf06652c5f72cb398f447d3a332eccf5d1e73b3fe14dbc9498c", size = 8425431 },
+    { url = "https://files.pythonhosted.org/packages/53/20/4b79324b14a1f39b2c66eb1ad681cf8b0fff1f905374b0cca59fc9c8ef7a/maturin-1.7.4-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.musllinux_1_1_armv7l.whl", hash = "sha256:71f668f19e719048605dbca6a1f4d0dc03b987c922ad9c4bf5be03b9b278e4c3", size = 8104459 },
+    { url = "https://files.pythonhosted.org/packages/7f/fa/8d9497c62451fc19f52cda1ad652c5dca4e9646ff93be35250070afbc2af/maturin-1.7.4-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.musllinux_1_1_ppc64le.whl", hash = "sha256:c179fcb2b494f19186781b667320e43d95b3e71fcb1c98fffad9ef6bd6e276b3", size = 8729663 },
+    { url = "https://files.pythonhosted.org/packages/a4/e9/15a24263de981928303ca64465d5d9d5062f248b9ceaab3de5857ee0ba83/maturin-1.7.4-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:fd5b4b95286f2f376437340f8a4908f4761587212170263084455be8099099a7", size = 10142511 },
+    { url = "https://files.pythonhosted.org/packages/a5/5d/59765561ea1a5f993141a403eb4ae85b7a8bd118971de0ed14048e3faf7f/maturin-1.7.4-py3-none-win32.whl", hash = "sha256:35487a424467d1fda4567cbb02d21f09febb10eda22f5fd647b130bc0767dc61", size = 6578873 },
+    { url = "https://files.pythonhosted.org/packages/72/50/a9b402aa506bad6c066c7775b1cb3036b7b1c74b9de708ed537ee804ea4a/maturin-1.7.4-py3-none-win_amd64.whl", hash = "sha256:f70c1c8ec9bd4749a53c0f3ae8fdbb326ce45be4f1c5551985ee25a6d7150328", size = 7442039 },
+    { url = "https://files.pythonhosted.org/packages/30/38/8e27282ab6ff94291f04e3eb11ba960dfb487605d73cec75177d3a29879a/maturin-1.7.4-py3-none-win_arm64.whl", hash = "sha256:f3d38a6d0c7fd7b04bec30dd470b2173cf9bd184ab6220c1acaf49df6b48faf5", size = 6388008 },
+]
+
+[[package]]
+name = "pip"
+version = "24.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f4/b1/b422acd212ad7eedddaf7981eee6e5de085154ff726459cf2da7c5a184c1/pip-24.3.1.tar.gz", hash = "sha256:ebcb60557f2aefabc2e0f918751cd24ea0d56d8ec5445fe1807f1d2109660b99", size = 1931073 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ef/7d/500c9ad20238fcfcb4cb9243eede163594d7020ce87bd9610c9e02771876/pip-24.3.1-py3-none-any.whl", hash = "sha256:3790624780082365f47549d032f3770eeb2b1e8bd1f7b2e02dace1afa361b4ed", size = 1822182 },
+]
+
+[[package]]
+name = "polars"
+version = "1.8.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/75/2196c26fe049ecce55a0fa87b22ab3d9477bc9bab38116ed04854fc65ecb/polars-1.8.2.tar.gz", hash = "sha256:42f69277d5be2833b0b826af5e75dcf430222d65c9633872856e176a0bed27a0", size = 4010537 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b5/8b/6829e22a0f4c6e754c2e2b5d81025ab14d7b214018119762f52bad7325aa/polars-1.8.2-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:114be1ebfb051b794fb9e1f15999430c79cc0824595e237d3f45632be3e56d73", size = 31165933 },
+    { url = "https://files.pythonhosted.org/packages/8f/cd/5d6b837f42c1b6d87012beca940a075e450a352ab717a649000c2ec57d71/polars-1.8.2-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:e4fc36cfe48972d4c5be21a7cb119d6378fb7af0bb3eeb61456b66a1f43228e3", size = 27488552 },
+    { url = "https://files.pythonhosted.org/packages/a7/f3/c317b1bc6759d1ec343c25d5ebd376a07a2e1fd2bd04fdc07ce6b2a855c4/polars-1.8.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:67c1e448d6e38697650b22dd359f13c40b567c0b66686c8602e4367400e87801", size = 32548666 },
+    { url = "https://files.pythonhosted.org/packages/1d/df/5ccf44218728caecda9f555879b40fe4ab34ff629c81b9117a1107437fdc/polars-1.8.2-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:570ee86b033dc5a6dbe2cb0df48522301642f304dda3da48f53d7488899a2206", size = 29187225 },
+    { url = "https://files.pythonhosted.org/packages/9c/45/77e4fda23368907c06bf70fc722de28d442c5087bbc8a60c29b8396750ea/polars-1.8.2-cp38-abi3-win_amd64.whl", hash = "sha256:ce1a1c1e2150ffcc44a5f1c461d738e1dcd95abbd0f210af0271c7ac0c9f7ef9", size = 32394690 },
+]
+
+[[package]]
+name = "polars-tor"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "maturin" },
+    { name = "pip" },
+    { name = "polars" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "maturin", specifier = ">=1.7.4" },
+    { name = "pip", specifier = ">=24.3.1" },
+    { name = "polars", specifier = ">=1.8.2" },
+]
+
+[[package]]
+name = "tomli"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/e4/1b6cbcc82d8832dd0ce34767d5c560df8a3547ad8cbc427f34601415930a/tomli-2.1.0.tar.gz", hash = "sha256:3f646cae2aec94e17d04973e4249548320197cfabdf130015d023de4b74d8ab8", size = 16622 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/f7/4da0ffe1892122c9ea096c57f64c2753ae5dd3ce85488802d11b0992cc6d/tomli-2.1.0-py3-none-any.whl", hash = "sha256:a5c57c3d1c56f5ccdf89f6523458f60ef716e210fc47c4cfb188c5ba473e0391", size = 13750 },
+]
