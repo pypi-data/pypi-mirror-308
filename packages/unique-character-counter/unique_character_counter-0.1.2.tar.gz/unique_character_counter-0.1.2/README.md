@@ -1,0 +1,92 @@
+# Character Occurrence Counter with Caching
+
+This Python package calculates the number of unique characters in a given string or text file. It uses caching to store
+results for previously processed inputs, optimizing performance for repeated calls.
+
+## Features
+
+- **Unique Character Counting**: Determines characters that occur only once in a string or file.
+- **Caching**: Implements `lru_cache` to speed up repeated calculations.
+- **Command-Line Interface (CLI)**: Process input directly from the terminal.
+- **Efficient Counting**: Built using the `collections` module for optimal performance.
+- **Comprehensive Testing**: Includes tests written with `pytest` to handle edge cases and large inputs.
+- **Coverage Reports**: Generate reports to ensure full test coverage.
+
+---
+
+## Prerequisites
+
+Ensure you have:
+
+- **Python 3.6 or later** installed.
+
+---
+
+## Installation
+
+Install the package directly from PyPI:
+
+```bash
+pip install unique_character_counter
+```
+
+---
+
+## Usage
+
+### 1. As a Module
+
+You can import and use the module in your Python scripts:
+
+```python
+from collection.unique_char_count import get_unique_character_count
+
+result = get_unique_character_count("abcdefg")
+print(f"Number of unique characters: {result}")
+```
+
+### 2. Command-Line Interface
+
+#### Process a string:
+
+```bash
+python -m unique_char_count --string "abcdefg"
+```
+
+#### Process a file:
+
+```bash
+python -m unique_char_count --file path/to/your/file.txt
+```
+
+---
+
+## Testing
+
+To test the functionality, use `pytest`:
+
+1. Run all tests:
+   ```bash
+   pytest
+   ```
+2. Generate a coverage report:
+   ```bash
+   coverage run -m pytest
+   coverage report
+   ```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## Support
+
+For issues or suggestions, feel free to open an issue on
+the [GitLab repository](https://git.foxminded.ua/povh_andriy/task-5-python-package).
+
+```
+
