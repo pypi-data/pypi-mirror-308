@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+repoet/__init__.py
+repoet/op.py
+repoet/pattern.py
+repoet/pattern.pyi
+repoet/py.typed
+repoet.egg-info/PKG-INFO
+repoet.egg-info/SOURCES.txt
+repoet.egg-info/dependency_links.txt
+repoet.egg-info/not-zip-safe
+repoet.egg-info/requires.txt
+repoet.egg-info/top_level.txt
