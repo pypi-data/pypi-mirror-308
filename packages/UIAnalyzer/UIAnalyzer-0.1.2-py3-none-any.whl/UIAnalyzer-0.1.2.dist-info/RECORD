@@ -1,0 +1,14 @@
+UIAnalyzer/Driver.py,sha256=2e4-bakkdQo75hB3L6K6tq00Ahak5sHdtETlkD4qBNM,3382
+UIAnalyzer/PageCognition.py,sha256=yA5FFV3wreTff2DzzoJj1C2iUJPtjMskNoZG979Dd0s,4613
+UIAnalyzer/Rect.py,sha256=pkLsDWUZqa-k4rmujpikXBGE7PnU6BRzAnOLRPDgylw,2909
+UIAnalyzer/Utils.py,sha256=HJahQLKaI64l34eoDCtb9eehEID2iDBNb9MaQ9DMesU,2126
+UIAnalyzer/XML.py,sha256=kI3IDcde1g-0SWp_glLA0vlWCoy8_Q65YfVlWrQz7JA,6779
+UIAnalyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+UIAnalyzer/Assets/Arial.ttf,sha256=GQance2Hml3nWj_1UvutUzgn_ns54YMZzp2a4TTDRsc,296712
+UIAnalyzer/Example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+UIAnalyzer/Example/example.py,sha256=cHwdXxzBU24RAWuFn5Rago3NnDOZlRoQI9Yq65OT1Ks,589
+UIAnalyzer-0.1.2.dist-info/LICENSE,sha256=Di6tIsnJOe6E7vHPjDiWTtSihWPe6BT5JNTLgX0ZA0g,1085
+UIAnalyzer-0.1.2.dist-info/METADATA,sha256=jy6fglYWBK1iswfaJk0hSBqCvKmbOcB1QqmB0egwqLs,1364
+UIAnalyzer-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+UIAnalyzer-0.1.2.dist-info/top_level.txt,sha256=hSAEgvVpoA5EwWiNhR4olZSN3gtDcKVfVvxfakbv13o,11
+UIAnalyzer-0.1.2.dist-info/RECORD,,
