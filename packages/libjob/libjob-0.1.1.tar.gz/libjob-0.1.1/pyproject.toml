@@ -1,0 +1,40 @@
+[project]
+name = "libjob"
+version = "0.1.1"
+description = "Python warpper of the Windows job feature, replacement of the resource library"
+readme = "README.md"
+authors = [
+    { name = "Colinxu2020", email = "colinxu2020@gmail.com" }
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pywin32>=308",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+keywords = ["resource", "job", "win32", "windows"]
+
+[project.urls]
+Repository = "https://github.com/colinxu2020/libjob"
+Issues = "https://github.com/colinxu2020/libjob/issues"
+Changelog = "https://github.com/colinxu2020/libjob/ blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
