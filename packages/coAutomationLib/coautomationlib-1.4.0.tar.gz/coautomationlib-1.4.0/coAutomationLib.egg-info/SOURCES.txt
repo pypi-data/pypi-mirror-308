@@ -1,0 +1,10 @@
+setup.py
+coAutomationLib/__init__.py
+coAutomationLib/changeOrderAutomation.py
+coAutomationLib/test.py
+coAutomationLib/test_lib.py
+coAutomationLib.egg-info/PKG-INFO
+coAutomationLib.egg-info/SOURCES.txt
+coAutomationLib.egg-info/dependency_links.txt
+coAutomationLib.egg-info/requires.txt
+coAutomationLib.egg-info/top_level.txt
