@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: chartlets
+Version: 0.0.15
+Summary: Backend for server-configured charts powered by Vega Altair.
+Author: chartlets Development Team
+License: MIT
+Project-URL: Source, https://github.com/bcdev/dashi
+Keywords: dashboard,charts,vega,altair,plots
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: altair
+Provides-Extra: demo
+Requires-Dist: pyaml ; extra == 'demo'
+Requires-Dist: pandas ; extra == 'demo'
+Requires-Dist: tornado ; extra == 'demo'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: requests-mock ; extra == 'dev'
+
+# dashi 
+
+Dashi is a framework for server-configured panels. 
+
+## Run demo server
+
+``` bash
+mamba env create
+conda activate dashi
+python -m dashipy.server 
+```
+
+## How to use the framework
+
+### 1. Implement the possible contributions
+
+Implement the application-specific contributions that users 
+can add to their extensions.
+
+As an example, see [`panel.py` of the demo](dashipy/demo/contribs/panel.py):
+
+```python
+from dashipy import Contribution
+
+
+class Panel(Contribution):
+    """Panel contribution"""
+
+    def __init__(self, name: str, title: str | None = None):
+        super().__init__(name, title=title)
+```
+
+### 2. Define the contributions points
+
+Define the possible contribution points in your application.
+
+As an example, see [`server.py` of the demo](dashipy/demo/server.py):
+
+```python
+from dashipy import Extension
+from dashipy.demo.contribs import Panel
+
+Extension.add_contrib_point("panels", Panel)
+```
+
+### 3. Load the extensions
+
+Load the extensions that augment your application.
+
+As an example, see [`server.py` of the demo](dashipy/demo/server.py):
+
+```python
+from dashipy import ExtensionContext
+
+ext_ctx = ExtensionContext.load(app_ctx, extension_refs)
+```
+
+### 4. Publish the extensions 
+
+Implement the Dashi API in your application-specific webserver using
+the controller implementations in `dashipy.controllers`. 
+
+As an example, see [`server.py` of the demo](dashipy/demo/server.py).
+
+### 5. Consume the extensions
+
+Use JavaScript package `dashi` in your frontend to implement the 
+contribution lifecycle in your React application.
+
+As an example, see [the demo application](../dashi/src/demo).
