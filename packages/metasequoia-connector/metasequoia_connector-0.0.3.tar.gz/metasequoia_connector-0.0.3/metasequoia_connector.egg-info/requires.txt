@@ -1,0 +1,5 @@
+otssql
+PyHive
+PyMySQL
+setuptools
+sshtunnel
