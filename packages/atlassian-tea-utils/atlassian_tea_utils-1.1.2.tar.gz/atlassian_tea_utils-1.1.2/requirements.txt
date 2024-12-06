@@ -1,0 +1,8 @@
+-i https://pypi.org/simple
+--extra-index-url https://${ARTIFACTORY_USERNAME}:${ARTIFACTORY_PASSWORD}@packages.atlassian.com/pypi/pypi/simple
+charset-normalizer>=2,<4
+databricks-sql-connector===3.6.0
+numpy
+requests<3.0.0
+retry<1.0.0
+click

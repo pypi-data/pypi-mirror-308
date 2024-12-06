@@ -1,0 +1,43 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+url = "https://${ARTIFACTORY_USERNAME}:${ARTIFACTORY_PASSWORD}@packages.atlassian.com/pypi/pypi/simple"
+verify_ssl = true
+name = "atlassian-pypi"
+
+[dev-packages]
+pytest = "~=8.0"
+black = "~=24.2"
+flake8 = "~=7.0"
+isort = "*"
+coverage = "*"
+types-requests = "*"
+types-setuptools = "*"
+mypy = "*"
+pbr = "*"
+types-retry = "*"
+build = "*"
+wheel = "*"
+twine = "*"
+
+[packages]
+charset-normalizer = ">=2,<4"
+databricks-sql-connector = "==3.6.0"
+numpy = "*"
+requests = "*"
+retry = "<1.0.0"
+isort = "*"
+black = "*"
+flake8 = "*"
+mypy = "*"
+types-requests = "*"
+types-retry = "*"
+pytest = "*"
+click = "*"
+openai = "*"
+
+[requires]
+python_version = "3.12"

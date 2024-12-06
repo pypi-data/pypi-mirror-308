@@ -1,0 +1,9 @@
+charset-normalizer<4,>=2
+databricks-sql-connector===3.6.0
+numpy
+requests<3.0.0
+retry<1.0.0
+click
+
+[ai]
+openai

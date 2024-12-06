@@ -1,0 +1,158 @@
+CHANGES
+=======
+
+1.1.2
+-----
+
+* Release 1.1.2
+* ANTIABUSE-5405 Improve documentation and add go/letmein link
+* SCCA-692 Replace deprecated user id with staff context in AI client builder
+
+1.1.1
+-----
+
+* Release 1.1.1
+* Sem-ver bugfix: Add information on how to install the ai extra to the readme
+* Sem-ver bugfix: Add openai as an extra dep of ai
+* Sem-ver bugfix: Update requirements.txt
+* Sem-ver bugfix: use any version of retry that is < 1.0.0
+* Sem-ver bugfix: Update the required version of databricks-sql-connector to 3.6.0
+
+1.1.0
+-----
+
+* Release 1.1.0
+* Add staging and region parameters to AI client function
+* Add Unit tests for the AI SDK feature
+* None: Add OpenAI dependency
+* None: Make the linter happy
+* None: Add AI Gateway support to the OpenAI SDK
+* Remove unnecessary breaking dependency
+* Sem-ver bugfix: Update the required version of databricks-sql-connector to 3.4.0
+
+1.0.2
+-----
+
+* Release 1.0.2
+* Merged in add-readme (pull request #9)
+* Add click to requirements.txt
+* Fix formatting for 'Bitbucket pipelines integration' section
+* Add README
+* Merged in renovate/all (pull request #8)
+* None: Update pipfile.lock
+* Update dependency databricks-sql-connector to v3.3.0
+
+1.0.1
+-----
+
+* Release 1.0.1
+* Merged in renovate/all (pull request #6)
+* Simplify requirements.txt
+* Switch from using datetime.utcnow() to using datetime.now(timezone.utc)
+* None: Fix a linting issue
+* Update all dependencies
+
+1.0.0
+-----
+
+* Release 1.0.0
+* Release 1.0.0
+* Update requirements.txt to match the dep updates
+* Sem-ver api-break: As part of the databricks-sql-connector v3 update, specify use\_inline\_params as true to avoid issues for library consumers See https://github.com/databricks/databricks-sql-python/blob/main/docs/parameters.md for more information
+* None: Switch back to using python 3.11 in CI
+* Update all dependencies
+* Merged in renovate/configure (pull request #3)
+* Add renovate.json
+
+0.1.2
+-----
+
+* Release 0.1.2
+* None: Use >= in the requirements.txt file except for urllib3
+* None: Update requirements.txt
+* None: Update deps
+
+0.1.1
+-----
+
+* Release 0.1.1
+* Fix linting issue
+* Revert "Improve command list"
+* Improve command list
+* Docstrings
+
+0.1.0
+-----
+
+* Sem-Ver: feature Add batchupload uploading functionality Signed-off-by: David Black <dblack@atlassian.com>
+* Sem-Ver: feature Add code to facilitate obtaining auth from running a command
+
+0.0.6
+-----
+
+* Release 0.0.6
+* Fix mypy issues
+* Remove the unescaped parameter functionality in favour of letting users do \`validate\_table\` on their own queries; this will simplify the escaping syntax
+
+0.0.5
+-----
+
+* Release 0.0.5
+* Fix the release twine execution
+
+0.0.4
+-----
+
+* Release 0.0.4
+* Fix a test that was failing in CI
+* Release from the release branch
+* Fix the tag release step config
+* Configure automatic releases for git tag pushes
+* Add twine as a dev requirement
+* Update requirements.txt
+* Use the build package to generate release files
+
+0.0.3
+-----
+
+* Update the changelog
+* Release 0.0.3
+* Add a make clean target
+* Bugfix when a key is existent
+
+0.0.2
+-----
+
+* Release 0.0.2
+* None: Setup a test env for splunk
+* Implement missing tests
+* Bugfix on io dependency in unit test
+* Add unit tests for splunk
+* Splunk integ tests
+* Integ tests
+* Simplified table verification in socrates API
+* Add pytest
+* Improved docstrings and code. Bugfix when using \`%%(table)s\`, now the escaping works
+* Rename iam file
+* Improve IAM update actions file
+* Improve splunk support by adding streamed results as a generator
+* Add \`make lint\` packages and some stubs
+* Add \`make format\` dependencies
+
+0.0.1
+-----
+
+* Release 0.0.1
+* Add a py.typed marker
+* Update the changelog file
+* Update requirements.txt
+* Move code from src to atlassian\_tea\_utils
+* Add in databricks code
+* Update the mypy configuration re the databricks library
+* Add socrates databricks related deps
+* Add initial package configuration
+* None: Add quality checks etc
+* Add the working code
+* Add initial dummy libraries
+* Update .gitignore to be more python specific
+* Initial commit

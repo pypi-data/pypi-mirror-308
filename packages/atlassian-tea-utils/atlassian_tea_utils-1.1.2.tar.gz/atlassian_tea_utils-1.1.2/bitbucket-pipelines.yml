@@ -1,0 +1,64 @@
+image:
+  name: python:3.12
+
+test: &test
+  step:
+    name: Unit testing
+    caches:
+      - pip
+      - venv
+    script:
+      - pipe: atlassian/artifactory-sidekick:v1
+      - source .artifactory/activate.sh
+      - pip install pipenv
+      - pipenv install --dev
+      - make test
+
+lint: &lint
+  step:
+    name: Linting
+    caches:
+      - pip
+      - venv
+    script:
+      - pipe: atlassian/artifactory-sidekick:v1
+      - source .artifactory/activate.sh
+      - pip install pipenv
+      - pipenv install --dev
+      - make lint
+
+
+pipelines:
+  default:
+    - parallel:
+      - <<: *test
+      - <<: *lint
+  branches:
+    main:
+      - <<: *test
+    release:
+      - step:
+          name: Release
+          deployment: production
+          clone:
+            depth: full
+          script:
+            - pipe: atlassian/artifactory-sidekick:v1
+              variables:
+                COMPLIANT: "true"
+            - source .artifactory/activate.sh
+            - pip install pipenv
+            - pipenv install --dev
+            - make lint
+            - make test
+            - make dist
+            - pipenv run twine upload -r pac dist/*
+
+definitions:
+  caches:
+    venv:
+      path: ~/.local/share/
+      key:
+        files:
+          - Pipfile.lock
+          - Pipfile
