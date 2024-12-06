@@ -1,0 +1,12 @@
+integracaoTracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+integracaoTracker/module_integracao.py,sha256=_NgKiaq2122I8l-Wt4oMzu6M3MQ8hH7ag20Kerg_TSc,1530
+integracaoTracker/utils.py,sha256=9wd7hkKdl3edWYrGBBuIHmHH0jImh67tHZzIHW5mEdM,11841
+utilFunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utilFunctions/config.py,sha256=tnQnhlZ9YLD02b16MmUaetSNPME1HAaHixYX3IhN6yQ,4854
+utilFunctions/module.py,sha256=9ZAVsSNk_FDlDpDnb3R5dXhpGQDURsbz2lu-yFQoerQ,41567
+utilFunctions/data/fretes.db,sha256=pVNcHAg2rGfMXFuSKlyB_N3lusxBpvyWwk_cWB9fw6g,49152
+utilFunctions/data/shapesMiniAnel.shp,sha256=Yd0HtlvtsjL80WqpvoRH0ef7t1gEiiCDzOiMOuZVCqU,16828
+pacofunctions-0.0.8.dist-info/METADATA,sha256=Wy3_HeLdc21cAn9XClcpJogei9cxc67BA7Uqqj8xVN8,599
+pacofunctions-0.0.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pacofunctions-0.0.8.dist-info/top_level.txt,sha256=mTBFyEbVadwyR2MDMnmkBJXALMY3fja_yc8hj3tRHag,32
+pacofunctions-0.0.8.dist-info/RECORD,,
