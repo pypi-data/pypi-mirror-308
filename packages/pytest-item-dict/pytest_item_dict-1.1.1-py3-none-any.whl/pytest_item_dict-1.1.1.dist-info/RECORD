@@ -1,0 +1,14 @@
+pytest_item_dict/__init__.py,sha256=Wc7NYKLj9l9hbgCHtOI1T-dtoF5p1aiI3OHZ5uV1MUc,174
+pytest_item_dict/collect_dict.py,sha256=Yfkm28dbRqzAKXouzUtW3FhygRQpl2Uki9PJx1e7pr4,9682
+pytest_item_dict/hooks.py,sha256=wHH9J5dZdxZPDnVSn0dRDUqXZ1078fjnGWn6Iz2Dy1Y,291
+pytest_item_dict/item_dict_enums.py,sha256=3ciwMO93p_uOaUeBEckQ_HOSrgOMU5UA5byMjegWt78,916
+pytest_item_dict/plugin.py,sha256=wLnjD3Z6Fi7m1taYiCdJfkWIFibqF_lAAJkU_DhDBCM,8408
+pytest_item_dict/py.typed,sha256=Wc7NYKLj9l9hbgCHtOI1T-dtoF5p1aiI3OHZ5uV1MUc,174
+pytest_item_dict/test_dict.py,sha256=F-hKc-B9ZxJBiHDP3wFKYEns_e-wdXmtqmQotmFz9MU,7713
+pytest_item_dict/version.py,sha256=EPoWF0em1tKJgBz5dbBF-r29860VBk-SsdiXh6E1aO0,411
+pytest_item_dict-1.1.1.dist-info/LICENSE,sha256=EeboDeWwE6ONfxi3-zPJ6wUFeFa6u5wXd7VqpmZ3WSY,18463
+pytest_item_dict-1.1.1.dist-info/METADATA,sha256=H4mgEJmELlqJC2oL-7qqjCrM8QFj2aTlwOTi8rvcRkg,25383
+pytest_item_dict-1.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pytest_item_dict-1.1.1.dist-info/entry_points.txt,sha256=X0hbN2FguVRRPtUELptxAsJtNqMAeBdwLYrf1L2v9bA,47
+pytest_item_dict-1.1.1.dist-info/top_level.txt,sha256=kBWEw6ccuTFLF4LzELm1YUAlKwgns4ESOkLH3ph-_Jg,17
+pytest_item_dict-1.1.1.dist-info/RECORD,,
