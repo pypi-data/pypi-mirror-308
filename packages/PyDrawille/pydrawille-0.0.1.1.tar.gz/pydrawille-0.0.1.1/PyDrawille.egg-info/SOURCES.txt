@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.en.md
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+PyDrawille/__init__.py
+PyDrawille/main.py
+PyDrawille.egg-info/PKG-INFO
+PyDrawille.egg-info/SOURCES.txt
+PyDrawille.egg-info/dependency_links.txt
+PyDrawille.egg-info/requires.txt
+PyDrawille.egg-info/top_level.txt
