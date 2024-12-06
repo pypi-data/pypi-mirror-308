@@ -1,0 +1,10 @@
+bgmiget/__init__.py,sha256=37w5VbHRsOdwqliqCsgRMQEkA0xNVh0ZDbxXHWEQ4Vc,25
+bgmiget/bgmiget.py,sha256=DtlJheV-LXoybTANWvYN6788JgWbRPJLCxWyAbFweek,4725
+bgmiget/persistentdict.py,sha256=6NODnssaWi5Vdo3HoPxjoE_g17GGWT9ATk8ot2dMaU8,464
+bgmiget/result.py,sha256=JDuNelc8e4z1tV-ws0arlSj8QK8Y7Cx3hg64i5TRCYc,1568
+bgmiget/sources/__init__.py,sha256=0QzGpnz_B60Xkq7UFdGLzMKO7bOyWhC8ToOBIsgj_iI,38
+bgmiget/sources/mikanproject.py,sha256=eN_nz5J9GkTQQDGMLqwxEHZZXIMrP_NaQ6al6pMVThQ,838
+bgmiget-1.0.4.dist-info/METADATA,sha256=rf74Wtz18h_bdA2JiGlCF4MU4-aL1UqckHJZgENXzFM,2141
+bgmiget-1.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bgmiget-1.0.4.dist-info/entry_points.txt,sha256=GWp6E0UR56CAqEhOVar7tLAH_0ujgQ7FEtq3z3YcW1Q,40
+bgmiget-1.0.4.dist-info/RECORD,,
