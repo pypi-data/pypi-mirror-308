@@ -1,0 +1,697 @@
+"""Make string uppercase"""
+directive @upper on FIELD
+
+directive @replace(old: String!, new: String!) on FIELD
+
+"""Make get stuff uppercase"""
+directive @relation(on: String!) on FIELD
+
+type Query {
+  entities(filters: EntityFilter = null, pagination: GraphPaginationInput = null): [Entity!]!
+  linkedExpressions(filters: LinkedExpressionFilter, pagination: OffsetPaginationInput): [LinkedExpression!]!
+  graphs(filters: GraphFilter, pagination: OffsetPaginationInput): [Graph!]!
+  models(filters: ModelFilter, pagination: OffsetPaginationInput): [Model!]!
+  reagents(filters: ReagentFilter, pagination: OffsetPaginationInput): [Reagent!]!
+  protocols(filters: ProtocolFilter, pagination: OffsetPaginationInput): [Protocol!]!
+  expressions(filters: ExpressionFilter, pagination: OffsetPaginationInput): [Expression!]!
+  ontologies(filters: OntologyFilter, pagination: OffsetPaginationInput): [Ontology!]!
+  protocolSteps(filters: ProtocolStepFilter, pagination: OffsetPaginationInput): [ProtocolStep!]!
+  protocolStepTemplates(filters: ProtocolStepTemplateFilter, pagination: OffsetPaginationInput): [ProtocolStepTemplate!]!
+  entityRelations(filters: EntityRelationFilter = null, pagination: GraphPaginationInput = null): [EntityRelation!]!
+  knowledgeGraph(id: ID!): KnowledgeGraph!
+  entityGraph(id: ID!): EntityGraph!
+  linkedExpressionByAgename(ageName: String!, graphId: ID!): LinkedExpression!
+  pairedEntities(graph: ID = null, relationFilter: EntityRelationFilter = null, leftFilter: EntityFilter = null, rightFilter: EntityFilter = null, pagination: GraphPaginationInput = null): [PairedStructure!]!
+  structure(graph: ID!, structure: StructureString!): Entity!
+  reagent(id: ID!): Reagent!
+  entity(id: ID!): Entity!
+  entityRelation(id: ID!): EntityRelation!
+  linkedExpression(id: ID!): LinkedExpression!
+  graph(id: ID!): Graph!
+  model(id: ID!): Model!
+  ontology(id: ID!): Ontology!
+  protocol(id: ID!): Protocol!
+  protocolStep(id: ID!): ProtocolStep!
+  expression(id: ID!): Expression!
+  protocolStepTemplate(id: ID!): ProtocolStepTemplate!
+  myActiveGraph: Graph!
+}
+
+type Entity {
+  id: ID!
+  linkedExpression: LinkedExpression!
+  kindName: String!
+  label: String!
+  identifier: String
+  object: String
+  validFrom: DateTime!
+  validTo: DateTime!
+  createdAt: DateTime!
+  relations(filter: EntityRelationFilter = null, pagination: GraphPaginationInput = null): [EntityRelation!]!
+  subjectedTo: [ProtocolStep!]!
+  usedIn: [ProtocolStep!]!
+  metricMap: MetricMap!
+  metrics: [NodeMetric!]!
+}
+
+type LinkedExpression {
+  id: ID!
+  graph: Graph!
+  expression: Expression!
+  kind: ExpressionKind!
+  description: String
+  purl: String
+  dataKind: MetricDataType
+  color: String!
+  label: String!
+  entities(filter: EntityFilter = null, pagination: GraphPaginationInput = null): [Entity!]!
+  pinned: Boolean!
+}
+
+type Graph {
+  id: ID!
+  name: String!
+  description: String
+  linkedExpressions(filters: LinkedExpressionFilter, pagination: OffsetPaginationInput): [LinkedExpression!]!
+  ageName: String!
+}
+
+input LinkedExpressionFilter {
+  graph: ID
+  search: String
+  pinned: Boolean
+  kind: ExpressionKind
+  ids: [ID!]
+  AND: LinkedExpressionFilter
+  OR: LinkedExpressionFilter
+}
+
+enum ExpressionKind {
+  STRUCTURE
+  MEASUREMENT
+  RELATION
+  ENTITY
+  METRIC
+  RELATION_METRIC
+  CONCEPT
+}
+
+input OffsetPaginationInput {
+  offset: Int! = 0
+  limit: Int! = -1
+}
+
+type Expression {
+  id: ID!
+  ontology: Ontology!
+  kind: ExpressionKind!
+  label: String!
+  description: String
+  store: MediaStore
+  metricKind: MetricDataType
+  linkedExpressions(filters: LinkedExpressionFilter, pagination: OffsetPaginationInput): [LinkedExpression!]!
+}
+
+type Ontology {
+  id: ID!
+  name: String!
+  description: String
+  purl: String
+  expressions(filters: ExpressionFilter, pagination: OffsetPaginationInput): [Expression!]!
+  store: MediaStore
+}
+
+input ExpressionFilter {
+  ids: [ID!]
+  id: ID
+  search: String
+  kind: ExpressionKind
+  AND: ExpressionFilter
+  OR: ExpressionFilter
+}
+
+type MediaStore {
+  id: ID!
+  path: String!
+  bucket: String!
+  key: String!
+  presignedUrl(host: String = null): String!
+}
+
+enum MetricDataType {
+  INT
+  FLOAT
+  DATETIME
+  STRING
+  CATEGORY
+  BOOLEAN
+  THREE_D_VECTOR
+  TWO_D_VECTOR
+  ONE_D_VECTOR
+  FOUR_D_VECTOR
+  N_VECTOR
+}
+
+input EntityFilter {
+  graph: ID = null
+  kind: ID = null
+  ids: [ID!] = null
+  linkedExpression: ID = null
+  identifier: String = null
+  object: ID = null
+  search: String = null
+}
+
+input GraphPaginationInput {
+  limit: Int = 200
+  offset: Int = 0
+}
+
+"""Date with time (isoformat)"""
+scalar DateTime
+
+type EntityRelation {
+  id: ID!
+  linkedExpression: LinkedExpression!
+  left: Entity!
+  right: Entity!
+  leftId: String!
+  rightId: String!
+  label: String!
+  metrics: [RelationMetric!]!
+  metricMap: MetricMap!
+}
+
+type RelationMetric {
+  linkedExpression: LinkedExpression!
+  value: String!
+}
+
+"""The `MetricMap` scalar type represents a matrix values as specified by"""
+scalar MetricMap
+
+input EntityRelationFilter {
+  graph: ID = null
+  kind: ID = null
+  ids: [ID!] = null
+  linkedExpression: ID = null
+  search: String = null
+  withSelf: Boolean = null
+  leftId: ID = null
+  rightId: ID = null
+}
+
+type ProtocolStep {
+  id: ID!
+  template: ProtocolStepTemplate!
+  history(pagination: OffsetPaginationInput): [History!]!
+  forReagent: Reagent
+  performedAt: DateTime
+  performedBy: User
+  reagentMappings(filters: ProtocolStepFilter, pagination: OffsetPaginationInput): [ReagentMapping!]!
+  forEntity: Entity
+  usedEntity: Entity
+  name: String!
+}
+
+type ProtocolStepTemplate {
+  id: ID!
+  name: String!
+  plateChildren: [UntypedPlateChild!]!
+  createdAt: DateTime!
+}
+
+"""The `UntypedPlateChild` scalar type represents a plate child"""
+scalar UntypedPlateChild
+
+type History {
+  app: App
+  user: User
+  kind: HistoryKind!
+  date: DateTime!
+  during: String
+  id: ID!
+  effectiveChanges: [ModelChange!]!
+}
+
+"""An app."""
+type App {
+  id: ID!
+  name: String!
+  clientId: String!
+}
+
+"""A user."""
+type User {
+  id: ID!
+  sub: String!
+  username: String!
+  email: String!
+  password: String!
+}
+
+enum HistoryKind {
+  CREATE
+  UPDATE
+  DELETE
+}
+
+type ModelChange {
+  field: String!
+  oldValue: String
+  newValue: String
+}
+
+type Reagent {
+  id: ID!
+  expression: Expression
+  lotId: String!
+  orderId: String
+  protocol: Protocol
+  creationSteps(filters: ProtocolStepFilter, pagination: OffsetPaginationInput): [ProtocolStep!]!
+  usedIn(filters: ProtocolStepFilter, pagination: OffsetPaginationInput): [ReagentMapping!]!
+  label: String!
+}
+
+type Protocol {
+  id: ID!
+  name: String!
+  description: String
+  history(pagination: OffsetPaginationInput): [History!]!
+  createdAt: DateTime!
+  creator: User
+  experiment: Experiment!
+}
+
+type Experiment {
+  id: ID!
+  name: String!
+  description: String
+  history(pagination: OffsetPaginationInput): [History!]!
+  createdAt: DateTime!
+  creator: User
+  protocols(filters: ProtocolFilter, pagination: OffsetPaginationInput): [Protocol!]!
+}
+
+input ProtocolFilter {
+  ids: [ID!]
+  search: String
+  id: ID
+  AND: ProtocolFilter
+  OR: ProtocolFilter
+}
+
+input ProtocolStepFilter {
+  ids: [ID!]
+  search: String
+  id: ID
+  protocol: ID = null
+  AND: ProtocolStepFilter
+  OR: ProtocolStepFilter
+}
+
+type ReagentMapping {
+  id: ID!
+  reagent: Reagent!
+  protocolStep: ProtocolStep!
+}
+
+type NodeMetric {
+  id: ID!
+  linkedExpression: LinkedExpression!
+  validFrom: DateTime
+  validTo: DateTime
+  value: Metric
+  key: String!
+}
+
+"""The `Metric` scalar type represents a matrix values as specified by"""
+scalar Metric
+
+input GraphFilter {
+  ids: [ID!]
+  search: String
+  id: ID
+  AND: GraphFilter
+  OR: GraphFilter
+}
+
+type Model {
+  id: ID!
+  name: String!
+  store: MediaStore
+}
+
+input ModelFilter {
+  ids: [ID!]
+  id: ID
+  search: String
+  AND: ModelFilter
+  OR: ModelFilter
+}
+
+input ReagentFilter {
+  ids: [ID!]
+  search: String
+  AND: ReagentFilter
+  OR: ReagentFilter
+}
+
+input OntologyFilter {
+  ids: [ID!]
+  search: String
+  id: ID
+  AND: OntologyFilter
+  OR: OntologyFilter
+}
+
+input ProtocolStepTemplateFilter {
+  ids: [ID!]
+  id: ID
+  search: String
+  AND: ProtocolStepTemplateFilter
+  OR: ProtocolStepTemplateFilter
+}
+
+type KnowledgeGraph {
+  nodes: [EntityKindNode!]!
+  edges: [EntityKindRelationEdge!]!
+}
+
+type EntityKindNode {
+  id: String!
+  label: String!
+  metrics: [EntityKindNodeMetric!]!
+}
+
+type EntityKindNodeMetric {
+  dataKind: String!
+  kind: String!
+}
+
+type EntityKindRelationEdge {
+  id: String!
+  label: String!
+  source: String!
+  target: String!
+  metrics: [EntityKindNodeMetric!]!
+}
+
+type EntityGraph {
+  nodes: [Entity!]!
+  edges: [EntityRelation!]!
+  graph: Graph!
+}
+
+type PairedStructure {
+  left: Entity!
+  right: Entity!
+  relation: EntityRelation!
+}
+
+"""The `StructureString` scalar type represents a string with a structure"""
+scalar StructureString
+
+type Mutation {
+  createGraph(input: GraphInput!): Graph!
+  updateGraph(input: UpdateGraphInput!): Graph!
+  deleteGraph(input: DeleteGraphInput!): ID!
+  createEntityRelation(input: EntityRelationInput!): EntityRelation!
+  createEntityMetric(input: CreateEntityMetricInput!): Entity!
+  createRelationMetric(input: CreateRelationMetricInput!): EntityRelation!
+  createStructureRelation(input: StructureRelationInput!): EntityRelation!
+  attachMetricsToEntities(input: AttachMetricsToEntitiesMetricInput!): [Entity!]!
+  createReagent(input: ReagentInput!): Reagent!
+  createMeasurement(input: MeasurementInput!): Entity!
+  pinLinkedExpression(input: PinLinkedExpressionInput!): LinkedExpression!
+  createProtocolStep(input: ProtocolStepInput!): ProtocolStep!
+  deleteProtocolStep(input: DeleteProtocolStepInput!): ID!
+  updateProtocolStep(input: UpdateProtocolStepInput!): ProtocolStep!
+  createModel(input: CreateModelInput!): Model!
+  requestUpload(input: RequestMediaUploadInput!): PresignedPostCredentials!
+  createEntity(input: EntityInput!): Entity!
+  deleteEntity(input: DeleteEntityInput!): ID!
+  linkExpression(input: LinkExpressionInput!): LinkedExpression!
+  unlinkExpression(input: DeleteLinkedExpressionInput!): ID!
+  createOntology(input: OntologyInput!): Ontology!
+  deleteOntology(input: DeleteOntologyInput!): ID!
+  updateOntology(input: UpdateOntologyInput!): Ontology!
+  createExpression(input: ExpressionInput!): Expression!
+  updateExpression(input: UpdateExpressionInput!): Expression!
+  deleteExpression(input: DeleteExpressionInput!): ID!
+  createProtocol(input: ProtocolInput!): Protocol!
+  deleteProtocol(input: DeleteProtocolInput!): ID!
+  createProtocolStepTemplate(input: ProtocolStepTemplateInput!): ProtocolStepTemplate!
+  updateProtocolStepTemplate(input: UpdateProtocolStepTemplateInput!): ProtocolStepTemplate!
+  deleteProtocolStepTemplate(input: DeleteProtocolStepTemplateInput!): ID!
+}
+
+input GraphInput {
+  name: String!
+  experiment: ID = null
+  description: String = null
+}
+
+input UpdateGraphInput {
+  id: String!
+  name: String = null
+  description: String = null
+  experiment: ID = null
+}
+
+input DeleteGraphInput {
+  id: ID!
+}
+
+input EntityRelationInput {
+  left: ID!
+  right: ID!
+  kind: ID!
+}
+
+input CreateEntityMetricInput {
+  value: Metric!
+  entity: ID!
+  metric: ID!
+  timepoint: DateTime = null
+}
+
+input CreateRelationMetricInput {
+  value: Metric!
+  relation: ID!
+  metric: ID = null
+  timepoint: DateTime = null
+}
+
+input StructureRelationInput {
+  left: Structure!
+  right: Structure!
+  kind: ID!
+}
+
+input Structure {
+  identifier: String!
+  id: ID!
+}
+
+input AttachMetricsToEntitiesMetricInput {
+  metric: ID!
+  pairs: [EntityValuePairInput!]!
+}
+
+input EntityValuePairInput {
+  entity: ID!
+  value: Metric!
+}
+
+input ReagentInput {
+  lotId: String!
+  expression: ID!
+}
+
+input MeasurementInput {
+  structure: StructureString!
+  name: String = null
+  graph: ID!
+  validFrom: DateTime = null
+  validTo: DateTime = null
+}
+
+input PinLinkedExpressionInput {
+  id: ID!
+  pin: Boolean = null
+}
+
+input ProtocolStepInput {
+  template: ID!
+  entity: ID!
+  reagentMappings: [ReagentMappingInput!]!
+  valueMappings: [VariableInput!]!
+  performedAt: DateTime = null
+  performedBy: ID = null
+}
+
+input ReagentMappingInput {
+  reagent: ID!
+  volume: Int!
+}
+
+input VariableInput {
+  key: String!
+  value: String!
+}
+
+input DeleteProtocolStepInput {
+  id: ID!
+}
+
+input UpdateProtocolStepInput {
+  id: ID!
+  name: String!
+  template: ID!
+  reagentMappings: [ReagentMappingInput!]!
+  valueMappings: [VariableInput!]!
+  performedAt: DateTime = null
+  performedBy: ID = null
+}
+
+input CreateModelInput {
+  name: String!
+  model: RemoteUpload!
+  view: ID = null
+}
+
+"""
+The `RemoteUpload` scalar type represents a reference to a remote upload on a datalayer
+"""
+scalar RemoteUpload
+
+"""
+Temporary Credentials for a file upload that can be used by a Client (e.g. in a python datalayer)
+"""
+type PresignedPostCredentials {
+  key: String!
+  xAmzAlgorithm: String!
+  xAmzCredential: String!
+  xAmzDate: String!
+  xAmzSignature: String!
+  policy: String!
+  datalayer: String!
+  bucket: String!
+  store: String!
+}
+
+input RequestMediaUploadInput {
+  key: String!
+  datalayer: String!
+}
+
+input EntityInput {
+  kind: ID!
+  group: ID = null
+  parent: ID = null
+  instanceKind: String = null
+  name: String = null
+}
+
+input DeleteEntityInput {
+  id: ID!
+}
+
+input LinkExpressionInput {
+  expression: ID!
+  graph: ID!
+  color: [Int!] = null
+}
+
+input DeleteLinkedExpressionInput {
+  id: ID!
+}
+
+input OntologyInput {
+  name: String!
+  description: String = null
+  purl: String = null
+  image: ID = null
+}
+
+input DeleteOntologyInput {
+  id: ID!
+}
+
+input UpdateOntologyInput {
+  id: ID!
+  name: String = null
+  description: String = null
+  purl: String = null
+  image: ID = null
+}
+
+input ExpressionInput {
+  ontology: ID = null
+  label: String!
+  description: String = null
+  purl: String = null
+  color: [Int!] = null
+  kind: ExpressionKind!
+  metricKind: MetricDataType = null
+  image: Upload = null
+}
+
+scalar Upload
+
+input UpdateExpressionInput {
+  id: ID!
+  label: String = null
+  description: String = null
+  purl: String = null
+  color: [Int!] = null
+  image: ID = null
+}
+
+input DeleteExpressionInput {
+  id: ID!
+}
+
+input ProtocolInput {
+  name: String!
+  description: String = null
+  experiment: ID!
+}
+
+input DeleteProtocolInput {
+  id: ID!
+}
+
+input ProtocolStepTemplateInput {
+  name: String!
+  plateChildren: [PlateChildInput!]!
+}
+
+input PlateChildInput {
+  id: ID = null
+  type: String = null
+  text: String = null
+  children: [PlateChildInput!] = null
+  value: String = null
+  color: String = null
+  fontSize: String = null
+  backgroundColor: String = null
+  bold: Boolean = null
+  italic: Boolean = null
+  underline: Boolean = null
+}
+
+input UpdateProtocolStepTemplateInput {
+  id: ID!
+  name: String = null
+  plateChildren: [PlateChildInput!]!
+}
+
+input DeleteProtocolStepTemplateInput {
+  id: ID!
+}
+
+type Subscription {
+  historyEvents(user: String!): Entity!
+}
