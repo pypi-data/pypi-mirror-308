@@ -1,0 +1,8 @@
+numpy
+sympy
+qiskit
+pylint
+pytest
+hypothesis
+pytest-cov
+coveralls
