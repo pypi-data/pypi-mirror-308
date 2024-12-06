@@ -1,0 +1,13 @@
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.3
+tensorcircuit[qiskit]==0.12.0
+pyscf==2.7.0
+openfermion==1.6.1
+pylatexenc==2.10
+noisyopt==0.2.2
+renormalizer==0.0.10
+
+[jax]
+jax
+jaxlib
