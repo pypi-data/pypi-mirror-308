@@ -1,0 +1,4 @@
+[console_scripts]
+rssbot = rssbot.cli:main
+rssbotd = rssbot.daemon:main
+rssbots = rssbot.service:main
