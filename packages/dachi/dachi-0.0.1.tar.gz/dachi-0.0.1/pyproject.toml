@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "dachi"
+version = "0.0.1"
+description = "A framework for flexibly creating AI agents."
+homepage = "https://github.com/short-greg/dachi"
+repository = "https://github.com/short-greg/dachi"
+documentation = "https://dachi.readthedocs.com"
+authors = ["Greg Short <g.short@kurenai.waseda.jp>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [
+    {include="dachi"},
+    {include="dachi/op"},
+    {include="dachi/read"},
+    {include="dachi/utils"},
+    {include="dachi/act"},
+    {include="dachi/adapt"},
+    {include="dachi/graph"},
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pytest = '>=7, <8'
+pydantic = '>=2, <3'
+roman = '>=4, <5'
+numpy = '>=1.0'
+pandas = '>=1.0'
+networkx = '>=3.0,<4.0'
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6"
+flake8 = "^3"
+isort = "^5"
