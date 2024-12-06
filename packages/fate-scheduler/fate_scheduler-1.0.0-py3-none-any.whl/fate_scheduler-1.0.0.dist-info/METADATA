@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: fate-scheduler
+Version: 1.0.0
+Summary: The operating system-level command scheduler and manager.
+Home-page: https://github.com/chicago-cdac/fate
+License: MIT
+Author: Jesse London
+Author-email: jesselondon@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Dickens (>=2.1,<3.0)
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: argcmdr (>=1.0.1,<2.0.0)
+Requires-Dist: argcomplete (>=2.0,<3.0)
+Requires-Dist: croniter (>=1.3.5,<2.0.0)
+Requires-Dist: importlib-resources (==5.0) ; python_version >= "3.8" and python_version < "3.10"
+Requires-Dist: lmdb-dict-full (>=1.0.2)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: schema (>=0.7.5,<0.8.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: wcwidth (>=0.2.5,<0.3.0)
+Project-URL: Repository, https://github.com/chicago-cdac/fate
+Description-Content-Type: text/plain
+
+= Fate
+
+The operating system-level command scheduler and manager.
+
+TODO: Objectives/justifications; features; installation and quick start-up....
+
+== Creating tasks
+
+Fate tasks are merely executables available through the file system. Tasks abiding by the framework's expectations may be added with a minimum of effort.
+
+=== The contract
+
+TODO
+
+=== Testing
+
+==== execute
+
+Any executable may be invoked (with optional arguments) by the Fate `execute` command:
+
+[source,sh]
+----
+fate debug execute [options] command [arguments]
+----
+
+The above generates an execution report for use in development and debugging.
+
+Options such as `-i|--stdin` may be useful to supply measurment parameters to the executable according to the link:#_the_contract[framework's contract].
+
+==== run
+
+Once added to Fate configuration, executables become _tasks_. These may be invoked ad-hoc by the `run` command:
+
+[source,sh]
+----
+fate debug run [options] task
+----
+
+The options and output of the `run` command are similar to those of `execute`.
+
+Unlike with scheduled tasks, the results of tasks performed by `run` are not, by default, persisted to file. Either specify option `--record` to capture these as configured, or option `--stdout` to capture these at an arbitrary path.
+
+== Development
+
+=== Extending the framework
+
+==== Set-up
+
+Fate is implemented in https://www.python.org/[Python] and the framework's distribution is managed via https://python-poetry.org/[Poetry].
+
+*Python v3.10* may be supplied by an operating system package manager, by https://www.python.org/[python.org], or by a utility such as https://github.com/pyenv/pyenv[pyenv]; pyenv is _recommended_ for development but _not required_.
+
+With Python installed, *Poetry* may be installed https://python-poetry.org/docs/#installation[according to its instructions].
+
+TIP: If you are managing your own virtual environment, _e.g._ via https://github.com/pyenv/pyenv-virtualenv[pyenv-virtualenv], then this step may be as simple as `pip install poetry`. However, this tooling is not required, and Poetry offers its own automated set-up, as well as management of virtual environments.
+
+Finally, from the root directory of a repository clone, the framework may be installed in development mode:
+
+[source,sh]
+----
+poetry install
+----
+
+NOTE: Poetry will use any existing, activated virtual environment, or create its own into which dependencies will be installed.
+
+The `fate` command is now available for use in your development environment.
+
+[IMPORTANT]
+====
+For simplicity, it will be presumed that `fate` is available on your `PATH`. However, this depends upon activation of your virtual environment.
+
+A virtual environment under management by Poetry may be activated via sub-shell with:
+
+[source,sh]
+----
+poetry shell
+----
+
+Alternatively, any command installed into Poetry's virtual environment may be executed ad-hoc via the `run` command:
+
+[source,sh]
+----
+poetry run fate ...
+----
+====
+
