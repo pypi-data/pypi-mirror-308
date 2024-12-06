@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: MtbTk
+Version: 0.0.2
+Summary: MtbTk: Genomics Analysis Toolkit for Mycobacterium Tuberculosis.
+Author-email: TianyiLu <tianyi9494@gmail.com>
+Project-URL: Homepage, https://github.com/TianyiLu9494/MtbTk/
+Project-URL: Issues, https://github.com/TianyiLu9494/MtbTk/issues
+Project-URL: License, https://github.com/TianyiLu9494/MtbTk/blob/main/LICENSE
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: intervaltree>=3.0.2
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.2.0
+Requires-Dist: scipy>=1.6.0
+Requires-Dist: statsmodels>=0.12.0
+
+# Genomics Analysis Toolkit for Mycobacterium Tuberculosis
