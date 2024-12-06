@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fast-part
+Version: 0.1
+Summary: Fast_Part: A tool for efficient partitioning and clustering of sequences.
+Home-page: https://github.com/Shafayat115/fast-part
+Author: Shafayat Ahmed
+Author-email: shafayatpiyal@vt.edu
+License-File: LICENSE
+Requires-Dist: biopython
+
