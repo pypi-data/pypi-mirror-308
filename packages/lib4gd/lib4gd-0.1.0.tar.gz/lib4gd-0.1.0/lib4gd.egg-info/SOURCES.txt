@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+lib4gd/__init__.py
+lib4gd/resource_manager.py
+lib4gd.egg-info/PKG-INFO
+lib4gd.egg-info/SOURCES.txt
+lib4gd.egg-info/dependency_links.txt
+lib4gd.egg-info/requires.txt
+lib4gd.egg-info/top_level.txt
+lib4gd/image_downloading/__init__.py
+lib4gd/image_downloading/download_google_drive.py
+lib4gd/image_downloading/download_sftp.py
+lib4gd/image_handling/__init__.py
+lib4gd/image_handling/handle_base64.py
