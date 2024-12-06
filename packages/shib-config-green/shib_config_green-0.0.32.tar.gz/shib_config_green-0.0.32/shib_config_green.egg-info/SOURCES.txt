@@ -1,0 +1,7 @@
+setup.py
+shib_config_green.egg-info/PKG-INFO
+shib_config_green.egg-info/SOURCES.txt
+shib_config_green.egg-info/dependency_links.txt
+shib_config_green.egg-info/entry_points.txt
+shib_config_green.egg-info/requires.txt
+shib_config_green.egg-info/top_level.txt
