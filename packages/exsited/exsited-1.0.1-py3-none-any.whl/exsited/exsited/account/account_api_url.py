@@ -1,0 +1,13 @@
+class AccountApiUrl:
+    ACCOUNTS = "/api/v2/accounts"
+    ACCOUNT_INFORMATION = "/api/v3/accounts/{id}/information"
+    ACCOUNT_CANCEL = "/api/v2/accounts/{id}/cancel"
+    ACCOUNT_REACTIVATE = "/api/v2/accounts/{id}/reactivate"
+    ACCOUNT_UPDATE_INFORMATION = "/api/v3/accounts/{id}/information"
+    ACCOUNT_DELETE = "/api/v3/accounts/{id}"
+    ACCOUNT_CONTACTS = "/api/v3/accounts/{id}/contacts"
+    ACCOUNT_CONTACT_TYPE = "/api/v3/accounts/{id}/contacts/{contact_type}"
+    ACCOUNT_CONTACT_UPDATE = "/api/v2/accounts/{id}/contacts/{contact_type}"
+    ACCOUNT_CONTACT_DELETE = "/api/v3/accounts/{id}/contacts/{contact_type}"
+    ACCOUNT_PAYMENT_METHODS = "/api/v2/accounts/{id}/payment-methods"
+    EACH_PAYMENT_METHODS = "/api/v2/accounts/{id}/payment-methods/{reference}"
