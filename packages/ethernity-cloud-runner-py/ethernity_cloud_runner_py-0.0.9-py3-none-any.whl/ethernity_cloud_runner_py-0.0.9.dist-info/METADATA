@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ethernity-cloud-runner-py
+Version: 0.0.9
+Summary: Ethernity Cloud Runner Python SDK
+Home-page: https://github.com/ethernity-cloud/ethernity-cloud-runner-py
+Author: Ethernity Cloud Team
+Author-email: alexlga@gmail.com
+License-File: LICENSE
+Requires-Dist: web3==6.19.0
+Requires-Dist: eth-typing==4.3.0
+Requires-Dist: ipfshttpclient
+Requires-Dist: python-dotenv
+Requires-Dist: tinyec
+Requires-Dist: cryptography
+Requires-Dist: requests
+Requires-Dist: pyasn1
+Requires-Dist: pynacl
+Requires-Dist: coincurve
+
