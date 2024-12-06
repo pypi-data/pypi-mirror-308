@@ -1,0 +1,15 @@
+sentiment_analysis/__init__.py,sha256=MqFPIEEBG56bFcc2Hg9Krgx_7lyQqmU9GbJhA4WaYkw,89
+sentiment_analysis/sentiment_analysis_multimodel.py,sha256=ji8TGdYUxuvSyp54IlvryiQ0d-rjoz6KtasHjLJB-pc,1802
+sentiment_analysis/sentiment_analysis_xlmrobertabase.py,sha256=KDQSM79xaFOKgyt5xLR4uFyQQiLL8aMLbJbCdI1faq8,789
+sentiment_analysis/api/api_multimodel.py,sha256=8MhMSo7cE7Z7kt4PNuKkdKepXAu5UfxQeI-s8AKjMHg,956
+sentiment_analysis/api/api_xlmrobertabase.py,sha256=mqyCOZYM0KWZZYcS8kmJ7WSlZipUQW2skGHaB9DRjhU,907
+sentiment_analysis/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentiment_analysis/tests/clustered_news_item_list.json,sha256=E-D3DjInTi8GepwEO5tMR9oYxlqUEmHbLwV8kHznO3k,8340
+sentiment_analysis/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentiment_analysis/tests/news_item_list.json,sha256=Fkw4GRIqXw2TKQc8T8u4tcgyyfNG-aObxdVOFCxRPi0,12686
+sentiment_analysis/tests/test_analysis.py,sha256=ESoVvMsTcCYEPIUU2gkK1gIdhfgpXRB13eBSWdjNVno,1211
+taranis_sentiment_analysis-1.2.0.dist-info/LICENSE.md,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+taranis_sentiment_analysis-1.2.0.dist-info/METADATA,sha256=lZhyh32Kdv5k3RoFuXApxbCnVYmfr0fqpiJUQF_7xTw,18089
+taranis_sentiment_analysis-1.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+taranis_sentiment_analysis-1.2.0.dist-info/top_level.txt,sha256=qiDizpOIvNMYV5-WpjQee43Heswma-YnThUYXOrAFLY,19
+taranis_sentiment_analysis-1.2.0.dist-info/RECORD,,
