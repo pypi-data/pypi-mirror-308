@@ -1,0 +1,12 @@
+pynusinov/__init__.py,sha256=cOt0QJiXRy9oVDmxzFUKYUwvOqo0MWr-uCUoetGiiB4,90
+pynusinov/_misc.py,sha256=g0c55oOBi0U6Fb1Lc4LxiKNAOWrhPJUFDlvULZpaIPY,577
+pynusinov/_nusinov_euv.py,sha256=f3WOrAu5bytAObs1kC4xu9VErx1iYqxkD5Tnzi2RJ_o,3682
+pynusinov/_nusinov_fuv.py,sha256=HaR_DLZ7DvIXIAjZg5lmf1e9-N0Ek_D3Mi0gK_EJVBc,2217
+pynusinov/_coeffs/euvt_bands_coeffs.nc,sha256=LbiBvdIgo6Vs20JsQEkNmZ6dBWSmhkpu2yStk0z-0hg,10834
+pynusinov/_coeffs/euvt_lines_coeffs.nc,sha256=yHUBG36Ta2uhVai1N8NobejyT2U92VheJ1V-ztPQdD0,9628
+pynusinov/_coeffs/fuvt_bands_coeffs.nc,sha256=43fJQerfaknuDsvGJzsKNmHkLbAcu7g9p4r1Ms3L7Q8,23406
+pynusinov-0.0.4b0.dist-info/LICENSE.txt,sha256=rB8bI6ARSyo04Ip-yjayWH46lSmrK10haiWxmW31ztA,608
+pynusinov-0.0.4b0.dist-info/METADATA,sha256=ITU7XpseEumQ-NJL5dgVcirtlsJNzHtKwvfdmS4Xu_M,10989
+pynusinov-0.0.4b0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+pynusinov-0.0.4b0.dist-info/top_level.txt,sha256=CaXrGLk3VoOMbL1yKf8Xp4FO6EBuWnqO7EDZ48DhJMw,10
+pynusinov-0.0.4b0.dist-info/RECORD,,
