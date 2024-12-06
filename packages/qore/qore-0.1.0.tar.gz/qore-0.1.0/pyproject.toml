@@ -1,0 +1,31 @@
+[project]
+name = "qore"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "einops>=0.8.0",
+    "flax>=0.10.1",
+    "jax>=0.4.35",
+    "optax>=0.2.3",
+]
+
+[build-system]
+requires = ["maturin>=1.7.4"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+manifest-path = "qorelib/Cargo.toml"
+module-name = "qore.lib"
+python-source = "."
+
+[dependency-groups]
+dev = [
+    "maturin>=1.7.4",
+    "mypy>=1.13.0",
+    "pip>=24.3.1",
+    "pytest>=8.3.3",
+    "ruff>=0.7.3",
+]

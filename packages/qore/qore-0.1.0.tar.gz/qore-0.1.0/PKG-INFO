@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: qore
+Version: 0.1.0
+Requires-Dist: einops >=0.8.0
+Requires-Dist: flax >=0.10.1
+Requires-Dist: jax >=0.4.35
+Requires-Dist: optax >=0.2.3
+Summary: 
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+
