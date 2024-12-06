@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: oqd-core
+Version: 0.1.0
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/OpenQuantumDesign/oqd-core
+Project-URL: Repository, https://github.com/OpenQuantumDesign/oqd-core.git
+Project-URL: Issues, https://github.com/OpenQuantumDesign/oqd-core/issues
+Keywords: quantum,computing,analog,digital,compiler,transpilation,atomic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research 
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Compilers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: pydantic>=2.4
+Requires-Dist: qutip==5.0.1
+Requires-Dist: Cython~=3.0.10
+Requires-Dist: filelock~=3.13.4
+Requires-Dist: numpy~=1.0
+Requires-Dist: oqd-compiler-infrastructure
+Provides-Extra: docs
+Requires-Dist: pymdown-extensions; extra == "docs"
+Requires-Dist: mkdocstrings; extra == "docs"
+Requires-Dist: mkdocs-material; extra == "docs"
+Requires-Dist: mkdocstrings-python; extra == "docs"
+Requires-Dist: mdx-truly-sane-lists; extra == "docs"
+Provides-Extra: test
+Requires-Dist: unittest-prettify; extra == "test"
+
+# ![Open Quantum Design](https://raw.githubusercontent.com/OpenQuantumDesign/oqd-compiler-infrastructure/main/docs/img/oqd-logo-text.png)
+
+<h2 align="center">
+    Open Quantum Design: Core
+</h2>
+
+
+[![doc](https://img.shields.io/badge/documentation-lightblue)](https://docs.openquantumdesign.org/open-quantum-design-core)
+[![PyPI Version](https://img.shields.io/pypi/v/oqd-core)](https://pypi.org/project/oqd-core)
+[![CI](https://github.com/OpenQuantumDesign/oqd-core/actions/workflows/pytest.yml/badge.svg)](https://github.com/OpenQuantumDesign/oqd-core/actions/workflows/pytest.yml)![versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
+## Installation <a name="installation"></a>
+
+```bash
+pip install oqd-core
+```
+or through `git`,
+
+```bash
+pip install git+https://github.com/OpenQuantumDesign/oqd-core.git
+```
+
+To develop, clone the repository locally:
+
+```bash
+git clone https://github.com/OpenQuantumDesign/oqd-core
+pip install .
+```
+
+## Getting Started <a name="Getting Started"></a>
+Please see the [documentation](https:docs.openquantumdesign.org) for tutorials, examples, and API reference.
+Below is a simple example of an analog quantum program, in which a single qubit evolves under 
+a $\sigma_X$ Hamiltonian for 10 units of time and is then measured.
+```python
+from oqd_core.interface.analog.operator import *
+from oqd_core.interface.analog.operation import *
+
+X = PauliX()
+Z = PauliZ()
+
+Hx = AnalogGate(hamiltonian=X)
+
+circuit = AnalogCircuit()
+circuit.evolve(duration=10, gate=Hx)
+circuit.measure()
+```
+
+## Documentation <a name="documentation"></a>
+
+Documentation is implemented with [MkDocs](https://www.mkdocs.org/).
+To install the dependencies for documentation, run:
+
+```
+pip install -e ".[docs]"
+```
+
+To deploy the documentation server locally:
+
+```
+cp -r examples/ docs/examples/
+mkdocs serve
+```
+
+### Where in the stack
+```mermaid
+block-beta
+   columns 3
+   
+   block:Interface
+       columns 1
+       InterfaceTitle("<i><b>Interfaces</b><i/>")
+       InterfaceDigital["<b>Digital Interface</b>\nQuantum circuits with discrete gates"] 
+       space
+       InterfaceAnalog["<b>Analog Interface</b>\n Continuous-time evolution with Hamiltonians"] 
+       space
+       InterfaceAtomic["<b>Atomic Interface</b>\nLight-matter interactions between lasers and ions"]
+       space
+    end
+    
+    block:IR
+       columns 1
+       IRTitle("<i><b>IRs</b><i/>")
+       IRDigital["Quantum circuit IR\nopenQASM, LLVM+QIR"] 
+       space
+       IRAnalog["openQSIM"]
+       space
+       IRAtomic["openAPL"]
+       space
+    end
+    
+    block:Emulator
+       columns 1
+       EmulatorsTitle("<i><b>Classical Emulators</b><i/>")
+       
+       EmulatorDigital["Pennylane, Qiskit"] 
+       space
+       EmulatorAnalog["QuTiP, QuantumOptics.jl"]
+       space
+       EmulatorAtomic["TrICal, QuantumIon.jl"]
+       space
+    end
+    
+    space
+    block:RealTime
+       columns 1
+       RealTimeTitle("<i><b>Real-Time</b><i/>")
+       space
+       RTSoftware["ARTIQ, DAX, OQDAX"] 
+       space
+       RTGateware["Sinara Real-Time Control"]
+       space
+       RTHardware["Lasers, Modulators, Photodetection, Ion Trap"]
+       space
+       RTApparatus["Trapped-Ion QPU (<sup>171</sup>Yt<sup>+</sup>, <sup>133</sup>Ba<sup>+</sup>)"]
+       space
+    end
+    space
+    
+   InterfaceDigital --> IRDigital
+   InterfaceAnalog --> IRAnalog
+   InterfaceAtomic --> IRAtomic
+   
+   IRDigital --> IRAnalog
+   IRAnalog --> IRAtomic
+   
+   IRDigital --> EmulatorDigital
+   IRAnalog --> EmulatorAnalog
+   IRAtomic --> EmulatorAtomic
+   
+   IRAtomic --> RealTimeTitle
+   
+   RTSoftware --> RTGateware
+   RTGateware --> RTHardware
+   RTHardware --> RTApparatus
+   
+    classDef title fill:#d6d4d4,stroke:#333,color:#333;
+    classDef digital fill:#E7E08B,stroke:#333,color:#333;
+    classDef analog fill:#E4E9B2,stroke:#333,color:#333;
+    classDef atomic fill:#D2E4C4,stroke:#333,color:#333;
+    classDef realtime fill:#B5CBB7,stroke:#333,color:#333;
+
+    classDef highlight fill:#f2bbbb,stroke:#333,color:#333,stroke-dasharray: 5 5;
+    
+    class InterfaceTitle,IRTitle,EmulatorsTitle,RealTimeTitle title
+    class InterfaceDigital,IRDigital,EmulatorDigital digital
+    class InterfaceAnalog,IRAnalog,EmulatorAnalog analog
+    class InterfaceAtomic,IRAtomic,EmulatorAtomic atomic
+    class RTSoftware,RTGateware,RTHardware,RTApparatus realtime
+   
+   class Interface,IRAnalog,IRAtomic highlight
+```
+The stack components highlighted in red are contained in this repository.
