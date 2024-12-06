@@ -1,0 +1,2 @@
+[console_scripts]
+x42format = formatter.formatter:main
