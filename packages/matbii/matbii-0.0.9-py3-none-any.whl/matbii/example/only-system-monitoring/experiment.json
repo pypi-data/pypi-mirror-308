@@ -1,0 +1,36 @@
+{
+    "experiment": {
+        "id": null,
+        "path": ".",
+        "duration": 30,
+        "enable_video_recording": false,
+        "enable_tasks": [
+            "system_monitoring"
+        ]
+    },
+    "guidance": {
+        "enable": true,
+        "counter_factual": false,
+        "grace_mode": "attention",
+        "attention_mode": "mouse",
+        "arrow": {
+            "mode": "mouse"
+        }
+    },
+    "window": {
+        "width": 260,
+        "height": 350,
+        "title": "System Monitoring",
+        "resizable": false,
+        "fullscreen": false,
+        "background_color": "#ffffff"
+    },
+    "logging": {
+        "level": "DEBUG",
+        "path": "./logs/"
+    },
+    "ui": {
+        "width": 260,
+        "height": 350
+    }
+}
