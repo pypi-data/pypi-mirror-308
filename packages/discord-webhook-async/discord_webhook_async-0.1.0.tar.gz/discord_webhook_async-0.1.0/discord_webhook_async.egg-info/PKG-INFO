@@ -1,0 +1,166 @@
+Metadata-Version: 2.1
+Name: discord-webhook-async
+Version: 0.1.0
+Summary: Async library for working with Discord webhooks
+Home-page: https://github.com/Ap4kk/discord-webhook-async
+Author: Ap4kk
+Author-email: arseniy.domrachev.12@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# discord-webhook-async
+
+**discord-webhook-async** вЂ” СЌС‚Рѕ Р°СЃРёРЅС…СЂРѕРЅРЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР° РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Discord Webhooks РЅР° Python. Р‘РёР±Р»РёРѕС‚РµРєР° РёСЃРїРѕР»СЊР·СѓРµС‚ `aiohttp` РґР»СЏ РІС‹РїРѕР»РЅРµРЅРёСЏ Р°СЃРёРЅС…СЂРѕРЅРЅС‹С… HTTP-Р·Р°РїСЂРѕСЃРѕРІ Рё РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ СѓРґРѕР±РЅС‹Р№ API РґР»СЏ РѕС‚РїСЂР°РІРєРё С‚РµРєСЃС‚РѕРІС‹С… СЃРѕРѕР±С‰РµРЅРёР№, embed-СЃРѕРѕР±С‰РµРЅРёР№, С„Р°Р№Р»РѕРІ, СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ СЃРѕРѕР±С‰РµРЅРёР№ Рё РїРѕР»СѓС‡РµРЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё Рѕ webhook.
+
+## РћСЃРѕР±РµРЅРЅРѕСЃС‚Рё
+
+- **РћС‚РїСЂР°РІРєР° С‚РµРєСЃС‚РѕРІС‹С… СЃРѕРѕР±С‰РµРЅРёР№**: РћС‚РїСЂР°РІРєР° РїСЂРѕСЃС‚С‹С… С‚РµРєСЃС‚РѕРІС‹С… СЃРѕРѕР±С‰РµРЅРёР№ С‡РµСЂРµР· Discord Webhook.
+- **РћС‚РїСЂР°РІРєР° Embed-СЃРѕРѕР±С‰РµРЅРёР№**: РЎРѕР·РґР°РЅРёРµ Рё РѕС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёР№ СЃ РїРѕРґРґРµСЂР¶РєРѕР№ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёСЏ РІ Discord (Embed).
+- **РћС‚РїСЂР°РІРєР° С„Р°Р№Р»РѕРІ**: Р›РµРіРєР°СЏ РѕС‚РїСЂР°РІРєР° С„Р°Р№Р»РѕРІ С‡РµСЂРµР· webhook СЃ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ РїСЂРёРєСЂРµРїР»СЏС‚СЊ РѕРїРёСЃР°РЅРёРµ.
+- **Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СЃРѕРѕР±С‰РµРЅРёР№**: Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СѓР¶Рµ РѕС‚РїСЂР°РІР»РµРЅРЅС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ РїРѕ ID.
+- **РЈРґР°Р»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёР№**: РЈРґР°Р»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёР№ РїРѕ ID.
+- **РџРѕР»СѓС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё Рѕ webhook**: РџРѕР»СѓС‡РµРЅРёРµ РјРµС‚Р°РґР°РЅРЅС‹С… Рѕ webhook (РЅР°РїСЂРёРјРµСЂ, РёРјСЏ, Р°РІР°С‚Р°СЂ).
+- **РџРѕРґРґРµСЂР¶РєР° РїРѕРІС‚РѕСЂРЅС‹С… РїРѕРїС‹С‚РѕРє**: Р’СЃС‚СЂРѕРµРЅРЅР°СЏ РїРѕРґРґРµСЂР¶РєР° Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРёС… РїРѕРІС‚РѕСЂРЅС‹С… РїРѕРїС‹С‚РѕРє РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РѕРє СЃ СЌРєСЃРїРѕРЅРµРЅС†РёР°Р»СЊРЅРѕР№ Р·Р°РґРµСЂР¶РєРѕР№.
+- **Р“РёР±РєРѕСЃС‚СЊ Рё РЅР°СЃС‚СЂРѕР№РєР°**: Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ РЅР°СЃС‚СЂРѕРёС‚СЊ РїР°СЂР°РјРµС‚СЂС‹ webhook Рё РјРµС‚РѕРґС‹ РѕС‚РїСЂР°РІРєРё.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+
+Р”Р»СЏ СѓСЃС‚Р°РЅРѕРІРєРё Р±РёР±Р»РёРѕС‚РµРєРё РІС‹РїРѕР»РЅРёС‚Рµ СЃР»РµРґСѓСЋС‰СѓСЋ РєРѕРјР°РЅРґСѓ:
+
+```bash
+pip install discord-webhook-async
+```
+
+## РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ
+1. **РћС‚РїСЂР°РІРєР° С‚РµРєСЃС‚РѕРІРѕРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # РћС‚РїСЂР°РІР»СЏРµРј С‚РµРєСЃС‚РѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ
+    response = await webhook.send_message(content="Hello, Discord!")
+    print(response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+2. **РћС‚РїСЂР°РІРєР° Embed-СЃРѕРѕР±С‰РµРЅРёСЏ**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # РЎРѕР·РґР°РЅРёРµ Рё РѕС‚РїСЂР°РІРєР° Embed-СЃРѕРѕР±С‰РµРЅРёСЏ
+    embed_response = await webhook.send_embed(
+        title="Embed Title", 
+        description="This is an embed description", 
+        color=0xFF5733, 
+        footer="Footer Text",
+        image_url="https://example.com/image.jpg",
+        thumbnail_url="https://example.com/thumbnail.jpg"
+    )
+    print(embed_response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+3. **РћС‚РїСЂР°РІРєР° С„Р°Р№Р»Р°**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # РћС‚РїСЂР°РІРєР° С„Р°Р№Р»Р°
+    file_response = await webhook.send_file('path/to/your/file.txt', content="Here is a file!")
+    print(file_response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+4. **Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ РїРѕ ID
+    message_id = "your_message_id"
+    edit_response = await webhook.edit_message(message_id, content="Updated content")
+    print(edit_response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+5. **РЈРґР°Р»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # РЈРґР°Р»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ РїРѕ ID
+    delete_response = await webhook.delete_message(message_id="your_message_id")
+    print(delete_response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+6. **РџРѕР»СѓС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё Рѕ webhook**
+```python
+import asyncio
+from discord_webhook_async import DiscordWebhook
+
+async def main():
+    webhook = DiscordWebhook('https://discord.com/api/webhooks/your-webhook-url')
+
+    # РџРѕР»СѓС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё Рѕ webhook
+    info_response = await webhook.get_webhook_info()
+    print(info_response)
+
+    await webhook.close()
+
+asyncio.run(main())
+```
+## РќР°СЃС‚СЂРѕР№РєРё Рё РїР°СЂР°РјРµС‚СЂС‹
+1) **url**: URL РІРµР±С…СѓРєР° (РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ РїСЂРё РёРЅРёС†РёР°Р»РёР·Р°С†РёРё).
+2) **retries**: РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРїС‹С‚РѕРє РїРѕРІС‚РѕСЂРЅС‹С… Р·Р°РїСЂРѕСЃРѕРІ РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РѕРє (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 3).
+3) **backoff_factor**: РњРЅРѕР¶РёС‚РµР»СЊ РґР»СЏ СЌРєСЃРїРѕРЅРµРЅС†РёР°Р»СЊРЅРѕРіРѕ СѓРІРµР»РёС‡РµРЅРёСЏ РІСЂРµРјРµРЅРё РѕР¶РёРґР°РЅРёСЏ РјРµР¶РґСѓ РїРѕРІС‚РѕСЂРЅС‹РјРё РїРѕРїС‹С‚РєР°РјРё (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 1.0).
+4) **session**: РЎРµСЃСЃРёСЏ aiohttp, СЃРѕР·РґР°РІР°РµРјР°СЏ РїСЂРё РїРµСЂРІРѕРј Р·Р°РїСЂРѕСЃРµ, РёР»Рё РјРѕР¶РЅРѕ РїРµСЂРµРґР°С‚СЊ СЃРІРѕСЋ СЃРµСЃСЃРёСЋ РґР»СЏ РјРЅРѕРіРѕРєСЂР°С‚РЅС‹С… Р·Р°РїСЂРѕСЃРѕРІ.
+## Р›РѕРіРёСЂРѕРІР°РЅРёРµ
+Р‘РёР±Р»РёРѕС‚РµРєР° РёСЃРїРѕР»СЊР·СѓРµС‚ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РјРѕРґСѓР»СЊ Python logging РґР»СЏ Р»РѕРіРёСЂРѕРІР°РЅРёСЏ РѕС€РёР±РѕРє Рё СЃРѕР±С‹С‚РёР№. Р’С‹ РјРѕР¶РµС‚Рµ РЅР°СЃС‚СЂРѕРёС‚СЊ СѓСЂРѕРІРµРЅСЊ Р»РѕРіРёСЂРѕРІР°РЅРёСЏ, СѓРєР°Р·Р°РІ РїР°СЂР°РјРµС‚СЂС‹ РєРѕРЅС„РёРіСѓСЂР°С†РёРё logging.
+
+РџСЂРёРјРµСЂ РЅР°СЃС‚СЂРѕР№РєРё Р»РѕРіРёСЂРѕРІР°РЅРёСЏ:
+```python
+import logging
+
+logging.basicConfig(level=logging.DEBUG)  # РЈСЂРѕРІРµРЅСЊ Р»РѕРіРёСЂРѕРІР°РЅРёСЏ
+```
+## РћР±СЂР°Р±РѕС‚РєР° РѕС€РёР±РѕРє Рё РїРѕРІС‚РѕСЂРЅС‹Рµ РїРѕРїС‹С‚РєРё
+Р’ СЃР»СѓС‡Р°Рµ РІСЂРµРјРµРЅРЅС‹С… РѕС€РёР±РѕРє (РЅР°РїСЂРёРјРµСЂ, СЃРµС‚РµРІС‹С… РїСЂРѕР±Р»РµРј) Р±РёР±Р»РёРѕС‚РµРєР° Р±СѓРґРµС‚ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїРѕРІС‚РѕСЂСЏС‚СЊ Р·Р°РїСЂРѕСЃС‹.
+РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРїС‹С‚РѕРє Рё РІСЂРµРјСЏ РјРµР¶РґСѓ РЅРёРјРё РјРѕР¶РЅРѕ РЅР°СЃС‚СЂРѕРёС‚СЊ С‡РµСЂРµР· РїР°СЂР°РјРµС‚СЂС‹ retries Рё backoff_factor.
+## Р›РёС†РµРЅР·РёСЏ
+**Р­С‚РѕС‚ РїСЂРѕРµРєС‚ Р»РёС†РµРЅР·РёСЂРѕРІР°РЅ РїРѕРґ Р»РёС†РµРЅР·РёРµР№ MIT.**
+## Р’РєР»Р°Рґ РІ РїСЂРѕРµРєС‚
+Р•СЃР»Рё РІС‹ С…РѕС‚РёС‚Рµ РІРЅРµСЃС‚Рё СЃРІРѕР№ РІРєР»Р°Рґ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃРѕР·РґР°Р№С‚Рµ С„РѕСЂРє СЂРµРїРѕР·РёС‚РѕСЂРёСЏ, РІРЅРµСЃРёС‚Рµ РёР·РјРµРЅРµРЅРёСЏ Рё РѕС‚РїСЂР°РІСЊС‚Рµ Pull Request.
+## РљРѕРЅС‚Р°РєС‚С‹
+Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ РІРѕРїСЂРѕСЃС‹ РёР»Рё РїСЂРµРґР»РѕР¶РµРЅРёСЏ, РІС‹ РјРѕР¶РµС‚Рµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РїРѕ Р°РґСЂРµСЃСѓ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ РїРѕС‡С‚С‹: ap4k43@gmail.com.
