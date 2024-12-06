@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/shifiq/__init__.py
+src/shifiq/shifiq.py
+src/shifiq/api/__init__.py
+src/shifiq/api/connection.py
+src/shifiq/api/player/__init__.py
+src/shifiq/api/player/player.py
+src/shifiq/client/__init__.py
+src/shifiq/client/client.py
+src/shifiq_sdk.egg-info/PKG-INFO
+src/shifiq_sdk.egg-info/SOURCES.txt
+src/shifiq_sdk.egg-info/dependency_links.txt
+src/shifiq_sdk.egg-info/requires.txt
+src/shifiq_sdk.egg-info/top_level.txt
