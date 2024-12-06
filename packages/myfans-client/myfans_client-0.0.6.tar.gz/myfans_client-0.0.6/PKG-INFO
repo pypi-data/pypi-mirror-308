@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: myfans-client
+Version: 0.0.6
+Summary: 
+Home-page: https://github.com/komanushi/myfans-client
+License: MIT
+Keywords: API
+Author: komanushi
+Author-email: 155377273+komanushi@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Project-URL: Repository, https://github.com/komanushi/myfans-client
+Description-Content-Type: text/markdown
+
+# myfans-client
+非公式myfansクライント
+
