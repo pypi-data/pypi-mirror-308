@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: scod
+Version: 0.1.2
+Summary: This module is essential for preprocessing receipt images to improve visual quality and facilitate automatic analysis.
+License: MIT
+Keywords: api,scod brasil,scod
+Author: Ricardo Castro
+Author-email: srrenks@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Scod
+
+The Scod module is an unofficial Python library designed to facilitate communication with the Scod Brasil API. Developers can integrate Scod Brasil's services into their Python applications, enabling access to features such as user authentication, data retrieval, and more.
+
+This module abstracts away the complexities of making HTTP requests and handling API responses. Developers can authenticate with the Scod Brasil API, send requests for data retrieval or manipulation, and handle errors gracefully.
+
+Please note that this module is not officially supported or endorsed by Scod Brasil. Developers can refer to Scod Brasil's documentation for detailed information on methods and usage.

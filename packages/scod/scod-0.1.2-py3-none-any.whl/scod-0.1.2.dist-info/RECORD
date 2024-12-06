@@ -1,0 +1,15 @@
+scod/__init__.py,sha256=Z6gaqYOVqK-llhGp-tKYtMnIznFvqtRdwdvlhX3ZMg8,47
+scod/modules/__init__.py,sha256=-vbEyM4-hJUWaiUrZo__LLC-1w97btNGgHAr2GEU5eQ,340
+scod/modules/client.py,sha256=YIMyywTv5FtHbNYT8qK0oFaBSj4tUB3StlSbLMTOzeY,515
+scod/modules/exceptions.py,sha256=e1vcUri-nRdtynYJr8ZKWPSriJ30AZpC8Hd1g-sc2Q8,130
+scod/modules/group.py,sha256=BrWWgJQ4TNdJFhAowlAjgPvZkazBBiq9SlydOcg9nxA,429
+scod/modules/owner.py,sha256=P9WABoYA-_uXEq5CkYMcv-OhTYk-a4_iCv8OckARMv4,22
+scod/modules/profile.py,sha256=SA-JAHNoocjgcHgFWII9kiDrqN89CvCas0MH6TVphXQ,506
+scod/modules/property.py,sha256=Dt5Cqm-BIXS8b01UfBmtVKsNKXUdY4C6VgPq1LCGGE4,1727
+scod/modules/uploader.py,sha256=uFC1Iev5dsZZ4amWlkMDcecDJdRs1TM3XA2qEXbuViI,25
+scod/modules/user.py,sha256=DGisa924ifa3PqFPagrvfVSBgLiGtItSbfTqCMZ4c0Y,21
+scod/modules/validators.py,sha256=Uq-81DWNTx1JVhlQALqkhVnf6gqAuiYP5hSgiQ-Dges,541
+scod/scod.py,sha256=WGLH9uVIifi1honp1EOc_K28_pCrVahBfwyQfy-KXm4,277
+scod-0.1.2.dist-info/METADATA,sha256=KtNHDl-Y1N_kH20ZZL6RAu2G9bDU8vnGV6OQl-KzFrQ,1436
+scod-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scod-0.1.2.dist-info/RECORD,,
