@@ -1,0 +1,6 @@
+setup.py
+morfoUz_kutubxona.egg-info/PKG-INFO
+morfoUz_kutubxona.egg-info/SOURCES.txt
+morfoUz_kutubxona.egg-info/dependency_links.txt
+morfoUz_kutubxona.egg-info/top_level.txt
+morphUz/__init__.py
