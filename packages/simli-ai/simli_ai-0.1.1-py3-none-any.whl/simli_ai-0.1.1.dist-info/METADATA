@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simli-ai
+Version: 0.1.1
+Summary: Add your description here
+Project-URL: Homepage, https://github.com/simliai/simli-client-py
+Project-URL: Bug Reports, https://github.com/simliai/simli-client-py/issues
+Project-URL: Source, https://github.com/simliai/simli-client-py
+Description-Content-Type: text/markdown
+Requires-Dist: aiortc
+Requires-Dist: websockets
+Requires-Dist: requests
+Provides-Extra: local
+Requires-Dist: opencv-python ; extra == 'local'
+Requires-Dist: pyaudio ; extra == 'local'
+Provides-Extra: processing
+Requires-Dist: numpy ; extra == 'processing'
+
+to check if connection works just uncomment the consumeTrack call in registerTrack
