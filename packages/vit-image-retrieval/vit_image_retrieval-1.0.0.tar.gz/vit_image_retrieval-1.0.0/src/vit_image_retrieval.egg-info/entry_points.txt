@@ -1,0 +1,6 @@
+[console_scripts]
+vit = vit_image_retrieval.main:main
+vit-image-retrieval = vit_image_retrieval.cli:main
+
+[gui_scripts]
+vit-image-retrieval-gui = vit_image_retrieval.main:main
