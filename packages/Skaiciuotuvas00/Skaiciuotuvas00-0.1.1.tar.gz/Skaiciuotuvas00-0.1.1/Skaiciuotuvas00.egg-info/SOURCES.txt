@@ -1,0 +1,7 @@
+setup.py
+Skaiciuotuvas/__init__.py
+Skaiciuotuvas/calculator.py
+Skaiciuotuvas00.egg-info/PKG-INFO
+Skaiciuotuvas00.egg-info/SOURCES.txt
+Skaiciuotuvas00.egg-info/dependency_links.txt
+Skaiciuotuvas00.egg-info/top_level.txt
