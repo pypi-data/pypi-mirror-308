@@ -1,0 +1,8 @@
+playwright<2.0,>=1.48.0
+
+[dev]
+clarin_spf[examples]
+ruff
+
+[examples]
+requests
