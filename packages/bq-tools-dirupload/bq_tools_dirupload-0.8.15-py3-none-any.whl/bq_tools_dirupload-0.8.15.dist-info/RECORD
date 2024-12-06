@@ -1,0 +1,14 @@
+bq/dirupload/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+bq/dirupload/delayqueue.py,sha256=Oy7dcCgAsMJ-HothXg09p8wXuYppBhvY7eEjLpPtk3U,2965
+bq/dirupload/fetchdir.py,sha256=mIzcUNXPCPj2dDASQfqoGA2GVrF_M64_7I9JUevaaZo,7484
+bq/dirupload/metaplugin.py,sha256=GQlZxkNQ6zCcOIH_DYGrAQ0QFsgEX0davF14CrbnIiQ,738
+bq/dirupload/metatable.py,sha256=sjnuF-pCTG_FF8GopMHw4xQLMUqTF0zZH5kgsNVmqNc,12613
+bq/dirupload/pool.py,sha256=YTIOMkRwITpeMgfplMdGDw5K28ovsJdA5zA6KH3BXNg,5070
+bq/dirupload/uploaddirp.py,sha256=jHhiJIb2K8UbgrkrmW1KxvTMh46QLPFXXn3m3pD5bJk,30899
+bq/dirupload/version.py,sha256=A0ZsY0vWg_NfZXyh_bW3Cb-n1dguVovzsaGC0ozlzEw,413
+bq/dirupload/watchdirs.py,sha256=gbDKh_cCxvHaVYkRpq00tjVvJfqu3pllDSD6a-FyEyI,666
+bq_tools_dirupload-0.8.15.dist-info/METADATA,sha256=L_Loz11BfD8sKuC8kgHuGO8-p-7AN1rt62AcFUdVVp8,11719
+bq_tools_dirupload-0.8.15.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bq_tools_dirupload-0.8.15.dist-info/entry_points.txt,sha256=wSQO2pZZ0rvvO4W5WSkiYgo3y5F7BRNTxBnkJHWVGpQ,179
+bq_tools_dirupload-0.8.15.dist-info/top_level.txt,sha256=w5z7Un4-v3yqVMurNio-Srl-AUvtPOxZ3tZh4Eb8RHo,3
+bq_tools_dirupload-0.8.15.dist-info/RECORD,,
