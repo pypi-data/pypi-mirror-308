@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DoomiPyApi
+Version: 1.0.0
+Summary: The HTML Report for Python unit testing Base on HTMLTestRunner
+Home-page: https://github.com/five3/Doomisoft
+Author: StephenShen
+Author-email: 28728660@qq.com
+License: MIT
+Keywords: Doomisoft,Python AI
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+The HTML Report for Python unit testing Base on HTMLTestRunner
