@@ -1,0 +1,6 @@
+equinox
+jax
+astropy
+numpy
+matplotlib
+varname
