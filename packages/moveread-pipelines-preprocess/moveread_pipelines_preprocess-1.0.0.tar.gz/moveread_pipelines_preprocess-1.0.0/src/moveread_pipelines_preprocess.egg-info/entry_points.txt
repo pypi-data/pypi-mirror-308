@@ -1,0 +1,2 @@
+[console_scripts]
+preprocess = moveread.pipelines.preprocess.scripts.cli:main
