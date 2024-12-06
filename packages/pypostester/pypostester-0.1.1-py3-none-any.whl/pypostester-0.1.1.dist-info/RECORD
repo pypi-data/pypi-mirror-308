@@ -1,0 +1,16 @@
+core/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+core/backtester.py,sha256=YTGuW_RUyYSIMdx5REMEJ8LMJhxwK5Pfb4viyq1HaXw,4791
+indicators/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+indicators/base.py,sha256=qDeabZf2GuPZQivCq1Yexge0Y0dgWWGTMJ_CE_BGg8w,486
+indicators/registry.py,sha256=Yizr6OfgQxPwVgCOVe-coOhh4soUoJSEdaxhVdh66FU,1605
+indicators/returns.py,sha256=cgxbBOC6N-aWctaEbvNZ9fQKTnIc9qy_8fKAOJ00-EQ,1311
+indicators/risks.py,sha256=X7Y7EFe-WZ0Dr6ZgnQnOZ0xVNSNMQpqsF9IvLu7HKr4,3903
+utils/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+utils/i18n.py,sha256=4rLvTzl_Lw5LocbNucv2YyTH4j3JfwyESrvWfSbe6T8,3718
+utils/validation.py,sha256=VsKyLNTu6ZgbMOvHRwZhc1hkmpUViUv7k7wjAj-0Bhg,5039
+utils/visualization.py,sha256=fHdG7ZPMZpaIlq67bWhWUIXfl9pYQaf25yWVQ2Xmm8M,11792
+pypostester-0.1.1.dist-info/LICENSE,sha256=oxA9-juFBCBko0t5sgbp4gsOl--8j_ekp8jqLVLIVJw,1069
+pypostester-0.1.1.dist-info/METADATA,sha256=jD9hz9bJDiYMjtWdvJVKYrmLHorfTeBtChmQ8jODEEM,4700
+pypostester-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pypostester-0.1.1.dist-info/top_level.txt,sha256=hco2CKt_41wUpGM77yXyDp-qvJP0fc90Hw7a3ampCSw,22
+pypostester-0.1.1.dist-info/RECORD,,
