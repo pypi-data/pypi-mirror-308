@@ -1,0 +1,11 @@
+{
+  "name": "sgpu-dkms",
+  "download": [
+    {
+      "version": "1.2.1",
+      "filename": "sgpu-dkms_1.2.1_amd64.deb",
+      "url": "https://oss.mthreads.com/product-release/release_kuae1.3.0_musa3.1.0/External/sgpu-dkms_1.2.1_amd64.deb",
+      "sha256": "xxxx"
+    }
+  ]
+}
