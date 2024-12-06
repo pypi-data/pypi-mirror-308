@@ -1,0 +1,6 @@
+star_ray>=0.0.8
+star_ray_xml>=0.0.6
+cairosvg>=1.26.1
+pygame>=2.6.0
+pywinctl>=0.4.0
+numpy
