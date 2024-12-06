@@ -1,0 +1,7 @@
+setup.py
+Skaiciuotuvas44/__init__.py
+Skaiciuotuvas44/calculator.py
+Skaiciuotuvas44.egg-info/PKG-INFO
+Skaiciuotuvas44.egg-info/SOURCES.txt
+Skaiciuotuvas44.egg-info/dependency_links.txt
+Skaiciuotuvas44.egg-info/top_level.txt
