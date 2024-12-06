@@ -1,0 +1,15 @@
+mush_wikis_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mush_wikis_scraper/cli.py,sha256=iqr_G7R4rBbgcUlGXhzzmNfwGd88UBLUONBH5W9u3jU,704
+mush_wikis_scraper/links.py,sha256=KvUDjdDziRJNqdzZX4MQwqqKudtmokaqvkAiJqe0xWY,29035
+mush_wikis_scraper/adapters/__init__.py,sha256=Dd0CyIAeT8VW2pqcAmtY-eWGw7I5IH3E2gQbgLE2FKg,157
+mush_wikis_scraper/adapters/file_system_page_reader.py,sha256=vrEIEt6yW_EjFzbx_fE6HRrsKURo6HY4Zgb0VKSRKXg,191
+mush_wikis_scraper/adapters/http_page_reader.py,sha256=XU_b3iGL-hHu8tmFs_9rAjXFdiSvp_c9Coe9qFvFGVo,228
+mush_wikis_scraper/ports/__init__.py,sha256=4vADbvlPKklHVc7Jjr9Md_UdZzONtQr-56GT8zYf0x8,62
+mush_wikis_scraper/ports/page_reader.py,sha256=orre36cm8FoIgLnkkO3_NyeZBxZQJc5QAavd7buaGT4,151
+mush_wikis_scraper/usecases/__init__.py,sha256=6tlqwbWvwBX9hfrNEMMp3pvYbdK7h-bYLpS09YQHFlc,62
+mush_wikis_scraper/usecases/scrap_wikis.py,sha256=otbK4xKRTLts34tZPXfPUHI6gQvq63PMVIRtiXZMTpA,3338
+mush_wikis_scraper-0.5.0.dist-info/METADATA,sha256=rweww62T1k0XyzcuPRGgZU-afctjqvrYOv8dCrQ8OMQ,1935
+mush_wikis_scraper-0.5.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mush_wikis_scraper-0.5.0.dist-info/entry_points.txt,sha256=na21QDErKErWeZ1uUZqYrMJy1j8wmyghmzEn40E31T8,64
+mush_wikis_scraper-0.5.0.dist-info/licenses/LICENSE,sha256=YL9gFsryYJjWMhvuJPcvfB9eqlIZM9_ubqvhZEaahKA,1085
+mush_wikis_scraper-0.5.0.dist-info/RECORD,,
