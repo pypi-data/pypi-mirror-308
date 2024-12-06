@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: via-lighting-api
+Version: 0.2.0
+Summary: This Python API provides an interface for controlling the RGB lighting of keyboards that support the VIA protocol. It allows you to dynamically change the brightness, effect, effect speed, and color of the lighting.
+Home-page: https://github.com/JerryZhangZZY/via-lighting-api
+Author: JerryZhangZZY
+Author-email: JerryZhang20010417@outlook.com
+License: MIT
+Keywords: via api
+License-File: LICENSE
+Requires-Dist: hidapi
