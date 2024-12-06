@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: watchtower_logging
+Version: 1.0.0b1
+Summary: Logging to WatchTower instance
+Author: Jacob Noordmans
+Author-email: jacob@graindataconsultants.com
+License: MIT
+Keywords: WatchTower
+Requires-Dist: requests==2.32.3
+Requires-Dist: packaging==24.1
