@@ -1,0 +1,15 @@
+auto_code_review/__init__.py,sha256=1d1AyuMEMwcTgztF_TmF_qH5fH35di0-5U4ojEuU2gw,123
+auto_code_review/ai_analyzer.py,sha256=r1Zm2Vs2fy0mify_BtfrgvBIuOtcga5LG7ftmzilNag,3713
+auto_code_review/cli.py,sha256=hGkjkWHmBcD4L6pwmAj-ilj2PRYuHhRNgYJUXLspozE,708
+auto_code_review/core.py,sha256=aOuSPnXUGv_6cFRa_A-ejT8Ag5mY1CgRv1ea7MLlTWc,3240
+auto_code_review/github_client.py,sha256=qznVz4VSciufe9A_Kn9yQKzgVxrAzM6sNWzPQb53dWs,2450
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get_diff.py,sha256=YT3vnB8zNV9krCRuJj7L-fpPRWy22pRli_5vIzsALUg,647
+tests/test_github_client.py,sha256=YpRvZDVtE-4aJ-NjVuG9ncpxnzSzki9yYGmLt-eYU8o,2908
+tests/test_parse_response.py,sha256=Z2ezaPjQtuY2PucVue5YPe-syDyM8-mJIF18qZ1pfMY,1885
+auto_code_review-0.1.0.dist-info/LICENSE.txt,sha256=NCZXH5bch91VOl-Rh9wbtHj0qnFpDUCNJyPdfYrafdA,1094
+auto_code_review-0.1.0.dist-info/METADATA,sha256=EAWGhg_TyBMWobE2Ft72jqoomP5-8brQvG_8M_psulo,427
+auto_code_review-0.1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+auto_code_review-0.1.0.dist-info/entry_points.txt,sha256=jWEXBPxknzhuT1IsmbV3mEiltNXChWCyIaAzc2ws_uI,63
+auto_code_review-0.1.0.dist-info/top_level.txt,sha256=fRfG_eKExIzYZm20z3UlxA4OLyYfhN5zqoFSqASn25Q,23
+auto_code_review-0.1.0.dist-info/RECORD,,
