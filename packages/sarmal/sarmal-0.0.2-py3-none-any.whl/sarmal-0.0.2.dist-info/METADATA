@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sarmal
+Version: 0.0.2
+Summary: A Python Library
+Author: Synnada, Inc.
+Author-email: opensource@synnada.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+
