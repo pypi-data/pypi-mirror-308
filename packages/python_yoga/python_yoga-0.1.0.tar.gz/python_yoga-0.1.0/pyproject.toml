@@ -1,0 +1,34 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["Aliaksanr Sakalouski <ninjaduckyduck@gmail.com>"]
+classifiers = [
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+description = ""
+documentation = "https://sakalouski-alex.github.io/python-yoga"
+homepage = "https://pypi.org/project/python-yoga"
+license = "BSD-2-Clause"
+name = "python_yoga"
+packages = [
+    { include = "_stories", from = "src" },
+    { include = "stories", from = "src" },
+    { include = "_.py", from = "src"},
+    { include = "_dependencies", from = "src" },
+    { include = "dependencies", from = "src" },
+]
+readme = "docs/index.md"
+repository = "https://github.com/sakalouski-alex/stories"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "*"
+
+[tool.poetry.urls]
+Changelog = "https://sakalouski-alex.github.io/python-yoga/changelog"
+Issues = "https://github.com/sakalouski-alex/python-yoga/issues"
