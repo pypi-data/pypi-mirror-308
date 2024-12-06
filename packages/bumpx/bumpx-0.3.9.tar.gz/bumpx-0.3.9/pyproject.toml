@@ -1,0 +1,123 @@
+[tool.poetry]
+name = "bumpx"
+version = "0.3.9"
+description = "Version bumper and Python package releaser"
+authors = ["data.gouv.fr <opendatateam@data.gouv.fr>"]
+license = "LGPL"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Software Distribution",
+]
+keywords = [
+  "version",
+  "bump",
+  "release",
+  "tag",
+]
+readme = "README.md"
+repository = "https://github.com/datagouv/bumpx"
+documentation = "https://bumpr.readthedocs.io/en/stable/"
+include = [
+  "README.md",
+  "CHANGELOG.md",
+  "LICENSE"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/datagouv/bumpx/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = {version = "^1.2.3", optional = true}
+mkdocs-material = {version = ">=8.2.9,<9.0.0", optional = true}
+mkdocstrings = {version = ">=0.20.0,<0.21.0", optional = true}
+mkdocs-include-markdown-plugin = {version = "^3.2.3", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "^7.2.1"}
+invoke = "^1.6.0"
+mock = "^4.0.3"
+mypy = "^0.931"
+pytest = "^7.2.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+pytest-sugar = "^0.9.4"
+ruff = "^0.6.8"
+
+[tool.poetry.scripts]
+bumpr = 'bumpr.__main__:main'
+
+[tool.poetry.extras]
+test = [
+  "mock",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-sugar",
+]
+lint = [
+  "mypy",
+  "ruff",
+]
+doc = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings",
+  "mkdocs-include-markdown-plugin",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+norecursedirs = ".git build dist"
+testpaths = "tests"
+python_classes="*Test"
+mock_use_standalone_module = true
+markers = [
+  "bumprc: marks tests requiring a mock config",
+  "version: specify a defined version"
+]
+
+[tool.mypy]
+python_version = "3.11"
+exclude = "doc/*.py"
+
+[tool.coverage.run]
+source = ["bumpr"]
+branch = true
+omit = [
+  "tests/*",
+]
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    'pragma: no cover',
+
+    # Don't complain about missing debug-only code:
+    'def __repr__',
+    'if self\.debug',
+
+    # Don't complain if tests don't hit defensive assertion code:
+    'raise AssertionError',
+    'raise NotImplementedError',
+
+    # Don't complain if non-runnable code isn't run:
+    'if 0:',
+    'if __name__ == .__main__.:',
+]
+ignore_errors = true
+
+[tool.ruff]
+lint = { extend-select = ["I"] } # ["I"] is to also sort imports with an isort rule
+line-length = 100
