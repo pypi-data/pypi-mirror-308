@@ -1,0 +1,23 @@
+import modal.client
+import typing
+import typing_extensions
+
+class ClusterInfo:
+    rank: int
+    world_size: int
+    container_ips: typing.List[str]
+
+    def __init__(self, rank: int, world_size: int, container_ips: typing.List[str]) -> None: ...
+    def __repr__(self): ...
+    def __eq__(self, other): ...
+
+def get_cluster_info() -> ClusterInfo: ...
+async def _initialize_clustered_function(client: modal.client._Client, task_id: str): ...
+
+class __initialize_clustered_function_spec(typing_extensions.Protocol):
+    def __call__(self, client: modal.client.Client, task_id: str): ...
+    async def aio(self, client: modal.client.Client, task_id: str): ...
+
+initialize_clustered_function: __initialize_clustered_function_spec
+
+cluster_info: typing.Optional[ClusterInfo]
