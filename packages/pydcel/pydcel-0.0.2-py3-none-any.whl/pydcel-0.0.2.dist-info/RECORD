@@ -1,0 +1,6 @@
+dcel/__init__.py,sha256=B2bQYp3hgIQaKp4qMT_5Vxs3a63GveHMVIYZ8VqTKZY,37
+dcel/point.py,sha256=OdxCMqqMWegragqZYftDKgkiF8N5mO_cXeEVCGxU4uE,638
+dcel/vertex.py,sha256=B5I8DZVo32Kl_-YgAstOb80Om3BfxaYQYBW3MsFHSt8,1273
+pydcel-0.0.2.dist-info/METADATA,sha256=aNv24A2opBfY2qFfqhIGeqVFigwODuIhpBVYeeDwi-g,590
+pydcel-0.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pydcel-0.0.2.dist-info/RECORD,,
