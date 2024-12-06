@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/epic_api_client.egg-info/PKG-INFO
+src/epic_api_client.egg-info/SOURCES.txt
+src/epic_api_client.egg-info/dependency_links.txt
+src/epic_api_client.egg-info/requires.txt
+src/epic_api_client.egg-info/top_level.txt
