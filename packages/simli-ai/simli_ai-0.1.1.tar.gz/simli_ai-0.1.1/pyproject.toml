@@ -1,0 +1,31 @@
+[project]
+name = "simli-ai"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "aiortc",
+    "websockets",
+    "requests",
+]
+
+[project.optional-dependencies]
+local = [
+    "opencv-python",
+    "pyaudio",
+]
+processing = [
+    "numpy",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "python-dotenv",
+    "ruff",
+    "uv",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/simliai/simli-client-py"
+"Bug Reports" = "https://github.com/simliai/simli-client-py/issues"
+"Source" = "https://github.com/simliai/simli-client-py"
