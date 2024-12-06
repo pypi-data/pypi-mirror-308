@@ -1,0 +1,13 @@
+shifiq/__init__.py,sha256=p2EFltn9CcOVOwzXX6bbWU_v95xxKNLrlLBmwMznssE,67
+shifiq/shifiq.py,sha256=b1kK-HsZmc-UJSOk-DJ5Y0VR6Uy9T0AQpUjAvL5DsTM,328
+shifiq/api/__init__.py,sha256=gFIPXfVUYPbt0KcTgwjqEhB8Pzec6gjTfFgHmbJ0JEc,68
+shifiq/api/connection.py,sha256=fX1qv_DeE_bif9v1-9hzRZv66lycZYcDAonVggKBDHY,1881
+shifiq/api/player/__init__.py,sha256=xpSXlFmSeQwki7UOIXUJO8eG8cDIiCHn1DfkPnyVzFA,47
+shifiq/api/player/player.py,sha256=KAVeJXapn-wF1dStiFZId1onq4CBaRXygTVuuzBDK1s,1037
+shifiq/client/__init__.py,sha256=bWs7daLw2NA9qESCN6anhI_zCjfVmajfKDHFPvjGBz0,30
+shifiq/client/client.py,sha256=QXeSgZDojMOOJGWa6yZGwBu6elZNK_P15SaQfgjW-88,524
+shifiq_sdk-0.0.5.dist-info/LICENSE,sha256=oxA9-juFBCBko0t5sgbp4gsOl--8j_ekp8jqLVLIVJw,1069
+shifiq_sdk-0.0.5.dist-info/METADATA,sha256=SHPfwAw4FgvYgYkUdigeedQHX5Lk01pkGMpGfvisVOk,2151
+shifiq_sdk-0.0.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+shifiq_sdk-0.0.5.dist-info/top_level.txt,sha256=FXyPOktCzJw9iBH6gN0qJkuX9RY3zufbBhJtXGeWtuM,7
+shifiq_sdk-0.0.5.dist-info/RECORD,,
