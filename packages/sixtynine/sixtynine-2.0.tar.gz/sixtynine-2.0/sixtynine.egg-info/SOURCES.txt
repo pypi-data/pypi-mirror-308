@@ -1,0 +1,8 @@
+setup.py
+sixtynine/Todo.zip
+sixtynine/__init__.py
+sixtynine/functions.py
+sixtynine.egg-info/PKG-INFO
+sixtynine.egg-info/SOURCES.txt
+sixtynine.egg-info/dependency_links.txt
+sixtynine.egg-info/top_level.txt
