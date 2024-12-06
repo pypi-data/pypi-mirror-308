@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: quboassistfunc
+Version: 0.0.16
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: classes and functions for quboassist
+Author-email: Enomoto Kan <enomotokan@gmail.com>
+Requires-Python: >=3.8
