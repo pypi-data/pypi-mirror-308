@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: agl-report-reader
+Version: 0.4.0
+Summary: AGL Report Reader app
+Requires-Python: >=3.11
+Requires-Dist: faker>=32.1.0
+Requires-Dist: gender-guesser>=0.4.0
+Requires-Dist: pdfplumber>=0.11.4
+Description-Content-Type: text/markdown
+
+# agl-report-reader
