@@ -1,0 +1,3 @@
+[console_scripts]
+undep=undep.cli.main:cli
+

@@ -1,0 +1,12 @@
+undep/__init__.py,sha256=MjviBmC1MPqemJlz8Wv9g32TSi4czXAx0H9wHLTGKVM,76
+undep/cli/main.py,sha256=fiQKE3gdiSI3lb1c7v7ByD1Cz3fax-6WFRE1hv2EscM,2585
+undep/config/loader.py,sha256=YbOLqh1-H_kgvCimHNBzSXO8_i6ZZXnqttKodzhGZrw,1496
+undep/config/models.py,sha256=XqW2Q-_vqtYMs4RcsQBurNZWgHOYvaWSV-v0LvzkW8s,607
+undep/core/monitor.py,sha256=dKFT4gDYdAh9UZyXw3J9pQl_fKn2zIqYWDY4v3VuhY4,2677
+undep/core/updater.py,sha256=VDpG0fh93riTvQJu_rJ0EGAgmZTRQjuwMmQgMQHuIxs,1832
+undep/utils/logger.py,sha256=iLS57HVMJB5XdPou2jvAf4f4Bm2amb0c2bAIvAO6bME,358
+undep-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+undep-0.1.0.dist-info/METADATA,sha256=0Ec-P_W_gqkHW7vOGYAKiD_LONixRwsKkmOMHNmARBc,799
+undep-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+undep-0.1.0.dist-info/entry_points.txt,sha256=KfJ0wJy8IDvzZhGw8_xSvWplmK_-0gl6jH-s9gzvLTs,44
+undep-0.1.0.dist-info/RECORD,,
