@@ -1,0 +1,5 @@
+requests
+loguru
+pycryptodome
+setuptools
+confluent_kafka
