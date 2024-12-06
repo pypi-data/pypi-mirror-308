@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: lakeel
+Version: 0.0.4
+Summary: 파이썬 패키지 관리를 위한 편리한 도구 모음
+Home-page: https://github.com/bunhine0452/pip_lakeel
+Author: bunhine0452
+Author-email: hb000122@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
+# 한국어 파이썬 편의성 및 잡다한 pip 패키지 설치 설명
+### Made by. bunhine0452
+- Email: hb000122@gmail.com
+
+---
+
+## 패키지 설치 방법
+
+다음 명령어로 pip 패키지 `lakeel`을 설치할 수 있습니다.
+
+```bash
+pip install lakeel
+```
+
+## 설명
+
+`lakeel` 패키지는 다양한 한국어 파이썬 개발을 더 편리하게 만들기 위한 도구를 포함하고 있습니다.
+
+
+```bash
+import lakeel
+```
+
+#### 현재 파이썬 코드가 실행되는 경로를 반환하는 함수
+```bash
+lakeel.dir()
+```
+
+#### 설치된 pip 패키지 목록을 알파벳 순서대로 출력하는 함수
+```bash
+lakeel.pip()
+```
+
+#### 운영체제에 맞는 폰트 설정 함수
+```bash
+lakeel.sfo()
+```
