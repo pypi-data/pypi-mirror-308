@@ -1,0 +1,137 @@
+
+
+
+<pre>
+	
+	<nav>
+		<header>goodest</header>
+		
+			@ Trophic
+			
+	</nav>
+
+	<main>
+		<header>on</header>
+			<header>1st session</header>
+				
+				#
+				#	1. (optional) remove every docker container if there's a conflict
+				#	2. open the docker container
+				#	3. build (need to wait for this to finish before build_2.sh)
+				#	4. (optional) HAProxy certs
+				#	5. [tmux 1] start the ventures
+				#
+				docker rm $(docker ps -a -q)
+				docker rm goodest.1
+				docker compose up -d; docker exec -it goodest.1 bash
+				. /habitat/_controls/build_1.sh	
+				goodest_1 adventures demux_hap build_unverified_certificates
+				goodest_1 ventures on
+				
+				
+				#
+				#	[tmux 2] start the frontend dev beacon
+				#
+				#
+				(cd /habitat/venues/frontend/vv_turbo/ && bun run dev) 
+					#
+					#	might need to allow browser storage,
+					#	also need to open https://192.168.0.100 in another tab and allow.
+					#
+					localStorage.setItem ("node address", "https://192.168.0.100/")
+				
+				
+				#
+				#	Change the mode to "business"
+				#		@ /habitat/_estate_1/goodest_essence.py
+				#
+				
+				
+				#
+				#	optional: if need import the data
+				#		Location is in "essence"
+				#		Probably is: 
+				#			ls /habitat/venues/stages/goodest/[saves]/monetary_saves/exports/goodest_inventory/food
+				#			
+				#
+				goodest_1 adventures monetary saves-G2 import --version 15 --drop
+				
+			
+			<header>2nd+ session</header>
+				# docker exec -it goodest.1 bash -c ". /habitat/_controls/build_2.sh && bash"
+				docker exec -it goodest.1 bash
+				
+				# . /habitat/_controls/build_2.sh
+				
+				#
+				#
+				#	build the front
+				#
+				(cd /habitat/venues/frontend/vv_turbo/apps/web && the_version=1.8.0 bun run build --sourcemap inline)
+			
+			
+			
+		<h2>off</h2>
+			docker container stop goodest.1; docker container rm goodest.1; 	
+			
+		<header>saving</header>
+			<header>before publish</header>
+				goodest_1 adventures monetary saves-G2 save --databases '[ "goodest_inventory", "goodest_tract" ]' --version 2.3.0-01
+				goodest_1 adventures monetary saves-G2 extract --version 2.3.0-01
+			
+			<header>for publish</header>
+				goodest_1 adventures monetary saves-G2 save --databases '[ "goodest_inventory", "goodest_tract" ]' --version 2.3.0
+				
+		<header>actions</header>
+			
+		
+			If the structure changes, need to update to the latest structure:
+				@ enhance, refresh, update
+				
+				enhance foods:
+				
+				
+				enhance supps:
+				
+				
+		<header></header>
+		
+		
+		
+		<h2>garages (harbors)</h2>
+			<h3>sanic</h3>
+				http://192.168.0.100/docs/swagger#/
+				
+			<h3>sanic inspector</h3>
+				http://192.168.0.100:7457
+
+
+		
+
+		
+			<h3>notes</h3>
+				[tool.poetry.source]
+				include = [
+					"venues/stages/goodest/adventures/vv_turbo/apps/web/the_build/*"
+				]
+
+		<h2>important</h2>
+			poetry show --tree
+
+
+		<h2>docker</h2>
+			docker compose up -d
+			docker exec -it goodest bash
+			docker exec -it goodest bash -c "source /goodest/moves/source_2.sh && bash"
+
+		<h2>hatch</h2>
+			#
+			#	https://github.com/pypa/pipx
+			#
+			#
+			apt install pipx -y
+			pipx ensurepath
+			pipx install hatch
+		
+	</main>
+</pre>

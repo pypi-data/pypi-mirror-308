@@ -1,0 +1,305 @@
+@capacitor/cli@5.7.5 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@capacitor/core@5.7.5 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@esbuild/linux-x64@0.18.20 [license(s): MIT]
+└── package.json:  MIT
+
+@heroicons/vue@2.1.3 [license(s): MIT]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: MIT
+
+@medical-district/db@0.0.9 [license(s): Plant stem cell license]
+└── package.json:  Plant stem cell license
+
+@medical-district/rhythm-filter@3.0.0 [license(s): Plant stem cell license]
+└── package.json:  Plant stem cell license
+
+@medical-district/system@0.0.4 [license(s): plant stem cyte license]
+└── package.json:  plant stem cyte license
+
+@pontem/aptos-wallet-adapter@0.10.1 [license(s): MIT]
+└── package.json:  MIT
+
+@tabler/icons@2.47.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@tabler/icons@3.3.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@tabler/icons-vue@3.3.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@types/node@18.8.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@types/node@20.12.11 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vitest/expect@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vitest/runner@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vitest/snapshot@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vitest/spy@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vitest/utils@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/compiler-core@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/compiler-dom@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/compiler-sfc@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/compiler-ssr@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/reactivity@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/runtime-core@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/runtime-dom@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/server-renderer@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+@vue/shared@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+animejs@3.2.2 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+ansi-styles@5.2.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+ant-design-vue@4.2.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+apexcharts@3.49.0 [license(s): MIT]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: MIT
+
+assert@2.1.0 [license(s): MIT]
+├── package.json:  MIT
+└── readme files: MIT
+
+async@3.2.5 [license(s): MIT]
+└── package.json:  MIT
+
+chart.js@4.4.2 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+chartjs-plugin-datalabels@2.2.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+chartjs-plugin-labels@1.1.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+chroma-js@2.4.2 [license(s): (BSD-3-Clause AND Apache-2.0)]
+└── package.json:  (BSD-3-Clause AND Apache-2.0)
+
+color@4.2.3 [license(s): MIT]
+└── package.json:  MIT
+
+commander@9.5.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+csstype@2.6.21 [license(s): MIT]
+└── package.json:  MIT
+
+d3@7.9.0 [license(s): ISC]
+└── package.json:  ISC
+
+esbuild@0.18.20 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+fraction.js@4.3.7 [license(s): MIT]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: MIT
+
+granim@2.0.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+jparticles@3.5.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+lodash@4.17.21 [license(s): MIT]
+└── package.json:  MIT
+
+magic-string@0.25.9 [license(s): MIT]
+├── package.json:  MIT
+└── readme files: MIT
+
+mercantile@3.0.0 [license(s): ISC]
+└── package.json:  ISC
+
+ol@8.2.0 [license(s): BSD, BSD-2-Clause]
+├── package.json:  BSD-2-Clause
+└── license files: BSD
+
+oxlint@0.2.18 [license(s): MIT]
+└── package.json:  MIT
+
+patternomaly@1.3.2 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+pinia@2.0.22 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+pinia@2.1.7 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+pretty-format@29.7.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+procedures@1.1.0 [license(s): ISC]
+└── package.json:  ISC
+
+react@18.3.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+react-dom@18.3.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+react-is@18.3.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+remixicon@3.7.0 [license(s): Apache, Apache 2.0]
+├── package.json:  Apache 2.0
+└── license files: Apache
+
+rollup@3.29.4 [license(s): ISC, MIT]
+├── package.json:  MIT
+└── license files: ISC, MIT
+
+sparticles@1.3.1 [license(s): MPL, MPL-2.0]
+├── package.json:  MPL-2.0
+└── license files: MPL
+
+swiper@11.1.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+textures@1.2.3 [license(s): MIT]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: MIT
+
+three@0.162.0 [license(s): MIT, Public Domain]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: Public Domain
+
+tinypool@0.7.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vant@4.9.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vanta@0.5.24 [license(s): MIT]
+└── package.json:  MIT
+
+vis-network@9.1.9 [license(s): (Apache-2.0 OR MIT), Apache, MIT]
+├── package.json:  (Apache-2.0 OR MIT)
+├── license files: Apache, MIT
+└── readme files: MIT
+
+vite@4.5.3 [license(s): Apache, ISC, MIT]
+├── package.json:  MIT
+└── license files: Apache, ISC, MIT
+
+vite-node@0.34.6 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vitest@0.34.6 [license(s): Apache, BSD, ISC, MIT]
+├── package.json:  MIT
+└── license files: Apache, BSD, ISC, MIT
+
+vue@3.2.40 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vue@3.4.27 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vue-chartjs@5.3.1 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vue-good-table@2.21.11 [license(s): MIT]
+├── package.json:  MIT
+├── license files: MIT
+└── readme files: MIT
+
+vue-router@4.3.2 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+vue3-table-lite@1.4.0 [license(s): MIT]
+├── package.json:  MIT
+└── license files: MIT
+
+web@0.0.0 [license(s): MIT]
+└── license files: MIT
+
+LICENSES: (Apache-2.0 OR MIT), (BSD-3-Clause AND Apache-2.0), Apache, Apache 2.0, BSD, BSD-2-Clause, ISC, MIT, MPL, MPL-2.0, Plant stem cell license, Public Domain, plant stem cyte license
+
