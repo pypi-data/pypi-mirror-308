@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/goodcodes/__init__.py
+src/goodcodes.egg-info/PKG-INFO
+src/goodcodes.egg-info/SOURCES.txt
+src/goodcodes.egg-info/dependency_links.txt
+src/goodcodes.egg-info/top_level.txt
