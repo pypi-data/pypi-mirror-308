@@ -1,0 +1,13 @@
+sphinx_mindmap/__init__.py,sha256=u8nK-WqOLYAAD386bFvG_exEVYX5sqBE0qO3EuG78Vs,3637
+sphinx_mindmap/_static/jquery/LICENSE.txt,sha256=1Nuevm8p9RaOrEWtcT8FViOsXQ3NW6ktoj1lCuASAg0,1097
+sphinx_mindmap/_static/jquery/jquery-3.7.1.min,sha256=_JqT3SQfawRcv_BIHPThkBvs0OEvtFFmqPF_lYI_Cxo,87533
+sphinx_mindmap/_static/mindmap.html,sha256=U12STg5KIZtF7A21kfqszA4bh5XCllMMcDxnosbvhkQ,32339
+sphinx_mindmap/_static/vis-network/LICENSE-APACHE-2.0,sha256=FQmQQoCicngP1pwEuFj1Es8hb440ZKDdmNjzRBb-ztk,10171
+sphinx_mindmap/_static/vis-network/LICENSE-MIT,sha256=H2UIXlTANmRQgiV2GNsse3h-aMOwJIXiFOzQngg07o8,1084
+sphinx_mindmap/_static/vis-network/package.json,sha256=eKN_5_j_kPWFe6NsyjolXMBymjqFy4DHf57d506u0jo,5778
+sphinx_mindmap/_static/vis-network/vis-network.min.js,sha256=9T-DPdub-X7-hWuwY31P6I8545mZx-lKS4r8jeihouU,688911
+sphinx_mindmap/_static/vis-network/vis-network.min.js.map,sha256=hLMBlHfsNGEFbEAcYafIrpiMYMREAFOROCPzBujiAVM,1959951
+sphinx_mindmap-0.5.2.dist-info/LICENSE,sha256=LOEpydAwRFLitP6EU3PVAUC1R0cJ62drrksp2aSeMoo,1066
+sphinx_mindmap-0.5.2.dist-info/METADATA,sha256=bpkOvVlhb-YyHd8KVEtnWl1CPjdWmQoDEMnLQ_mk4vA,2347
+sphinx_mindmap-0.5.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sphinx_mindmap-0.5.2.dist-info/RECORD,,
