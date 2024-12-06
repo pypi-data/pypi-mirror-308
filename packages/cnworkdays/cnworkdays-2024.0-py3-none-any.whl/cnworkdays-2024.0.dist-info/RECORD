@@ -1,0 +1,10 @@
+cn_workdays/README.md,sha256=S8e1j5bxewD1xP3u3ZBsFmDz2ntDeJNoaPJgnrUNGWg,1619
+cn_workdays/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cn_workdays/cli.py,sha256=fzw7MijrL0ycLG7MZTMfkoEGNVIbKgkWSRtaJck-jjE,2700
+cn_workdays/config.json,sha256=DQfigeWO9BQo06b0HZZqFQpGHbV6l0jS4D4ocyDQqyE,3195
+cn_workdays/holiparse/main_marimo.py,sha256=Uy9QaVwHpIrv3M_rwi-7iSk4w-2W-4779I_rFN69CvE,7322
+cn_workdays/workcalc/main_marimo.py,sha256=5eA20rjD1nW1M8INrYZU0PS8w-sgB5DGeggFUeK7Eec,5900
+cnworkdays-2024.0.dist-info/METADATA,sha256=5wipTtABdI1x8Ae5R_tIg8mXosoXy_mRH1eGjVcrY74,2143
+cnworkdays-2024.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+cnworkdays-2024.0.dist-info/entry_points.txt,sha256=Xdj2XE0581bP7sFiVYmrDBU4TEHtZKgXtkP2PMIEtgg,68
+cnworkdays-2024.0.dist-info/RECORD,,
