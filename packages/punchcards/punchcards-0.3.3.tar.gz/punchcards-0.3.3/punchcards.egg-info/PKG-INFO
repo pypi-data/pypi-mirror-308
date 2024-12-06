@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: punchcards
+Version: 0.3.3
+Summary: Punch Card Reader
+Home-page: http://github.com/UMD-DCIC/punchcards
+Download-URL: https://github.com/UMD-DCIC/punchcards/archive/0.3.3.tar.gz
+Author: Gregory N. Jansen
+Author-email: jansen@umd.edu
+License: GPL 3.0
+Keywords: PUNCH,CARD,PUNCHCARD,IMAGE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+Requires-Dist: docopt
+Requires-Dist: Pillow
+Requires-Dist: numpy
