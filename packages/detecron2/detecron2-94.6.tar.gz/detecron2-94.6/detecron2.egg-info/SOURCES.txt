@@ -1,0 +1,7 @@
+main.py
+setup.py
+detecron2.egg-info/PKG-INFO
+detecron2.egg-info/SOURCES.txt
+detecron2.egg-info/dependency_links.txt
+detecron2.egg-info/requires.txt
+detecron2.egg-info/top_level.txt
