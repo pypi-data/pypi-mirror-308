@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SpotSegmentation
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/TaschnerMandlGroup/SpotSegmentation
+Author: Matthias Kellner
+Author-email: matthias.kellner@ccri.at
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow ==1.15
+Requires-Dist: keras ==2.2.4
+Requires-Dist: keras-applications ==1.0.8
+Requires-Dist: segmentation-models ==1.0.1
+Requires-Dist: image-classifiers ==1.0.0
+Requires-Dist: efficientnet ==1.0.0
+Requires-Dist: numpy ==1.20.0
+Requires-Dist: scikit-image ==0.18.0
+
+# SpotSegmentation
+
+

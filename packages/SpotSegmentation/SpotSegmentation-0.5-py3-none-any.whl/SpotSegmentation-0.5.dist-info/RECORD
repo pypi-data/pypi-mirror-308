@@ -1,0 +1,10 @@
+SpotSegmentation/__init__.py,sha256=UC_0lVHzw4zPLXJ7-wXsCCsudfFn4rwcFQZHKzjEs7I,44
+SpotSegmentation/.weights/unet_resnet_naturalSpots_dataset_notscaled,sha256=P8MMnPqIqZ2oJpJT2XySCgjAsbLznl_TSufr_7iApOM,134
+SpotSegmentation/src/SpotSegmenter.py,sha256=8OCkdXtpeCAKrcybo0yNRIJKxiZAnM6GdeIUCEoaT-Q,1560
+SpotSegmentation/src/__init__.py,sha256=GOBAQEzCzK3U-vsFK2QkdoEF292Dbuc3U_niUyVbeVg,138
+SpotSegmentation/src/utils.py,sha256=NjdKpJskCFk_7EaCGLA6UAGDZiiE_7DUkYNDQhNKnsU,1765
+SpotSegmentation-0.5.dist-info/LICENSE,sha256=bTeNRCI1jWCVhfvTW1_Ud5uR-3Ow9uhELKHvseTCYJg,1075
+SpotSegmentation-0.5.dist-info/METADATA,sha256=eZxnjm683NdYHBf59eu4xKRtTSQjm5Zqe4qM_vfsGso,781
+SpotSegmentation-0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+SpotSegmentation-0.5.dist-info/top_level.txt,sha256=PGjQOZWNFsnBZamsuEeZXjF_HdyUGUBHhe0Yf78Odx0,17
+SpotSegmentation-0.5.dist-info/RECORD,,
