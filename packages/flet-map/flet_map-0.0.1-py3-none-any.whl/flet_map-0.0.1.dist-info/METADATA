@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flet-map
+Version: 0.0.1
+Summary: Flet Map control
+Author: Appveyor Systems Inc.
+Author-email: hello@flet.dev
+Requires-Python: >=3.8,<4.0
+Project-URL: homepage, https://flet.dev
+Download-URL:
+Description-Content-Type: text/markdown
+
+# Flet Map
+
+Flet Map control.
