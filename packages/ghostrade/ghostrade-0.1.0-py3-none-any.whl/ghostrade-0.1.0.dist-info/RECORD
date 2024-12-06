@@ -1,0 +1,12 @@
+ghostrade/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade/agents/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade/agents/claude.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade/agents/openai.py,sha256=FI7Q5pSbcqvYVpOTBaJ_rmNcIDUvZ2NluJr4bwqUYS8,100
+ghostrade/brokers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade/brokers/alpaca.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade/brokers/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghostrade-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ghostrade-0.1.0.dist-info/METADATA,sha256=MurJ96SdpwqhCpVpiewS7jj-gyDkwNUDwj8y7LdpSpo,13509
+ghostrade-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ghostrade-0.1.0.dist-info/top_level.txt,sha256=hRdyfwdrzAP8Q8FHz5ceKeFk6qPO5aI3gNwMw4uYzk8,10
+ghostrade-0.1.0.dist-info/RECORD,,
