@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/cli-agents/__init__.py
+src/cli_agents.egg-info/PKG-INFO
+src/cli_agents.egg-info/SOURCES.txt
+src/cli_agents.egg-info/dependency_links.txt
+src/cli_agents.egg-info/top_level.txt
