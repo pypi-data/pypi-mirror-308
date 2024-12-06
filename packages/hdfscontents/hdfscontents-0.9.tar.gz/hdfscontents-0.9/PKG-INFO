@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hdfscontents
+Version: 0.9
+Summary: Jupyter content manager that uses the HDFS filesystem
+Home-page: https://github.com/hopshadoop/hdfscontents
+Download-URL: https://github.com/hopshadoop/hdfscontents/archive/0.6.tar.gz
+Author: Ahmad Al-Shishtawy
+Author-email: alshishtawy@gmail.com
+License: Apache License 2.0
+Keywords: Jupyter,HDFS,HOPS,Hadoop
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: IPython
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: traitlets
+Requires-Dist: notebook
+Requires-Dist: pydoop
+Requires-Dist: tornado
+Requires-Dist: nbformat
+Requires-Dist: ipython_genutils
+
+===========================================
+HDFS Contents Manager for Jupyter Notebooks
+===========================================
+
+A contents manager for Jupyter that uses the Hadoop File System (HDFS) to store Notebooks and files
