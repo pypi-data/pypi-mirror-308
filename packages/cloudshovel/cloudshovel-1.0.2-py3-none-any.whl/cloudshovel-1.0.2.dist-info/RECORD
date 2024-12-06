@@ -1,0 +1,12 @@
+cloudshovel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudshovel/main.py,sha256=cKk_K_lwN33yQ9m59uv9voIwJmXdkPbfk0UjLRGA7H4,2834
+cloudshovel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudshovel/utils/digger.py,sha256=qidyFARTZ_t48T5aWt9BJafprqkCD_H_RPMMYO03NIQ,26444
+cloudshovel/utils/bash_scripts/install_ntfs_3g.sh,sha256=2c4uGgz7GXJ6Wo5P0fdfgFupBa1Vnh_AbVRW8--PkgU,411
+cloudshovel/utils/bash_scripts/mount_and_dig.sh,sha256=hM4R2C_ZvqBjjP8hv3JQuMF9OnDDiJGMN7rtVHiP56M,5078
+cloudshovel-1.0.2.dist-info/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+cloudshovel-1.0.2.dist-info/METADATA,sha256=TOba-_dxPAFoqKbHcw-Z-MmjgdhmeUt6blldC_LvW8o,9066
+cloudshovel-1.0.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+cloudshovel-1.0.2.dist-info/entry_points.txt,sha256=NnIfRo4UHriJJ6b1a-AHUj7RUNB4ht3vkLfL80J3Avc,54
+cloudshovel-1.0.2.dist-info/top_level.txt,sha256=ix2Fcjgj4xgMl8HNZxcNjxV-df7OxBEZwSmQbAB_8Kw,12
+cloudshovel-1.0.2.dist-info/RECORD,,
