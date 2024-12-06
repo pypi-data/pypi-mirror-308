@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: shib-config-green
+Version: 0.0.33
+Summary: Used to update and manage the Shibboleth Service Provider Directory in Green Production forTerra Dotta
+Author: JonathanM
+Author-email: jonathan.mckay@terradotta.com
+Requires-Python: >=3.12
+Requires-Dist: pyodbc>=5.2.0
+Requires-Dist: requests>=2.32.3
+Provides-Extra: dev
+Requires-Dist: setuptools>=75.5.0; extra == "dev"
+Requires-Dist: pytest>=8.3.3; extra == "dev"
