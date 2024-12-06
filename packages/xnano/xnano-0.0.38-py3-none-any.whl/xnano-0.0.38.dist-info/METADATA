@@ -1,0 +1,63 @@
+Metadata-Version: 2.3
+Name: xnano
+Version: 0.0.38
+Summary: build extremely 'nano' llm workflows
+Requires-Python: >=3.9
+Requires-Dist: bs4>=0.0.2
+Requires-Dist: duckduckgo-search>=6.3.4
+Requires-Dist: instructor>=1.6.3
+Requires-Dist: litellm>=1.52.3
+Requires-Dist: pypdf2>=3.0.1
+Requires-Dist: qdrant-client>=1.12.1
+Requires-Dist: questionary>=2.0.1
+Requires-Dist: rich>=13.9.4
+Requires-Dist: semchunk>=2.2.0
+Requires-Dist: sqlalchemy>=2.0.36
+Requires-Dist: trafilatura>=1.12.2
+Provides-Extra: fastembed
+Requires-Dist: fastembed>=0.4.1; extra == 'fastembed'
+Description-Content-Type: text/markdown
+
+# xnano
+
+```bash
+pip install xnano
+```
+
+---
+
+## Examples
+
+### The most extensive llm completion function any library provides
+
+```python
+import xnano as x
+
+response = x.completion(
+    # messages can be a list of messages or just a string
+    # you can also pass a list of lists of messages to create batch completions
+    messages = "what os am i running?",
+
+    # any litellm model is supported
+    model = "openai/gpt-4o-mini",
+
+    # tools can be python functions, pydantic models, openai functions or even strings!
+    # string tools are generated & optionally executed at runtime in a sandboxed environment
+    tools = ["run_cli_command"],
+
+    # automatically run tools!
+    run_tools = True,
+
+    # structured responses with instructor!
+    # response models can be defined as pydantic models, or just like tools; even strings, lists of strings & dictionaries!
+    # you can also pass in a generic type into the list or as is (str, int, etc...)
+    response_model = ["operating_system", "version"]
+)
+
+print(response)
+```
+
+```bash
+# OUTPUT
+Response(operating_system='Darwin', version='23.6.0')
+```
