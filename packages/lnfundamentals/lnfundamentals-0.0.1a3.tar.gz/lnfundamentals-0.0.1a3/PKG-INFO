@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: lnfundamentals
+Version: 0.0.1a3
+Summary: Zero dependencies crate to provide fundamentals type to encode and decode lightning wire messages
+Home-Page: https://github.com/lnspec-tools/ln-fundamentals.git
+Author: Vincenzo Palazzo <vincenzopalazzodev@gmail.com>
+Author-email: Vincenzo Palazzo <vincenzopalazzodev@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/lnspec-tools/ln-fundamentals.git
+
+# fundamentals
+
+minimal crate to provide fundamentals type to encode and decode lightning wire messages
+
