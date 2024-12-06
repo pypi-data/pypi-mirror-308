@@ -1,0 +1,7 @@
+ruff:
+  disable:
+    - S113 # Probable use of `requests` call without timeout. Done by c2cwsgiutils
+
+bandit:
+  disable:
+    - B113 # Requests call without timeout. Done by c2cwsgiutils
