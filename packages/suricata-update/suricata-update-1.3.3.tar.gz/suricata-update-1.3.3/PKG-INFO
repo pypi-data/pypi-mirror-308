@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: suricata-update
+Version: 1.3.3
+Summary: Suricata Update Tool
+Home-page: https://github.com/OISF/suricata-update
+Author: Jason Ish
+Author-email: ish@unx.ca
+License: GPLv2
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+License-File: LICENSE
