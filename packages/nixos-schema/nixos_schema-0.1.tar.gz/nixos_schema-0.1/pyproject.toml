@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nixos-schema"
+dynamic = ["version"]
+authors = [{name = "Tom Hubrecht", email = "pypi@mail.hubrecht.ovh"}]
+description = "A package to transform JSON-Schema files into NixOS modules."
+keywords = ["nixos", "json-schema"]
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://git.hubrecht.ovh/hubrecht/nixos-schema"
+
+[tool.setuptools.dynamic]
+version = {attr = "nixos_schema.__VERSION__"}

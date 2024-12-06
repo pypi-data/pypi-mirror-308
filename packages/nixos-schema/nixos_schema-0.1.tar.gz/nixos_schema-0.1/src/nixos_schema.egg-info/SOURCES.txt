@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/nixos_schema/__init__.py
+src/nixos_schema.egg-info/PKG-INFO
+src/nixos_schema.egg-info/SOURCES.txt
+src/nixos_schema.egg-info/dependency_links.txt
+src/nixos_schema.egg-info/top_level.txt

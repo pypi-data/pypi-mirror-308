@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nixos-schema
+Version: 0.1
+Summary: A package to transform JSON-Schema files into NixOS modules.
+Author-email: Tom Hubrecht <pypi@mail.hubrecht.ovh>
+Project-URL: Homepage, https://git.hubrecht.ovh/hubrecht/nixos-schema
+Keywords: nixos,json-schema
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
