@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bmnspeechlib"
+version = "0.1.1"
+authors = [
+    { name = "brandonatjoinpangia", email = "brandon@joinpangia.com" },
+]
+description = "A fork of speechlib with customizations for our team"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "transformers==4.36.2",
+    "torch==2.1.2",
+    "torchaudio==2.1.2",
+    "pydub==0.25.1",
+    "pyannote.audio==3.1.1",
+    "speechbrain==0.5.16",
+    "accelerate==0.26.1",
+    "faster-whisper==1.0.3"
+]
+
+[project.urls]
+"Original Project" = "https://github.com/NavodPeiris/speechlib"
