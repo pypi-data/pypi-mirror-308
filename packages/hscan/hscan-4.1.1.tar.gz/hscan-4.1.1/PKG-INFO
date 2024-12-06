@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hscan
+Version: 4.1.1
+Summary: A python framework
+Home-page: https://github.com/jyangHe/hscan
+Author: jyanghe
+Author-email: jyanghe1023@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+# Hscan
+
+```
+python setup.py sdist bdist_wheel
+python -m twine upload dist/*
+user __token__
+```
