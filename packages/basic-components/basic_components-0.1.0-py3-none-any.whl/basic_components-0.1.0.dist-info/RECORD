@@ -1,0 +1,10 @@
+basic_components/__init__.py,sha256=zO45LGT3yUKzv4YbkCsiMLCB1ttFnzhRLxWWhFUl2g0,56
+basic_components/cli.py,sha256=SrHA_7LGcsWO6Tb-itVqfxxTPooH1dgiGDskECzRSDI,3625
+basic_components/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_components/utils/jinjax.py,sha256=MBhU19qMT6TyEt084YMkSHJNaIR7-KlDQBfY_ydDnp8,706
+basic_components/utils/tailwind.py,sha256=NX-WfVxddcdIvGyThvvlotgI-cPNCejg904br1AVeGo,6359
+basic_components-0.1.0.dist-info/METADATA,sha256=NXiFcsF4OQkDZ5SAAOj-nvM1qDfi8Fth2ZNrCosh2bQ,6785
+basic_components-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+basic_components-0.1.0.dist-info/entry_points.txt,sha256=BXRxrliypZwp0Rvj2V22mtwYkcYIol5ccrbSaAcy4zQ,56
+basic_components-0.1.0.dist-info/licenses/LICENSE,sha256=7PBHZwCBAsXxHFK4zhQSPr7TVhBbHB5kjjfoLbt_ypI,1073
+basic_components-0.1.0.dist-info/RECORD,,
