@@ -1,0 +1,11 @@
+numtools/__init__.py,sha256=vWk8N6grTmnJE3LVxA9WtucAG4K6-qwyM7Oq-VyLA8I,167
+numtools/csyslib.py,sha256=dVaG6PccvmqMgxlM2knvfSmtS8ZeZAr26aLus4PxJ4U,18164
+numtools/intzip.py,sha256=krTamktQACCK4kd1IvO1C5QAgaYF2dCl1D6-0RQFdOA,6348
+numtools/misc.py,sha256=X87JXqYESmXb8P-D7tBEVWp1C-eoQ6AySbmg5XNuv-w,3316
+numtools/pandas_tk.py,sha256=jhg0-4Y1SiUD5P2etBgDE8TaAJmVVo5Q-KUGosJcDjY,4520
+numtools/serializer.py,sha256=IdFHb_z9hsKPfE6n_XmMOQssLlxNpcclZmqdz6YQo10,11294
+numtools/vgextended.py,sha256=qH-r-9QhidBNNvZLi0mwaV_-HIgP63T3PXCrAJBZjYI,5315
+numtools-3.1.0.dist-info/LICENSE,sha256=rLVJf8eum7cmtCkCYxLoQB-FosOM_2DuZ-8w_LJV5Xo,1074
+numtools-3.1.0.dist-info/METADATA,sha256=Ux2oWbPpi1A4i0SN5D8c98W7nVJ04cGZ_Ux1cwKeLEc,833
+numtools-3.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+numtools-3.1.0.dist-info/RECORD,,

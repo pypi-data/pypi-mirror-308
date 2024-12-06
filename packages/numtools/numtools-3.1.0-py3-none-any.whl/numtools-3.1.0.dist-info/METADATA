@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: numtools
+Version: 3.1.0
+Summary: numeric-gmbH toolbox
+Author: numenic
+Author-email: nicolas@cordier.io
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: networkx
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: pandas[performance] (>=2.0,<3.0)
+Requires-Dist: vg (>=2.0,<3.0)
+Description-Content-Type: text/x-rst
+
+========
+numtools
+========
+
+numeric-gmbH toolbox
+
+Packages
+--------
+
+* ``csyslib``: basic coordinates transformations
+* ``intzip``: convert sequence of integers into human-friendly string (and vice-versa)
+* ``serializer``: mix in handling serialization to msgpack and json.
+* ``vgextended``: extension of ``vg`` built on top of ``vg`` and ``numpy``
+
+
