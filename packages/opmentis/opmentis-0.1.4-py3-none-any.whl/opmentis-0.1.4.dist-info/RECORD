@@ -1,0 +1,8 @@
+opmentis/__init__.py,sha256=bOLKohXsmU7MhPyABOBv9Mo4LfDShogOx8dDCG2AfsI,51
+opmentis/core.py,sha256=9_uwMyyshpdyUCekhum0jCyGFbVvLZdiee0w47vJJfM,6530
+opmentis/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opmentis/tests/test_core.py,sha256=uPvdfPm_bljj2W95Mds7cshVTFPaZY_6wrRc4LLbBRQ,4248
+opmentis-0.1.4.dist-info/METADATA,sha256=bh0oQ3T8l5Vn2tdl3MDjwN99ZicPaMHEEJYNpyiA0pc,2048
+opmentis-0.1.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+opmentis-0.1.4.dist-info/top_level.txt,sha256=vcK_W45MyMfKZ8tmhOQGsmpHtnGZpkQSJrkgbQnljNc,9
+opmentis-0.1.4.dist-info/RECORD,,
