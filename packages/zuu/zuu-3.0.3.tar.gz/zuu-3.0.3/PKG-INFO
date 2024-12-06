@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: zuu
+Version: 3.0.3
+Summary: Zack's Useful Utilities
+Author-email: ZackaryW <gitzackw@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# zuu
+Zack's Useful Utilities
+
+## Install
+```bash
+pip  install zuu
+```
+
+## Naming Conventions
+* `_{name}` for class objects
+* `{name}` for named utilities
+* `{name}_` for extensions to modules
+
+## Changelog
+* `v3` breaking change
+
