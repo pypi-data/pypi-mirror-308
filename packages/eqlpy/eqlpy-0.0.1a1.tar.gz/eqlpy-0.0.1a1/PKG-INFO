@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: eqlpy
+Version: 0.0.1a1
+Summary: EQL support library for Python 3
+Project-URL: Homepage, https://github.com/cipherstash/eqlpy
+Project-URL: Issues, https://github.com/cipherstash/eqlpy/issues
+Author-email: CipherStash <yuji@cipherstash.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: psycopg2==2.*
+Description-Content-Type: text/markdown
+
+# eqlpy
+EQL support library for Python3
