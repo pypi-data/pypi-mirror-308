@@ -1,0 +1,6 @@
+pigpio
+gpiozero
+
+[rpi]
+RPi.GPIO
+Adafruit_DHT
