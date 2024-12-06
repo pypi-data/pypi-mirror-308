@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+snapshot_restore_py.py
+snapshot_restore_py.egg-info/PKG-INFO
+snapshot_restore_py.egg-info/SOURCES.txt
+snapshot_restore_py.egg-info/dependency_links.txt
+snapshot_restore_py.egg-info/top_level.txt
