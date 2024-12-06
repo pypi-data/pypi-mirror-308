@@ -1,0 +1,18 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+aegis_framework/ __init__.py
+aegis_framework.egg-info/PKG-INFO
+aegis_framework.egg-info/SOURCES.txt
+aegis_framework.egg-info/dependency_links.txt
+aegis_framework.egg-info/requires.txt
+aegis_framework.egg-info/top_level.txt
+aegis_framework/core/__init__.py
+aegis_framework/core/agent_base.py
+aegis_framework/core/master_agent.py
+aegis_framework/core/ollama_model.py
+aegis_framework/modules/__init__.py
+aegis_framework/modules/design_agent.py
+aegis_framework/utils/__init__.py
+aegis_framework/utils/helper_functions.py

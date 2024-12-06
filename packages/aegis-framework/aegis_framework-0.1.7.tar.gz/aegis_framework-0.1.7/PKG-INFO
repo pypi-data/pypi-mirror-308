@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aegis_framework
+Version: 0.1.7
+Summary: A framework for creating multi-agent colonies
+Home-page: https://github.com/metisos/aegis_framework.git
+Author: Metis Analytics
+Author-email: cjohnson@metisos.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-socketio
+Requires-Dist: fuzzywuzzy
+Requires-Dist: python-socketio
+Requires-Dist: schedule
