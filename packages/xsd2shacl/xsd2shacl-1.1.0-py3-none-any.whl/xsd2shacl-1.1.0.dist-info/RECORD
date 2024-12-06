@@ -1,0 +1,12 @@
+xsd2shacl/XSDtoSHACL.py,sha256=uylaFURWanbNJLu4DCyEiu0g6hw1ZpEicoFmMaBrrmg,40083
+xsd2shacl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xsd2shacl/__main__.py,sha256=VHkFbDquTbSSfH1iD4mObJl00iXU33gVmzBXixbsLvE,2332
+xsd2shacl/post_adjustment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xsd2shacl/post_adjustment/adjustment_RINF.py,sha256=t0E6PoaPiP1lVuR5IBqsEQP8f3JS0YgLHwSMTnFkjvo,19488
+xsd2shacl/post_adjustment/adjustment_TED.py,sha256=vwJJKvD5C5vj6N9p83Eev1Zm2zWhkK0irywFEfLRFl4,27188
+xsd2shacl/post_adjustment/utils.py,sha256=UVKOKZbrL5uDBOEEZg259DckxHKKXb5ZRNmR37Uzo7c,1135
+xsd2shacl/utils.py,sha256=ZKN1zWNE6E5EkQOddPi6WrFDfBf6yxhm0iKwcYmPg6o,7546
+xsd2shacl-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xsd2shacl-1.1.0.dist-info/METADATA,sha256=gYKWO5EgjVdd_qS8EHdVXvK1F91CfrocLxJ3bxhDarA,2840
+xsd2shacl-1.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+xsd2shacl-1.1.0.dist-info/RECORD,,
