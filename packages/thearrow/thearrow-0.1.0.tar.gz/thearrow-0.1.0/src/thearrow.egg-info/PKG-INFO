@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: thearrow
+Version: 0.1.0
+Summary: Collection of common functions
+Author-email: Harikrishnan B <hari.kris116@gmail.com>
+License: MIT
+Project-URL: Homepage, https://your-package-homepage.com
+Requires-Python: >=3.6

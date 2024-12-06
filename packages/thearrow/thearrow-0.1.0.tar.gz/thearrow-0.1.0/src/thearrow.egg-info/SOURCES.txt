@@ -1,0 +1,5 @@
+pyproject.toml
+src/thearrow.egg-info/PKG-INFO
+src/thearrow.egg-info/SOURCES.txt
+src/thearrow.egg-info/dependency_links.txt
+src/thearrow.egg-info/top_level.txt

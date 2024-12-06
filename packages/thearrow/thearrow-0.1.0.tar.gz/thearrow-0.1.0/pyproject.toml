@@ -1,0 +1,19 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thearrow"
+version = "0.1.0"
+description = "Collection of common functions"
+authors = [{ name = "Harikrishnan B", email = "hari.kris116@gmail.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://your-package-homepage.com"
