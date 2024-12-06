@@ -1,0 +1,5 @@
+[pymodaq.instruments]
+nkt = pymodaq_plugins_nkt
+
+[pymodaq.plugins]
+nkt = pymodaq_plugins_nkt
