@@ -1,0 +1,11 @@
+pylagg/cgr.py,sha256=WWkVTfSYAItFeYuUuWwxOxNyCjmTKfSVlFBoGNyZCbA,6794
+pylagg/config.py,sha256=fqscsKBwpvAYN3RhBNkNE4LdXuqMIxxtehqALkJAhOA,3550
+pylagg/cutadapt.py,sha256=3EXF0nSZq4zcupzNgCFSmSDLGRkXQoBQ_bRmexFIzq8,2373
+pylagg/ena.py,sha256=MKQvys2xQUT34iXYQBQxcUbTzqJ-hs_BCWQmAFyl9bw,7207
+pylagg/jellyfish.py,sha256=iPonXlqGZw0oZMWFevxrqrIlVI7qvkPJyTzzA_j5Kp4,5685
+pylagg/main.py,sha256=09l8VH7Y8A_GuZcTeddUCQ9dPvVzAiX_xqTXPp9D55g,9700
+pylagg-0.4.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylagg-0.4.2.dist-info/METADATA,sha256=swgfu5SuNau4daqG_aDpFBr49Q_0QI9m4FCkKdPyThE,3930
+pylagg-0.4.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylagg-0.4.2.dist-info/entry_points.txt,sha256=jTHBOk0MJeRC4LFYe3HlXjc3paowOOXnrGpPyH1k-7o,40
+pylagg-0.4.2.dist-info/RECORD,,
