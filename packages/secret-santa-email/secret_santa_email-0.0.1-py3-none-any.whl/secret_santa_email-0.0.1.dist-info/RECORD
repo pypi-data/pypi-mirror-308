@@ -1,0 +1,12 @@
+secretSanta/__init__.py,sha256=wA2MJA1_cBzK_ysOcycM1QU5GUyXhjDF953oFrv0ZmM,157
+secretSanta/email_utils.py,sha256=7m-CHi9Fl_ZCXB6g5g1vwBI0BkZi91IunicZlInk8Vg,1101
+secretSanta/logging.py,sha256=Ss_Lfld2Kt7u2uHIVYxg2XDUpGeFSa2a9suRzpDgroE,219
+secretSanta/party.py,sha256=6LNjq1R_nGj4SLvwHsmgx67rw2xn89VghtbT7IjxWSo,8471
+secretSanta/requirements.txt,sha256=VokxaAXxihgUj0Y3srWE8PP6UquyGRVMMNe4_23u6-M,11
+secretSanta/version.py,sha256=upfZuyGf8WiqsX3uaPpzLu8h13C2N0Yl2_2auHuu-KY,49
+secretSanta/inputs/guests.json,sha256=56vKFTE0hNPNi_pvpFNKlDxk-IqRCeZ_sPbK7r_-IIw,3438
+secret_santa_email-0.0.1.dist-info/LICENSE,sha256=fKnV8FaQhlrwNqq8gPVtryBs0oUIGTR3wHiDNHtuqmA,1502
+secret_santa_email-0.0.1.dist-info/METADATA,sha256=F9QsO_EZ0aY-3qaYfa0qqUzmLifQ_VsQccC1a6cAUjc,2703
+secret_santa_email-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+secret_santa_email-0.0.1.dist-info/top_level.txt,sha256=zSOEomIViSo5SAhZeFsZlG-9fCZd1bAZJR-oWViRohw,12
+secret_santa_email-0.0.1.dist-info/RECORD,,
