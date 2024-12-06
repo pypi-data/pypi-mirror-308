@@ -1,0 +1,6 @@
+setuptools
+Pandas
+zipp
+dicom2nifti
+pydicom
+regex
