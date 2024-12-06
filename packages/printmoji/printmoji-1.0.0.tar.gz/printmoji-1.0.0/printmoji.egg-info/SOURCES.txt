@@ -1,0 +1,7 @@
+README.md
+setup.py
+printmoji/__init__.py
+printmoji.egg-info/PKG-INFO
+printmoji.egg-info/SOURCES.txt
+printmoji.egg-info/dependency_links.txt
+printmoji.egg-info/top_level.txt
