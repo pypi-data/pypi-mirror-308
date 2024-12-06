@@ -1,0 +1,18 @@
+[console_scripts]
+baguette = baguette.baguette:main
+baguette.bake = baguette.bake:main
+baguette.exit_codes = baguette.exit_codes:main
+baguette.metalib = baguette.metalib:main
+baguette.open = baguette.open:main
+baguette.prepare = baguette.prepare:main
+baguette.settings = baguette.setup.__init__:main
+baguette.toast = baguette.toast:main
+baguette.tutorial = baguette.tutorial.scripts:start
+baguette.tutorial.help = baguette.tutorial.scripts:help
+baguette.tutorial.reset = baguette.tutorial.scripts:reset
+baguette.tutorial.samples = baguette.tutorial.scripts:copy_reports
+baguette.tutorial.status = baguette.tutorial.scripts:status
+bake = baguette.bake:main
+metalib = baguette.metalib:main
+prepare = baguette.prepare:main
+toast = baguette.toast:main

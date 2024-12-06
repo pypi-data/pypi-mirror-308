@@ -1,0 +1,1500 @@
+{
+	"Names": {
+		"ntallocatevirtualmemory": "NtAllocateVirtualMemory",
+		"dllloadnotification": "DllLoadNotification",
+		"sysenter": "sysenter",
+		"ntcreatekey": "NtCreateKey",
+		"rtlsetcurrenttransaction": "RtlSetCurrentTransaction",
+		"ntquerykey": "NtQueryKey",
+		"ntclose": "NtClose",
+		"internetclosehandle": "InternetCloseHandle",
+		"openscmanagera": "OpenSCManagerA",
+		"socket": "socket",
+		"setsockopt": "setsockopt",
+		"ntdeviceiocontrolfile": "NtDeviceIoControlFile",
+		"ntwaitforsingleobject": "NtWaitForSingleObject",
+		"closesocket": "closesocket",
+		"ntprotectvirtualmemory": "NtProtectVirtualMemory",
+		"ntopensection": "NtOpenSection",
+		"ntqueryattributesfile": "NtQueryAttributesFile",
+		"ntopenfile": "NtOpenFile",
+		"ntcreatesection": "NtCreateSection",
+		"ntmapviewofsection": "NtMapViewOfSection",
+		"ldrgetdllhandle": "LdrGetDllHandle",
+		"rtldospathnametontpathname_u": "RtlDosPathNameToNtPathName_U",
+		"ntduplicateobject": "NtDuplicateObject",
+		"ntcreatefile": "NtCreateFile",
+		"ntqueryinformationtoken": "NtQueryInformationToken",
+		"startservicea": "StartServiceA",
+		"ldrgetprocedureaddressforcaller": "LdrGetProcedureAddressForCaller",
+		"findresourceexa": "FindResourceExA",
+		"loadresource": "LoadResource",
+		"lockresource": "LockResource",
+		"sizeofresource": "SizeofResource",
+		"movefilewithprogresstransactedw": "MoveFileWithProgressTransactedW",
+		"ntwritefile": "NtWriteFile",
+		"ntcreateuserprocess": "NtCreateUserProcess",
+		"createprocessa": "CreateProcessA",
+		"ntterminateprocess": "NtTerminateProcess",
+		"ntunmapviewofsectionex": "NtUnmapViewOfSectionEx",
+		"ntopenkey": "NtOpenKey",
+		"ntqueryvaluekey": "NtQueryValueKey",
+		"heapcreate": "HeapCreate",
+		"ntquerylicensevalue": "NtQueryLicenseValue",
+		"getcommandlinea": "GetCommandLineA",
+		"ntqueryinformationfile": "NtQueryInformationFile",
+		"ntsetinformationfile": "NtSetInformationFile",
+		"ntfreevirtualmemory": "NtFreeVirtualMemory",
+		"ntreadfile": "NtReadFile",
+		"ntdelayexecution": "NtDelayExecution",
+		"ntqueryinformationthread": "NtQueryInformationThread",
+		"ntterminatethread": "NtTerminateThread",
+		"setunhandledexceptionfilter": "SetUnhandledExceptionFilter",
+		"ldrloaddll": "LdrLoadDll",
+		"ntcreatemutant": "NtCreateMutant",
+		"lookupprivilegevaluew": "LookupPrivilegeValueW",
+		"ntopenprocesstoken": "NtOpenProcessToken",
+		"getcomputernamea": "GetComputerNameA",
+		"getadaptersinfo": "GetAdaptersInfo",
+		"ntopenkeyex": "NtOpenKeyEx",
+		"regqueryvalueexa": "RegQueryValueExA",
+		"regclosekey": "RegCloseKey",
+		"regsetvalueexa": "RegSetValueExA",
+		"winexec": "WinExec",
+		"ntsetinformationprocess": "NtSetInformationProcess",
+		"cocreateinstance": "CoCreateInstance",
+		"deviceiocontrol": "DeviceIoControl",
+		"getsystemtimeasfiletime": "GetSystemTimeAsFileTime",
+		"ntquerysystemtime": "NtQuerySystemTime",
+		"ntquerysysteminformation": "NtQuerySystemInformation",
+		"ntreleasemutant": "NtReleaseMutant",
+		"shellexecuteexw": "ShellExecuteExW",
+		"deletefilea": "DeleteFileA",
+		"copyfilea": "CopyFileA",
+		"wsastartup": "WSAStartup",
+		"gethostbyname": "gethostbyname",
+		"ntopenthread": "NtOpenThread",
+		"srand": "srand",
+		"regopenkeyexa": "RegOpenKeyExA",
+		"regdeletekeya": "RegDeleteKeyA",
+		"gethostname": "gethostname",
+		"send": "send",
+		"outputdebugstringa": "OutputDebugStringA",
+		"getsystemtime": "GetSystemTime",
+		"internetopena": "InternetOpenA",
+		"ntopenevent": "NtOpenEvent",
+		"ntenumeratekey": "NtEnumerateKey",
+		"ntsetvaluekey": "NtSetValueKey",
+		"ntenumeratevaluekey": "NtEnumerateValueKey",
+		"wsasocketw": "WSASocketW",
+		"internetopenurla": "InternetOpenUrlA",
+		"saferidentifylevel": "SaferIdentifyLevel",
+		"createtoolhelp32snapshot": "CreateToolhelp32Snapshot",
+		"process32firstw": "Process32FirstW",
+		"process32nextw": "Process32NextW",
+		"ntyieldexecution": "NtYieldExecution",
+		"ntunmapviewofsection": "NtUnmapViewOfSection",
+		"getlocaltime": "GetLocalTime",
+		"getkeyboardlayout": "GetKeyboardLayout",
+		"changewindowmessagefilter": "ChangeWindowMessageFilter",
+		"ntopenmutant": "NtOpenMutant",
+		"getsystemmetrics": "GetSystemMetrics",
+		"postmessagew": "PostMessageW",
+		"createthread": "CreateThread",
+		"bind": "bind",
+		"listen": "listen",
+		"system": "system",
+		"ntopenprocess": "NtOpenProcess",
+		"virtualprotectex": "VirtualProtectEx",
+		"ntaddatomex": "NtAddAtomEx",
+		"systemparametersinfoa": "SystemParametersInfoA",
+		"systemparametersinfow": "SystemParametersInfoW",
+		"postmessagea": "PostMessageA",
+		"regopenkeyexw": "RegOpenKeyExW",
+		"regqueryvalueexw": "RegQueryValueExW",
+		"getsysteminfo": "GetSystemInfo",
+		"getcursorpos": "GetCursorPos",
+		"ntgetcontextthread": "NtGetContextThread",
+		"readprocessmemory": "ReadProcessMemory",
+		"writeprocessmemory": "WriteProcessMemory",
+		"ntsetcontextthread": "NtSetContextThread",
+		"ntresumethread": "NtResumeThread",
+		"createremotethread": "CreateRemoteThread",
+		"getcommandlinew": "GetCommandLineW",
+		"nspstartup": "NSPStartup",
+		"ntopendirectoryobject": "NtOpenDirectoryObject",
+		"getlastinputinfo": "GetLastInputInfo",
+		"sendnotifymessagew": "SendNotifyMessageW",
+		"ntfindatom": "NtFindAtom",
+		"postthreadmessagew": "PostThreadMessageW",
+		"setwindowshookexa": "SetWindowsHookExA",
+		"regcreatekeyexa": "RegCreateKeyExA",
+		"regdeletevaluea": "RegDeleteValueA",
+		"findwindowa": "FindWindowA",
+		"unhookwindowshookex": "UnhookWindowsHookEx",
+		"ntcreateevent": "NtCreateEvent",
+		"ntqueueapcthread": "NtQueueApcThread",
+		"urldownloadtocachefilew": "URLDownloadToCacheFileW",
+		"ntdeleteatom": "NtDeleteAtom",
+		"internetgetconnectedstate": "InternetGetConnectedState",
+		"internetconnecta": "InternetConnectA",
+		"httpopenrequesta": "HttpOpenRequestA",
+		"winhttpsetoption": "WinHttpSetOption",
+		"httpsendrequesta": "HttpSendRequestA",
+		"globalmemorystatus": "GlobalMemoryStatus",
+		"regcreatekeyexw": "RegCreateKeyExW",
+		"regsetvalueexw": "RegSetValueExW",
+		"openscmanagerw": "OpenSCManagerW",
+		"openservicew": "OpenServiceW",
+		"createservicew": "CreateServiceW",
+		"startservicew": "StartServiceW",
+		"ntsettimerex": "NtSetTimerEx",
+		"ntqueryinformationatom": "NtQueryInformationAtom",
+		"ntreadvirtualmemory": "NtReadVirtualMemory",
+		"ntqueryfullattributesfile": "NtQueryFullAttributesFile",
+		"enumdisplaydevicesw": "EnumDisplayDevicesW",
+		"setwindowshookexw": "SetWindowsHookExW",
+		"findwindoww": "FindWindowW",
+		"ntquerydirectoryfile": "NtQueryDirectoryFile",
+		"ntwritevirtualmemory": "NtWriteVirtualMemory",
+		"cocreateinstanceex": "CoCreateInstanceEx",
+		"isvalidurl": "IsValidURL",
+		"ntdeletevaluekey": "NtDeleteValueKey",
+		"regdeletekeyw": "RegDeleteKeyW",
+		"shgetfolderpathw": "SHGetFolderPathW",
+		"loadlibraryexw": "LoadLibraryExW",
+		"netgetjoininformation": "NetGetJoinInformation",
+		"cryptacquirecontextw": "CryptAcquireContextW",
+		"shgetknownfolderpath": "SHGetKnownFolderPath",
+		"cryptcreatehash": "CryptCreateHash",
+		"crypthashdata": "CryptHashData",
+		"cryptdestroyhash": "CryptDestroyHash",
+		"getfileversioninfosizew": "GetFileVersionInfoSizeW",
+		"getfileversioninfow": "GetFileVersionInfoW",
+		"ldrgetprocedureaddress": "LdrGetProcedureAddress",
+		"regqueryinfokeyw": "RegQueryInfoKeyW",
+		"regenumkeyexw": "RegEnumKeyExW",
+		"regenumkeyw": "RegEnumKeyW",
+		"cogetclassobject": "CoGetClassObject",
+		"createservicea": "CreateServiceA",
+		"createdirectoryw": "CreateDirectoryW",
+		"winhttpopen": "WinHttpOpen",
+		"getaddrinfo": "getaddrinfo",
+		"internetcrackurlw": "InternetCrackUrlW",
+		"internetsetoptiona": "InternetSetOptionA",
+		"internetopenw": "InternetOpenW",
+		"internetconnectw": "InternetConnectW",
+		"httpopenrequestw": "HttpOpenRequestW",
+		"httpaddrequestheadersw": "HttpAddRequestHeadersW",
+		"httpsendrequestw": "HttpSendRequestW",
+		"httpqueryinfoa": "HttpQueryInfoA",
+		"getusernamew": "GetUserNameW",
+		"netusergetinfo": "NetUserGetInfo",
+		"connectex": "ConnectEx",
+		"internetopenurlw": "InternetOpenUrlW",
+		"ntallocatevirtualmemoryex": "NtAllocateVirtualMemoryEx",
+		"ntcreatethreadex": "NtCreateThreadEx",
+		"findwindowexw": "FindWindowExW",
+		"syscall": "syscall",
+		"rtladdvectoredexceptionhandler": "RtlAddVectoredExceptionHandler",
+		"isdebuggerpresent": "IsDebuggerPresent",
+		"globalmemorystatusex": "GlobalMemoryStatusEx",
+		"findfirstfileexw": "FindFirstFileExW",
+		"connect": "connect",
+		"deletefilew": "DeleteFileW",
+		"ntquerymultiplevaluekey": "NtQueryMultipleValueKey"
+	},
+	"Argument Name Translations": {
+		"ntallocatevirtualmemory": {
+			"ProcessHandle": "process_handle",
+			"Protection": "protection",
+			"BaseAddress": "base_address",
+			"RegionSize": "region_size",
+			"StackPivoted": "stack_pivoted"
+		},
+		"dllloadnotification": {
+			"DllName": "dll_name",
+			"DllBase": "dll_base",
+			"NotificationReason": "notification_reason"
+		},
+		"sysenter": {
+			"Return Address": "return _address",
+			"Module": "module",
+			"ThreadIdentifier": "thread_identifier"
+		},
+		"ntcreatekey": {
+			"ObjectAttributesName": "object_attributes_name",
+			"Class": "class",
+			"Disposition": "disposition",
+			"KeyHandle": "key_handle",
+			"ObjectAttributes": "object_attributes",
+			"ObjectAttributesHandle": "object_attributes_handle",
+			"DesiredAccess": "desired_access"
+		},
+		"rtlsetcurrenttransaction": {
+			"TransactionHandle": "transaction_handle"
+		},
+		"ntquerykey": {
+			"KeyInformation": "key_information",
+			"KeyHandle": "key_handle",
+			"KeyInformationClass": "information_class"
+		},
+		"ntclose": {
+			"Handle": "handle"
+		},
+		"internetclosehandle": {
+			"InternetHandle": "internet_handle"
+		},
+		"openscmanagera": {
+			"DatabaseName": "database_name",
+			"DesiredAccess": "desired_access",
+			"MachineName": "machine_name"
+		},
+		"socket": {
+			"socket": "socket",
+			"type": "type",
+			"af": "af",
+			"protocol": "protocol"
+		},
+		"setsockopt": {
+			"socket": "socket",
+			"optname": "optname",
+			"level": "level",
+			"optval": "buffer"
+		},
+		"ntdeviceiocontrolfile": {
+			"InputBuffer": "input_buffer",
+			"IoControlCode": "control_code",
+			"FileHandle": "file_handle",
+			"OutputBuffer": "output_buffer"
+		},
+		"ntwaitforsingleobject": {
+			"Handle": "handle",
+			"Milliseconds": "milliseconds",
+			"Status": "status"
+		},
+		"closesocket": {
+			"socket": "socket"
+		},
+		"ntprotectvirtualmemory": {
+			"ProcessHandle": "process_handle",
+			"NumberOfBytesProtected": "process_identifier",
+			"ModuleName": "length",
+			"BaseAddress": "base_address",
+			"NewAccessProtection": "protection",
+			"StackPivoted": "stack_pivoted",
+			"OldAccessProtection": "old_access_protection",
+			"MemoryType": "heap_dep_bypass"
+		},
+		"ntopensection": {
+			"ObjectAttributes": "section_name",
+			"DesiredAccess": "desired_access",
+			"SectionHandle": "section_handle"
+		},
+		"ntqueryattributesfile": {
+			"FileName": "filepath"
+		},
+		"ntopenfile": {
+			"ShareAccess": "share_access",
+			"DesiredAccess": "desired_access",
+			"FileHandle": "file_handle",
+			"FileName": "filepath"
+		},
+		"ntcreatesection": {
+			"SectionHandle": "section_handle",
+			"ObjectAttributes": "object_handle",
+			"DesiredAccess": "desired_access",
+			"FileHandle": "file_handle"
+		},
+		"ntmapviewofsection": {
+			"ProcessHandle": "process_handle",
+			"SectionOffset": "section_offset",
+			"SectionHandle": "section_handle",
+			"BaseAddress": "base_address",
+			"ViewSize": "view_size",
+			"StackPivoted": "commit_size",
+			"Win32Protect": "win32_protect"
+		},
+		"ldrgetdllhandle": {
+			"ModuleHandle": "module_address",
+			"FileName": "module_name"
+		},
+		"rtldospathnametontpathname_u": {
+			"DosFileName": "dos_file_name"
+		},
+		"ntduplicateobject": {
+			"TargetHandle": "target_handle",
+			"TargetProcessHandle": "target_process_handle",
+			"SourceProcessHandle": "source_process_handle",
+			"Options": "options",
+			"SourceHandle": "source_handle"
+		},
+		"ntcreatefile": {
+			"ShareAccess": "share_access",
+			"FileAttributes": "file_attributes",
+			"CreateDisposition": "create_disposition",
+			"ExistedBefore": "filepath_r",
+			"DesiredAccess": "desired_access",
+			"FileHandle": "file_handle",
+			"FileName": "filepath",
+			"StackPivoted": "status_info"
+		},
+		"ntqueryinformationtoken": {
+			"TokenInformationClass": "token_information_class",
+			"TokenInformation": "token_information"
+		},
+		"startservicea": {
+			"Arguments": "arguments",
+			"ServiceName": "service_name",
+			"ServiceHandle": "service_handle"
+		},
+		"ldrgetprocedureaddressforcaller": {
+			"Ordinal": "ordinal",
+			"ModuleName": "module_name",
+			"FunctionAddress": "function_address",
+			"FunctionName": "function_name",
+			"ModuleHandle": "module_handle"
+		},
+		"findresourceexa": {
+			"Language": "language_identifier",
+			"Name": "name",
+			"Type": "type",
+			"Module": "module_handle"
+		},
+		"loadresource": {
+			"Module": "pointer",
+			"ResourceInfo": "resource_handle"
+		},
+		"lockresource": {
+			"ResourceData": "resource_data"
+		},
+		"sizeofresource": {
+			"ResourceInfo": "resource_size",
+			"ModuleHandle": "module_handle"
+		},
+		"movefilewithprogresstransactedw": {
+			"ExistingFileName": "existing_file_name",
+			"NewFileName": "new_file_name",
+			"Flags": "flags"
+		},
+		"ntwritefile": {
+			"Buffer": "buffer",
+			"Length": "filepath",
+			"FileHandle": "file_handle",
+			"Status": "offset",
+			"HandleName": "handle_name"
+		},
+		"ntcreateuserprocess": {
+			"ThreadHandle": "thread_handle",
+			"ProcessHandle": "process_handle",
+			"ImagePathName": "filepath",
+			"ProcessDesiredAccess": "process_identifier",
+			"ThreadName": "thread_name",
+			"ProcessId": "process_name",
+			"CommandLine": "command_line",
+			"ThreadDesiredAccess": "thread_identifier",
+			"ProcessFileName": "process_name_r"
+		},
+		"createprocessa": {
+			"ThreadHandle": "thread_handle",
+			"ProcessHandle": "process_handle",
+			"ProcessId": "process_id",
+			"ApplicationName": "application_name",
+			"CommandLine": "command_line",
+			"CreationFlags": "creation_flags",
+			"StackPivoted": "stack_pivoted",
+			"ThreadId": "thread_id"
+		},
+		"ntterminateprocess": {
+			"ProcessHandle": "process_handle",
+			"ExitCode": "status_code"
+		},
+		"ntunmapviewofsectionex": {
+			"ProcessHandle": "process_handle",
+			"Flags": "flags",
+			"BaseAddress": "base_address",
+			"RegionSize": "region_size"
+		},
+		"ntopenkey": {
+			"KeyHandle": "key_handle",
+			"ObjectAttributes": "object_attributes",
+			"DesiredAccess": "desired_access",
+			"ObjectAttributesName": "object_attributes_name",
+			"ObjectAttributesHandle": "object_attributes_handle"
+		},
+		"ntqueryvaluekey": {
+			"FullName": "key_name",
+			"KeyHandle": "key_handle",
+			"Type": "reg_type",
+			"Information": "information_class",
+			"ValueName": "value"
+		},
+		"heapcreate": {
+			"MaximumSize": "maximum_size",
+			"InitialSize": "initial_size",
+			"Options": "options"
+		},
+		"ntquerylicensevalue": {
+			"Type": "type",
+			"Name": "name"
+		},
+		"getcommandlinea": {
+			"CommandLine": "command_line"
+		},
+		"ntqueryinformationfile": {
+			"FileInformationClass": "information_class",
+			"FileHandle": "file_handle",
+			"HandleName": "handle_name",
+			"FileInformation": "file_information"
+		},
+		"ntsetinformationfile": {
+			"FileInformationClass": "information_class",
+			"FileHandle": "file_handle",
+			"HandleName": "handle_name",
+			"FileInformation": "file_information"
+		},
+		"ntfreevirtualmemory": {
+			"ProcessHandle": "process_handle",
+			"FreeType": "free_type",
+			"BaseAddress": "base_address",
+			"RegionSize": "size"
+		},
+		"ntreadfile": {
+			"Buffer": "buffer",
+			"Length": "length",
+			"FileHandle": "file_handle",
+			"Status": "offset",
+			"HandleName": "handle_name"
+		},
+		"ntdelayexecution": {
+			"Status": "status",
+			"Milliseconds": "milliseconds"
+		},
+		"ntqueryinformationthread": {
+			"ThreadHandle": "thread_handle",
+			"ThreadInformationClass": "thread_information_class",
+			"ThreadInformation": "thread_information",
+			"ThreadId": "thread_id"
+		},
+		"ntterminatethread": {
+			"ThreadHandle": "thread_handle",
+			"ExitStatus": "exit_status",
+			"ProcessId": "process_id",
+			"ThreadId": "thread_id"
+		},
+		"setunhandledexceptionfilter": {
+			"ExceptionFilter": "exception_filter"
+		},
+		"ldrloaddll": {
+			"FileName": "basename",
+			"Flags": "flags",
+			"BaseAddress": "module_address"
+		},
+		"ntcreatemutant": {
+			"Handle": "mutant_handle",
+			"InitialOwner": "initial_owner",
+			"MutexName": "mutant_name"
+		},
+		"lookupprivilegevaluew": {
+			"PrivilegeName": "privilege_name",
+			"SystemName": "system_name"
+		},
+		"ntopenprocesstoken": {
+			"ProcessHandle": "process_handle",
+			"DesiredAccess": "desired_access",
+			"TokenHandle": "token_handle"
+		},
+		"getcomputernamea": {
+			"ComputerName": "computer_name"
+		},
+		"getadaptersinfo": {},
+		"ntopenkeyex": {
+			"ObjectAttributesName": "object_attributes_name",
+			"KeyHandle": "key_handle",
+			"ObjectAttributes": "object_attributes",
+			"DesiredAccess": "desired_access",
+			"ObjectAttributesHandle": "object_attributes_handle"
+		},
+		"regqueryvalueexa": {
+			"Handle": "key_handle",
+			"Data": "data",
+			"ValueName": "value",
+			"FullName": "reg_type"
+		},
+		"regclosekey": {
+			"Handle": "key_handle"
+		},
+		"regsetvalueexa": {
+			"Handle": "key_handle",
+			"Buffer": "regkey",
+			"FullName": "regkey_r",
+			"Type": "reg_type",
+			"ValueName": "value",
+			"BufferLength": "buffer_length"
+		},
+		"winexec": {
+			"CmdShow": "cmd_show",
+			"CmdLine": "cmd_line"
+		},
+		"ntsetinformationprocess": {
+			"ProcessInformation": "process_information",
+			"ProcessInformationClass": "process_information_class"
+		},
+		"cocreateinstance": {
+			"ClsContext": "class_context",
+			"riid": "iid",
+			"rclsid": "clsid",
+			"ProgID": "prog_i_d"
+		},
+		"deviceiocontrol": {
+			"InBuffer": "input_buffer",
+			"DeviceHandle": "device_handle",
+			"IoControlCode": "control_code",
+			"OutBuffer": "output_buffer"
+		},
+		"getsystemtimeasfiletime": {},
+		"ntquerysystemtime": {},
+		"ntquerysysteminformation": {
+			"SystemInformationClass": "information_class"
+		},
+		"ntreleasemutant": {
+			"Handle": "handle"
+		},
+		"shellexecuteexw": {
+			"Show": "show_type",
+			"Parameters": "parameters",
+			"FilePath": "filepath"
+		},
+		"deletefilea": {
+			"FileName": "file_name"
+		},
+		"copyfilea": {
+			"ExistingFileName": "oldfilepath",
+			"NewFileName": "newfilepath",
+			"ExistedBefore": "newfilepath_r"
+		},
+		"wsastartup": {
+			"VersionRequested": "wVersionRequested"
+		},
+		"gethostbyname": {
+			"Name": "hostname"
+		},
+		"ntopenthread": {
+			"ThreadHandle": "thread_handle",
+			"ProcessId": "process_identifier",
+			"DesiredAccess": "access",
+			"ThreadId": "thread_name"
+		},
+		"srand": {
+			"seed": "seed"
+		},
+		"regopenkeyexa": {
+			"Handle": "key_handle",
+			"FullName": "full_name",
+			"SubKey": "regkey",
+			"Registry": "regkey_r"
+		},
+		"regdeletekeya": {
+			"Handle": "key_handle",
+			"FullName": "regkey_r",
+			"SubKey": "regkey"
+		},
+		"gethostname": {
+			"HostName": "host_name"
+		},
+		"send": {
+			"socket": "socket",
+			"buffer": "buffer"
+		},
+		"outputdebugstringa": {
+			"OutputString": "string"
+		},
+		"getsystemtime": {},
+		"internetopena": {
+			"ProxyBypass": "proxy_bypass",
+			"Flags": "flags",
+			"Agent": "user_agent",
+			"ProxyName": "proxy_name",
+			"AccessType": "access_type"
+		},
+		"ntopenevent": {
+			"Handle": "handle",
+			"EventName": "event_name"
+		},
+		"ntenumeratekey": {
+			"KeyHandle": "key_handle",
+			"Index": "index"
+		},
+		"ntsetvaluekey": {
+			"Buffer": "regkey",
+			"FullName": "full_name",
+			"KeyHandle": "key_handle",
+			"Type": "reg_type",
+			"ValueName": "value",
+			"BufferLength": "buffer_length"
+		},
+		"ntenumeratevaluekey": {
+			"Index": "index",
+			"KeyValueInformationClass": "information_class",
+			"KeyHandle": "key_handle"
+		},
+		"wsasocketw": {
+			"socket": "socket",
+			"type": "type",
+			"af": "af",
+			"protocol": "protocol"
+		},
+		"internetopenurla": {
+			"Flags": "flags",
+			"ConnectionHandle": "internet_handle",
+			"Headers": "headers",
+			"URL": "url"
+		},
+		"saferidentifylevel": {},
+		"createtoolhelp32snapshot": {
+			"ProcessId": "process_identifier",
+			"Flags": "flags"
+		},
+		"process32firstw": {
+			"ProcessId": "process_identifier",
+			"ProcessName": "process_name"
+		},
+		"process32nextw": {
+			"ProcessId": "process_identifier",
+			"ProcessName": "process_name"
+		},
+		"ntyieldexecution": {},
+		"ntunmapviewofsection": {
+			"ProcessHandle": "process_handle",
+			"RegionSize": "region_size",
+			"BaseAddress": "base_address"
+		},
+		"getlocaltime": {},
+		"getkeyboardlayout": {
+			"KeyboardLayout": "keyboard_layout"
+		},
+		"changewindowmessagefilter": {
+			"dwFlag": "dw_flag",
+			"message": "message"
+		},
+		"ntopenmutant": {
+			"Handle": "mutant_handle",
+			"MutexName": "mutant_name"
+		},
+		"getsystemmetrics": {
+			"SystemMetricIndex": "system_metric_index"
+		},
+		"postmessagew": {
+			"Message": "message",
+			"WindowHandle": "window_handle"
+		},
+		"createthread": {
+			"StartRoutine": "stack_size",
+			"Parameter": "parameter",
+			"ModuleName": "module_name",
+			"CreationFlags": "function_address",
+			"ThreadId": "thread_identifier"
+		},
+		"bind": {
+			"socket": "socket",
+			"ip": "ip",
+			"port": "port"
+		},
+		"listen": {
+			"socket": "socket"
+		},
+		"system": {
+			"Command": "command"
+		},
+		"ntopenprocess": {
+			"ProcessHandle": "process_handle",
+			"DesiredAccess": "desired_access",
+			"ProcessIdentifier": "process_identifier",
+			"ProcessName": "process_name"
+		},
+		"virtualprotectex": {
+			"ProcessHandle": "process_handle",
+			"MemType": "mem_type",
+			"Size": "size",
+			"Protection": "protection",
+			"OldProtection": "old_protection",
+			"ModuleName": "module_name",
+			"Address": "address",
+			"StackPivoted": "stack_pivoted"
+		},
+		"ntaddatomex": {
+			"AtomName": "atom_name",
+			"Atom": "atom"
+		},
+		"systemparametersinfoa": {
+			"uiParam": "ui_param",
+			"Action": "action"
+		},
+		"systemparametersinfow": {
+			"uiParam": "ui_param",
+			"Action": "action"
+		},
+		"postmessagea": {
+			"Message": "message",
+			"WindowHandle": "window_handle"
+		},
+		"regopenkeyexw": {
+			"Handle": "key_handle",
+			"FullName": "full_name",
+			"SubKey": "regkey",
+			"Registry": "regkey_r"
+		},
+		"regqueryvalueexw": {
+			"Handle": "key_handle",
+			"Data": "data",
+			"ValueName": "value",
+			"FullName": "reg_type"
+		},
+		"getsysteminfo": {},
+		"getcursorpos": {
+			"x": "x",
+			"y": "y"
+		},
+		"ntgetcontextthread": {
+			"ThreadHandle": "thread_handle",
+			"HollowedInstructionPointer": "hollowed_instruction_pointer",
+			"ProcessId": "process_id",
+			"CurrentInstructionPointer": "current_instruction_pointer"
+		},
+		"readprocessmemory": {
+			"ProcessHandle": "process_handle",
+			"Buffer": "buffer",
+			"BaseAddress": "base_address",
+			"Size": "size"
+		},
+		"writeprocessmemory": {
+			"ProcessHandle": "process_handle",
+			"Buffer": "buffer",
+			"BaseAddress": "base_address",
+			"StackPivoted": "process_identifier",
+			"BufferLength": "buffer_length"
+		},
+		"ntsetcontextthread": {
+			"ThreadHandle": "thread_handle",
+			"HollowedInstructionPointer": "process_identifier",
+			"CurrentInstructionPointer": "current_instruction_pointer"
+		},
+		"ntresumethread": {
+			"ThreadHandle": "thread_handle",
+			"ProcessId": "process_identifier",
+			"SuspendCount": "suspend_count"
+		},
+		"createremotethread": {
+			"ProcessHandle": "process_handle",
+			"StartRoutine": "start_routine",
+			"Parameter": "parameter",
+			"CreationFlags": "creation_flags",
+			"ThreadId": "thread_id"
+		},
+		"getcommandlinew": {
+			"CommandLine": "command_line"
+		},
+		"nspstartup": {},
+		"ntopendirectoryobject": {
+			"ObjectAttributes": "object_attributes",
+			"DesiredAccess": "desired_access",
+			"DirectoryHandle": "directory_handle"
+		},
+		"getlastinputinfo": {},
+		"sendnotifymessagew": {
+			"Message": "message",
+			"WindowHandle": "window_handle"
+		},
+		"ntfindatom": {
+			"AtomName": "atom_name",
+			"Atom": "atom"
+		},
+		"postthreadmessagew": {
+			"ProcessId": "process_id",
+			"Message": "message",
+			"ThreadId": "thread_id"
+		},
+		"setwindowshookexa": {
+			"HookIdentifier": "hook_identifier",
+			"ProcedureAddress": "procedure_address",
+			"ThreadId": "thread_identifier",
+			"ModuleAddress": "module_address"
+		},
+		"regcreatekeyexa": {
+			"Handle": "key_handle",
+			"Class": "class",
+			"Disposition": "disposition",
+			"FullName": "full_name",
+			"SubKey": "regkey",
+			"Registry": "regkey_r",
+			"Access": "access"
+		},
+		"regdeletevaluea": {
+			"Handle": "key_handle",
+			"ValueName": "regkey_r",
+			"FullName": "full_name"
+		},
+		"findwindowa": {
+			"ClassName": "class_name",
+			"WindowName": "window_name"
+		},
+		"unhookwindowshookex": {
+			"HookHandle": "hook_handle"
+		},
+		"ntcreateevent": {
+			"Handle": "handle",
+			"EventName": "event_name",
+			"EventType": "event_type",
+			"InitialState": "initial_state"
+		},
+		"ntqueueapcthread": {
+			"ThreadHandle": "thread_handle",
+			"ProcessId": "process_identifier",
+			"ApcRoutine": "function_address",
+			"Module": "module",
+			"ThreadId": "thread_id"
+		},
+		"urldownloadtocachefilew": {
+			"Filename": "filename",
+			"StackPivoted": "stack_pivoted",
+			"URL": "u_r_l"
+		},
+		"ntdeleteatom": {
+			"Atom": "atom"
+		},
+		"internetgetconnectedstate": {},
+		"internetconnecta": {
+			"Service": "service",
+			"ServerName": "hostname",
+			"Flags": "flags",
+			"Username": "username",
+			"ServerPort": "port",
+			"InternetHandle": "internet_handle",
+			"Password": "password"
+		},
+		"httpopenrequesta": {
+			"Referrer": "referer",
+			"Flags": "flags",
+			"Verb": "verb",
+			"InternetHandle": "connect_handle",
+			"Path": "path"
+		},
+		"winhttpsetoption": {
+			"Option": "option",
+			"Buffer": "buffer",
+			"InternetHandle": "internet_handle"
+		},
+		"httpsendrequesta": {
+			"PostData": "post_data",
+			"Headers": "headers",
+			"RequestHandle": "request_handle"
+		},
+		"globalmemorystatus": {
+			"TotalPhysicalMB": "total_physical_m_b",
+			"MemoryLoad": "memory_load"
+		},
+		"regcreatekeyexw": {
+			"Handle": "key_handle",
+			"Class": "class",
+			"Disposition": "disposition",
+			"FullName": "full_name",
+			"SubKey": "regkey",
+			"Registry": "regkey_r",
+			"Access": "access"
+		},
+		"regsetvalueexw": {
+			"Handle": "key_handle",
+			"Buffer": "regkey",
+			"FullName": "regkey_r",
+			"Type": "reg_type",
+			"ValueName": "value",
+			"BufferLength": "buffer_length"
+		},
+		"openscmanagerw": {
+			"DatabaseName": "database_name",
+			"DesiredAccess": "desired_access",
+			"MachineName": "machine_name"
+		},
+		"openservicew": {
+			"DesiredAccess": "desired_access",
+			"ServiceControlManager": "service_handle",
+			"ServiceName": "service_name"
+		},
+		"createservicew": {
+			"ServiceControlHandle": "service_handle",
+			"ServiceStartName": "service_start_name",
+			"DesiredAccess": "desired_access",
+			"ServiceType": "service_type",
+			"ErrorControl": "error_control",
+			"ServiceName": "service_name",
+			"BinaryPathName": "filepath",
+			"DisplayName": "display_name",
+			"Password": "password",
+			"StartType": "start_type"
+		},
+		"startservicew": {
+			"Arguments": "arguments",
+			"ServiceName": "service_name",
+			"ServiceHandle": "service_handle"
+		},
+		"ntsettimerex": {
+			"Status": "status",
+			"Milliseconds": "milliseconds"
+		},
+		"ntqueryinformationatom": {
+			"Size": "size",
+			"AtomName": "atom_name",
+			"Atom": "atom"
+		},
+		"ntreadvirtualmemory": {
+			"ProcessHandle": "process_handle",
+			"Buffer": "buffer",
+			"BaseAddress": "base_address",
+			"Size": "size"
+		},
+		"ntqueryfullattributesfile": {
+			"FileName": "file_name"
+		},
+		"enumdisplaydevicesw": {
+			"DeviceString": "device_string"
+		},
+		"setwindowshookexw": {
+			"HookIdentifier": "hook_identifier",
+			"ProcedureAddress": "procedure_address",
+			"ThreadId": "thread_identifier",
+			"ModuleAddress": "module_address"
+		},
+		"findwindoww": {
+			"ClassName": "class_name",
+			"WindowName": "window_name"
+		},
+		"ntquerydirectoryfile": {
+			"FileInformationClass": "information_class",
+			"FileHandle": "file_handle",
+			"FileName": "dirpath",
+			"FileInformation": "file_information"
+		},
+		"ntwritevirtualmemory": {
+			"ProcessHandle": "process_handle",
+			"Buffer": "buffer",
+			"BaseAddress": "base_address",
+			"StackPivoted": "process_identifier",
+			"BufferLength": "buffer_length"
+		},
+		"cocreateinstanceex": {
+			"ClsContext": "class_context",
+			"rclsid": "clsid",
+			"ProgID": "prog_i_d",
+			"ServerName": "server_name"
+		},
+		"isvalidurl": {
+			"URL": "u_r_l"
+		},
+		"ntdeletevaluekey": {
+			"FullName": "full_name",
+			"ValueName": "value_name",
+			"KeyHandle": "key_handle"
+		},
+		"regdeletekeyw": {
+			"Handle": "handle",
+			"FullName": "full_name",
+			"SubKey": "sub_key"
+		},
+		"shgetfolderpathw": {
+			"Folder": "folder",
+			"Path": "dirpath"
+		},
+		"loadlibraryexw": {
+			"dwFlags": "dw_flags",
+			"lpLibFileName": "lp_lib_file_name"
+		},
+		"netgetjoininformation": {
+			"Server": "server",
+			"NetBIOSName": "net_b_i_o_s_name",
+			"JoinStatus": "join_status"
+		},
+		"cryptacquirecontextw": {
+			"Container": "container",
+			"Provider": "provider",
+			"Flags": "flags"
+		},
+		"shgetknownfolderpath": {
+			"FolderID": "folder_i_d",
+			"Flags": "flags",
+			"Path": "path"
+		},
+		"cryptcreatehash": {
+			"CryptKey": "crypt_key",
+			"Hash object": "hash object",
+			"Algid": "algid"
+		},
+		"crypthashdata": {
+			"Length": "length",
+			"Buffer": "buffer",
+			"CryptHash": "crypt_hash"
+		},
+		"cryptdestroyhash": {
+			"CryptHash": "crypt_hash"
+		},
+		"getfileversioninfosizew": {
+			"PathName": "filepath"
+		},
+		"getfileversioninfow": {
+			"PathName": "filepath"
+		},
+		"ldrgetprocedureaddress": {
+			"Ordinal": "ordinal",
+			"ModuleName": "module",
+			"FunctionAddress": "function_address",
+			"FunctionName": "function_name",
+			"ModuleHandle": "module_address"
+		},
+		"regqueryinfokeyw": {
+			"Class": "class",
+			"MaxValueLength": "max_value_length",
+			"ValueCount": "value_count",
+			"KeyHandle": "key_handle",
+			"MaxSubKeyLength": "max_sub_key_length",
+			"MaxValueNameLength": "max_value_name_length",
+			"MaxClassLength": "max_class_length",
+			"SubKeyCount": "sub_key_count"
+		},
+		"regenumkeyexw": {
+			"Handle": "handle",
+			"Class": "class",
+			"Index": "index",
+			"Name": "name",
+			"FullName": "full_name"
+		},
+		"regenumkeyw": {
+			"Handle": "key_handle",
+			"Index": "index",
+			"Name": "regkey",
+			"FullName": "key_name"
+		},
+		"cogetclassobject": {
+			"ClsContext": "class_context",
+			"riid": "iid",
+			"rclsid": "clsid",
+			"ProgID": "prog_i_d"
+		},
+		"createservicea": {
+			"ServiceControlHandle": "service_handle",
+			"ServiceStartName": "service_start_name",
+			"DesiredAccess": "desired_access",
+			"ServiceType": "service_type",
+			"ErrorControl": "error_control",
+			"ServiceName": "service_name",
+			"BinaryPathName": "filepath",
+			"DisplayName": "display_name",
+			"Password": "password",
+			"StartType": "start_type"
+		},
+		"createdirectoryw": {
+			"DirectoryName": "dirpath"
+		},
+		"winhttpopen": {
+			"ProxyBypass": "proxy_bypass",
+			"Flags": "flags",
+			"ProxyName": "proxy_name",
+			"UserAgent": "user_agent",
+			"AccessType": "access_type"
+		},
+		"getaddrinfo": {
+			"NodeName": "hostname",
+			"ServiceName": "service_name"
+		},
+		"internetcrackurlw": {
+			"Url": "url"
+		},
+		"internetsetoptiona": {
+			"Option": "option",
+			"InternetHandle": "internet_handle",
+			"Buffer": "buffer"
+		},
+		"internetopenw": {
+			"ProxyBypass": "proxy_bypass",
+			"Flags": "flags",
+			"Agent": "user_agent",
+			"ProxyName": "proxy_name",
+			"AccessType": "access_type"
+		},
+		"internetconnectw": {
+			"Service": "service",
+			"ServerName": "hostname",
+			"Flags": "flags",
+			"Username": "username",
+			"ServerPort": "port",
+			"InternetHandle": "internet_handle",
+			"Password": "password"
+		},
+		"httpopenrequestw": {
+			"Referrer": "referer",
+			"Flags": "flags",
+			"Verb": "verb",
+			"InternetHandle": "connect_handle",
+			"Path": "path"
+		},
+		"httpaddrequestheadersw": {
+			"Modifiers": "modifiers",
+			"Headers": "headers",
+			"RequestHandle": "request_handle"
+		},
+		"httpsendrequestw": {
+			"PostData": "post_data",
+			"Headers": "headers",
+			"RequestHandle": "request_handle"
+		},
+		"httpqueryinfoa": {
+			"InfoLevel": "info_level",
+			"Buffer": "buffer",
+			"RequestHandle": "request_handle"
+		},
+		"getusernamew": {
+			"Name": "username"
+		},
+		"netusergetinfo": {
+			"UserName": "username",
+			"ServerName": "server_name",
+			"Level": "level"
+		},
+		"connectex": {
+			"socket": "socket",
+			"SendBuffer": "send_buffer",
+			"port": "port",
+			"ip": "ip"
+		},
+		"internetopenurlw": {
+			"Flags": "flags",
+			"ConnectionHandle": "connection_handle",
+			"Headers": "headers",
+			"URL": "url"
+		},
+		"ntallocatevirtualmemoryex": {
+			"ProcessHandle": "process_handle",
+			"Protection": "protection",
+			"BaseAddress": "base_address",
+			"RegionSize": "region_size",
+			"StackPivoted": "stack_pivoted"
+		},
+		"ntcreatethreadex": {
+			"ThreadHandle": "thread_handle",
+			"ProcessHandle": "process_handle",
+			"CreateFlags": "create_flags",
+			"StartAddress": "start_address",
+			"ProcessId": "process_id",
+			"Module": "module",
+			"ThreadId": "thread_id"
+		},
+		"findwindowexw": {
+			"ClassName": "class_name",
+			"WindowName": "window_name"
+		},
+		"syscall": {
+			"Return Address": "return _address",
+			"Module": "module",
+			"Function": "function",
+			"ThreadIdentifier": "thread_identifier"
+		},
+		"rtladdvectoredexceptionhandler": {
+			"First": "first",
+			"Handler": "handler"
+		},
+		"isdebuggerpresent": {},
+		"globalmemorystatusex": {
+			"TotalPhysicalMB": "total_physical_m_b",
+			"MemoryLoad": "memory_load"
+		},
+		"findfirstfileexw": {
+			"FileName": "filepath"
+		},
+		"connect": {
+			"socket": "socket",
+			"port": "port",
+			"ip": "ip"
+		},
+		"deletefilew": {
+			"FileName": "filepath"
+		},
+		"ntquerymultiplevaluekey": {
+			"KeyHandle": "KeyHandle",
+			"FullName": "full_name",
+			"ValueBuffer": "buffer",
+			"ValueName": "value_name"
+		}
+	},
+	"Argument Converters": {
+		"ntallocatevirtualmemory": {
+			"Protection": "hex_to_int",
+			"RegionSize": "hex_to_int"
+		},
+		"ntcreatekey": {
+			"Disposition": "str_to_int"
+		},
+		"ntquerykey": {
+			"KeyInformationClass": "str_to_int"
+		},
+		"openscmanagera": {
+			"DesiredAccess": "hex_to_int"
+		},
+		"socket": {
+			"socket": "str_to_int",
+			"type": "str_to_int",
+			"af": "str_to_int",
+			"protocol": "str_to_int"
+		},
+		"setsockopt": {
+			"socket": "str_to_int",
+			"optname": "hex_to_int",
+			"level": "hex_to_int"
+		},
+		"ntdeviceiocontrolfile": {
+			"IoControlCode": "hex_to_int"
+		},
+		"closesocket": {
+			"socket": "str_to_int"
+		},
+		"ntprotectvirtualmemory": {
+			"NumberOfBytesProtected": "hex_to_int",
+			"NewAccessProtection": "hex_to_int",
+			"MemoryType": "hex_to_int"
+		},
+		"ntopenfile": {
+			"ShareAccess": "str_to_int"
+		},
+		"ntmapviewofsection": {
+			"SectionOffset": "hex_to_int",
+			"ViewSize": "hex_to_int",
+			"Win32Protect": "hex_to_int"
+		},
+		"ntduplicateobject": {
+			"Options": "hex_to_int"
+		},
+		"ntcreatefile": {
+			"ShareAccess": "str_to_int",
+			"FileAttributes": "hex_to_int",
+			"CreateDisposition": "str_to_int"
+		},
+		"findresourceexa": {
+			"Language": "hex_to_int",
+			"Name": "hex_to_int"
+		},
+		"sizeofresource": {
+			"ResourceInfo": "hex_to_int"
+		},
+		"ntcreateuserprocess": {
+			"ProcessDesiredAccess": "hex_to_int",
+			"ThreadDesiredAccess": "hex_to_int"
+		},
+		"ntqueryvaluekey": {
+			"Type": "str_to_int",
+			"Information": "str_to_int",
+			"ValueName": "str_to_int"
+		},
+		"ntqueryinformationfile": {
+			"FileInformationClass": "str_to_int"
+		},
+		"ntsetinformationfile": {
+			"FileInformationClass": "str_to_int"
+		},
+		"ntfreevirtualmemory": {
+			"FreeType": "hex_to_int",
+			"RegionSize": "hex_to_int"
+		},
+		"ntreadfile": {
+			"Buffer": "hex_to_int",
+			"Length": "str_to_int"
+		},
+		"ntdelayexecution": {
+			"Milliseconds": "str_to_int"
+		},
+		"ldrloaddll": {
+			"Flags": "hex_to_int"
+		},
+		"ntcreatemutant": {
+			"InitialOwner": "str_to_int"
+		},
+		"regsetvalueexa": {
+			"Type": "str_to_int",
+			"ValueName": "str_to_int"
+		},
+		"cocreateinstance": {
+			"ClsContext": "hex_to_int"
+		},
+		"deviceiocontrol": {
+			"IoControlCode": "hex_to_int"
+		},
+		"ntquerysysteminformation": {
+			"SystemInformationClass": "str_to_int"
+		},
+		"shellexecuteexw": {
+			"Show": "str_to_int"
+		},
+		"wsastartup": {
+			"VersionRequested": "hex_to_int"
+		},
+		"ntopenthread": {
+			"ProcessId": "str_to_int"
+		},
+		"send": {
+			"socket": "str_to_int"
+		},
+		"internetopena": {
+			"Flags": "hex_to_int",
+			"AccessType": "hex_to_int"
+		},
+		"ntenumeratekey": {
+			"Index": "str_to_int"
+		},
+		"ntsetvaluekey": {
+			"Buffer": "str_to_int",
+			"Type": "str_to_int",
+			"ValueName": "str_to_int"
+		},
+		"ntenumeratevaluekey": {
+			"Index": "str_to_int",
+			"KeyValueInformationClass": "str_to_int"
+		},
+		"wsasocketw": {
+			"socket": "str_to_int",
+			"type": "str_to_int",
+			"af": "str_to_int",
+			"protocol": "str_to_int"
+		},
+		"internetopenurla": {
+			"Flags": "hex_to_int"
+		},
+		"createtoolhelp32snapshot": {
+			"ProcessId": "str_to_int",
+			"Flags": "hex_to_int"
+		},
+		"process32firstw": {
+			"ProcessId": "str_to_int"
+		},
+		"process32nextw": {
+			"ProcessId": "str_to_int"
+		},
+		"ntunmapviewofsection": {
+			"RegionSize": "hex_to_int"
+		},
+		"createthread": {
+			"StartRoutine": "hex_to_int",
+			"ThreadId": "str_to_int"
+		},
+		"bind": {
+			"socket": "str_to_int",
+			"port": "str_to_int"
+		},
+		"listen": {
+			"socket": "str_to_int"
+		},
+		"ntopenprocess": {
+			"ProcessIdentifier": "str_to_int"
+		},
+		"getcursorpos": {
+			"x": "str_to_int",
+			"y": "str_to_int"
+		},
+		"ntsetcontextthread": {
+			"HollowedInstructionPointer": "hex_to_int"
+		},
+		"ntresumethread": {
+			"ProcessId": "str_to_int",
+			"SuspendCount": "str_to_int"
+		},
+		"setwindowshookexa": {
+			"HookIdentifier": "str_to_int",
+			"ThreadId": "str_to_int"
+		},
+		"regcreatekeyexa": {
+			"Disposition": "str_to_int"
+		},
+		"ntqueueapcthread": {
+			"ProcessId": "str_to_int"
+		},
+		"internetconnecta": {
+			"Service": "str_to_int",
+			"Flags": "hex_to_int",
+			"ServerPort": "str_to_int"
+		},
+		"httpopenrequesta": {
+			"Flags": "hex_to_int"
+		},
+		"regcreatekeyexw": {
+			"Disposition": "str_to_int"
+		},
+		"regsetvalueexw": {
+			"Type": "str_to_int",
+			"ValueName": "str_to_int"
+		},
+		"openscmanagerw": {
+			"DesiredAccess": "hex_to_int"
+		},
+		"openservicew": {
+			"DesiredAccess": "hex_to_int"
+		},
+		"createservicew": {
+			"DesiredAccess": "hex_to_int",
+			"ServiceType": "str_to_int",
+			"ErrorControl": "str_to_int",
+			"StartType": "str_to_int"
+		},
+		"setwindowshookexw": {
+			"HookIdentifier": "str_to_int",
+			"ThreadId": "str_to_int"
+		},
+		"ntquerydirectoryfile": {
+			"FileInformationClass": "str_to_int"
+		},
+		"cocreateinstanceex": {
+			"ClsContext": "hex_to_int"
+		},
+		"shgetfolderpathw": {
+			"Folder": "hex_to_int"
+		},
+		"ldrgetprocedureaddress": {
+			"Ordinal": "str_to_int"
+		},
+		"regenumkeyw": {
+			"Index": "str_to_int"
+		},
+		"cogetclassobject": {
+			"ClsContext": "hex_to_int"
+		},
+		"createservicea": {
+			"DesiredAccess": "hex_to_int",
+			"ServiceType": "str_to_int",
+			"ErrorControl": "str_to_int",
+			"StartType": "str_to_int"
+		},
+		"internetsetoptiona": {
+			"Option": "hex_to_int"
+		},
+		"internetopenw": {
+			"Flags": "hex_to_int",
+			"AccessType": "hex_to_int"
+		},
+		"internetconnectw": {
+			"Service": "str_to_int",
+			"Flags": "hex_to_int",
+			"ServerPort": "str_to_int"
+		},
+		"httpopenrequestw": {
+			"Flags": "hex_to_int"
+		},
+		"httpqueryinfoa": {
+			"InfoLevel": "hex_to_int",
+			"Buffer": "hex_to_int"
+		},
+		"netusergetinfo": {
+			"Level": "str_to_int"
+		},
+		"internetopenurlw": {
+			"Flags": "hex_to_int"
+		},
+		"connect": {
+			"socket": "str_to_int",
+			"port": "str_to_int"
+		}
+	}
+}

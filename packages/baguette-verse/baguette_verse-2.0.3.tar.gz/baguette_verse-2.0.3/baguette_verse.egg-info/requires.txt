@@ -1,0 +1,10 @@
+viper_lib>=1.5.2
+boa_lib>=1.2
+Levenshtein
+alive-progress>=3.1.5
+
+[:platform_system != "Windows"]
+python-magic
+
+[:platform_system == "Windows"]
+python-magic-bin
