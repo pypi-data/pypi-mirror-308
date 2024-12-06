@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools >= 70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genelastic"
+version = "0.6.1"
+dependencies = [
+    "elasticsearch",
+    "PyVCF3",
+    "schema",
+    "PyYAML",
+    "biophony>=1.0.1",
+    "colorlog",
+]
+requires-python = ">= 3.11"
+authors = [
+    { name = "CNRGH" },
+    { name = "Pierrick ROGER", email = "pierrick.roger@cnrgh.fr" },
+    { name = "Maxime BLANCHON", email = "maxime.blanchon@cnrgh.fr" }]
+description = "Generate and store genetic data into an Elasticsearch database."
+readme = "README.md"
+license = { text = "CeCILL" }
+keywords = ["CNRGH", "genelastic", "generation", "storage", "elasticsearch", "database"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
+    "Programming Language :: Python :: 3.11"
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "mypy",
+    "pylint",
+    "bandit",
+    "coverage",
+    "yamllint",
+    "types-PyYAML"
+]
+docs = [
+    "sphinx",
+    "sphinx-autoapi",
+    "furo"
+]
+
+api = [
+    "flask",
+    "elasticsearch",
+    "environs",
+    "connexion[flask,swagger-ui,uvicorn]"
+]
+
+[project.scripts]
+gen-data = "genelastic.import_data.gen_data:main"
+import = "genelastic.import_data.import_data:main"
+validate = "genelastic.import_data.validate_data:main"
+db_info = "genelastic.import_data.info:main"
+db_integrity = "genelastic.import_data.integrity:main"
