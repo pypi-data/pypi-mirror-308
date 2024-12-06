@@ -1,0 +1,13 @@
+changelog2version/__init__.py,sha256=c0BkR-mMW76g_si0cC3xpryBLTcWvTArdgB3Ah9kV84,81
+changelog2version/extract_version.py,sha256=lAj2BouO2oWeLSgisfxz_weBfFd-CWXMKA2oG4gbSu0,12873
+changelog2version/render_version_file.py,sha256=7pQrjAPjroYaDvsy56KGdjbpnEujYp4Ve2eMB5z-X4E,5761
+changelog2version/update_version.py,sha256=urz94MIY_S6PV5L88RzTPNnSzyTAMgLFuRlyxRR3kMA,11996
+changelog2version/version.py,sha256=82LICVb-aVzI1lCgHpOoo1FckYp9s8yP2i-spNUnxG8,125
+changelog2version/templates/version.h.template,sha256=4LCBvOR8MTuvKX6T37QmB1iMgevubV1Ub35FoXC-ghM,382
+changelog2version/templates/version.py.template,sha256=jv5r8bYw7a6GNAugj3CjqkojCKmZa0cTgbDFP9NUaL0,199
+changelog2version-0.12.1.dist-info/LICENSE.txt,sha256=tuO9C9ccikYXozobWhaoE9WeZ7R-4PdqTjoSoodsam0,1198
+changelog2version-0.12.1.dist-info/METADATA,sha256=daoj8v93sBuh9D2ANxGIOJCt1nT8QxFCuVy0I0vS3zU,12926
+changelog2version-0.12.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+changelog2version-0.12.1.dist-info/entry_points.txt,sha256=M-Wfl9muu1XAn2VOJtV79P-spgzHS2DKM599zoU0OjQ,76
+changelog2version-0.12.1.dist-info/top_level.txt,sha256=A1e5x17NLWlbsq7YiVYn-aNq5UMsF74tbN5mScvoYTc,18
+changelog2version-0.12.1.dist-info/RECORD,,
