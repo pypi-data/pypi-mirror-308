@@ -1,0 +1,46 @@
+# Fast Json
+## EN
+Fast Json makes Json faster
+### How does it work?
+When the init() function is run, the file is loaded into RAM, then a process is created that saves information from RAM to a file every 5 seconds.
+### Why is this necessary?
+Saving a file to disk every time is not a good idea. Fast Json saves all changes to RAM (which is much faster than disk) and starts the process of saving to disk every 5 seconds.
+### Functions
+`init('filename.json')` - loads the file into RAM and starts the save thread
+`get('filename.json')` - returns the file contents from RAM
+`set('filename.json', {...})` - writes the value to RAM
+`updatefile('filename.json')` - saves the file contents from RAM to the file *(Not required, the file is automatically saved every 5 seconds after initialization (init))*
+### Example
+```py
+import fastjsonpy
+
+fastjsonpy.init('test.json')
+
+fastjsonpy.set('test.json', {'name': 'Alex'})
+
+print(fastjsonpy.get("test.json"))
+```
+This example will load `test.json` into RAM, start the file save thread every 5 seconds, write `{'name': 'Alex'} and display the contents of the file from RAM.
+
+## RU
+Fast Json делает Json более быстрым
+### Как это работает?
+При запуске функции init() происходит загрузка файла в оперативную память, далее создаётся процесс, который раз в 5 секунд сохраняет информацию из оперативной памяти в файл.
+### Зачем это нужно?
+Каждый раз сохранять файл на диск - не лучшая идея. Fast Json сохраняет все изменения в оперативную память (которая куда быстрее диска) и запускает процесс сохранения на диск каждые 5 секунд.
+### Функции
+`init('имя файла.json')` - загружает файл в оперативную память и запускает поток сохранения
+`get('имя файла.json')` - возвращает содержимое файла из оперативной памяти
+`set('имя файла.json', {...})` - записывает значение в оперативную память
+`updatefile('имя файла.json')` - сохраняет содержимое файла из оперативной памяти в файл *(Не требуется, файл автоматически сохраняется каждые 5 секунд после инициализации (init))*
+### Пример
+```py
+import fastjsonpy
+
+fastjsonpy.init('test.json')
+
+fastjsonpy.set('test.json', {'name': 'Alex'})
+
+print(fastjsonpy.get("test.json"))
+```
+Такой пример загрузит `test.json` в оперативную память, запустит поток сохранения файла каждые 5 секунд, запишет `{'name': 'Alex'} и отобразит содержимое файла из оперативной памяти.

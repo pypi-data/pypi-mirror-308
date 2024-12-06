@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/fastjsonpy/__init__.py
+src/fastjsonpy.egg-info/PKG-INFO
+src/fastjsonpy.egg-info/SOURCES.txt
+src/fastjsonpy.egg-info/dependency_links.txt
+src/fastjsonpy.egg-info/top_level.txt
