@@ -1,0 +1,7 @@
+[console_scripts]
+aug = neurofly.aug_segs:command_line_interface
+interp = neurofly.interp_edges:command_line_interface
+seg = neurofly.seger:command_line_interface
+
+[napari.manifest]
+neurofly = neurofly:napari.yaml
