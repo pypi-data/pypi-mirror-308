@@ -1,0 +1,8 @@
+torchstate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchstate/C/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchstate/C/utils.py,sha256=3EeSAkC-J69yJr0eN_jL7m0pPHCOGzDz3iZ0pBf38Bc,384
+torchstate-0.1.0.dist-info/LICENSE,sha256=VEFMQuu8aJGPB7lqKzfcMOzMcsZWQ-B8-8lDSYPUfFU,1067
+torchstate-0.1.0.dist-info/METADATA,sha256=cjy4WXhJIAyPNZqJLm3zFZOh1dzCBwgiNteoE9_g7sw,470
+torchstate-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+torchstate-0.1.0.dist-info/top_level.txt,sha256=kPejDoevnczNbzLfal3i9-odix6WaP6ksdkiTEUnS2E,11
+torchstate-0.1.0.dist-info/RECORD,,
