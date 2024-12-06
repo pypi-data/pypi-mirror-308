@@ -1,0 +1,17 @@
+dobble/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dobble/config.py,sha256=rhmaxETCnlRwDgPQZvH5PJ-iJas5EBr73Ce9c6WpWB0,237
+dobble/main.py,sha256=eA4IR2SHXMPXujETe8z1iNyvDqGjDR5hIm4xktjrVZY,3278
+dobble/data/emojis.txt,sha256=7dnGEWjkwhdrV0Ro3WK1VOrtd2cxLhW21KVIsAclElc,1388
+dobble/game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dobble/game/card.py,sha256=XMe-idIRLn3KH72CEBC8-5oXHI6TtzgSaw4GrcnBz_U,1292
+dobble/game/game.py,sha256=oMT4BAjMuP4-e8SqJWkDj6Z0nfrwRXumwbrRuQrT5SI,3008
+dobble/game/player.py,sha256=88nSGRBGaUP4gPdH31RNTyEGVigbMdYGBM5R6CM4c-w,468
+dobble/ui/components.py,sha256=pp68flweScqb04OenNKbySdBqJfMqrHIZBGd9febOAg,915
+dobble/ui/display.py,sha256=Nfti36gnY93dHFfbylXt9CCXMXqFZopXezc-GM3_OdU,1285
+dobble/ui/input.py,sha256=mX32jv5Cd83mOz9fryuAyIyRasKm8lX-dSDc0PmxMf8,2261
+dobble/utils/emoji_loader.py,sha256=orU9aS2mAoptX8PiQ8AfKyG87i3Rifvb231KqKdWmKg,992
+pydobble-1.0.8.dist-info/METADATA,sha256=cIdBNOq6ch7YkhcgQxuM27PYNf3y_5EpGphFaCTfUoo,999
+pydobble-1.0.8.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pydobble-1.0.8.dist-info/entry_points.txt,sha256=rc4rT6AAlHviFD3QpRU9iAr56JjDOUjiImGVd4C5eeQ,44
+pydobble-1.0.8.dist-info/licenses/LICENSE,sha256=E3JHFHZFZY6YDaUSzqO9QgE5wvr2HmYlY5PByCZ6J8g,1058
+pydobble-1.0.8.dist-info/RECORD,,
