@@ -1,0 +1,7 @@
+django
+djp
+django-debug-toolbar
+
+[test]
+pytest
+pytest-django
