@@ -1,0 +1,20 @@
+### WARNING: this is exlusively useful for creating a mock-package that can be
+### used to e.g. generate API docs with pdoc!
+
+[tool.poetry]
+authors = ["Niko Ehrenfeuchter <nikolaus.ehrenfeuchter@unibas.ch>"]
+description = "Jython package for using SciJava's LogService for logging."
+license = "GPL-3.0-or-later"
+name = "sjlogging"
+readme = "README.md"
+version = '0.5.4'
+
+keywords = ["fiji", "jython", "imagej", "logging"]
+repository = "https://github.com/imcf/jython-scijava-logging"
+
+[tool.poetry.dependencies]
+python = ">=2.7"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
