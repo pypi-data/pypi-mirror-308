@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+af_practical_astronomy.egg-info/PKG-INFO
+af_practical_astronomy.egg-info/SOURCES.txt
+af_practical_astronomy.egg-info/dependency_links.txt
+af_practical_astronomy.egg-info/requires.txt
+af_practical_astronomy.egg-info/top_level.txt
+test/test_coordinate_functions.py
+test/test_time_functions.py
