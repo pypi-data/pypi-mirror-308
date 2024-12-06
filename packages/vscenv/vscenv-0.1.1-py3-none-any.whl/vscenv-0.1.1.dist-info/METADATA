@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: vscenv
+Version: 0.1.1
+Summary: Isolate your vscode environment and keep it simple!
+Home-page: https://github.com/jugangdae/vscenv
+Author: Gangdae Ju
+Author-email: jugangdae@gamil.com
+License: MIT
+Keywords: vscenv,manage,isolated,vscode,environment,simple,cli,tool
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vscenv - Management of isolated VSCODE environments
+
+vscenv is a command-line tool that makes it easy to maintain and manage isolated vscode environments written in Python.
+
+![](./resources/img.png)
+
+---
+
+## Installation
+- Option 1 : Install from pypi
+    ```
+    pip install vscenv --user
+    ```
+- Option 2 : Install from soruce
+    ```
+    git clone https://github.com/jugangdae/vscenv
+    cd vscenv
+    pyhton -m build
+    pip install vscenv-0.0.1-py3-none-any.whl
+    ```
+---
+## Commands
+
+1. `create` : Create a new vscenv environment.
+    ```
+    vscenv create [vscenv_env]
+    vscenv c [vscenv_env]
+    ```
+2. `list` : Show vscenv env list
+    ```
+    vscenv list
+    vscenv l
+    ```
+3. `run` : Executes VSCODE using an vscenv environment
+    ```
+    vscenv run [vscenv_env] [work_path]
+    vscenv r [vscenv_env] [work_path]
+    ```
+4. `Delete` : Delete an vscenv environment.
+    ```
+    vscenv delete [vscenv_env]
+    vscenv d [vscenv_env]
+    ```
+5. `help` and `version`
+    ```
+    vscenv -h, --help
+    vscenv -v, --version
+    ```
+---
+## Config (~/.vscenvconfig)
+```
+[setting]
+vscenv_run = [code or code-insider]
+vscenv_dir = [path of vscenv environments directory]
+```
