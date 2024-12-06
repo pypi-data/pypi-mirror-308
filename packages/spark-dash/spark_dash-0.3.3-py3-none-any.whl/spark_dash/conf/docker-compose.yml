@@ -1,0 +1,41 @@
+services:
+
+  spark-master:  # Spark 마스터 서비스 정의
+    image: apache/spark:latest  
+    container_name: spark-master  
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master -h spark-master
+    environment:  
+      - SPARK_MASTER_HOST=spark-master
+      - SPARK_DRIVER_MEMORY=1G  # 마스터의 메모리를 1GB로 설정
+    ports:
+      - "8080:8080"  # 로컬 포트 8080을 컨테이너의 포트 8080과 연결 (Spark Web UI)
+      - "7077:7077"  # 로컬 포트 7077을 컨테이너의 포트 7077과 연결 (Spark 마스터 포트)
+    networks:
+      - spark-net  # 'spark-net' 네트워크에 연결하여 Spark 클러스터 내부 통신
+    volumes:
+      - ./app:/app  # 로컬 디렉토리 'app'을 컨테이너의 '/app' 경로에 연결하여 PySpark 스크립트를 사용할 수 있게 설정
+
+  spark-worker:  # Spark 워커 서비스 정의
+    image: apache/spark:latest
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - SPARK_WORKER_CORES=1  # 워커가 사용할 CPU 코어 수를 1개로 제한
+      - SPARK_WORKER_MEMORY=1G  # 워커가 사용할 메모리를 1GB로 제한
+    depends_on:
+      - spark-master  # spark-master 서비스가 먼저 시작되도록 지정
+    networks:
+      - spark-net  # 'spark-net' 네트워크에 연결하여 Spark 클러스터 내부 통신
+    deploy:
+      replicas: 1  # 워커의 수를 3개로 설정 (스케일 조정 가능)
+      resources:
+        reservations:
+          cpus: '0.01'
+          memory: 155M
+        limits:
+          cpus: '0.1'
+          memory: 200M
+
+networks:  # 서비스 간의 통신을 위한 네트워크 설정
+  spark-net:  # 네트워크 이름을 'spark-net'로 지정
+    driver: bridge  # 네트워크 드라이버로 'bridge'를 사용하여 컨테이너 간 연결을 설정
