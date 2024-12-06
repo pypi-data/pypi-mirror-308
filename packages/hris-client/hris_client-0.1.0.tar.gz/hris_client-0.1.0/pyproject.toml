@@ -1,0 +1,9 @@
+[project]
+name = "hris-client"
+version = "0.1.0"
+description = "Python client for SPM HRIS"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.27.2",
+]
