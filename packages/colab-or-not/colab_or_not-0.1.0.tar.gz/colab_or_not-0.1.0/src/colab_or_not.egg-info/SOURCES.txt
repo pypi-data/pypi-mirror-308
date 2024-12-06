@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+src/colab_or_not/__init__.py
+src/colab_or_not/core.py
+src/colab_or_not.egg-info/PKG-INFO
+src/colab_or_not.egg-info/SOURCES.txt
+src/colab_or_not.egg-info/dependency_links.txt
+src/colab_or_not.egg-info/requires.txt
+src/colab_or_not.egg-info/top_level.txt
