@@ -1,0 +1,2 @@
+[nbdev]
+namable_classify = namable_classify._modidx:d
