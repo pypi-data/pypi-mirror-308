@@ -1,0 +1,13 @@
+swastikai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swastikai/memory.py,sha256=H6sB3oPu5HK4lkBqZAez2sMLs3BlW2-9zZ2TgAeOhgA,2295
+swastikai/memory_async.py,sha256=_HBG6jTZSCUbAREi9mNx3kLJug2fk3zN00t55ZBoFVo,2379
+swastikai/memory_models.py,sha256=hPrg4ahSHgumhloR2yBJxUQSJgUogFGMqGqGFqog5BA,4366
+swastikai/utils.py,sha256=g1K1x6sGE2N7i8A23mwt6DVhY7Gp839pxau7ESsIgNk,580
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=RexKuNhH1H_a3byBdy-x3XrHyaGWQ8-bTR-b4JaKZMg,756
+tests/test_async.py,sha256=K0SrKT8p_iI7t59aaTNM3Euohpaz4-KTG-HdSOLVS6g,791
+swastikai-1.0.4.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+swastikai-1.0.4.dist-info/METADATA,sha256=CKClapZ70rULjo0aQRsriWbHtGuf0-sxmLqHLaBvpt8,6526
+swastikai-1.0.4.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+swastikai-1.0.4.dist-info/top_level.txt,sha256=FDjgUOS0vYAcdATtDPDikYs8cw3MugragYcsBNfqBEg,16
+swastikai-1.0.4.dist-info/RECORD,,
