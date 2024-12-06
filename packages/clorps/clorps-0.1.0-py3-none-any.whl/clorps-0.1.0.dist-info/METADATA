@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: clorps
+Version: 0.1.0
+Summary: CLORPS: A module for CLIP, LPIPS, and ORB based image similarity.
+Home-page: https://github.com/vaidatascientist
+Author: Vaibhav Gupta
+Author-email: vaibhavgupta.ggwp@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: open-clip-torch
+Requires-Dist: lpips
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+
+# CLORPS
+
+**CLORPS** is a Python package for calculating image similarity based on three complementary techniques: **CLIP embeddings**, **LPIPS (Learned Perceptual Image Patch Similarity)**, and **ORB (Oriented FAST and Rotated BRIEF)**. It provides a combined similarity score for one image compared to another image or a set of target images. Ideal for image retrieval, similarity-based ranking, and image comparison tasks.
+
+## Features
+
+- **CLIP Embeddings**: Uses OpenAI’s CLIP model for embedding-based similarity.
+- **LPIPS Similarity**: Calculates perceptual similarity using LPIPS.
+- **ORB Keypoint Matching**: Traditional ORB-based similarity for structural comparison.
+- **Combined Score**: Normalizes and combines the three scores for a final similarity metric.
+
+## Installation
+
+```bash
+pip install clorps
+```
+**Usage**
+```bash
+from clorps import CLORPS
+
+# Initialize CLORPS instance
+clorps_instance = CLORPS()
+
+# Paths to input and target images
+input_image_path = "/path/to/input/image.jpg"
+target_image_paths = ["/path/to/target/image1.jpg", "/path/to/target/image2.jpg"]
+
+# Calculate combined similarity scores
+combined_scores = clorps_instance.calculate_combined_similarity(input_image_path, target_image_paths)
+print("Combined similarity scores:", combined_scores)
+```
+**Input:** Path to the input image and either a single target image path or a list of target image paths.
+**Output:** A list of similarity scores, one for each target image.
+
+**Requirements:**
+- Python 3.6+
+- torch
+- open_clip_torch
+- lpips
+- numpy
+- scikit-learn
+- Pillow
+- opencv-python
+
+**LICENSE**
+This project is licensed under the MIT License.
