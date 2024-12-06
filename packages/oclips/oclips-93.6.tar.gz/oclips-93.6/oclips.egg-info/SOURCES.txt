@@ -1,0 +1,7 @@
+main.py
+setup.py
+oclips.egg-info/PKG-INFO
+oclips.egg-info/SOURCES.txt
+oclips.egg-info/dependency_links.txt
+oclips.egg-info/requires.txt
+oclips.egg-info/top_level.txt
