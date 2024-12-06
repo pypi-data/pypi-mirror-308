@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: wake-arena-cli
+Version: 0.1.0
+Summary: Wake Arena CLI tool
+Author: pavelsvagr
+Author-email: pavel.svagr@ackee.cz
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: eth-wake (==4.13.1)
+Requires-Dist: google-cloud-firestore (>=2.18.0,<3.0.0)
+Requires-Dist: inquirer (>=3.4.0,<4.0.0)
+Requires-Dist: python-dateutil (>=2,<3)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: requests-toolbelt (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13.8.1,<14.0.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Requires-Dist: schema (>=0.7.7,<0.8.0)
+Requires-Dist: typing-extensions (>=4,<5)
+Description-Content-Type: text/markdown
+
+# Wake Arena CLI
+Wake Arena command line interface to operate projects and vulnerability checks.
+
+## Setup
+1. Activate the venv
+```shell
+poetry shell
+```
+2. Install dependencies
+```shell
+poetry install
+```
+3. Run the cli module
+```shell
+python -m cli
+```
+
+## Env parameters
+| Env                   | Description                                                      |
+|-----------------------|------------------------------------------------------------------|
+| `WAKE_ARENA_API_KEY`  | Uses api key instead of configured authentication                |
+| `WAKE_ARENA_PROJECT`  | Project id. CLI will use this project instead of configured one  |
+| `WAKE_ARENA_API_URL`  | Development only, replaces Wake Arena API endpoint for cli       |
+| `WAKE_ARENA_WEB_URL`  | Development only, replaces Wake Arena WEB url for cli            |
