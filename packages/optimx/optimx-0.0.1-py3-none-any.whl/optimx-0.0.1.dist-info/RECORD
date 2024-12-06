@@ -1,0 +1,14 @@
+optimx/__init__.py,sha256=CdQMLTINFPRegM1vrC37PMBD9MlHD1PBcSh1lDigJRY,41
+optimx/api.py,sha256=u5aYKI5_qQBYJsWvasxmEhEQKI0A7MK0O98qjSqvDak,4428
+optimx/utils.py,sha256=MPk7ZgRx7gsuXe3U4AN-DTE-evHFLJPazq-mSxuH2fE,678
+optimx/tsp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimx/tsp/branch.py,sha256=D7alV4bo6gLfRetRlY7x4VxqW2SGfpyDThJYAADRtag,2248
+optimx/tsp/brute.py,sha256=mcP1VAxg637pTQQZcMzNJu69bvo8O7ENuKhZnAeKtx0,1516
+optimx/tsp/dynamic.py,sha256=zfJHyxzET-zao4ZANFi1TQc_FqZ5vVideSzGWO82b-0,3459
+optimx/tsp/nearest.py,sha256=FU1kNxibyWJretbY68u-9kuCA8bEDQUEbobQ4Nm-3CM,1535
+optimx/tsp/solver.py,sha256=JbmC-WcS3uiEbtzoMmb9Zz9Cus0OdWu_qJnwObILVaE,858
+optimx/tsp/visual.py,sha256=kLNKATCxGNw-hEYV7nirkPLbf9IINZWTe9golMKo11g,2652
+optimx-0.0.1.dist-info/METADATA,sha256=J6ZcWHOxyh7zcb0Yu5Q-E3GoLcifBvc5cpSGWbzH4hE,3871
+optimx-0.0.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+optimx-0.0.1.dist-info/top_level.txt,sha256=ZH60aKdVUD-wHenj_FR4TlqaWeyfOOcJe17DdFzWaLA,7
+optimx-0.0.1.dist-info/RECORD,,
