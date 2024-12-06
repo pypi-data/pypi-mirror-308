@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "Kart"
+version = "0.16.1"
+description = "A very flexible static site generator written in python"
+authors = ["Giacomo Caironi <giacomo.caironi@gmail.com>"]
+license = "MIT"
+readme = 'README.md'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jinja2 = "~3.1"
+pyyaml = '^6.0'
+mistune = "^3.0"
+pygments = "^2.6.1"
+python-slugify = "^8.0"
+python-dateutil = "^2.8.2"
+tomli = {version = "^2.0.1", optional = true}
+watchfiles = "^0.24.0"
+aiohttp = "^3.9.3"
+
+[tool.poetry.extras]
+toml = ["tomli"]
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.1.1"
+cookiecutter = "^2.5.0"
+python-lorem = "^1.3.0.post1"
+pre-commit = "3.5.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.master]
+jobs = 0
+score = false
+disable = [
+    "too-few-public-methods",  # R0903
+    "missing-module-docstring", # C0114
+    "missing-class-docstring", # C0115
+    "missing-function-docstring", # C0116
+    "unused-argument", # W0613
+    "too-many-instance-attributes", #R0902
+    "too-many-arguments", # R0913
+    "too-many-locals", #R0914
+    "broad-exception-caught", #W0718
+]
+max-positional-arguments=6
+min-similarity-lines=6
+
+[tool.pylint.format]
+max-line-length = 130
+
+[tool.flake8]
+max-line-length = 130
+ignore = ["E203", "E501", "W503"]
