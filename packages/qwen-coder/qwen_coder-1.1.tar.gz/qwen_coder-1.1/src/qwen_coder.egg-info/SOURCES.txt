@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/qwen-coder/__init__.py
+src/qwen_coder.egg-info/PKG-INFO
+src/qwen_coder.egg-info/SOURCES.txt
+src/qwen_coder.egg-info/dependency_links.txt
+src/qwen_coder.egg-info/top_level.txt
