@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polotsk/__init__.py
+polotsk/external.py
+polotsk/internal.py
+polotsk/main.py
+polotsk-admin/__init__.py
+polotsk-admin/main.py
+polotsk.egg-info/PKG-INFO
+polotsk.egg-info/SOURCES.txt
+polotsk.egg-info/dependency_links.txt
+polotsk.egg-info/top_level.txt
