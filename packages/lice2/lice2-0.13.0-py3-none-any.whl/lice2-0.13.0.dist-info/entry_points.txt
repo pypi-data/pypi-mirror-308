@@ -1,0 +1,2 @@
+[console_scripts]
+lice = lice2.core:app
