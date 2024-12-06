@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/camel/__init__.py
+src/camel/data/__init__.py
+src/camel/data/dataset.py
+src/camel/data/transform.py
+src/camel/utils/__init__.py
+src/camel/utils/dataframe.py
+src/camel/utils/loading.py
+src/tabular_camel.egg-info/PKG-INFO
+src/tabular_camel.egg-info/SOURCES.txt
+src/tabular_camel.egg-info/dependency_links.txt
+src/tabular_camel.egg-info/requires.txt
+src/tabular_camel.egg-info/top_level.txt
