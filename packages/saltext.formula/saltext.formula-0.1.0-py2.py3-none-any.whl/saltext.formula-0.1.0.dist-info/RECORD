@@ -1,0 +1,13 @@
+saltext/formula/__init__.py,sha256=D7LywTuuKOLBckMpBTKjqwuIS6PABYTo1qDO2n02Vus,863
+saltext/formula/version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+saltext/formula/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/formula/modules/map.py,sha256=-beAfOIEj7sFoKt9U1dt-Cqt-banIzVH0bP11_wCKsg,14423
+saltext/formula/wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/formula/wrapper/map.py,sha256=TpYHbZl8FJS8opf0-Uz2nGqNb7yjuXaq5AFfBUmLGdQ,729
+saltext.formula-0.1.0.dist-info/LICENSE,sha256=-a17yJ3E0kYv2EcuzR1w2iZlxGPZthe_jcjupuOdW50,11335
+saltext.formula-0.1.0.dist-info/METADATA,sha256=-9dWzFGHry3ZXqgHvISabGBpeh_vTvUdHIRUT5_jdaw,5825
+saltext.formula-0.1.0.dist-info/NOTICE,sha256=iUsJLsQ1fDKHjo_9OL74M_AUbfiL6VC6eTeCAaViMV0,449
+saltext.formula-0.1.0.dist-info/WHEEL,sha256=0VNUDWQJzfRahYI3neAhz2UVbRCtztpN5dPHAGvmGXc,109
+saltext.formula-0.1.0.dist-info/entry_points.txt,sha256=iq-zXAt7y_b4UEvK6mYMFVUWKn1PucUfhtcH4YZL2T8,48
+saltext.formula-0.1.0.dist-info/top_level.txt,sha256=6cynQgWBWnAPoXMnUaVitGzM6k7PzacwjLBPgrjOfi4,8
+saltext.formula-0.1.0.dist-info/RECORD,,
