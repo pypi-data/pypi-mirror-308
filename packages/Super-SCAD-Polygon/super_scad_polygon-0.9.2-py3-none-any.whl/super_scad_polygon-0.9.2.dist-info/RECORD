@@ -1,0 +1,15 @@
+super_scad_polygon/RegularPolygon.py,sha256=cD1PUitMLq29NFPOtvRAGNBXlqZ6uIEFv3lUujl8I5g,11291
+super_scad_polygon/RightTriangle.py,sha256=xObZ6PTl3rH8rLZ3PtS3YslSz7nriWWfuOzMJmcybCQ,4042
+super_scad_polygon/SmoothPolygon.py,sha256=0f0uLd1_LfW9c2X_UqpLrFO_oucBnRKc2E331ZUmJ4I,2599
+super_scad_polygon/SmoothPolygonMixin.py,sha256=7Bg8wsKL70rr25DLLM6RGVGdq2NB4edAS6KZ9DI7DjQ,3827
+super_scad_polygon/SmoothRectangle.py,sha256=mHph1MEcAAv_gRT8o-Ec1XT_XJ-jfM41M6FtzgiBR5M,2037
+super_scad_polygon/SmoothRegularPolygon.py,sha256=1KwomAgz567HVb0mLLBycZhic14aTP6mxQ8LPafuHhk,2054
+super_scad_polygon/SmoothRightTriangle.py,sha256=sZJl1VaBwkGfJS7MQhRb3e_8W2uDsVNazNEdmDz1VGs,1964
+super_scad_polygon/SmoothSquare.py,sha256=PLcfRmDHRFQDz88nWgOsaaxRT7TV5R2HGeEUSv_Qjw8,1466
+super_scad_polygon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+super_scad_polygon/helper/SmoothPolygonSideExtender.py,sha256=Rqzim1yrkoLIY7yQbbqWAa1OQLQGgQbDjmdCChKm4fA,5982
+super_scad_polygon/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+super_scad_polygon-0.9.2.dist-info/LICENSE,sha256=eWt4nn_NG2xiCWkQTVlUU9wL8saCAq8F7OJT6CrBS-g,1066
+super_scad_polygon-0.9.2.dist-info/METADATA,sha256=GkMESOKGENaNyXnAOw1pafLFeW9TOqBpnVTD46YbgkQ,2125
+super_scad_polygon-0.9.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+super_scad_polygon-0.9.2.dist-info/RECORD,,
