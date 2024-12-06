@@ -1,0 +1,14 @@
+cloudpickle
+
+[dev]
+numpy
+pytest
+pytest-repeat
+black
+pylint
+isort
+mypy
+colorama
+build
+twine
+psutil
