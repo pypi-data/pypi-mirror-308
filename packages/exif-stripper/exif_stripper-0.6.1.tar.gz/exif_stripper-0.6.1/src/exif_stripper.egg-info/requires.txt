@@ -1,0 +1,7 @@
+pillow>=10.3.0
+
+[dev]
+pre-commit
+pytest
+pytest-cov
+pytest-randomly
