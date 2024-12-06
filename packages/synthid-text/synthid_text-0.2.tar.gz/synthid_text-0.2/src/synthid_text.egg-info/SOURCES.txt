@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/synthid_text/detector_bayesian.py
+src/synthid_text/detector_mean.py
+src/synthid_text/g_value_expectations.py
+src/synthid_text/hashing_function.py
+src/synthid_text/logits_processing.py
+src/synthid_text/logits_processing_test.py
+src/synthid_text/synthid_mixin.py
+src/synthid_text/synthid_mixin_test.py
+src/synthid_text/torch_testing.py
+src/synthid_text.egg-info/PKG-INFO
+src/synthid_text.egg-info/SOURCES.txt
+src/synthid_text.egg-info/dependency_links.txt
+src/synthid_text.egg-info/requires.txt
+src/synthid_text.egg-info/top_level.txt
