@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: dainty
+Version: 0.1.0
+Summary: Add your description here
+Author-email: gaardhus <tobias_gaardhus@hotmail.com>
+Requires-Python: >=3.9
+Requires-Dist: ipython>=8.18.1
+Requires-Dist: pydantic[email]>=2.9.2
+Requires-Dist: pytest>=8.3.3
