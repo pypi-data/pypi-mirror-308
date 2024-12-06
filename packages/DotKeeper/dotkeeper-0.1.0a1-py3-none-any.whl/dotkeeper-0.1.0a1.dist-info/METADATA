@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: DotKeeper
+Version: 0.1.0a1
+Summary: Dotfiles manager.
+Author-email: Alchemyst0x <alchemyst@blockmage.dev>
+License: Apache-2.0
+Requires-Python: >=3.10
+Requires-Dist: aioboto3>=13.2.0
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: cyclopts>=3.0.0
+Requires-Dist: msgspec>=0.18.0
+Requires-Dist: pydantic-extra-types>=2.10.0
+Requires-Dist: pydantic-settings>=2.6.0
+Requires-Dist: pydantic>=2.6.0
+Requires-Dist: pyrage-stubs>=1.2.3
+Requires-Dist: pyrage>=1.2.1
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: rich>=13.9.0
+Requires-Dist: structlog>=24.4.0
+Description-Content-Type: text/markdown
+
+# DotKeeper
+
+DotKeeper is a Python package for managing dotfiles.

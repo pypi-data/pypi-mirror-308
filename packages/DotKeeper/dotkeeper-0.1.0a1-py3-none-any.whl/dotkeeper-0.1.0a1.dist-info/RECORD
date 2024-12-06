@@ -1,0 +1,12 @@
+dotkeeper/__init__.py,sha256=jVpySXbIaomBw5mS_fdUAD1McyjnBnJNJ8iYJYYqlZY,67
+dotkeeper/__main__.py,sha256=anlW0LEq5z60R2v1bt2LgLGdP7JIeMLGj-2GWP5s1U4,57
+dotkeeper/constants.py,sha256=i93r2Ev8evwDJ86yviUIBKlFfZzXUkz-zTH3n6tqkdg,257
+dotkeeper/exceptions.py,sha256=uCxKE4haR1AkaTbmwhX7Y-Ka-lzLTMFeeFSi4MGHPKI,824
+dotkeeper/config/base.py,sha256=7zHTT1PyX5QUVu50gK-lnf6gQtD3fB0nbFmIcKkWRiM,1562
+dotkeeper/utils/byte_size.py,sha256=eemoYJyjKY2XF-5BtPmvmi3HkWzwobLCVp1fnffTp0k,3430
+dotkeeper/utils/common.py,sha256=gVKyrIQ7Wo4YCNiCBkA-x0_E9wy9w5GmxRIFAUGEOZc,1865
+dotkeeper-0.1.0a1.dist-info/METADATA,sha256=mWDUFn6v6yQ9NdtTiY6nfdHRr5JZ80IT_L8hgnlYudM,716
+dotkeeper-0.1.0a1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+dotkeeper-0.1.0a1.dist-info/entry_points.txt,sha256=L-90LfjhgiUZ4d18VzH5t4dAgCvDFbVb-PBWHNXeee4,38
+dotkeeper-0.1.0a1.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+dotkeeper-0.1.0a1.dist-info/RECORD,,
