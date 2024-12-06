@@ -1,0 +1,11 @@
+ncompare/__init__.py,sha256=_dNzqeqabTER6EKGlASZac3N6VE7yXXKFzwx15TC8PY,1512
+ncompare/console.py,sha256=TTq9FFSgIUGgdNO4nvD6hpsgCz2_QPJKnZxpNMVR0fw,4323
+ncompare/core.py,sha256=BeYnGuEldp5TqN1XjkdqgFF_J0aCAsHwuPAJ-DgMpUA,24511
+ncompare/printing.py,sha256=sVvNLXru8sKdE5-SmtwQkpnBcm4IKiIxjiwryNy5rP8,13884
+ncompare/sequence_operations.py,sha256=170eO6XFSefAO9kjeFlBi2c4WWVdTa2bs9W0HWLOm-o,3731
+ncompare/utils.py,sha256=FXZ2JDH1adh7gbsgYnYazIcVZ0JVHY0xx3UOafJ6jg0,2940
+ncompare-1.11.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ncompare-1.11.0.dist-info/entry_points.txt,sha256=lwFjYSg-KCrsBLHUkA7WPu-gJsid_5nJ6_f14Dq6QMk,50
+ncompare-1.11.0.dist-info/METADATA,sha256=vBN1C1uQPHK6xl7KbKNtlNjWzkyEhESBjkdcx1FS5WE,9926
+ncompare-1.11.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ncompare-1.11.0.dist-info/RECORD,,
