@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: d3sdk
+Version: 0.1.11
+Summary: 3DS平台业务层的数据查询SDK
+Author: K2data
+Author-email: admin@k2data.com.cn
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: k2magic
+Requires-Dist: psycopg2
+
+# D3SDK
+D3SDK是3DS系统提供的数据开发包（以下简称SDK），用于简化Python里访问各类数据库的操作。
+
+## 一、安装
+
+### 1.1 安装SDK
+安装SDK最新版本：
+```
+pip install -U d3sdk
+```
+
+## 二、使用SDK
+
+### 2.1 查询报警组列表
+
+调用SDK代码示例：
+```
+from d3sdk.d3_dataframe_db import D3DataFrameDB
+from d3sdk.model.device_failure_record import DeviceFailureRecord
+
+k2a_host = '192.168.132.167'
+k2a_port = 443
+k2a_user = 'zhangsan'
+k2a_basic_token = '0c475ffd8960c17046b531e2xxx'
+
+k2a_url = f'k2assets+3ds://{k2a_user}:{k2a_basic_token}@{k2a_host}:{k2a_port}'
+db = D3DataFrameDB(k2a_url)
+result = db.getDeviceFailureRecords(
+                             start_time_1='2024-06-30 12:56:47',
+                             end_time_1='2024-06-30 12:56:50',
+                             start_time_2='2024-06-30 13:42:47',
+                             end_time_2='2024-06-30 13:59:59',
+                             devices=['T0000000002'],
+                             desc=True)
+print(type(result[0]))
+print(result[0].dfem_code)
+print(result[0].fms)
+```
+
+运行结果示例：
+```
+<class 'd3sdk.device_failure_record.DeviceFailureRecord'>
+AG0000101009
+[Fm(fm_code=QLJ00001, fm_name=定子), Fm(fm_code=QLJ00008, fm_name=定子绕组温度)]
+```
+
+### 2.2根据报警组编号查询关联的业务对象实例
+
+调用SDK代码示例：
+```
+from d3sdk.d3_dataframe_db import D3DataFrameDB
+from d3sdk.model.alarm_group_detail import AlarmGroupDetail
+
+k2a_host = '192.168.132.167'
+k2a_port = 443
+k2a_user = 'zhangsan'
+k2a_basic_token = '0c475ffd8960c17046b531e2xxx'
+
+k2a_url = f'k2assets+3ds://{k2a_user}:{k2a_basic_token}@{k2a_host}:{k2a_port}'
+db = D3DataFrameDB(k2a_url)
+result = db.getFailureCodes(dfem_code='AG0000121409')
+print(result)
+print(type(result[0]))
+print(result[0].dfem_sxmsbh)
+print(result[0].causes)
+```
+
+运行结果示例：
+```
+<class 'd3sdk.model.alarm_group_detail.AlarmGroupDetail'>
+FM800412
+[Cause(code='RS...001', display_name='定子绕组...超限原因',
+        description='定子冷却水...堵塞或结垢。', 
+        steps=[Step(code='JY...001', display_name='定子绕组...超限处理建议', 
+                    description='检查定子...负载是否平衡。'), 
+                Step(code='JY...004', display_name='定子绕组...报警处理建议', 
+                    description='检查冷却水...等是否正常')])]
+```
