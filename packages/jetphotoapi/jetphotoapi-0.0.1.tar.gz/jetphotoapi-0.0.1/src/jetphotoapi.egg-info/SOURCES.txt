@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/jetphotoapi/__init__.py
+src/jetphotoapi.egg-info/PKG-INFO
+src/jetphotoapi.egg-info/SOURCES.txt
+src/jetphotoapi.egg-info/dependency_links.txt
+src/jetphotoapi.egg-info/top_level.txt
