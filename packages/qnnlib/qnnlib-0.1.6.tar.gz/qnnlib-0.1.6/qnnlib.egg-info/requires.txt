@@ -1,0 +1,8 @@
+scikit-learn==1.5.1
+tensorflow
+tf_keras
+pennylane==0.37.0
+matplotlib
+pandas
+qiskit-ibm-provider==0.11.0
+pennylane-qiskit
