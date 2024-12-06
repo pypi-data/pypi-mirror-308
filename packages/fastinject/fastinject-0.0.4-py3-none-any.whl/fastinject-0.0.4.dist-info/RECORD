@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastinject/__init__.py,sha256=k7qrlUeFir1yKZaGjMelvmu-CKI2485piF_gLcM-DQY,412
+fastinject/decorators.py,sha256=Hd_R-LlZpH9t8Mtz3zqH3Fsv2XDdgDIWqs57sk9KjC8,5113
+fastinject/loggers.py,sha256=iKiKmfyW0W1t7tvGVxKAy12N275yKf8iVYyDo5WSEwQ,119
+fastinject/registry.py,sha256=FFOt6REwN6qevqh5qqoK1_vcN0VMKxpp2N-nXp1G8I0,6550
+fastinject/service_config.py,sha256=LeAcYoSlwkDBrmv4RBwoZERwuzzfDzDQLYrBaOE3vKY,45
+fastinject/type_helpers.py,sha256=AHYIlOLuKPrIoYKv8gN0xoIODnSoT179KWrIP9E0ZMs,576
+fastinject-0.0.4.dist-info/METADATA,sha256=LfeSeZfyETMa179mKC3KCdC0QZcYVI5oa0JxroLSOXA,8776
+fastinject-0.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+fastinject-0.0.4.dist-info/top_level.txt,sha256=7E8lgF-5Bdec3rlf2TQB0JbWmSa7ES9-qgBR050M8fc,20
+fastinject-0.0.4.dist-info/RECORD,,
