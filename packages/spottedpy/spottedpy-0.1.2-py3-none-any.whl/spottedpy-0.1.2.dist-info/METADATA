@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: spottedpy
+Version: 0.1.2
+Summary: Spatial hotspot analysis
+Download-URL: https://github.com/secrierlab/SpottedPy/archive/refs/tags/0.1.1.zip
+Author: E. Withnell
+Author-email: eloise.withnell.20@ucl.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: scanpy
+Requires-Dist: libpysal
+Requires-Dist: esda
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: squidpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+
