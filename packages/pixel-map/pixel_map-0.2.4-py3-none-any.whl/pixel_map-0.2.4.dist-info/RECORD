@@ -1,0 +1,13 @@
+pixel_map-0.2.4.dist-info/METADATA,sha256=XZFGds7a9TlDXPzgzKwdASe3WzYe7ZqqYTSPK031ERI,14078
+pixel_map-0.2.4.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pixel_map-0.2.4.dist-info/entry_points.txt,sha256=NVQKj1QQWDeX-QWDB7ZF1e9ZvLt0wdnGQJNKLtdtASE,70
+pixel_map-0.2.4.dist-info/licenses/LICENSE,sha256=ArLZ5TTwQWp7UQ1_EUe_9DI3U6W0-ismyPttIVVBopA,1071
+pixel_map/__init__.py,sha256=tadi5RBMIqFydB8rC--kY1helHHxWLZ96mZi1Fn-I6Y,75
+pixel_map/__main__.py,sha256=z8ONKE7sZioSGY4olzMavKkB2LTnkDWT7X5ZhMgTWZw,10078
+pixel_map/example_files/london_buildings.parquet,sha256=ymkfQ7pJPuqY6YfzxobNO9J3oXn3uDx-8mzkhtbcvAI,207500
+pixel_map/example_files/london_park.parquet,sha256=oZgADTR88FZzoTK6qnZTUv-HNRMFlzto0vqSzuoJHqs,19449
+pixel_map/example_files/london_water.parquet,sha256=S5suuBuKYKZg9uZTxjPqRhquC49idscmoi6AC9yW9MY,19925
+pixel_map/example_files/monaco_buildings.parquet,sha256=lRdFoPK0d7Js7uqLYzvilRDhIRskVxXoigH0gknU2Co,184156
+pixel_map/plotter.py,sha256=LoujTv2XfcbaQOTHyRVsEBwQ9UJYOxr1T1QgTEdlca0,12526
+pixel_map/renderers.py,sha256=y24M3i8EiebX53tH0BsFmm5_eQBuDgMidTE4H6C1czc,3519
+pixel_map-0.2.4.dist-info/RECORD,,
