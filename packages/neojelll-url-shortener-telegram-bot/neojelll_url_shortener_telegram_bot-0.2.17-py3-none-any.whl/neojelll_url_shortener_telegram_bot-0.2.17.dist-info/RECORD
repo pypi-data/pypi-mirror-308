@@ -1,0 +1,9 @@
+telegram_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telegram_bot/bot.py,sha256=Jehu3Xfb-GcehgFZ62g9j0gmFRhaSI0H_xMCwB1w-gs,4590
+telegram_bot/logger.py,sha256=a-h9Xi9XmM7BTDh99-BmM_5qSRJsed1FZBFs2XNUhd8,454
+telegram_bot/main.py,sha256=rhE34ssgAjzGw4S3VjV-LTsSPirz2xeoX-hpiGlVSDM,113
+telegram_bot/validate.py,sha256=wE6ftIIKhn5fPFzLVxHS9PwAd3_ZLVuBlEA6Y4iEwqU,1714
+neojelll_url_shortener_telegram_bot-0.2.17.dist-info/METADATA,sha256=kcx1D3wYyyQc7Al4_BekO0sRqznsRCLcG2u_p80jr_Y,489
+neojelll_url_shortener_telegram_bot-0.2.17.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+neojelll_url_shortener_telegram_bot-0.2.17.dist-info/entry_points.txt,sha256=deaDTGc71-7OeCvL4rF1GzvhZNKG8s7-1VjeunB1us4,77
+neojelll_url_shortener_telegram_bot-0.2.17.dist-info/RECORD,,
