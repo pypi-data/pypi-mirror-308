@@ -1,0 +1,16 @@
+zidauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zidauth/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+zidauth/apps.py,sha256=RggE4cMpL5BDaN4ZTmjNh6mp3dIBUNMz_bntCl4VKkY,150
+zidauth/consts.py,sha256=MBo-LlfFJyIipF-f8QCv9yObunZZ15xJ0YBvJwrV4RE,87
+zidauth/models.py,sha256=4cyfq0DyKxnLh0b3t3odyRzCv9ldfdbUHA8TOVDi6Vw,358
+zidauth/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+zidauth/urls.py,sha256=b818Tg-Ndj15SM__pgU9XMt5k2xuvV-9vA9e-juTM5o,247
+zidauth/views.py,sha256=SYZOQOypYYrzE8cKSY2BeQWTW-7Bpt3_RGl3Qf1rxfQ,2067
+zidauth/views.test.py,sha256=-l-VCckgFqOZjoQVehxGAsuiqA5brVPe-iZzqc0m7mU,240
+zidauth/migrations/0001_initial.py,sha256=WAsv9rqeGdNQeNDrkathi1-EPdHylXeighgbcH44NIg,716
+zidauth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zidauth-0.1.dist-info/LICENSE,sha256=LP64qWkLr-cu7Eq6qd1TPEYjANGMkv1RHIOLpaVgyLU,1067
+zidauth-0.1.dist-info/METADATA,sha256=vvJAuKLmF9AmL2d9w4Hy6eTRAQBu9hyY_BjhxT1awHc,1601
+zidauth-0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+zidauth-0.1.dist-info/top_level.txt,sha256=CshK852zuAwX-Jc0WgnFQitN8e_AjAEdWwqYg8ls7No,8
+zidauth-0.1.dist-info/RECORD,,
