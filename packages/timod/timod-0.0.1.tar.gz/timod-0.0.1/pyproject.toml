@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "timod"
+version = "0.0.1"
+authors = [
+  { name="Kiord", email="glenn.kerbiriou@gmail.com" },
+]
+description = "TaichIMODule, a pytorch module wrapper for differentiable Taichi kernels."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kiord/timod"
+Issues = "https://github.com/Kiord/timod/issues"

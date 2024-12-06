@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+timod/__init__.py
+timod/taichi_kernel_module.py
+timod.egg-info/PKG-INFO
+timod.egg-info/SOURCES.txt
+timod.egg-info/dependency_links.txt
+timod.egg-info/top_level.txt
