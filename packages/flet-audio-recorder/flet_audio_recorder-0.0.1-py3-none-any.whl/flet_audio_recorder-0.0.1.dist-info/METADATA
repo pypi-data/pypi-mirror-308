@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flet-audio-recorder
+Version: 0.0.1
+Summary: Flet Audio Recorder control
+Author: Appveyor Systems Inc.
+Author-email: hello@flet.dev
+Requires-Python: >=3.8,<4.0
+Project-URL: homepage, https://flet.dev
+Download-URL:
+Description-Content-Type: text/markdown
+
+# Flet Audio Recorder
+
+Flet Audio Recorder control.
