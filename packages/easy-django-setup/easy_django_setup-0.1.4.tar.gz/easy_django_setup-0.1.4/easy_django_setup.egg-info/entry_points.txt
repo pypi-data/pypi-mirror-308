@@ -1,0 +1,2 @@
+[console_scripts]
+easy-django-setup = easy_django_setup.cli:cli

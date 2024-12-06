@@ -1,0 +1,8 @@
+click
+Django
+djangorestframework
+django-allauth
+django-redis
+django-storages
+cloudinary
+drf-yasg
