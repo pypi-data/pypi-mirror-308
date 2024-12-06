@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "simdata"
+version = "0.0.1"
+description = ""
+authors = ["dm <git@defend.sh>"]
+packages = [{include = "simdata"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
