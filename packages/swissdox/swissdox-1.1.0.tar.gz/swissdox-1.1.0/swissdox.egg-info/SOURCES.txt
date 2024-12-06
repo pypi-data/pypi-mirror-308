@@ -1,0 +1,11 @@
+README.md
+setup.py
+swissdox/Swissdox.py
+swissdox/__init__.py
+swissdox.egg-info/PKG-INFO
+swissdox.egg-info/SOURCES.txt
+swissdox.egg-info/dependency_links.txt
+swissdox.egg-info/requires.txt
+swissdox.egg-info/top_level.txt
+swissdox/schemas/available-schemas.yaml
+swissdox/schemas/schema-1.2.json
