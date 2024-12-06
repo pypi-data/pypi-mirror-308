@@ -1,0 +1,10 @@
+pytest_embedded_jtag/__init__.py,sha256=CAxO_HC6H_yMJyoGVhgkOJ-AA3g2Lo7kv9Iam13X3BI,221
+pytest_embedded_jtag/gdb.py,sha256=dHoGFMH6Hbt_QtFEUBY4-5i-p9bywH_DBktEmOmO4ZA,1908
+pytest_embedded_jtag/openocd.py,sha256=GCuTj8l2WPU5J31FOnNwp_bX35iLXcx-F2WsA9Etjrc,2324
+pytest_embedded_jtag/_telnetlib/LICENSE,sha256=dghYnXK22AzzGKT8ozTBPqQKopF1RwR3m38mxWOCUDg,14203
+pytest_embedded_jtag/_telnetlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_embedded_jtag/_telnetlib/telnetlib.py,sha256=kbmnvTeE_09dwMBr3a4pauiCMKjYpnTvgX-bjcs8W94,23472
+pytest_embedded_jtag-1.12.0.dist-info/LICENSE,sha256=_Um-MzeKCR0JCDg5Ac_WFmZEfsPTd7PNlNi9JF1GBX8,1094
+pytest_embedded_jtag-1.12.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+pytest_embedded_jtag-1.12.0.dist-info/METADATA,sha256=Yayp1xq_rS4Jn1pqy19Qb_DIt_Ji0UaYfccbwzEIOxU,1626
+pytest_embedded_jtag-1.12.0.dist-info/RECORD,,
