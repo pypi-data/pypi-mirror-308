@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.py
+xy_request_handler_base/Base.py
+xy_request_handler_base/IBase.py
+xy_request_handler_base/WSBase.py
+xy_request_handler_base/__init__.py
+xy_request_handler_base.egg-info/PKG-INFO
+xy_request_handler_base.egg-info/SOURCES.txt
+xy_request_handler_base.egg-info/dependency_links.txt
+xy_request_handler_base.egg-info/requires.txt
+xy_request_handler_base.egg-info/top_level.txt
