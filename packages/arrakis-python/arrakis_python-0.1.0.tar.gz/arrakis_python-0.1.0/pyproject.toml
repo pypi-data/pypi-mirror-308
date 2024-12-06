@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=3.4",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "arrakis/_version.py"
+
+[tool.coverage.run]
+source = ["arrakis"]
+omit = [
+    "arrakis/tests/*",
+    "*/_version.py",
+]
+
+[tool.coverage.report]
+# print report with one decimal point
+precision = 1
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_missing_imports = true
+exclude = "build"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+markers = [
+    "integration: integration tests requiring an Arrakis server",
+]

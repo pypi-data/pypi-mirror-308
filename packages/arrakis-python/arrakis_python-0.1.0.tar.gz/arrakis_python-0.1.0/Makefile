@@ -1,0 +1,30 @@
+.PHONY: help
+help :
+	@echo
+	@echo 'Commands:'
+	@echo
+	@echo '  make test                  run tests'
+	@echo '  make lint                  run linter'
+	@echo '  make format                run code formatter'
+	@echo '  make type-check            run static type checker'
+	@echo
+
+.PHONY: test
+test :
+	pytest -v --cov=arrakis --cov-report=term-missing .
+
+.PHONY: lint
+lint :
+	flake8 .
+
+.PHONY: format
+format :
+	isort .
+	black .
+
+.PHONY: check
+check :
+	mypy .
+
+.PHONY: all
+all: format lint check test
