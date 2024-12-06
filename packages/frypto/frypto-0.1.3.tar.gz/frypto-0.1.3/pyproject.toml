@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frypto"
+version = "0.1.3"
+description = "Crypto data feature engineering package."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.7"
+authors = [
+    {name = "Abderlahman Elsayed", email = "bedoelsayed785@gmail.com"}
+]
+license = {text = "MIT License"}
+keywords = [
+    "feature engineering",
+    "cryptocurrency",
+    "crypto",
+    "time-series",
+    "technical indicators",
+    "data preprocessing",
+    "financial data",
+    "machine learning",
+    "trading",
+    "blockchain",
+    "RSI",
+    "MACD",
+    "moving average",
+    "price prediction",
+    "volatility",
+    "momentum indicators",
+    "data analysis",
+    "yfinance"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console"
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "numba",
+    "scipy",
+    "yfinance",
+]
+
+[project.urls]
+"Repository" = "https://github.com/NotAbdelrahmanelsayed/frypto"
+"Issues" = "https://github.com/NotAbdelrahmanelsayed/frypto/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["frypto*"]
+exclude = ["notebooks", "tests", "docs", "examples", "scripts"]
