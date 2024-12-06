@@ -1,0 +1,9 @@
+atacs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atacs/macd.py,sha256=7w2sFzf8MLfwPqnbrSkqMICVSNE9GgzriAVGOtP2tu0,830
+atacs/rsi.py,sha256=_-EZj6o3nOxSQnLm4wG9On3b6hJm0TI9k36AVha5q1c,852
+atacs/stats.py,sha256=7PZHVjowHYA5w6r5s4EFtrKS4ByGA0WUxBYN1CtlvRs,658
+ATACS-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ATACS-0.1.0.dist-info/METADATA,sha256=pzyyKlQ9Vy8KJO2Ak5tXUKbTpHrgK2wVpiq72IiLaQs,530
+ATACS-0.1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+ATACS-0.1.0.dist-info/top_level.txt,sha256=XbWBE21eQZGbWemxWhlY-hNC0PLdTGpUvjQPMbbMdm8,6
+ATACS-0.1.0.dist-info/RECORD,,
