@@ -1,0 +1,31 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "venrate"
+dynamic = ["version"]
+description = "Venrate get exchange rates from different platforms"
+readme = {file = 'README.md', content-type='text/markdown', charset="UTF-8", variant="GFM"}
+authors = [{ name = "sivefunc", email = "sivefunc@tuta.io" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+keywords = ["bcv", "exchange", "api", "venezuela", "http", "monitordolar", "binance", "yadio"]
+dependencies = [
+    "requests>=2.32.3"
+]
+
+requires-python = ">=3.9"
+
+[tool.setuptools.dynamic]
+version = {attr = "_version.__version__"}
+
+[project.urls]
+Homepage = "https://gitlab.com/sivefunc/"
