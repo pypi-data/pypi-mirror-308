@@ -1,0 +1,5 @@
+[console_scripts]
+fsp = cli:main
+
+[pipx.run]
+fsp = cli:main
