@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+automationimg.egg-info/PKG-INFO
+automationimg.egg-info/SOURCES.txt
+automationimg.egg-info/dependency_links.txt
+automationimg.egg-info/entry_points.txt
+automationimg.egg-info/requires.txt
+automationimg.egg-info/top_level.txt
