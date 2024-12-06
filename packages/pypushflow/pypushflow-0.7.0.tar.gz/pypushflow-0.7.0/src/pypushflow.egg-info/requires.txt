@@ -1,0 +1,41 @@
+
+[dev]
+pytest>=7
+pytest-subtests>=0.4
+psutil>=5.8
+mongita>=1
+mongomock
+numpy
+black>=22
+flake8>=4
+
+[dev:python_version < "3.8"]
+mongomock<4.2.0
+
+[doc]
+pytest>=7
+pytest-subtests>=0.4
+psutil>=5.8
+mongita>=1
+mongomock
+numpy
+sphinx>=4.5
+sphinx-autodoc-typehints>=1.16
+pydata-sphinx-theme<0.15
+
+[doc:python_version < "3.8"]
+mongomock<4.2.0
+
+[mx]
+pymongo>=3
+
+[test]
+pytest>=7
+pytest-subtests>=0.4
+psutil>=5.8
+mongita>=1
+mongomock
+numpy
+
+[test:python_version < "3.8"]
+mongomock<4.2.0
