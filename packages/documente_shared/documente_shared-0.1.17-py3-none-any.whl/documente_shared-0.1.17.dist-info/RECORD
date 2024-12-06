@@ -1,0 +1,16 @@
+documente_shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/application/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/application/digest.py,sha256=Um6E8WfFri2_lly4RFWydJyvSfPZGFcOX-opEOzDCWc,172
+documente_shared/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/domain/base_enum.py,sha256=DojAfn-zQdtjtImeHUpBzE6TBTm07XrbMOdW3h8RVd8,1449
+documente_shared/domain/entities.py,sha256=YPYVVwn-vq8A1xiRC9kfERk3CE36cG7HTkRsbWri3TM,5188
+documente_shared/domain/enums.py,sha256=wrMpM-1KgXFkd-He-3onNcqR3Zf53Q-_axjXGjx7MIY,435
+documente_shared/domain/repositories.py,sha256=OJ6HKYx93RAHtj5M2uMk1P8cPdw7ubfhs1GMeUT_blU,540
+documente_shared/infrastructure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+documente_shared/infrastructure/dynamo_repositories.py,sha256=0bnDxw-fQglpXXg5E4p0wyIbLn4gUy6nbusosveXpyU,777
+documente_shared/infrastructure/dynamo_table.py,sha256=5yF5EVQkHTZe4tLYZsfEDS8tp_iorMlMjNu-qn3Oj9E,2095
+documente_shared/infrastructure/s3_bucket.py,sha256=s4VWcl0HK6uhjjZmKefOYW5A3Dx74R9KCuMmXQKUXnQ,1582
+documente_shared/infrastructure/sqs_queue.py,sha256=PSiTAnjXvQ-W-9mzLpH2UjbQJTvYkMiaxNaMecF-cR4,1505
+documente_shared-0.1.17.dist-info/METADATA,sha256=keoPKGD0e_OrqM4avuizzPx_jZdxhfnXJ0lOucLSB6c,640
+documente_shared-0.1.17.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+documente_shared-0.1.17.dist-info/RECORD,,
