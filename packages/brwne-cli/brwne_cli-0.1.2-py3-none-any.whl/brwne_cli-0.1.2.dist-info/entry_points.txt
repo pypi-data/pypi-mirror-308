@@ -1,0 +1,3 @@
+[console_scripts]
+bro=brwne_cli.__init__:cli
+
