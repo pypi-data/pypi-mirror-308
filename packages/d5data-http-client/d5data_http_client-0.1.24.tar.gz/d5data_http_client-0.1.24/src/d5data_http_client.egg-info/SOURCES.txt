@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/d5data_http_client/__init__.py
+src/d5data_http_client/base_client.py
+src/d5data_http_client/d5data_http_client.py
+src/d5data_http_client/models.py
+src/d5data_http_client/utils.py
+src/d5data_http_client.egg-info/PKG-INFO
+src/d5data_http_client.egg-info/SOURCES.txt
+src/d5data_http_client.egg-info/dependency_links.txt
+src/d5data_http_client.egg-info/requires.txt
+src/d5data_http_client.egg-info/top_level.txt
+tests/test_base_client.py
+tests/test_docta_http_client.py
