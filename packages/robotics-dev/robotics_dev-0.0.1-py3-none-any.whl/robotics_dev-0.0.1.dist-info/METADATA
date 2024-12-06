@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: robotics-dev
+Version: 0.0.1
+Summary: Robotics.dev AI robotics app builder
+Project-URL: Homepage, https://robotics.dev
+Project-URL: Repository, https://github.com/chrismatthieu/robotics-pip.git
+Project-URL: Issues, https://github.com/chrismatthieu/robotics-pip/issues
+Author-email: Chris Matthieu <chris@matthieu.us>
+Keywords: AI,ROS,ROS2,motors,robotics,robots,streaming,video
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: python-socketio
+Description-Content-Type: text/markdown
+
+# ROBOTICS.DEV App Builder
+
+Run AI robotics apps anywhere!
+
+````
+pip install robotics-dev
+````
