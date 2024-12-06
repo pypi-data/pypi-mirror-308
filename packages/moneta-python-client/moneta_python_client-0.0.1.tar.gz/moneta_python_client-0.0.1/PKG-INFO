@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: moneta-python-client
+Version: 0.0.1
+Summary: Moneta python client
+Home-page: https://www.moneylion.com
+Author: moneylion
+Author-email: customercare@moneylion.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Moneta python client
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia ex dictum metus molestie, vel mollis velit imperdiet. Aliquam erat volutpat.
