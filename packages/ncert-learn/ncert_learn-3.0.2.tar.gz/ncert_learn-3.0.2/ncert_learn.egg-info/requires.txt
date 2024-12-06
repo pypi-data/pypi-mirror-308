@@ -1,0 +1,5 @@
+mysql-connector-python
+pytest
+tox
+requests
+psutil
