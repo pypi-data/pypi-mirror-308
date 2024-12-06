@@ -1,0 +1,15 @@
+getANS/__init__.py,sha256=osNFTXgKcHytHyvIX_KvF81FHwUyK_cVf4wmIF2IrLU,152
+getANS/__main__.py,sha256=e7sqS8q3QDCV7ZZpnnl6gFlIuSs7evlfVWFKPy-K3w4,511
+getANS/_ans_api.py,sha256=DcBgCRirXWUJXDHLzzzJ5HC7NWL5YxITQ1v6popCTzk,20353
+getANS/_assignment_db.py,sha256=8vivkeDnbjRPp6bMxTyHHmFWGzNnj32HC5aEd9qXE3I,8266
+getANS/_misc.py,sha256=4-A7pp9CQEOLZyEI0Jbk2KDq_d68qxzXU2lJ7LcnVWE,1658
+getANS/_request_tools.py,sha256=Pv4CcKL1iM51R2vvu9wogopFTWv1naRc__-Owkeekp8,8924
+getANS/_token.py,sha256=fqmu_Ai3Mf68jg2IkICHJSzCq1V8s0gKRdc3IMQ28es,1386
+getANS/cli.py,sha256=c6CcXOI9G4Dyv5NRmzolpxpkPhS2FQjuL0K6pPAziGs,5524
+getANS/types/__init__.py,sha256=Mdsg46pMA9R2b0UvXc6oqHz-WOAXWk92xZW94LljvHI,171
+getANS/types/ans_types.py,sha256=oa0Pmc4Iwqyef6QFZ8zUhFGu3JcKqJf0EcQ-bpFcHkw,18930
+getANS/types/list_of_dicts.py,sha256=Dl-sQm5Ham1a6DQs9IbCcjdf10GIaoSQV5qTJLymOu4,2184
+getans-0.9.dist-info/LICENSE,sha256=1kCABmQGCt-uIvJXhozlIM1Zt3ngFSdR_98IuLxyonk,1104
+getans-0.9.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+getans-0.9.dist-info/METADATA,sha256=jVxojJ7SpQ5A9qKuiD73v7eG6MbFLyoQMv2lhDY1frw,2857
+getans-0.9.dist-info/RECORD,,
