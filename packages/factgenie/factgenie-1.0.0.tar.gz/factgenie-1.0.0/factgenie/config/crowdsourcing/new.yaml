@@ -1,0 +1,52 @@
+annotation_granularity: words
+annotation_span_categories:
+- color: '#d73737'
+  description: test
+  name: Extra
+- color: '#ff2e8f'
+  description: test
+  name: test
+- color: '#62cb91'
+  description: fdfsdfs
+  name: fsdfsd
+annotator_instructions: |-
+  In this task, you will annotate textual outputs. For each example, you will see **inputs** on the left side and the corresponding **text** on the right side. Your task is to **highlight spans** in the text according to the instructions.
+
+  These are the span categories you can mark in the generated text:
+
+  - <span style="background-color: #d73737"><b>Extra</b></span>: test
+  - <span style="background-color: #ff2e8f"><b>test</b></span>: test
+  - <span style="background-color: #62cb91"><b>fsdfsd</b></span>: fdfsdfs
+
+  You can annotate the errors by selecting the appropriate error category and dragging your mouse over the text, highlighting the error span.
+
+  Once you think you have marked all the errors present in the text, click the **✅ Mark example as complete** button (you can still update the annotation later).
+
+  You will be able to submit the annotations once they are all are marked as complete.
+annotators_per_example: 1
+examples_per_batch: 2
+final_message: ''
+flags:
+- num_ctx
+idle_time: 3
+options:
+- label: Choose
+  type: select
+  values:
+  - This is a super long input 1
+  - This is a super long input 2
+  - This is a super long input 3
+- label: 'Choose something from this select box:'
+  type: slider
+  values:
+  - very long input 1
+  - very long input 2
+  - very long input 3
+  - very long input 4
+  - very long input 5
+  - very long input 6
+  - very long input 7
+service: prolific
+sort_order: sort-example-ids-shuffle-setups
+text_fields:
+- temperature
