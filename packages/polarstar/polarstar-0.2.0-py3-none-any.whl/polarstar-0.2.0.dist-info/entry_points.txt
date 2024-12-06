@@ -1,0 +1,3 @@
+[console_scripts]
+PolarStar=polarstar.__main__:main
+
