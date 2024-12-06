@@ -1,0 +1,10 @@
+appy/__init__.py,sha256=5xwZf72awP0HUkk9t3OINnLkbmfRK0gygcfc6IsH9fI,3912
+appy/ast_utils.py,sha256=gsKU7Qsv85QuLcH2t824PhcOMfb9PCNrIz4X5s-ZW3A,3850
+appy/config.py,sha256=-FDspLURroR7VuVjtprT3tV_NAOGr-MuHSEqwDUf-8s,54
+appy/jit.py,sha256=Oo2HcAXl2IPkftTxfS_F33AZSIhC9yy534f_wIbGuBQ,3129
+appy/utils.py,sha256=fvQRgbQUjxQN03kLV-MmalOq-q8YJA7hKFY0TUu3hMw,1110
+appyc-0.1.0.dist-info/LICENSE,sha256=3qyE6EvPcq_X7Lm2HxGKHmwhmn4jx52SsNWU1xeCtz8,1105
+appyc-0.1.0.dist-info/METADATA,sha256=olUbWJVt9ZSgawbfHe2g6Pqj5cXhQRsf_DNa3FtyGG0,7567
+appyc-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+appyc-0.1.0.dist-info/top_level.txt,sha256=PXgBVSij0UHfhdRKPzmnNcCh853tBSs4Niu723jXyx4,5
+appyc-0.1.0.dist-info/RECORD,,
