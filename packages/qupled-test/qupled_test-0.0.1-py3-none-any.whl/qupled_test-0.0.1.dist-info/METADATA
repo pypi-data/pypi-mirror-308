@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: qupled-test
+Version: 0.0.1
+Summary: qupled: a package to investigate quantum plasmas via the dielectric formalism
+Author-email: Federico Lucco Castello <federico.luccocastello@gmail.com>
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib ~=3.7
+Requires-Dist: numpy <2.0
+Requires-Dist: pandas ~=2.0
+Requires-Dist: tables ~=3.10
+Provides-Extra: docs
+Requires-Dist: sphinx-rtd-theme ~=2.0.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-applehelp ~=2.0.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-devhelp ~=2.0.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-htmlhelp ~=2.1.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-jquery ~=4.1 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-jsmath ~=1.0.1 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-qthelp ~=2.0.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-serializinghtml ~=2.0.0 ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest ~=8.0 ; extra == 'testing'
+Requires-Dist: pytest-mock ~=3.12 ; extra == 'testing'
+

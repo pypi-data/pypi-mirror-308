@@ -1,0 +1,9 @@
+qupled/__init__.py,sha256=I7s1HYU5vJ1W0G06nXkWn8BJqKKLj_Pah3iTJkLVf54,241
+qupled/classic.py,sha256=S_dh5BDNBp2r9nvhpcSGH_Vy7tp3EIaAqEVRhm4BAkE,17837
+qupled/quantum.py,sha256=2kTXeuiP0j1tHvd7fsDvQy8iUCoWtPo7GpxbzWGI3gU,10661
+qupled/util.py,sha256=3UtQmnl_4eI8VTFjM_dKIpJrPNsKNoa95ez0rdPseMA,12667
+qupled/Darwin/qupled.so,sha256=RiWzoeaJq-500d90h0KHI96LNw_c5_SzH290HVN2uTM,1059960
+qupled_test-0.0.1.dist-info/METADATA,sha256=fPtLm7Dd00YV_MVZsrRuLaB7ATFdlTgyJXUyAt2hHUw,1268
+qupled_test-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+qupled_test-0.0.1.dist-info/top_level.txt,sha256=HLJfvnCPZQVptCRuekWA_3Z98SMkCNCXViGiGh8VenA,7
+qupled_test-0.0.1.dist-info/RECORD,,
