@@ -1,0 +1,8 @@
+{
+    "name": "enochian-studio-npm-deps",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "enochian-studio": "0.0.3"
+    }
+}
