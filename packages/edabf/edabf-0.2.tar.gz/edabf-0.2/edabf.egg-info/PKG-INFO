@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: edabf
+Version: 0.2
+Summary: A package for EDA on CSV and SQL data.
+Author: nicolas_conde_brainfood
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas==2.2.2
+Requires-Dist: polars==1.10.0
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: pymssql==2.3.1
+Requires-Dist: oracledb==1.0.0
+Requires-Dist: cx_Oracle
+Requires-Dist: XlsxWriter==3.2.0
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: pymysql
+Requires-Dist: SQLAlchemy
+
+
+# EDA BF - Exploratory Data Analysis Package
+
+Este paquete permite realizar un anÃ¡lisis exploratorio de datos (EDA) de archivos CSV, Parquet y bases de datos SQL (MySQL, PostgreSQL, SQL Server, Oracle), generando informes en formato Excel.
+
+## MÃ³dulos
+
+### 1. `archivo.py`
+Este mÃ³dulo procesa un archivo individual (CSV o Parquet) y genera un informe EDA en formato Excel.
+
+#### FunciÃ³n principal
+- `process_single_file(file_path, output=None, limite=None)`: Procesa un archivo y genera un informe en Excel.
+  - **ParÃ¡metros**:
+    - `file_path` (str): Ruta del archivo a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel (opcional).
+    - `limite` (int): LÃ­mite opcional de filas a leer del archivo.
+  - **DescripciÃ³n**: Carga el archivo especificado, procesa los datos y genera un informe en Excel con mÃ©tricas EDA.
+
+### 2. `dataset.py`
+Este mÃ³dulo se conecta a una base de datos SQL, extrae todas las tablas de un esquema especÃ­fico y genera un informe EDA para cada una en un archivo Excel.
+
+#### FunciÃ³n principal
+- `process_dataset(db_type, server, user, password, database, schema, path_instaclient=None, output=None, limit_tables=5)`: Procesa mÃºltiples tablas de un esquema en la base de datos y genera un informe en un archivo Excel.
+  - **ParÃ¡metros**:
+    - `db_type` (str): Tipo de base de datos (`mysql`, `postgresql`, `sqlserver`, `oracle`).
+    - `server`, `user`, `password`, `database`, `schema` (str): Detalles de conexiÃ³n a la base de datos.
+    - `output` (str): Ruta de salida para el archivo Excel.
+    - `limit_tables` (int): LÃ­mite opcional para el nÃºmero de tablas a procesar.
+  - **DescripciÃ³n**: Conecta a la base de datos, carga las tablas de un esquema especificado y genera un informe EDA en Excel.
+
+### 3. `masivo.py`
+Este mÃ³dulo permite procesar mÃºltiples archivos (CSV y Parquet) en una carpeta y generar un informe EDA consolidado en un archivo Excel.
+
+#### FunciÃ³n principal
+- `process_folder(folder_path, output=None, limite=None)`: Procesa mÃºltiples archivos en una carpeta y genera un informe en un solo archivo Excel.
+  - **ParÃ¡metros**:
+    - `folder_path` (str): Ruta de la carpeta con los archivos a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel.
+    - `limite` (int): LÃ­mite opcional de filas a leer por archivo.
+  - **DescripciÃ³n**: Busca archivos CSV y Parquet en la carpeta especificada, carga cada archivo, y genera un informe en Excel.
+
+### 4. `table.py`
+Este mÃ³dulo permite procesar una sola tabla de una base de datos y generar un informe EDA en Excel.
+
+#### FunciÃ³n principal
+- `process_single_table(db_type, server, user, password, database, schema, table_name, path_instaclient=None, output=None)`: Procesa una tabla especÃ­fica de una base de datos y genera un informe EDA en Excel.
+  - **ParÃ¡metros**:
+    - `db_type` (str): Tipo de base de datos (`mysql`, `postgresql`, `sqlserver`, `oracle`).
+    - `server`, `user`, `password`, `database`, `schema`, `table_name` (str): Detalles de conexiÃ³n y tabla a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel.
+  - **DescripciÃ³n**: Conecta a la base de datos y genera un informe EDA de la tabla especificada en formato Excel.
+
+## Requisitos de InstalaciÃ³n
+
+AsegÃºrate de tener instaladas las dependencias del proyecto, como se especifica en `setup.py`:
+
+```bash
+pip install pandas==2.2.2 polars==1.10.0 psycopg2==2.9.9 psycopg2-binary==2.9.9 pymssql==2.3.1 oracledb==1.0.0 cx_Oracle XlsxWriter==3.2.0 pyarrow==17.0.0 pymysql SQLAlchemy
+```
+
+## Uso
+
+### Procesar un Archivo Individual
+```python
+from archivo import process_single_file
+process_single_file("ruta/al/archivo.csv", output="salida.xlsx", limite=1000)
+```
+
+### Procesar MÃºltiples Tablas de un Esquema de Base de Datos
+```python
+from dataset import process_dataset
+process_dataset("mysql", "servidor", "usuario", "contraseÃ±a", "base_datos", "esquema", output="salida_dataset.xlsx")
+```
+
+### Procesar una Carpeta de Archivos
+```python
+from masivo import process_folder
+process_folder("ruta/a/carpeta", output="salida_masivo.xlsx")
+```
+
+### Procesar una Tabla de una Base de Datos
+```python
+from table import process_single_table
+process_single_table("postgresql", "servidor", "usuario", "contraseÃ±a", "base_datos", "esquema", "nombre_tabla", output="salida_table.xlsx")
+```
+
+## Licencia
+Este proyecto estÃ¡ bajo la licencia MIT.
