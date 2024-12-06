@@ -1,0 +1,2 @@
+[console_scripts]
+AMDirT = AMDirT.cli:cli
