@@ -1,0 +1,10 @@
+mimicker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimicker/handler.py,sha256=C-nx68wi-GkjgN50tSudlHvg2rDuD2fqtHKbvkooFgg,2768
+mimicker/mimicker.py,sha256=cb1RbZ3Ybj8PzHOh0sy0I-yEnQ1xRizeQyNQhaAx6Cg,533
+mimicker/route.py,sha256=e4QDmaas9vjtzQLliybPLSLSMFkZ683Pt5ugSZHg02w,1414
+mimicker/server.py,sha256=t9AGuXEnN2DmfcMjrs3CeUIlXNmIBAL0L7GMgWA2Fbo,1390
+mimicker/stub_group.py,sha256=FeMaX2yPoisndbbdlnGVu49x5qoWdodydv2GkIF9gIM,1850
+mimicker-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mimicker-0.1.1.dist-info/METADATA,sha256=FgmIzz5lWFZs5rhRMkF6oXmR-mN3BwcCv56UYld-cTI,5985
+mimicker-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+mimicker-0.1.1.dist-info/RECORD,,
