@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: findapp
+Version: 0.0.1
+Summary: This module provides a cross-platform utility for finding application binaries.
+Author-email: Salvador Fandiño <sfandino@yahoo.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, http://github.com/salva/py-findapp
