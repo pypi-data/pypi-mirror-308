@@ -1,0 +1,6 @@
+README.md
+setup.py
+devruby7777.egg-info/PKG-INFO
+devruby7777.egg-info/SOURCES.txt
+devruby7777.egg-info/dependency_links.txt
+devruby7777.egg-info/top_level.txt
