@@ -1,0 +1,10 @@
+src/__init__.py,sha256=ek20KgmQjILt9JbQP5Edqe0CEU_co6WsYXs6MsqijaA,87
+src/checker.py,sha256=OX75EDIrmZA5UlieVjXHO4Gstbql6hJAZw036_Az3-A,2436
+src/convertor.py,sha256=ji-IpGHtzfVb5OAsnKJ-S9uNO4pPD1uCdaQdYw0vTXI,7086
+src/main.py,sha256=3gsWLpA-RaifUj4NBRYjZxtknQ4w_0bV6BV12Bj7pPE,570
+src/winOffeceInstaller.py,sha256=E0UF5l7Hylaq15d2AsZelOnyQi7AumqhEWA38IDk_1o,1704
+ml_convertor_free-0.1.1.dist-info/METADATA,sha256=NFyKzcnbXnA81oycK82W-6gjCBKHJIZpn0UyMlddApM,3419
+ml_convertor_free-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ml_convertor_free-0.1.1.dist-info/entry_points.txt,sha256=N-UdD4EmRwetlhD0nSkOPxXZGhEKj8ZNx5xoWzhZqdY,47
+ml_convertor_free-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+ml_convertor_free-0.1.1.dist-info/RECORD,,
