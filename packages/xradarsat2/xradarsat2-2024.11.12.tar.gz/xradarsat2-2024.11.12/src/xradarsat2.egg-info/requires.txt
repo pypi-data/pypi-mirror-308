@@ -1,0 +1,9 @@
+xmltodict
+numpy
+xarray>=2024.10.0
+rasterio
+rioxarray
+dask
+affine
+regex
+pyyaml
