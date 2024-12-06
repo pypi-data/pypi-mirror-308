@@ -1,0 +1,3 @@
+[console_scripts]
+vlab_bailer=vlab_bailer.main:run
+
