@@ -1,0 +1,41 @@
+[project]
+name = "futureos"
+version = "0.3.0"
+description = "First fully AI based Operating system "
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["AI", "Operating System", "ollama", "python", "chromadb", "langchain"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+authors = [
+    { name = "Michal Skibinski", email = "michalskibinski109@gmail.com"}
+]
+license = { text = "MIT" }
+
+dependencies = [
+    "chromadb>=0.5.18",
+    "keyboard>=0.13.5",
+    "langchain-community>=0.3.5",
+    "langchain-ollama>=0.2.0",
+    "langchain>=0.3.7",
+    "loguru>=0.7.2",
+    "ollama>=0.3.3",
+    "pytest>=8.3.3",
+    "rich>=13.9.4",
+    "windows-curses>=2.4.0; platform_system == 'Windows'",
+]
+
+[options]
+package_dir = "futureos"
+
+[project.urls]
+Homepage  = "https://github.com/miskibin/futureOS"
+Repository = "https://github.com/miskibin/futureOS"
