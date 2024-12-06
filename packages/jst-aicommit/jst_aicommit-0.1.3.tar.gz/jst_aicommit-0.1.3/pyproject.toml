@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "jst-aicommit"
+version = "0.1.3"
+description = ""
+authors = ["A'zamov Samandar <JscorpTech@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "jst_aicommit", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tenacity = "^9.0.0"
+requests = "^2.32.3"
+questionary = "^2.0.1"
+
+
+[tool.poetry.scripts]
+aic = 'jst_aicommit.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
