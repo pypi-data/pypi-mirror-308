@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel>=0.40.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Clarify"
+version = "0.6"
+description = "A Python package for parsing election results from Clarity systems"
+readme = "README.md"
+keywords = ['elections', 'Clarity', 'results', 'parser', 'scraper']
+classifiers = ['Development Status :: 3 - Alpha', 'License :: OSI Approved :: MIT License', 'Operating System :: OS Independent', 'Programming Language :: Python', 'Programming Language :: Python :: 2', 'Programming Language :: Python :: 2.7', 'Programming Language :: Python :: 3', 'Programming Language :: Python :: 3.4', 'Topic :: Internet', 'Topic :: Internet :: WWW/HTTP', 'Topic :: Text Processing', 'Topic :: Text Processing :: Markup :: XML']
+authors = [
+    {name = "Derek Willis", email = "openelections@gmail.com"}
+]
+requires-python = ">=3.0"
+dependencies = [
+    "requests>=2.31.0",
+    "cssselect>=1.2.0",
+    "python-dateutil==2.4.2",
+    "requests-futures>=1.0.1",
+    "wheel>=0.40.0",
+    "lxml>=4.9.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/openelections/clarify"
+
+[tool.setuptools]
+include-package-data = true
