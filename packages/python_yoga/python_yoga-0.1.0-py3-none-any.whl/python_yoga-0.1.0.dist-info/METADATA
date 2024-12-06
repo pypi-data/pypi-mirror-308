@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python_yoga
+Version: 0.1.0
+Summary: 
+Home-page: https://pypi.org/project/python-yoga
+License: BSD-2-Clause
+Author: Aliaksanr Sakalouski
+Author-email: ninjaduckyduck@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Project-URL: Changelog, https://sakalouski-alex.github.io/python-yoga/changelog
+Project-URL: Documentation, https://sakalouski-alex.github.io/python-yoga
+Project-URL: Issues, https://github.com/sakalouski-alex/python-yoga/issues
+Project-URL: Repository, https://github.com/sakalouski-alex/stories
+Description-Content-Type: text/markdown
+
+
