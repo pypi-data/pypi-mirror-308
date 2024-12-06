@@ -1,0 +1,6 @@
+python_flirt-0.9.2.dist-info/METADATA,sha256=jKhbgnReDHLmW4pKijHO6jr5Uuk-oSWErhralXmQ9A8,7785
+python_flirt-0.9.2.dist-info/WHEEL,sha256=g5HWqh_ET1t00jeNp7yG4_MnCmGwbeYGzUw6BhdEuM0,95
+python_flirt-0.9.2.dist-info/licenses/LICENSE.txt,sha256=r8ITulvkflA7NBADr4iaroceghiTL9_1Xvd48ud8yqw,11551
+flirt/__init__.py,sha256=9TxxyU4VTmqwqqXa_cN1EAzFMeX4OG6N-V5mO-SUdbQ,103
+flirt/flirt.cp310-win_amd64.pyd,sha256=vizPl-9Np39t_eSzF2WGV5RDTu0gqHRh0IMLgW-sX7Q,423424
+python_flirt-0.9.2.dist-info/RECORD,,
