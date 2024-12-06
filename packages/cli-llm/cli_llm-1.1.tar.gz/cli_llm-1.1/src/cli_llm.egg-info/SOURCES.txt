@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/cli-llm/__init__.py
+src/cli_llm.egg-info/PKG-INFO
+src/cli_llm.egg-info/SOURCES.txt
+src/cli_llm.egg-info/dependency_links.txt
+src/cli_llm.egg-info/top_level.txt
