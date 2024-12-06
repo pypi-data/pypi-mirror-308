@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pimidipy
+Version: 0.1.0
+Summary: pimidipy MIDI processing library
+Author: Blokas
+Author-email: Blokas <hello@blokas.io>
+Project-URL: Homepage, https://blokas.io/
+Project-URL: Issues, https://github.com/blokaslabs/pimidipy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires: a
+Requires: l
+Requires: s
+Requires: a
+Requires: _
+Requires: m
+Requires: i
+Requires: d
+Requires: i
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
