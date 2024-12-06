@@ -1,0 +1,7 @@
+main.py
+setup.py
+byteqs.egg-info/PKG-INFO
+byteqs.egg-info/SOURCES.txt
+byteqs.egg-info/dependency_links.txt
+byteqs.egg-info/requires.txt
+byteqs.egg-info/top_level.txt
