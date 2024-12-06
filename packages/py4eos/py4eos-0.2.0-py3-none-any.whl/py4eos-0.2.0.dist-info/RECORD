@@ -1,0 +1,7 @@
+py4eos/__init__.py,sha256=MFJILy_OJNyeWLk7af0vM0hoiFIja4sSkHGS68XsKE0,6073
+py4eos/srs.py,sha256=sWnEvhVQWlHOaiTgCyhxkY93cbmoMjnO9CXX3zWPwHY,435
+py4eos/tests/test_formats.py,sha256=levLdqpKcYFyZtGYwcldMoYESQxtwVNK0ZH4rctARiE,5522
+py4eos-0.2.0.dist-info/METADATA,sha256=cHrL4aBUC84XlhGvkvMbIdmXp0QI8EN-gY0up5n1tpg,2655
+py4eos-0.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+py4eos-0.2.0.dist-info/top_level.txt,sha256=0kepx-e3MDB1fcgTsavjLFf0U1FDbpwBX7PSzIMxP5o,7
+py4eos-0.2.0.dist-info/RECORD,,
