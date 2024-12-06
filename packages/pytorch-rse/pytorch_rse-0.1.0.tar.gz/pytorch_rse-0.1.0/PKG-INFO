@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytorch_rse
+Version: 0.1.0
+Summary: A PyTorch wrapper for Random Self-Ensemble (RSE)
+Home-page: https://github.com/tobiasbrambo/pytorch_rse
+Author: Tobias M. Brambo
+Author-email: tobias.m.brambo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: torch>=1.10.0
+
+# pytorch_rse
+Random Self-Ensemble for PyTorch
