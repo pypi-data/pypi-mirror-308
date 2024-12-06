@@ -1,0 +1,13 @@
+LICENSE.TXT
+README.md
+pyproject.toml
+swpwrxblock_build_backend/__init__.py
+swpwrxblock_build_backend/backend.py
+swpwrxblock_build_backend/collect_reactapp.py
+swpwrxblock_build_backend/const.py
+swpwrxblock_build_backend/utils.py
+swpwrxblock_build_backend.egg-info/PKG-INFO
+swpwrxblock_build_backend.egg-info/SOURCES.txt
+swpwrxblock_build_backend.egg-info/dependency_links.txt
+swpwrxblock_build_backend.egg-info/requires.txt
+swpwrxblock_build_backend.egg-info/top_level.txt
