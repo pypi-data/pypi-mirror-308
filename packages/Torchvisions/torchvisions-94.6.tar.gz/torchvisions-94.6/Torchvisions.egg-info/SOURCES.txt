@@ -1,0 +1,7 @@
+main.py
+setup.py
+Torchvisions.egg-info/PKG-INFO
+Torchvisions.egg-info/SOURCES.txt
+Torchvisions.egg-info/dependency_links.txt
+Torchvisions.egg-info/requires.txt
+Torchvisions.egg-info/top_level.txt
