@@ -1,0 +1,584 @@
+Metadata-Version: 2.1
+Name: synthid-text
+Version: 0.2.1
+Summary: SynthID Text: Identifying AI-generated text content
+Author: DeepMind Technologies Limited
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://deepmind.google/technologies/synthid/
+Project-URL: Repository, https://github.com/google-deepmind/synthid-text
+Project-URL: Bug Tracker, https://github.com/google-deepmind/synthid-text/issues
+Project-URL: Demo, https://colab.research.google.com/github/google-deepmind/synthid-text/blob/main/notebooks/synthid_text_huggingface_integration.ipynb
+Keywords: artificial intelligence,language models,machine learning,text generation,watermarking
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flax
+Requires-Dist: immutabledict ==4.2.0
+Requires-Dist: jax[cuda]
+Requires-Dist: jaxtyping
+Requires-Dist: numpy ==1.26.0
+Requires-Dist: optax
+Requires-Dist: scikit-learn
+Requires-Dist: torch ==2.4.0
+Requires-Dist: tqdm
+Requires-Dist: transformers ==4.43.3
+Provides-Extra: notebook
+Requires-Dist: datasets ; extra == 'notebook'
+Requires-Dist: huggingface-hub ; extra == 'notebook'
+Requires-Dist: ipywidgets ; extra == 'notebook'
+Requires-Dist: pandas ; extra == 'notebook'
+Requires-Dist: tensorflow ; extra == 'notebook'
+Provides-Extra: notebook-local
+Requires-Dist: synthid-text[notebook] ; extra == 'notebook-local'
+Requires-Dist: notebook ; extra == 'notebook-local'
+Provides-Extra: test
+Requires-Dist: absl-py ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# SynthID Text
+
+This repository provides a reference implementation of the SynthID Text
+watermarking and detection capabilities for the [research paper][nature-paper]
+published in _Nature_. It is not intended for production use. The core library
+is [distributed on PyPI][synthid-pypi] for easy installation in the
+[Python Notebook example][synthid-colab], which demonstrates how to apply these
+tools with the [Gemma][gemma] and [GPT-2][gpt2] models.
+
+## Installation and usage
+
+The [Colab Notebook][synthid-colab] is self-contained reference implementation
+that:
+
+1.  Extends the [`GemmaForCausalLM`][transformers-gemma] and
+    [`GPT2LMHeadModel`][transformers-gpt2] classes from
+    [Hugging Face Transformers][transformers] with a [mix-in][synthid-mixin] to
+    enable watermarking text content generated by models running in
+    [PyTorch][pytorch]; and
+1.  Detects the watermark. This can be done either with the simple [Mean
+    detector][synthid-detector-mean] which requires no training, or with the
+    more powerful [Bayesian detector][synthid-detector-bayesian] that requires
+    [training][synthid-detector-trainer].
+
+The notebook is designed to be run end-to-end with either a Gemma or GPT-2
+model, and runs best on the following runtime hardware, some of which may
+require a [Colab Subscription][colab-subscriptions].
+
+*   Gemma v1.0 2B IT: Use a GPU with 16GB of memory, such as a T4.
+*   Gemma v1.0 7B IT: Use a GPU with 32GB of memory, such as an A100.
+*   GPT-2: Any runtime will work, though a High-RAM CPU or any GPU will be
+    faster.
+
+NOTE: This implementation is for reference and research reproducibility purposes
+only. Due to minor variations in Gemma and Mistral models across
+implementations, we expect minor fluctuations in the detectability and
+perplexity results obtained from this repository versus those reported in the
+paper. The subclasses introduced herein are not designed to be used in
+production systems. Check out the official SynthID Text implementation in
+[Hugging Face Transformers][transformers-blog] for a production-ready
+implementation.
+
+NOTE: The `synthid_text.hashing_function.accumulate_hash()` function, used while
+computing G values in this reference implementation, does not provide any
+guarantees of cryptographic security.
+
+### Local notebook use
+
+The notebook can also be used locally if installed from source. Using a virtual
+environment is highly recommended for any local use.
+
+```shell
+# Create and activate the virtual environment
+python3 -m venv ~/.venvs/synthid
+source ~/.venvs/synthid/bin/activate
+
+# Download and install SynthID Text and Jupyter
+git clone https://github.com/google-deepmind/synthid-text.git
+cd synthid-text
+pip install '.[notebook-local]'
+
+# Start the Jupyter server
+python -m notebook
+```
+
+Once your kernel is running navigate to .pynb file to execute.
+
+### Running the tests
+
+The source installation also includes a small test suite to verify that the
+library is working as expected.
+
+```shell
+# Create and activate the virtual environment
+python3 -m venv ~/.venvs/synthid
+source ~/.venvs/synthid/bin/activate
+
+# Download and install SynthID Text with test dependencies from source
+git clone https://github.com/google-deepmind/synthid-text.git
+cd synthid-text
+pip install '.[test]'
+
+# Run the test suite
+pytest .
+```
+
+## How it works
+
+### Defining a watermark configuration
+
+SynthID Text produces unique watermarks given a configuration, with the most
+important piece of these configurations being the `keys`: a sequence of unique
+integers where `len(keys)` corresponds to the number of layers in the
+watermarking or detection models.
+
+The structure of a configuration is described in the following `TypedDict`
+subclass, though in practice, the [mixin][synthid-mixin] class in this library
+uses a static configuration.
+
+```python
+from collections.abc import Sequence
+from typing import TypedDict
+
+import torch
+
+
+class WatermarkingConfig(TypedDict):
+    ngram_len: int
+    keys: Sequence[int]
+    sampling_table_size: int
+    sampling_table_seed: int
+    context_history_size: int
+    device: torch.device
+```
+
+### Applying a watermark
+
+Watermarks are applied by a [mix-in][synthid-mixin] class that wraps the
+[`GemmaForCausalLM`][transformers-gemma] and
+[`GPT2LMHeadModel`][transformers-gpt2] classes from Transformers, which results
+in two subclasses with the same API that you are used to from Transformers.
+Remember that the mix-in provided by this library uses a static watermarking
+configuration, making it unsuitable for production use.
+
+```python
+from synthid_text import synthid_mixin
+import transformers
+import torch
+
+
+DEVICE = (
+    torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
+)
+INPUTS = [
+    "I enjoy walking with my cute dog",
+    "I am from New York",
+    "The test was not so very hard after all",
+    "I don't think they can score twice in so short a time",
+]
+MODEL_NAME = 'google/gemma-2b-it'
+TEMPERATURE = 0.5
+TOP_K = 40
+TOP_P = 0.99
+
+# Initialize a standard tokenizer from Transformers.
+tokenizer = transformers.AutoTokenizer.from_pretrained(MODEL_NAME)
+# Initialize a SynthID Text-enabled model.
+model = synthid_mixin.SynthIDGemmaForCausalLM.from_pretrained(
+    MODEL_NAME,
+    device_map='auto',
+    torch_dtype=torch.bfloat16,
+)
+# Prepare your inputs in the usual way.
+inputs = tokenizer(
+    INPUTS,
+    return_tensors='pt',
+    padding=True,
+).to(DEVICE)
+# Generate watermarked text.
+outputs = model.generate(
+    **inputs,
+    do_sample=True,
+    max_length=1024,
+    temperature=TEMPERATURE,
+    top_k=TOP_K,
+    top_p=TOP_P,
+)
+```
+
+### Detecting a watermark
+
+Watermark detection can be done using a variety of scoring functions (see
+paper). This repository contains code for the Mean, Weighted Mean, and Bayesian
+scoring functions described in the paper. The colab contains examples for how
+to use these scoring functions.
+
+The Bayesian detector must be trained on watermarked and unwatermarked data
+before it can be used. The Bayesian detector must be trained for each unique
+watermarking key, and the training data used for this detector model should be
+independent from, but representative of the expected character and quality of
+the text content the system will generate in production.
+
+```python
+import jax.numpy as jnp
+from synthid_text import train_detector_bayesian
+
+
+def load_data():
+  # Get your training and test data into the system.
+  pass
+
+
+def process_training_data(split):
+  # Get the G values, masks, and labels for the provided split.
+  pass
+
+
+train_split, test_split = load_data()
+train_g_values, train_masks, train_labels = process_training_data(train_split)
+test_g_values, test_masks, test_labels = process_training_data(test_split)
+
+detector, loss = train_detector_bayesian.optimize_model(
+    jnp.squeeze(train_g_values),
+    jnp.squeeze(train_masks),
+    jnp.squeeze(train_labels),
+    jnp.squeeze(test_g_values),
+    jnp.squeeze(test_masks),
+    jnp.squeeze(test_labels),
+)
+```
+
+Once the Bayesian detector is trained, use the `detector.score()` function to
+generate a per-example score indicating if the text was generated with the given
+watermarking configuration. Score values will be between 0 and 1, with scores
+closer to 1 indicating higher likelihood that the text was generated with the
+given watermark. You can adjust the acceptance threshold to your needs.
+
+```python
+from synthid_text import logits_processing
+
+
+CONFIG = synthid_mixin.DEFAULT_WATERMARKING_CONFIG
+
+logits_processor = logits_processing.SynthIDLogitsProcessor(
+    **CONFIG, top_k=TOP_K, temperature=TEMPERATURE
+)
+
+# Get only the generated text from the models predictions.
+outputs = outputs[:, inputs_len:]
+
+# Compute the end-of-sequence mask, skipping first ngram_len - 1 tokens
+# <bool>[batch_size, output_len]
+eos_token_mask = logits_processor.compute_eos_token_mask(
+    input_ids=outputs,
+    eos_token_id=tokenizer.eos_token_id,
+)[:, CONFIG['ngram_len'] - 1 :]
+# Compute the context repetition mask
+# <bool>[batch_size, output_len - (ngram_len - 1)]
+context_repetition_mask = logits_processor.compute_context_repetition_mask(
+    input_ids=outputs
+)
+
+# Compute the mask that isolates the generated text.
+combined_mask = context_repetition_mask * eos_token_mask
+# Compute the G values for the generated text.
+g_values = logits_processor.compute_g_values(input_ids=outputs)
+
+# Score the G values, given the combined mask, and output a per-example score
+# indicating whether the
+detector.score(g_values.cpu().numpy(), combined_mask.cpu().numpy())
+```
+
+
+## Human Data
+
+We release the human evaluation data, where we compare watermarked text against unwatermarked text generated from the Gemma 7B model.
+The data is located in `data/human_eval.jsonl`.
+To get the prompts used for generating the responses, please use the following code.
+
+```python
+import json
+import tensorflow_datasets as tfds
+
+ds = tfds.load('huggingface:eli5/LFQA_reddit', split='test_eli5')
+id_to_prompt = {}
+for x in ds.as_numpy_iterator():
+  id_to_prompt[x['q_id'].decode()] = x['title'].decode()
+
+full_data = []
+with open('./data/human_eval.jsonl') as f:
+  for json_str in f:
+    x = json.loads(json_str)
+    x['question'] = id_to_prompt[x['q_id']]
+    full_data.append(x)
+```
+
+## Citing this work
+
+```bibtex
+@article{Dathathri2024,
+    author={Dathathri, Sumanth and See, Abigail and Ghaisas, Sumedh and Huang, Po-Sen and McAdam, Rob and Welbl, Johannes and Bachani, Vandana and Kaskasoli, Alex and Stanforth, Robert and Matejovicova, Tatiana and Hayes, Jamie and Vyas, Nidhi and Merey, Majd Al and Brown-Cohen, Jonah and Bunel, Rudy and Balle, Borja and Cemgil, Taylan and Ahmed, Zahra and Stacpoole, Kitty and Shumailov, Ilia and Baetu, Ciprian and Gowal, Sven and Hassabis, Demis and Kohli, Pushmeet},
+    title={Scalable watermarking for identifying large language model outputs},
+    journal={Nature},
+    year={2024},
+    month={Oct},
+    day={01},
+    volume={634},
+    number={8035},
+    pages={818-823},
+    issn={1476-4687},
+    doi={10.1038/s41586-024-08025-4},
+    url={https://doi.org/10.1038/s41586-024-08025-4}
+}
+```
+
+## License and disclaimer
+
+Copyright 2024 DeepMind Technologies Limited
+
+All software is licensed under the Apache License, Version 2.0 (Apache 2.0);
+you may not use this file except in compliance with the Apache 2.0 license.
+You may obtain a copy of the Apache 2.0 license at:
+https://www.apache.org/licenses/LICENSE-2.0
+
+All other materials are licensed under the Creative Commons Attribution 4.0
+International License (CC-BY). You may obtain a copy of the CC-BY license at:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Unless required by applicable law or agreed to in writing, all software and
+materials distributed here under the Apache 2.0 or CC-BY licenses are
+distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the licenses for the specific language governing
+permissions and limitations under those licenses.
+
+This is not an official Google product.
+
+[colab-subscriptions]: https://colab.research.google.com/signup
+[flax]: https://github.com/google/flax
+[gemma]: https://ai.google.dev/gemma/docs/model_card
+[gpt2]: https://huggingface.co/openai-community/gpt2
+[jax]: https://github.com/google/jax
+[pytorch]: https://pytorch.org/
+[nature-paper]: https://doi.org/10.1038/s41586-024-08025-4
+[synthid-colab]: https://colab.research.google.com/github/google-deepmind/synthid-text/blob/main/notebooks/synthid_text_huggingface_integration.ipynb
+[synthid-pypi]: https://pypi.org/project/synthid-text/
+[synthid-detector-bayesian]: ./src/synthid_text/detector_bayesian.py
+[synthid-detector-mean]: ./src/synthid_text/detector_mean.py
+[synthid-detector-trainer]: ./src/synthid_text/train_detector_bayesian.py
+[synthid-mixin]: ./src/synthid_text/synthid_mixin.py
+[transformers]: https://github.com/huggingface/transformers
+[transformers-blog]: huggingface.co/blog/synthid-text
+[transformers-gemma]: https://github.com/huggingface/transformers/blob/e55b33ceb4b0ba3c8c11f20b6e8d6ca4b48246d4/src/transformers/models/gemma/modeling_gemma.py#L996
+[transformers-gpt2]: https://github.com/huggingface/transformers/blob/e55b33ceb4b0ba3c8c11f20b6e8d6ca4b48246d4/src/transformers/models/gpt2/modeling_gpt2.py#L1185
