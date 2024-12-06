@@ -1,0 +1,2 @@
+Refactor `TranferTrialDataBase` from an inherited base class to a standalone class
+and rename it `TransferTrialData`.
