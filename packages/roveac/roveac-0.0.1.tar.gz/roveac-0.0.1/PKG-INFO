@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: roveac
+Version: 0.0.1
+Summary: ROVEaC package
+Author-email: Adam Lehavi <adamlehavi@gmail.com>
+Description-Content-Type: text/x-rst
+Project-URL: Documentation, https://ramsey-ove-and-check.readthedocs.io/en/latest/
+Project-URL: Homepage, https://github.com/aLehav/ramsey-ove-and-check
+
+Ramsey One-Vertex Extension and Checking (ROVEaC)
+=================================================
+
+This is the repo for Ramsey theory utilities assisting in one-vertex extension and 
+counterexample checking.
+
+Read the documentaion here:
+
+https://ramsey-ove-and-check.readthedocs.io/en/latest/
+
+## License
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. See the [LICENSE](LICENSE) file for details.
+
