@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+open_dev/__init__.py
+open_dev/dev_aberto.py
+open_dev_aron.egg-info/PKG-INFO
+open_dev_aron.egg-info/SOURCES.txt
+open_dev_aron.egg-info/dependency_links.txt
+open_dev_aron.egg-info/top_level.txt
+scripts/hello.py
