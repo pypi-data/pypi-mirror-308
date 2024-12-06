@@ -1,0 +1,11 @@
+annoread/__init__.py,sha256=QL4o7ZocQy4UYAMLTPewARZNWMUujg3_bemgtzuWJ1o,94
+annoread/annodata.py,sha256=SALjP6QoycrJzgW4TrwBEj8bfoHUpRrCF52j_18N9s8,16624
+annoread/annoread.py,sha256=sG_iCL-i3LViCM1YyauAt7S8JmtNwYkqn6X7t3A3sxE,14014
+annoread/assignread.py,sha256=T8taR29mazS6glbvp8drourg1cQf7bwS4oWvS-cMjUw,4930
+annoread/countmtx.py,sha256=RoFsKT4mK9B6YYwT2rwEmVn5NKHLdCBY5b9QmOU0W3s,3725
+annoread-0.1.8.dist-info/LICENSE,sha256=hgHFDdB7-omVGhJJk0xJUFf05mivSWBahK1fpaGivwI,1069
+annoread-0.1.8.dist-info/METADATA,sha256=dHXkpQbjLHmKvrGw08kmMYJN-Wf16aabg_pAUtyxDx8,2127
+annoread-0.1.8.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+annoread-0.1.8.dist-info/entry_points.txt,sha256=O1vLJCTpqUpBKzulI60NLpqdqyJLTLrVI-7y27TCjjM,124
+annoread-0.1.8.dist-info/top_level.txt,sha256=ardB-SidOQauZ8prvdl33h3s6_zvpw4r4E0k1dMIuoM,9
+annoread-0.1.8.dist-info/RECORD,,
