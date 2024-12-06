@@ -1,0 +1,10 @@
+BOOK_NLP_fr/BOOKNLP_fr_gender.py,sha256=dSkwfhTOPjY633Qm6Kl6eV2cHfCotjF-I5OOyFqOvU8,56653
+BOOK_NLP_fr/BOOKNLP_fr_number.py,sha256=vSB8HmDwxO2bGkO8qv_UMHgDK_v7DstjFl7QSUu37hI,13136
+BOOK_NLP_fr/BookNLP_fr.py,sha256=gcctlQkE07SH0gXBR_4CIWGY1eIHl4v_CXNXRhuoGp4,61196
+BOOK_NLP_fr/__init__.py,sha256=LSppgvvHW62Dl3j-X3uUt_bnjS5dizloPHYnQIkEyuM,1692
+BOOK_NLP_fr/data/insee_names_fr_1900_2023.csv,sha256=7IsVHxPefgnW7Svh3l3tUYpt0QoA_IKthIqFh0vnN-8,1650745
+BOOK_NLP_fr-2024.11.10.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+BOOK_NLP_fr-2024.11.10.dist-info/METADATA,sha256=8mH47-9gRB2vDsUOwozTaLfQL_tHhgTkJ3Tw9zNwPQI,676
+BOOK_NLP_fr-2024.11.10.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+BOOK_NLP_fr-2024.11.10.dist-info/top_level.txt,sha256=57I2TpaM5CV69ptw1Eq7PnYlDMY366a8FYyzYcWFX7w,12
+BOOK_NLP_fr-2024.11.10.dist-info/RECORD,,
