@@ -1,0 +1,9 @@
+name: midi-app-controller
+contributions:
+  commands:
+    - id: midi-app-controller.midi_status
+      title: Show MIDI controller status and settings
+      python_name: midi_app_controller.gui.midi_status:MidiStatus
+  widgets:
+    - command: midi-app-controller.midi_status
+      display_name: MIDI controller status and settings
