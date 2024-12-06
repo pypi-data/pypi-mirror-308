@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: visisipy
+Version: 0.0.1
+Summary: Accessible vision simulations in Python.
+Author: Corné Haasjes, Jan-Willem Beenakker
+Maintainer-email: MReye research group <zospy@mreye.nl>
+Requires-Python: <3.14,>=3.9
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: zospy==1.2.1
