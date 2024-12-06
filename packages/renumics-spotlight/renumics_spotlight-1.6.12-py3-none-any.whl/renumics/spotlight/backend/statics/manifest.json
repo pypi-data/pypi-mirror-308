@@ -1,0 +1,28 @@
+{
+  "_lib-85c2a014.cjs": {
+    "file": "lib-85c2a014.cjs"
+  },
+  "_lib-90e740d2.js": {
+    "file": "lib-90e740d2.js"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-85c2a014.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-85c2a014.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
