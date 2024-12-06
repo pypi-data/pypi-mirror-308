@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: selfheal
+Version: 1.0.1
+Summary: Make all code self-healing with automatic debug state capture and LLM analysis
+Home-page: https://github.com/openexcept/selfheal
+Author: OpenExcept
+Author-email: ai.observability.eng@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3>=1.34.0
+Requires-Dist: slack-sdk>=3.33.0
+Requires-Dist: litellm>=1.52.0
+Requires-Dist: openai>=1.54.0
+Requires-Dist: streamlit>=1.30.0
+
+# SelfHeal - Make all code self-healing
+## Demo
+
+Demo shows:
+1. Slack alert with a link to the debug state
+2. Web viewer to browse and analyze debug states
+3. LLM analysis of the root cause and fix suggestions
+
+![Demo](https://raw.githubusercontent.com/OpenExcept/SelfHeal/main/assets/demo.gif)
+
+## Quick Start
+
+1. **Install**
+```bash
+pip install selfheal
+```
+
+2. **Configure**
+```bash
+export SLACK_BOT_TOKEN="xoxb-your-token"  # Optional
+```
+
+3. **Use**
+```python
+from selfheal import FunctionDebugger
+
+debugger = FunctionDebugger(
+    dump_dir="/path/to/debug/states",
+    slack_token=os.environ.get("SLACK_BOT_TOKEN")
+)
+
+# Decorate functions
+@debugger.debug_enabled()
+def my_function():
+    pass
+
+# Or entire classes
+@debugger.debug_class()
+class MyClass:
+    pass
+```
+
+4. **View Debug States**
+```bash
+streamlit run selfheal/debug_viewer.py
+```
+Access example at http://openexcept.com

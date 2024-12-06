@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+examples/README.md
+examples/data_processor.py
+selfheal/__init__.py
+selfheal/debug_viewer.py
+selfheal/s3_storage.py
+selfheal/slack.py
+selfheal.egg-info/PKG-INFO
+selfheal.egg-info/SOURCES.txt
+selfheal.egg-info/dependency_links.txt
+selfheal.egg-info/requires.txt
+selfheal.egg-info/top_level.txt
