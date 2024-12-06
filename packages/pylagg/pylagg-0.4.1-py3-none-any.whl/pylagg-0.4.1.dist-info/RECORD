@@ -1,0 +1,11 @@
+pylagg/cgr.py,sha256=WWkVTfSYAItFeYuUuWwxOxNyCjmTKfSVlFBoGNyZCbA,6794
+pylagg/config.py,sha256=GZiMcnMocyVT14Dy5aKOnoJft8uVOR3GH-lDq81__JY,3404
+pylagg/cutadapt.py,sha256=3EXF0nSZq4zcupzNgCFSmSDLGRkXQoBQ_bRmexFIzq8,2373
+pylagg/ena.py,sha256=DTii7jOnJmVccmIhW1guFSpgbFk7ZiVQGz4NEAkWTso,7050
+pylagg/jellyfish.py,sha256=iPonXlqGZw0oZMWFevxrqrIlVI7qvkPJyTzzA_j5Kp4,5685
+pylagg/main.py,sha256=2euclU26xlrYH60iQu8Xxs_VbRSWgmnSUfEXD9ABi4k,10071
+pylagg-0.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylagg-0.4.1.dist-info/METADATA,sha256=MVnLtcaQk9wUOrLuqH0XrT87Hm6cEFdjh95ksi7JP0g,3930
+pylagg-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylagg-0.4.1.dist-info/entry_points.txt,sha256=jTHBOk0MJeRC4LFYe3HlXjc3paowOOXnrGpPyH1k-7o,40
+pylagg-0.4.1.dist-info/RECORD,,
