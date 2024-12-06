@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+entry.py
+setup.py
+app/__init__.py
+app/__main__.py
+app/reliable.py
+gauss_linear.egg-info/PKG-INFO
+gauss_linear.egg-info/SOURCES.txt
+gauss_linear.egg-info/dependency_links.txt
+gauss_linear.egg-info/entry_points.txt
+gauss_linear.egg-info/requires.txt
+gauss_linear.egg-info/top_level.txt
