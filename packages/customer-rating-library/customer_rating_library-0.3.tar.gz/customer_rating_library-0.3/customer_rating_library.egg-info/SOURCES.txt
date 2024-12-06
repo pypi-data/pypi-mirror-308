@@ -1,0 +1,7 @@
+setup.py
+customer_rating_library/__init__.py
+customer_rating_library/customer_rating_library.py
+customer_rating_library.egg-info/PKG-INFO
+customer_rating_library.egg-info/SOURCES.txt
+customer_rating_library.egg-info/dependency_links.txt
+customer_rating_library.egg-info/top_level.txt
