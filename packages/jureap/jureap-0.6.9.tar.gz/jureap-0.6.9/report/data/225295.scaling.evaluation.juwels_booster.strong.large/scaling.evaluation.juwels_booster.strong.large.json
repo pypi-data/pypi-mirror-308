@@ -1,0 +1,98 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "225295",
+            "job": "1175774",
+            "commit": "a6230291534d94871aa4c0799d57194bfd7775de",
+            "username": "willsch1",
+            "project": "/p/project1/ehqcs",
+            "budget": "ehqcs",
+            "system": "juwelsbooster",
+            "version": "2024.12",
+            "timestamp": "2024-10-18T23:20:50+02:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "juwelsbooster",
+        "version": "2024.12",
+        "variant": "strong.large",
+        "timestamp": "2024-10-18T23:20:50+02:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "161.74",
+            "parameter": {
+                "nodes": "128",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10463848",
+            "queue": "booster",
+            "metrics": {
+                "qubits": "40",
+                "ngates": "440",
+                "gpus": "512",
+                "mem/gpu[GiB]": "32.0",
+                "totaltime": "161.74",
+                "inittime": "6.38",
+                "mpitime": "131.00",
+                "comptime": "30.74",
+                "circuittime": "156.57",
+                "norm": "1.000000",
+                "directory": "../../../outpath/000000/000000_execute/work/h40"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "87.96",
+            "parameter": {
+                "nodes": "256",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10463850",
+            "queue": "booster",
+            "metrics": {
+                "qubits": "40",
+                "ngates": "440",
+                "gpus": "1024",
+                "mem/gpu[GiB]": "16.0",
+                "totaltime": "95.75",
+                "inittime": "7.26",
+                "mpitime": "77.86",
+                "comptime": "17.89",
+                "circuittime": "90.03",
+                "norm": "1.111111",
+                "directory": "../../../outpath/000000/000001_execute/work/h40"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "71.09",
+            "parameter": {
+                "nodes": "512",
+                "taskspernode": "4",
+                "threadspertask": "12"
+            },
+            "slurm_jobid": "10463851",
+            "queue": "largebooster",
+            "metrics": {
+                "qubits": "40",
+                "ngates": "440",
+                "gpus": "2048",
+                "mem/gpu[GiB]": "8.0",
+                "totaltime": "83.81",
+                "inittime": "10.22",
+                "mpitime": "69.95",
+                "comptime": "13.86",
+                "circuittime": "75.92",
+                "norm": "1.222222",
+                "directory": "../../../outpath/000000/000002_execute/work/h40"
+            }
+        }
+    ]
+}

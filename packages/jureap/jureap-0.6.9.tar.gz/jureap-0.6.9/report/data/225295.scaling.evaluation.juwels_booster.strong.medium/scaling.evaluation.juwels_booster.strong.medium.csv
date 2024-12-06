@@ -1,0 +1,3 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,runtime,success,qubits,ngates,gpus,mem/gpu[GiB],totaltime,inittime,mpitime,comptime,circuittime,norm,directoryjuwelsbooster,2024.01,booster,strong.medium,10463844,32,4,12,103.04,true,38,418,128,32.0,103.04,4.48,76.25,26.79,99.65,1.000000,../../../outpath/000000/000000_execute/work/h38
+juwelsbooster,2024.01,booster,strong.medium,10463846,64,4,12,63.30,true,38,418,256,16.0,70.08,4.34,54.25,15.83,66.84,1.142857,../../../outpath/000000/000001_execute/work/h38
+juwelsbooster,2024.01,booster,strong.medium,10463847,128,4,12,33.71,true,38,418,512,8.0,40.77,4.29,31.79,8.98,37.66,1.285714,../../../outpath/000000/000002_execute/work/h38
