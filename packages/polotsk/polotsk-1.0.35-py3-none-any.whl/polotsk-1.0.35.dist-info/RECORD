@@ -1,0 +1,11 @@
+polotsk/__init__.py,sha256=LRm2bkn5V8GP2JzGZ48Nosqi-joD3KsfMZ8fPJOVvmw,30
+polotsk/external.py,sha256=Pd30WJ91J2eDocdWWSSrn3eVtMDTFs3or-IBh5I0glk,66
+polotsk/internal.py,sha256=IEPxmPPH0AYpt4s9e4EmVKsbxjJJEajOOmIsv45G32g,80
+polotsk/main.py,sha256=zlkDcfGPmdPGjABDj8FiNPuBsaYCwx3JpI6HFGcgVqM,177
+polotsk-admin/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+polotsk-admin/main.py,sha256=-6MgAjNl8qUR6M44dF0Uej-sh_0ATOaPkv9qoIxxYJw,699
+polotsk-1.0.35.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polotsk-1.0.35.dist-info/METADATA,sha256=FA6UJwCV2d4GOK_IkJDWAKK4mVRJnaf7jAsHcgV3aH8,75
+polotsk-1.0.35.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+polotsk-1.0.35.dist-info/top_level.txt,sha256=APo9hG1sZJ3-wUGXuW4poJ8gXEOii40WjxPfrlmCuAI,22
+polotsk-1.0.35.dist-info/RECORD,,
