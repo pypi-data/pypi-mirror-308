@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pygat
+Version: 202411.1
+Summary: GAT: Generative Attack Toolbox
+Home-page: https://terrytengli.com/gat/
+Author: Terry Li
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://terrytengli.com/_fig/gat_light.jpeg">
+  <img alt="GAT logo" src="https://terrytengli.com/_fig/gat_dark.jpeg" width="50%" height="50%">
+</picture>
+
+GAT: Generative Attack Toolbox.
+
+<h3>
+
+[Homepage](https://terrytengli.com/GAT/) | [Documentation](https://terrytengli.com/GAT/)
+
+</h3>
+
+</div>
+
+---
+
+## Get Start
+
+1. Install from pypi.org.
+
+```
+pip install pygat
+```
+
+2. Install from source code.
+
+```
+git clone https://github.com/l1teng/GAT.git
+cd GAT; pip install -e .
+```
+
+## Support Attacks
+
+- [ ] [CDA-attack]()
+- [ ] [CDA-attack]()
+- [x] [AIM-attack](examples/aim_attack.py)
