@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.py
+django_taggit_api.egg-info/PKG-INFO
+django_taggit_api.egg-info/SOURCES.txt
+django_taggit_api.egg-info/dependency_links.txt
+django_taggit_api.egg-info/requires.txt
+django_taggit_api.egg-info/top_level.txt
+django_taggit_api.egg-info/zip-safe
+taggit_api/__init__.py
+taggit_api/__version__.py
+taggit_api/apps.py
+taggit_api/urls.py
+taggit_api/views.py
