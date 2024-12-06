@@ -1,0 +1,7 @@
+main.py
+setup.py
+para_gen.egg-info/PKG-INFO
+para_gen.egg-info/SOURCES.txt
+para_gen.egg-info/dependency_links.txt
+para_gen.egg-info/requires.txt
+para_gen.egg-info/top_level.txt
