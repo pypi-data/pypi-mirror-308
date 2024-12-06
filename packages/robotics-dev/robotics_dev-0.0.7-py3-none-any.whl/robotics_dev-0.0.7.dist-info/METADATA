@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: robotics-dev
+Version: 0.0.7
+Summary: Robotics.dev AI robotics app builder
+Project-URL: Homepage, https://robotics.dev
+Project-URL: Repository, https://github.com/chrismatthieu/robotics-pip.git
+Project-URL: Issues, https://github.com/chrismatthieu/robotics-pip/issues
+Author-email: Chris Matthieu <chris@matthieu.us>
+Keywords: AI,ROS,ROS2,motors,robotics,robots,streaming,video
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: python-socketio
+Requires-Dist: python-socketio[client]
+Description-Content-Type: text/markdown
+
+# ROBOTICS.DEV App Builder
+
+Run AI robotics apps anywhere!
+
+````
+pip install robotics-dev
+````
+
+Usage:
+
+robotics.connect() - connects to robotics.dev server (optional edge server IPs supported)
+
+robotics.twist(robot_id, linear_x, linear_z)
+
+Example script: 
+
+
+````
+from robotics_dev import robotics
+import time
+
+test = robotics.connect() # connects to server
+print(test) # returns socket id
+
+robotics.twist("83568ccb-b44f-470f-9429-f5a80294f2a5", 0.3, 0.0) # robot id, linear_x, linear_z
+time.sleep(5) #sleeps 5 seconds
+robotics.twist("83568ccb-b44f-470f-9429-f5a80294f2a5", 0.0, 0.0) # robot id, linear_x, linear_z
+````
