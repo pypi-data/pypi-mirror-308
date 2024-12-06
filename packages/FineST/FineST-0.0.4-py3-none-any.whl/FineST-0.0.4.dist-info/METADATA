@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: FineST
+Version: 0.0.4
+Summary: FineST: Fine-grained Spatial Transcriptomic
+Home-page: https://github.com/LingyuLi-math/FineST
+Author: ['Lingyu Li', 'Yuanhua Huang']
+Author-email: lingyuli@hku.hk
+License: Apache-2.0
+Keywords: Spatial transcriptomics,HE stained images,Cell-cell communication,Ligand-recptor interaction
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: anndata==0.9.2
+Requires-Dist: scanpy==1.9.8
+Requires-Dist: SpatialDE
+Requires-Dist: SpatialDM==0.2.0
+Requires-Dist: SparseAEH==0.1.0
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: pykdtree==1.3.7
+Requires-Dist: numpy>=1.9.0
+Requires-Dist: scipy>=1.4.0
+Requires-Dist: statsmodels>=0.11
+Requires-Dist: pandas==2.0.3
+Requires-Dist: h5py==3.10.0
+Requires-Dist: matplotlib>=3.1.2
+Requires-Dist: holoviews
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: selenium
+Requires-Dist: numpy
+Requires-Dist: scikit-learn>=0.23
+Requires-Dist: hilearn
+Requires-Dist: threadpoolctl
+Requires-Dist: tqdm
+Provides-Extra: docs
+Requires-Dist: sphinx-bootstrap-theme; extra == "docs"
+
+===========================================
+FineST: Fine-grained Spatial Transcriptomic
+===========================================
+
+
+A tatistical model and toolbox to identify the super-resolved ligand-receptor interaction 
+with spatial co-expression (i.e., spatial association). 
+Uniquely, FineST can distinguish co-expressed ligand-receptor pairs (LR pairs) 
+from spatially separating pairs at sub-spot level or single-cell level, 
+and identify the super-resolved ligand-receptor interaction (LRI).
+
+.. image:: https://github.com/LingyuLi-math/FineST/blob/main/docs/fig/FineST_framework_all.png?raw=true
+   :width: 800px
+   :align: center
+
+It comprises three components (*Training*-*Imputation*-*Discovery*) after HE image feature is extracted: 
+
+* Step0: HE image feature extraction
+* Step1: **Training** FineST on the within spots
+* Step2: Super-resolution spatial RNA-seq **imputation**
+* Step3: Fine-grained LR pair and CCC pattern **discovery**
+
+.. It comprises two main steps:
+
+.. 1. global selection `spatialdm_global` to identify significantly interacting LR pairs;
+.. 2. local selection `spatialdm_local` to identify local spots for each interaction.
+
+Installation
+============
+
+FineST is available through `PyPI <https://pypi.org/project/FineST/>`_.
+To install, type the following command line and add ``-U`` for updates:
+
+.. code-block:: bash
+
+   pip install -U FineST
+
+Alternatively, install from this GitHub repository for latest (often
+development) version (time: < 1 min):
+
+.. code-block:: bash
+
+   pip install -U git+https://github.com/LingyuLi-math/FineST
+
+Installation using Conda
+========================
+
+.. code-block:: bash
+
+   $ git clone https://github.com/LingyuLi-math/FineST.git
+   $ conda create --name FineST python=3.8
+   $ conda activate FineST
+   $ cd FineST
+   $ pip install -r requirements.txt
+
+Typically installation is completed within a few minutes. 
+Then install pytorch, refer to `pytorch installation <https://pytorch.org/get-started/locally/>`_.
+
+.. code-block:: bash
+
+   $ conda install pytorch=1.7.1 torchvision torchaudio cudatoolkit=11.0 -c pytorch
+
+Verify the installation using the following command:
+
+.. code-block:: bash
+
+   python
+   >>> import torch
+   >>> print(torch.__version__)
+   >>> print(torch.cuda.is_available())
+
+
+Get Started for Visium HD data
+==============================
+
+Illustrate using a single slice of 10x Visium HD human colorectal cancer 
+(CRC) data with 16-um bin.
+
+
+Step0: HE image feature extraction
+----------------------------------
+
+**Input**
+
+* ``Visium_HD_Human_Colon_Cancer_tissue_image.btf``: Raw histology image (.btf *Visium HD* or .tif *Visium*)
+* ``tissue_positions.parquet``: Spot/bin locations (.parquet *Visium HD* or .csv *Visium*)
+
+**Output**
+
+* ``HD_CRC_16um_pth_32_16_image``: Segmeted histology image patches (.png)
+* ``HD_CRC_16um_pth_32_16``: Extracted image feature embeddiings for each patche (.pth)
+
+.. code-block:: bash
+
+   python .FineST/HIPT_image_feature_extract.py --dataset HD_CRC_16um --position ./Colon_Cancer/square_016um/spatial/tissue_positions.parquet --image ./Colon_Cancer/Visium_HD_Human_Colon_Cancer_tissue_image.btf --output_path_img ./HD_CRC_16um_pth_32_16_image --output_path_pth ./HD_CRC_16um_pth_32_16 --patch_size 32 --logging_folder ./Finetune/HIPT_image_feature_extract/
+
+``HIPT_image_feature_extract.py`` also output the execution time:
+
+* The image segment execution time for the loop is: 62.491 seconds
+* The image feature extract time for the loop is: 1717.818 seconds
+
+
+Step1: Training FineST on the within spots
+------------------------------------------
+
+
+Step2: Super-resolution spatial RNA-seq imputation
+--------------------------------------------------
+
+
+Step3: Fine-grained LR pair and CCC pattern discovery
+-----------------------------------------------------
+
+
+
+.. Quick example
+.. =============
+
+.. Using the build-in NPC dataset as an example, the following Python script
+.. will predict super-resolution ST gene expression and compute the p-value indicating whether a certain Ligand-Receptor is
+.. spatially co-expressed. 
+
+Detailed Manual
+===============
+
+The full manual is at `finest-rtd-tutorial <https://finest-rtd-tutorial.readthedocs.io>`_ for installation, tutorials and examples. 
+
+* `Sub-spot level prediction by FineST (For Visium dataset)`_.
+
+* `Super-resolved ligand-receptor interavtion discovery by FineST`_.
+
+.. _Sub-spot level prediction by FineST (For Visium dataset): docs/source/NPC_Train_Impute.ipynb
+
+.. _Super-resolved ligand-receptor interavtion discovery by FineST: docs/source/NPC_LRI_CCC.ipynb
