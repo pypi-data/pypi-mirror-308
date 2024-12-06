@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cleanstring
+Version: 0.1.0
+Summary: A simple package to clean strings
+Home-page: https://github.com/yourusername/firebase_data_storer
+Author: Cool Murdock
+Author-email: coolmurdock6@justzeus.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: firebase-admin
+
+# Clean String
+
+A simple package to clean strings.
+
+## Installation
+
+To install the package, run the following command:
+
+```bash
+pip install cleanstring
+```
+
+## Usage
+
+To use the package, import it and call the `clean_string` function:
+
+```python
+from cleanstring import clean_string
+
+name = "Anish Sharma"
+contact = "1234567890"
+
+cleaned_string = clean_string(name, contact)
+
+print(f"The cleaned strings are Contact: {cleaned_string.get('contact')}, Name: {cleaned_string.get('name')}")
+```
+
+This will output:
+
+```
+The cleaned strings are Contact: 1234567890, Name: Anish Sharma
+```
