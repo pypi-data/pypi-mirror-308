@@ -1,0 +1,11 @@
+simple_python_app/__init__.py,sha256=huus4rM2PbaXi8fkVnu7brKD0zYXWuLTPeDjhMp9kDk,101
+simple_python_app/_version.py,sha256=ccekCVlC_okmU-bYHAWRcbW6lcg__XISRCzekkY_59M,497
+simple_python_app/generic_application.py,sha256=m95iihfMR3izHF4P55ae8nCqCn0dRTsGjrQhA4osaSo,25352
+simple_python_app/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_python_app/subcommand_application.py,sha256=IRVluk2fBN-68_a_gsR3uoUW-FeOXDLd1SbLKSVJews,6048
+simple_python_app/resources/default_logging_config.yaml,sha256=byXCGvi46KImoBd5T6aAuWaliFhldVU6REFSM7jZIpk,529
+simple_python_app-0.4.1.dist-info/LICENSE,sha256=ts-KvfqoTrcNaY3rn-JIN2t2ma_qcoq94DxWk2r6sL0,35155
+simple_python_app-0.4.1.dist-info/METADATA,sha256=0hr9C9We61yhr0E0mjgMW1k1KdWYwl8_xzT2mB-hnxM,1481
+simple_python_app-0.4.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+simple_python_app-0.4.1.dist-info/top_level.txt,sha256=sS9CyOoFhGOwpqy18B65Cp0vC9WQVRO-Tke2X26-n7E,18
+simple_python_app-0.4.1.dist-info/RECORD,,
