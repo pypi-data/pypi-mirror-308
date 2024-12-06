@@ -1,0 +1,11 @@
+neuma_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuma_client/auth.py,sha256=O45HgpsblBqNJr9nRALU14wZgCGcmCgcGjAoD0zAyrg,1073
+neuma_client/client.py,sha256=mt-8YvZuph1sUj-sVC2yA5hXSKc6okUl0BM2ZvD2oY8,9412
+neuma_client/exceptions.py,sha256=8LQ2fauxhfQVHxJgfKsTLmMqCZ7csYN55L63K2jMI5w,132
+neuma_client/pagination.py,sha256=mOF2wI70lnXeF89j4UJnhTUoVN4c_CrtmIQvbz92YXA,8826
+neuma_client/proxies.py,sha256=1zvyLa8DMz5iS4vBqCMCWpzZZ-4X9-EyTkkrpeUiSe8,6666
+neuma_client-0.2.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+neuma_client-0.2.0.dist-info/METADATA,sha256=y82ERiyCYeOw_K4L7uu4zVmJ_YNDIMsVlmIu4pUt8Qw,700
+neuma_client-0.2.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+neuma_client-0.2.0.dist-info/top_level.txt,sha256=k73BuSrOtrjvo_c--_WalyXiD_7x7q_kh0GPa3lmdoM,13
+neuma_client-0.2.0.dist-info/RECORD,,
