@@ -1,0 +1,6 @@
+pipeteer
+python-kv
+
+[run]
+tf-serving
+haskellian
