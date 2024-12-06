@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: moveread-pipelines-ocr
+Version: 0.1.0
+Summary: package_description
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/pipelines.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pipeteer
+Requires-Dist: python-kv
+Provides-Extra: run
+Requires-Dist: tf-serving; extra == "run"
+Requires-Dist: haskellian; extra == "run"
+
+# Moveread Pipelines Ocr
+
+> package_description
