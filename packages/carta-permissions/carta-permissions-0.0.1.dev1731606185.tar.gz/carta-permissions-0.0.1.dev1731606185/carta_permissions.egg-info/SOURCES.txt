@@ -1,0 +1,5 @@
+setup.py
+carta_permissions.egg-info/PKG-INFO
+carta_permissions.egg-info/SOURCES.txt
+carta_permissions.egg-info/dependency_links.txt
+carta_permissions.egg-info/top_level.txt
