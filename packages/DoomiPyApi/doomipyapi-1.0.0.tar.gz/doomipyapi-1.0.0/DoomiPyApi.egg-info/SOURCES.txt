@@ -1,0 +1,8 @@
+setup.py
+DoomiPyApi.egg-info/PKG-INFO
+DoomiPyApi.egg-info/SOURCES.txt
+DoomiPyApi.egg-info/dependency_links.txt
+DoomiPyApi.egg-info/not-zip-safe
+DoomiPyApi.egg-info/top_level.txt
+doomiapi/__init__.py
+doomiapi/asr.py
