@@ -1,0 +1,3 @@
+[console_scripts]
+make_bin=sympla_tools.scripts.build_binary:main
+
