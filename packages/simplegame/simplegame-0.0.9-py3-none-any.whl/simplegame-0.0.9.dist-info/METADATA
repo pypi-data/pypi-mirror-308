@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: simplegame
+Version: 0.0.9
+Summary: Package for creating simple games
+Home-page: https://github.com/szotms/simplegame
+Author: Michal Szot
+Author-email: szot.net@gmail.com
+License: MIT
+Requires-Dist: Pillow ==10.2.0
+Requires-Dist: pygame ==2.5.2
+
