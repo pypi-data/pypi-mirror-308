@@ -1,0 +1,2 @@
+[console_scripts]
+scfetch = scfetch.main:main
