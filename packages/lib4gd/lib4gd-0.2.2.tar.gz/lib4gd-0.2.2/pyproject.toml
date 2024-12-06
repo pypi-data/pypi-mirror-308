@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lib4gd"
+version = "0.2.2"
+description = "A Python library for handling file downloads and uploads via Google Drive and SFTP."
+authors = [{name = "Tejas R Simha", email = "tejas@4gd.ai"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["file transfer", "google drive", "sftp", "image processing", "concurrency"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-api-python-client",
+    "asyncssh",
+    "aiofiles",
+    "Pillow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lib4gd", "lib4gd.*"]
