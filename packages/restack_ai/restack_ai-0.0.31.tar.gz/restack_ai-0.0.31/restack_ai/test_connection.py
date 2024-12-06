@@ -1,0 +1,39 @@
+import os
+import asyncio
+
+from .observability import log_with_context
+
+from .playground.workflow import playgroundRun
+from .restack import CloudConnectionOptions, Restack
+
+async def main():
+    try:
+        # Fetch environment variables
+        engine_id = os.environ.get("RESTACK_ENGINE_ID")
+        address = os.environ.get("RESTACK_ENGINE_ADDRESS")
+        api_key = os.environ.get("RESTACK_ENGINE_API_KEY")
+
+        # Create connection options only if all environment variables are set
+        if engine_id and address and api_key:
+            connection_options = CloudConnectionOptions(
+                engine_id=engine_id,
+                address=address,
+                api_key=api_key
+            )
+            restack = Restack(connection_options)
+        else:
+            # Instantiate Restack without arguments if environment variables are not set
+            restack = Restack()
+            log_with_context("INFO", "No environment variables set, using default Restack configuration.")
+
+        log_with_context("INFO", "restackClient", restack=restack)
+        await restack.start_service(workflows=[playgroundRun])
+        log_with_context("INFO", "Services running successfully.")
+    except Exception as e:
+        log_with_context("ERROR", "Failed to run services", error=str(e))
+
+def run_test():
+    asyncio.run(main())
+
+if __name__ == "__main__":
+    run_test()
