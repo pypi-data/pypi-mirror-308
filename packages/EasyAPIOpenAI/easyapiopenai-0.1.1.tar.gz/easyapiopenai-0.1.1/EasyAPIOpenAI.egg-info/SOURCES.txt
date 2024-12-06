@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+EasyAPIOpenAI.egg-info/PKG-INFO
+EasyAPIOpenAI.egg-info/SOURCES.txt
+EasyAPIOpenAI.egg-info/dependency_links.txt
+EasyAPIOpenAI.egg-info/requires.txt
+EasyAPIOpenAI.egg-info/top_level.txt
+easyapiopenai/__init__.py
+easyapiopenai/apiwojopenai.py
