@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pytest_run_parallel/__init__.py
+src/pytest_run_parallel/plugin.py
+src/pytest_run_parallel.egg-info/PKG-INFO
+src/pytest_run_parallel.egg-info/SOURCES.txt
+src/pytest_run_parallel.egg-info/dependency_links.txt
+src/pytest_run_parallel.egg-info/entry_points.txt
+src/pytest_run_parallel.egg-info/requires.txt
+src/pytest_run_parallel.egg-info/top_level.txt
+tests/test_run_parallel.py
