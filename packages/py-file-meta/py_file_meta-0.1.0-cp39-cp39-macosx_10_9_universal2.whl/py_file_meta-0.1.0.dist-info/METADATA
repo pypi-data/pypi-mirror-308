@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: py_file_meta
+Version: 0.1.0
+Summary: 用于解析文件的元数据，如果是markdown，则进一步提取文件属性
+Home-page: https://github.com/al6nlee/PyFileMeta
+Author: alan
+Author-email: al6nlee@gmail.com
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+## 项目介绍
+
+> 用于解析文件的元数据，针对markdown文件进一步扩展
+
+## 设计理念
+
+- 文件唯一性标识
+    - 针对不同的操作系统，使用不同的文件唯一标识
+    - 具体针对Windows与linux两种操作系统，使用不同的文件路径作为文件唯一标识
+- 针对markdown文件
+    - 使用yaml模块读取文件头部信息
+
