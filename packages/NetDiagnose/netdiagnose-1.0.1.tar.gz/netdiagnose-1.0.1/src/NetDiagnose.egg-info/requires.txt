@@ -1,0 +1,5 @@
+customtkinter
+scapy
+psutil
+speedtest-cli
+ping3
