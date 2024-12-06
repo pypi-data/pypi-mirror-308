@@ -1,0 +1,112 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from typing import List, Optional
+from datetime import datetime
+
+from pydantic import Field as FieldInfo
+
+from .._models import BaseModel
+
+__all__ = ["FineTuneJobListResponse", "Job", "JobConfig", "JobResult", "JobResultProgress", "JobResultTrainedModelFile"]
+
+
+class JobConfig(BaseModel):
+    baseline_model_id: str = FieldInfo(alias="baselineModelId")
+    """The ID for the model used as the starting point for training."""
+
+    selected_columns: List[str] = FieldInfo(alias="selectedColumns")
+    """
+    Set of columns to be used in fine-tuning. Supported columns: input, output,
+    ground_truth For example, a task similar to summarization might need output and
+    ground_truth.
+    """
+
+    test_dataset_id: str = FieldInfo(alias="testDatasetId")
+    """The dataset to use for an unbiased evaluation of the model"""
+
+    train_dataset_id: str = FieldInfo(alias="trainDatasetId")
+    """
+    The dataset to use for training, with splits baked in or to be derived
+    dynamically
+    """
+
+    description: Optional[str] = None
+    """Optional description for the job."""
+
+    name: Optional[str] = None
+    """Optional name for the job."""
+
+
+class JobResultProgress(BaseModel):
+    accuracy: float
+
+    epoch: int
+
+    job_id: str = FieldInfo(alias="jobId")
+
+    loss: float
+
+    progress: float
+
+    timestamp: datetime
+
+
+class JobResultTrainedModelFile(BaseModel):
+    id: str
+
+    content_md5_hash: str = FieldInfo(alias="contentMd5Hash")
+
+    created_at: datetime = FieldInfo(alias="createdAt")
+
+    file_size_bytes: int = FieldInfo(alias="fileSizeBytes")
+
+    model_id: str = FieldInfo(alias="modelId")
+
+    updated_at: datetime = FieldInfo(alias="updatedAt")
+
+
+class JobResult(BaseModel):
+    progress: List[JobResultProgress]
+    """Sequential snapshots of training metrics."""
+
+    result_url: Optional[str] = FieldInfo(alias="resultUrl", default=None)
+    """Url to view the full results and progress (e.g. external W&B url)"""
+
+    trained_model_file: Optional[JobResultTrainedModelFile] = FieldInfo(alias="trainedModelFile", default=None)
+    """Actual file asset corresponding to a model"""
+
+
+class Job(BaseModel):
+    id: str
+    """The ID of the fine tune job."""
+
+    config: JobConfig
+    """
+    Set of columns to be used in fine-tuning. Supported columns: input, output,
+    ground_truth For example, a task similar to summarization might need output and
+    ground_truth.
+    """
+
+    created_at: datetime = FieldInfo(alias="createdAt")
+
+    result: JobResult
+    """Sequential snapshots of training metrics."""
+
+    status: str
+
+    updated_at: datetime = FieldInfo(alias="updatedAt")
+
+    description: Optional[str] = None
+
+    name: Optional[str] = None
+    """Name corresponding to the fine tuned model derived from this job"""
+
+
+class FineTuneJobListResponse(BaseModel):
+    jobs: List[Job]
+
+    total_count: int = FieldInfo(alias="totalCount")
+    """
+    Total count of fine tune jobs which can be listed with applicable filters,
+    regardless of page size
+    """
