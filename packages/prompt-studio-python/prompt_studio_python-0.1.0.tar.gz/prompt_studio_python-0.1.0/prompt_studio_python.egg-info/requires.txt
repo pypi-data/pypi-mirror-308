@@ -1,0 +1,6 @@
+aiohttp
+pydantic
+openai
+anthropic
+google-generativeai
+fastapi
