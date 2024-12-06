@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/auto-agents/__init__.py
+src/auto_agents.egg-info/PKG-INFO
+src/auto_agents.egg-info/SOURCES.txt
+src/auto_agents.egg-info/dependency_links.txt
+src/auto_agents.egg-info/top_level.txt
