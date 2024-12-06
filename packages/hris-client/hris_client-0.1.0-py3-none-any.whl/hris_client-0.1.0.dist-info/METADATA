@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hris-client
+Version: 0.1.0
+Summary: Python client for SPM HRIS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: httpx >=0.27.2
+
