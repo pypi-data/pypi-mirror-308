@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyduckchat
+Version: 0.1.0
+Summary: An unofficial library for interacting with DuckDuckGo chat API.
+Home-page: https://github.com/tolgakurtuluss/pyduckchat
+Author: Dev
+Author-email: asd@w.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: httpx

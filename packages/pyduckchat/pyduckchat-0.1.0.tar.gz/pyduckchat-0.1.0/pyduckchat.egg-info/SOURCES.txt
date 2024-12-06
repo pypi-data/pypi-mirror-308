@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyduckchat.egg-info/PKG-INFO
+pyduckchat.egg-info/SOURCES.txt
+pyduckchat.egg-info/dependency_links.txt
+pyduckchat.egg-info/requires.txt
+pyduckchat.egg-info/top_level.txt
