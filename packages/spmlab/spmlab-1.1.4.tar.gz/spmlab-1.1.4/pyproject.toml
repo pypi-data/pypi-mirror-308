@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "spmlab"
+version = "1.1.4"
+license = "MIT"
+description = "Utility tools for reading, analyzing, and plotting scanning probe microscopy data."
+authors = ["Ben Campbell <bhc1010@pm.me>"]
+repository = "https://github.com/hollenlab/spmlab"
+readme = "README.md" 
+keywords = ["stm", "spym", "sm4", "scanning tunneling microscope", "spm", "microscopy"]
+classifiers=[
+    "License :: OSI Approved :: MIT License",  
+    "Programming Language :: Python :: 3.11",
+]
+packages = [
+    {include = "spmlab"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23"
+matplotlib = "^3.6"
+spym = "^0.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
