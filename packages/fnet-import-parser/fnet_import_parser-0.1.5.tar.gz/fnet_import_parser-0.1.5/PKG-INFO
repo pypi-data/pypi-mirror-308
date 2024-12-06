@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fnet_import_parser
+Version: 0.1.5
+Requires-Python: >=3.9
+Requires-Dist: stdlib-list
+Requires-Dist: pyyaml
