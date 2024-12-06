@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bgmhan
+Version: 0.1.0
+Summary: BGM-HAN: A PyTorch implementation of the BGM-HAN model for text classification
+Author: Junhua Liu
+Author-email: j@forth.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: sentencepiece
+
