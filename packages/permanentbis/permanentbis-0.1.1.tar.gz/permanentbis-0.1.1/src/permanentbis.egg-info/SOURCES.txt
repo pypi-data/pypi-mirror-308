@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./src/permanent.c
+src/bithacks.h
+src/npy_util.h
+src/permanent.c
+src/permanentbis.egg-info/PKG-INFO
+src/permanentbis.egg-info/SOURCES.txt
+src/permanentbis.egg-info/dependency_links.txt
+src/permanentbis.egg-info/requires.txt
+src/permanentbis.egg-info/top_level.txt
+tests/test.py
+tests/test_permanent.py

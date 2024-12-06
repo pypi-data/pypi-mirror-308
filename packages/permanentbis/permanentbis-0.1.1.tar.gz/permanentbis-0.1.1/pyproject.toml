@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=74.1", "wheel", "numpy >= 2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "permanentbis"
+version = "0.1.1"
+authors = [
+ {name = "Pete Shadbolt", email = "hello@peteshadbolt.co.uk"},
+ {name = "Andrzej Kaczmarczyk", email = "droodev@gmail.com"}
+]
+maintainers = [
+ {name = "Andrzej Kaczmarczyk", email = "droodev@gmail.com"}
+]
+description = "Computing the permanent of a matrix."
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = ["numpy >= 2.1"]
+
+[project.urls]
+Repository="https://github.com/droodev/permanentbis"
