@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/spark_dash/__init__.py
+src/spark_dash/cmd.py
+src/spark_dash/config.ini
+src/spark_dash/main.py
+src/spark_dash/utils.py
+src/spark_dash.egg-info/PKG-INFO
+src/spark_dash.egg-info/SOURCES.txt
+src/spark_dash.egg-info/dependency_links.txt
+src/spark_dash.egg-info/entry_points.txt
+src/spark_dash.egg-info/requires.txt
+src/spark_dash.egg-info/top_level.txt
+src/spark_dash/pages/scale_log.py
+src/spark_dash/pages/usage_log.py

@@ -1,0 +1,25 @@
+[project]
+name = "spark-dash"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Mingk42", email = "xoals123456t@gmail.com"},
+]
+dependencies = [
+    "streamlit>=1.40.1",
+    "schedule>=1.2.2",
+    "tz-kst>=0.5.3",
+    "matplotlib>=3.9.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+run-dashboard="spark_dash.cmd:run"
+
+[tool.pdm]
+distribution = true
+
+[tool.setuptools]
+package-dir = {"" = "src"}
