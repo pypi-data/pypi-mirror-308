@@ -1,0 +1,6 @@
+streamlit
+langchain
+langgraph
+beautifulsoup4
+requests
+faiss-cpu
