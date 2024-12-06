@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+py2c/__init__.py
+py2c/c_to_py_code.py
+py2c/py_to_c_code.py
+py2c.egg-info/PKG-INFO
+py2c.egg-info/SOURCES.txt
+py2c.egg-info/dependency_links.txt
+py2c.egg-info/not-zip-safe
+py2c.egg-info/top_level.txt
