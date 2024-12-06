@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: NanaoLink
+Version: 0.1.0
+Summary: แพ็กเกจ client สำหรับ lavalink ที่ปรับให้ใช้งานง่ายขึ้น
+Author: NekoSakuraLucia
+License: MIT
+Project-URL: repositroy, https://github.com/NekoSakuraLucia/NanaoLink
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python>=3.10
+Requires-Dist: wavelink
+
+# ❤ NanaoLink
+
+### ตัว client นี้ทำมาใช้กับ Nekoriku เพื่อให้ใช้งานได้ง่ายขึ้น
+
+แพ็กเกจ `client` สำหรับลาวาลิงก์ที่สืบทอดจาก `wavelink` ดั่งเดิมโค้ดและการใช้งานพื้นฐานยังคงเป็นของเขา
+ส่วนที่เรานำมาปรับเปลี่ยนบางอย่างคือการ ปรับแต่งให้มีความใช้งานง่ายขึ้น
+
+ตัวอย่างการสร้าง Player:
+```js
+player: Optional[Nanao_Player] = ctx.voice_client
+```
