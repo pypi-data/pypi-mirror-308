@@ -1,0 +1,9 @@
+opentelemetry-test-utils==0.49b1
+opentelemetry-instrumentation-flask==0.49b1
+opentelemetry-instrumentation-requests==0.49b1
+pytest
+pytest-cov
+pytest-mock
+requests
+flask~=3.0
+werkzeug
