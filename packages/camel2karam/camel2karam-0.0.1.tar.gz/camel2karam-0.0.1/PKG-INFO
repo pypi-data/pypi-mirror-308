@@ -1,0 +1,93 @@
+Metadata-Version: 2.3
+Name: camel2karam
+Version: 0.0.1
+Project-URL: Homepage, https://github.com/CERES-Sorbonne/camel2karam
+Project-URL: Documentation, https://github.com/CERES-Sorbonne/camel2karam#readme
+Project-URL: Issues, https://github.com/CERES-Sorbonne/camel2karam/issues
+Project-URL: Source, https://github.com/CERES-Sorbonne/camel2karam
+Author-email: Marceau-h <pypi@marceau-h.fr>
+Keywords: convert
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: camel-tools
+Requires-Dist: polars
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Camel 2 KARAM
+[![PyPI - Version](https://img.shields.io/pypi/v/camel2karam.svg)](https://pypi.org/project/camel2karam)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/camel2karam.svg)](https://pypi.org/project/camel2karam)
+
+Camel 2 KARAM
+
+---
+
+**Table des matières**
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+### PyPi
+Camel 2 KARAM est disponible sur PyPi, vous pouvez l'installer avec pip à l'aide de la commande suivante:
+```bash
+pip install camel2karam
+```
+Vous pouvez ensuite vérifier que l'installation s'est bien passée en lançant la commande `camel2karam --version`
+
+### Développement
+Pour installer Europarser en mode développement, vous pouvez cloner le dépôt git et installer les dépendances avec pip:
+```bash
+git clone https://github.com/CERES-Sorbonne/C2K.git
+cd C2K
+pip install -e .
+```
+
+## Usages
+#### Usage basique
+```python
+from pathlib import Path
+
+from camel2karam.converters import PartsMapping, Csv2Connlu, CsvSent2CsvTok, CsvSent2OneLetterTag, CsvTok2CsvSent, Jsonl2Connlu, Jsonl2Csv, Jsonl2WebAnno, Jsonl2Xml, TagsetConvert # Liste de tous les convertisseurs disponibles (et PartsMapping)
+
+input_folder = Path('/path/to/your/input')
+output_folder = Path('/path/to/your/output')
+
+converter = Jsonl2Connlu() # Changer le convertisseur ici
+converter.folder_converter(input_folder, output_folder)
+```
+
+Certains convertisseurs nécessitent des paramètres supplémentaires, vous pouvez les passer en argument du constructeur du convertisseur.
+Par exemple, les convertisseurs prenant des fichiers CSVs en entrée vous demanderont le mapping des colonnes : 
+```python
+from camel2karam.converters import Csv2Connlu
+c2c = Csv2Connlu()
+
+c2c.folder_converter(
+    "path/to/your/input",
+    "path/to/your/output",
+    word_col="word",
+    pos_col="pos",
+    pos2_col=None
+)
+```
+
+
+## License
+
+`camel2karam` est distribué sous les termes de la licence [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html).
