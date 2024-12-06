@@ -1,0 +1,7 @@
+main.py
+setup.py
+OMGD.egg-info/PKG-INFO
+OMGD.egg-info/SOURCES.txt
+OMGD.egg-info/dependency_links.txt
+OMGD.egg-info/requires.txt
+OMGD.egg-info/top_level.txt
