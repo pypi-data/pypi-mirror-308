@@ -1,0 +1,7 @@
+ros2_pkg_create/__init__.py,sha256=yBM4MUm9o3cT-3AHcBwPjLx0BSwRxFUQN48Q1Xrt9Sc,50
+ros2_pkg_create/__main__.py,sha256=_9uQC9GVQTzTZrr-z1gZyLLLoIxNudZ-c_3qKDcjENM,5416
+ros2_pkg_create-1.0.1.dist-info/METADATA,sha256=7EAz9CAyMKMnDWciLmW06xLj4F5xj6koUNaqEqgyR3I,9597
+ros2_pkg_create-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ros2_pkg_create-1.0.1.dist-info/entry_points.txt,sha256=ozqVlfQukKSdGhrMjtvGkYzEWUKG7KDpZ6AHY9vZkG4,66
+ros2_pkg_create-1.0.1.dist-info/top_level.txt,sha256=wPGbI-pKhWK1bNrOmTLna3VPz0YXQ_8M0hgCw93j9y4,16
+ros2_pkg_create-1.0.1.dist-info/RECORD,,
