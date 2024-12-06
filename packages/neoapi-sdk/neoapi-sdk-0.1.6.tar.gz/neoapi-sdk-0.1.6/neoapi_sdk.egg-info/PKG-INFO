@@ -1,0 +1,227 @@
+Metadata-Version: 2.1
+Name: neoapi-sdk
+Version: 0.1.6
+Summary: Integrate neoapi.ai LLM Analytics with your LLM pipelines.
+Home-page: https://github.com/neoapi-ai/neoapi-python
+Author: NeoAPI
+Author-email: NeoAPI <hello@neoapi.ai>
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+
+# NeoAPI SDK
+
+The official Python SDK for integrating neoapi.ai LLM Analytics with your LLM pipelines. Track, analyze, and optimize your Language Model outputs with real-time analytics.
+
+## Installation
+
+```bash
+pip install neoapi-sdk
+```
+
+## Quick Start Guide
+
+First, set your API key as an environment variable:
+```bash
+export NEOAPI_API_KEY="your-api-key"
+```
+
+### Basic Usage
+```python
+from neoapi import NeoApiClient, track_llm_output
+
+# The context manager handles client lifecycle automatically
+with NeoApiClient() as client:
+    # Track both prompt and response
+    @track_llm_output(
+        client=client,
+        prompt=lambda x: f"User query: {x}",  # Dynamic prompt tracking
+        metadata={"model": "gpt-4", "temperature": 0.7}
+    )
+    def get_llm_response(prompt: str) -> str:
+        # Your LLM logic here
+        return "AI generated response"
+    
+    # Use your function normally
+    response = get_llm_response("What is machine learning?")
+```
+
+### Async Support
+```python
+import asyncio
+from neoapi import NeoApiClient, track_llm_output_async
+
+async def main():
+    client = NeoApiClient()
+    await client.start_async()
+
+    try:
+        @track_llm_output_async(
+            client=client,
+            project="chatbot",
+            need_analysis_response=True,  # Get analytics feedback
+            prompt=lambda x: f"User query: {x}",  # Dynamic prompt tracking
+            metadata={"model": "gpt-4", "session_id": "async-123"}
+        )
+        async def get_llm_response(prompt: str) -> str:
+            # Your async LLM logic here
+            await asyncio.sleep(0.1)  # Simulated API call
+            return "Async AI response"
+        
+        response = await get_llm_response("Explain async programming")
+    finally:
+        await client.stop_async()
+
+# Run your async code
+asyncio.run(main())
+```
+
+### OpenAI Integration Example
+```python
+from openai import OpenAI
+from neoapi import NeoApiClient, track_llm_output
+
+def chat_with_gpt():
+    openai_client = OpenAI()  # Uses OPENAI_API_KEY env variable
+    
+    with NeoApiClient() as neo_client:
+        @track_llm_output(
+            client=neo_client,
+            project="gpt4_chat",
+            need_analysis_response=True,  # Get quality metrics
+            format_json_output=True,      # Pretty-print analytics
+            prompt=lambda x: f"GPT prompt: {x}",  # Track OpenAI prompts
+            metadata={
+                "model": "gpt-4",
+                "temperature": 0.7,
+                "session_id": "openai-123"
+            }
+        )
+        def ask_gpt(prompt: str) -> str:
+            response = openai_client.chat.completions.create(
+                messages=[{"role": "user", "content": prompt}],
+                model="gpt-4"
+            )
+            return response.choices[0].message.content
+
+        # Use the tracked function
+        response = ask_gpt("What are the key principles of clean code?")
+        print(response)  # Analytics will be logged automatically
+```
+
+## Key Features
+
+- 🔄 **Automatic Tracking**: Decorator-based output monitoring
+- 📝 **Prompt Tracking**: Track both input prompts and output responses
+- ⚡ **Async Support**: Built for high-performance async applications
+- 🔍 **Real-time Analytics**: Get immediate feedback on output quality
+- 🛠 **Flexible Integration**: Works with any LLM provider
+- 🔧 **Configurable**: Extensive customization options
+- 🔐 **Secure**: Environment-based configuration
+
+## Configuration Options
+
+### Environment Variables
+```bash
+# Required
+export NEOAPI_API_KEY="your-api-key"
+```
+
+### Client Configuration
+```python
+client = NeoApiClient(
+    # Basic settings
+    api_key="your-api-key",      # Optional if env var is set
+    check_frequency=1,           # Process every Nth output
+    
+    # Performance tuning
+    batch_size=10,               # Outputs per batch
+    flush_interval=5.0,          # Seconds between flushes
+    max_retries=3,              # Retry attempts on failure
+    timeout=10.0,               # Request timeout in seconds
+    
+    # Advanced options
+    api_url="custom-url",        # Optional API endpoint
+)
+```
+
+### Decorator Options
+```python
+@track_llm_output(
+    client=client,
+    
+    # Organization
+    project="my_project",        # Project identifier
+    group="experiment_a",        # Subgroup within project
+    analysis_slug="v1.2",        # Version or analysis identifier
+    
+    # Analytics
+    need_analysis_response=True, # Get quality metrics
+    format_json_output=True,     # Pretty-print analytics
+    
+    # Prompt Tracking
+    prompt="Static prompt",      # Static prompt text
+    # OR
+    prompt=lambda x: f"Dynamic: {x}",  # Dynamic prompt function
+    
+    # Custom data
+    metadata={                   # Additional tracking info
+        "model": "gpt-4",
+        "temperature": 0.7,
+        "session_id": "abc123"
+    }
+)
+```
+
+## Best Practices
+
+1. **Use Context Managers**: They handle client lifecycle automatically
+   ```python
+   with NeoApiClient() as client:
+       # Your code here
+   ```
+
+2. **Track Prompts**: Include input prompts for better analysis
+   ```python
+   @track_llm_output(
+       client=client,
+       prompt=lambda x: f"User: {x}"
+   )
+   ```
+
+3. **Group Related Outputs**: Use project and group parameters
+   ```python
+   @track_llm_output(
+       client=client,
+       project="chatbot",
+       group="user_support"
+   )
+   ```
+
+4. **Add Relevant Metadata**: Include context for better analysis
+   ```python
+   @track_llm_output(
+       client=client,
+       metadata={
+           "model": "gpt-4",
+           "temperature": 0.7,
+           "session_id": "abc123"
+       }
+   )
+   ```
+
+## Resources
+
+- 📚 [Full Documentation](https://www.neoapi.ai/docs)
+- 💻 [GitHub Repository](https://github.com/neoapi-ai/neoapi-python)
+- 🤝 [Support](mailto:hello@neoapi.ai)
+- 📝 [API Reference](https://www.neoapi.ai/docs/api)
+
+## License
+
+Apache License 2.0 - See [LICENSE](LICENSE) for details
