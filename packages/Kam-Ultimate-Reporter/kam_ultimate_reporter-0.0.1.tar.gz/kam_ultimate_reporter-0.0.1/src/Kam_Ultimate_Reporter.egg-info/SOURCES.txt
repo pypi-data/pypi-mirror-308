@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/Kam_Ultimate_Reporter/__init__.py
+src/Kam_Ultimate_Reporter/bibliographic.py
+src/Kam_Ultimate_Reporter/functions.py
+src/Kam_Ultimate_Reporter/main.py
+src/Kam_Ultimate_Reporter/report_generator.py
+src/Kam_Ultimate_Reporter.egg-info/PKG-INFO
+src/Kam_Ultimate_Reporter.egg-info/SOURCES.txt
+src/Kam_Ultimate_Reporter.egg-info/dependency_links.txt
+src/Kam_Ultimate_Reporter.egg-info/top_level.txt
