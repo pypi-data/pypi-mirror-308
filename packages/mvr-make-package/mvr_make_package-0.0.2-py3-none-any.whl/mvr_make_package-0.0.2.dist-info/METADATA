@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mvr-make-package
+Version: 0.0.2
+Summary: NSO MVR package generator
+Home-page: https://github.com/leninkhaidem/mvr-make-package
+License: MIT
+Keywords: nso,mvr,reconciliation,cisco,network,automation
+Author: Lenin Khaidem
+Author-email: leninkhaidem@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cookiecutter (>=2.6.0,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Project-URL: Documentation, https://leninkhaidem.github.io/mvr-make-package/
+Project-URL: Repository, https://github.com/leninkhaidem/mvr-make-package
+Description-Content-Type: text/markdown
+
+# MVR NSO Package Generator
+
+Refer to the documentation [here](https://leninkhaidem.github.io/mvr-make-package/)
