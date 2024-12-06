@@ -1,0 +1,37 @@
+.htmx-indicator {
+    opacity: 0;
+    /* transition: opacity 200ms ease-in; */
+}
+
+.htmx-request .htmx-indicator {
+    opacity: 1
+}
+
+.invalid {
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+
+.uiwiz-td-padding td {
+    padding: 0.2rem;
+}
+.uiwiz-td-padding th {
+    padding-right: 0.2rem;
+}
+.uiwiz-container-border-radius {
+    border-radius: 0.5rem;
+}
+
+.remove {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s var(--delay), opacity 0.5s ease-out;
+}
+
+.collapse-title, :where(.collapse > input[type="checkbox"]), :where(.collapse > input[type="radio"]) {
+    width: 100%;
+    padding: 1rem;
+    padding-inline-end: 3rem;
+    min-height: 2.4rem;
+    transition: background-color .2s ease-out;
+  }
