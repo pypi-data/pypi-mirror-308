@@ -1,0 +1,15 @@
+kegg_a_nog/__init__.py,sha256=iRQWh1m7xRLvlqJL-FD1JGuvIZ4G_mILlzpw9LlLmrk,23
+kegg_a_nog/data_processing.py,sha256=59isDwRL96KTslurP9kPzgxiAZ8UBm-h2lRw5NIhzEw,2418
+kegg_a_nog/data_processing_multi.py,sha256=tJiPdH1tGMo5mFjv0g2u6ITvLxxBPFXTn86G2Rww5rU,4476
+kegg_a_nog/grouped_heatmap.py,sha256=VhKpbP1oa5L2V9oBe5aGXfPv_yv5GVYMdYGGu6DkaqQ,15524
+kegg_a_nog/grouped_heatmap_multi.py,sha256=qDjzthXiute6i3I6lY6C9H2Ptump7QsOfUxKsmAF-Gk,8714
+kegg_a_nog/kegg_a_nog.py,sha256=bk7AiWCtiaWGsoHoMVHms0k0-jviVI1Tiy76sE65PDM,3344
+kegg_a_nog/kegg_a_nog_multi.py,sha256=GCtIEshfr5NkylFjBN1ubjs07GoiHnyklRl9iSwC8oY,3708
+kegg_a_nog/simple_heatmap.py,sha256=FidsrhgbuxWUOrUnNtuUjOEH0b4qb-w01iZ6Cfb4wPA,2478
+kegg_a_nog/simple_heatmap_multi.py,sha256=cLUG7EgYtcoCs1bIUe6y20kyurCSS_v_-AiwnWPNCbc,2483
+KEGGaNOG-0.5.5.dist-info/LICENSE,sha256=07rIfDwuy6ilP3H4fhTmWuABCSJ76fWIh_4h9GKffiE,1067
+KEGGaNOG-0.5.5.dist-info/METADATA,sha256=zQO-nENy1r2hdODdsZbNAsm07rCwB9M1ab4KGnN1kWA,4326
+KEGGaNOG-0.5.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+KEGGaNOG-0.5.5.dist-info/entry_points.txt,sha256=LQ8DmrBEimfhyPmsSeXRKIb6kWy7t3ZE5rQ6fXLUA3s,57
+KEGGaNOG-0.5.5.dist-info/top_level.txt,sha256=DaOIK7k19rwZUFqFrJUd8Ty7P27bwLX1_JYpVQ1F-PI,11
+KEGGaNOG-0.5.5.dist-info/RECORD,,
