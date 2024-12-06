@@ -1,0 +1,14 @@
+bigquery_etl_tools/__init__.py,sha256=_yTdjP3GwC0iXGd7zJl_ot0ierqKTTcFBbkJMrXSJ0s,4467
+bigquery_etl_tools/bigquery_utils.py,sha256=FzVmRx3PH6NWDcsHEwlTjGSiIDEY8Hysa_jJrzcGquY,1579
+bigquery_etl_tools/config.py,sha256=vX9ZQFAqYTwmzINN7phtHNNfksHnO1mU7pnbC7mvBdE,1223
+bigquery_etl_tools/file_utils.py,sha256=8OOFipW_lbFSBU7PWFkSnvvcbECiPlepJhuJyMXwd3Y,763
+bigquery_etl_tools/storage_utils.py,sha256=FX9ERSC8s4-cOLWMkoHSgVSWxi4dS6CmVTrW0oeAW8w,2966
+tests/__init__.py,sha256=eygwfmUDpPtPKWTZW5WHyUMmmq-sifFPdLyBjTuWvMw,115
+tests/test_core.py,sha256=9DOLwAkdmMi9NPG5dsHAAq7jIG_AE5hG3sW-kC2mQ0g,3383
+tests/test_file_utils.py,sha256=ERoccFkA56y9TK9UHPxwLm43KrAcY6p6rz6Nzs00ZrI,592
+tests/test_storage_utils.py,sha256=ydncRTBTd_R-akHw9AoF7KzXE7z8r2wK8ulh-Qc9G20,1051
+bigquery_etl_tools-0.0.1.dist-info/LICENSE.txt,sha256=xIeXxWb-xqsBhzOxgt1EfcBoLRrOlSbrR52Wq2N2o3o,1088
+bigquery_etl_tools-0.0.1.dist-info/METADATA,sha256=_Y2wTzWad-mxr073hwp_WwBRQemh6OPM2vFH-59zt38,1983
+bigquery_etl_tools-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bigquery_etl_tools-0.0.1.dist-info/top_level.txt,sha256=CTQ_XF5BG5bVXaNY-4HyobS9tw2v-68XC9ediYgFZVw,25
+bigquery_etl_tools-0.0.1.dist-info/RECORD,,
