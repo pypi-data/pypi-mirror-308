@@ -1,0 +1,2 @@
+[console_scripts]
+print-flag = dhpyramidsolver123.main:print_flag
