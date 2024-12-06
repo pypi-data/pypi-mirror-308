@@ -1,0 +1,10 @@
+ducktools/lazyimporter/__init__.py,sha256=hBlNzSijHPM1GjlCGnQNCjrgnDk7EECXvFVVQUvzRkw,27010
+ducktools/lazyimporter/__init__.pyi,sha256=bvmO014bWPz9_OW5n2WxYDtteivRNbqOAwYSVV913qs,5075
+ducktools/lazyimporter/capture.py,sha256=45exoaGdn2fK-7m4SJixvmYzUR9T3FtprpdwUK06Mdo,10234
+ducktools/lazyimporter/capture.pyi,sha256=Nu5nEfMEhZBb2OnStbYH7X2lNKj7WRCF_9b7-r5c0lE,1802
+ducktools/lazyimporter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ducktools_lazyimporter-0.7.0.dist-info/LICENSE.md,sha256=i-PZ4cjTkF94BKuWIjVY1aIbIz6QmPT_SdVJdo1YFH8,1075
+ducktools_lazyimporter-0.7.0.dist-info/METADATA,sha256=-grGw3Bz4SABuggvt3sUiMVniUanv1Yni2foZK9A1oE,13396
+ducktools_lazyimporter-0.7.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+ducktools_lazyimporter-0.7.0.dist-info/top_level.txt,sha256=uSDLtio3ZFqdwcsMJ2O5yhjB4Q3ytbBWbA8rJREganc,10
+ducktools_lazyimporter-0.7.0.dist-info/RECORD,,
