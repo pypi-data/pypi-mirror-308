@@ -1,0 +1,2 @@
+[console_scripts]
+mushpedia-scraper = mushpedia_scraper.cli:cli
