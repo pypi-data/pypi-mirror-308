@@ -1,0 +1,12 @@
+{
+  "name": "Driver",
+  "download": [
+    {
+      "version": "3.1.0",
+      "clinfo version": "20241031",
+      "filename": "musa_2.7.0-rc3-0822_Ubuntu_amd64.deb",
+      "url": "https://oss.mthreads.com/product-release/release_kuae1.3.0_musa3.1.0/External/musa_2.7.0-rc3-0822_Ubuntu_amd64.deb",
+      "sha256": "xxxx"
+    }
+  ]
+}
