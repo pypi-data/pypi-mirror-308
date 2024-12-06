@@ -1,0 +1,11 @@
+miniogre/__init__.py,sha256=v77T2Mkpzkn40VRqP3nx4sHLIT1GZfn9Oj18Ecp8U5I,125
+miniogre/actions.py,sha256=8OSUjkzu5_W1uzGcFq9LURHKGDmz9U0NAgXT6o8_bks,37869
+miniogre/config.py,sha256=_J5nHG8UyQsxJIKOfFaD0dN3cHALLP16fljpdeVZy0s,7105
+miniogre/constants.py,sha256=v4a8vU-AFVXFYpHk1D2bK8s2zKTEUTH4T4cfRDhiHus,16356
+miniogre/encodings/9b5ad71b2ce5302211f9c61530b329a4922fc6a4,sha256=Ijkht27pm96ZW3_3OFE-7xAPtR0YyTWXoRO8_-hlsqc,1681126
+miniogre/main.py,sha256=wDT4YoVAY7oVrL5JqZnksF-0Yb1NDGxfMpkyApwZI7w,5919
+miniogre-0.11.0b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+miniogre-0.11.0b0.dist-info/METADATA,sha256=EcnSBBHTj4XwiN4NgBmcZ8PvzyVsyKXRiaXiXUstaIQ,5981
+miniogre-0.11.0b0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+miniogre-0.11.0b0.dist-info/entry_points.txt,sha256=cC0KiF23U_cZr5-ydf7I6ZCiAYEySQiXLvUbGonQA0Q,46
+miniogre-0.11.0b0.dist-info/RECORD,,
