@@ -1,0 +1,9 @@
+Developer Guidelines:
+
+Edit cythonize_all_env.py to reflect your environment
+
+[Only if you are on MacOS and running for the first time, run "sudo xcodebuild -license" to accept the license]
+
+python cythonize.py build_ext --inplace
+
+# IMPORTANT: needs to be incremented everytime this script is run to prepare a build for the push
