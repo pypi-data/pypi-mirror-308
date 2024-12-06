@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+secretSanta/__init__.py
+secretSanta/email_utils.py
+secretSanta/logging.py
+secretSanta/party.py
+secretSanta/requirements.txt
+secretSanta/version.py
+secretSanta/inputs/guests.json
+secret_santa_email.egg-info/PKG-INFO
+secret_santa_email.egg-info/SOURCES.txt
+secret_santa_email.egg-info/dependency_links.txt
+secret_santa_email.egg-info/requires.txt
+secret_santa_email.egg-info/top_level.txt
+tests/test_party.py
