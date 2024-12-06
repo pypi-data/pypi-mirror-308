@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: llama-utils
+Version: 0.1.0
+Summary: 
+Keywords: llm,generativeai,chatbot,rag,natural language processing
+Author: Mostafa Farrag
+Author-email: moah.farag@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: llama-index (>=0.11.19,<0.12.0)
+Requires-Dist: llama-index-embeddings-azure-openai (>=0.2.5,<0.3.0)
+Requires-Dist: llama-index-embeddings-huggingface (>=0.3.1,<0.4.0)
+Requires-Dist: llama-index-llms-azure-openai (>=0.2.2,<0.3.0)
+Requires-Dist: llama-index-llms-ollama (>=0.3.4,<0.4.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# llama-utils
+LlamaIndex utility package
+
