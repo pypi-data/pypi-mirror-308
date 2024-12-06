@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Nlp-Code
+Version: 0.1
+Summary: A short description of the package
+Home-page: https://github.com/naveendgp/NlpCode
+Author: Naveen Sakthi
+Author-email: naveendgp@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Nlpanswer
+
+Nlpanswer is a Python package designed to efficiently process and analyze text data using natural language processing (NLP) techniques.
+
+## Features
+
+- **Feature 1**: Process text data efficiently.
+- **Feature 2**: Analyze text using NLP techniques.
+- **Feature 3**: Includes various NLP algorithms and utilities.
+
+## Installation
+
+You can install the Nlpanswer package using pip:
+
+```bash
+pip install Nlpanswer
