@@ -1,0 +1,11 @@
+semi_secret/__init__.py,sha256=hhs6O1fZRoJdiH8nAIhuk5st0U1ZP-jGSHlJQwkaGIU,139
+semi_secret/cli.py,sha256=70mqu1bZedPgizuSKjfKDqLHqjc6xYjuVR_1KBYeykU,1733
+semi_secret/crypto.py,sha256=SprjMUT0V6qvTG1HbyHNBnn1uNQDdyKcOu87bN6eZrw,861
+semi_secret/storage.py,sha256=xLObkXV2NpdntmfMmeMFYbTMkurM91XYrEfxkqen-ok,3114
+semi_secret/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+semi_secret-1.0.1.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+semi_secret-1.0.1.dist-info/METADATA,sha256=M-VkK5NHOLQOh6XToAke1vtphnnPQ3RSUE3WF9p1KRQ,2279
+semi_secret-1.0.1.dist-info/WHEEL,sha256=B03JAMGq6-VHSCrtDNma_J9UaPCNDvoQGYRXpzGHxgg,109
+semi_secret-1.0.1.dist-info/entry_points.txt,sha256=TMnY7aByC3MaoEyFnlKe9ojxGoj826crUEnwWWiudtI,53
+semi_secret-1.0.1.dist-info/top_level.txt,sha256=Ns4pmXCmDsg1crl61IjsHaykq7oDwr_tOQAdxv2bgVM,12
+semi_secret-1.0.1.dist-info/RECORD,,
