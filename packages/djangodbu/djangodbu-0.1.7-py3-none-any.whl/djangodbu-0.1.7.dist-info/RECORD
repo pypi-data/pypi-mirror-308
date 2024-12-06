@@ -1,0 +1,11 @@
+djangodbu/__init__.py,sha256=ZCP7KvzbUEckJZX58RhILO7NkjrmAh16scai3HUkmnk,142
+djangodbu/ago.py,sha256=d_wKWcfNqtLzHugDDOUz_FWkqOaOZQ9lFmBEV5mTX0c,578
+djangodbu/shell.py,sha256=bPrHTWp5pEwZT_k5O-O9JcPZcLNP2RFk2QQbgB2YTZw,55475
+djangodbu/sql.py,sha256=45E_dvPhtHq-ldhfN6WZdn7Di-oGPS_IYQKDVY9nDVI,9332
+djangodbu/terminalsize.py,sha256=-ldVxP25jFC3AsyN6HHGuF6cTGBtymBllYVn1FS3G1k,2789
+djangodbu/unihl.py,sha256=ak8D0uURkcLeHKs59OOQt6Xi9WIrUq5h0iAt14OVgm4,2242
+djangodbu/utils.py,sha256=KD-5mTbv0LHRVEpJ1wXl9wE8me_A-5itYDijOndO2U8,16787
+djangodbu-0.1.7.dist-info/METADATA,sha256=4fhQiVvdtgdvHscKKRWNc4Bg6hTAOtGvTgHc3IJ4m8k,4828
+djangodbu-0.1.7.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+djangodbu-0.1.7.dist-info/licenses/LICENSE.txt,sha256=l5q0ZCu8pqBGEufc3aUXKvBgKeXldlgDr8sB0RHfbuc,1065
+djangodbu-0.1.7.dist-info/RECORD,,
