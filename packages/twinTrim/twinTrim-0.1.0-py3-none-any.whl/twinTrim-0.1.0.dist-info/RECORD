@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_allFileMetadata.py,sha256=M3C5ffNJrIsPsvSn3uMujx30dV2XYGz7r3U-oKG90Vo,5539
+tests/test_fileFilter.py,sha256=hLNhOsu9twT_GKyWsS8VVm0VbirSDb9IVg4tlKf411A,4296
+tests/test_fileMetadata.py,sha256=RI1E36myDLnWjRLljO9Psd3YZiswIZB2BouK-xH4LOg,5875
+tests/test_flagController.py,sha256=KkJ0usoYrU8rWT7t8NfQxPd32jyu-rINkR69Orsd4tA,6837
+tests/test_utils.py,sha256=bZ2dyqKjcrJIEgtGDVDKyrtJDDmLQQzXJ9EOKpJEows,4502
+twinTrim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twinTrim/flagController.py,sha256=sw8tPRE85Z5G3cLWHcGv-5iUNkbQVFkwkElqbma5i7w,4138
+twinTrim/flags.py,sha256=AIrEXosrjsWS-Unp1Ql6X60UXsXld8G6B1zEvG-VP30,5441
+twinTrim/main.py,sha256=1-vTLu12l1HMq6-5oDmUEDf6ClVhL5teWcSmiZATf3o,69
+twinTrim/utils.py,sha256=dNXlwhfkEi2LuBw1iC5LWHa6NYFgHm7FSV5DrrgkouU,1506
+twinTrim-0.1.0.dist-info/LICENSE,sha256=UBBxul31FzVVn3qNilh8eDK97eq3ZQYF5gggCM5ncpM,1069
+twinTrim-0.1.0.dist-info/METADATA,sha256=baj_qeFMuzrwyU3ciHQguToUly4yJCaXW-18q_oxx1k,6405
+twinTrim-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+twinTrim-0.1.0.dist-info/entry_points.txt,sha256=i6VdUasRhvWmJBSc_oLO-yFJRdXY_oi-DHtGNLpDffg,47
+twinTrim-0.1.0.dist-info/top_level.txt,sha256=d8NuQeWCCghA4SqeWga4WgO78JBACHAEYW0fAhLjA3Q,15
+twinTrim-0.1.0.dist-info/RECORD,,
