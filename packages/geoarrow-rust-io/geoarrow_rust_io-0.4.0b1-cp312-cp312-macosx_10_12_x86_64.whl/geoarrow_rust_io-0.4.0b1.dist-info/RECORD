@@ -1,0 +1,9 @@
+geoarrow_rust_io-0.4.0b1.dist-info/METADATA,sha256=QgP-jFGUC_o8VV4qA2iEQmVt00nCCEbak_JNc0iWrpI,935
+geoarrow_rust_io-0.4.0b1.dist-info/WHEEL,sha256=i-50AaV3q8zthgSaPZNLbaFczY3NRyGbQDASQt3eucc,106
+geoarrow/rust/io/enums.py,sha256=EGKNmEgV6d0a5rRmGPWDMaf9xM9wZFQjYL0wGeoLM0c,972
+geoarrow/rust/io/_io.pyi,sha256=t2-L-XmosNg3pemQTnm45XkVGip2d0zz-5gN2A9YfGA,18595
+geoarrow/rust/io/__init__.py,sha256=W-xZpT6-o05T95TfVzDpYfa2sx3aeUiM9ydi101_R80,100
+geoarrow/rust/io/types.py,sha256=0F_MzgIZOGFVi71LrGQivZT61LuCRgH-ehES3x34lko,1308
+geoarrow/rust/io/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoarrow/rust/io/_io.cpython-312-darwin.so,sha256=MKdjEE5O-eIVo12H4x9yeRSGRcE6-0IJeDcGAQxagGs,29800720
+geoarrow_rust_io-0.4.0b1.dist-info/RECORD,,
