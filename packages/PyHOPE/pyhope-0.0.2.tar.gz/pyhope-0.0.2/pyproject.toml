@@ -1,0 +1,37 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "PyHOPE"
+authors = [
+    "Numerics Research Group (NRG) <numerics@iag.uni-stuttgart.de>",
+]
+version = "0.0.2"
+description = "Coming soon"
+license = "GPL-3.0"
+readme = "README.md"
+repository = "https://gitlab.iag.uni-stuttgart.de/flexi/codes/pyhope"
+keywords = ["PyHOPE", "mesh generator"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+
+[tool.poetry.dependencies]
+alive-progress = "*"
+h5py = "*"
+hilbertcurve = "*"
+meshio = "*"
+numpy = "*"
+packaging = "*"
+plotext = "*"
+pygmsh = "*"
+scipy = "*"
+gmsh = "*"
+
+[tool.poetry.scripts]
+# Establishes the entry point for the CLI
+pyhope = "pyhope.pyhope:main"
