@@ -1,0 +1,10 @@
+lambda_multiprocessing/__init__.py,sha256=NBDTnSvcBaW-NWcwKwu3QOikV1L8rtKlkPrLz0xTdgM,122
+lambda_multiprocessing/main.py,sha256=grBPmjIcBxxVUO5CTamgwf569cl_wtnY34evhg6gtwg,19621
+lambda_multiprocessing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lambda_multiprocessing/test_main.py,sha256=s1ppeqNG_DXwmRHsQY_uGT544D1bpM4tbJ0N1I-CR_Q,20899
+lambda_multiprocessing/timeout.py,sha256=x2shS-qAimtFr6Fkuxy3tBJBmTn4JGvy7hQpeCANX14,1375
+lambda_multiprocessing-1.0.dist-info/LICENSE.txt,sha256=p8EdmmdInBwyDaJIOGkmi-iPXBeiinZsPMq2vIQQN8Q,1070
+lambda_multiprocessing-1.0.dist-info/METADATA,sha256=f_aZOJg-MapLMvM8t78nw7RhIQUFT2XRYAXE7MzzUhQ,8391
+lambda_multiprocessing-1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+lambda_multiprocessing-1.0.dist-info/top_level.txt,sha256=gXafXAGzblT-l9iBnCBEgPq8vmQxMOhapxxlJcPBrkg,23
+lambda_multiprocessing-1.0.dist-info/RECORD,,
