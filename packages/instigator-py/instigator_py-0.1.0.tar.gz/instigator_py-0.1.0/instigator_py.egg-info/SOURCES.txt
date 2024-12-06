@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+instigator_py/__init__.py
+instigator_py/cli.py
+instigator_py.egg-info/PKG-INFO
+instigator_py.egg-info/SOURCES.txt
+instigator_py.egg-info/dependency_links.txt
+instigator_py.egg-info/requires.txt
+instigator_py.egg-info/top_level.txt

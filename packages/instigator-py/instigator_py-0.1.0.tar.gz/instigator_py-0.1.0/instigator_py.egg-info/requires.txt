@@ -1,0 +1,1 @@
+some_dependency>=1.0
