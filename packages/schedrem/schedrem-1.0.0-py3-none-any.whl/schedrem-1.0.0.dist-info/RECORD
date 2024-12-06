@@ -1,0 +1,12 @@
+schedrem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schedrem/__main__.py,sha256=uzC_PG_0za8-to7ahPAomnTe7sAG3a5e_ER9xUtcyHg,2399
+schedrem/config.py,sha256=8LItYH1unqsE8H083xFaJXhPPBTDESsDN57F7nj1zN0,5182
+schedrem/manager.py,sha256=FVL379tH8cD_mP8GkaCzYjb-UxAnETDP3TAIIZ76bio,7357
+schedrem/util.py,sha256=zyrBT5PZlJPwDdfoNmdJrtbNjSwh45O6cHFvvUDYnJw,5942
+schedrem/assets/alert.wav,sha256=7Odr-PAayIuNkGN-Md--QPDmAyf4guwhb4vTkRW_r0U,154630
+schedrem/assets/schedrem.ico,sha256=KEzJBBgl-kY4PBavEq5a6nNRO7RiiCm7MFFQXSpw5m8,9662
+schedrem-1.0.0.dist-info/METADATA,sha256=BfpwM0udNeLp4VrRAW4qhkeq1vVwxYg6zLiwBrF4akc,10265
+schedrem-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+schedrem-1.0.0.dist-info/entry_points.txt,sha256=9ZJLXk9-v7yHzlD2Z7uY7ne99d8ACuRmc_bbKJYAiKk,48
+schedrem-1.0.0.dist-info/licenses/LICENSE,sha256=feKwspZVQlFr1JFD6s6c1q4ao7MZP7DVnvot2kEA6kw,1050
+schedrem-1.0.0.dist-info/RECORD,,
