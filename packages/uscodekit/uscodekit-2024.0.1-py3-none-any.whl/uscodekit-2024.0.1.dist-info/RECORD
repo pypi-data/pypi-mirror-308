@@ -1,0 +1,13 @@
+uscodekit/__init__.py,sha256=2JSBf-QU756YK7vq0oVygXWR8wKzO1TNvK_wghZb-Mg,182
+uscodekit/configs.py,sha256=HF45RAI-Lf5zrGPeHKVMqQfLIwDrU88DXXDDpMmeI-8,709
+uscodekit/phone.py,sha256=VCNLtjpdXKsTkoFDbBZZF4OTGO2kPOpi2MvF_r3rOMU,7473
+uscodekit/services/geo.py,sha256=I3sd5wWAmMjZvZRuhpvrEsF2rYASmUEDAECe0McaRpY,3254
+uscodekit/services/naics.py,sha256=QEEhy70JeJirWOYGpELAhwcIE_MH0RS4fE3lGjk5QsI,5319
+uscodekit/shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uscodekit/shared/jsonfile.py,sha256=gzleeQ1wYxtYjya9DZtrgOLt95UUcOc63ZlqYZ6LuaY,1381
+uscodekit/zip_code.py,sha256=ixiPfFRsm4v9YVg8ihJMN2X4PAh2GarvrWVroeC6XKw,2977
+uscodekit-2024.0.1.dist-info/LICENSE,sha256=B2XbfVieFZMiHkY6KsGAQ1Tv_v0Us77pXuqKnic_mvM,1072
+uscodekit-2024.0.1.dist-info/METADATA,sha256=VU5YWX-azQ7NCG-vDNCYkDy4Z6OZxWD38k1vRUXdEcQ,1798
+uscodekit-2024.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+uscodekit-2024.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uscodekit-2024.0.1.dist-info/RECORD,,
