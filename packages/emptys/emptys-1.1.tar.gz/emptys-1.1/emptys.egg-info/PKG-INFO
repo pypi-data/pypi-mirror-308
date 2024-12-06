@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: emptys
+Version: 1.1
+Summary: It is a data preprocessing library
+Author: Mahesh
+Author-email: maheshaim82@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
