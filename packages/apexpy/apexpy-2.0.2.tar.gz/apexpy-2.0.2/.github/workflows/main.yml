@@ -1,0 +1,127 @@
+# This workflow will install Python dependencies, run tests and lint with a
+# variety of Python versions. For more information see:
+# https://help.github.com/actions/language-and-framework-guides/
+# using-python-with-github-actions
+
+name: pytest with flake8
+
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron: "0 3 * * 1"  # Runs 03:00 UT on Mondays 
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "windows-latest"]
+        python-version: ["3.9", "3.10", "3.11"]
+        include:
+          - python-version: "3.9"
+            os: "macos-13"
+          - python-version: "3.10"
+            os: "macos-13"
+          - python-version: "3.11"
+            os: "macos-latest"
+
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: 'x64'
+
+    - name: Install Windows-specific dependencies for non-pip install
+      if: ${{ matrix.os == 'windows-latest' }}
+      run: |
+           choco install ninja mingw
+           choco install rtools --no-progress
+           echo "c:\rtools40\ucrt64\bin;" >> $env:GITHUB_PATH
+           gfortran --version
+           pip install flake8 meson-python pytest pytest-cov pytest-xdist scipy
+           pip install "numpy>=1.19.5,<2"
+
+    - name: Install on Linux
+      if: ${{ matrix.os == 'ubuntu-latest' }}
+      run: pip install .[test]
+
+    - name: Install on MacOS-13
+      if: ${{ matrix.os == 'macos-13' }}
+      run: |
+          brew reinstall gcc@14
+          CC=/usr/local/bin/gcc-14 pip install .[test]
+
+    - name: Install on MacOS-Latest
+      if: ${{ matrix.os == 'macos-latest' }}
+      run: |
+          brew reinstall gcc@14
+          CC=/opt/homebrew/bin/gcc-14 pip install .[test]
+
+    - name: Install on Windows
+      if: ${{ matrix.os == 'windows-latest' }}
+      run: |
+          meson setup build
+          ninja -j 2 -C build
+          cd build
+          meson install --destdir=${{ env.Python3_ROOT_DIR }} 
+
+    - name: Test PEP8 compliance
+      run: flake8 . --count --show-source --statistics
+
+    - name: Evaluate complexity
+      run: flake8 . --count --exit-zero --max-complexity=10 --statistics
+
+    - name: Run unit and integration tests on Mac/Linux
+      if: ${{ matrix.os != 'windows-latest' }}
+      run: |
+           cd ..
+           coverage run -m pytest
+           coverage report
+           coverage xml
+           mv coverage.xml apexpy/.
+
+    - name: Run unit and integration tests on Windows
+      if: ${{ matrix.os == 'windows-latest' }}
+      run: |
+           cd ..
+           coverage run -m pytest
+           coverage report
+           coverage xml
+           mv coverage.xml apexpy\.
+
+    - name: Publish results to coveralls upon success
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        flag-name: run=${{ join(matrix.*, '-') }}
+        parallel: true
+        format: cobertura
+
+    - name: Create a Windows wheel
+      if: ${{ matrix.os == 'windows-latest' }}
+      run: |
+           mkdir dist
+           pip wheel . -w dist
+
+    - name: Upload wheels
+      uses: actions/upload-artifact@v3
+      with:
+         path: dist/*.whl
+         if-no-files-found: warn
+
+  finish:
+    name: Finish Coverage Analysis
+    needs: build
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Coveralls Finished
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        parallel-finished: true
