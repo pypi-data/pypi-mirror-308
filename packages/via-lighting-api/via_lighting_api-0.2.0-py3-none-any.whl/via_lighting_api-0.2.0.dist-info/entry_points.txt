@@ -1,0 +1,2 @@
+[console_scripts]
+via-lighting-api = via_lighting_api:main
