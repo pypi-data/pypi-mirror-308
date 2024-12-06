@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+simple_linear_regressionHiba/__init__.py
+simple_linear_regressionHiba/simple_linear_regressionHiba.py
+simple_linear_regressionHiba.egg-info/PKG-INFO
+simple_linear_regressionHiba.egg-info/SOURCES.txt
+simple_linear_regressionHiba.egg-info/dependency_links.txt
+simple_linear_regressionHiba.egg-info/top_level.txt
