@@ -1,0 +1,12 @@
+hdate-0.11.1.dist-info/METADATA,sha256=zTvx-apE2GqXjONsGlMFQIYjcd6otls9dOeL9aE0nbU,2662
+hdate-0.11.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+hdate-0.11.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+hdate-0.11.1.dist-info/licenses/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+hdate/__init__.py,sha256=wJpB-C0Ceb87FOPYwUm5cwblDNvXYuREJ5KTNmwJHLk,454
+hdate/converters.py,sha256=7Ua_7QzPKCsq1Wbn6yZXPbEb4-mjI0qq4V14HC_1tRg,6604
+hdate/date.py,sha256=ujtNo3_eIURYJkmliQp7hXJI2MUCzzKo0i0cBYM6e64,20652
+hdate/hebrew_date.py,sha256=rUYCRieEuvxMlsgaTWhBPVguCpSzXwP_ziuiNqWyGEI,404
+hdate/htables.py,sha256=rsPAOYKEox64kbi0WoQwXWsGLNOU-6anHPYWjuQedyo,29019
+hdate/location.py,sha256=E3NWL8L-zXDi3xCVleeEUY_7NGh-L-Cgvy4-jufzvfs,928
+hdate/zmanim.py,sha256=h-BUxBzGBeG0-voWD03qTK5SR3hFY07hApKLoshTbZ0,15356
+hdate-0.11.1.dist-info/RECORD,,
