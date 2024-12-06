@@ -1,0 +1,10 @@
+typenum/__init__.py,sha256=MBYGzx6OS4wlSvGCrXJQyUruf-iL11XJFEq9xbXFrtw,175
+typenum/core.py,sha256=Pm1p7XVpwOAg2SvsJqvge0HJ3Bj6EsAuYr_jFxtpb6I,3798
+typenum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typenum/pydantic/__init__.py,sha256=pzmd2EGCfI6VPpL6TRq4-jOyd8otpRgyttSYkh6MRiM,662
+typenum/pydantic/core.py,sha256=W9bIu3siqmkhF0JM-AlgBiyJFMZbWCRn3WJRJAAqnG4,6914
+typenum/pydantic/serialization.py,sha256=B4sEHvOyeVIpa1y9SV1gwf5xMrwKLPY7xLNVBv34pww,6021
+typenum-0.1.0.dist-info/LICENSE,sha256=puA__lPegsALCuAsYmfAqrLQzreBusiNoJBEWSwxKGE,1128
+typenum-0.1.0.dist-info/METADATA,sha256=gME8mHNlm2Jycb3MQj3rVAeScUvYYJRM6wuIm8dJFYI,1091
+typenum-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+typenum-0.1.0.dist-info/RECORD,,
