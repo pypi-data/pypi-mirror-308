@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aixploit
+Version: 0.1
+Summary: An AI redTeaming Python library named Aixploit
+Home-page: https://github.com/aintrustai-ai
+Author: aintrust
+Author-email: contact@aintrust.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
