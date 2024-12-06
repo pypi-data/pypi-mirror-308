@@ -1,0 +1,9 @@
+rezka_scraper/__init__.py,sha256=KIWxN4-ThrSIkCyNH8D-pRLyqaMPsdnWNNBcIso9TB8,41
+rezka_scraper/rezka_scraper.py,sha256=KIWlxHxLM7gqHtLWATN9L587Yx25on8eVYUqpo79aYc,3715
+test/__init__.py,sha256=CP501HCbIf5aEdY4qzKdT6DAMEW0KI7vh_QFJF4M3wI,47
+test/test_rezka_scraper.py,sha256=SDNbgyw7LT67ehxSIDXY2tXSprKPuCGnG3oRWpl56lU,3916
+rezka_scraper-0.0.3.dist-info/LICENSE,sha256=H83E5sM4DsFxocg0k5wybQk9HhTVIhIOi1nedaBePto,1066
+rezka_scraper-0.0.3.dist-info/METADATA,sha256=UE1QSaGlhQ05Q46UfEus7BAGs8D9WrfF2sB5C5-SPmk,4107
+rezka_scraper-0.0.3.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+rezka_scraper-0.0.3.dist-info/top_level.txt,sha256=nxaNP0BC5kMOP674ibmJUzIv-ZAu74pDy_pr-CyPQmk,19
+rezka_scraper-0.0.3.dist-info/RECORD,,
