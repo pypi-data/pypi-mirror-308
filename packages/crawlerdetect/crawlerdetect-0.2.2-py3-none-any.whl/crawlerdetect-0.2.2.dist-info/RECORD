@@ -1,0 +1,13 @@
+crawlerdetect/__init__.py,sha256=Zi8zDOks7gddYBpAgR6YzONcIUUS0X7dW1yze7-uJgY,170
+crawlerdetect/cli.py,sha256=xLpuj6QVyRNDxwHG76SOTz7-Ac9wQclTsbu8cBwa5Sw,163
+crawlerdetect/crawlerdetect.py,sha256=-nvZSo-mI1-nsckJ5IRXSnEYTs08xKetvs3wwOwNmvI,2028
+crawlerdetect/providers/__init__.py,sha256=p7FRqaPg5e1RKxdMawn9t1GYlOWoi4VR9kTow6jR6lE,213
+crawlerdetect/providers/base.py,sha256=0gScAw3_vgglX_fvRH4ZEEXTZIj8a9F5l0xW905khwQ,167
+crawlerdetect/providers/crawlers.py,sha256=z4dVYdT-vM8jZ1MsP4vgzc1w7cGuDfsPG8NNFEJSfq4,39986
+crawlerdetect/providers/exclusions.py,sha256=3MD15ZQ0TGzOvQqV_C4E9smCEH8j5nJ8b_IA1bhWORQ,1778
+crawlerdetect/providers/headers.py,sha256=s-nnuVc6mxjPH1AzvMihOhMLS2Cc5ABi36Kn6kPW10w,991
+crawlerdetect-0.2.2.dist-info/LICENSE,sha256=HKmQSIcYFwMi0Quf9FkmAJAH_21WZPlrrWaovED_n0s,1074
+crawlerdetect-0.2.2.dist-info/METADATA,sha256=IaiftCmaKFKyUEC_EIa4RuuV_6J1AJDT6XVQfyO2A30,4858
+crawlerdetect-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+crawlerdetect-0.2.2.dist-info/entry_points.txt,sha256=t1hdoEwFCnIetoy9EBdixmMK5JZAsTmrhDlhdQEtEwc,56
+crawlerdetect-0.2.2.dist-info/RECORD,,
