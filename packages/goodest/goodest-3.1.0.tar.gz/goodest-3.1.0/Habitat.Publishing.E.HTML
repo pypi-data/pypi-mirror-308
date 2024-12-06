@@ -1,0 +1,143 @@
+
+
+<pre>
+
+	<header>Publishing</header>
+		
+		
+	<header>linting</header>
+		(cd /goodest/venues/stages/goodest && pycycle --here) 
+		
+		
+	<header>status</header>
+		. /habitat/_controls/build_1.sh	
+		goodest_1 adventures demux_hap build_unverified_certificates
+		
+		#
+		#
+		#	Frontend Build: With or Without Sourcemaps
+		#
+		#
+		(cd /habitat/venues/frontend/vv_turbo/apps/web && the_version=3.0.0 bun run build --sourcemap inline)
+		du -h --max-depth=1 /habitat/venues/stages/goodest/frontend
+		
+		
+		(cd /habitat/venues/frontend/vv_turbo/apps/web && bun run licensing_csv)
+		(cd /habitat/venues/frontend/vv_turbo/apps/web && bun run licensing_details)
+		
+		goodest_1 ventures off
+		goodest_1 ventures on
+	
+		#
+		#	Business Mode:
+		#
+		#		change the "essence" "mode" to "business"
+		#			/habitat/venues/goodest_essence.py
+		#
+		
+		
+		#
+		#
+		#	Monitoring
+		#
+		#
+			#
+			#
+			#	Mongo Save
+			#		where: version == the pyproject version
+			#
+			goodest_1 adventures monetary saves-G2 save --databases '[ "goodest_inventory", "goodest_tract" ]' --version 3.0.0
+			
+			#
+			#	Should move the previous version to git repo,
+			#	thusly out of the PyPI module.
+			#
+			mv /habitat/venues/stages/goodest/__saves_G2/monetary_saves/3.0.0 /habitat/[saves]/monetary_saves/3.0.0
+			
+
+			#	
+			#	Backend Vows:
+			#
+			#		There might be issues with some of these and the multiple "goodest_essence.py"
+			#		Maybe need to be in "/habitat/_estate_1"
+			#
+			#		1. internal status
+			#		2. external API checks (NIH and USDA)
+			#		3a. mongo status
+			#		3b. restore data
+			#
+			python3 /habitat/venues/stages/goodest/__status/main/status.proc.py
+			python3 /habitat/venues/stages/goodest/__status/API/status.proc.py
+			python3 /habitat/venues/stages/goodest/__status/monetary_export_3/status.proc.py
+			
+			#
+			#
+			#	After the monetary_export_3 status check,
+			#	reimport the latest mongo save.
+			#
+			goodest_1 adventures monetary saves-G2 extract --version 2.5.0
+			
+			#
+			#	Frontend Vows:
+			#
+			# 		vite status
+			#			These aren't 100% perfect: 
+			#				Tests  7 failed | 24 passed (31)
+			#
+			(cd /habitat/venues/frontend/vv_turbo/apps/web && bun run status)
+		
+			#
+			#	Frontend E2E Vows:
+			#
+			#		selenium status (this is probably broken)
+			#			For now, these need to be run outside of a docker container.
+			#
+			python3 /habitat/venues/stages/goodest/__status/browser/status.proc.py
+		
+	
+	
+		#
+		#	increment the version number:
+		#		pyproject.toml
+		#
+	
+	<h3>publish</h3>
+	
+		#
+		#	temporarily ungitignore "the_build":
+		#		/habitat/venues/stages/goodest/frontend/.gitignore
+		#
+	
+		#
+		#	[ ] poetry auth
+		#
+		#	# For building sdist and maybe wheel
+		#		poetry build --verbos
+		#
+		(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat)
+		du -h --max-depth=1 /habitat/dist
+		du -h --max-depth=1 /habitat/dist/goodest-3.0.0/venues/stages/goodest
+		
+		poetry publish --verbose;
+		
+		#
+		#	gitignore "the_build":
+		#		/habitat/venues/stages/goodest/frontend/.gitignore
+		#
+		
+		git tag 3.0.0
+		
+		#
+		#	statistics
+		#
+		find . -type d -exec du -sh {} \;
+		du -h --max-depth=1 .
+
+
+
+
+
+</pre>
+
+
+
