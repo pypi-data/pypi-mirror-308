@@ -1,0 +1,11 @@
+pydantic-yaml
+pandas
+
+[dev]
+datamodel-code-generator
+pytest
+black
+
+[jupyter]
+ipykernel
+matplotlib
