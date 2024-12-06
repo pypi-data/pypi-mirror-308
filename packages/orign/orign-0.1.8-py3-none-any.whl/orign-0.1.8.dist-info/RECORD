@@ -1,0 +1,13 @@
+orign/__init__.py,sha256=Ovpam7il50uvrcMIq0TPHWahT4u7fOy_yySnxxbW5Qg,393
+orign/config.py,sha256=tFhdyh-MOfCTNRAh-YNJu3w1XNdwWudYrtadV4raqy4,1096
+orign/models.py,sha256=sxwp9KsTH5ttL284mrEB4TdIDI5zZ5qRWs6sHUj4_j4,5204
+orign/stream/aio/chat.py,sha256=IX6gSFODvad--d0KwrjhmDyvOf6nzNhw24BpXPZ5Bmo,4637
+orign/stream/aio/embedding.py,sha256=4vJ1-q6ayHTnJzGgXIrv4ELX7W0l6AKZj8sW2MLTc3k,3103
+orign/stream/aio/ocr.py,sha256=t0FHpJcE09p3D5jCG4Kx843Se0ni9inhqeP5g3MM7TY,3351
+orign/stream/chat.py,sha256=ccU61FrlwcAEDIf-HNfvHjOzoWYEqdpMxHxgIzUQVRk,6164
+orign/stream/embedding.py,sha256=G93d6L8FHqGG3DwdWeO0RfyBCHSXw7w6vmSohCwweR0,3343
+orign/stream/ocr.py,sha256=VkdXJ65EgRe115u4P5Aeau2gXzeAaVUiVzHSH7a9euY,3780
+orign-0.1.8.dist-info/LICENSE,sha256=_bymUM6OzAM2HtE_qv96MGIzZ_NPGgGBaniNb-ZH8u4,1065
+orign-0.1.8.dist-info/METADATA,sha256=bIVtJz5f14UZsNcmuU-miTLNhQh9lbPsz47NPKuYZWM,3675
+orign-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+orign-0.1.8.dist-info/RECORD,,
