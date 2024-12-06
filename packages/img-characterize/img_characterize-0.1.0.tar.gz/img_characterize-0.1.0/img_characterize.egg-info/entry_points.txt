@@ -1,0 +1,2 @@
+[console_scripts]
+img-characterize = characterize.cli:main
