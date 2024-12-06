@@ -1,0 +1,8 @@
+setup.py
+Blackamerxs.egg-info/PKG-INFO
+Blackamerxs.egg-info/SOURCES.txt
+Blackamerxs.egg-info/dependency_links.txt
+Blackamerxs.egg-info/requires.txt
+Blackamerxs.egg-info/top_level.txt
+blackamerxs/__init__.py
+blackamerxs/amer.py

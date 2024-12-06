@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Blackamerxs
+Version: 0.1
+Summary: A library to send files via Telegram bot
+Home-page: https://github.com/eergwg/Blackamerxs
+Author: Mohammed
+Author-email: wfwefsdfwe@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
