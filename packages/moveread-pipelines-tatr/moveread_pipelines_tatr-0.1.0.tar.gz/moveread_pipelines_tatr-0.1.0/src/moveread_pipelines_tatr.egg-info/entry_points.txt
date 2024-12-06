@@ -1,0 +1,2 @@
+[console_scripts]
+tatr = moveread.pipelines.tatr.cli:main

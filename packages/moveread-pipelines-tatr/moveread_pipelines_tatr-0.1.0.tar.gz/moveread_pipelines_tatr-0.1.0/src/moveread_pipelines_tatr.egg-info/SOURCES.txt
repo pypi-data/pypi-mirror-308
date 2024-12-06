@@ -1,0 +1,11 @@
+pyproject.toml
+src/moveread/pipelines/tatr/__init__.py
+src/moveread/pipelines/tatr/__init__.pyi
+src/moveread/pipelines/tatr/cli.py
+src/moveread/pipelines/tatr/pipeline.py
+src/moveread_pipelines_tatr.egg-info/PKG-INFO
+src/moveread_pipelines_tatr.egg-info/SOURCES.txt
+src/moveread_pipelines_tatr.egg-info/dependency_links.txt
+src/moveread_pipelines_tatr.egg-info/entry_points.txt
+src/moveread_pipelines_tatr.egg-info/requires.txt
+src/moveread_pipelines_tatr.egg-info/top_level.txt

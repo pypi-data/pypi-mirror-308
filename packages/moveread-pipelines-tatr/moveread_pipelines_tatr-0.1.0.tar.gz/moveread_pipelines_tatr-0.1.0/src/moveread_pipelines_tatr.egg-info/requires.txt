@@ -1,0 +1,12 @@
+pipeteer
+fastapi
+uvicorn
+pure-cv
+scoresheet-models
+
+[run]
+torch
+torchvision
+torchaudio
+moveread-tatr
+python-kv

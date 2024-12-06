@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-pipelines-tatr"
+version = "0.1.0"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Moveread Table Transformer pipeline"
+dependencies = [
+   "pipeteer", "fastapi", "uvicorn", "pure-cv", "scoresheet-models"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.optional-dependencies]
+run = ["torch", "torchvision", "torchaudio", "moveread-tatr", "python-kv"]
+
+[project.urls]
+repo = "https://github.com/moveread/pipelines.git"
+
+[project.scripts]
+tatr = "moveread.pipelines.tatr.cli:main"
