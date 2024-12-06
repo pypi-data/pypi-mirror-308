@@ -1,0 +1,13 @@
+mindee/__init__.py,sha256=KYm-0I4gONd6LeBa11CJW-ZrcfV1NpyWarIpKz84ijA,351
+mindee/__main__.py,sha256=ddxAM4nqveWXcgghY_1-cPxGgLQrs-1zBgKN2m_fnmk,67
+mindee/cli.py,sha256=HV7iiyNfzIhgOXUl4Ll0fr6ltH0YfMNCbNZhDBiDA5g,18676
+mindee/client.py,sha256=bhaVGTXh-votVF-mwWO2bzJhvED9UTEfztq8yuTA1Kc,20444
+mindee/logger.py,sha256=AfQKro1KoYoQfzZ-HBpEWuV6Onr6qd3Sfnv0a2JDb1U,185
+mindee/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindee/versions.py,sha256=QGjWqDecSbGT40sCqZz0_pea9YOx7MWdOfRBKUtfFno,468
+mindee-4.14.0.dist-info/LICENSE,sha256=-D7wu-sBJ9rvYKP9DgLmqtv6GRuQDKXHjWp8KRsXzEo,1071
+mindee-4.14.0.dist-info/METADATA,sha256=XQrhh1yxFlI58RUgHyA5hhEkSjKTZiREUu0WuZqBEok,9712
+mindee-4.14.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+mindee-4.14.0.dist-info/entry_points.txt,sha256=81vTSXSvE-gjvv-oGphmejvBrAncIuYAZZl7R6W1M_k,43
+mindee-4.14.0.dist-info/top_level.txt,sha256=ESQ7xPJicSWSskz16bcfFOkou380ikNk_2iDtKupUPM,7
+mindee-4.14.0.dist-info/RECORD,,
