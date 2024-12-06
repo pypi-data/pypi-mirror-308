@@ -1,0 +1,9 @@
+chj_saih/__init__.py,sha256=z8Hbw_RdPpsEor5Y2YG3I1u-VEC1sFmZVASXnsR1NbQ,149
+chj_saih/config.py,sha256=swT5gLzgm0rUkDpwttHqeWIDqx-QhEnkwa6UtOr7XUA,137
+chj_saih/data_fetcher.py,sha256=y4bk76D-vAAd_JIMLUyfcFenVoLi2dR1O_NiM5eMH-Q,9645
+chj_saih/sensors.py,sha256=jYyQB6M4ZzcZCzVVg7hkrYZeeVX4s_5uxfLFEBANbUc,4901
+chj_saih-0.1b0.dist-info/METADATA,sha256=IBv3CuwavPmhuBbzBTTAl_ecBgJ8PwOaNYAUMw1Ehfk,509
+chj_saih-0.1b0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+chj_saih-0.1b0.dist-info/entry_points.txt,sha256=T7fu2_r8asgKRdoSICXJxGuBfwaUpCuE2tV3yRNEl-A,42
+chj_saih-0.1b0.dist-info/top_level.txt,sha256=bwYlPrUPXfueqVlXtEm36_cmyKGXBHQTET_8Q0g_0r4,9
+chj_saih-0.1b0.dist-info/RECORD,,
