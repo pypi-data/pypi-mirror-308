@@ -1,0 +1,46 @@
+# Intermittent Lévy Processes
+
+**Version**: 0.1
+
+## Overview
+`intermittent_levy` is a toolkit for simulating and analyzing intermittent and Lévy processes. It includes:
+- **Simulations**: Generate synthetic trajectories for intermittent and Lévy processes.
+- **Statistical Moments**: Calculate theoretical and empirical moments.
+- **Optimization**: Fit model parameters to data.
+- **Classification**: Identify process types using statistical methods.
+
+## Installation
+Clone the repository and install with pip:
+```bash
+git clone https://github.com/shailendrabhandari/IntLevy-Processes.git
+cd IntLevy-Processes
+pip install -e .
+```
+
+## Usage
+### Example Scripts
+Run examples for simulating and analyzing processes:
+```bash
+python examples/run_intermittent_simulation.py
+python examples/run_levy_simulation.py
+```
+
+## Modules
+- **processes**: Simulate intermittent and Lévy processes.
+- **moments**: Calculate moments.
+- **optimization**: Fit model parameters.
+- **classification**: Statistical methods for identifying processes.
+- **utils**: Common helper functions.
+
+## Contributing
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit and push changes.
+4. Submit a pull request.
+
+## License
+Licensed under the [MIT License](https://github.com/shailendrabhandari/IntLevy-Processes/blob/main/LICENSE).
+
+## Contact
+- **Shailendra Bhandari** - shailendra.bhandari@oslomet.no
+- **Pedro Lencastre** - pedroreg@oslomet.no
