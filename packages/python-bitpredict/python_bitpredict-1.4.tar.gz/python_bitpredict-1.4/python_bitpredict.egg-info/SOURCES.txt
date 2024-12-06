@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+bitpredict/__init__.py
+bitpredict/api.py
+python_bitpredict.egg-info/PKG-INFO
+python_bitpredict.egg-info/SOURCES.txt
+python_bitpredict.egg-info/dependency_links.txt
+python_bitpredict.egg-info/top_level.txt
