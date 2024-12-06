@@ -1,0 +1,3 @@
+[console_scripts]
+hemopi2_classification = hemopi2.python_scripts.hemopi2_classification:main
+hemopi2_regression = hemopi2.python_scripts.hemopi2_regression:main
