@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+tests/test_magic8ball.py
+wolfsoftware.magic8ball.egg-info/PKG-INFO
+wolfsoftware.magic8ball.egg-info/SOURCES.txt
+wolfsoftware.magic8ball.egg-info/dependency_links.txt
+wolfsoftware.magic8ball.egg-info/top_level.txt
+wolfsoftware/magic8ball/__init__.py
+wolfsoftware/magic8ball/exceptions.py
+wolfsoftware/magic8ball/magic8ball.py
