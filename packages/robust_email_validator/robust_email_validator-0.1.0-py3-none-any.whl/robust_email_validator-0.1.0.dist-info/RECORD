@@ -1,0 +1,13 @@
+robust_email_validator/__init__.py,sha256=YeFSmsaNpTUZnf_nUw1g9ao2dqfhXKLtuUU8-Re56Yk,110
+robust_email_validator/config.py,sha256=lg-rfAO-YFbh-UME35kCap6rFhj67GUGIl13ddnoOC8,89
+robust_email_validator/schemas/email.py,sha256=XgaOdzDFV09A8w1SL9iYqE2Ik_V_Itk-74WBh5xgRGs,211
+robust_email_validator/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robust_email_validator/services/email_validator.py,sha256=auaegw9vl4dQX3bTMHbI8cclzbCBazEmMiULqA3J1pg,1791
+robust_email_validator/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robust_email_validator/utils/disposable_checker.py,sha256=DeW8Ja3habv8dPhLVn91t643uFIcrLnp8t8VLtmuiVU,919
+robust_email_validator/utils/dns_checker.py,sha256=uSIx74fHgcxZwoZtrMlPtedgUm6OM7R_7MtAhIK-tw4,414
+robust_email_validator-0.1.0.dist-info/LICENSE,sha256=neksmVqS2S_eoFzmlb9MRvMVejw8cMblKDVumf8GYUg,1064
+robust_email_validator-0.1.0.dist-info/METADATA,sha256=50U5xA3ZqiJUsA8rYB8t0DcHJbF1d9UefBRVfJjEVbw,3244
+robust_email_validator-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+robust_email_validator-0.1.0.dist-info/top_level.txt,sha256=EjGrUY5yIdWNwWFHgAK2nv0ioLTLf46hB4xQWWgwQdI,23
+robust_email_validator-0.1.0.dist-info/RECORD,,
