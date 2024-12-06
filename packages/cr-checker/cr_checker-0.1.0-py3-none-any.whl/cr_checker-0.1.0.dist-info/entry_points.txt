@@ -1,0 +1,2 @@
+[console_scripts]
+cr_checker = cr_checker.cr_checker:main
