@@ -1,0 +1,10 @@
+characterize/__init__.py,sha256=SQZp-n-Bpn_fZzdQk8VGGHKI8jYMutT-sVo4v8x7pG8,467
+characterize/cli.py,sha256=MdbgbdQIC8VjJOv_NdQ_-EWuy8LZe9chShsvCSu6jHM,7900
+characterize/core.py,sha256=PeakHdhrESt7V2odrqJLtWSNtwepIFQ3j31cjO76N8A,5406
+characterize/ranking.py,sha256=tsph5VtLhHKVHOcEG_Nxyv4q9IiqhCFYXVq1W0R6H0s,5153
+characterize/utils.py,sha256=6hdBr8vEo8C1fYYhsHMfoqi2HD0RdXZIMziQ6rLTUl0,7188
+img_characterize-0.1.0.dist-info/METADATA,sha256=Ly0yLEDGQ5hH_2Mp8nj0dcObqursbFp5qLzD4JoUUd4,1696
+img_characterize-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+img_characterize-0.1.0.dist-info/entry_points.txt,sha256=ZlykgNm3SAyo11W7gskTW1rlL3wwbyXcpzDwhPT_HGs,59
+img_characterize-0.1.0.dist-info/top_level.txt,sha256=9zf4MjBgEoSWKD_QkGlpriwjcTIQgctRzs5MAaQ059k,13
+img_characterize-0.1.0.dist-info/RECORD,,

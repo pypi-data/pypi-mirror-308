@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: img-characterize
+Version: 0.1.0
+Summary: A tool for converting images into character-based art
+Author: Augusto Rehfeldt
+Keywords: ascii art,image processing,character art
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=2.0.0
+Requires-Dist: opencv-python >=4.9.0.80
+Requires-Dist: opencv-python-headless >=4.9.0.80
+Requires-Dist: pathos >=0.3.2
+Requires-Dist: Pillow >=10.3.0
+Requires-Dist: tqdm >=4.64.0
+
+To run the command line version, for now use "python [path to characterize.py] (arguments)"
+
+Arguments:
+  - (-i, --i) -> input file paths MANY ["path1", "path2", ...]
+  - (-cr, --cr') -> character resolution parameter ONE (1 to 4000) [THe image will be automatically divided around the 800-1000                      characters resolution mark]
+  - (-cl, --cl) -> complexity level parameter ONE (1 to 40)
+  - (-l, --l) -> language parameter ONE [ascii, chinese, ...] [Available languages: "ascii", "arabic", "braille", "emoji", "chinese", "simple", "numbers+", "roman", "numbers", "latin", "hiragana", "katakana", "kanji", "cyrillic", "hangul"]
+  - (-d, --d) -> divide parameter ONE (true/false)
+  - (-c, --c) -> color parameter ONE (true/false)
+  - (-f, --f) -> format parameter MANY [png, jpg, txt]
+  - (-ec, --ec) -> empty character parameter ONE (true/false)
+  - (-o, --o) -> optimize parameter ONE (true/false) [for now, requires having FileOptimizer64.exe on C:/Program Files/FileOptimizer/]
+
+Pass them like "python [path to characterize.py] -i PATH -c false -o true" and so on. If you don't pass arguments, the program will ask you for the parameters using user inputs.
+
+---
+
+Output:
+
