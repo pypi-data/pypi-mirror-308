@@ -1,0 +1,7 @@
+setup.py
+isac_bot.egg-info/PKG-INFO
+isac_bot.egg-info/SOURCES.txt
+isac_bot.egg-info/dependency_links.txt
+isac_bot.egg-info/top_level.txt
+isac_package/__init__.py
+isac_package/main.py
