@@ -1,0 +1,8 @@
+passagemath_planarity-10.4.60.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_planarity-10.4.60.dist-info/RECORD,,
+passagemath_planarity-10.4.60.dist-info/METADATA,sha256=_AqZvhxqPtU8o35pIQfvl6g5QIlb4BLdcm0sqJcsW0c,2900
+passagemath_planarity-10.4.60.dist-info/WHEEL,sha256=JWdX-xdoZ9E3KLlFIfPtAdcMmIr404YbAASDpKs8yDw,147
+passagemath_planarity.libs/libplanarity-759d51c3.so.0.0.1,sha256=uSbFo5H8CkZQg80T5RR3eWuHuoXMzdV4xnOkrke3New,560617
+sage/all__sagemath_planarity.py,sha256=xifehXHxRokbMUSYHhrZrJTnE_F7bT9fBJYp-TWBO8o,89
+sage/graphs/all__sagemath_planarity.py,sha256=CYZamBzI163p8V2TX9c1rV2S9cGAOxEOhc82QQkpTvQ,48
+sage/graphs/planarity.cpython-39-x86_64-linux-gnu.so,sha256=3mwVB6C2v25WhhiwP6kJCQyCsICHfU_ekdgpZv_6r8I,473601
