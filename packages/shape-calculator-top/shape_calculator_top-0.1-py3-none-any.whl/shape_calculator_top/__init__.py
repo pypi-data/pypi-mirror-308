@@ -1,0 +1,1 @@
+from .calculator import area_circle, area_square
