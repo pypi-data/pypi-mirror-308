@@ -1,0 +1,8 @@
+README.md
+setup.py
+ComplexPy/ComplexPy.py
+ComplexPy/__init__.py
+ComplexPy.egg-info/PKG-INFO
+ComplexPy.egg-info/SOURCES.txt
+ComplexPy.egg-info/dependency_links.txt
+ComplexPy.egg-info/top_level.txt
