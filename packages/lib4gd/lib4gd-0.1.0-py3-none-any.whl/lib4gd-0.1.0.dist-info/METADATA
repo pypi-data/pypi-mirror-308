@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lib4gd
+Version: 0.1.0
+Summary: A comprehensive library for image handling and Google Drive file downloading.
+Home-page: https://github.com/4dg-ai/lib4gd
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles>=0.8.0
+Requires-Dist: google-auth>=2.0.0
+Requires-Dist: google-auth-oauthlib>=0.4.0
+Requires-Dist: google-auth-httplib2>=0.1.0
+Requires-Dist: google-api-python-client>=2.0.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: Pillow>=8.0.0
+Requires-Dist: asyncssh>=2.0.0
+
+# lib4gd
