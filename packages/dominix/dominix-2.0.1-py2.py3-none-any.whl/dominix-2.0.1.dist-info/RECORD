@@ -1,0 +1,13 @@
+dominix/__init__.py,sha256=qZ6CLTkIM6XUGeCvrWxODTC0KwHqdGHhuPK_IOq9FN8,88
+dominix/_version.py,sha256=HVx0XJJ9OYFWBBPBCUFYb8Nm43ChPg9GZLh_dkxh9qI,22
+dominix/document.py,sha256=cPJ0rY6EDfsrj218j1UpD6McynlB5vZGVSkQw7HEpjI,2252
+dominix/dom1core.py,sha256=dlcHBFuvDOy8vwL6b37OXMTEBrAE93qF4to41dMv8ow,1745
+dominix/dom_tag.py,sha256=_u96Z8cF9576M31ILgChd1j5SDq7AY0c2um1wob0Z7o,16689
+dominix/svg.py,sha256=QtolnsjtGrqTiXMOtMYOu1IeMMNxyffcuRBVptiQdes,9115
+dominix/tags.py,sha256=jd4eEqmsrcey16qLQhR5r173tGQhp4r2JxiLBTV1L_g,72793
+dominix/util.py,sha256=4Ov4D7WK8Oavk-NzUWs1kHXoV7unw3rt-vnuhDQNstQ,4322
+dominix-2.0.1.dist-info/LICENSE.txt,sha256=nM8mz-hF4OuLtYBT5HNm56traXrgEPdlCXjUtxt9H8E,7637
+dominix-2.0.1.dist-info/METADATA,sha256=9ATz8bCcj2hOhSWOidMLMr_6Hb3J6UrWZl0z9T6RSaE,14920
+dominix-2.0.1.dist-info/WHEEL,sha256=QyeGbh-t8WT0nt0_LNSP02jN-g4ymd1egk1U3osCGMU,110
+dominix-2.0.1.dist-info/top_level.txt,sha256=988DkFGeH6xWE_YHgXoLE8tlkLUCVMI6maWDAHCAkQw,8
+dominix-2.0.1.dist-info/RECORD,,
