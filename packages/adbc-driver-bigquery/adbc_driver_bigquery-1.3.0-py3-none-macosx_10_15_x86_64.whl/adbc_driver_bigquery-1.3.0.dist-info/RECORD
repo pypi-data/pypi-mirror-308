@@ -1,0 +1,12 @@
+adbc_driver_bigquery/_version.py,sha256=avFKGXEov3XiIGdF8aezN1kTMb7xtmdChBp7YUZPa48,1720
+adbc_driver_bigquery/dbapi.py,sha256=AZLLEl3HsQ1Q-XcX3wqSXMsJE16cafd2wb_vHd9mn5Q,3913
+adbc_driver_bigquery/__init__.py,sha256=Th1P8f_6JWx8XY5l_PgGnWyOO1FdYnA4u7ezqBpNSYo,10647
+adbc_driver_bigquery/libadbc_driver_bigquery.so,sha256=ByqyeQD88oNpIBuAUCBECUfVpOf1caJDwvKD2tePteQ,26717544
+adbc_driver_bigquery/_static_version.py,sha256=F3xggaVXlpLvzQbX0BxvR5LFdD-scQYRNnQ0Ij4TckE,1112
+adbc_driver_bigquery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adbc_driver_bigquery-1.3.0.dist-info/RECORD,,
+adbc_driver_bigquery-1.3.0.dist-info/WHEEL,sha256=icSlbS-aaB0t5Jb8mZH6KD7MFW8WjNjQLBLBai_voUs,107
+adbc_driver_bigquery-1.3.0.dist-info/NOTICE.txt,sha256=ork4LFdNC7tkM_o0ZVZZBsBc3mUQAnu9tKovmU3-w60,166
+adbc_driver_bigquery-1.3.0.dist-info/top_level.txt,sha256=gCxGksavJeHPPCV0hiAPFww8bjgSFI0Gs4Kxmcuc2p8,21
+adbc_driver_bigquery-1.3.0.dist-info/LICENSE.txt,sha256=P8cppMdJAPW1eGpF7gio4Cixap6a3TgeGNWc7xzAjxY,89409
+adbc_driver_bigquery-1.3.0.dist-info/METADATA,sha256=B7KO-XfSYEn_dniD2o9o1611QIBWtl-2_PmIKU5tCEE,3845
