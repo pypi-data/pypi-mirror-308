@@ -1,0 +1,15 @@
+mushpedia_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mushpedia_scraper/cli.py,sha256=txbfhgel7GNTGnav7Yayc4fni5NJA0Tt1BN8WkMpKYQ,442
+mushpedia_scraper/links.py,sha256=MOkeHpEiozvP6Um18JQu-_SxsmY-7HeNerJGsMP8gJk,19404
+mushpedia_scraper/adapters/__init__.py,sha256=Dd0CyIAeT8VW2pqcAmtY-eWGw7I5IH3E2gQbgLE2FKg,157
+mushpedia_scraper/adapters/file_system_page_reader.py,sha256=vrEIEt6yW_EjFzbx_fE6HRrsKURo6HY4Zgb0VKSRKXg,191
+mushpedia_scraper/adapters/http_page_reader.py,sha256=iig5ijsehE8iJDPBK86XjdVdJfeEUAisk5xG3MbGcok,204
+mushpedia_scraper/ports/__init__.py,sha256=4vADbvlPKklHVc7Jjr9Md_UdZzONtQr-56GT8zYf0x8,62
+mushpedia_scraper/ports/page_reader.py,sha256=mDbMN_4VTDw1z4-9WwdgLckS2eE41LoGknMB9ueJ4GQ,131
+mushpedia_scraper/usecases/__init__.py,sha256=je2GuyaA7XFxtKpgmRv5ohtpDYbPxcNjN4r_lEjN2mQ,76
+mushpedia_scraper/usecases/scrap_mushpedia.py,sha256=3qOll2PxRtAqJwEtLkIFgreCMqYKJucT8ICBzVFfMnQ,1734
+mushpedia_scraper-0.2.0.dist-info/METADATA,sha256=H-nYAp7SgYS29RBUC7AveY_jLyFzNbBTWDCekCIN7FM,1578
+mushpedia_scraper-0.2.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mushpedia_scraper-0.2.0.dist-info/entry_points.txt,sha256=Ow8fU-d3XNhCfP2cwvoLBkLcN16MOeY_1TSOnOqa3Oo,64
+mushpedia_scraper-0.2.0.dist-info/licenses/LICENSE,sha256=YL9gFsryYJjWMhvuJPcvfB9eqlIZM9_ubqvhZEaahKA,1085
+mushpedia_scraper-0.2.0.dist-info/RECORD,,
