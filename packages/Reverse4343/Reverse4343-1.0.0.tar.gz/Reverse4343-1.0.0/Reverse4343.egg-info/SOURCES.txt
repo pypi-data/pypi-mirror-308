@@ -1,0 +1,6 @@
+setup.py
+Reverse4343.egg-info/PKG-INFO
+Reverse4343.egg-info/SOURCES.txt
+Reverse4343.egg-info/dependency_links.txt
+Reverse4343.egg-info/top_level.txt
+empty_pkg/__init__.py
