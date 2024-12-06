@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "gatey-sdk"
+version = "0.0.11"
+description = "Python client for Gatey (https://gatey.florgon.com)"
+authors = ["Florgon Team and Contributors"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.28.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.3"
+
+[tool.ruff.lint]
+select = ["ALL"]
+fixable = ["ALL"]
+
+
+[tool.ruff]
+line-length = 120            # TODO(@kirillzhosul): Somehow migrate to 79 according to PEP-0008
+preview = false
+unsafe-fixes = false
+force-exclude = true
+fix = true
+respect-gitignore = true
+indent-width = 4
+target-version = "py38"
+required-version = ">=0.6.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
