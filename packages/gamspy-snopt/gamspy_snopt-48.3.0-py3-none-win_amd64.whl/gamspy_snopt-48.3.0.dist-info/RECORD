@@ -1,0 +1,8 @@
+gamspy_snopt/__init__.py,sha256=h5CCyKExrA4kmE7MnaXn7BEdT9vA0k84Dy9zmXJsjoo,357
+gamspy_snopt/optsnopt.def,sha256=AyUyL0CwqFnJdUsE5vDxxiIDeJO5nF66jv4rcjktg1c,6967
+gamspy_snopt/snlcclib64.dll,sha256=LPCycttMv9P_Qk3NA7mMagCXloauMsc9Em8eHuv2FVg,1420288
+gamspy_snopt/version.py,sha256=y5fnLahza0TN9pP5mtoaKF4ztBQWVYS2tXRKUmZFhu8,22
+gamspy_snopt-48.3.0.dist-info/METADATA,sha256=PZ7Qae8AKxR0mJGTdImeHWsRP5SlqzCpFuehlame2CI,62
+gamspy_snopt-48.3.0.dist-info/WHEEL,sha256=7kUuRJZXU1NWHXt75CfMHh6-y6C3u_DGs3nNOsM_Gfg,103
+gamspy_snopt-48.3.0.dist-info/top_level.txt,sha256=nZnA0uoys7BMIVU95a2187m-Cc0GjkYGFp1E1cEKujM,13
+gamspy_snopt-48.3.0.dist-info/RECORD,,
