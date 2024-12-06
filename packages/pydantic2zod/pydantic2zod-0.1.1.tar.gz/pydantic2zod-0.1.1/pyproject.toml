@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "pydantic2zod"
+version = "0.1.1"
+description = "Pydantic to zod declaration compiler."
+authors = ["Povilas Balciunas <povilas@argyle.com>"]
+documentation = "https://github.com/argyle-engineering/pydantic2zod"
+homepage = "https://github.com/argyle-engineering/pydantic2zod"
+repository = "https://github.com/argyle-engineering/pydantic2zod"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typing-extensions = "^4"
+libcst = ">=0.4, <2"
+networkx = ">=2, <4"
+typer = ">=0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-clarity = "^1.0.1"
+pytest-cov = ">=5,<7"
+taskipy = "^1.14.0"
+pydantic = ">=1.10, <3"
+snapshottest = "^0.6.0"
+pyright = "1.1.388"
+ruff = "^0.7.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "pytest --cov=pydantic2zod tests -vv"
+check_types = "pyright"
+fmt = "ruff check --select I --fix . && ruff format ."
+check_fmt = "ruff format --check ."
+lint = "ruff check ."
+
+[tool.pyright]
+include = ["pydantic2zod", "tests"]
+pythonVersion = "3.10"
+reportIncompatibleVariableOverride = true
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+reportUnusedImport = true
+reportDuplicateImport = true
+reportWildcardImportFromLibrary = true
+reportOptionalSubscript = true
+reportOptionalCall = true
+reportOptionalIterable = true
+reportOptionalContextManager = true
+reportUntypedBaseClass = true
+reportPrivateUsage = true
+reportUntypedClassDecorator = true
+reportConstantRedefinition = true
+reportInvalidTypeVarUse = true
+reportUnnecessaryIsInstance = true
+reportUnnecessaryCast = true
+reportUnnecessaryComparison = true
+reportAssertAlwaysTrue = true
+reportUnusedCoroutine = true
+reportMatchNotExhaustive = true
+
+[tool.ruff.lint]
+select = [
+    "W",     # pycodestyle
+    "F",     # pyflakes
+    "I",     # isort
+    "B",     # flake8-bugbear
+    "UP",    # pyupgrade
+    "RUF",   # ruff specific
+    "PIE",   # flake8-pie
+    "N",     # pep8-naming
+    "ASYNC", # flake8-async
+    "ICN",   # flake8-import-conventions
+    "INP",   # flake8-no-pep420
+    "TID",   # flake8-tidy-imports
+]
+# Yields false positives: "Mutable class attributes"
+ignore = ["RUF012"]
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+    "classmethod",
+    "pydantic.validator",
+    "pydantic.root_validator",
+]
