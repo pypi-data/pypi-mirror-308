@@ -1,0 +1,8 @@
+[console_scripts]
+factgenie = factgenie.bin.run:run
+
+[flask.commands]
+create_llm_campaign = factgenie.bin.run:create_llm_campaign
+info = factgenie.bin.run:info
+list = factgenie.bin.run:list_data
+run_llm_campaign = factgenie.bin.run:run_llm_campaign
