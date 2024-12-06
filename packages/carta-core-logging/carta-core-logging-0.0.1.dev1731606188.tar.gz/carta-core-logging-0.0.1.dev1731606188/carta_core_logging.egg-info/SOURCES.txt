@@ -1,0 +1,5 @@
+setup.py
+carta_core_logging.egg-info/PKG-INFO
+carta_core_logging.egg-info/SOURCES.txt
+carta_core_logging.egg-info/dependency_links.txt
+carta_core_logging.egg-info/top_level.txt
