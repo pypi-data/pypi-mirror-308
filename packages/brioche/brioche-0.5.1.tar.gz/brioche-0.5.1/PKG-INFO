@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: brioche
+Version: 0.5.1
+Summary: Python/Pandas library to do biomization analyses of pollen samples
+Home-page: https://github.com/petli/brioche
+Keywords: biome, biomization, plant function type, pollen
+Author: Peter Liljenberg
+Author-email: peter.liljenberg@gmail.com
+Requires-Python: >=3.10,<4
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pandas ~= 2.2
+Requires-Dist: gspread ~= 6.1
+Requires-Dist: numpy ~= 2.1
+
+# brioche
+
+Python/Pandas library to do biomization analyses of pollen samples
+
