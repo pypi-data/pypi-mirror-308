@@ -1,0 +1,11 @@
+kvh/kvh.py,sha256=aaGPBwYu6sWYinZKaIowHDmHHesZzDrW5orbOWcGJus,9731
+kvh/salut.kvh,sha256=b2iQj7D6UU7ndBVw_S7V0HP1gmICxKmpAtKPueMuaps,50
+kvh/LICENSE,sha256=mSXJ9EdrNNBX84MnAEOthu9CUyaCCtoP7VAHTKuvBmw,18756
+kvh/__init__.py,sha256=RyKzHZnhKVOF8vgTJZPNkQ3-G4xkhoXN6sXRyRQBC30,116
+kvh/version.txt,sha256=bX_0vgvn3r8S3FAGfxAFf12FgV74nlQrwpG8LIk8u7s,6
+kvh/ckvh.cpython-39-x86_64-linux-gnu.so,sha256=0knNIR_2yoRWGXDf9ph3QTODeNZfu3DnmA0lDbG8-gU,242441
+kvh-0.3.6.dist-info/RECORD,,
+kvh-0.3.6.dist-info/METADATA,sha256=Avd9PfI178bT5j3Vtzoy6UcmotbQojnchCzcxAuCAJs,1573
+kvh-0.3.6.dist-info/WHEEL,sha256=W6-d64ceDjOpgHMk8vqIOPAou0FRHECp8wHE5Ev4ijs,96
+kvh.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+kvh.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
