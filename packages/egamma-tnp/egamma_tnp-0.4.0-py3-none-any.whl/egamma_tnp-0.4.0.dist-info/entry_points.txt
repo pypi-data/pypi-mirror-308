@@ -1,0 +1,6 @@
+[console_scripts]
+dataset_query = scripts.dataset_query:main
+fetch_datasets = scripts.fetch_datasets:main
+merge_parquet = scripts.merge_parquet:main
+prepare_histograms = scripts.prepare_histograms:main
+run_analysis = scripts.run_analysis:main
