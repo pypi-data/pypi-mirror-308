@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+my_datetime_project/__init__.py
+my_datetime_project/my_datetime_project.py
+my_datetime_project.egg-info/PKG-INFO
+my_datetime_project.egg-info/SOURCES.txt
+my_datetime_project.egg-info/dependency_links.txt
+my_datetime_project.egg-info/top_level.txt

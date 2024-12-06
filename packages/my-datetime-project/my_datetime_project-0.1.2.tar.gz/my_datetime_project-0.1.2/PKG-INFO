@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: my_datetime_project
+Version: 0.1.2
+Summary: A simple Python project to print current date and time
+Author-email: zhouyx <zhouyx.100@gmail.com>
+Description-Content-Type: text/markdown
+
+# My Time Package
+
+A simple package to get the current time.
+
+## Installation
+
+```
+pip install my_datetime_project
+```
+
+## usage
+```
+from my_datetime_project import print_current_time
+print(print_current_time())
+# or
+import my_datetime_project 
+print(my_datetime_project.pct())
+
+```
