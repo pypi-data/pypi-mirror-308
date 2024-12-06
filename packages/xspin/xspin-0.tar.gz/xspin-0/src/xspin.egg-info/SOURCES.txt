@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xspin/__init__.py
+src/xspin/__init__.pyi
+src/xspin.egg-info/PKG-INFO
+src/xspin.egg-info/SOURCES.txt
+src/xspin.egg-info/dependency_links.txt
+src/xspin.egg-info/top_level.txt
