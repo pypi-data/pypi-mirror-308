@@ -1,0 +1,12 @@
+DockEva/DockEva.cpp,sha256=FN0DpexUVg8zcbYB4WZMUq3mThUYjWIFZjJXAo0iFuo,99748
+DockEva/Makefile,sha256=mLNFzjtrM5FnTvDbVoHWz8TC5L97-UdM4EC8VxzqaoE,74
+DockEva/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DockEva/main.py,sha256=1O_ES17pFRJzMn5WOa3Xj2Mlo2IZKlOk71z-zwF6bs0,1133
+DockEva/Linux/DockEva,sha256=2Wb2FDD9zbR_2nOzhvf2eo6fTi7hh5rl4823LsOh8qE,2447328
+DockEva/Windows/DockEva.exe,sha256=fgD7PotyR1gs0pGV3VNdClNxWfd712hcZoT6Fo-j_lY,347648
+DockEva/Windows/DockEva.obj,sha256=XY_XkgJF1_Jl9rmUCq-9L3hKqd6xLGTbMu-YLArFukU,803066
+dockeva-1.1.dist-info/METADATA,sha256=KB2F_h552f-HyZ3f291NzA2PYftrMAuPWMLv4PnHXSo,2493
+dockeva-1.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+dockeva-1.1.dist-info/entry_points.txt,sha256=rlH_-n166W_ZovJLgGUZ78kHIeiN1Vo3Az17uilbrb4,46
+dockeva-1.1.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+dockeva-1.1.dist-info/RECORD,,
