@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gemini_terminal/__init__.py
+gemini_terminal/main.py
+gemini_terminal.egg-info/PKG-INFO
+gemini_terminal.egg-info/SOURCES.txt
+gemini_terminal.egg-info/dependency_links.txt
+gemini_terminal.egg-info/entry_points.txt
+gemini_terminal.egg-info/requires.txt
+gemini_terminal.egg-info/top_level.txt
