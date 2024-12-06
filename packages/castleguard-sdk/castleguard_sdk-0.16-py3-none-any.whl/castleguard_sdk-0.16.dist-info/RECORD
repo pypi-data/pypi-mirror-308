@@ -1,0 +1,17 @@
+castleguard_sdk/__init__.py,sha256=WWbA99rzN1y_bUcKHH1AQwAV0jKnUu7V7S-X0NWgDbU,36
+castleguard_sdk/anonymizer.py,sha256=hfjgpOkRDBGx_5Ggwus-LHUFyRQzpHrCfLhzA8ooq4E,6874
+castleguard_sdk/auth.py,sha256=jXJC_DVgE9-aVENN_tCzJLwRGFT5-5VoeOLiF4bO5kU,1274
+castleguard_sdk/castleguard copy.py,sha256=cEeyPBIIAIEBTQBTgnM1SR31m3w2KHjhvCbJcW6YGAw,36594
+castleguard_sdk/castleguard.py,sha256=FyWR-vit4qa5Za3XVwsrgp-7oeEaYSth0sj959kKaqs,2954
+castleguard_sdk/castleguard_base.py,sha256=Y2d5dgoTYrXyNWOHlLo2WdO24Dfexjq-jZVWPbnkPDM,5451
+castleguard_sdk/chat.py,sha256=ELdj7rrZ_0lGevjyvrz7tXgCFo7RpqshlY3ELEIRal8,5193
+castleguard_sdk/collection.py,sha256=knVwN8D0oFwiUnzNpqhuUf9RE0Xm8NdNbqD8j7XEIFQ,3679
+castleguard_sdk/heartbeat.py,sha256=CXOpU1B7d35M2TlGg5flVubvKfBGk86nq9DgU8k_nl8,1803
+castleguard_sdk/ner.py,sha256=x5sAEjOVVS2QQ0Xcsqc044PyQD01IM_jKIil_ZM1UgM,1760
+castleguard_sdk/transcription.py,sha256=tj-66bzU3noHqB_hNGp0EUpJntw3ecU_dhacgtVxRsE,9707
+castleguard_sdk/translate.py,sha256=0v9ptORZX1k4JXhyLlSXOno5z_j_0FwFe8aPCz0UB4k,11143
+castleguard_sdk/vision.py,sha256=JYvlxAvMpqJhY0kWBzO-Wz4C7mNPc_He0KTEYdJdICw,1305
+castleguard_sdk-0.16.dist-info/METADATA,sha256=rE6kLl-DZGAfqlxoqjplVpLybmtEdeJPvrGgycPVRPw,19902
+castleguard_sdk-0.16.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+castleguard_sdk-0.16.dist-info/top_level.txt,sha256=kg5284PzONkY-fA0Givm7yJFSXBiE67ls2u4q43mW-s,16
+castleguard_sdk-0.16.dist-info/RECORD,,
