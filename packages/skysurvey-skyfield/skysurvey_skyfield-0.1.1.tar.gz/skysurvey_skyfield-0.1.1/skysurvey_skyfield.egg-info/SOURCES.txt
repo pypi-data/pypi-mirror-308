@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skysurvey_skyfield/__init__.py
+skysurvey_skyfield/random.py
+skysurvey_skyfield/utils.py
+skysurvey_skyfield.egg-info/PKG-INFO
+skysurvey_skyfield.egg-info/SOURCES.txt
+skysurvey_skyfield.egg-info/dependency_links.txt
+skysurvey_skyfield.egg-info/not-zip-safe
+skysurvey_skyfield.egg-info/requires.txt
+skysurvey_skyfield.egg-info/top_level.txt

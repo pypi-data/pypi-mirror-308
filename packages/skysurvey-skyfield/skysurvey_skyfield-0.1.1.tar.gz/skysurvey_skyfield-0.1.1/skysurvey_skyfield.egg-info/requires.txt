@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+skysurvey>=0.16.3
+
+[docs]
+nbsphinx
+
+[tests]
+pytest
+coverage
