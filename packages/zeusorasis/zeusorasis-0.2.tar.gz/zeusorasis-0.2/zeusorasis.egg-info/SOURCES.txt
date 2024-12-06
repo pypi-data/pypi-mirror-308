@@ -1,0 +1,8 @@
+setup.py
+zeusorasis/__init__.py
+zeusorasis/process_batch_code.py
+zeusorasis/process_sightpro_code.py
+zeusorasis.egg-info/PKG-INFO
+zeusorasis.egg-info/SOURCES.txt
+zeusorasis.egg-info/dependency_links.txt
+zeusorasis.egg-info/top_level.txt
