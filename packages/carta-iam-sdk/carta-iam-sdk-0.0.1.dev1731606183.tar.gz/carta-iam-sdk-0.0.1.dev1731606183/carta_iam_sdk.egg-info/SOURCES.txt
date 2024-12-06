@@ -1,0 +1,5 @@
+setup.py
+carta_iam_sdk.egg-info/PKG-INFO
+carta_iam_sdk.egg-info/SOURCES.txt
+carta_iam_sdk.egg-info/dependency_links.txt
+carta_iam_sdk.egg-info/top_level.txt
