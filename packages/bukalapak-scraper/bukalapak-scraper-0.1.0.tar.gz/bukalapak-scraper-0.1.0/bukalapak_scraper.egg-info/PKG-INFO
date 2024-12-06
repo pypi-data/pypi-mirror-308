@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bukalapak-scraper
+Version: 0.1.0
+Summary: A Python library to scrape product prices from Bukalapak.
+Home-page: https://github.com/yourusername/bukalapak-scraper
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bukalapak Scraper
+
+A Python library to scrape product prices from Bukalapak.
+
+## Installation
+
+To install the package:
+
+```bash
+pip install bukalapak-scraper
+```
+

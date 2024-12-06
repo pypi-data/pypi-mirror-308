@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+bukalapak_scraper.egg-info/PKG-INFO
+bukalapak_scraper.egg-info/SOURCES.txt
+bukalapak_scraper.egg-info/dependency_links.txt
+bukalapak_scraper.egg-info/requires.txt
+bukalapak_scraper.egg-info/top_level.txt
+bukalapak_scrapper/__init__.py
+bukalapak_scrapper/scrapper.py
