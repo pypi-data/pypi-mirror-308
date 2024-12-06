@@ -1,0 +1,2 @@
+Version: 1.9.0
+Arguments: ['C:\\Users\\arashbm\\AppData\\Local\\Temp\\1\\cibw-run-hi8gbfap\\cp312-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\arashbm\\AppData\\Local\\Temp\\1\\cibw-run-hi8gbfap\\cp312-win_amd64\\repaired_wheel', 'C:\\Users\\arashbm\\AppData\\Local\\Temp\\1\\cibw-run-hi8gbfap\\cp312-win_amd64\\built_wheel\\reticula-0.13.0-cp312-abi3-win_amd64.whl']
