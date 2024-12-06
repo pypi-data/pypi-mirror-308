@@ -1,0 +1,6 @@
+pandas~=2.2.2
+setuptools~=75.1.0
+matplotlib~=3.9.2
+
+[dev]
+pytest>=6.2.5
