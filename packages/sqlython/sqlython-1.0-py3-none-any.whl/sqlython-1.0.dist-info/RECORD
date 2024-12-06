@@ -1,0 +1,9 @@
+sqlython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlython/builder.py,sha256=HiUiADj4xh5ClwnFMeTHVcYhM_DULKE6Aq2CVHatYnk,3768
+sqlython/filter.py,sha256=1-OEw2NEA3CpoOFN6_ip9a8VWvS3x9QVRfh7qyNxAME,1729
+sqlython/model.py,sha256=MpYIpFRYVYYkNq_WAXCCF3juYgKFpkeM58ZZq_w7fmM,21528
+sqlython-1.0.dist-info/LICENSE,sha256=2y9JQa0Jy-166nfo1lCUl_vz_-Unbv4FFqbxXRBkZDM,1065
+sqlython-1.0.dist-info/METADATA,sha256=ejWr6P7QVLEXqckUZh25L78A8jXvI4TeMI8r8ko9w3c,731
+sqlython-1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+sqlython-1.0.dist-info/top_level.txt,sha256=UydeIBu1m-nLXjNoOAU7spzmkQOMJeL1Rof0SXSTDfk,9
+sqlython-1.0.dist-info/RECORD,,
