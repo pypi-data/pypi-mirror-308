@@ -1,0 +1,8 @@
+setup.py
+MeuPrimeiroPypi.egg-info/PKG-INFO
+MeuPrimeiroPypi.egg-info/SOURCES.txt
+MeuPrimeiroPypi.egg-info/dependency_links.txt
+MeuPrimeiroPypi.egg-info/top_level.txt
+primeiroPypi/__init__.py
+primeiroPypi/primeiroPypi.py
+tests/test_primeiroPypi.py
