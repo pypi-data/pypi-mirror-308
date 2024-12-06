@@ -1,0 +1,3 @@
+numpy
+cosmosis
+cobaya>=3.5.1
