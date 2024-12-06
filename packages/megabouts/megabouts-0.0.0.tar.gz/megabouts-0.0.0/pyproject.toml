@@ -1,0 +1,78 @@
+[project]
+name = 'megabouts'
+authors = [
+  {name = "Adrien Jouary", email = "adrien.jouary@research.fchampalimaud.org"}
+  ]
+dynamic=['version']
+description = "Megabouts: a toolbox to quantify zebrafish locomotion"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+classifiers = [
+ 
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3"
+]
+#requires-python = "~=3.10"
+
+dependencies = ['ipykernel',
+                'h5py',
+                'matplotlib',
+                'numpy==1.26.4',
+                'pandas',
+                'scipy',
+                'scikit-image',
+                'pybaselines',
+                'scikit-learn',
+                'torch',
+                'sporco']
+
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "nbmake",
+]
+dev = [
+    "pre-commit",
+    "ruff"
+]
+docs = [
+      "build",
+      "twine",
+      "setuptools",
+      "sphinx",
+      "sphinx_design",
+      "pydata-sphinx-theme",
+      "sphinx-autobuild",
+      "myst-nb",
+      "sphinx-autoapi",
+      "sphinxcontrib-video",
+      "sphinxcontrib-jupyter",
+      "sphinx-togglebutton",
+      "sphinx-gallery"
+]
+
+
+[project.urls]
+Homepage = "https://megabouts.ai"
+Documentation = "https://megabouts.ai"
+Repository = "https://github.com/orger-lab/megabouts.git"
+Issues = "https://github.com/orger-lab/megabouts/issues"
+
+[tool.setuptools]
+packages = ["megabouts",
+            "megabouts.config",
+            "megabouts.tracking_data","megabouts.tracking_data.example_dataset",
+            "megabouts.preprocessing",
+            "megabouts.segmentation",
+            "megabouts.pipeline",
+            "megabouts.sparse_coding",
+            "megabouts.classification",
+            "megabouts.utils"]
+
+[tool.setuptools.package-data]
+"megabouts.tracking_data.example_dataset" = ["*.csv"]
+"megabouts.classification" = ["*.pt"]
