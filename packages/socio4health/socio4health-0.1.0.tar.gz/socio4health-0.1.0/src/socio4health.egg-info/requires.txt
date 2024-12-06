@@ -1,0 +1,14 @@
+pandas
+requests
+Scrapy
+tqdm
+pyreadstat
+py7zr
+matplotlib
+numpy
+
+[dev]
+check-manifest
+
+[test]
+coverage
