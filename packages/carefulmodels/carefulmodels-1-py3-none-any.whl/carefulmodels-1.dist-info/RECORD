@@ -1,0 +1,15 @@
+carefulmodels/__init__.py,sha256=qrSlxAEVVtHe0kdBhWjVcSsnsyDg8ItKocFDRmEWr1o,218
+carefulmodels/inference.py,sha256=VArxRtObygS_vIku_z61_XSC07vrkg28v6_y2J0lLO8,2928
+carefulmodels/models.py,sha256=x0zoA8zjoB0sQN6OHR_xIWAfBoNw-G7qEj4RwcuQ6f8,2218
+carefulmodels/models/w-banding-fp16.onnx,sha256=qfNKw_c0Uiz-1alr-LpSFC6iLOynCR4CpharNxrOGks,826335
+carefulmodels/models/w-h264yuv-fp16.onnx,sha256=fDG6Ak2u6sX1LjIHxXiRj_jToBS2iBe2FmSNMaGDcwc,826335
+carefulmodels/models/w-mpeg2-fp16.onnx,sha256=tsqnu-3PhsrjmjALN4FkeeJ0OkDIjpJycu5UEXl1xNs,826335
+carefulmodels/models/w-noise-fp16.onnx,sha256=NyQGFrXoMXlEgTaERnDmv-WTNxzguP5A_0XlyzsEsCM,822875
+carefulmodels/models/w-noiseuv2-fp16.onnx,sha256=a9wSNBI2vV3rR3QVnUaebl96wcL3VUs6EYMd-1WJBw8,826335
+carefulmodels/models/w-noisey-fp16.onnx,sha256=1Dt6qDyL6BequMbMphCrIwe0UfugPb8zgqQwpGoO-R8,215669
+carefulmodels/models/w-scale-fp16.onnx,sha256=08kXmsBVwJisgmr4fluZi0DsnP1Kdhotydy5Swl-Vs4,822875
+carefulmodels/models/w-sharp-fp16.onnx,sha256=7Ltz_7atbaRA01yAI1D9h4A2g5Fdz6zdm5zXe0bvSog,468919
+carefulmodels-1.dist-info/METADATA,sha256=g1jtIJd8oBpsNx03l61KMxo57sEpu128Aln67800_ME,1338
+carefulmodels-1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+carefulmodels-1.dist-info/top_level.txt,sha256=0xrtT-rU3p8VIgdIqebPBltl9kvRyeX6N8DcdVDPneM,14
+carefulmodels-1.dist-info/RECORD,,

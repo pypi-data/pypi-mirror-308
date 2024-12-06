@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: carefulmodels
+Version: 1
+Summary: careful models
+Home-page: https://github.com/wwww-wwww/carefulmodels
+Author: wwww-wwww
+Author-email: wvvwvvvvwvvw@gmail.com
+Maintainer: wwww-wwww
+Maintainer-email: wvvwvvvvwvvw@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: vapoursynth
+
+# carefulmodels
+
+## banding
+
+```python
+carefulmodels.banding(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## h264
+
+```python
+carefulmodels.h264(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## mpeg2
+
+```python
+carefulmodels.mpeg2(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## noisey
+
+Luma only
+
+```python
+carefulmodels.noisey(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## noiseuv
+
+Chroma only
+
+```python
+carefulmodels.noiseuv(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## scale
+
+```python
+carefulmodels.scale(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
+
+## sharp
+
+```python
+carefulmodels.sharp(clip: vs.VideoNode, strength: float | vs.VideoNode, backend: vsmlrt.Backend)
+```
