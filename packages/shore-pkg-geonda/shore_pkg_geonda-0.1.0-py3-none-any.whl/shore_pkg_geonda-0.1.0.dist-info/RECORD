@@ -1,0 +1,13 @@
+shore/__init__.py,sha256=Qokhy_OZ8Xe-I6ksRnwN6HZ71RvBNwQR-HLCVRVp8FA,36668
+shore/calculation.py,sha256=je9go2j8Lnx5vDMe__vGWZjpQD0BAscYyQm_4_a9TcA,29589
+shore/gview.py,sha256=Q0LWwmysMVI_uzsMpWt8zQI6iuDaxy3E-hOoKEi6V7M,26949
+shore/input_manager.py,sha256=2vzvgcTYybEV6dJMje9rKOR1Cbv0Y8P_AC4cCFUJbvc,31424
+shore/jobcreator.py,sha256=ij8zOpKqGh-zqR8FKm6-dtzeta29eRx7SNXhLTc8A2E,1220
+shore/remote.py,sha256=p94PgIwWSiSfFTl9iwkH9G_Ve_1oDxMB_RtH0Lboj1k,15179
+shore/results.py,sha256=rAoxfF-we2EcEEfbdsb0N9mfRdbfScRiAE_luoHjJ58,10481
+shore/workflow_graph.py,sha256=Pr6pcqpOKFs6ssoJXnm0cv5JfjwWrDJne0H6izRi_w0,6767
+shore_pkg_geonda-0.1.0.dist-info/LICENSE,sha256=pBD79W33wgp1j7N27A2f-86BycN-vhz4AAfy3KV67qU,1074
+shore_pkg_geonda-0.1.0.dist-info/METADATA,sha256=OyRVHvvRp60lq2yJr75Hc7BO6OYVq0mklZhZnkprH4M,874
+shore_pkg_geonda-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+shore_pkg_geonda-0.1.0.dist-info/top_level.txt,sha256=T36apFs4pV66iyiMxV6ui-jfvjYq5VqWNZz8mgPNPJE,6
+shore_pkg_geonda-0.1.0.dist-info/RECORD,,
