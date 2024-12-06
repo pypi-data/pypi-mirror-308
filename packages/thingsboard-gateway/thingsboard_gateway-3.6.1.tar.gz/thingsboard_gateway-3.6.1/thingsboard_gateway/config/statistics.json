@@ -1,0 +1,12 @@
+[
+  {
+    "attributeOnGateway": "usbDevices",
+    "command": "python -c \"import platform, subprocess; cmd = {'Linux': 'lsusb', 'Windows': 'powershell Get-PnpDevice -Class USB', 'Darwin': 'system_profiler SPUSBDataType'}.get(platform.system()); subprocess.run(cmd, shell=True) if cmd else print('Unsupported OS')\"",
+    "timeout": 10
+  },
+  {
+    "attributeOnGateway": "connectedSerialDevices",
+    "command": "python -c \"import platform, subprocess, json; os_type = platform.system(); cmd = None; \\ if os_type == 'Linux': cmd = 'dmesg | grep -Eo \\\"/dev/tty[A-Za-z0-9]*\\\" | sort -u'; \\ elif os_type == 'Windows': cmd = 'powershell \\\"Get-WMIObject Win32_SerialPort | Select-Object DeviceID, Name | ConvertTo-Json\\\"'; \\ elif os_type == 'Darwin': cmd = 'ls /dev/tty.*'; \\ if cmd: \\   result = subprocess.run(cmd, shell=True, text=True, capture_output=True).stdout.strip().splitlines(); \\   if os_type == 'Windows': print(result[0]); \\   else: print(json.dumps({'serial_devices': result})); \\ else: print(json.dumps({'error': 'Unsupported OS'}))\"",
+    "timeout": 10
+  }
+]

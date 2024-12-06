@@ -1,0 +1,8 @@
+{
+  "${serialNumber}": {
+    "connectorId": "9c0c071b-2965-4349-91b7-11fb1582a12a",
+    "connectorName": "test",
+    "deviceType": "${sensorType}",
+    "renaming": null
+  }
+}
