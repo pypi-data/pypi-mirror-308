@@ -1,0 +1,8 @@
+requests
+oauthlib
+python-dateutil
+
+[docs]
+sphinx
+pydata-sphinx-theme
+myst-parser
