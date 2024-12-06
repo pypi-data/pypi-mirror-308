@@ -1,0 +1,11 @@
+ovos_solver_openai_persona/__init__.py,sha256=qNsVMMjJIUZhwsc-w0zo3mCljf1fpLULDjBywe0Y74Y,3411
+ovos_solver_openai_persona/dialog_transformers.py,sha256=oE2-yyisVzwfPu0nCWYSik-tp-5qkmpMvaWmO_V9FV4,1206
+ovos_solver_openai_persona/engines.py,sha256=0zFuQEBr0mmY4D_SLzYIfL7YTYKSh-l9GjtRTd6TuN8,10037
+ovos_solver_openai_persona/version.py,sha256=wdVgkuhn2vsKIBDWh4BWX-ty9Qvis6l75xmZiblrFuw,114
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/LICENSE,sha256=jG2zQEdRNt88EgHUWPpXVWmOrOduUQRx7MnYV9YIPaw,11359
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/METADATA,sha256=kiQms928KDR5FcXoDrmck1kmj71EdkPFLxEx6FhazWI,2384
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/entry_points.txt,sha256=w8yDWfoRNJIUkRMcd0m5xtP6YI-lAEZY-RKhZOcwgJ0,238
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/top_level.txt,sha256=K5l5fn2bnwRnMQB66jMz8GSC1yYP2-NPwslt6Wlhd3M,27
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ovos_solver_openai_persona_plugin-1.0.0a1.dist-info/RECORD,,
