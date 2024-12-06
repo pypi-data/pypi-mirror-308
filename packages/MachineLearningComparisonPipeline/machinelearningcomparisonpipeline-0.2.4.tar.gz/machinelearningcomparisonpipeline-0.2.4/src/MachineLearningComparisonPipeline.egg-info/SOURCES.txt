@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/MachineLearningComparisonPipeline.egg-info/PKG-INFO
+src/MachineLearningComparisonPipeline.egg-info/SOURCES.txt
+src/MachineLearningComparisonPipeline.egg-info/dependency_links.txt
+src/MachineLearningComparisonPipeline.egg-info/requires.txt
+src/MachineLearningComparisonPipeline.egg-info/top_level.txt
+src/machine_learning_comparison_pipeline/__init__.py
+src/machine_learning_comparison_pipeline/pipeline.py
