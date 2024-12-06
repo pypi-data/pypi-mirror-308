@@ -1,0 +1,35 @@
+<form method="post">
+  <label for="name">
+    Name: &lt;input type=&#x27;text&#x27; name=&#x27;name&#x27;
+    id=&#x27;name&#x27; value=&#x27;&#x27; required/&gt;
+  </label>
+  <label for="age">
+    Age:
+    <input
+      type="number"
+      name="age"
+      value=""
+      required
+      step="1"
+      min="20"
+      max="39"
+      id="age"
+    />
+  </label>
+  <label for="gender">
+    Gender:
+    <select required="required" name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Non Binary">Non Binary</option>
+      <option selected value="Other">Other</option>
+    </select>
+  </label>
+  <input
+    type="submit"
+    value="Submit"
+    formmethod="POST"
+    formaction="/submit"
+    method="post"
+  />
+</form>
