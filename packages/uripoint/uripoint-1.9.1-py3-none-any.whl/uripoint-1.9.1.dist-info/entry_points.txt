@@ -1,0 +1,2 @@
+[console_scripts]
+uripoint = uripoint.main:main
