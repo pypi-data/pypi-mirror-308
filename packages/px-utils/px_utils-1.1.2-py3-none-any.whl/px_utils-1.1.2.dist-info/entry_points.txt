@@ -1,0 +1,5 @@
+[console_scripts]
+pxcp = px_utils.cli:cp
+pxmkdirs = px_utils.cli:mkdirs
+pxmv = px_utils.cli:mv
+pxrm = px_utils.cli:rm
