@@ -1,0 +1,6 @@
+airflow_providers_impala_to_rdb/ImpalaToRDBSyncOperator.py,sha256=GvvOcDPQYdZrISAoD2HpzwNHEPgVPupofqFpJDvBeMc,7095
+airflow_providers_impala_to_rdb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_providers_impala_to_rdb-0.1.3.dist-info/METADATA,sha256=xupubGYB83PyFpepX7D0q4-sApS4Vb2hbbzwy7ypmFY,371
+airflow_providers_impala_to_rdb-0.1.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+airflow_providers_impala_to_rdb-0.1.3.dist-info/top_level.txt,sha256=qdc8DLGmd3LZGdtwgoRXgswCFJhAR4GCwcnb09yuxf4,32
+airflow_providers_impala_to_rdb-0.1.3.dist-info/RECORD,,
