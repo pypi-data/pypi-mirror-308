@@ -1,0 +1,5 @@
+setup.py
+data_platform_common_new2.egg-info/PKG-INFO
+data_platform_common_new2.egg-info/SOURCES.txt
+data_platform_common_new2.egg-info/dependency_links.txt
+data_platform_common_new2.egg-info/top_level.txt
