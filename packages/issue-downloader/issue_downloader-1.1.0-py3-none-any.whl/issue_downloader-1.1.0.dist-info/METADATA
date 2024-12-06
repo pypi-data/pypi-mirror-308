@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: issue-downloader
+Version: 1.1.0
+Summary: Downloads issues to Markdown files
+Author-email: Viktor Rimark <python@rxbc.se>
+Project-URL: repository, https://github.com/vikahl/issue-downloader
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: typer-slim
+Provides-Extra: dev
+Requires-Dist: issue-downloader[test]; extra == "dev"
+Requires-Dist: issue-downloader[types]; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: respx; extra == "test"
+Provides-Extra: types
+Requires-Dist: mypy; extra == "types"
+
+# issue-downloader
+
+Cli tool and library to download issues to Markdown file.
+
+The motivation/use case is to have files that can be archived and referenced
+even if the repositories themselves are removed or merged.
+
+The script currectly supports Github.
+
+## Usage
+
+```
+$ issue-downloader github --help
+Usage: issue-downloader github [OPTIONS]
+
+  Sync issues to local files
+
+Options:
+  --token TEXT                Github PAT token, can be obtained by 'gh auth
+                              token'  [required]
+  --org TEXT                  Download issues for this organisation.Mutually
+                              exclusive to --repo.
+  --repo TEXT                 Specify repos to download form. Specified in the
+                              form org/repo
+  --date [%Y-%m-%d]           Download issues updated on or after this date.
+  --resume / --no-resume      Resume from last downloaded date.  [default: no-
+                              resume]
+  --archived / --no-archived  Include archived repositories  [default:
+                              archived]
+  --closed / --no-closed      Include closed issues  [default: closed]
+  --save-dir PATH             Directory to save the issues  [default:
+                              /home/viktora/vikahl/issue-downloader]
+  --formats [MD|JSON]         Limit formats to save. Defaults to MD & JSON
+                              formats if not set
+  --url TEXT                  URL to the Github api  [default:
+                              https://api.github.com/]
+  --help                      Show this message and exit.
+```
