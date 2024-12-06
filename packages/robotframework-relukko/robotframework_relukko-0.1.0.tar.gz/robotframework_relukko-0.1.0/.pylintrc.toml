@@ -1,0 +1,14 @@
+[tool.pylint.main]
+# Files or directories to be skipped. They should be base names, not paths.
+ignore = ["LICENSE", "notes.md", "pyproject.toml", "version.py",
+          "README.md", "relukko.html", "get_version.py",]
+
+[tool.pylint.basic]
+# Naming style matching correct module names.
+# module-naming-style = "snake_case"
+module-naming-style = "PascalCase"
+
+[tool.pylint.format]
+# Regexp for a line that is allowed to be longer than the limit.
+# ignore-long-lines = "^\\s*(# )?<?https?://\\S+>?$"
+ignore-long-lines = "^.*\\[https?://.*?\\|.*?\\]\\.?$"
