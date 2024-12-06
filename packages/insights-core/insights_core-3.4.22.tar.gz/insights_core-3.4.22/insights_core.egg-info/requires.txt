@@ -1,0 +1,293 @@
+lockfile
+cachecontrol[redis]
+cachecontrol
+redis
+defusedxml
+six
+cachecontrol[filecache]
+requests
+
+[:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[:python_version > "2.7"]
+jinja2
+
+[:python_version >= "2.7"]
+pyyaml
+
+[:python_version >= "3.12"]
+setuptools
+
+[client]
+lockfile
+cachecontrol[redis]
+cachecontrol
+redis
+defusedxml
+oyaml
+six
+cachecontrol[filecache]
+python-gnupg==0.4.6
+requests
+
+[client-develop]
+cachecontrol[redis]
+redis
+oyaml
+six
+cachecontrol[filecache]
+python-gnupg==0.4.6
+mock==2.0.0
+requests
+lockfile
+wheel
+cachecontrol
+defusedxml
+
+[client-develop:python_version < "2.7"]
+pytest==3.0.6
+flake8==2.6.2
+coverage==4.3.4
+pytest-cov==2.4.0
+pyyaml<=3.13,>=3.10
+
+[client-develop:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[client-develop:python_version == "2.7"]
+pytest~=4.6.0
+
+[client-develop:python_version > "2.7"]
+jinja2
+
+[client-develop:python_version >= "2.7"]
+pyyaml
+coverage
+flake8
+pytest-cov
+
+[client-develop:python_version >= "3"]
+pytest
+
+[client-develop:python_version >= "3.12"]
+setuptools
+
+[client:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[client:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[client:python_version > "2.7"]
+jinja2
+
+[client:python_version >= "2.7"]
+pyyaml
+
+[client:python_version >= "3.12"]
+setuptools
+
+[cluster]
+lockfile
+cachecontrol[redis]
+pandas
+cachecontrol
+redis
+defusedxml
+six
+cachecontrol[filecache]
+ansible
+colorama
+requests
+
+[cluster:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[cluster:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[cluster:python_version > "2.7"]
+jinja2
+
+[cluster:python_version >= "2.7"]
+pyyaml
+
+[cluster:python_version >= "3.12"]
+setuptools
+
+[develop]
+cachecontrol[redis]
+oyaml
+MarkupSafe==2.0.1
+mock==2.0.0
+docutils
+colorama
+lockfile
+wheel
+defusedxml
+pandas
+redis
+six
+cachecontrol[filecache]
+ansible
+python-gnupg==0.4.6
+sphinx_rtd_theme
+Pygments
+nbsphinx
+requests
+Sphinx
+cachecontrol
+jedi
+ipython<8.7.0
+
+[develop26]
+cachecontrol[redis]
+pandas
+redis
+oyaml
+six
+cachecontrol[filecache]
+ansible
+python-gnupg==0.4.6
+mock==2.0.0
+colorama
+requests
+lockfile
+wheel
+cachecontrol
+defusedxml
+
+[develop26:python_version < "2.7"]
+pytest==3.0.6
+flake8==2.6.2
+coverage==4.3.4
+pytest-cov==2.4.0
+pyyaml<=3.13,>=3.10
+
+[develop26:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[develop26:python_version == "2.7"]
+pytest~=4.6.0
+
+[develop26:python_version > "2.7"]
+jinja2
+
+[develop26:python_version >= "2.7"]
+pyyaml
+coverage
+flake8
+pytest-cov
+
+[develop26:python_version >= "3"]
+pytest
+
+[develop26:python_version >= "3.12"]
+setuptools
+
+[develop:python_version < "2.7"]
+flake8==2.6.2
+coverage==4.3.4
+pyyaml<=3.13,>=3.10
+pytest==3.0.6
+pytest-cov==2.4.0
+
+[develop:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[develop:python_version == "2.7"]
+pytest~=4.6.0
+
+[develop:python_version > "2.7"]
+jinja2
+
+[develop:python_version >= "2.7"]
+coverage
+flake8
+pyyaml
+pytest-cov
+
+[develop:python_version >= "3"]
+pytest
+
+[develop:python_version >= "3.12"]
+setuptools
+
+[docs]
+Pygments
+nbsphinx
+sphinx_rtd_theme
+MarkupSafe==2.0.1
+colorama
+docutils
+ipython<8.7.0
+Sphinx
+jedi
+
+[linting]
+python-gnupg==0.4.6
+oyaml
+requests
+
+[linting:python_version < "2.7"]
+flake8==2.6.2
+
+[linting:python_version >= "2.7"]
+flake8
+
+[openshift]
+lockfile
+cachecontrol[redis]
+cachecontrol
+openshift
+redis
+defusedxml
+six
+cachecontrol[filecache]
+requests
+
+[openshift:python_version < "2.7"]
+pyyaml<=3.13,>=3.10
+
+[openshift:python_version <= "2.7"]
+jinja2<=2.11.3
+
+[openshift:python_version > "2.7"]
+jinja2
+
+[openshift:python_version >= "2.7"]
+pyyaml
+
+[openshift:python_version >= "3.12"]
+setuptools
+
+[optional]
+python-logstash
+python-cjson
+watchdog
+python-statsd
+
+[testing]
+oyaml
+python-gnupg==0.4.6
+mock==2.0.0
+requests
+
+[testing:python_version < "2.7"]
+pytest==3.0.6
+coverage==4.3.4
+pytest-cov==2.4.0
+
+[testing:python_version == "2.7"]
+pytest~=4.6.0
+
+[testing:python_version >= "2.7"]
+coverage
+pytest-cov
+
+[testing:python_version >= "3"]
+pytest
