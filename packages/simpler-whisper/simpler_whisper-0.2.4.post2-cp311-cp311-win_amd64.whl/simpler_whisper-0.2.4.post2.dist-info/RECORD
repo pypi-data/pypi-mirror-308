@@ -1,0 +1,11 @@
+simpler_whisper/__init__.py,sha256=PC1GVXO2pPEB0y9Xc9JwLz-eua5spR-GJE2yGGfKrac,698
+simpler_whisper/_whisper_cpp.cp312-win_amd64.pyd,sha256=r94vKZ-j5-hHfof8_EY_92DfhzFARHWHmRX7_DlOT_o,249856
+simpler_whisper/ggml.dll,sha256=-7WE3zJutHB4kJllR85JYicGyY5oWK2GS4jSxceFRZU,647680
+simpler_whisper/libopenblas.dll,sha256=vV-VGskrM-94-r3lubvARa8z8r5OHJkN74n0U6n7Fz8,50915048
+simpler_whisper/whisper.dll,sha256=cdRlz5ncBaFONK6gCbh8N07e_cgVTWdmTGkltDU-LvI,397824
+simpler_whisper/whisper.py,sha256=xQmf0TsRZ-UR2SjtleczYRj3aERZg9tQ9eAY4j6HRK4,7719
+simpler_whisper-0.2.4.post2.dist-info/LICENSE,sha256=ZdKO47ebfnWaGROwiCF8GwSDmFokJ7_YPqpB-HEc9ds,1090
+simpler_whisper-0.2.4.post2.dist-info/METADATA,sha256=Ass1-T-Y9W3-IntTZ4ZcRCpdeKCpPtakKCvLyu4e2jI,3937
+simpler_whisper-0.2.4.post2.dist-info/WHEEL,sha256=my4ecDMeTkOe_7aeLBL_U0dqitPtfIx-YnzDbUy-lzw,101
+simpler_whisper-0.2.4.post2.dist-info/top_level.txt,sha256=Yk8UtXqBZduTEFDCj7GDo-vWHE8x7j5CfpTacQR1XA0,16
+simpler_whisper-0.2.4.post2.dist-info/RECORD,,
