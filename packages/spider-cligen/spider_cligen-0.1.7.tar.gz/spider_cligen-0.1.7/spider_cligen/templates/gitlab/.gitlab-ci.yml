@@ -1,0 +1,20 @@
+image: python:3.12
+
+stages:
+  - lint
+  - test
+
+before_script:
+  - pip install -r requirements.txt
+  - pip install flake8 pytest
+
+lint:
+  stage: lint
+  script:
+    - flake8 .
+
+test:
+  stage: test
+  script:
+    - pytest --cov=my_project tests/
+  coverage: /TOTAL.+\d+\%/
