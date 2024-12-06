@@ -1,0 +1,9 @@
+[project]
+name = "simplifier"
+version = "0.0.0"
+description = "Coming soon"
+authors = [{name = "austinjp"}]
+
+[project.urls]
+Homepage = "https://github.com/scout-ac/simplifier"
+Repository = "https://github.com/scout-ac/simplifier.git"

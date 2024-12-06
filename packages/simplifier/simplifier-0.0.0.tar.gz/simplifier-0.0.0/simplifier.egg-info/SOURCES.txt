@@ -1,0 +1,6 @@
+pyproject.toml
+simplifier/__index__.py
+simplifier.egg-info/PKG-INFO
+simplifier.egg-info/SOURCES.txt
+simplifier.egg-info/dependency_links.txt
+simplifier.egg-info/top_level.txt
