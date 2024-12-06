@@ -1,0 +1,15 @@
+crawlerdetect/__init__.py,sha256=896krX2aoR-RPBSAeLES3U8xjFiOQFJqJ6jfCwhGLMY,265
+crawlerdetect/__main__.py,sha256=MYulyOGZ3TCm2zDm9LN4okIn1VDG45vRLpmQIjddMp4,168
+crawlerdetect/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlerdetect/src/crawlerdetect.py,sha256=yl-RaHuqNq_2lZw4-F0WnBh0WycyjmTqqLqTK6ga1bY,2551
+crawlerdetect/src/providers/__init__.py,sha256=hhY--2xsso1LILEBUJVJRZP5vG1A3yyS2ko2uA7hEwI,144
+crawlerdetect/src/providers/base.py,sha256=0gScAw3_vgglX_fvRH4ZEEXTZIj8a9F5l0xW905khwQ,167
+crawlerdetect/src/providers/crawlers.py,sha256=SncYZKa2mkhSG6YqD8FaKF9ocPx9cUvkFGa8T6PKRrs,40002
+crawlerdetect/src/providers/exclusions.py,sha256=I49JgeIWpbMBB3-wy8_3zY18mpOr1zTp6_H7LZ_4SwI,1755
+crawlerdetect/src/providers/headers.py,sha256=0TRAQkzLg514VFDrYycxtKJv4bRo6Z_EN08E8aJrXvo,968
+crawlerdetect-0.1.8.dist-info/LICENSE,sha256=0a35_yCJeQO0ja4AXg1VfYBuF7mR4ifbk-MUHirWF8I,1073
+crawlerdetect-0.1.8.dist-info/METADATA,sha256=shnUHdn5MN4dmsZfUUejg8kt0M4jEH0sO79Q76J7gA0,5284
+crawlerdetect-0.1.8.dist-info/WHEEL,sha256=0VNUDWQJzfRahYI3neAhz2UVbRCtztpN5dPHAGvmGXc,109
+crawlerdetect-0.1.8.dist-info/top_level.txt,sha256=iyuMDnJUPVjMiYOQEGclTL8cHUZu1m3jjsWCcoTn0Vw,14
+crawlerdetect-0.1.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+crawlerdetect-0.1.8.dist-info/RECORD,,
