@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylet"
+version = "0.0.2"
+description = "A distributed task execution system"
+authors = [
+    { name = "Yao Fu", email = "yao.fu.aisys@gmail.com" }
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx",
+    "pydantic",
+    "click",
+]
+
+[project.optional-dependencies]
+# You can specify any optional dependencies here
+# example = ["some-optional-package"]
+
+[project.scripts]
+pylet = "pylet.cli:cli"

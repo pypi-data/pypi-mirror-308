@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pylet
+Version: 0.0.2
+Summary: A distributed task execution system
+Author-email: Yao Fu <yao.fu.aisys@gmail.com>
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: click
