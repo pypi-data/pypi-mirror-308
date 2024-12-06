@@ -1,0 +1,2 @@
+[console_scripts]
+pyftrace = pyftrace.main:main
