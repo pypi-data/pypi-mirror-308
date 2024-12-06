@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wal-iot
+Version: 0.1.0
+Summary: 
+Author: weihong.xu
+Author-email: xuweihong.cn@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# wal-iot
+
+A simple Write Ahead Log (WAL) implementation for IoT devices to deal with network failures or power outages.
+
+## Introduction
+
+Unlike the formal WAL designed for databases, this WAL is not designed for ensuring the atomicity of transactions. 
+Instead, it is designed to ensure that the data is not lost in case of network failures or power outages,
+which are common in IoT or sensors networks.
+
+## Installation
+
+```bash
+pip install wal-iot
+```
+
+
