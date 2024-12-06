@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+brainrot/src/brainrot/__init__.py
+brainrot/src/brainrot/core.py
+py_brainrot.egg-info/PKG-INFO
+py_brainrot.egg-info/SOURCES.txt
+py_brainrot.egg-info/dependency_links.txt
+py_brainrot.egg-info/top_level.txt
