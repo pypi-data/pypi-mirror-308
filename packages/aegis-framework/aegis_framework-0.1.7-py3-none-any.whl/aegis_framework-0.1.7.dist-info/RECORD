@@ -1,0 +1,14 @@
+aegis_framework/ __init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_framework/core/__init__.py,sha256=XxbXnfjakd3FRmWZDMYbqUMTGZCXzUPT7ZujUNEY_EE,359
+aegis_framework/core/agent_base.py,sha256=8FEmz_hClSTqxBWxFjlMejL6CY724icH9-nettVVC8M,1375
+aegis_framework/core/master_agent.py,sha256=fw1IWNKKgyAyPRhaRNnEA_QpOshql8kzn_bkoFi83ro,2005
+aegis_framework/core/ollama_model.py,sha256=FYGGzP27aasUMgJMPW7bHIDzGJ8o7yoveRwyCNhUvfs,1698
+aegis_framework/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_framework/modules/design_agent.py,sha256=QYLquIibxCdxxdNQn0w6Zsl1Q8g49YMxSD3mjUJ1-kA,4018
+aegis_framework/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_framework/utils/helper_functions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_framework-0.1.7.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aegis_framework-0.1.7.dist-info/METADATA,sha256=HmjS2o0oBU2F_MM2rN4upoR_jzzoKpqr1v4e2IxEo2Q,555
+aegis_framework-0.1.7.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+aegis_framework-0.1.7.dist-info/top_level.txt,sha256=8D6eiCKTqVZK4tKQWBYl_olqED26U-tpL-IbXsORu8U,16
+aegis_framework-0.1.7.dist-info/RECORD,,
