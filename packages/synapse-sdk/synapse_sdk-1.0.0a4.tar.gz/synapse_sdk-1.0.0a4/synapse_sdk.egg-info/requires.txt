@@ -1,0 +1,8 @@
+boto3
+click
+requests
+tqdm
+python-dotenv
+pyyaml
+pydantic
+ray[all]
