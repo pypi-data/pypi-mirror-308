@@ -1,0 +1,4 @@
+[console_scripts]
+imgconvert = libsrd.image_convert:_script
+libsrd = libsrd.__init__:_script
+mergepdfs = libsrd.merge_pdf:_script
