@@ -1,0 +1,3 @@
+[console_scripts]
+fastrpi = fastrpi.cli:cli
+fastrpi-server = fastrpi.server:cli
