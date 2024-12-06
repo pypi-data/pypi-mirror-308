@@ -1,0 +1,2 @@
+[console_scripts]
+instigator_py = instigator_py.__main__:main
