@@ -1,0 +1,15 @@
+tunax/__init__.py,sha256=_qrUaZpn8rkq4hD29amuZTfxOZqqFBDxPwohO2hZ2CE,548
+tunax/case.py,sha256=ewmm8Do2nb6ctCJIlSy1b0mDuzlYOGdAR-9YE_36dn0,8684
+tunax/closure.py,sha256=R8pbo-goOm0yED5kqHKIK9M9QXk9-USIKnCwFtzHSoo,6398
+tunax/closures/__init__.py,sha256=uJnOVPRlu4SMxkANy8igmOiSxTb0Ky_hOIdJjXXUub8,140
+tunax/closures/k_epsilon.py,sha256=odRU1buf8ks-wWPltYj3gmdfVVEBPVjADiKA_Kc_XpE,43186
+tunax/closures_registry.py,sha256=3Z_OxXOiVJv1WefVqVtZPAXvtuGPZUyNUsqAt4OOP6s,1368
+tunax/database.py,sha256=PYg9plvOyqEe4P2R-1GQwH45CHGBbeulm4WbRg5cHzs,5758
+tunax/fitter.py,sha256=HHMD1dAS_3lb_Wk0yeQBuP6zfT2AQITXvuRH2jJ8oeA,15271
+tunax/functions.py,sha256=JPb4xCtrUDeqhjAv6qjo3SK1Yp8-8paEVXpU8ZO5C0E,3627
+tunax/model.py,sha256=goQnjuVa8jgUj9Z-X2FaLewPmvQbXpMPodg3CFUK0mg,17637
+tunax/space.py,sha256=x_4LfxXks-WpupY-tvyYiJ22BDKhUuaUEf2bE6xxhBs,16443
+tunax-0.1.0.dist-info/LICENSE,sha256=QQA9SnR0nAIg4z3UFQQhZLWhCT7UAfNidyNPdy0i09A,19347
+tunax-0.1.0.dist-info/METADATA,sha256=jWYkmwRlpdiW5VmOEt2O82d2RgpnxWsVHlAdoyN6big,2658
+tunax-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tunax-0.1.0.dist-info/RECORD,,
