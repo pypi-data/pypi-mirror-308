@@ -1,0 +1,10 @@
+setup.py
+libname/__init__.py
+libname/client.py
+libname/server.py
+queue_confirmer.egg-info/PKG-INFO
+queue_confirmer.egg-info/SOURCES.txt
+queue_confirmer.egg-info/dependency_links.txt
+queue_confirmer.egg-info/top_level.txt
+venv/__init__.py
+venv/lib/__init__.py
