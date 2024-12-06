@@ -1,0 +1,10 @@
+polars_plugin_option_pricing-0.1.0.dist-info/METADATA,sha256=f-5UaYfqil0lMVKqudU3_HNW005TQpmYiSx2-KaH-Ek,4631
+polars_plugin_option_pricing-0.1.0.dist-info/WHEEL,sha256=Q2elmUM8_psAXv3PVlXmxmlwy_TJBblIAlDhcFbvSPw,127
+polars_plugin_option_pricing/_typing.py,sha256=18zTXJZ6SsWcqLKW8cexbu72jEnhWXlB2fPTfvDV74U,169
+polars_plugin_option_pricing/_util.py,sha256=sSQ6bBOQQDQRYHzyfWyh0EreqZZ5fVEyIISXA-anTpg,1147
+polars_plugin_option_pricing/__init__.py,sha256=EjbPd6-56nj_edpFO_58AsScqNXy_UmVaYuijJpe3Ls,1720
+src/black_scholes.rs,sha256=9guzF5ITBoJmMPEpdrD8jEtsaR2NxbTLOZZDzxt2os4,7073
+src/implied_vol.rs,sha256=szpvmPXKRWSM_DwMt7KTcgK1hAGz04ekcSTMYH5LTn0,4205
+src/lib.rs,sha256=qxlsyFu7tBH2x5b4uk_QyNQRhjX-ailPAhnZaFKYHPQ,468
+polars_plugin_option_pricing/_rust.abi3.so,sha256=8B9ZHDiUXPr1gmMO34-ApXcUU6iugwL-Zq4zCoIvYeM,9938328
+polars_plugin_option_pricing-0.1.0.dist-info/RECORD,,
