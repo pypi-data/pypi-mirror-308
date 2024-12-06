@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+RapidRest.egg-info/PKG-INFO
+RapidRest.egg-info/SOURCES.txt
+RapidRest.egg-info/dependency_links.txt
+RapidRest.egg-info/requires.txt
+RapidRest.egg-info/top_level.txt
