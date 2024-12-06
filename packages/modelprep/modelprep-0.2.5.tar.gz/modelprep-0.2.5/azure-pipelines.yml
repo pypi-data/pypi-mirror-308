@@ -1,0 +1,93 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 'src/**'
+      - 'pyproject.toml'
+      - 'azure-pipelines.yml'
+
+resources:
+  repositories:
+    - repository: self
+      type: git
+      trigger:
+        tags:
+          include:
+            - 'v*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  isRelease: $[startsWith(variables['Build.SourceBranch'], 'refs/tags/v')]
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildAndTest
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.9'
+        addToPath: true
+      displayName: 'Use Python 3.9'
+
+    - script: |
+        python -m pip install --upgrade pip
+        pip install build twine setuptools setuptools_scm pytest
+      displayName: 'Install build tools'
+
+    - script: |
+        pip install -e ".[test]"
+      displayName: 'Install package and test dependencies'
+
+    - script: |
+        pytest tests/ -v
+      displayName: 'Run tests'
+      condition: eq(variables.isRelease, false)
+
+    - script: |
+        python -m build
+      displayName: 'Build wheel package'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: 'dist'
+        artifactName: 'dist'
+      displayName: 'Publish wheel artifact'
+
+- stage: Release
+  condition: eq(variables.isRelease, true)
+  jobs:
+  - job: PublishToPyPI
+    steps:
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.9'
+        addToPath: true
+      displayName: 'Use Python 3.9'
+
+    - script: |
+        python -m pip install --upgrade pip
+        pip install twine
+      displayName: 'Install twine'
+
+    - task: DownloadBuildArtifacts@1
+      inputs:
+        buildType: 'current'
+        downloadType: 'single'
+        artifactName: 'dist'
+        downloadPath: '$(System.ArtifactsDirectory)'
+      displayName: 'Download build artifacts'
+
+    - script: |
+        echo $(PYPI_TOKEN)
+        python -m twine upload $(System.ArtifactsDirectory)/dist/* \
+          --username "__token__" \
+          --password "$(PYPI_TOKEN)" \
+          --repository-url "https://upload.pypi.org/legacy/" \
+          --disable-progress-bar \
+          --verbose
+      displayName: 'Upload to PyPI'

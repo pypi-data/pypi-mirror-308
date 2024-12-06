@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Zip files etc
+*.zip
+*.tar
+*.gz
+*.bz2
+*.whl
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+dataset/
+*.pt
+*.txt
+*.jpg
+*.jpeg
+*.png
+
+# YOLOv8 training files
+nohup_train_*.py
+nohup_train_*.log
+train_*.py
+train_*.log
+
+# Training runs
+runs/
+*.pt
+
+# Dataset
+dataset.yaml
+nohup.out
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
