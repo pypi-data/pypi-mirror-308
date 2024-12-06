@@ -1,0 +1,2 @@
+[console_scripts]
+strptime = strptime:main
