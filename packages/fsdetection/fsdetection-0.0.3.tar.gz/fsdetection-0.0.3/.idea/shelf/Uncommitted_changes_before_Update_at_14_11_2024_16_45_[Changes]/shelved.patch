@@ -1,0 +1,235 @@
+Index: run_object_detection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#!/usr/bin/env python\n# coding=utf-8\n# Copyright 2024 The HuggingFace Inc. team. All rights reserved.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#     http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n\n\"\"\"Finetuning any \uD83E\uDD17 Transformers model supported by AutoModelForObjectDetection for object detection leveraging the Trainer API.\"\"\"\n\nimport logging\nimport os\nimport sys\nfrom dataclasses import dataclass, field\nfrom functools import partial\nfrom importlib.metadata import metadata\nfrom typing import Any, List, Mapping, Optional, Tuple, Union, Sequence\n\nimport albumentations as A\nimport numpy as np\nimport torch\nfrom datasets import load_dataset\nfrom torchmetrics.detection.mean_ap import MeanAveragePrecision\n\nimport transformers\nfrom transformers import (\n    AutoConfig,\n    AutoImageProcessor,\n    AutoModelForObjectDetection,\n    HfArgumentParser,\n    Trainer,\n    TrainingArguments,\n)\nfrom transformers.image_processing_utils import BatchFeature\nfrom transformers.image_transforms import center_to_corners_format\nfrom transformers.trainer import EvalPrediction\nfrom transformers.trainer_utils import get_last_checkpoint\nfrom transformers.utils import check_min_version, send_example_telemetry\nfrom transformers.utils.versions import require_version\n\nfrom src.datasets.fs_load import load_fs_dataset\nfrom src.transformers.fs_trainer import FSTrainer\n\nlogger = logging.getLogger(__name__)\n\n# Will error if the minimal version of Transformers is not installed. Remove at your own risks.\ncheck_min_version(\"4.47.0.dev0\")\n\nrequire_version(\"datasets>=2.0.0\", \"To fix: pip install -r examples/pytorch/object-detection/requirements.txt\")\n\n\n@dataclass\nclass ModelOutput:\n    logits: torch.Tensor\n    pred_boxes: torch.Tensor\n\n\ndef format_image_annotations_as_coco(\n        image_id: str, categories: List[int], areas: List[float], bboxes: List[Tuple[float]]\n) -> dict:\n    \"\"\"Format one set of image annotations to the COCO format\n\n    Args:\n        image_id (str): image id. e.g. \"0001\"\n        categories (List[int]): list of categories/class labels corresponding to provided bounding boxes\n        areas (List[float]): list of corresponding areas to provided bounding boxes\n        bboxes (List[Tuple[float]]): list of bounding boxes provided in COCO format\n            ([center_x, center_y, width, height] in absolute coordinates)\n\n    Returns:\n        dict: {\n            \"image_id\": image id,\n            \"annotations\": list of formatted annotations\n        }\n    \"\"\"\n    annotations = []\n    for category, area, bbox in zip(categories, areas, bboxes):\n        formatted_annotation = {\n            \"image_id\": image_id,\n            \"category_id\": category,\n            \"iscrowd\": 0,\n            \"area\": area,\n            \"bbox\": list(bbox),\n        }\n        annotations.append(formatted_annotation)\n\n    return {\n        \"image_id\": image_id,\n        \"annotations\": annotations,\n    }\n\n\ndef convert_bbox_yolo_to_pascal(boxes: torch.Tensor, image_size: Tuple[int, int]) -> torch.Tensor:\n    \"\"\"\n    Convert bounding boxes from YOLO format (x_center, y_center, width, height) in range [0, 1]\n    to Pascal VOC format (x_min, y_min, x_max, y_max) in absolute coordinates.\n\n    Args:\n        boxes (torch.Tensor): Bounding boxes in YOLO format\n        image_size (Tuple[int, int]): Image size in format (height, width)\n\n    Returns:\n        torch.Tensor: Bounding boxes in Pascal VOC format (x_min, y_min, x_max, y_max)\n    \"\"\"\n    # convert center to corners format\n    boxes = center_to_corners_format(boxes)\n\n    # convert to absolute coordinates\n    height, width = image_size\n    boxes = boxes * torch.tensor([[width, height, width, height]])\n\n    return boxes\n\n\ndef augment_and_transform_batch(\n        examples: Mapping[str, Any],\n        transform: A.Compose,\n        image_processor: AutoImageProcessor,\n        return_pixel_mask: bool = False,\n) -> BatchFeature:\n    \"\"\"Apply augmentations and format annotations in COCO format for object detection task\"\"\"\n\n    images = []\n    annotations = []\n    for image_id, image, objects in zip(examples[\"image_id\"], examples[\"image\"], examples[\"objects\"]):\n        image = np.array(image.convert(\"RGB\"))\n\n        # apply augmentations\n        output = transform(image=image, bboxes=objects[\"bbox\"], category=objects[\"category\"])\n        images.append(output[\"image\"])\n\n        # format annotations in COCO format\n        formatted_annotations = format_image_annotations_as_coco(\n            image_id, output[\"category\"], objects[\"area\"], output[\"bboxes\"]\n        )\n        annotations.append(formatted_annotations)\n\n    # Apply the image processor transformations: resizing, rescaling, normalization\n    result = image_processor(images=images, annotations=annotations, return_tensors=\"pt\")\n\n    if not return_pixel_mask:\n        result.pop(\"pixel_mask\", None)\n\n    return result\n\n\ndef collate_fn(batch: List[BatchFeature]) -> Mapping[str, Union[torch.Tensor, List[Any]]]:\n    data = {}\n    data[\"pixel_values\"] = torch.stack([x[\"pixel_values\"] for x in batch])\n    data[\"labels\"] = [x[\"labels\"] for x in batch]\n    if \"pixel_mask\" in batch[0]:\n        data[\"pixel_mask\"] = torch.stack([x[\"pixel_mask\"] for x in batch])\n    return data\n\n\n@torch.no_grad()\ndef compute_metrics(\n        evaluation_results: EvalPrediction,\n        image_processor: AutoImageProcessor,\n        threshold: float = 0.0,\n        id2label: Optional[Mapping[int, str]] = None,\n) -> Mapping[str, float]:\n    \"\"\"\n    Compute mean average mAP, mAR and their variants for the object detection task.\n\n    Args:\n        evaluation_results (EvalPrediction): Predictions and targets from evaluation.\n        threshold (float, optional): Threshold to filter predicted boxes by confidence. Defaults to 0.0.\n        id2label (Optional[dict], optional): Mapping from class id to class name. Defaults to None.\n\n    Returns:\n        Mapping[str, float]: Metrics in a form of dictionary {<metric_name>: <metric_value>}\n    \"\"\"\n\n    predictions, targets = evaluation_results.predictions, evaluation_results.label_ids\n\n    # For metric computation we need to provide:\n    #  - targets in a form of list of dictionaries with keys \"boxes\", \"labels\"\n    #  - predictions in a form of list of dictionaries with keys \"boxes\", \"scores\", \"labels\"\n\n    image_sizes = []\n    post_processed_targets = []\n    post_processed_predictions = []\n\n    # Collect targets in the required format for metric computation\n    for batch in targets:\n        # collect image sizes, we will need them for predictions post processing\n        batch_image_sizes = torch.tensor([x[\"orig_size\"] for x in batch])\n        image_sizes.append(batch_image_sizes)\n        # collect targets in the required format for metric computation\n        # boxes were converted to YOLO format needed for model training\n        # here we will convert them to Pascal VOC format (x_min, y_min, x_max, y_max)\n        for image_target in batch:\n            boxes = torch.tensor(image_target[\"boxes\"])\n            boxes = convert_bbox_yolo_to_pascal(boxes, image_target[\"orig_size\"])\n            labels = torch.tensor(image_target[\"class_labels\"])\n            post_processed_targets.append({\"boxes\": boxes, \"labels\": labels})\n\n    # Collect predictions in the required format for metric computation,\n    # model produce boxes in YOLO format, then image_processor convert them to Pascal VOC format\n    for batch, target_sizes in zip(predictions, image_sizes):\n        batch_logits, batch_boxes = batch[1], batch[2]\n        output = ModelOutput(logits=torch.tensor(batch_logits), pred_boxes=torch.tensor(batch_boxes))\n        post_processed_output = image_processor.post_process_object_detection(\n            output, threshold=threshold, target_sizes=target_sizes\n        )\n        post_processed_predictions.extend(post_processed_output)\n\n    # Compute metrics\n    metric = MeanAveragePrecision(box_format=\"xyxy\", class_metrics=True)\n    metric.update(post_processed_predictions, post_processed_targets)\n    metrics = metric.compute()\n\n    # Replace list of per class metrics with separate metric for each class\n    classes = metrics.pop(\"classes\")\n    map_per_class = metrics.pop(\"map_per_class\")\n    mar_100_per_class = metrics.pop(\"mar_100_per_class\")\n    for class_id, class_map, class_mar in zip(classes, map_per_class, mar_100_per_class):\n        class_name = id2label[class_id.item()] if id2label is not None else class_id.item()\n        metrics[f\"map_{class_name}\"] = class_map\n        metrics[f\"mar_100_{class_name}\"] = class_mar\n\n    metrics = {k: round(v.item(), 4) for k, v in metrics.items()}\n\n    return metrics\n\n\n@dataclass\nclass DataTrainingArguments:\n    \"\"\"\n    Arguments pertaining to what data we are going to input our model for training and eval.\n    Using `HfArgumentParser` we can turn this class into argparse arguments to be able to specify\n    them on the command line.\n    \"\"\"\n\n    dataset_name: str = field(\n        default=\"cppe-5\",\n        metadata={\n            \"help\": \"Name of a dataset from the hub (could be your own, possibly private dataset hosted on the hub).\"\n        },\n    )\n    dataset_config_name: Optional[str] = field(\n        default=None, metadata={\"help\": \"The configuration name of the dataset to use (via the datasets library).\"}\n    )\n    train_val_split: Optional[float] = field(\n        default=0.15, metadata={\"help\": \"Percent to split off of train for validation.\"}\n    )\n    image_square_size: Optional[int] = field(\n        default=600,\n        metadata={\"help\": \"Image longest size will be resized to this value, then image will be padded to square.\"},\n    )\n    max_train_samples: Optional[int] = field(\n        default=None,\n        metadata={\n            \"help\": (\n                \"For debugging purposes or quicker training, truncate the number of training examples to this \"\n                \"value if set.\"\n            )\n        },\n    )\n    max_eval_samples: Optional[int] = field(\n        default=None,\n        metadata={\n            \"help\": (\n                \"For debugging purposes or quicker training, truncate the number of evaluation examples to this \"\n                \"value if set.\"\n            )\n        },\n    )\n\n\n@dataclass\nclass ModelArguments:\n    \"\"\"\n    Arguments pertaining to which model/config/tokenizer we are going to fine-tune from.\n    \"\"\"\n\n    model_name_or_path: str = field(\n        default=\"facebook/detr-resnet-50\",\n        metadata={\"help\": \"Path to pretrained model or model identifier from huggingface.co/models\"},\n    )\n    config_name: Optional[str] = field(\n        default=None, metadata={\"help\": \"Pretrained config name or path if not the same as model_name\"}\n    )\n    cache_dir: Optional[str] = field(\n        default=None, metadata={\"help\": \"Where do you want to store the pretrained models downloaded from s3\"}\n    )\n    model_revision: str = field(\n        default=\"main\",\n        metadata={\"help\": \"The specific model version to use (can be a branch name, tag name or commit id).\"},\n    )\n    image_processor_name: str = field(default=None, metadata={\"help\": \"Name or path of preprocessor config.\"})\n    ignore_mismatched_sizes: bool = field(\n        default=False,\n        metadata={\n            \"help\": \"Whether or not to raise an error if some of the weights from the checkpoint do not have the same size as the weights of the model (if for instance, you are instantiating a model with 10 labels from a checkpoint with 3 labels).\"\n        },\n    )\n    token: str = field(\n        default=None,\n        metadata={\n            \"help\": (\n                \"The token to use as HTTP bearer authorization for remote files. If not specified, will use the token \"\n                \"generated when running `huggingface-cli login` (stored in `~/.huggingface`).\"\n            )\n        },\n    )\n    trust_remote_code: bool = field(\n        default=False,\n        metadata={\n            \"help\": (\n                \"Whether to trust the execution of code from datasets/models defined on the Hub.\"\n                \" This option should only be set to `True` for repositories you trust and in which you have read the\"\n                \" code, as it will execute code present on the Hub on your local machine.\"\n            )\n        },\n    )\n\n\n@dataclass\nclass FewShotArguments:\n    shots: int = field(\n        default=10,\n        metadata={\n            \"help\": (\n                \"Number of shots for few-shot object detection. \"\n                \"ex: 5-shots means 5 images per class.\"\n            )\n        }\n    )\n\n    freeze_modules: Optional[List[str]] = field(\n        default_factory=lambda: [],\n        metadata={\n            \"help\": (\n                \"Specifies a list of modules to remain untrainable during training. \"\n                \"Note: This option cannot be used simultaneously with 'unfreeze_modules'.\"\n            )\n        }\n    )\n\n    unfreeze_modules: Optional[List[str]] = field(\n        default_factory=lambda: [],\n        metadata={\n            \"help\": (\n                \"Specifies a list of modules to remain trainable during training while all others will be frozen. \"\n                \"Note: This option cannot be used simultaneously with 'freeze_modules'.\"\n            )\n        }\n    )\n\n    freeze_at: Optional[List[str]] = field(\n        default_factory=lambda: [],\n        metadata={\n            \"help\": (\n                \"If set to 0, freezes all parameters; otherwise, freezes layers up to the specified number, or, if half is given, freezes half of the module. \"\n                \"Must be a list of the same length as 'freeze_modules' or not specified if all modules are wanted to be trained/frozen.\"\n                \"Cannot be used if 'bias' or 'norm' is specified in either 'unfreeze_modules' or 'freeze_modules'.\"\n            )\n        }\n    )\n\n\ndef main():\n    # See all possible arguments in src/transformers/training_args.py\n    # or by passing the --help flag to this script.\n    # We now keep distinct sets of args, for a cleaner separation of concerns.\n\n    parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments, FewShotArguments))\n    if len(sys.argv) == 2 and sys.argv[1].endswith(\".json\"):\n        # If we pass only one argument to the script and it's the path to a json file,\n        # let's parse it to get our arguments.\n        model_args, data_args, training_args, fs_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))\n    else:\n        model_args, data_args, training_args, fs_args = parser.parse_args_into_dataclasses()\n\n    # # Sending telemetry. Tracking the example usage helps us better allocate resources to maintain them. The\n    # # information sent is the one passed as arguments along with your Python/PyTorch versions.\n    send_example_telemetry(\"run_object_detection\", model_args, data_args)\n\n    # Setup logging\n    logging.basicConfig(\n        format=\"%(asctime)s - %(levelname)s - %(name)s - %(message)s\",\n        datefmt=\"%m/%d/%Y %H:%M:%S\",\n        handlers=[logging.StreamHandler(sys.stdout)],\n    )\n\n    if training_args.should_log:\n        # The default of training_args.log_level is passive, so we set log level at info here to have that default.\n        transformers.utils.logging.set_verbosity_info()\n\n    log_level = training_args.get_process_log_level()\n    logger.setLevel(log_level)\n    transformers.utils.logging.set_verbosity(log_level)\n    transformers.utils.logging.enable_default_handler()\n    transformers.utils.logging.enable_explicit_format()\n\n    # Log on each process the small summary:\n    logger.warning(\n        f\"Process rank: {training_args.local_rank}, device: {training_args.device}, n_gpu: {training_args.n_gpu}, \"\n        + f\"distributed training: {training_args.parallel_mode.value == 'distributed'}, 16-bits training: {training_args.fp16}\"\n    )\n    logger.info(f\"Training/evaluation parameters {training_args}\")\n\n    # Detecting last checkpoint.\n    checkpoint = None\n    if training_args.resume_from_checkpoint is not None:\n        checkpoint = training_args.resume_from_checkpoint\n    elif os.path.isdir(training_args.output_dir) and not training_args.overwrite_output_dir:\n        checkpoint = get_last_checkpoint(training_args.output_dir)\n        if checkpoint is None and len(os.listdir(training_args.output_dir)) > 0:\n            raise ValueError(\n                f\"Output directory ({training_args.output_dir}) already exists and is not empty. \"\n                \"Use --overwrite_output_dir to overcome.\"\n            )\n        elif checkpoint is not None and training_args.resume_from_checkpoint is None:\n            logger.info(\n                f\"Checkpoint detected, resuming training at {checkpoint}. To avoid this behavior, change \"\n                \"the `--output_dir` or add `--overwrite_output_dir` to train from scratch.\"\n            )\n\n    # ------------------------------------------------------------------------------------------------\n    # Load dataset, prepare splits\n    # ------------------------------------------------------------------------------------------------\n\n    dataset = load_fs_dataset(\n        data_args.dataset_name, cache_dir=model_args.cache_dir, trust_remote_code=model_args.trust_remote_code\n    )\n\n    if \"val\" in dataset.keys() and \"test\" not in dataset.keys():\n        dataset[\"test\"] = dataset.pop(\"val\")\n\n    if \"val\" in dataset.keys() and \"validation\" not in dataset.keys():\n        dataset[\"validation\"] = dataset.pop(\"val\")\n\n    # If we don't have a validation split, split off a percentage of train as validation\n    data_args.train_val_split = None if \"validation\" in dataset.keys() else data_args.train_val_split\n    if isinstance(data_args.train_val_split, float) and data_args.train_val_split > 0.0:\n        split = dataset[\"train\"].train_test_split(data_args.train_val_split, seed=training_args.seed)\n        dataset[\"train\"] = split[\"train\"]\n        dataset[\"validation\"] = split[\"test\"]\n\n    dataset[\"train\"].sampling(shots=fs_args.shots, seed=training_args.seed)\n\n    # Get dataset categories and prepare mappings for label_name <-> label_id\n    categories = dataset[\"train\"].features[\"objects\"].feature[\"category\"].names\n    id2label = dict(enumerate(categories))\n    label2id = {v: k for k, v in id2label.items()}\n\n    # ------------------------------------------------------------------------------------------------\n    # Load pretrained config, model and image processor\n    # ------------------------------------------------------------------------------------------------\n\n    common_pretrained_args = {\n        \"cache_dir\": model_args.cache_dir,\n        \"revision\": model_args.model_revision,\n        \"token\": model_args.token,\n        \"trust_remote_code\": model_args.trust_remote_code,\n    }\n    config = AutoConfig.from_pretrained(\n        model_args.config_name or model_args.model_name_or_path,\n        label2id=label2id,\n        id2label=id2label,\n        **common_pretrained_args,\n    )\n    model = AutoModelForObjectDetection.from_pretrained(\n        model_args.model_name_or_path,\n        config=config,\n        ignore_mismatched_sizes=model_args.ignore_mismatched_sizes,\n        **common_pretrained_args,\n    )\n    image_processor = AutoImageProcessor.from_pretrained(\n        model_args.image_processor_name or model_args.model_name_or_path,\n        do_resize=True,\n        size={\"max_height\": data_args.image_square_size, \"max_width\": data_args.image_square_size},\n        do_pad=True,\n        pad_size={\"height\": data_args.image_square_size, \"width\": data_args.image_square_size},\n        **common_pretrained_args,\n    )\n\n    # ------------------------------------------------------------------------------------------------\n    # Define image augmentations and dataset transforms\n    # ------------------------------------------------------------------------------------------------\n    max_size = data_args.image_square_size\n    train_augment_and_transform = A.Compose(\n        [\n            A.Compose(\n                [\n                    A.SmallestMaxSize(max_size=max_size, p=1.0),\n                    A.RandomSizedBBoxSafeCrop(height=max_size, width=max_size, p=1.0),\n                ],\n                p=0.2,\n            ),\n            A.OneOf(\n                [\n                    A.Blur(blur_limit=7, p=0.5),\n                    A.MotionBlur(blur_limit=7, p=0.5),\n                    A.Defocus(radius=(1, 5), alias_blur=(0.1, 0.25), p=0.1),\n                ],\n                p=0.1,\n            ),\n            A.Perspective(p=0.1),\n            A.HorizontalFlip(p=0.5),\n            A.RandomBrightnessContrast(p=0.5),\n            A.HueSaturationValue(p=0.1),\n        ],\n        bbox_params=A.BboxParams(format=\"coco\", label_fields=[\"category\"], clip=True, min_area=25),\n    )\n    validation_transform = A.Compose(\n        [A.NoOp()],\n        bbox_params=A.BboxParams(format=\"coco\", label_fields=[\"category\"], clip=True),\n    )\n\n    # Make transform functions for batch and apply for dataset splits\n    train_transform_batch = partial(\n        augment_and_transform_batch, transform=train_augment_and_transform, image_processor=image_processor\n    )\n    validation_transform_batch = partial(\n        augment_and_transform_batch, transform=validation_transform, image_processor=image_processor\n    )\n\n    dataset[\"train\"] = dataset[\"train\"].with_transform(train_transform_batch)\n    dataset[\"validation\"] = dataset[\"validation\"].with_transform(validation_transform_batch)\n    dataset[\"test\"] = dataset[\"test\"].with_transform(validation_transform_batch)\n\n    # ------------------------------------------------------------------------------------------------\n    # Model training and evaluation with Trainer API\n    # ------------------------------------------------------------------------------------------------\n\n    eval_compute_metrics_fn = partial(\n        compute_metrics, image_processor=image_processor, id2label=id2label, threshold=0.0\n    )\n\n    trainer = FSTrainer(\n        model=model,\n        args=training_args,\n        fs_args=fs_args,\n        train_dataset=dataset[\"train\"] if training_args.do_train else None,\n        eval_dataset=dataset[\"validation\"] if training_args.do_eval else None,\n        processing_class=image_processor,\n        data_collator=collate_fn,\n        compute_metrics=eval_compute_metrics_fn,\n    )\n\n    # Training\n    if training_args.do_train:\n        train_result = trainer.train(resume_from_checkpoint=checkpoint)\n        trainer.save_model()\n        trainer.log_metrics(\"train\", train_result.metrics)\n        trainer.save_metrics(\"train\", train_result.metrics)\n        trainer.save_state()\n\n    # Final evaluation\n    if training_args.do_eval:\n        metrics = trainer.evaluate(eval_dataset=dataset[\"test\"], metric_key_prefix=\"test\")\n        trainer.log_metrics(\"test\", metrics)\n        trainer.save_metrics(\"test\", metrics)\n\n    # Write model card and (optionally) push to hub\n    kwargs = {\n        \"finetuned_from\": model_args.model_name_or_path,\n        \"dataset\": data_args.dataset_name,\n        \"tags\": [\"object-detection\", \"vision\"],\n    }\n    if training_args.push_to_hub:\n        trainer.push_to_hub(**kwargs)\n    else:\n        trainer.create_model_card(**kwargs)\n\n\nif __name__ == \"__main__\":\n    main()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run_object_detection.py b/run_object_detection.py
+--- a/run_object_detection.py	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
++++ b/run_object_detection.py	(date 1731598419754)
+@@ -20,13 +20,11 @@
+ import sys
+ from dataclasses import dataclass, field
+ from functools import partial
+-from importlib.metadata import metadata
+-from typing import Any, List, Mapping, Optional, Tuple, Union, Sequence
++from typing import Any, List, Mapping, Optional, Tuple, Union
+ 
+ import albumentations as A
+ import numpy as np
+ import torch
+-from datasets import load_dataset
+ from torchmetrics.detection.mean_ap import MeanAveragePrecision
+ 
+ import transformers
+@@ -35,7 +33,6 @@
+     AutoImageProcessor,
+     AutoModelForObjectDetection,
+     HfArgumentParser,
+-    Trainer,
+     TrainingArguments,
+ )
+ from transformers.image_processing_utils import BatchFeature
+@@ -45,8 +42,8 @@
+ from transformers.utils import check_min_version, send_example_telemetry
+ from transformers.utils.versions import require_version
+ 
+-from src.datasets.fs_load import load_fs_dataset
+-from src.transformers.fs_trainer import FSTrainer
++from src.fsdetection import load_fs_dataset
++from src.fsdetection import FSTrainer
+ 
+ logger = logging.getLogger(__name__)
+ 
+Index: src/datasets/packaged_modules/__init__.py
+===================================================================
+diff --git a/src/datasets/packaged_modules/__init__.py b/src/datasets/packaged_modules/__init__.py
+deleted file mode 100644
+--- a/src/datasets/packaged_modules/__init__.py	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
++++ /dev/null	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
+@@ -1,7 +0,0 @@
+-import inspect
+-
+-from datasets.packaged_modules import _PACKAGED_DATASETS_MODULES, _hash_python_lines
+-
+-from src.datasets.packaged_modules.parquet import fs_parquet
+-
+-_PACKAGED_DATASETS_MODULES['parquet'] = (fs_parquet.__name__, _hash_python_lines(inspect.getsource(fs_parquet).splitlines()))
+\ No newline at end of file
+Index: src/fsdetection/transformers/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/fsdetection/transformers/__init__.py b/src/fsdetection/transformers/__init__.py
+new file mode 100644
+--- /dev/null	(date 1731596153904)
++++ b/src/fsdetection/transformers/__init__.py	(date 1731596153904)
+@@ -0,0 +1,1 @@
++from .fs_trainer import FSTrainer
+\ No newline at end of file
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+new file mode 100644
+--- /dev/null	(date 1731597110882)
++++ b/pyproject.toml	(date 1731597110882)
+@@ -0,0 +1,22 @@
++[build-system]
++requires = ["hatchling"]
++build-backend = "hatchling.build"
++
++[project]
++name = "fsdetection"
++version = "0.0.1"
++authors = [
++  { name="HichTala", email="hich.tala.phd@gmail.com" },
++]
++description = "package to simplify few-shot object detection"
++readme = "README.md"
++requires-python = ">=3.8"
++classifiers = [
++    "Programming Language :: Python :: 3",
++    "License :: OSI Approved :: MIT License",
++    "Operating System :: OS Independent",
++]
++
++[project.urls]
++Homepage = "https://github.com/HichTala/fsdetection"
++Issues = "https://github.com/HichTala/fsdetection/issues"
+\ No newline at end of file
+Index: src/datasets/fs_builder.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/datasets/fs_builder.py b/src/fsdetection/datasets/fs_builder.py
+rename from src/datasets/fs_builder.py
+rename to src/fsdetection/datasets/fs_builder.py
+--- a/src/datasets/fs_builder.py	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
++++ b/src/fsdetection/datasets/fs_builder.py	(date 1731596153504)
+@@ -3,7 +3,7 @@
+ from datasets import DatasetBuilder, Split, ArrowBasedBuilder, Dataset
+ from datasets.arrow_reader import ArrowReader, ReadInstruction
+ 
+-from src.datasets.fs_arrow_dataset import FSDataset
++from src.fsdetection.datasets.fs_arrow_dataset import FSDataset
+ 
+ 
+ class FSDatasetBuilder(DatasetBuilder):
+Index: src/fsdetection/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/fsdetection/__init__.py b/src/fsdetection/__init__.py
+new file mode 100644
+--- /dev/null	(date 1731596153896)
++++ b/src/fsdetection/__init__.py	(date 1731596153896)
+@@ -0,0 +1,2 @@
++from .datasets import FSDatasetBuilder, ArrowBasedFSBuilder, load_fs_dataset, FSDataset
++from .transformers import FSTrainer
+\ No newline at end of file
+Index: src/datasets/fs_load.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/datasets/fs_load.py b/src/fsdetection/datasets/fs_load.py
+rename from src/datasets/fs_load.py
+rename to src/fsdetection/datasets/fs_load.py
+--- a/src/datasets/fs_load.py	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
++++ b/src/fsdetection/datasets/fs_load.py	(date 1731596153620)
+@@ -2,23 +2,22 @@
+ import inspect
+ from contextlib import nullcontext
+ from pathlib import Path
+-from typing import Optional, Union, Sequence, Mapping, Dict, Type, List
++from typing import Optional, Union, Sequence, Mapping, Dict, Type
+ 
+-from datasets import Features, DownloadConfig, DownloadMode, Version, DatasetBuilder, Split, VerificationMode, \
+-    DatasetDict, Dataset, IterableDatasetDict, IterableDataset, config, BuilderConfig
+-from datasets.load import dataset_module_factory, get_dataset_builder_class, import_main_class, configure_builder_class, \
+-    DatasetModule, _InitializeConfiguredDatasetBuilder
+-from datasets.naming import snakecase_to_camelcase
++from datasets import Features, DownloadConfig, DownloadMode, Version, Split, VerificationMode, \
++    DatasetDict, Dataset, IterableDatasetDict, IterableDataset, config
++from datasets.load import dataset_module_factory, configure_builder_class, \
++    DatasetModule
+ from datasets.utils.info_utils import is_small_dataset
+ from datasets.utils.py_utils import lock_importable_file
+ 
+-from src.datasets.fs_builder import FSDatasetBuilder
++from src.fsdetection.datasets.fs_builder import FSDatasetBuilder
+ 
+ from datasets.packaged_modules import (
+     _EXTENSION_TO_MODULE,
+ )
+ 
+-from src.datasets.packaged_modules import _PACKAGED_DATASETS_MODULES
++from src.fsdetection.datasets.packaged_modules import _PACKAGED_DATASETS_MODULES
+ 
+ 
+ 
+Index: src/fsdetection/datasets/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/fsdetection/datasets/__init__.py b/src/fsdetection/datasets/__init__.py
+new file mode 100644
+--- /dev/null	(date 1731596153608)
++++ b/src/fsdetection/datasets/__init__.py	(date 1731596153608)
+@@ -0,0 +1,3 @@
++from .fs_arrow_dataset import FSDataset
++from .fs_load import load_fs_dataset
++from .fs_builder import FSDatasetBuilder, ArrowBasedFSBuilder
+Index: src/datasets/packaged_modules/parquet/fs_parquet.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/datasets/packaged_modules/parquet/fs_parquet.py b/src/fsdetection/datasets/packaged_modules/parquet/fs_parquet.py
+rename from src/datasets/packaged_modules/parquet/fs_parquet.py
+rename to src/fsdetection/datasets/packaged_modules/parquet/fs_parquet.py
+--- a/src/datasets/packaged_modules/parquet/fs_parquet.py	(revision 76e77cf9a1ada994917150f0d59cccc5bb11563a)
++++ b/src/fsdetection/datasets/packaged_modules/parquet/fs_parquet.py	(date 1731596153712)
+@@ -1,6 +1,6 @@
+ from datasets.packaged_modules.parquet.parquet import Parquet
+ 
+-from src.datasets.fs_builder import ArrowBasedFSBuilder
++from src.fsdetection.datasets.fs_builder import ArrowBasedFSBuilder
+ 
+ 
+ class FSParquet(ArrowBasedFSBuilder, Parquet):
+Index: src/fsdetection/datasets/packaged_modules/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/fsdetection/datasets/packaged_modules/__init__.py b/src/fsdetection/datasets/packaged_modules/__init__.py
+new file mode 100644
+--- /dev/null	(date 1731596153804)
++++ b/src/fsdetection/datasets/packaged_modules/__init__.py	(date 1731596153804)
+@@ -0,0 +1,8 @@
++import inspect
++
++from datasets.packaged_modules import _PACKAGED_DATASETS_MODULES, _hash_python_lines
++
++from src.fsdetection.datasets.packaged_modules.parquet import fs_parquet
++
++_PACKAGED_DATASETS_MODULES['parquet'] = (
++fs_parquet.__name__, _hash_python_lines(inspect.getsource(fs_parquet).splitlines()))
+\ No newline at end of file
+diff --git a/src/fsdetection/datasets/packaged_modules/parquet/__init__.py b/src/fsdetection/datasets/packaged_modules/parquet/__init__.py
+new file mode 100644
+diff --git a/src/transformers/fs_trainer.py b/src/fsdetection/transformers/fs_trainer.py
+rename from src/transformers/fs_trainer.py
+rename to src/fsdetection/transformers/fs_trainer.py
+diff --git a/src/datasets/fs_arrow_dataset.py b/src/fsdetection/datasets/fs_arrow_dataset.py
+rename from src/datasets/fs_arrow_dataset.py
+rename to src/fsdetection/datasets/fs_arrow_dataset.py

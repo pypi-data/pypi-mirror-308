@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8dcfef0-b47a-412e-95de-d5c13e5cdcd6" name="Changes" comment="Correct path">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="wip" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HichTala&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HichTala/FSODHuggingFace.git&quot;,
+    &quot;accountId&quot;: &quot;2e18c563-e0c0-47f6-95b0-bc8d8592c2e4&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/miniconda3/envs/phd/lib/python3.11/site-packages/transformers/hf_argparser.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2lyMYw8tYLsEhyzzF6SXv52tt4q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.run_object_detection.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/hicham/Documents/fsdetection",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fsdetection" />
+      <recent name="$PROJECT_DIR$/src/transformers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run_object_detection" type="PythonConfigurationType" factoryName="Python">
+      <module name="FSODHuggingFace" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="phd" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="run_object_detection.py" />
+      <option name="PARAMETERS" value="--model_name_or_path facebook/detr-resnet-50 --dataset_name HichTala/dota --do_train true --do_eval true --output_dir detr-finetuned-coco --num_train_epochs 100 --image_square_size 600 --fp16 true --learning_rate 5e-5 --weight_decay 1e-4 --dataloader_num_workers 4 --dataloader_prefetch_factor 2 --per_device_train_batch_size 8 --gradient_accumulation_steps 1 --remove_unused_columns false --eval_do_concat_batches false --ignore_mismatched_sizes true --metric_for_best_model eval_map --greater_is_better true --load_best_model_at_end true --logging_strategy epoch --evaluation_strategy epoch --save_strategy epoch --save_total_limit 2 --seed 1337 --overwrite_output_dir" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8dcfef0-b47a-412e-95de-d5c13e5cdcd6" name="Changes" comment="" />
+      <created>1726147914051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726147914051</updated>
+      <workItem from="1726147915260" duration="5929000" />
+      <workItem from="1726821759041" duration="10212000" />
+      <workItem from="1727335157961" duration="1341000" />
+      <workItem from="1727337213352" duration="1014000" />
+      <workItem from="1727424167625" duration="611000" />
+      <workItem from="1728984665284" duration="65000" />
+      <workItem from="1728985120476" duration="12987000" />
+      <workItem from="1729758103351" duration="26589000" />
+      <workItem from="1730365600605" duration="16516000" />
+      <workItem from="1731576370698" duration="7825000" />
+      <workItem from="1731588555992" duration="5909000" />
+      <workItem from="1731596301085" duration="3548000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1726826531881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726826531881</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add freezing module">
+      <option name="closed" value="true" />
+      <created>1726835850910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726835850910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove breakpoints">
+      <option name="closed" value="true" />
+      <created>1726835860928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726835860928</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Friday evening commit">
+      <option name="closed" value="true" />
+      <created>1729868291151</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729868291151</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adding shots to arg parser">
+      <option name="closed" value="true" />
+      <created>1730381077645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730381077645</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add freezing modules">
+      <option name="closed" value="true" />
+      <created>1730384188246</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730384188246</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Work on bug for freezing bias and norms">
+      <option name="closed" value="true" />
+      <created>1730391889440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730391889440</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Resolve indices problem">
+      <option name="closed" value="true" />
+      <created>1731594176027</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731594176027</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add pypi packages and remove useless things">
+      <option name="closed" value="true" />
+      <created>1731599223377</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731599223377</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Correct path">
+      <option name="closed" value="true" />
+      <created>1731599831269</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731599831269</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Add freezing module" />
+    <MESSAGE value="remove breakpoints" />
+    <MESSAGE value="Friday evening commit" />
+    <MESSAGE value="Adding shots to arg parser" />
+    <MESSAGE value="Add freezing modules" />
+    <MESSAGE value="Work on bug for freezing bias and norms" />
+    <MESSAGE value="Resolve indices problem" />
+    <MESSAGE value="Add pypi packages and remove useless things" />
+    <MESSAGE value="Correct path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct path" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FSODHuggingFace$run_object_detection.coverage" NAME="run_object_detection Coverage Results" MODIFIED="1731594189319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
