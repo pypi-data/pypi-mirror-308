@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+agritechtz_cli/__init__.py
+agritechtz_pycli.egg-info/PKG-INFO
+agritechtz_pycli.egg-info/SOURCES.txt
+agritechtz_pycli.egg-info/dependency_links.txt
+agritechtz_pycli.egg-info/requires.txt
+agritechtz_pycli.egg-info/top_level.txt
