@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mbSTATS
+Version: 0.1.0
+Summary: A library for statistical analysis of metabolomics data
+Author: Satvik
+Author-email: f20213047@
+Requires-Python: >=3.7
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
