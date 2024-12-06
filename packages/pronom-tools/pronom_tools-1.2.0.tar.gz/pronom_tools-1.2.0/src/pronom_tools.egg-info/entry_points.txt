@@ -1,0 +1,6 @@
+[console_scripts]
+pronom-cron = pronom_cron.pronom_cron:main
+pronom-export = pronom_export.pronom_xml_export:main
+pronom-stat = pronom_stats.pronom_stats:main
+pronom-stats = pronom_stats.pronom_stats:main
+pronom-tools = pronom_tools.pronom_tools:main
