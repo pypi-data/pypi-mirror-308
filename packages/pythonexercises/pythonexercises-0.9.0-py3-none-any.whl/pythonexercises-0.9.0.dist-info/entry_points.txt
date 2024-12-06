@@ -1,0 +1,2 @@
+[console_scripts]
+pythonexercises = pythonexercises.python_exercises:main
