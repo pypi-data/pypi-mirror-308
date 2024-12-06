@@ -1,0 +1,13 @@
+PyGithub<=2.5.0
+langchain<=0.3.7
+langchain-openai<=0.2.8
+pyjwt<=2.9.0
+cryptography<=43.0.3
+pycryptodome<=3.21.0
+python-dateutil<=2.9.0.post0
+pyyaml<=6.0.2
+qdrant-client<=1.12.1
+openai<=1.54.4
+
+[:python_version < "3.8"]
+importlib-metadata
