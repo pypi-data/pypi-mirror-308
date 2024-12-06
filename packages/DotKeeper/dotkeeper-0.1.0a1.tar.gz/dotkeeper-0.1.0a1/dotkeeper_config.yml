@@ -1,0 +1,75 @@
+dotkeeper:
+  options:
+    global:
+      project_root: $PROJECT_ROOT
+      dotfiles_root: $DOTFILES_ROOT
+      ignore_patterns: $DOTFILES_ROOT/configs/ignore_patterns.yml
+
+    git:
+      enabled: true
+      autostage_files: true
+      autocommit_files: true
+      commit_message_template: $DOTFILES_ROOT/configs/commit_msg.j2
+      obfuscate_file_names: true  # Requires use of age key to encrypt obfuscated<->plaintext file names index.
+
+    # Settings that are dealing with files in particular, in this config, can be overwritten entirely on a per-file basis
+    # by indicating the settings in the '_index.yml' closest to the relevant file(s).
+
+    auto_chown:
+      enabled: true           # Whether to auto `chown` any encountered files and directories. Default: True.
+      owner: $CURRENT_USER    # Default value of current user's UID. Set to an integer user ID if custom.
+      group: $CURRENT_GROUP   # Default value of current user's primary group GID. Set to an integer group ID if custom.
+      exclude_patterns: []    # Glob-style patterns to exclude from chown/chmod.
+      include_patterns: []    # If set, exclude patterns will not be used, only include patterns.
+
+    auto_chmod:
+      enabled: true           # Whether to auto `chmod` any encounted files and directories. Default: True.
+      dir_mode: 0700          # Octal permissions mode to set on on directories when calling `chmod`.
+      file_mode: 0600         # Octal permissions mode to set on on files when calling `chmod`.
+      exclude_patterns: []    # If either one of these (exclude/include, for either one, chown/chmod) is set and other is not,
+      include_patterns: []    # the default behavior is that the unset one will be handled with the other one's patterns.
+
+    # If enabled, age encryption will be used via the Pyrage package (bindings for Python of the Rust port of age, 'rage')
+    # to encrypt files according to configuration prior to including them in source control or pushing them to S3. This
+    # setting requires that a valid age keypair be present: for encryption, a public key ('recipient/s'), one or multiple,
+    # and for decryption, the corresponding private key(s) ('identity/ies'). Encrypted data will be handled as follows:
+    #   - A new, encrypted copy of the data is created, leaving the original data untouched, with the
+    #     encrypted data saved as '<filename>.age' alongside the original file, as binary data.
+    #   - This data (the encrypted data) is then committed to source control and pushed to S3 - either one or both.
+    #   - Optionally, the a SHA-256 hash of the files can be created prior to this, and then used to verify integrity
+    #     upon decryption.
+    #   - Optionally, the encrypted files are renamed using UUIDv6 values (in hex form) before being pushed to any remotes.
+    #     This is done to obfuscate file names, which may be sensitive and undesirable to store publically. In this case,
+    #     an index is created, consisting of the original file's name, full path, SHA-256 hash, and other metadata such as
+    #     mtime/ctime/atime, size, etc. according to what is available on the system at runtime for each file. This index
+    #     is then encrypted to the same public keys used (the 'recipient' age keys), and included in source control/S3/both.
+    #     If pushed to S3, the resulting file/directory bucket key is stored in the index alongside this information.
+    #   - Other notes: The age key may be either a file path (for either one, recipient or identity) or it may be stored
+    #     in 1Password, assuming a 1Password Service Account is being used for this, and that the private/public key material
+    #     is referenced as a 1Password secret reference (e.g., 'op://<vault-name>/<item-name>/[section-name/]<field-name>').
+
+    age:
+      enabled: true
+      min_size: 123 B
+      max_size: 123 Gb
+      identities: []
+      recipients: []
+
+    s3:
+      enabled: true
+      access_key_id: $S3_ACCESS_KEY_ID            # Can be an environment variable or a 1Password Secret Reference.
+      secret_access_key: $S3_SECRET_ACCESS_KEY    # Ditto.
+      gateway_url: https://gateway.storjshare.io  # This value is specific to Storj only, currently.
+
+    hashing:
+      enabled: true
+      min_size: 1 KiB
+      max_size: 10 GiB
+
+    onepassword:
+      enabled: true
+      service_account_token: $OP_SERVICE_ACCOUNT_TOKEN
+      vault_id: $OP_VAULT_ID
+
+  scan_dirs:
+    - /path/to/dir/to/recurse/for/_index.yml

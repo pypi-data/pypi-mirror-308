@@ -1,0 +1,82 @@
+[project]
+  name            = "DotKeeper"
+  version         = "0.1.0-alpha1"
+  requires-python = ">= 3.10"
+  readme          = "README.md"
+  description     = "Dotfiles manager."
+  authors         = [{ name = "Alchemyst0x", email = "alchemyst@blockmage.dev" }]
+  license         = { text = "Apache-2.0" }
+
+  dependencies = [
+    "aioboto3>=13.2.0",
+    "aiofiles>=24.1.0",
+    "cyclopts>=3.0.0",
+    "msgspec>=0.18.0",
+    "pydantic-extra-types>=2.10.0",
+    "pydantic-settings>=2.6.0",
+    "pydantic>=2.6.0",
+    "pyrage-stubs>=1.2.3",
+    "pyrage>=1.2.1",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.0",
+    "rich>=13.9.0",
+    "structlog>=24.4.0",
+]
+
+  [project.scripts]
+    "dk" = "dotkeeper:main"
+
+[build-system]
+  requires      = ["hatchling"]
+  build-backend = "hatchling.build"
+
+[tool.rye]
+  managed           = true
+  lock-with-sources = true
+  generate-hashes   = true
+
+  dev-dependencies = [
+    "codespell>=2.3.0",
+    "coverage>=7.6.0",
+    "devtools>=0.12.0",
+    "mypy>=1.12.0",
+    "pre-commit>=4.0.0",
+    "pyrage-stubs>=1.2.0",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.14.0",
+    "pytest>=8.3.0",
+    "ruff>=0.7.0",
+    "tox>=4.23.0",
+    "types-aioboto3>=13.2.0",
+    "types-pyyaml>=6.0.0",
+]
+
+[tool.hatch.metadata]
+  allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+  packages = ["src/dotkeeper"]
+
+[tool.codespell]
+  builtin           = "clear,code,informal,rare,usage"
+  ignore-words-list = "deque,deques,jupyter,keypair"
+
+[tool.mypy]
+  plugins              = ["pydantic.mypy"]
+  no_implicit_optional = true
+  show_column_numbers  = true
+  show_error_codes     = true
+  show_error_context   = true
+  warn_redundant_casts = true
+  warn_return_any      = false
+  warn_unused_configs  = true
+  warn_unused_ignores  = true
+
+  [[tool.mypy.overrides]]
+    module             = "tests.*"
+    disable_error_code = "annotation-unchecked"
+
+[tool.pydantic-mypy]
+  init_typed                    = true
+  init_forbid_extra             = true
+  warn_required_dynamic_aliases = true
