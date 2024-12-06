@@ -1,0 +1,11 @@
+apexpy-2.0.2.dist-info/METADATA,sha256=LFeNitQKqzUHdqYYXOB7Hrbk1_dwERkvgPc4XAE9j9A,8592
+apexpy-2.0.2.dist-info/WHEEL,sha256=_cS6fEsxLUIcIdoA6Si0dddGONVIRpHlSl13K8j9MME,93
+apexpy-2.0.2.dist-info/LICENSE,sha256=r5ANVsH1wYoVrg-C-nyfA3ifNlW_qXqPY48OCqK2C5Q,1089
+apexpy/fortranapex.cpython-310-darwin.so,sha256=fN4wnr22nwnV4zYg7ciE5ngbq3M9ataJDvVK0JNrSPE,237024
+apexpy/__init__.py,sha256=BxHXb8ggdd6yn9qL1emWENlRY4Ef6pj6zKXWVmjG60o,573
+apexpy/__main__.py,sha256=6hU8z8TzbXQeXv8z10W01bWHO1y1-XT13Gxq-lZud8c,2904
+apexpy/apex.py,sha256=CyF-TYPPdslLWFAJU1c1rET5OEcgTVwvNZOEl8HMAV4,49111
+apexpy/apexsh.dat,sha256=UV1TpAXDqywFnoHNJAlNISNgbGon8hnPvKbn6Jek3P4,244852
+apexpy/helpers.py,sha256=ZwxBce6TpSPjouYkPXzY4nAlBmNJ0m9qUr1JDlmRcGw,6653
+apexpy/igrf13coeffs.txt,sha256=RguNi-ubTfhP6-Twtjnw3VTcz-j_CXBhYoewFfpyFCU,40639
+apexpy-2.0.2.dist-info/RECORD,,
