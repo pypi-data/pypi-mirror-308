@@ -1,0 +1,49 @@
+[project]
+name = "sweepai"
+version = "3.2.4"
+description = "CLI for syncing with Sweep Chat's code change features."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3.10"
+]
+authors = [
+    {name = "Kevin Lu", email = "kevin@sweep.dev"},
+    {name = "William Zeng", email = "william@sweep.dev"},
+    {name = "Martin Ye", email = "martin@sweep.dev"},
+]
+dependencies = [
+    "loguru==0.7.2",
+    "requests==2.32.3",
+    "rich==13.9.4",
+    "pydantic==2.9.2",
+    "python-dotenv==1.0.1",
+    "typer==0.13.0",
+]
+
+[project.scripts]
+sweep = "src.__main__:main"
+sweepai = "src.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/sweepai/sweep"
+Community = "https://community.sweep.dev/"
+Documentation = "https://docs.sweep.dev"
+Homepage = "https://sweep.dev"
+"Bug Tracker" = "https://github.com/sweepai/sweep/issues"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+exclude = [
+    "tests*",
+    "sdk*", 
+    "benchmark*", 
+    "docs*",
+    "caches*",
+]
