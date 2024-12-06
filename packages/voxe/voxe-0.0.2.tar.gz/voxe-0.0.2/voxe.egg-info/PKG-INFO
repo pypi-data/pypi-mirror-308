@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: voxe
+Version: 0.0.2
+Summary: A kind of simple transport layer protocol
+Home-page: https://github.com/aiyojun/pysolv
+Author: aiyojun
+Author-email: aiyojun@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+
+voxe
+=================================
+
+Voxe is a kind of simple transport layer protocol.
+
+Usage
+------------
+
+.. code:: python
+
+		import voxe
+
+		data = voxe.dumps(12, 'hello voxe', 3.14)
+		a, b, c = voxe.loads(data)
+		print(data)
+		print(a, b, c)

@@ -1,0 +1,8 @@
+README.rst
+setup.py
+voxe/__init__.py
+voxe/protocol.py
+voxe.egg-info/PKG-INFO
+voxe.egg-info/SOURCES.txt
+voxe.egg-info/dependency_links.txt
+voxe.egg-info/top_level.txt
