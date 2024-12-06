@@ -1,0 +1,3 @@
+[console_scripts]
+notas-musicais=pacote_python_tb.cli:app
+
