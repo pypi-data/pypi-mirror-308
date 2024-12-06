@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+docs/doi_downloader.md
+docs/ricedatacn_gene_parser.md
+examples/doi_download_example.py
+examples/ricedatacn_gene_example.py
+src/information_composer/__init__.py
+src/information_composer.egg-info/PKG-INFO
+src/information_composer.egg-info/SOURCES.txt
+src/information_composer.egg-info/dependency_links.txt
+src/information_composer.egg-info/requires.txt
+src/information_composer.egg-info/top_level.txt
