@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mypackage_test_t
+Version: 0.1.0
+Summary: test_upload_package
+Home-page: https://github.com/szy123/mypackage_test_t
+Author: szy123
+Author-email: 15735709004@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+
+# MyPackage
+
+MyPackage is a simple example Python package.
+
+## Installation
+
+You can install MyPackage via pip:
+
+```bash
+pip install mypackage
