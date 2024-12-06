@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: grimbert
+Version: 0.1.2
+Summary: 
+License: GPLv3
+Author: Arthur Amalvy
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: accelerate (>=0.22.0,<0.23.0)
+Requires-Dist: more-itertools (>=10.1.0,<11.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: rich (>=13.5.3,<14.0.0)
+Requires-Dist: sacred (>=0.8.4,<0.9.0)
+Requires-Dist: sacremoses (>=0.0.53,<0.0.54)
+Requires-Dist: scikit-learn (>=1.3.0,<2.0.0)
+Requires-Dist: torch (>=2.0.0,!=2.0.1)
+Requires-Dist: transformers (>=4.32.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Grimbert
+
+Speaker attribution in novels. Based on the older [bert-quote-attribution](https://gitlab.com/Aethor/bert-quote-attribution) project.
+
+
+# Documentation
+
+```python
+from grimbert.model import SpeakerAttributionModel
+from grimbert.predict import predict_speaker
+from grimbert.datas import (
+    SpeakerAttributionDataset,
+    SpeakerAttributionDocument,
+    SpeakerAttributionQuote,
+    SpeakerAttributionMention
+) 
+from transformers import BertTokenizerFast
+
+
+model = SpeakerAttributionModel.from_pretrained(
+	"compnet-renard/spanbert-base-cased-literary-speaker-attribution"
+)
+tokenizer = BertTokenizerFast.from_pretrained(
+	"compnet-renard/spanbert-base-cased-literary-speaker-attribution"
+)
+
+tokens = '" This is horrible " , John said to Max .'.split(" ")
+quote_start = 0
+quote_end = 4
+john_mention_start = 6
+john_mention_end = 7
+max_mention_start = 9
+max_mention_end = 10
+
+dataset = SpeakerAttributionDataset(
+    [
+        SpeakerAttributionDocument(
+            tokens,
+            [SpeakerAttributionQuote(
+                tokens[quote_start:quote_end], quote_start, quote_end, "John"
+            )],
+            [
+                SpeakerAttributionMention(
+                    tokens[john_mention_start:john_mention_end],
+                    john_mention_start,
+                    john_mention_end,
+                    "John"
+                ),
+                SpeakerAttributionMention(
+                    tokens[max_mention_start:max_mention_end],
+                    max_mention_start,
+                    max_mention_end,
+                    "Max"
+                ),
+            ]
+            
+        )
+    ],
+    quote_ctx_len=512,
+    speaker_repr_nb=4, 
+    tokenizer=tokenizer
+)
+
+preds = predict_speaker(dataset, model, tokenizer, batch_size=4)
+```
+
