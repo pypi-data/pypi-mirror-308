@@ -1,0 +1,16 @@
+from documente_shared.domain.entities import DocumentProcess
+from documente_shared.domain.repositories import DocumentProcessRepository
+from documente_shared.infrastructure.dynamo_table import DynamoDBTable
+
+
+class DynamoDocumentProcessRepository(
+    DynamoDBTable,
+    DocumentProcessRepository,
+):
+
+    def persist(self, instance: DocumentProcess) -> DocumentProcess:
+        self.put(instance.to_dict)
+        return instance
+
+    def remove(self, instance: DocumentProcess):
+        self.delete(key={'digest': instance.digest})
