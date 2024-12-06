@@ -1,0 +1,109 @@
+{
+	"[python]": {
+		"editor.defaultFormatter": "eeyore.yapf",
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file"
+	},
+	"cSpell.words": [
+		"addhooks",
+		"addini",
+		"addoption",
+		"addopts",
+		"argparsing",
+		"collectionfinish",
+		"collectreport",
+		"conftest",
+		"conftests",
+		"firstresult",
+		"fixturenames",
+		"getgroup",
+		"getini",
+		"getplugin",
+		"getreports",
+		"hookspecs",
+		"hookwrapper",
+		"itemcollected",
+		"logreport",
+		"makeini",
+		"makepyfile",
+		"makereport",
+		"metafunc",
+		"mkdocstrings",
+		"modifyitems",
+		"nodeid",
+		"Nogowski",
+		"pluggy",
+		"pluginmanager",
+		"pyproject",
+		"pytest",
+		"pytest_sessionfinish",
+		"pytester",
+		"runpytest",
+		"showlocals",
+		"tryfirst",
+		"trylast",
+		"unconfigure",
+		"UNMARK"
+	],
+	"editor.bracketPairColorization.enabled": true, //Cycle through colors for different brackets
+	"editor.detectIndentation": false, //False: Manually set tab size
+	"editor.find.autoFindInSelection": "multiline", //Search Selected text when multiple lines are selected
+	"editor.formatOnPaste": true, //Format Pasted content
+	"editor.formatOnSave": true, //Format on Save
+	"editor.guides.bracketPairs": "active", //Enable Bracket paring
+	"editor.guides.highlightActiveBracketPair": true, //Highlight bracket pairs
+	"editor.insertSpaces": false, //False: Use Tabs instead of spaces
+	"editor.showUnused": true,
+	"editor.tabSize": 4, //Tabs are 4 spaces
+	"editor.wordWrap": "on", //Enforce text wrapping on next line in editor
+	"debugpy.debugJustMyCode": false,
+	"files.associations": {
+		"py.typed": "python"
+	},
+	"files.defaultLanguage": "python", //Assume new files are python
+	"files.encoding": "utf8", //Enforce UTF8 encoding
+	"files.eol": "\n",
+	"files.trimFinalNewlines": true, //Remove extra white space and end of file on save
+	"git.autofetch": "all", //Commits will automatically be fetched from ALL remotes of the current Git repository.
+	"html.format.wrapLineLength": 300,
+	"python.analysis.autoFormatStrings": true,
+	"python.analysis.autoImportCompletions": true,
+	"python.analysis.autoIndent": true,
+	"python.analysis.autoSearchPaths": true,
+	"python.analysis.completeFunctionParens": true,
+	"python.analysis.diagnosticMode": "workspace",
+	"python.analysis.enablePytestSupport": true,
+	"python.analysis.exclude": [
+		".venv/**"
+	],
+	"python.analysis.ignore": [
+		".venv/**"
+	],
+	"python.analysis.indexing": true,
+	"python.analysis.inlayHints.callArgumentNames": "all",
+	"python.analysis.inlayHints.functionReturnTypes": true,
+	"python.analysis.inlayHints.pytestParameters": true,
+	"python.analysis.inlayHints.variableTypes": true,
+	"python.analysis.typeCheckingMode": "basic",
+	"python.testing.pytestArgs": [
+		"test_dev"
+	],
+	"python.testing.pytestEnabled": true,
+	"python.testing.unittestEnabled": false,
+	"search.followSymlinks": false, //False: Do NOT show symlinks multiple times in search results
+	"workbench.colorCustomizations": {
+		"editorUnnecessaryCode.border": "#dd7aab", //Underline unused code
+		"tree.indentGuidesStroke": "#00ff00" //Add Green line when hovering over folder hierarchy
+	},
+	"workbench.editor.highlightModifiedTabs": true, //Highlight file tabs for unsaved files
+	"workbench.layoutControl.enabled": true,
+	"workbench.layoutControl.type": "toggles",
+	"workbench.startupEditor": "none",
+	"workbench.tree.indent": 25, //Indent folder hierarchy
+	"xml.codeLens.enabled": true,
+	"xml.format.maxLineWidth": 300,
+	"yapf.args": [
+		"--style",
+		"{BASED_ON_STYLE: Google, COLUMN_LIMIT: 300, INDENT_WIDTH: 4, USE_TABS: true}"
+	]
+}
