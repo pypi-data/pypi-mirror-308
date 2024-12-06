@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+xploreds/__init__.py
+xploreds.egg-info/PKG-INFO
+xploreds.egg-info/SOURCES.txt
+xploreds.egg-info/dependency_links.txt
+xploreds.egg-info/requires.txt
+xploreds.egg-info/top_level.txt
