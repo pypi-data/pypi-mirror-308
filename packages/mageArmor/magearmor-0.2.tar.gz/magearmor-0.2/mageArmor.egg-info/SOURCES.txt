@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mageArmor/__init__.py
+mageArmor/mageArmor.py
+mageArmor.egg-info/PKG-INFO
+mageArmor.egg-info/SOURCES.txt
+mageArmor.egg-info/dependency_links.txt
+mageArmor.egg-info/top_level.txt
