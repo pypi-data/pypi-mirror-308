@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SDG_LLM"  # Changed to match your setup.py package name
+version = "0.0.5"
+description = "Synthetic data generator for LLM evaluation"
+authors = [
+    { name = "Darshan Kumar", email = "Darshankumarr03@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project-dependencies]
+# List your dependencies here
+langchain_groq = "*"  # Replace with the actual library name
+langchain_community = "*"  # Replace with actual JSON parser if needed
+langchain_core= "*" 
+langchain= "*" 
+
+
+
+
+[project.urls]
+"Source" = "https://github.com/Darshanroy/synthetic-data-generator.git"
+"Tracker" = "https://github.com/Darshanroy/synthetic-data-generator/issues"

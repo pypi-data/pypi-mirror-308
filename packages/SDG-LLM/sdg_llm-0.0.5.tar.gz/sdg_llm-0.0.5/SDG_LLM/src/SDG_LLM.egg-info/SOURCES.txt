@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+SDG_LLM/src/SDG_LLM.egg-info/PKG-INFO
+SDG_LLM/src/SDG_LLM.egg-info/SOURCES.txt
+SDG_LLM/src/SDG_LLM.egg-info/dependency_links.txt
+SDG_LLM/src/SDG_LLM.egg-info/top_level.txt
+SDG_LLM/src/SDG_LLM/__init__.py
+SDG_LLM/src/SDG_LLM/document_loaders.py
+SDG_LLM/src/SDG_LLM/prompt_loaders.py
+SDG_LLM/src/SDG_LLM/text_extarcters.py
+SDG_LLM/src/SDG_LLM/text_spliters.py
+SDG_LLM/src/SDG_LLM/utlis.py
+SDG_LLM/src/SDG_LLM.egg-info/PKG-INFO
+SDG_LLM/src/SDG_LLM.egg-info/SOURCES.txt
+SDG_LLM/src/SDG_LLM.egg-info/dependency_links.txt
+SDG_LLM/src/SDG_LLM.egg-info/top_level.txt
