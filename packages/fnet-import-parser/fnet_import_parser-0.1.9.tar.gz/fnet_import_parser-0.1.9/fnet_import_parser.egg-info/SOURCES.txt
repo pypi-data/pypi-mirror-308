@@ -1,0 +1,16 @@
+pyproject.toml
+setup.py
+./fnet_import_parser/cli/__init__.py
+./fnet_import_parser/cli/index.py
+./fnet_import_parser/src/__index__.py
+./fnet_import_parser/src/index.py
+fnet_import_parser.egg-info/PKG-INFO
+fnet_import_parser.egg-info/SOURCES.txt
+fnet_import_parser.egg-info/dependency_links.txt
+fnet_import_parser.egg-info/entry_points.txt
+fnet_import_parser.egg-info/requires.txt
+fnet_import_parser.egg-info/top_level.txt
+fnet_import_parser/cli/__init__.py
+fnet_import_parser/cli/index.py
+fnet_import_parser/src/__index__.py
+fnet_import_parser/src/index.py
