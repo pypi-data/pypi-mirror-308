@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pip-audit-extra
+Version: 0.0.1rc6
+Summary: Extended version of pip-audit
+License: MIT
+Author: Kirill_Lekhov
+Author-email: kirill.lekhov@mail.ru
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pip-audit (>=2.7.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Description-Content-Type: text/markdown
+
+# pip-audit-extra
+Extended version of [pip-audit](https://pypi.org/project/pip-audit/).
+
+## Features
+* Viewing vulnerabilities of project dependencies along with severities.
+
+## Installation
+```sh
+pip install pip-audit-extra
+```
+
+## Usage
+```sh
+cat requirements.txt | pip-audit-extra
+```
+
+Poetry
+```sh
+poetry export -f requirements.txt | pip-audit-extra
+```
+
+UV
+```sh
+uv export --format requirements-txt | pip-audit-extra
+```
+
+### Severity filter
+If necessary, you can filter vulnerabilities by severity.
+By default, the filter selects vulnerabilities with the specified severity AND SEVERITIES WITH A HIGHER PRIORITY.
+```sh
+cat requirements.txt | pip-audit-extra --severity CRITICAL
+```
+
+To select only the specified level, add the prefix `~`, for example:
+```sh
+cat requirements.txt | pip-audit-extra --severity ~CRITICAL
+```
+
