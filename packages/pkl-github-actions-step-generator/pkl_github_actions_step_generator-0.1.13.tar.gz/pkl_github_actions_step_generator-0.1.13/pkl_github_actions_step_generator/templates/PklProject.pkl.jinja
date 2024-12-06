@@ -1,0 +1,8 @@
+amends "pkl:Project"
+
+package {
+  name = {% if package_name %}"{{ package_name }}"{% else %}"{{ call }}"{% endif %}
+  baseUri = "package://{{ base_uri }}"
+  version = "{{ package_version }}"
+  packageZipUrl = "https://{{ base_uri }}/\(name)@\(version).zip"
+}
