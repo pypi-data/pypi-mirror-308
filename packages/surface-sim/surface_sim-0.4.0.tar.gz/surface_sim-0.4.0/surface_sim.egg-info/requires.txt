@@ -1,0 +1,17 @@
+numpy
+xarray
+PyYAML
+netCDF4
+stim>=1.13.0
+qec-util
+python-sat
+galois
+
+[dev]
+pip-tools
+pytest
+black
+pytest-black
+flake8
+flake8-print
+pytest-flake8
