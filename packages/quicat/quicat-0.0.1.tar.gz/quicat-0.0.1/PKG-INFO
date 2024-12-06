@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: quicat
+Version: 0.0.1
+Summary: QUIck Clonal Analysis Toolkit - quicat
+Home-page: https://github.com/Saur-Lab/quicat
+Keywords: bioinformatics,genomics,clonal-analysis
+Author: Daniele Lucarelli
+Author-email: daniele.lucarelli@tum.de
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Documentation, https://Saur-Lab.github.io/quicat/
+Project-URL: Repository, https://github.com/Saur-Lab/quicat
+Description-Content-Type: text/markdown
+
+# quicat
+
+Coming soon
+

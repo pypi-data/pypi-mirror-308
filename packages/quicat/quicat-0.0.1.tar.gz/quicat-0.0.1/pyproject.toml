@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "quicat"
+version = "0.0.1"
+description = "QUIck Clonal Analysis Toolkit - quicat"
+authors = ["Daniele Lucarelli <daniele.lucarelli@tum.de>"]
+repository = "https://github.com/Saur-Lab/quicat"
+documentation = "https://Saur-Lab.github.io/quicat/"
+readme = "README.md"
+keywords = ["bioinformatics", "genomics", "clonal-analysis"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+]
+packages = [{ include = "quicat", from = "src" }]
