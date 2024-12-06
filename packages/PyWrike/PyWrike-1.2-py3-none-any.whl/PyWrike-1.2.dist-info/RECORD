@@ -1,0 +1,9 @@
+PyWrike/__init__.py,sha256=g_ZpcWssTmC-LWfhvIkWVY2GWqjtWpS_uXTn4VWCjco,4040
+PyWrike/wrike.py,sha256=FuYsTbrLv4VBWORh7Kf32cetfFgKXVz_ys9gG4pBd0s,64527
+PyWrike/gateways/__init__.py,sha256=OyhMsa3V89KoHuK06sLuokSHn8HH8uXDqzEko_DnYpw,116
+PyWrike/gateways/basegateway1.py,sha256=XKldUl4q7dsal2YV3KxrSkff7Zevu14JR1vxvQJDY4Q,2447
+PyWrike/gateways/oauth2gateway1.py,sha256=NkwOxIDbxQr6mFQQm2iuIHrhmOS7WQD2euSCMr8nPlM,2823
+PyWrike-1.2.dist-info/METADATA,sha256=4UsBH6Ld7Ler1ZzE2HWUEGadZH5WHe5QWpVP7Qgm8Ik,743
+PyWrike-1.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+PyWrike-1.2.dist-info/top_level.txt,sha256=DCkrpWUabRfNc7ijm2_RAaNODwZx-AchT3xuCzIPeU4,8
+PyWrike-1.2.dist-info/RECORD,,
