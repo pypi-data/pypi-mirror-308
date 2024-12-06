@@ -1,0 +1,6 @@
+convlstm_mlx/__init__.py,sha256=rsu4KiXhS4JkdFWhWBGM1CVVTxEqpdXv0YJNPoOuiDg,48
+convlstm_mlx/conv_lstm.py,sha256=qRTAJgDs88V2CdiOtxPvDGOBkesNjpctQsJWlt0AD4Q,6886
+convlstm_mlx-0.1.1a0.dist-info/METADATA,sha256=XEXlbm86Nnn8MCskcbx23Lfsmv86_4ctB9WUgbYONco,3032
+convlstm_mlx-0.1.1a0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+convlstm_mlx-0.1.1a0.dist-info/top_level.txt,sha256=g6v0BQMN-25Qxqef-oogiP9hOGoFUJy9b3GyUdnX9pY,13
+convlstm_mlx-0.1.1a0.dist-info/RECORD,,
