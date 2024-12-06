@@ -1,0 +1,7 @@
+Flask>=3.0.0
+google-auth==2.36.0
+google-cloud-logging==3.11.3
+google-cloud-trace==1.14.0
+PyMySQL==1.1.1
+types-PyMySQL==1.1.0.20241103
+cloud-sql-python-connector==1.13.0
