@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: pydobble
+Version: 1.0.7
+Summary: A Dobble/Spot It! card game implementation
+Project-URL: Homepage, https://github.com/tech4bueno/pydobble
+Project-URL: Repository, https://github.com/tech4bueno/pydobble.git
+Author-email: Tech4Bueno <164949278+tech4bueno@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: rich>=13.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# PyDobble
+
+A simple console-based version of the game Dobble.
+
+Supports any number of players, and varying levels of difficulty. 
+
+If you have [uv](https://github.com/astral-sh/uv), you can install and run with a single command: `uvx --from pydobble dobble`
+
+Otherwise just `pip install pydobble` and then run with `dobble`.
+
+![](https://github.com/tech4bueno/pydobble/blob/main/demo.gif)
+
+With thanks to [rich](https://github.com/Textualize/rich) for the user interface.

@@ -1,0 +1,12 @@
+./.gitignore,sha256=TOuWxhKA8PqUBDvVUms-A7jWljvKxu0yfRSCG28r1kE,35
+./LICENSE,sha256=E3JHFHZFZY6YDaUSzqO9QgE5wvr2HmYlY5PByCZ6J8g,1058
+./PKG-INFO,sha256=u_gU0XSDyWsR_XRs-fII6YoHuIlc5DmmM2TEd9C4njc,950
+./README.md,sha256=4hy8cUN2sHWofUeFwBAdmvBA8orIFNvpFnQZtm08N5o,473
+./dobble.py,sha256=cUql6wAhHeU7UQ9PDEk8tHv2wkFKLJ_JI_Zei5nAfAw,17072
+./emojis.txt,sha256=7dnGEWjkwhdrV0Ro3WK1VOrtd2cxLhW21KVIsAclElc,1388
+./pyproject.toml,sha256=Vo47dQ4nikUvQeI2qfwqiToHPfHgOm-mzC5m2dVQwIE,850
+pydobble-1.0.7.dist-info/METADATA,sha256=u_gU0XSDyWsR_XRs-fII6YoHuIlc5DmmM2TEd9C4njc,950
+pydobble-1.0.7.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pydobble-1.0.7.dist-info/entry_points.txt,sha256=cLQM-69eNTg6fjUAlJ3VGshHzF7hLrWBhIqofu-J5VQ,39
+pydobble-1.0.7.dist-info/licenses/LICENSE,sha256=E3JHFHZFZY6YDaUSzqO9QgE5wvr2HmYlY5PByCZ6J8g,1058
+pydobble-1.0.7.dist-info/RECORD,,
