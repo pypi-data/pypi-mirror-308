@@ -1,0 +1,8 @@
+README.md
+setup.py
+is-thirteen-yuva47/__init__.py
+is-thirteen-yuva47/core.py
+is_thirteen_yuva47.egg-info/PKG-INFO
+is_thirteen_yuva47.egg-info/SOURCES.txt
+is_thirteen_yuva47.egg-info/dependency_links.txt
+is_thirteen_yuva47.egg-info/top_level.txt
