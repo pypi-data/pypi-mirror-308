@@ -1,0 +1,11 @@
+lovadira/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lovadira/generator.py,sha256=cOVddjGus4dcsulRIE8_wZp4tcM-tgSYnpduZya5z7M,144
+lovadira/utils.py,sha256=oJDz6CVe83Mi9IqyblsYUcUNgpgPEGu1aAfsBLy_jpc,8053
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_generator.py,sha256=POw7_AWiMh_fLiMZfBddDl_tn5HmnyqZ-o_I89zz3PU,411
+lovadira-0.1.dist-info/LICENSE,sha256=1MyqcvgUMSUmoBFLxCrdslpUf1MQdkGCKwJFR3iq818,1069
+lovadira-0.1.dist-info/LICENSE_JAWA,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lovadira-0.1.dist-info/METADATA,sha256=0SeWKkDlwrLCg8vW0drrm0RDMONWBnOW1BCziPUk4ag,1370
+lovadira-0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+lovadira-0.1.dist-info/top_level.txt,sha256=Tv_JCB5MAhawBWtqlDjHzVpZmaKADmfxGWDlJhiIf3o,14
+lovadira-0.1.dist-info/RECORD,,
