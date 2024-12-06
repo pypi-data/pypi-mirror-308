@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pydantic2zod
+Version: 0.1.1
+Summary: Pydantic to zod declaration compiler.
+Home-page: https://github.com/argyle-engineering/pydantic2zod
+License: MIT
+Author: Povilas Balciunas
+Author-email: povilas@argyle.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: libcst (>=0.4,<2)
+Requires-Dist: networkx (>=2,<4)
+Requires-Dist: typer (>=0.7.0)
+Requires-Dist: typing-extensions (>=4,<5)
+Project-URL: Documentation, https://github.com/argyle-engineering/pydantic2zod
+Project-URL: Repository, https://github.com/argyle-engineering/pydantic2zod
+Description-Content-Type: text/markdown
+
+# Pydantic to Zod compiler
+
+Transfer your type safe Python data models to TypeScript:
+[pydantic](pydantic-docs.helpmanual.io/) -> [zod](zod.dev/).
+
+* Retains the class and field names, comments.
+* Customize the output, etc.
+* Suports both **pydantic** v1 and v2.
+
+![example](example.gif)
+
+See the [docs](docs.md).
+
+## Similar projects
+
+* https://github.com/cs-cordero/py-ts-interfaces
+

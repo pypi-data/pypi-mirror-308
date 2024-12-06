@@ -1,0 +1,10 @@
+pydantic2zod/__init__.py,sha256=bx2It_DplZx3N4ss29n6sXLoQaGzDcJudHi0-4xWKNk,108
+pydantic2zod/__main__.py,sha256=JqdVWGulQ46sUpzP00qsIP8lNHHKpZ0tdKvY5AY8C4Q,1187
+pydantic2zod/_codegen.py,sha256=I1U5bsDpAsWYEZ1RS811M-62mE3BuLRWYa4YNQnFTSg,9323
+pydantic2zod/_compiler.py,sha256=DAW8Dqf2MujME6KWlYhHsZSIgA7dh5X3nmQZmivNmBs,2007
+pydantic2zod/_parser.py,sha256=ubmtMmOcvRR0q9TW_og0_5ibcTu3yArUSTV0yJefM4U,21534
+pydantic2zod/model.py,sha256=j4XlIxYOJeBZ72qN_KEQwmsaiTdn_yOw0rLPMVVN7og,2608
+pydantic2zod-0.1.1.dist-info/LICENSE,sha256=3PusDOvZlRCEu1Sfuh6zw0EDAUz_7lqmh2QOU9wAthQ,1075
+pydantic2zod-0.1.1.dist-info/METADATA,sha256=Bng7e6GpuEYIY-mpsnLiR38Lkok1vN-cNxQeJuXMUB4,1290
+pydantic2zod-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pydantic2zod-0.1.1.dist-info/RECORD,,
