@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pycasm
+Version: 1.0.5
+Summary: a helper for casmooc.com self-study
+Home-page: https://github.com/huxulm
+Author: Huxulm
+Author-email: huxulm@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Natural Language :: Chinese (Simplified)
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: pyyaml
+Requires-Dist: certifi ==2024.7.4
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.7
+Requires-Dist: python-utils ==3.8.2
+Requires-Dist: requests ==2.32.3
+Requires-Dist: typing-extensions ==4.12.2
+Requires-Dist: urllib3 ==2.2.2
+
+# pycas
+
+使用 python 完成 casmooc.cn 上的课程学习
+
+<img src="./screenshot.png" style="width: 80%; margin: 0 10%;" />
+
+## 安装
+
+```
+pip install pycasm
+```
+
+## 获取 access token
+
+1. 打开 [https://www.casmooc.cn/#/personal/index](https://www.casmooc.cn/)， 完成登录
+2. `F12` 打开浏览器控制台，按 `CTRL + R` 或 `F5` 刷新页面，复制请求头中的 `x-access-token` 值到剪贴板
+
+<img src="./screenshot_1.png" style="width: 80%; margin: 0 10%;">
+
+## 运行
+
+```python
+pycas -tk <paste access token>
+```
