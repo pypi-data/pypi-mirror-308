@@ -1,0 +1,13 @@
+runch/__init__.py,sha256=5Cq2nax6dPl6Sh0zj0_Ql3Le86j9XIXrn87UVoNCo9E,255
+runch/__main__.py,sha256=vtwNmzBCF8d8M9d4HcMKUenHkLgWUfCa8vCzsSIdvgE,477
+runch/_reader.py,sha256=WBLK7ZtvnZLHy7TF_fDDi9mduBQ-NfhKZAtbHX6yyIg,14295
+runch/_type_utils.py,sha256=Ok_UxSR9ujC86__cV81Fu7xLv8WdtFKS_ZljqDU-ed4,5094
+runch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runch/runch.py,sha256=bvKjRV1qAgggc2B_bMjv9izgOqstal3nESIaph8E79A,7061
+runch/script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runch/script/custom_formatter.py,sha256=sj678ksfxTNcfoAu_MfIDX0nqC1s7Z_xgyDS6PlZDvY,4583
+runch/script/schema_generator.py,sha256=jm1dr6mBNPEvYWFH_w0DgTe_Cc2ASQTWDwxpco9MJwU,4673
+runch/script/test.py,sha256=KHRWKJkcD5q4vlZkzUuhv-DJCIr9T6HmaKnrA6mOV4Q,612
+runch-1.0.0.dist-info/METADATA,sha256=cpfBNAZPGHtGyC5jAjAAitIg_r3AaVFspNs3-WlCH4U,1832
+runch-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+runch-1.0.0.dist-info/RECORD,,

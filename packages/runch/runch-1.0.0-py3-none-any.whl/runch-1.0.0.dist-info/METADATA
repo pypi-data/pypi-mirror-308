@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: runch
+Version: 1.0.0
+Summary: Runch: refined munch. With generic typing support.
+License: Apache-2.0
+Author: XieJiSS
+Author-email: panrz@deepseek.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: asyncer (>=0.0.8,<0.0.9)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: runch-datamodel-code-generator (>=0.0.2,<0.0.3)
+Requires-Dist: runch-mergedeep (>=1.3.5,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Runch
+
+Refined munch. Provides basic munch functionality with additional typing support and runtime validation.
+
+## Installation
+
+```bash
+pip install runch
+```
+
+## Usage
+
+```python
+from runch import RunchModel, RunchConfigReader
+
+class ExampleConfig(RunchModel):
+    db_host: str
+    db_port: int
+    db_user: str
+    db_password: str
+    db_name: str
+
+
+example_config = RunchConfigReader[ExampleConfig].read("example_config_file", "example_config_dir", "yaml")
+
+print(example_config.config.db_host)  # with intellicode support & runtime validation
+```
+
+```bash
+$ touch example_config_dir/example_config_file.yaml
+```
+
+```yaml
+db_host: localhost
+db_port: 5432
+db_user: user
+db_password: password
+db_name: database
+```
+
+## Model Generator
+
+```bash
+$ python -m runch <config_name> [config_ext]
+```
+
+Manual:
+
+```
+Generate a model definition from a config file.
+
+config_name: the name of the config file without the extension.
+config_ext: the extension of the config file. Default is `yaml`.
+
+Use RUNCH_CONFIG_DIR environment variable to specify the directory of the config files. Default is `./etc`.
+
+Example:
+    python -m runch my_config
+    python -m runch my_config yaml
+```
+
