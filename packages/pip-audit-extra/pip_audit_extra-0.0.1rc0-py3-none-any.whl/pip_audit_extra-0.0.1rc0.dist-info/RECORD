@@ -1,0 +1,15 @@
+pip_audit_extra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pip_audit_extra/__main__.py,sha256=SLBOZMmKiOtRGWWwYsWxNFi2rjkC3DS3o-x50YixQwQ,798
+pip_audit_extra/cli.py,sha256=a8Dlchq7KbZPKl18P8JPzwVuXPWwVk4Ea1XncyN1x-w,679
+pip_audit_extra/core.py,sha256=nvBS7rdN_JIr7N8FeGdIWJxshemLoI9mmXmG8UJPz8E,1542
+pip_audit_extra/iface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pip_audit_extra/iface/audit.py,sha256=ZUlJc6lctxCx8wFqkJvuGYfhGxiY1hU421RVG1TjK1k,1064
+pip_audit_extra/iface/osv.py,sha256=3c2Jb3piwgaacQafcVGLTYsqfwkf4NZ_Xr3tn9O6vvA,1235
+pip_audit_extra/requirement.py,sha256=VvQR_0EGTs9_8yv85IgrD3ncA9Ae4Rfk_Sb5TqKt67o,449
+pip_audit_extra/severity.py,sha256=mUNiXKdG3NEmC8dZVEHwPYb7xwDI1yHKZ42QnylF0hI,496
+pip_audit_extra/vulnerability.py,sha256=Wgz7PvZd-9eBj2llvnzlkXF7HM8kyC2eQf01U-x3bP0,2019
+pip_audit_extra-0.0.1rc0.dist-info/LICENSE,sha256=0BokIY5oXougT4jcOYJCxLqBs6zoQaAdmy0-qIjuj28,1070
+pip_audit_extra-0.0.1rc0.dist-info/METADATA,sha256=mAeUTSw0apBxneFgy9boOpFNLYmZqw5xZe3f82VHmoE,1181
+pip_audit_extra-0.0.1rc0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pip_audit_extra-0.0.1rc0.dist-info/entry_points.txt,sha256=xClmw0TKAfZnMIPFbGK8jkMtWYu5t8yDwGKFWN8LoJI,65
+pip_audit_extra-0.0.1rc0.dist-info/RECORD,,
