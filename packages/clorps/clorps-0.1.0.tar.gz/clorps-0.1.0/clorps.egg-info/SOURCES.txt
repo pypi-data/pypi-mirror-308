@@ -1,0 +1,9 @@
+README.md
+setup.py
+clorps/__init__.py
+clorps/clorps.py
+clorps.egg-info/PKG-INFO
+clorps.egg-info/SOURCES.txt
+clorps.egg-info/dependency_links.txt
+clorps.egg-info/requires.txt
+clorps.egg-info/top_level.txt
