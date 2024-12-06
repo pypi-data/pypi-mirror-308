@@ -1,0 +1,12 @@
+numpy
+opencv-python-headless
+
+[dev]
+black
+pytest
+coverage
+pre-commit
+pytest-xdist
+fastapi
+uvicorn[standard]
+python-multipart
