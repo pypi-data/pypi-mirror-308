@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-ctc-io = napari_ctc_io:napari.yaml

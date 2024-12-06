@@ -1,0 +1,11 @@
+napari
+numpy
+scikit-image
+tifffile
+pandas
+imagecodecs
+
+[testing]
+tox
+pytest
+pytest-cov
