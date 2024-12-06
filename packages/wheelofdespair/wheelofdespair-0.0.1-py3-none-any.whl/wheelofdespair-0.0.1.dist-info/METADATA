@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: wheelofdespair
+Version: 0.0.1
+Summary: Wheel-of-Despair: proof-of-concept for on-install exec from a .whl
+Author-email: Caleb <calebbrown@google.com>
+License: BSD 2-clause
+
