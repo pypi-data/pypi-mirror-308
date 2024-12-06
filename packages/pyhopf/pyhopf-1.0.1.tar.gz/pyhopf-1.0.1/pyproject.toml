@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyhopf"
+version = "1.0.1"
+description = "Small Python package to calculate the Hopf index of vector fields from finite-difference simulations."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+
+authors = [
+    {name = "Ross Knapman"},
+    {name = "Maria Azhar"},
+    {name = "Alessandro Pignedoli"},
+    {name = "Louis Gallard"},
+    {name = "Riccardo Hertel"},
+    {name = "Jonathan Leliaert"},
+    {name = "Karin Everschor-Sitte"}
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+dependencies = [
+    "numpy"
+]
+
+[project.urls]
+Homepage = "https://git.uni-due.de/twist-external/numericalhopfindexcalculation/numericalhopfindexcalculation_pythonhopfindex"
+Issues = "https://git.uni-due.de/twist-external/numericalhopfindexcalculation/numericalhopfindexcalculation_pythonhopfindex/-/issues"
+
