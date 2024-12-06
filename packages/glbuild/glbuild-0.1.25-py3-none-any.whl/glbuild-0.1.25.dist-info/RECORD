@@ -1,0 +1,15 @@
+glbuild/__init__.py,sha256=wyODJHGq4uIiW_xOLPAHOM0OHRFvTbGLy1otftCnsLo,77
+glbuild/cli/__init__.py,sha256=bDDt-CbHlmDbNOAUlUUJA9IjKHxAtTmefHAEBv_Hg6w,23
+glbuild/cli/main.py,sha256=gKmK3DojTf1a5XcWKitCC1Kj3gYrCjvDPAxM825IdPg,1404
+glbuild/constants.py,sha256=UgeZpNx24WCRERNhLfSfcjPGzyysM34di2NqYZfbktc,184
+glbuild/glbuild.py,sha256=TnNjLPNTtj8phw9pTTRHyIIZgkmdSDqehliYecI8AJk,9162
+glbuild/storage/__init__.py,sha256=zWCzvJzXeD2sb42YImacgXxXNwUbp2260fBQM9JPCpY,172
+glbuild/storage/abstract_storage.py,sha256=9J2z8y0FTa24YoyyfBrtC3gNbDnZHIspFnVSRZi_XhI,1273
+glbuild/storage/local_storage.py,sha256=i7bqcJNN9_ohd30kGNbQGLNPKMzIpVNrR-RzVbNsjBo,2680
+glbuild/utils/__init__.py,sha256=XAVT8LTy9eIAu1dRyrrt8749KJpnioyBG18MaLCFarY,54
+glbuild/utils/utils.py,sha256=DX-TChZBLTDDr3JBNvtVYto8sNJ-hxpNmTQ_DhaDibI,2683
+glbuild-0.1.25.dist-info/LICENSE,sha256=wda1GWjETWn1IXbOWOyYyfNF1QWsc5_OOm9U7JmHVpg,1071
+glbuild-0.1.25.dist-info/METADATA,sha256=bdMY6yP5WpFL0DaYHGnm7RLsCYpKF4DRoZvaa32TKzE,2316
+glbuild-0.1.25.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+glbuild-0.1.25.dist-info/entry_points.txt,sha256=InfjjKyXgCVSsn0Vto3BBmmt8bZQcjTZNRapexDeKCQ,48
+glbuild-0.1.25.dist-info/RECORD,,
