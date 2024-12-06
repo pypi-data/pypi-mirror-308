@@ -1,0 +1,11 @@
+certbot_dns_inwx/__init__.py,sha256=MberVrQsUiduAdAVoTc2tPHxUm778mVwMFSjgq0GGTo,266
+certbot_dns_inwx/_internal/__init__.py,sha256=r6l2qZ_TqT5eLRJ4dJ-_pYuoRSDwwlSbw6vV1AHmtN0,70
+certbot_dns_inwx/_internal/dns_inwx.py,sha256=uBqkVhFWrKVyZto3ECYYwXeJwQTWYu3X4xo3KEzoUC8,10077
+certbot_dns_inwx/_internal/tests/__init__.py,sha256=v5MRskrftJCeQzGDAl4N7kqRcuDul48yfJBd1GDDwk8,29
+certbot_dns_inwx/_internal/tests/dns_inwx_test.py,sha256=iuslb8S18LAO6JWhAbQ_3PwaPVyb36qoXfpT-t_sRbw,12004
+certbot_dns_inwx-3.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+certbot_dns_inwx-3.0.0.dist-info/METADATA,sha256=LRJ4jOHXdtTtpsmb1cyQuhWZIbyH7ACY9hVpVPJqfYo,5094
+certbot_dns_inwx-3.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+certbot_dns_inwx-3.0.0.dist-info/entry_points.txt,sha256=iaYQIjXOnpEo9MzqqkzFAqy1s9FCGIi8v6nscbI_me4,79
+certbot_dns_inwx-3.0.0.dist-info/top_level.txt,sha256=SGnmWjJ5-IuDEvlJThHzr2JT1dfbNZnkRv4VVVnRT7U,17
+certbot_dns_inwx-3.0.0.dist-info/RECORD,,
