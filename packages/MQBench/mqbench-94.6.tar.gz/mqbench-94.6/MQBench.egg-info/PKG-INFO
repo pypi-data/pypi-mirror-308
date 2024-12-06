@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: MQBench
+Version: 94.6
+Summary: x
+Author: x
+Author-email: xxx@outlook.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: psutil
+
+xxx
