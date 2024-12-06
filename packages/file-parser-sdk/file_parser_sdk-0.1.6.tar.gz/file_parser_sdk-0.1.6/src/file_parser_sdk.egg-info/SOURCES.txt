@@ -1,0 +1,6 @@
+setup.py
+src/file_parser_sdk.egg-info/PKG-INFO
+src/file_parser_sdk.egg-info/SOURCES.txt
+src/file_parser_sdk.egg-info/dependency_links.txt
+src/file_parser_sdk.egg-info/requires.txt
+src/file_parser_sdk.egg-info/top_level.txt
