@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+dh_test_package_cli/__init__.py
+dh_test_package_cli.egg-info/PKG-INFO
+dh_test_package_cli.egg-info/SOURCES.txt
+dh_test_package_cli.egg-info/dependency_links.txt
+dh_test_package_cli.egg-info/top_level.txt
