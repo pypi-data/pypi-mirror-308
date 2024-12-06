@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/model-evals/__init__.py
+src/model_evals.egg-info/PKG-INFO
+src/model_evals.egg-info/SOURCES.txt
+src/model_evals.egg-info/dependency_links.txt
+src/model_evals.egg-info/top_level.txt
