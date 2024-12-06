@@ -1,0 +1,92 @@
+Metadata-Version: 2.3
+Name: firecrawl-simple-client
+Version: 0.1.1
+Summary: Python client for Firecrawl-Simple
+Project-URL: Homepage, https://github.com/darinkishore/simplecrawl
+Project-URL: Repository, https://github.com/darinkishore/simplecrawl
+Project-URL: Documentation, https://github.com/darinkishore/simplecrawl#readme
+Author-email: Darin <86675935+darinkishore@users.noreply.github.com>
+License: MIT
+Keywords: async,crawling,http,web-scraping
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# SimpleCrawl
+
+A typed client for the [`firecrawl-simple`](https://github.com/nustato/firecrawl-simple) self-hosted API.
+
+## Installation
+
+```bash
+pip install simplecrawl
+```
+
+## Quick Start
+
+### Synchronous Usage
+
+`export FIRECRAWL_URL_BASE="url"`
+
+```python
+from simplecrawl import Client
+
+# Initialize client
+client = Client(base_url="some-url", ) # defaults to https://api.firecrawl.dev/v1 as base URL if not found in environment
+
+# Scrape a single page
+result = client.scrape("https://example.com")
+print(result.markdown)
+print(result.metadata.title)
+
+# Crawl multiple pages
+job = client.crawl(
+    "https://example.com",
+    include_paths=["/blog/*"],
+    max_depth=2,
+    limit=10
+)
+```
+
+### Async Usage
+
+```python
+import asyncio
+from simplecrawl import AsyncClient
+
+async def main():
+    async with AsyncClient(token="your-api-token") as client:
+        result = await client.scrape("https://example.com")
+        print(result.markdown)
+
+asyncio.run(main())
+```
+
+## Features
+
+- Synchronous and asynchronous clients
+- Single page scraping
+- Multi-page crawling
+- URL discovery/mapping
+- Content format options (Markdown, HTML, Links, etc.)
+- Customizable scraping options
+
+## Documentation
+
+For detailed examples, check out the examples folder.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
