@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ATACS.egg-info/PKG-INFO
+ATACS.egg-info/SOURCES.txt
+ATACS.egg-info/dependency_links.txt
+ATACS.egg-info/requires.txt
+ATACS.egg-info/top_level.txt
+atacs/__init__.py
+atacs/macd.py
+atacs/rsi.py
+atacs/stats.py
+tests/test_macd.py
+tests/test_rsi.py
+tests/test_stats.py
