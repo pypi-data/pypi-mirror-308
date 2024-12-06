@@ -1,0 +1,5 @@
+dh_test_package_cli/__init__.py,sha256=2FlPoSaOyrxir3yeJEm4xG2w9CbNmq04TGfv5Z5YKz4,8
+dh_test_package_cli-0.1.0.dist-info/METADATA,sha256=Zn-jM7Kul_DhZdD1-T6Yh8x-xew6jog-J1LvyAMMJ9c,433
+dh_test_package_cli-0.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+dh_test_package_cli-0.1.0.dist-info/top_level.txt,sha256=ImEopeBulO29-HWmb9VgbHmZof38gAIJ40DRqplYGWE,20
+dh_test_package_cli-0.1.0.dist-info/RECORD,,
