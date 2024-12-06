@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: truss-shim
+Version: 0.10.0rc0
+Summary: A seamless bridge from model development to model delivery
+License: MIT
+Author: Pankaj Gupta
+Author-email: pankaj@baseten.co
+Requires-Python: >=3.8,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: truss_lib[all] (==0.10.0rc000)
