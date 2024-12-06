@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: userdatamodel
+Version: 3.0.1
+Summary: PDC data model for user management
+Home-page: https://github.com/uc-cdis/userdatamodel
+License: Apache-2.0
+Author: CTDS UChicago
+Author-email: cdis@uchicago.edu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cdislogging (>=1,<2)
+Requires-Dist: sqlalchemy (>=1.3.0)
+Project-URL: Repository, https://github.com/uc-cdis/userdatamodel
+Description-Content-Type: text/markdown
+
+# userdatamodel
+PDC data model for user management
+
