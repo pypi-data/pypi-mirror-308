@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: proof-business-api
+Version: 0.4.0
+Summary: 
+Author: Aria Taylor
+Author-email: ari@willing.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: debug
+Requires-Dist: importlib-resources (>=6.4.5,<7.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# proof-business-api
+
+API client for Proof's business API which is for document notarizing and secure signing.
+
+Proof is a document signing and notarizing client which allows one to send a document package with notarization requirements and limitations.
+
+Documents can be uploaded together as byte64 encoded strings or uploaded to draft transactions individually. Documents will then be sent to provided emails and SMS numbers for secure signing which can include activation dates and end dates.
+
+
