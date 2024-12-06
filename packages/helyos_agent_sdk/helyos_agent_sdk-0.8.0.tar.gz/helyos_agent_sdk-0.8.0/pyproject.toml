@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "helyos_agent_sdk"
+version = "0.8.0"
+description = "Package encloses methods and data definitions that facilitate the connection of agents in the helyOS framework."
+authors = ["Carlos Viol Barbosa , Julius Kolb"]
+readme = "README.md"
+packages = [{include = "helyos_agent_sdk"}]
+keywords = ["autonomous driving", "helyos", "agent", "robot"]
+
+homepage = "https://helyosframework.org"
+repository = "https://github.com/helyOSFramework/helyos_agent_sdk"
+documentation = "https://helyosframework.github.io/helyos_agent_sdk/"
+
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pika = "^1.3.1"
+pycryptodome = "^3.15.0"
+cryptography = "^41.0.3"
+dataclasses-json = "^0.5.7"
+paho-mqtt = "^1.6.1"
+requests = {version = "^2.31.0", platform = "win32 || linux"}
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+pre-commit = {version = "^2.4.0", python = "^3.6.1"}
+pylint = "^2.5.0"
+tox = "^3.14.6"
+sphinx = "^3.0.3"
+sphinxcontrib-apidoc = "^0.3.0"
+sphinx_rtd_theme = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
