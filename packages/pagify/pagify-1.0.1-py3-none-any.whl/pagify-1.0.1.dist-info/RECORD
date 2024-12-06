@@ -1,0 +1,16 @@
+pagify/__init__.py,sha256=G47T_pu0_rcwJc6PccxEoobHoCmbUsm6l1s74ZTrKJY,165
+pagify/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pagify/adapters/paginate.py,sha256=eC1vUXA0eXjib-Tnwh12Kks5ZU96gJK_pvFEKUUhDJU,1805
+pagify/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pagify/core/cursor_paginator.py,sha256=ooLobs--Zrtbf297RF7D1moykMqNY5M6uGuNgeKMpz4,1438
+pagify/core/offset_paginator.py,sha256=CJsz57cKbtzRQ7S5dlDchjRBqY25fqlFYJ3srMmWMB8,1483
+pagify/core/page_number_paginator.py,sha256=FPQZiqijTiW3m_RBFsKgQF9zdaewPltzo7Ute2ZGcdc,1491
+pagify/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pagify/tests/test_paginate.py,sha256=8wIum9hFDVmTccKQv44t9l1MhcVZqC-T1oNXSWaNR2Y,2860
+pagify/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pagify/utils/response_formatting.py,sha256=Jd_CcBV5pqfUXtW3yESUF8bz_bUSGkhn83bP88S3dgE,1193
+pagify/utils/serializer.py,sha256=excKqz0kwBrU8cKgi26IJ2pQ4NhX2tVblRlEsOeN72A,238
+pagify-1.0.1.dist-info/METADATA,sha256=csN3oVdXkeYUVGK46KfF4ZSnO1xjWXJ-SVeQorGOReo,3945
+pagify-1.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pagify-1.0.1.dist-info/top_level.txt,sha256=0KiBG1q2Jjg4TMEXOkv-V3pzLGCfq42XJaZGNuunikU,7
+pagify-1.0.1.dist-info/RECORD,,
