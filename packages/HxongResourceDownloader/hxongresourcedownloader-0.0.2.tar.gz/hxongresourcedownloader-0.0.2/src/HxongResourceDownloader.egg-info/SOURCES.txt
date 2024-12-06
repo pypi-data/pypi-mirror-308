@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/HxongResourceDownloader/DirCleaner.py
+src/HxongResourceDownloader/ResourceCheck.py
+src/HxongResourceDownloader/TgDownloader.py
+src/HxongResourceDownloader/__init__.py
+src/HxongResourceDownloader/__main__.py
+src/HxongResourceDownloader/setting.py
+src/HxongResourceDownloader.egg-info/PKG-INFO
+src/HxongResourceDownloader.egg-info/SOURCES.txt
+src/HxongResourceDownloader.egg-info/dependency_links.txt
+src/HxongResourceDownloader.egg-info/requires.txt
+src/HxongResourceDownloader.egg-info/top_level.txt
