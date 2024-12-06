@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: notifier_botty
+Version: 0.2.5
+Summary: A package for automating experts login and notifications
+Author: Dharshan
+Author-email: dharshanspn@mail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: pytz
+Requires-Dist: requests
+
+#  Notifier
+
+A Python library 
+## Features
+
+- Automated login to  account.
+- Periodically checks for available questions.
+- return 2 = time out
+- Login Failed on {account_name}
+- Limit hit on {account_name}
+
+## Installation
+
+To install the `notifier` library, you can use pip:
+
+```bash
+pip install notifier_botty
