@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: lilota-django
+Version: 0.0.8
+Summary: A lightweight solution for long-running tasks
+Author-email: Tobias Rössler <tobiasroessler@gmail.com>
+Project-URL: Homepage, https://github.com/tobiasroessler/lilota-django
+Project-URL: Issues, https://github.com/tobiasroessler/lilota-django/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=5.0.6
+Requires-Dist: lilota >=0.0.5
+
+# lilota-django
+
+Light weight solution for long running tasks when using Django.
+
+
+## Getting Started
+
+In order to install lilota-django in your application yopu have to do the following:
+
+```
+pip install lilota-django
+```
+
+After that you can integrate it by adding it in the **settings.py**.
+
+```
+INSTALLED_APPS = [
+  ...
+  'lilota_django'
+]
+```
+
+Now it is time to apply the database changes:
+
+```
+python manage.py migrate
+```
+
+After the migrations have been applied you will find a new tabel called **lilota_store** in your database. This table contains information about the tasks that are currently running or that already ran.
