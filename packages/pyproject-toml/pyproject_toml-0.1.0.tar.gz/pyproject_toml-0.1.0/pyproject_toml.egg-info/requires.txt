@@ -1,0 +1,13 @@
+setuptools>=75.4.0
+wheel>=0.45.0
+pydantic>=2.9.2
+packaging>=24.2
+
+[:python_version < "3.11"]
+tomli>=2.1.0
+
+[dev]
+jaraco-path>=3.7.1
+pre-commit>=4.0.1
+pytest>=8.3.3
+tox-uv>=1.16.0
