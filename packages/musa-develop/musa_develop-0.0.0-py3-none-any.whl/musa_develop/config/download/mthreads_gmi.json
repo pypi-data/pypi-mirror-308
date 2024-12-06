@@ -1,0 +1,11 @@
+{
+  "name": "mthreads-gmi",
+  "download": [
+    {
+      "version": "1.14.0",
+      "filename": "429b0f7c0_mthreads-gmi_1.14.0.tar.gz",
+      "url": "https://oss.mthreads.com/product-release/release_kuae1.3.0_musa3.1.0/External/429b0f7c0_mthreads-gmi_1.14.0.tar.gz",
+      "sha256": "xxxx"
+    }
+  ]
+}
