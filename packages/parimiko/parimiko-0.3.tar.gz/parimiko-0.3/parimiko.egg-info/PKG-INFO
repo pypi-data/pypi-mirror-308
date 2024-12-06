@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: parimiko
+Version: 0.3
+Summary: Corresponding package installer
+Author: Varied Master
+Author-email: variedadesmaster@mit.edu
+Requires-Dist: paramiko
+Requires-Dist: layoutspecs
