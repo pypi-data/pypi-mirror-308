@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: SqlSupport
+Version: 1.0.0
+Summary: A python library to ease down sql database query
+Home-page: https://github.com/JunaidParkar/SqlSupport
+Author: Artex Team
+Project-URL: Documentation, https://github.com/JunaidParkar/SqlSupport
+Project-URL: Source, https://github.com/JunaidParkar/SqlSupport
+Project-URL: Tracker, https://github.com/JunaidParkar/SqlSupport
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
