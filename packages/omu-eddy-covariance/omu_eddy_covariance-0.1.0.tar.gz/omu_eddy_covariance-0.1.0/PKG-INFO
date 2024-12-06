@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: omu-eddy-covariance
+Version: 0.1.0
+Summary: 大阪公立大学生態気象学研究グループのパッケージ
+Project-URL: Homepage, https://github.com/omu-meteorology/omu-eddy-covariance
+Project-URL: Bug Tracker, https://github.com/omu-meteorology/omu-eddy-covariance/issues
+Author-email: connect0459 <connect0459@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: covariance,eddy,meteorology,omu
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.11
+Requires-Dist: contextily>=1.6.2
+Requires-Dist: folium>=0.18.0
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: jpholiday
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pyproj>=3.7.0
+Requires-Dist: scipy
+Requires-Dist: shapely>=2.0.6
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# omu-eddy-covariance
+
+このパッケージは、大阪公立大学 生態気象学研究グループで実施されている観測で得られたデータを解析するPythonパッケージです。渦相関法によるデータを主な対象としています。
+
+## 更新履歴
+
+| 日付 | バージョン | 内容 |
+| :--: | :--: | :--- |
+| 2024-11-13 | `v0.1.0` | リポジトリを作成 |
+
+## Getting Start
