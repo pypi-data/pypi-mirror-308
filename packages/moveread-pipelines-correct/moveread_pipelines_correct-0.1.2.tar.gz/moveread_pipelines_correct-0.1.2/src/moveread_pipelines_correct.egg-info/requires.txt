@@ -1,0 +1,11 @@
+lazy-loader
+sequence-edits
+python-kv
+pipeteer
+chess-notation
+
+[run]
+sse-starlette
+game-prediction
+fastapi
+uvicorn
