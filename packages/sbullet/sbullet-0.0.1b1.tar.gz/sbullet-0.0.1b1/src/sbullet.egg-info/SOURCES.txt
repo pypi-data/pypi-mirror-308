@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/sbullet/__init__.py
+src/sbullet/example.py
+src/sbullet.egg-info/PKG-INFO
+src/sbullet.egg-info/SOURCES.txt
+src/sbullet.egg-info/dependency_links.txt
+src/sbullet.egg-info/top_level.txt
