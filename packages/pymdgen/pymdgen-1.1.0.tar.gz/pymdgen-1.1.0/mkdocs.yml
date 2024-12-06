@@ -1,0 +1,17 @@
+site_name: pymdgen
+site_url: https://github.com/20c/pymdgen
+
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - API Documenation:
+    - pymdgen: api/pymdgen.md
+    - pymdgen.cli: api/pymdgen.cli.md
+    - pydmgen.md: api/pymdgen.md.md
+
+markdown_extensions:
+  - markdown_include.include
+  - admonition
+  - pymdgen
