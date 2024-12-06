@@ -1,0 +1,3 @@
+[console_scripts]
+dextro=dextro.console.entrypoint:main
+

@@ -1,0 +1,13 @@
+dextro/__init__.py,sha256=IjTYv4TMySwhdAkGRdmLDx9x5XoEaOXX0RJunXKwnUo,66
+dextro/console/entrypoint.py,sha256=JiRHfH4MSZsTPGUoiPngpUCHPYaAYsI5T07H552iUgc,697
+dextro/console/index_dataset.py,sha256=JXHVYwvV1tP-LJ-EkJDHE5YVrOpkoxrkLaih4qPrmtM,2626
+dextro/enrichers.py,sha256=lZsrsIklYYGfGseXzcnTuKDBMVL0a4Iz-I9JKrGM5MI,3810
+dextro/indexing.py,sha256=m9V4Yh9BALfrj2S95l2P4O2bPAq6i_xWKc_e5pdq5zg,8870
+dextro/loaders.py,sha256=BP06hvz3yZJ8czr0gsL6lvjln7HouJdaf5Q-0Ed1AE8,3021
+dextro/torch.py,sha256=yxTpdxYDswSvOnWvtD1CdjJzARqum3LysmKiiyEmoRo,2050
+dextro/types.py,sha256=NnMDPw-omGHJYl6m1iQ-fVtlEVluavMW56oom7s9B24,707
+dextro-0.1.2.dist-info/LICENSE,sha256=smaVsdao-lGnaC9IwGn_9tgI1iOgmcLfU96xGgXcJzU,1069
+dextro-0.1.2.dist-info/METADATA,sha256=7_KDoupcJQVOXjWPG_AfhJPkh4ARrv7BFz0htjPt-xI,6416
+dextro-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dextro-0.1.2.dist-info/entry_points.txt,sha256=et5L_GENRb4Dj0PK_1hv3RMDJskurST1GT5S9z1D5zc,57
+dextro-0.1.2.dist-info/RECORD,,
