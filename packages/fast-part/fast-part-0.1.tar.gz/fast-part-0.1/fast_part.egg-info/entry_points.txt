@@ -1,0 +1,2 @@
+[console_scripts]
+fast-part = fast_part.fast_part:main

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fast_part/__init__.py
+fast_part/fast_part.py
+fast_part.egg-info/PKG-INFO
+fast_part.egg-info/SOURCES.txt
+fast_part.egg-info/dependency_links.txt
+fast_part.egg-info/entry_points.txt
+fast_part.egg-info/requires.txt
+fast_part.egg-info/top_level.txt
