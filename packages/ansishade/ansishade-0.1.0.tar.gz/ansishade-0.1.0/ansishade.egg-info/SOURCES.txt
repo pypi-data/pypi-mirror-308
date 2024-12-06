@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ansishade/__init__.py
+ansishade/color_print.py
+ansishade/specials.py
+ansishade/utils.py
+ansishade/version.py
+ansishade.egg-info/PKG-INFO
+ansishade.egg-info/SOURCES.txt
+ansishade.egg-info/dependency_links.txt
+ansishade.egg-info/requires.txt
+ansishade.egg-info/top_level.txt
