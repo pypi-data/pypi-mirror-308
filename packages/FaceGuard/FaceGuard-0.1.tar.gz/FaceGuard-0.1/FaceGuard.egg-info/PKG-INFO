@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: FaceGuard
+Version: 0.1
+Summary: A face recognition package for login systems and other
+Home-page: https://github.com/baulum/FaceGuard
+Author: Paul H.
+Author-email: paulhoflich@gmail.com

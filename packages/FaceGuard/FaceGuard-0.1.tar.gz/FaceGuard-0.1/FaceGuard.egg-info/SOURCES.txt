@@ -1,0 +1,11 @@
+README.md
+setup.py
+FaceGuard/__init__.py
+FaceGuard/faces.py
+FaceGuard/recognition.py
+FaceGuard/utils.py
+FaceGuard.egg-info/PKG-INFO
+FaceGuard.egg-info/SOURCES.txt
+FaceGuard.egg-info/dependency_links.txt
+FaceGuard.egg-info/requires.txt
+FaceGuard.egg-info/top_level.txt
