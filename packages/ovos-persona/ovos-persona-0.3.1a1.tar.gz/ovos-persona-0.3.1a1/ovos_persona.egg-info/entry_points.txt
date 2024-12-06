@@ -1,0 +1,3 @@
+[opm.pipeline]
+ovos-persona-pipeline-plugin=ovos_persona:PersonaService
+
