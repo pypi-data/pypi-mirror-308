@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tensorlink
+Version: 0.1.0
+Summary: Tensorlink is a generalized, plug-and-play framework for distributed model scaling in PyTorch. It provides tools for parsing and distributing models across a network of peers, and integrates directly into existing PyTorch workflows.
+Home-page: https://smart-nodes.xyz/tensorlink
+Author: Smartnodes Lab
+Author-email: smartnodes-lab@proton.me
+License: MIT
+Project-URL: Documentation, https://smart-nodes.xyz/docs/overview
+Project-URL: Source, https://github.com/smartnodes-lab/tensorlink
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
