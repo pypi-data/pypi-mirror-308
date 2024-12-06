@@ -1,0 +1,8 @@
+nvpl/include/nvpl_fft_version.h,sha256=sGIGSBdc45XA-zJWNwb0qDP-chR1-YieBAPTNqA-kYY,210
+nvpl/include/nvpl_fftw.h,sha256=8c5H3tavCqbe_-cPqsOUzxuoOWwBQnrbrIA_w_kzeQ8,21861
+nvpl/lib/libnvpl_fftw.so.0,sha256=WWhOxY77abF9Z2sS8RNVNF9n4H5Kzj-Nmpjf-qJ8LZw,32904777
+nvpl_fft-0.3.0.dist-info/LICENSE,sha256=2BF0ZS8MRIpXNq_F1QZjYGhjv9bujIQW-9mmKMb4gC8,19072
+nvpl_fft-0.3.0.dist-info/METADATA,sha256=skYS4R-yp7SUwbMr5G882tMu4lPmirbfszqVMousK5Y,22435
+nvpl_fft-0.3.0.dist-info/WHEEL,sha256=yI1whwUN08gZTX6WAd2xaHhCahkTJ__rVGmHVz_4a3k,110
+nvpl_fft-0.3.0.dist-info/top_level.txt,sha256=YDXVw5MDZQd0Z6ox8-P6_rak9ah3j1MRa_W6ptdtvLg,10
+nvpl_fft-0.3.0.dist-info/RECORD,,
