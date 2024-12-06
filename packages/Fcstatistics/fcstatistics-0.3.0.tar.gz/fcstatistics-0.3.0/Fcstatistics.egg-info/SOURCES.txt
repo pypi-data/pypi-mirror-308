@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Fcstatistics/Fc.cp312-win_amd64.pyd
+Fcstatistics/Fc_test.c
+Fcstatistics/__init__.py
+Fcstatistics.egg-info/PKG-INFO
+Fcstatistics.egg-info/SOURCES.txt
+Fcstatistics.egg-info/dependency_links.txt
+Fcstatistics.egg-info/top_level.txt
+Fcstatistics/.ipynb_checkpoints/Fc_test-checkpoint.c
+Fcstatistics/.ipynb_checkpoints/Fc_test-checkpoint.pyx
