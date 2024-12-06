@@ -1,0 +1,13 @@
+dash_deckgl/DashDeckgl.py,sha256=YQvXsK6xzqc2wzIHdsx_5EvaK2tN2PSERbk6n7rMnG8,3997
+dash_deckgl/__init__.py,sha256=uUcEFvPeU5koWDknQ24_KT2M7L-j0EkWM6_76ouJpjc,1908
+dash_deckgl/_imports_.py,sha256=F89mjMjYfmyXSVguqUAlicCG38X2nD_2-RHYsyvHKMk,66
+dash_deckgl/dash_deckgl.min.js,sha256=LGGtNZ1REUu3RzIAfCZpmghPHLCtyCN3JwejAwk9aHY,1203181
+dash_deckgl/deckgl.js,sha256=Zgp72_JPeGl3ietKUkoRmJ-15PsAwxQuxVxYzFsMcM4,19253
+dash_deckgl/metadata.json,sha256=9V6dhlOBh9DZqlYI6ihN3LYzWNl8GIpM8Ivpof_egWE,4397
+dash_deckgl/package-info.json,sha256=9GYnpgDh2kRKtnni_J7FmMjxi0A7YKoayIuc0xByOMY,2808
+dash_deckgl/vendor.js,sha256=vEJxKCI_j5pnjURhOJV0jrOeLPZcHvPilltvdY72dM0,804977
+dash_deckgl-0.5.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dash_deckgl-0.5.3.dist-info/METADATA,sha256=jr-EGCsaQ2BoTki_m7vu09iMlCnLULBnuh45wt62_UE,589
+dash_deckgl-0.5.3.dist-info/WHEEL,sha256=HiCZjzuy6Dw0hdX5R3LCFPDmFS4BWl8H-8W39XfmgX4,91
+dash_deckgl-0.5.3.dist-info/top_level.txt,sha256=MqZP6E41_gULm9q8V90cVijkNf4_DFQ9wwqoWYEQCyo,12
+dash_deckgl-0.5.3.dist-info/RECORD,,
