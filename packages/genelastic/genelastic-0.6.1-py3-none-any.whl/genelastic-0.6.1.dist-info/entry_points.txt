@@ -1,0 +1,6 @@
+[console_scripts]
+db_info = genelastic.import_data.info:main
+db_integrity = genelastic.import_data.integrity:main
+gen-data = genelastic.import_data.gen_data:main
+import = genelastic.import_data.import_data:main
+validate = genelastic.import_data.validate_data:main
