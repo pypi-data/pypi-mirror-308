@@ -1,0 +1,8 @@
+aurora_signature-3.3.dist-info/RECORD,,
+aurora_signature-3.3.dist-info/WHEEL,sha256=UQCYJLehaUlx_yZq6xEegpxTOwku7xkx6eF4AoDt6vw,107
+aurora_signature-3.3.dist-info/entry_points.txt,sha256=uSe8YC6zeMAAPtRJHNVjlE41GrdRLqmv1M447eAObAI,48
+aurora_signature-3.3.dist-info/top_level.txt,sha256=JTxDCWunmzauOkdfS5JfZlnd-YRN3b0LrER7lHk96CQ,17
+aurora_signature-3.3.dist-info/METADATA,sha256=JCFnsGLjv-jjAfCgmDv_aIwO9wnNrhTOlWOYU0_sNbU,365
+aurora_signature/service.cpython-39-darwin.so,sha256=JMvA9yZEG8YfqDyfQb9MBI_kJuAcrtavIxHrO6zqF2A,99040
+aurora_signature/sign.cpython-39-darwin.so,sha256=WpREOxExixLpSIm0jnrBNrCi5eJtZsD_osHqWaHqZYo,199720
+aurora_signature/timestamp.cpython-39-darwin.so,sha256=Ea2tWvJLY6TN22CgCyFc2OvAKQe0EZ7mRXT_WaWtJ3E,119536
