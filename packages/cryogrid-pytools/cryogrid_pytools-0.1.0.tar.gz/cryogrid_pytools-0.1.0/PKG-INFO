@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cryogrid_pytools
+Version: 0.1.0
+Summary: Tools to read in CryoGrid MATLAB data to Python, includes forcing, outputs, DEMs, etc.
+Author-email: Luke Gregor <lukegre@gmail.com>
+Maintainer-email: Luke Gregor <lukegre@gmail.com>
+License: MIT license
+Project-URL: Homepage, https://github.com/lukegre/CryoGrid-pyTools
+Project-URL: CryoGrid, https://github.com/CryoGrid
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dask[array]
+Requires-Dist: dask[diagnostics]
+Requires-Dist: joblib
+Requires-Dist: loguru
+Requires-Dist: matplotlib
+Requires-Dist: munch
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: xarray
+
+# CryoGrid-pyTools
+Tools to read in CryoGrid MATLAB data to Python, includes forcing, outputs, DEMs, etc. 
+
+Feel free to use, modify, and distribute as you see fit.
+
+## Installation
+
+`pip install git+https://github.com/lukegre/CryoGrid-pyTools.git`
+
+## Usage
+
+A very basic example is below, but see `demo.ipynb` for more comprehensive examples.
+```python
+import cryogrid_pytools as cgt
+
+cgt.read_OUT_regridded_FCI2_file(fname)
+```
