@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+robust_email_validator/__init__.py
+robust_email_validator/config.py
+robust_email_validator.egg-info/PKG-INFO
+robust_email_validator.egg-info/SOURCES.txt
+robust_email_validator.egg-info/dependency_links.txt
+robust_email_validator.egg-info/requires.txt
+robust_email_validator.egg-info/top_level.txt
+robust_email_validator/schemas/email.py
+robust_email_validator/services/__init__.py
+robust_email_validator/services/email_validator.py
+robust_email_validator/utils/__init__.py
+robust_email_validator/utils/disposable_checker.py
+robust_email_validator/utils/dns_checker.py
+tests/test_email_validator.py
