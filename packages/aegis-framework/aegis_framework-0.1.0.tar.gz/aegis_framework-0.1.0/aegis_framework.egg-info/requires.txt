@@ -1,0 +1,2 @@
+fuzzywuzzy
+sqlite3

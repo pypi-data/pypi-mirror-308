@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+aegis/__init__.py
+aegis/default_llm.py
+aegis/design_agent.py
+aegis/llm_interface.py
+aegis/master_agent.py
+aegis/utils.py
+aegis_framework.egg-info/PKG-INFO
+aegis_framework.egg-info/SOURCES.txt
+aegis_framework.egg-info/dependency_links.txt
+aegis_framework.egg-info/requires.txt
+aegis_framework.egg-info/top_level.txt
