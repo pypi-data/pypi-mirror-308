@@ -1,0 +1,9 @@
+simpler_whisper/_whisper_cpp.cpython-310-darwin.so,sha256=7OH6EXiDs7ht3fSPjB8I6ejADsusz2E-FUeYyscHL4Q,3602896
+simpler_whisper/ggml-metal.metal,sha256=oMRl2BgNwsR4gfANTYthF0KHZsSTVA84a2Wkr6uV-f4,233831
+simpler_whisper/__init__.py,sha256=PC1GVXO2pPEB0y9Xc9JwLz-eua5spR-GJE2yGGfKrac,698
+simpler_whisper/whisper.py,sha256=xQmf0TsRZ-UR2SjtleczYRj3aERZg9tQ9eAY4j6HRK4,7719
+simpler_whisper-0.2.4.post2.dist-info/RECORD,,
+simpler_whisper-0.2.4.post2.dist-info/LICENSE,sha256=ZdKO47ebfnWaGROwiCF8GwSDmFokJ7_YPqpB-HEc9ds,1090
+simpler_whisper-0.2.4.post2.dist-info/WHEEL,sha256=FRgokfaNsPirn8IjRmgeYiVtFqcqRntKeQKIMgmA29I,115
+simpler_whisper-0.2.4.post2.dist-info/top_level.txt,sha256=Yk8UtXqBZduTEFDCj7GDo-vWHE8x7j5CfpTacQR1XA0,16
+simpler_whisper-0.2.4.post2.dist-info/METADATA,sha256=PQRm45TiRsImdXeUPchq1ic2HpUQwf4H19_DJvSwZkY,3821
