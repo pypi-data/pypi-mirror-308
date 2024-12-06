@@ -1,0 +1,13 @@
+remind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+remind/__main__.py,sha256=TpBwRJCQ5LzYmo4Lg5H1fx7MfUFbGcNn-dniHYUpOYw,3144
+remind/error_handler.py,sha256=A01xNX9TkIenXZFgb3rbgltK5ij3lMbkazC1UGTRzco,1257
+remind/query_manager.py,sha256=exxJzIfCmc7O4dC7h9uhO768p-ka6P-BGCsT6XW5qP4,12619
+remind/reminder.py,sha256=9v_lNdNN5DEF8U55is5TInzcmpySF1UtgEfUpC_OCk8,11228
+remind/reminder_confirmation.py,sha256=z9qzeqHOStvieoH-KVH9aZnT0XGYMuK5v5XKVhu5b0I,28088
+remind/reminder_manager.py,sha256=t5dFG77-qQ-vtKPGPwCsDjDHgdjSUekxA_cLcXxPPsQ,18825
+remindmail-1!2.0.1.dist-info/LICENSE.md,sha256=MhXqPYolpvN3MZFpj7HzBXeRv29xnT3Hot7MOpNKNuo,1070
+remindmail-1!2.0.1.dist-info/METADATA,sha256=PUKe_8zNdKIH4n7awQZ3PoueYt9uKNk-w6sdLm3c6WU,6972
+remindmail-1!2.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+remindmail-1!2.0.1.dist-info/entry_points.txt,sha256=XTDkzYq4T3R_ij4yohjT3DJkRWprEWy1fZ4eStKq5KA,48
+remindmail-1!2.0.1.dist-info/top_level.txt,sha256=MLUVyQQphIvFY36dpnk7iQy7k4t-dY-4Dd8nnmS_4YI,7
+remindmail-1!2.0.1.dist-info/RECORD,,
