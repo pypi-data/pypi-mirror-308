@@ -1,0 +1,36 @@
+---
+fail_fast: true
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-merge-conflict
+      - id: name-tests-test
+      - id: debug-statements
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        additional_dependencies:
+          - tomli
+
+  - repo: local
+    hooks:
+      - id: make-fmt
+        name: Make fmt
+        description: Formats files using the `make fmt` command
+        entry: make fmt
+        language: system
+        pass_filenames: false
+        require_serial: true
+        stages: [pre-commit, pre-merge-commit, pre-push, manual]
+
+      - id: make-test
+        name: Make test
+        description: Run tests using the `make test` command
+        entry: make test
+        language: system
+        pass_filenames: false
+        require_serial: true
+        stages: [pre-commit, pre-merge-commit, pre-push, manual]
