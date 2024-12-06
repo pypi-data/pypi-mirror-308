@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "stairsres"
+version = "0.3.2"
+description = ""
+authors = ["Roman Netrogolov <romius2001@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "stairs_resource_model" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+bamt_light = "*"
+numpy = "^1.25"
+#stairs-sdk = { git = "https://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@github.com/aimclub/stairs-sdk.git", branch = "publish" }
+#stairs-storage = { git = "https://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@github.com/aimclub/stairs-storage.git", branch = "publish" }
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
