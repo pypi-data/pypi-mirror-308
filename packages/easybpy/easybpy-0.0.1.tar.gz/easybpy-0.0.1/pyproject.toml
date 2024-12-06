@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "easybpy"
+version = "0.0.1"
+description = ""
+authors = ["Danny Rakita <daniel.rakita@yale.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+bpy = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
