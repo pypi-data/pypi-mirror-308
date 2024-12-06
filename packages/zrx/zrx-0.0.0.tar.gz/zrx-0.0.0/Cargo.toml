@@ -1,0 +1,8 @@
+[package]
+name = "zrx"
+version = "0.0.0"
+edition = "2021"
+description = "Reserved name"
+license = "MIT"
+
+[dependencies]

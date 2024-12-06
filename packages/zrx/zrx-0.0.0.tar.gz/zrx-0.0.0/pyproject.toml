@@ -1,0 +1,9 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zrx"
+version = "0.0.0"
+description = "Nothing to see here, move along"
+license = {text = "MIT"}
