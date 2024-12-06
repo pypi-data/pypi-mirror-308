@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: hcp-vault-secrets-wrapper
+Version: 0.7.4
+Summary: A wrapper for handling HCP Vault Secrets on an app-by-app basis
+Author-email: Matthew Wright <matt.jeremy.wright@gmail.com>
+Requires-Python: >=3.6
+Requires-Dist: build<2,>=1.2.2.post1
