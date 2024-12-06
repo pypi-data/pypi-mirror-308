@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/key.py
+src/signer.py
+src/eosio_signer.egg-info/PKG-INFO
+src/eosio_signer.egg-info/SOURCES.txt
+src/eosio_signer.egg-info/dependency_links.txt
+src/eosio_signer.egg-info/top_level.txt
