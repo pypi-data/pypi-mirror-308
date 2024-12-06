@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pdfmod"
+version = "0.1.5"
+description = "A tool for PDF file manipulation."
+authors = ["aoout <wuz66280@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fire = "^0.4.0"
+pymupdf = "^1.21.1"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.0"
+
+[tool.poetry.scripts]
+pdfmod = "pdfmod:main"
+
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
