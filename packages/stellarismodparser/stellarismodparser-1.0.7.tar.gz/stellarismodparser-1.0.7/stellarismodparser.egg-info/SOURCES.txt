@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+stellarismodparser/__init__.py
+stellarismodparser/stellarismodparser.py
+stellarismodparser.egg-info/PKG-INFO
+stellarismodparser.egg-info/SOURCES.txt
+stellarismodparser.egg-info/dependency_links.txt
+stellarismodparser.egg-info/requires.txt
+stellarismodparser.egg-info/top_level.txt
