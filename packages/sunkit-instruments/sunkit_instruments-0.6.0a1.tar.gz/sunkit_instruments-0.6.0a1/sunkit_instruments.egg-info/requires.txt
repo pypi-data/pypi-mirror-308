@@ -1,0 +1,17 @@
+sunpy[map,net,timeseries,visualization]>=6.0.0
+xarray>=2023.12.0
+
+[docs]
+sphinx
+sphinx-automodapi
+sunpy-sphinx-theme
+packaging
+sphinx-changelog
+sphinx-gallery
+
+[tests]
+pytest
+pytest-astropy
+pytest-doctestplus
+pytest-cov
+pytest-xdist
