@@ -1,0 +1,11 @@
+pdivas/__init__.py,sha256=T4-BKQL-Fu6XKT_BsD_DJalj9pzBPSw5EtSFFfc31eg,221
+pdivas/__main__.py,sha256=KWM4mJFIT_bTGn2JHD4xdQZpWE2E-Wcgf--FvyyLg3g,8740
+pdivas/scoring_to_vcf.py,sha256=nba3_8lSRh11qeC44a4pLMmehKbZKaRmsRC2HXBqPww,4323
+pdivas/vcf2tsv.py,sha256=RkvSEuWomPK3w8xqhzHxQ1rPowF4ogBBH0fj1KzKz1w,2162
+pdivas/model/PDIVAS.sav,sha256=Q3wIpglE-YjRfHr_IIIPZWwzTMbkYr_MbWJaxZYSxpo,1897567
+pdivas-1.2.0.dist-info/LICENSE,sha256=ApMXaKFYs_wGlG5BokzIx4wYneOGx80cqIeVtvuWHu8,1088
+pdivas-1.2.0.dist-info/METADATA,sha256=Kt-vtHFOplLtcaLAlEQ52MkXDnE3vxXO0roSVEFHrJc,9552
+pdivas-1.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+pdivas-1.2.0.dist-info/entry_points.txt,sha256=-m8_Vq6Cp4gKE1RtbZWTiBaxM2_gEAqkzSg1LrwYDZY,48
+pdivas-1.2.0.dist-info/top_level.txt,sha256=h2Tv3DJyQ8pw4-cYwmuBhxsvrJRklDJvPAhAEB8yfa8,7
+pdivas-1.2.0.dist-info/RECORD,,
