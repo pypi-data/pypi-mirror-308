@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: XeprAPI
+Version: 0.61.1
+Summary: Python interface for for Bruker Xepr.
+Author: Bruker Biospin
+Author-email: ss2151@cam.ac.uk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.2.1
+
+[![PyPi Release](https://img.shields.io/pypi/v/XeprAPI.svg?style=flat)](https://pypi.org/project/XeprAPI/)
+
+## XeprAPI
+
+This is an update of Bruker Xepr Python API which works with Python 3.7 and 3.8. Bruker officially supports only
+Python 2.7 so use this at your own risk.
+
+Install the latest stable release from PyPI with
+```shell
+pip3 install --update XeprAPI
+```
+or from GitHub:
+
+```shell
+pip3 install --update git+https://github.com/OE-FET/XeprAPI
+```

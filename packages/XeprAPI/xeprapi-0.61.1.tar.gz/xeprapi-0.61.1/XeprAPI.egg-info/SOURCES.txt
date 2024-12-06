@@ -1,0 +1,12 @@
+README.md
+setup.py
+XeprAPI/__init__.py
+XeprAPI/libxeprapi.so
+XeprAPI/libxeprapi_32.so
+XeprAPI/main.py
+XeprAPI.egg-info/PKG-INFO
+XeprAPI.egg-info/SOURCES.txt
+XeprAPI.egg-info/dependency_links.txt
+XeprAPI.egg-info/not-zip-safe
+XeprAPI.egg-info/requires.txt
+XeprAPI.egg-info/top_level.txt
