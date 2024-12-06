@@ -1,0 +1,8 @@
+_Sailfish.cpython-39-darwin.so,sha256=kB5TTMLV6amZ0KJ4RX7ha4zL2zFyCZmKTJ2nz4cZw2c,1076960
+msasim-24.12.0.dist-info/RECORD,,
+msasim-24.12.0.dist-info/LICENSE,sha256=p1Aa_mM2Nu6dG3XqMVU62Jhf04lNOwtXUrhhvhcDips,10312
+msasim-24.12.0.dist-info/WHEEL,sha256=UQCYJLehaUlx_yZq6xEegpxTOwku7xkx6eF4AoDt6vw,107
+msasim-24.12.0.dist-info/top_level.txt,sha256=NS1ILx5V94Yyh_M7yDrrqbBPu1TL_zJuxhsI90YEJVY,17
+msasim-24.12.0.dist-info/METADATA,sha256=jVxAKL5akbzugkbsmgzPnFcQ2_kc84Pu18k0V4d1_bE,1468
+msasim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msasim/sailfish.py,sha256=I45ufK0owZIsu7zOBN427rQ07RGl3Jll8mnGiCS0Ufo,25698
