@@ -1,0 +1,2 @@
+cachebox>=4.3.0
+cachetools>=4.2.4
