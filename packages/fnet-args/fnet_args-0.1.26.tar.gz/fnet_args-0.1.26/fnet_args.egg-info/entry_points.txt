@@ -1,0 +1,2 @@
+[console_scripts]
+fnet_args = fnet_args.cli:main

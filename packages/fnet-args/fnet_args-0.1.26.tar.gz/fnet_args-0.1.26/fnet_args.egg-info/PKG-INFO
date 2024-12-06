@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fnet_args
+Version: 0.1.26
+Requires-Python: >=3.12
+Requires-Dist: pyyaml
+Requires-Dist: jsonschema
+Requires-Dist: deepmerge
+Requires-Dist: rich
