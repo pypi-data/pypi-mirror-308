@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: shape_calculator_top
+Version: 0.1
+Summary: A simple package to calculate areas of different shapes
+Home-page: https://github.com/mshreeram/shape_calculator
+Author: Shree Ram
+Author-email: mekashreeram@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Shape Calculator
+
+This package provides functions to calculate the area of different shapes.
+
+

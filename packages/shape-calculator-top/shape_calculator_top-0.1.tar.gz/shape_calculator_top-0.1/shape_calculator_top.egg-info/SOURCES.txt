@@ -1,0 +1,8 @@
+README.md
+setup.py
+shape_calculator_top/__init__.py
+shape_calculator_top/calculator.py
+shape_calculator_top.egg-info/PKG-INFO
+shape_calculator_top.egg-info/SOURCES.txt
+shape_calculator_top.egg-info/dependency_links.txt
+shape_calculator_top.egg-info/top_level.txt
