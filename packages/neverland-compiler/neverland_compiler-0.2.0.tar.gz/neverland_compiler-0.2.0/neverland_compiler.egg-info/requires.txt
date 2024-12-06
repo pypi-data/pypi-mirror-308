@@ -1,0 +1,7 @@
+Cython==3.0.11
+
+[dev]
+twine==5.1.1
+pre-commit==4.0.1
+pytest==8.3.3
+copier==9.4.1
