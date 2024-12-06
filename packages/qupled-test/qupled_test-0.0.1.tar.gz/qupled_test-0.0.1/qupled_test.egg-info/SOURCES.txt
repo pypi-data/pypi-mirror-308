@@ -1,0 +1,12 @@
+MANIFEST.in
+pyproject.toml
+qupled/__init__.py
+qupled/classic.py
+qupled/quantum.py
+qupled/util.py
+qupled/Darwin/qupled.so
+qupled_test.egg-info/PKG-INFO
+qupled_test.egg-info/SOURCES.txt
+qupled_test.egg-info/dependency_links.txt
+qupled_test.egg-info/requires.txt
+qupled_test.egg-info/top_level.txt
