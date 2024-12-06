@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapelite/__init__.py,sha256=cAFENlXuH8gC_DJS2UnpfOdvbUgJ_IlOjIvJTQ2-pBc,131
+scrapelite/_base_search.py,sha256=Ii4ENgAxYW0EUHN15X11fBbybnAOWYdfezMAWYhDmec,3373
+scrapelite/_github_search.py,sha256=6iV8POJ9oUYxoQ9iKHNfL7tlSthqX-WCk-rKM8mRHiA,5679
+scrapelite/_google_search.py,sha256=8ZuABlycFi1Jy15tGeAVdb0__JmqEfT0Kvw8HTa3eIQ,1088
+scrapelite-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapelite-0.0.1.dist-info/METADATA,sha256=SxHFWa3SHaUf8g7Tm_oGFFe8o2x2-2TMNqra_gKoPO0,584
+scrapelite-0.0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+scrapelite-0.0.1.dist-info/top_level.txt,sha256=EMvGOM0R3qZ3JQroeAA7ih-mx9ma8ebPRshLl3HglFM,20
+scrapelite-0.0.1.dist-info/RECORD,,
