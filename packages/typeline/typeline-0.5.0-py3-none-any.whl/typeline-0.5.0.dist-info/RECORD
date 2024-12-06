@@ -1,0 +1,11 @@
+CONTRIBUTING.md,sha256=selnIsM_6KTwdFyc0B3u4n2bM_sBAeSbQV-Fd7mzHuE,1803
+LICENSE,sha256=nN9Rgc41QgFz1uJfX7AsXRQJxlcJotVEPTNPwUAqfys,1070
+typeline/__init__.py,sha256=X1FoggMF5EqlSXPj00m6GE0fKm_NkeaQAYv-c9EvpGk,509
+typeline/_data_types.py,sha256=zjSrvVebP37yVYA8aqC-czhRFl0P2uemo8OAnqvwDAM,972
+typeline/_reader.py,sha256=urPP2VA8jY1S3c0dPb5NxOCwfIRn0rt-sXy1XrY1pYQ,10268
+typeline/_writer.py,sha256=0wgyyIhgT1ozVX5kAtarj3vM-PEcqeLBEmURyiFgKzM,5714
+typeline/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typeline-0.5.0.dist-info/LICENSE,sha256=nN9Rgc41QgFz1uJfX7AsXRQJxlcJotVEPTNPwUAqfys,1070
+typeline-0.5.0.dist-info/METADATA,sha256=mVynMSzll8tB5kzgBdBqB2HYdDskIVQ6H65Mk6jzs2E,3408
+typeline-0.5.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+typeline-0.5.0.dist-info/RECORD,,
