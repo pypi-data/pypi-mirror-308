@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/torchsight/__init__.py
+src/torchsight.egg-info/PKG-INFO
+src/torchsight.egg-info/SOURCES.txt
+src/torchsight.egg-info/dependency_links.txt
+src/torchsight.egg-info/requires.txt
+src/torchsight.egg-info/top_level.txt
