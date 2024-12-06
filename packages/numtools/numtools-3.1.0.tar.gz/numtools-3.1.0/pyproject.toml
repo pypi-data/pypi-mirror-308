@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "numtools"
+version = "3.1.0"
+description = "numeric-gmbH toolbox"
+authors = ["numenic <nicolas@cordier.io>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pandas = {version = "^2.0", extras=["performance"] }
+numpy="^1"
+vg = "^2.0"
+networkx = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+ipython = "*"
+pdbpp = "*"
+ipykernel = "*"
+black = "*"
+isort = "*"
+bump2version = "^1.0.1"
+msgpack = "^1.0.8"
+networkx = "^3.3"
+msgpack-numpy = "^0.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+#collect_ignore = ["setup.py"]
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+addopts = "--doctest-modules --cov=numtools --cov-report html --cov-append"
+markers = [ ]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+exclude = "notebooks/.*"
