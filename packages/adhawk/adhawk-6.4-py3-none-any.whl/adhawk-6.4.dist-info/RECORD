@@ -1,0 +1,15 @@
+adhawkapi/__init__.py,sha256=fqEtKqzpHkwVogq2aIxL6JgvJKNZ9XlSItcgnfugbbM,742
+adhawkapi/error.py,sha256=vZP8PVAyLgEYS_g3GHfK34C-Hr_PjxZ50fMaaQNQnck,745
+adhawkapi/publicapi.py,sha256=hznGAg3E_TKLdzSoLi6bc0nscv6Qiy52UDIkhI2_XJo,12827
+adhawkapi/frontend/__init__.py,sha256=0OWg-77s-zkOrcQspjp-mzYVrByp1REfJVlukZzfseo,163
+adhawkapi/frontend/backendcom.py,sha256=QNadNw3B98SC8yVRYOHNZ9Kq8MAg3fp8aHPc_GTrBEw,4513
+adhawkapi/frontend/decoders.py,sha256=7lO0zQI2pTbyZKIxEq4ZyDQ2JvUjMrrkUfptPYshN_c,13052
+adhawkapi/frontend/encoders.py,sha256=bAgJjLO7oppN4-NwUZWbFyr8OXzsGCj6gddCmIZTITI,11054
+adhawkapi/frontend/frontend_api.py,sha256=siFGLmIef4lDKd2HhsbftUsemfol-JwMieEUt2I5ZgU,28463
+adhawkapi/frontend/handlers.py,sha256=Yoww0DxKV8l9ZI5XopleVe7HJcEE2sRT8kW54_qeAzU,9176
+adhawkapi/frontend/video_receiver.py,sha256=E2aAM24S1CMZfvePfR0KxTCrTNmkXrwC1XgUA12OcMI,7825
+adhawk-6.4.dist-info/LICENSE.md,sha256=sTM85fL-HgJlEcHMZyf9hyOfd7_W1UXlZ_UQEeJ7cLM,1032
+adhawk-6.4.dist-info/METADATA,sha256=VzTW_1HSCUDDQgPlzsa5xXr7V9wqmxd2sMPcBVzoI_Y,432
+adhawk-6.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+adhawk-6.4.dist-info/top_level.txt,sha256=DFD2zQgkcNtHWuFMYXlx0cXt9Wbly3ihG-Xc0FJFnu4,10
+adhawk-6.4.dist-info/RECORD,,
