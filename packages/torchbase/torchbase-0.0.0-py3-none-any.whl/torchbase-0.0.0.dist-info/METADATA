@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: torchbase
+Version: 0.0.0
+Summary: To base your pytorch-based projects on.
+Author-email: Sohrab Ferdowsi <sohrab.ferdowsi@gmail.com>
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: scikit-learn
+Requires-Dist: tensorboard
+Requires-Dist: torchinfo
+Provides-Extra: interactive
+Requires-Dist: jupyter; extra == "interactive"
+Requires-Dist: jupyterlab; extra == "interactive"
+Requires-Dist: ipykernel; extra == "interactive"
+Requires-Dist: matplotlib; extra == "interactive"
+
