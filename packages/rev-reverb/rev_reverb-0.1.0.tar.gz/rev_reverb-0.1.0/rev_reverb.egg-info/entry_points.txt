@@ -1,0 +1,2 @@
+[console_scripts]
+reverb = wenet.bin.recognize_wav:main

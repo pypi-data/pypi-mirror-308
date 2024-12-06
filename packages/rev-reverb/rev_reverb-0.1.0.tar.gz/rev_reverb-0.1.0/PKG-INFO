@@ -1,0 +1,368 @@
+Metadata-Version: 2.1
+Name: rev-reverb
+Version: 0.1.0
+Summary: A simplified python packge to interact with the reverb models
+Author-email: Rev Speechteam <speechteam@rev.com>
+Maintainer-email: Rev Speechteam <speechteam@rev.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Keywords: asr,reverb,rev,diarization
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torchaudio==2.2.2
+Requires-Dist: torch==2.2.2
+Requires-Dist: openai-whisper
+Requires-Dist: typeguard==2.*
+Requires-Dist: wandb
+Requires-Dist: pyyaml
+Requires-Dist: numpy<2
+Requires-Dist: GitPython
+
+![Rev Logo](resources/logo_purple.png#gh-light-mode-only)
+![Rev Logo](resources/logo_white.png#gh-dark-mode-only)
+# Reverb
+Open source inference and evaluation code for Rev's state-of-the-art speech recognition and diarization models. The speech recognition (ASR) code uses the [WeNet](https://github.com/wenet-e2e/wenet) framework and the speech diarization code uses the [Pyannote](https://github.com/pyannote/pyannote-audio) framework. More detailed model descriptions can be found in our [blog](https://www.rev.com/blog/speech-to-text-technology/introducing-reverb-open-source-asr-diarization) and the models can be downloaded from [huggingface](https://huggingface.co/Revai).
+
+## Table of Contents
+- [ASR](#asr)
+- [Diarization](#diarization)
+- [Installation](#installation)
+  - [Docker Image](#docker-image)
+- [Hosting the Model](#hosting-the-model)
+- [License](#license)
+
+### ASR
+Speech-to-text code based on the WeNet framework. See [the ASR folder](https://github.com/revdotcom/reverb/tree/main/asr) for more details and usage instructions.
+
+Long-form speech recognition WER results:
+| Model            | Earnings21 | Earnings22 | Rev16 |
+|------------------|------------|------------|-------|
+| Reverb ASR   |       9.68 |      13.68 | 10.30 |
+| Whisper Large-v3 |      14.26 |      19.05 | 10.86 |
+| Canary-1B        |      14.40 |      19.01 | 13.82 |
+
+### Diarization
+Speaker diarization code based on the Pyannote framework. See [the diarization folder](https://github.com/revdotcom/reverb/tree/main/diarization) for more details and usage instructions.
+
+Long-form WDER results, in combination with Rev's ASR:
+| Model            | Earnings21 |  Rev16 |
+|------------------|------------|-------|
+| Pyannote3.0  |    0.051    |   0.090   |
+| Reverb Diarization V1 |      0.047 |   0.077 |
+| Reverb Diarization V2 |      0.046 |   0.078 |
+
+# Getting Started <a name="getting-started"></a>
+>[!IMPORTANT]
+>These instructions require that you set up:
+> * HuggingFace access token and have cli login.
+>   * Click the following links for more information on [HuggingFace access tokens](https://huggingface.co/docs/hub/security-tokens#user-access-tokens) and setting up your [cli login](https://huggingface.co/docs/huggingface_hub/en/guides/cli#huggingface-cli-login).
+> * Git LFS
+>   * Simply run `git lfs install` from your terminal.
+
+Check out the READMEs within each subdirectory for more information on the [ASR](asr/README.md) or [diarization](diarization/README.md) models.
+
+## Python Setup <a name="python-setup"></a>
+This codebase is compatible Python 3.10+. To get started, simply run
+```bash
+pip install .
+```
+This will install the `reverb` package into your python environment which is a modified version of the [wenet python package](https://github.com/wenet-e2e/wenet/tree/main?tab=readme-ov-file#install-python-package). In order to use `reverb`'s code, make sure you **do not** have another wenet installation in your environment which might cause conflict issues.
+
+> [!TIP]
+> While we suggest using our CLI or Python package to download the reverb model, you can also download it manually by running:
+> ```bash
+> git lfs install
+> git clone https://huggingface.co/Revai/reverb-asr
+> ```
+
+### Command Line Usage
+The following command can be used to transcribe audio files:
+```bash
+reverb --model reverb_asr_v1 --audio_file audio.mp3 --result_dir results
+```
+You can also specify how "verbatim" the transcription should be:
+```bash
+reverb --model reverb_asr_v1 --audio_file audio.mp3 --result_dir results --verbatimicity 0.2
+```
+Even change the decoding mode:
+```bash
+reverb --model reverb_asr_v1 --audio_file audio.mp3 --result_dir results --modes ctc_prefix_beam_search
+```
+For a full list of arguments, run:
+```bash
+reverb --help
+```
+or checkout our [script](asr/wenet/bin/recognize_wav.py).
+
+### Python Usage
+Reverb can also be used from within Python:
+```python
+import wenet
+reverb = wenet.load_model("reverb_asr_v1")
+output = reverb.transcribe("audio.mp3")
+print(output)
+```
+The `load_model` function will automatically download the reverb model from HuggingFace.
+If instead you have a local version of the model that you downloaded from our HuggingFace or that you've finetuned, you can simply specify the path to the directory containing the `.pt` checkpoint, `config.yaml`, and extra files in `load_model` to use your model.
+```python
+import wenet
+reverb = wenet.load_model("/local/reverb-asr")
+output = reverb.transcribe("audio.mp3")
+print(output)
+```
+If instead of text output, you'd prefer CTM output, simply specify the format in the `transcribe` command.
+```python
+import wenet
+reverb = wenet.load_model("reverb_asr_v1")
+# Specifying the "format" will change the output
+output = reverb.transcribe("audio.mp3", format="ctm")
+print(output)
+```
+All arguments available to the `reverb` command line are also parameters that can be included in the `transcribe` command.
+```python
+import wenet
+reverb = wenet.load_model("reverb_asr_v1")
+# Specifying the "format" will change the output
+output = reverb.transcribe("audio.mp3", verbatimicity=0.5, beam_size=2, ctc_weight=0.6)
+print(output)
+```
+
+### Docker Image
+Alternatively, you can use Docker to run ASR and/or diarization without needing to install dependencies (including the model files).
+directly on your system. First, make sure Docker is installed on your system. If you wish to run
+on NVIDIA GPU, more steps might be required.
+Then, run the following command to build the Docker image:
+```bash
+docker build -t reverb . --build-arg HUGGINGFACE_ACCESS_TOKEN=${YOUR_HUGGINGFACE_ACCESS_TOKEN}
+```
+
+And to run docker
+```bash
+sudo docker run --entrypoint "/bin/bash" --gpus all --rm -it reverb
+```
+
+# Hosting the Model
+If your usecase requires a to deploy these models at a larger scale and maintaining strict
+security requirements, consider using our other release: https://github.com/revdotcom/reverb-self-hosted.
+This setup will give you full control over the deployment of our models on your own infrastructure
+without the need for internet connectivity or cloud dependencies.
+
+# License
+The license in this repository applies *only to the code not the models*. See LICENSE for details. For model licenses, check out their pages on HuggingFace.
+
+# Citations
+If you make use of this model, please cite this paper
+```
+@article{bhandari2024reverb,
+  title={Reverb: Open-Source ASR and Diarization from Rev},
+  author={Bhandari, Nishchal and Chen, Danny and del Río Fernández, Miguel Ángel and Delworth, Natalie and Fox, Jennifer Drexler and Jetté, Miguel and McNamara, Quinten and Miller, Corey and Novotný, Ondřej and Profant, Ján and Qin, Nan and Ratajczak, Martin and Robichaud, Jean-Philippe},
+  journal={arXiv preprint arXiv:2410.03930},
+  year={2024}
+}
+```
+
+# Contributors
+Nishchal Bhandari, Danny Chen, Miguel Del Rio, Natalie Delworth, Jennifer Drexler Fox, Miguel Jette, Quinn McNamara, Corey Miller, Ondrej Novotny, Jan Profant, Nan Qin, Martin Ratajczak, and Jean-Philippe Robichaud.
