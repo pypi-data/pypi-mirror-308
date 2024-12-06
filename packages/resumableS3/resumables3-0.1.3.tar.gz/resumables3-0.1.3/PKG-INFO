@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: resumableS3
+Version: 0.1.3
+Summary: A Python program for resumable S3 cp
+Home-page: https://github.com/JMencius/resumableS3
+Author: Jun Mencius
+Author-email: acemencius@gmail.com
+License: MIT
+Keywords: resumable,download,s3,python
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: tqdm>=4.67.0
+Requires-Dist: boto3>=1.35.57
+Requires-Dist: click>=8.1.7

@@ -1,0 +1,2 @@
+[console_scripts]
+rs3 = resumableS3.main:main

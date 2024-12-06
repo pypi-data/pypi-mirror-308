@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+resumableS3/__init__.py
+resumableS3/main.py
+resumableS3.egg-info/PKG-INFO
+resumableS3.egg-info/SOURCES.txt
+resumableS3.egg-info/dependency_links.txt
+resumableS3.egg-info/entry_points.txt
+resumableS3.egg-info/requires.txt
+resumableS3.egg-info/top_level.txt
