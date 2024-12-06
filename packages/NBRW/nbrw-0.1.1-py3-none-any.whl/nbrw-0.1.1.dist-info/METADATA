@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: NBRW
+Version: 0.1.1
+Summary: A module for modeling non-backtracking random walks on graphs and computing kemeny's constant.
+Project-URL: Homepage, https://github.com/mwshumway/NBRW
+Project-URL: Issues, https://github.com/mwshumway/NBRW/issues
+Author-email: Matthew Shumway <mwshumway7@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# NBRW
+
+Non-backtracking random walks (NBRW). A nonbacktracking random walk is a random walk on a graph in which the walker is restricted from visiting the previous node. 
+
+This repository's main focus is to create the NBRW package, which contains the following files:
+	 
+  NBRW.py : an NBRW class dedicated to storing relevant attributes such as Kemeny's constant, mean first passage times, the 
+	fundamental matrix, stationary vector, etc.
+	 
+  extra_graphs.py : Includes several functions that create graph families as a SageMath Graph object. These graph families have been 
+	important to our research and are not built-in in SageMath
+	
+This work was primarily motivated by research conducted alongside Adam Knudson, Dr. Mark Kempton, and Dr. Jane Breen. This code has been incredibly useful for modeling these walks and for exploring theoretical results through numerical experimentation.
+
+Much of this code relies on SageMath, which has many built-in functions for graph theory. 
