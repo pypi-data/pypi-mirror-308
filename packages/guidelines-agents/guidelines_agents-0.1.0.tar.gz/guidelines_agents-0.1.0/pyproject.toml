@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "guidelines-agents"
+version = "0.1.0"
+description = "A package to establish collaboration between agents in the context of regulatory guidelines"
+authors = ["Nicolas Perez <nicoapg1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "guidelines-agents"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.46.2"
+torch = "^2.5.1"
+build = "^1.2.2.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
