@@ -1,0 +1,4 @@
+include gensec/commands/templates/*
+include gensec/commands/templates/helm_template/*
+include gensec/commands/templates/helm_template/templates/*
+include gensec/commands/templates/helm_template/templates/tests/*
