@@ -1,0 +1,11 @@
+mixedvoices/__init__.py,sha256=SBrQWTLd_-8sHaixdfv9j3keGYXphMbG4Ry_bbyCd9k,671
+mixedvoices/cli.py,sha256=dHdFw19S8X870_t2sV6OJg1lxN7xxLFnnRhbjhdbXAY,1091
+mixedvoices/constants.py,sha256=TFr6ruV843PipnDBIxX3bsBKVm5e948YdamLDkVEAsQ,79
+mixedvoices/server.py,sha256=20udyj8YjCMWY0xQ2QZ4WtwWlbfqkyjDxco4CiRheFE,9048
+mixedvoices/utils.py,sha256=MD9C9HwFP_CpK3uDkm2AaGl9HBjrTpMhA74tPZdjSug,3186
+mixedvoices-0.1.1.dist-info/LICENSE,sha256=Sasjn_PIWIpYjWPyojRa3TqDR9a55TiwSqHS7Wv3TFM,11345
+mixedvoices-0.1.1.dist-info/METADATA,sha256=WkB3OgeRx2KTD2SJIVbKGacHruFvbYH9P0z6pM3FMu0,6085
+mixedvoices-0.1.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+mixedvoices-0.1.1.dist-info/entry_points.txt,sha256=yj08uOJzxQCbFNkdLvndPhFFa8ajWVSfaoB8OnsKEOI,52
+mixedvoices-0.1.1.dist-info/top_level.txt,sha256=w4g8UhWaIcZmxf11PD5QyIOuHEVpINhXcYeglyGjdwM,12
+mixedvoices-0.1.1.dist-info/RECORD,,
