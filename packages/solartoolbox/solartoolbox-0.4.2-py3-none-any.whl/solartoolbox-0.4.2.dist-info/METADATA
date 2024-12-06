@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: solartoolbox
+Version: 0.4.2
+Summary: solartoolbox is now solarspatialtools
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: solarspatialtools
+
+# solartoolbox is now solarspatialtools
+
+This package has been renamed. Use `pip install solarspatialtools` instead.
+
+New package: https://pypi.org/project/solarspatialtools/
