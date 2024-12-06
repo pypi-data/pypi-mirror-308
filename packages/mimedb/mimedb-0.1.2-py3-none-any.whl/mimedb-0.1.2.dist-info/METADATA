@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: mimedb
+Version: 0.1.2
+Summary: Sqlite db to store any content with mime type.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+
