@@ -1,0 +1,9 @@
+name: calamari
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pip
+  - python>=3.7,<3.9
+  - pip:
+    - git+https://github.com/Calamari-OCR/calamari.git@master
