@@ -1,0 +1,17 @@
+coremstools/Align.py,sha256=PRJH264sN0Z7_cm0LaxXbNzr_2K_o6MeYw8Eqtd6-48,10787
+coremstools/AssignmentCalcs.py,sha256=3QFSxAwlwq3Q9vD1uSTo9pGUy4ed88KkNn7_RUTg1JM,3660
+coremstools/AssignmentError.py,sha256=KRS4M2Op0XjTkUy2MvX-3a36GEiXubzPxnl2MyeiMlk,3207
+coremstools/DataSet.py,sha256=PHWrVdlQihJY0pNoZHwvQBxstIGH2tWou5OQ8y6tcCA,8842
+coremstools/Dispersity.py,sha256=fBG58GUSVc24o2ezgwVWIhYtCkNko06MHRzGwLtGelg,2370
+coremstools/FeatureList.py,sha256=ys-Jb_tq9YYqGOjWtwG2Mlex_hHTK_VhYWrgmHfHX9s,10647
+coremstools/GapFill.py,sha256=RxPB-QDXe1e70S0i_lL7bHzoPhwEG8QdnbgPXaYnC2s,8705
+coremstools/Helpers.py,sha256=0Q15m6GuNJIsWP6nM99SwbLLwxBDkKvb7RwKuUvVLZ0,12420
+coremstools/MolClassRetention.py,sha256=ETvU8EFJoee2pqiwr7H286SgXmMCVT3gP7MhCr4YYn8,2299
+coremstools/Parameters.py,sha256=OH4PHR7ZYmBOSEfgL8u78XfpTcHwy3FYA-ytnkwkLRA,1767
+coremstools/QualityControl.py,sha256=EGyrHUHwnx6Ve4v1XxFsk_E75dkqZuH_wXhZ-eyj3Ck,4161
+coremstools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coremstools-0.0.5.dist-info/LICENSE,sha256=jwfPxyC2_9iqQnx1dOLUtMLtkmjQS80GQSq89GzWqS0,1072
+coremstools-0.0.5.dist-info/METADATA,sha256=FLE_FGDT-np_bPZ8_cHMjDrHmhBNL4gv10feRpnINk4,3189
+coremstools-0.0.5.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+coremstools-0.0.5.dist-info/top_level.txt,sha256=_yMiq-c7w9yEYGy6KjEcNC8BqfCvwukrG3tupKYCpzA,12
+coremstools-0.0.5.dist-info/RECORD,,
