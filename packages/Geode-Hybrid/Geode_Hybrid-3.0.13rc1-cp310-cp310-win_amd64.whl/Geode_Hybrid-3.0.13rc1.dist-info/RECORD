@@ -1,0 +1,8 @@
+geode_hybrid/__init__.py,sha256=pvEGWXflwt8LaVozzJFCHCJf_XYkbtykWiG6isLiPCY,170
+geode_hybrid/brep.py,sha256=hHLORD2C8BE4-4Eoz8Yf1hGzkKmywxjvnReJmwPB2m0,234
+geode_hybrid/bin/Geode-Hybrid_brep.dll,sha256=ow5aPCy8l4euebeWU3mQM5uwA9L2aTwGvQppTwLmglY,2232832
+geode_hybrid/bin/geode_hybrid_py_brep.cp310-win_amd64.pyd,sha256=nAEe7mpCWn3bqN-h8pIVLNA_ZVIC1_Wvofyol_XIkw0,125440
+Geode_Hybrid-3.0.13rc1.dist-info/METADATA,sha256=BLIELladWaV2zR7t94wYU2I8nhfvJFeXz_P6Z34VxKk,2206
+Geode_Hybrid-3.0.13rc1.dist-info/WHEEL,sha256=zH8lgyF2gFod6lpCM_fWcr62DERZcd3iX2BoPN2-YV0,101
+Geode_Hybrid-3.0.13rc1.dist-info/top_level.txt,sha256=h6CkKkaVXQFakYuUSG8xim6ssKT44IdlN20IPqkVvrE,13
+Geode_Hybrid-3.0.13rc1.dist-info/RECORD,,
