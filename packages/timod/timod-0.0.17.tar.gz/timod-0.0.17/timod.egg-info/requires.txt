@@ -1,0 +1,2 @@
+torch>=2.0
+taichi>=1.6
