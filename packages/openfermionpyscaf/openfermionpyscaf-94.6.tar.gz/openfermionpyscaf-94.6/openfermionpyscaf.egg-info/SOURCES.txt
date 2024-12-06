@@ -1,0 +1,7 @@
+main.py
+setup.py
+openfermionpyscaf.egg-info/PKG-INFO
+openfermionpyscaf.egg-info/SOURCES.txt
+openfermionpyscaf.egg-info/dependency_links.txt
+openfermionpyscaf.egg-info/requires.txt
+openfermionpyscaf.egg-info/top_level.txt
