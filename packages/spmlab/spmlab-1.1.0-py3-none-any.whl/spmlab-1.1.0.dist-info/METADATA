@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: spmlab
+Version: 1.1.0
+Summary: Utility tools for reading, analyzing, and plotting scanning probe microscopy data.
+Home-page: https://github.com/hollenlab/spmlab
+License: MIT
+Keywords: stm,spym,sm4,scanning tunneling microscope,spm,microscopy
+Author: Ben Campbell
+Author-email: bhc1010@pm.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Science :: Physics :: Condensed Matter
+Requires-Dist: matplotlib (>=3.6,<4.0)
+Requires-Dist: numpy (>=1.23,<2.0)
+Requires-Dist: spym (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/hollenlab/spmlab
+Description-Content-Type: text/markdown
+
+## SM4 Utilities
+
+Utility tools for reading, analyzing, and plotting scanning probe microscopy data.
