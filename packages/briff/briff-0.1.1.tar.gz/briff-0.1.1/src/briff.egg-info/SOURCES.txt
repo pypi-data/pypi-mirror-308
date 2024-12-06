@@ -1,0 +1,16 @@
+.gitignore
+README.md
+pyproject.toml
+src/briff/__init__.py
+src/briff/briff_multiviews.py
+src/briff/briff_pairwise.py
+src/briff/flames.py
+src/briff/icp.py
+src/briff/jrmpc.py
+src/briff/pcd_utils.py
+src/briff/so3.py
+src/briff.egg-info/PKG-INFO
+src/briff.egg-info/SOURCES.txt
+src/briff.egg-info/dependency_links.txt
+src/briff.egg-info/requires.txt
+src/briff.egg-info/top_level.txt
