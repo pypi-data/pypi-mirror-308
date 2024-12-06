@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xml-report>
+	<report-title>{{ report_title }}</report-title>
+	<report-date>{{ report_date }}</report-date>
+	<report-time>{{ report_time }}</report-time>
+	<pytest-xml-link>https://pypi.org/project/pytest-xml/</pytest-xml-link>
+	<pytest-xml-version>{{ pytest_xml_version }}</pytest-xml-version> {{ environment }} {{
+	metadata }} {{ additional_summary }} <report-results running-state="{{ running_state }}" total_duration="{{ total_duration }}" tests-to-run="{{ tests_to_run }}" tests_ran="{{ tests_ran }}"
+		tests_unexecuted="{{ total_unexecuted }}" passed="{{ total_pass }}" failed="{{ total_fail }}" skipped="{{ total_skip }}" expected-fail="{{ total_ex_fail }}" unexpected-pass="{{ total_unpass }}" errors="{{ total_errors }}" reruns="{{ total_reruns }}">
+		{{ hierarchy }}
+	</report-results> {{ collected_tests }} </xml-report>
