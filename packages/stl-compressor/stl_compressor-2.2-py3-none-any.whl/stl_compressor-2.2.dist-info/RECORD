@@ -1,0 +1,14 @@
+stl_compresser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stl_compresser/stl_compresser.py,sha256=lbWdTVPNpPg7DlCMSZhetrSA56FmFwaE3Bt8wHJIqrs,791
+stl_compresser/stl_compresser_ui.py,sha256=d_Jw900l_JhFRrAN8wpYcoPFsJpAEpHnPs-gZUndlm8,5453
+stl_compresser/stl_compressor_test.py,sha256=Wjv7ralnNU3yP-YTqzLY6uyIC4xZ7uqphMuBsZvwZys,801
+stl_compresser/stl_compressor_ui.py,sha256=d_Jw900l_JhFRrAN8wpYcoPFsJpAEpHnPs-gZUndlm8,5453
+stl_compressor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stl_compressor/stl_compressor_test.py,sha256=Wjv7ralnNU3yP-YTqzLY6uyIC4xZ7uqphMuBsZvwZys,801
+stl_compressor/stl_compressor_ui.py,sha256=MMY5aJ0IQw44MFe9jWnBtIl3Sxxp6wiil1J0K4AabSo,5458
+stl_compressor-2.2.dist-info/LICENCE,sha256=vnopRd1J35wsw6Glw1JkjJZQlPYwbSeZUuP5zlf1orM,11337
+stl_compressor-2.2.dist-info/METADATA,sha256=vSTasvgLLwZjhlBSAjcgU7KDuSdx4zDKl5JQZe0CUA4,1087
+stl_compressor-2.2.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+stl_compressor-2.2.dist-info/entry_points.txt,sha256=qwdLn0DVllzxReYr8W9lW5M3bcVu9ZD89KhuKyTbuzE,73
+stl_compressor-2.2.dist-info/top_level.txt,sha256=MOyICQEZm-UHZoEjT8UkITST1T7Nrh1edKejavOzL2A,15
+stl_compressor-2.2.dist-info/RECORD,,
