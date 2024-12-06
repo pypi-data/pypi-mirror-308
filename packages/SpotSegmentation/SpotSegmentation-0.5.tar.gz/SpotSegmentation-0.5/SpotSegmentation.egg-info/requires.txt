@@ -1,0 +1,8 @@
+tensorflow==1.15
+keras==2.2.4
+keras_applications==1.0.8
+segmentation-models==1.0.1
+image-classifiers==1.0.0
+efficientnet==1.0.0
+numpy==1.20.0
+scikit-image==0.18.0

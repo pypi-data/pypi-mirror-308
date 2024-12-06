@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+SpotSegmentation/__init__.py
+SpotSegmentation.egg-info/PKG-INFO
+SpotSegmentation.egg-info/SOURCES.txt
+SpotSegmentation.egg-info/dependency_links.txt
+SpotSegmentation.egg-info/requires.txt
+SpotSegmentation.egg-info/top_level.txt
+SpotSegmentation/.weights/unet_resnet_naturalSpots_dataset_notscaled
+SpotSegmentation/src/SpotSegmenter.py
+SpotSegmentation/src/__init__.py
+SpotSegmentation/src/utils.py

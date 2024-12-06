@@ -1,0 +1,1 @@
+include SpotSegmentation/.weights/unet_resnet_naturalSpots_dataset_notscaled

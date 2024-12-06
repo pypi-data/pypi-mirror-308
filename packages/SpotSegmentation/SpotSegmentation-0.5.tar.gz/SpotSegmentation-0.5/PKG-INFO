@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SpotSegmentation
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/TaschnerMandlGroup/SpotSegmentation
+Author: Matthias Kellner
+Author-email: matthias.kellner@ccri.at
+License: MIT
+Description: # SpotSegmentation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
