@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: sjlogging
+Version: 0.5.4
+Summary: Jython package for using SciJava's LogService for logging.
+Home-page: https://github.com/imcf/jython-scijava-logging
+License: GPL-3.0-or-later
+Keywords: fiji,jython,imagej,logging
+Author: Niko Ehrenfeuchter
+Author-email: nikolaus.ehrenfeuchter@unibas.ch
+Requires-Python: >=2.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/imcf/jython-scijava-logging
+Description-Content-Type: text/markdown
+
+# SciJava log handler for Python 🐍☕📑
+
+[![DOI](https://zenodo.org/badge/154402009.svg)][doi]
+
+A very thin Python package (mavenized for [ImageJ2][imagej]) to use the
+[SciJava][gh_scijava] [LogService][gh_sj_logservice] as a handler for
+[Python's logging facility][py_logging]. See the wiki page about
+[Logging][ij_logging] for more details about ImageJ's logging framework.
+
+Developed and provided by the [Imaging Core Facility (IMCF)][imcf] of the
+Biozentrum, University of Basel, Switzerland.
+
+## 🚫 WARNING 🚫
+
+The PyPI packages of this project are exclusively useful for automatic testing
+of e.g. the [`imcflibs`][imcflibs] package! They have no real use-case in the
+standard CPython world 🐍🌍!
+
+## Example usage
+
+The code in [extra/scripts/example.py](extra/scripts/example.py) demonstrates
+how to use the handler in an ImageJ2 Python script utilizing the fabulous
+[Script Parameters][ij_script_params] for retrieving the LogService instance.
+
+Running this code from ImageJ will result in the following messages being
+printed to the console or the *Log* window, depending on how you launch ImageJ:
+
+```log
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] +++ new round of messages (level WARNING) +++
+[Fri Jan  5 12:25:15 CET 2018] [WARNING] warn log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] error log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] critical log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] --- finished round of messages (level WARNING) ---
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] +++ new round of messages (level INFO) +++
+[Fri Jan  5 12:25:15 CET 2018] [INFO] info log message
+[Fri Jan  5 12:25:15 CET 2018] [WARNING] warn log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] error log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] critical log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] --- finished round of messages (level INFO) ---
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] +++ new round of messages (level DEBUG) +++
+[Fri Jan  5 12:25:15 CET 2018] [DEBUG] debug log message
+[Fri Jan  5 12:25:15 CET 2018] [INFO] info log message
+[Fri Jan  5 12:25:15 CET 2018] [WARNING] warn log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] error log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] critical log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] --- finished round of messages (level DEBUG) ---
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] +++ new round of messages (level WARNING) +++
+[Fri Jan  5 12:25:15 CET 2018] [WARNING] warn log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] error log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] critical log message
+[Fri Jan  5 12:25:15 CET 2018] [ERROR] --- finished round of messages (level WARNING) ---
+```
+
+[imcf]: https://www.biozentrum.unibas.ch/imcf
+[imcflibs]: https://github.com/imcf/python-imcflibs/
+[imagej]: https://imagej.net
+[ij_logging]: https://imagej.net/Logging
+[ij_script_params]: http://imagej.net/Script_Parameters
+[py_logging]: https://docs.python.org/2/library/logging.html
+[gh_scijava]: https://github.com/scijava
+[gh_sj_logservice]: https://github.com/scijava/scijava-common/tree/master/src/main/java/org/scijava/log
+[doi]: https://zenodo.org/badge/latestdoi/154402009
+
