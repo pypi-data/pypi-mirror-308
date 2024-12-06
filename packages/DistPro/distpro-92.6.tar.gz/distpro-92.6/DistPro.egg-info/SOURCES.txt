@@ -1,0 +1,7 @@
+main.py
+setup.py
+DistPro.egg-info/PKG-INFO
+DistPro.egg-info/SOURCES.txt
+DistPro.egg-info/dependency_links.txt
+DistPro.egg-info/requires.txt
+DistPro.egg-info/top_level.txt
