@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: NoJobsMath
+Version: 1.0.0
+Summary: Math library by No Jobs Technologies
+Home-page: https://github.com/no-jobs/no-jobs-math
+Author: No Jobs Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# no-jobs-math
+
+Math library by No Jobs Technologies
+
