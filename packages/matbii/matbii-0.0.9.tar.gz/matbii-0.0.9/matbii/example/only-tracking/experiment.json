@@ -1,0 +1,40 @@
+{
+    "experiment": {
+        "id": null,
+        "path": ".",
+        "duration": 30,
+        "enable_tasks": [
+            "tracking"
+        ]
+    },
+    "guidance": {
+        "enable": true,
+        "counter_factual": false,
+        "grace_mode": "attention",
+        "attention_mode": "mouse",
+        "arrow": {
+            "mode": "mouse"
+        }
+    },
+    "eyetracking": {
+        "uri": "tet-tcp://169.254.126.68",
+        "sdk": "tobii",
+        "enabled": false,
+        "moving_average_n": 5,
+        "velocity_threshold": 0.5
+    },
+    "window": {
+        "width": 340,
+        "height": 340,
+        "title": "Tracking Task",
+        "background_color": "#ffffff"
+    },
+    "logging": {
+        "level": "WARNING",
+        "path": "./logs/"
+    },
+    "ui": {
+        "width": 340,
+        "height": 340
+    }
+}
