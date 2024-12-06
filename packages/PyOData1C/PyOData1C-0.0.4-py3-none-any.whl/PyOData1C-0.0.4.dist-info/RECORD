@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test.py,sha256=vdYGaUb2zFWBRTm8DxWIMTBbv6qsshLM0yZTtLap3gA,1046
+PyOData1C/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyOData1C/exeptions.py,sha256=imJ1jnV81ktEhEbkCraqxk-MtMjLbRu_o-cl55Re27s,286
+PyOData1C/http.py,sha256=aleTxaueXhgFZsAd__fd9S89i_NOlzO0ZT3hqqZIJlk,2667
+PyOData1C/models.py,sha256=xN-Oicu4rV0nJk1fMK9lF1GrCenKuh4Dhqblu9ixjwk,459
+PyOData1C/odata.py,sha256=-8j5qATMwJ8vJF189PVfOL9nMjr-_CEZB80ba3_Mzpw,17578
+PyOData1C/sample.py,sha256=G8PbVkLsAtLM9ezCwvTYBqhAc2zUyPXmycf80iw_2Iw,4120
+PyOData1C-0.0.4.dist-info/LICENSE,sha256=ucsL-NPpeNPdCOnohUFD5EWhS1Vz-hM_nCGmZlzvfK4,1094
+PyOData1C-0.0.4.dist-info/METADATA,sha256=LtKfycHWnKaC3_ZjaHDWTQTfKKcOptwPbFasMF5izxk,8911
+PyOData1C-0.0.4.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+PyOData1C-0.0.4.dist-info/top_level.txt,sha256=9PE4jYO5vwMNGZR_YrV0fl9n1RDqPkfDx57CuaBNvFY,24
+PyOData1C-0.0.4.dist-info/RECORD,,
