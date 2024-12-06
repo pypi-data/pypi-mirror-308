@@ -1,0 +1,12 @@
+colorist
+psutil
+screeninfo
+requests
+socket
+
+[dev]
+pytest
+black
+
+[docs]
+sphinx
