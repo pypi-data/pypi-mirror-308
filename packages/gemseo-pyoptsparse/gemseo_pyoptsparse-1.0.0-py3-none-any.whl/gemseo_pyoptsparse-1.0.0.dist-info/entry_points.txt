@@ -1,0 +1,2 @@
+[gemseo_plugins]
+gemseo-pyoptsparse = gemseo_pyoptsparse
