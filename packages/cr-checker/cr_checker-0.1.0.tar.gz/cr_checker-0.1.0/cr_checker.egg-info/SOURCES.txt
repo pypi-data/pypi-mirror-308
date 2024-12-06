@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cr_checker/__init__.py
+cr_checker/cr_checker.py
+cr_checker.egg-info/PKG-INFO
+cr_checker.egg-info/SOURCES.txt
+cr_checker.egg-info/dependency_links.txt
+cr_checker.egg-info/entry_points.txt
+cr_checker.egg-info/top_level.txt
