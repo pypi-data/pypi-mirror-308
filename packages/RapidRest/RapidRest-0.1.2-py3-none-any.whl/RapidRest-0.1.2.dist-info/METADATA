@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: RapidRest
+Version: 0.1.2
+Summary: A Django package to quickly generate serializers and views for Django models
+Home-page: 
+Author: shubham chavan
+Author-email: shubhamchavan7920@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+
+# RapidRest
+
+**RapidRest** is a Django management command package designed to speed up the creation of REST serializers and views for Django models. By running a simple command, it generates serializers and views for each model in a specified Django app, making it easy to get started with Django REST API development.
+
+## Features
+
+- Automatically generates ModelSerializers for Django models.
+- Creates ListCreateAPIView and RetrieveUpdateDestroyAPIView classes for each model.
+- Detects existing serializers and views to prevent duplicates.
+
+## Installation
+
+To install RapidRest from PyPI (after you publish it), use:
+```bash
+pip install RapidRest
