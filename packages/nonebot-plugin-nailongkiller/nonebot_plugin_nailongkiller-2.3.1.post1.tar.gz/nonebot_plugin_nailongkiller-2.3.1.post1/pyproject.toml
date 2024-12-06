@@ -1,0 +1,38 @@
+[project]
+name = "nonebot-plugin-nailongkiller"
+version = "2.3.1.post1"
+description = "识别目标并撤回图片插件"
+authors = [
+    { name = "445", email = "2877834692@qq.com" },
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+requires-python = "<4.0,>=3.9"
+dependencies = [
+    "nonebot-plugin-nailongkiller-base==2.3.1.post1",
+    "torch>=2.0.0",
+    "ultralytics>=8.0.0",
+]
+readme = "../nonebot-plugin-nailongkiller-base/README.md"
+keywords = [
+    "nonebot",
+    "plugin",
+    "image",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/Hakureirm/nonebot-plugin-nailongkiller"
+repository = "https://github.com/Hakureirm/nonebot-plugin-nailongkiller"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = []
