@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: availai
+Version: 0.1.0
+Summary: A library for computer vision and machine learning
+Author: Vasyl Arsenii
+Author-email: varsenyi@gmail.com
+License-File: LICENSE
+Requires-Dist: ultralytics>=8.3.28
+Requires-Dist: wandb>=0.18.6
+
