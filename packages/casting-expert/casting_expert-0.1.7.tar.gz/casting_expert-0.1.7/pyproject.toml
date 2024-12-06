@@ -1,0 +1,109 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "casting-expert"
+version = "0.1.7"
+description = "A comprehensive Python package for type casting, conversion, and validation with advanced features"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+    { name = "Muhammad Ahmed Saeed", email = "ahmednizami2021@gmail.com" }
+]
+
+keywords = [
+    "type casting",
+    "validation",
+    "data conversion",
+    "schema validation",
+    "type inference",
+    "cli",
+    "json",
+    "yaml",
+    "data processing",
+    "string parsing",
+    "dictionary conversion",
+    "data transformation"
+]
+
+classifiers = [
+    # Development Status
+    "Development Status :: 4 - Beta",
+    
+    # Intended Audiences
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    
+    # Topics
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+    
+    # Environment
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    
+    # License
+    "License :: OSI Approved :: MIT License",
+    
+    # Operating System
+    "Operating System :: OS Independent",
+    
+    # Programming Language
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    
+    "Typing :: Typed"
+]
+
+dependencies = [
+    "typing-extensions>=3.7.4",
+    "python-dateutil>=2.7.0",
+]
+
+[project.optional-dependencies]
+yaml = [
+    "pyyaml>=5.1"
+]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.10.0",
+    "black>=21.0.0",
+    "isort>=5.0.0",
+    "mypy>=0.900",
+    "flake8>=3.9.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ahmednizami/casting-expert"
+"Documentation" = "https://github.com/ahmednizami/casting-expert"
+"Bug Tracker" = "https://github.com/ahmednizami/casting-expert/issues"
+"Changelog" = "https://github.com/ahmednizami/casting-expert/blob/main/CHANGELOG.md"
+
+[project.scripts]
+casting-expert = "casting_expert.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/casting_expert"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
