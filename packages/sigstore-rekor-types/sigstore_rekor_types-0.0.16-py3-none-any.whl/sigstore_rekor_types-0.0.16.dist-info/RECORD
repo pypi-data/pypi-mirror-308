@@ -1,0 +1,7 @@
+rekor_types/__init__.py,sha256=QOpG2laPOcHKgtMpmlbpESDR36zLZWkDy1klernU0Sk,2860
+rekor_types/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigstore_rekor_types-0.0.16.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+sigstore_rekor_types-0.0.16.dist-info/METADATA,sha256=K2pvXpbVSGQruuBP5AJwFirdM-OSAg4oiJPLryasaT8,13695
+sigstore_rekor_types-0.0.16.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+sigstore_rekor_types-0.0.16.dist-info/top_level.txt,sha256=UU-KDHNb0fEXoqs1H8tRD_F2n02qGT4wZtmldxXdm9g,12
+sigstore_rekor_types-0.0.16.dist-info/RECORD,,
