@@ -1,0 +1,3 @@
+soundfile
+requests
+smyoon_sense_api==1.6.0
