@@ -1,0 +1,8 @@
+herd_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+herd_python/client.py,sha256=KwCiEkx84NYyC5G6n_n8qgPG5Hi3khcy5uMAC56e53M,1386
+herd_python/keyvaluestore_pb2.py,sha256=An_i1OaDWUdMoc9JE7BSmFsnI7V3Jhavmz4W2D2OayA,4376
+herd_python/keyvaluestore_pb2_grpc.py,sha256=lFz1ztz0SScy0Lb4H_2F5TG83NR1Wy7yIpG-KSYY7Uw,14412
+herd_python-0.1.6.dist-info/METADATA,sha256=Kfo3BsnwBDOm1sdpa4Jkg0EpXQoE_OUzV8OaGLN7v_M,312
+herd_python-0.1.6.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+herd_python-0.1.6.dist-info/top_level.txt,sha256=doVLafCRC-JeYtgRP_whqFYIKxCAES-JN0O1A_8ArQQ,12
+herd_python-0.1.6.dist-info/RECORD,,
