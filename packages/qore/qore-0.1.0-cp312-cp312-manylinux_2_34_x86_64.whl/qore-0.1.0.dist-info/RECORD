@@ -1,0 +1,7 @@
+qore-0.1.0.dist-info/METADATA,sha256=UPJg3dLcphkk-gH_omXfEoWH0PA_NfuukVDmN7a3zHo,268
+qore-0.1.0.dist-info/WHEEL,sha256=vNeuQwpJwmnG8nFjHlyHQFw7EhQkjpkX9GoEN983zz0,108
+qore/encoder.py,sha256=XhcjG4n0o_QsDqNFOstaX50eEbP5pOZPYJCcYZldEq4,24
+qore/lib.pyi,sha256=SvyGG1AQVy4eJOEpUA6LQJl6yz86uZXSdR-m0q76up0,46
+qore/__init__.py,sha256=wzWqHahQhTzPr7C_TkiwDfrmq-KUphNbGTiMYuzmVGc,37
+qore/lib.cpython-312-x86_64-linux-gnu.so,sha256=0q01IM4vWwM2QJeVB7Gfq2UPfMksbzOAep5iR5PuNLM,484696
+qore-0.1.0.dist-info/RECORD,,
