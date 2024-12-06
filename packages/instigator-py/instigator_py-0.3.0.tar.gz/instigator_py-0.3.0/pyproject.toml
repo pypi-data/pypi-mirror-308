@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "instigator_py"
+version = "0.3.0"
+description = "A boilerplate project generator"
+authors = [{ name = "Sachin", email = "schnaror@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://about.me/sachin-arora"
