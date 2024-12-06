@@ -1,0 +1,10 @@
+polotsk/__init__.py,sha256=LB2tTzR2F2X2LhrvqI_RJyEyFofUDan9k3eEQ8E1plU,52
+polotsk/libr.py,sha256=bC8SKkaGNNAsVLXSdbJq68TR4EkQssHsHqy6n8Cr3sY,86
+polotsk/main.py,sha256=oqiYtI6o-PaKQ3ZmIJcqGMbKsOoT4G2A-Kp154SIZ4s,140
+polotsk/manage/main.py,sha256=Hf_1U_wzIfJppdjbnLZygTdxpCxEVoy9WrqNwHgxrZg,714
+polotsk/manage/app/main/main.py,sha256=fDorv7aaaKB9SXX1mdd4I-emgP9hrz3yM0CLSvr7O1A,116
+polotsk-1.0.21.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polotsk-1.0.21.dist-info/METADATA,sha256=aUc0sDI5yKsRNfOPqKt-Irgkk4Sy4nJV-n_kaETeUUE,354
+polotsk-1.0.21.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+polotsk-1.0.21.dist-info/top_level.txt,sha256=i1QUsw27UB8l12fSJInweu3cWsSPDDp3iFalT-_75t4,9
+polotsk-1.0.21.dist-info/RECORD,,
