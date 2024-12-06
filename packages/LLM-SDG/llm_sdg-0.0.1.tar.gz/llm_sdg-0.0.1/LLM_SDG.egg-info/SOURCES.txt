@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+LLM-SDG/__init__.py
+LLM-SDG/src/PromptLoaders.py
+LLM-SDG/src/TextExtarcters.py
+LLM-SDG/src/TextSpliters.py
+LLM-SDG/src/__init__.py
+LLM-SDG/src/utlis.py
+LLM-SDG/src/document_loaders/DocumentLoaders.py
+LLM-SDG/src/document_loaders/__init__.py
+LLM-SDG/tests/__init__.py
+LLM_SDG.egg-info/PKG-INFO
+LLM_SDG.egg-info/SOURCES.txt
+LLM_SDG.egg-info/dependency_links.txt
+LLM_SDG.egg-info/top_level.txt
