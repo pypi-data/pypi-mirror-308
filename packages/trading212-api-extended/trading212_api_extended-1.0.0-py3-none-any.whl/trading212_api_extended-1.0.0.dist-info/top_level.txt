@@ -1,0 +1,2 @@
+trading212_rest
+venv
