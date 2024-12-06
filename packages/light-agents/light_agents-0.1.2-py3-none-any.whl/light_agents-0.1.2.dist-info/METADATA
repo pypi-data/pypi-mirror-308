@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: light-agents
+Version: 0.1.2
+Summary: Ligthweight library for inserting LLM agents in conversations
+License: MIT
+Author: Thiago Amorim
+Author-email: thiago.wander22@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: anthropic (>=0.36.0,<0.37.0)
+Requires-Dist: boto3 (>=1.28.59,<2.0.0)
+Requires-Dist: google (>=3.0.0,<4.0.0)
+Requires-Dist: google-auth (>=2.35.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.2.0,<0.3.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.1,<2.0.0)
+Requires-Dist: openai (>=1.52.2,<2.0.0)
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.4.0,<3.0.0)
+Requires-Dist: termcolor (>=2.5.0,<3.0.0)
+Project-URL: bug_tracker, https://github.com/thiago186/lightagents/issues
+Project-URL: documentation, https://lightagents.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+# LightAgents
+
+Welcome to the LightAgents project! This README will help you understand what this project is about, how to set it up, and how to contribute.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+LightAgents is a project aimed at providing lightweight and efficient LLM agents for various tasks. The goal is to create a modular and easy-to-use framework that can be extended for different applications.
+
+## Features
+
+- Lightweight and efficient
+- Modular design
+- Easy to extend and customize
+- Comprehensive documentation
+
