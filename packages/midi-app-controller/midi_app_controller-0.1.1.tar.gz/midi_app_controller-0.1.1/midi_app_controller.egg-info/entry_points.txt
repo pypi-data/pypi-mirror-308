@@ -1,0 +1,2 @@
+[napari.manifest]
+midi-app-controller = midi_app_controller:napari.yaml
