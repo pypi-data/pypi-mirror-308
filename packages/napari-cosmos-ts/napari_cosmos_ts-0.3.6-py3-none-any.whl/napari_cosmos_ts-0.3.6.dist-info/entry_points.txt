@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[napari.manifest]
+napari-cosmos-ts = napari_cosmos_ts:napari.yaml
+
