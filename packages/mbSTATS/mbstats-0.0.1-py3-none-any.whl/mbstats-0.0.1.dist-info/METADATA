@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: mbSTATS
+Version: 0.0.1
+Summary: A package for statistical analysis for processed untargeted GC/MS metabolomics data
+Project-URL: Homepage, https://github.com/Satvik713/mbSTATS
+Author-email: Satvik <f20213047@goa.bits-pilani.ac.in>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# yet to be written 
