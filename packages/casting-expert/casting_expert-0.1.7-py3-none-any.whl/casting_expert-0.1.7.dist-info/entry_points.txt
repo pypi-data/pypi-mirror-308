@@ -1,0 +1,2 @@
+[console_scripts]
+casting-expert = casting_expert.cli:main
