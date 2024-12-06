@@ -1,0 +1,3 @@
+[console_scripts]
+overture-downloader=src.downloader:download_overture_data
+
