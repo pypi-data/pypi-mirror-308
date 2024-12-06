@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: cozepy-pydantic1
+Version: 0.6.2
+Summary: cozepy for pydantic1
+Requires-Python: >=3.6
+License-File: LICENSE
