@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: config_fastapi
+Version: 1.0.0
+Summary: Configuration loader for FastAPI applications supporting multiple sources
+License: MIT
+Author: Aleksandr Yurlov
+Author-email: sasha.yur@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
