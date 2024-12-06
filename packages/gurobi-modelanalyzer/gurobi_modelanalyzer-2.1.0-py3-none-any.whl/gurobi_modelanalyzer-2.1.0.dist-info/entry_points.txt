@@ -1,0 +1,2 @@
+[console_scripts]
+gurobi_solcheck = gurobi_modelanalyzer.solcheck:main_cli
