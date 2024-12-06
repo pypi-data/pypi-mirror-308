@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enhanced_pipeline"
+version = "0.1.0"
+authors = [
+    {name = "Ameer fayiz", email = "amrjets@gmail.com"},
+]
+description = "A enhanced multi-worker parallel processing pipeline implementation in Python "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ameerfayiz/enhanced_pipeline"
+"Bug Tracker" = "https://github.com/ameerfayiz/enhanced_pipeline/issues"
