@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: griff
+Version: 1.0.0
+Summary: 
+Author: Wedge Digital
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiopath (<4)
+Requires-Dist: aioshutil (>=1.3,<2.0)
+Requires-Dist: aiosql (>=10.1,<11.0)
+Requires-Dist: aiosqlite (>=0.20.0,<0.21.0)
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: docxtpl (>=0.16.7,<0.17.0)
+Requires-Dist: fastapi (>=0.110.0,<0.111.0)
+Requires-Dist: fastapi-babel (>=0.0.8,<0.0.9)
+Requires-Dist: flatten-json (>=0.1.14,<0.2.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: injector (>=0.21.0,<0.22.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: orjson (>=3.9.10,<4.0.0)
+Requires-Dist: passlib (>=1.7.4,<2.0.0)
+Requires-Dist: phonenumbers (>=8.13.27,<9.0.0)
+Requires-Dist: pydantic-i18n (>=0.4.0,<0.5.0)
+Requires-Dist: pydantic-settings (>=2.1.0,<3.0.0)
+Requires-Dist: pydantic[email] (>=2.5.3,<3.0.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: python-docx (>=1.1.0,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: sendgrid (>=6.11.0,<7.0.0)
+Requires-Dist: setuptools (>=69,<70)
+Requires-Dist: typer (>=0.10.0,<0.11.0)
+Requires-Dist: yoyo-migrations (>=8.2.0,<9.0.0)
+Description-Content-Type: text/markdown
+
+# griff
+
+DDD library
+
+## Créer une nouvelle version de la librairie
+
+Increment `pyproject.toml` `version` number.
+
+## Publier Griff sur PyPi
+
+Pour cela, il faut créer une nouvelle release sur GitHub avec le tag correspondant à la version de la librairie c'est à dire la version renseignée dans `pyproject.toml`.
+
+- Aller sur la page GitHub du repository : https://github.com/Wedge-Digital/griff
+- Cliquer sur `Tags`
+- Cliquer sur `Releases`
+- Cliquer sur `Draft a new release`
+- Dans `Choose a tag` saisir la version de la raison = version renseignée dans `pyproject.toml`
+- Dans `Target` sélectionner la branche `v1` 
+- Cliquer sur `Generate release notes`
+- Cliquer sur `Publish release`
+
+Le CI s'occupera ensuite de publier la librairie sur PyPi si les tests ne sont pas KO.
+
+## Init Bdd
+Initialise:
+- la bdd à partir des migrations
+- charge si nécessaire les **Db Templates** pour les tests.
+
+```bash
+griff common init_bdd
+```
+
+## Gestion des templates de Bdd (aka db_tpl)
+
+### Créer ou mettre à jour un db_tpl
+
+```bash
+griff common db_tpl init <bounded context name>
+```
+
+### Restaurer un db_tpl en bdd
+
+Permet de charger/recharger un db_tpl pour un bounded context. 
+
+```bash
+griff common db_tpl restore <bounded context name>
+```
+
+### Appliquer de nouvelles migrations sur les db_tpl
+
+Cas d'usage : une ou plusieurs migrations ont été ajoutées. 
+
+La commande suivante va mettre à jour les db_tpl avec les nouvelles migrations.
+```bash
+griff common db_tpl migrate
+```
+
+## Initialisation des migrations et queries d'un nouvel aggregat
+
+Cela va créer :
+- la migration de création de(s) table(s)
+- la migration de(s) rollback(s)
+- le fichier des queries
+
+```bash
+griff common agg2sql run <bounded context> <domain> <class aggregat>
+
+# exemple pour le domaine user_account dans le bounded contexte Access
+griff common agg2sql run access user_account UserAccount
+```
+
+

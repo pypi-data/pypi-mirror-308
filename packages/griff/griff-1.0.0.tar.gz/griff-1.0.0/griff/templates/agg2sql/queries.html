@@ -1,0 +1,55 @@
+--
+-- generated on {{ creation_date }}
+-- @context: {{ context }}
+--
+{%- import "agg2sql/utils.html" as u -%}
+
+{%- macro query_field_name(field) -%}
+    {% if field.is_entity %}{{ u.fk_id(field) }}{% else %}{{ u.field_name(field) }}{% endif %}
+{%- endmacro %}
+
+{%- macro crud_queries(context, entity) -%}
+{%- set tablename = u.tablename(context, entity.name) -%}
+--
+-- Queries for {{ tablename }}
+--
+
+-- name: add_{{ entity.name }}<!
+INSERT INTO {{ tablename }}
+({%- for field in entity.fields %}{{- query_field_name(field) }}{{- ", " if not loop.last else "" }}{%- endfor %})
+VALUES
+({%- for field in entity.fields %}:{{- query_field_name(field) }}{{- ", " if not loop.last else "" }}{%- endfor %})
+RETURNING entity_id;
+
+-- name: add_multiple_{{ entity.name }}*!
+INSERT INTO {{ tablename }}
+({%- for field in entity.fields %}{{- query_field_name(field) }}{{- ", " if not loop.last else "" }}{%- endfor %})
+VALUES
+({%- for field in entity.fields %}:{{- query_field_name(field) }}{{- ", " if not loop.last else "" }}{%- endfor %});
+
+-- name: update_{{ entity.name }}_by_id<!
+UPDATE {{ tablename }}
+SET
+  {% for field in entity.fields %}{{ query_field_name(field) }} = :{{ query_field_name(field) }}{{ ",\n  " if not loop.last else "" }}{% endfor %}
+WHERE entity_id = :entity_id;
+
+-- name: delete_{{ entity.name }}_by_id<!
+DELETE FROM {{ tablename }} WHERE entity_id = :entity_id;
+
+-- name: list_all
+SELECT
+  {% for field in entity.fields %}{{- query_field_name(field) }}{{- ",\n  " if not loop.last else "" }}{% endfor %}
+FROM {{ tablename }};
+
+-- name: get_by_id^
+SELECT
+  {% for field in entity.fields %}{{- query_field_name(field) }}{{- ",\n  " if not loop.last else "" }}{% endfor %}
+FROM {{ tablename }}
+WHERE entity_id = :entity_id;
+{%- endmacro %}
+
+{{ crud_queries(context, inspected_agg.aggregate) }}
+{% for entity in inspected_agg.entities %}
+{{ crud_queries(context, entity) }}
+{% endfor %}
+

@@ -1,0 +1,35 @@
+--
+-- generated on {{ creation_date }}
+-- @context: {{ context }}
+--
+
+--
+-- TABLE(S)
+--
+{% import "agg2sql/utils.html" as u -%}
+{{ u.create_table(context, inspected_agg.aggregate) }}
+{%- for entity in inspected_agg.entities %}
+{{ u.create_table(context, entity) }}
+{% endfor %}
+{%- if inspected_agg.relations -%}
+--
+-- RELATION(S)
+--
+
+{% for relation in inspected_agg.relations -%}
+-- Relation: {{ u.tablename(context, relation.from_entity) }} -> {{ u.tablename(context, relation.on_entity) }}
+ALTER TABLE {{ u.tablename(context, relation.from_entity) }}
+ADD COLUMN {{ u.fk_column(relation.from_field) }};
+ALTER TABLE {{ u.tablename(context, relation.from_entity) }}
+ADD CONSTRAINT {{ u.fk_constraint_name(context, relation) }} FOREIGN KEY ({{ u.fk_id(relation.from_field) }})
+REFERENCES {{ u.tablename(context, relation.on_entity) }} ({{ u.field_name(relation.on_field)}});
+-- or --
+CREATE TABLE {{ u.many2many_tablename(context, relation) }}
+(
+    {{ u.many2many_id(relation.from_entity) }} {{ u.type_sql(relation.from_field) }} NOT NULL,
+    {{ u.many2many_id(relation.on_entity) }} {{ u.type_sql(relation.on_field) }} NOT NULL,
+    PRIMARY KEY ({{ u.many2many_id(relation.from_entity) }}, {{ u.many2many_id(relation.on_entity) }})
+);
+
+{% endfor -%}
+{%- endif -%}
