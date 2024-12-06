@@ -1,0 +1,31 @@
+[project]
+name = "mp4-to-jpg-click"
+version = "1.1.7"
+description = "Add your description here"
+authors = [{ name = "tadeasf", email = "business@tadeasfort.com" }]
+dependencies = [
+    "imagededup>=0.3.1",
+    "opencv-python>=4.10.0.84",
+    "imagehash>=4.3.1",
+    "pillow>=11.0.0",
+    "loguru>=0.7.2",
+    "tqdm>=4.66.5",
+    "rich-click>=1.8.3",
+    "prompt-toolkit>=3.0.48",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mp4_to_jpg_click"]
