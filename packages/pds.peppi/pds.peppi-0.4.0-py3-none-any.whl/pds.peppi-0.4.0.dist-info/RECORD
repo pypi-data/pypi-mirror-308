@@ -1,0 +1,10 @@
+pds/peppi/VERSION.txt,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+pds/peppi/__init__.py,sha256=lWJzYqPi5fWNm0kMKKoApTlZC1iApEqB3gzV8rg6FM4,282
+pds/peppi/client.py,sha256=Xs08npJAb-eUPYXx2sp5xC47qf5CEgF5w6D7WmDQ2K0,13735
+pds.peppi-0.4.0.dist-info/LICENSE.md,sha256=I4cMw8I4OUfV82OqlPoHL8mpCv7xErwIkwhXLFIFiKs,10487
+pds.peppi-0.4.0.dist-info/METADATA,sha256=GmlVSNZqu6cBj8DHXPbbttEiICDCUD5pCzXzxQYkcDo,9875
+pds.peppi-0.4.0.dist-info/NOTICE.txt,sha256=hUi5D4VT_8Xoj8hmSBknKJsC9_vntBTPwns8pJhtES8,1616
+pds.peppi-0.4.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pds.peppi-0.4.0.dist-info/top_level.txt,sha256=5SacHJznU3B9RSALhTt0yjidG0EmPyBMNQgoU-bxvo4,4
+pds.peppi-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pds.peppi-0.4.0.dist-info/RECORD,,
