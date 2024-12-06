@@ -1,0 +1,10 @@
+git_ai_summarize/__init__.py,sha256=v8e0MJYDeqXJp6IdvTxkPI03X3O-kn2xqFG7BcCri0k,28
+git_ai_summarize/models.py,sha256=w50eAbimrUos0a_9aqd7weyox-u3fphtXWTBihD5VwE,4184
+git_ai_summarize/summarize.py,sha256=15fcCVOjcStV0GET9zq4B0g43G8d1fcRLlXTmVTwKis,4283
+git_ai_summarize/utils.py,sha256=rWTHX940ti-An82T7GNwRvdOXfcreOZDW_NoJZeuL8c,1545
+git_ai_summarize-0.1.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+git_ai_summarize-0.1.1.dist-info/METADATA,sha256=GZk9iJOnJCl9-3rOYzceW5JEb_EBBR_-kioaNQ450vI,3218
+git_ai_summarize-0.1.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+git_ai_summarize-0.1.1.dist-info/entry_points.txt,sha256=EPEkb-ZCAlyFYOBCcONz4jrNdNgeE8FjjxNY2Svz39Y,66
+git_ai_summarize-0.1.1.dist-info/top_level.txt,sha256=lXvi1C7bBa9By8s8OIQDBlcwOqZJuqzX4_Ange-ej84,17
+git_ai_summarize-0.1.1.dist-info/RECORD,,
