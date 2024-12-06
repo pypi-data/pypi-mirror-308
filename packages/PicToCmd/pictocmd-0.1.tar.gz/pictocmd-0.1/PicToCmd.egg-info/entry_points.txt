@@ -1,0 +1,2 @@
+[console_scripts]
+PicToCmd = PicToCmd.edge_detector:picToCmd

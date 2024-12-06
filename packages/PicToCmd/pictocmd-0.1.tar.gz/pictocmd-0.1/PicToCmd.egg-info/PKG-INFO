@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PicToCmd
+Version: 0.1
+Summary: A Python library to convert images to ASCII art using edge detection.
+Home-page: https://github.com/486lv/PicToCmd
+Author: 486lv
+Author-email: 2876587146@qq.com
+Keywords: ASCII,art,image,edge detection,PicToCmd
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: numpy>=1.21.0
+
+
+PicToCmd 是一个图像处理和 ASCII 艺术生成库。它允许用户通过边缘检测算法将图像转换为字符命令，
+并能将结果保存为文本文件。通过该库，你可以方便地将图像转换成简单的字符画，适用于图像分析、艺术创作等领域。

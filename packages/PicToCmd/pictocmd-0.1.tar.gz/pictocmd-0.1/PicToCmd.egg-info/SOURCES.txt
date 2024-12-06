@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+PicToCmd/__init__.py
+PicToCmd/edge_detector.py
+PicToCmd.egg-info/PKG-INFO
+PicToCmd.egg-info/SOURCES.txt
+PicToCmd.egg-info/dependency_links.txt
+PicToCmd.egg-info/entry_points.txt
+PicToCmd.egg-info/not-zip-safe
+PicToCmd.egg-info/requires.txt
+PicToCmd.egg-info/top_level.txt
