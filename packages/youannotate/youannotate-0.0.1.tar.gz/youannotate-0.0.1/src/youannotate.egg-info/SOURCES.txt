@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-pypi.yaml
+src/youannotate/__init__.py
+src/youannotate.egg-info/PKG-INFO
+src/youannotate.egg-info/SOURCES.txt
+src/youannotate.egg-info/dependency_links.txt
+src/youannotate.egg-info/requires.txt
+src/youannotate.egg-info/top_level.txt

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 67.2", "setuptools-scm[toml] >= 7.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youannotate"
+authors = [{ name = "Karol J. Piczak", email = "karol@piczak.com" }]
+description = "YouAnnotate"
+readme = "README.md"
+requires-python = ">= 3.12"
+keywords = ["audio", "data", "annotation"]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+    "Typing :: Typed",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["setuptools >= 67.2", "setuptools_scm[toml] >= 7.1", "wheel"]
+
+[project.urls]
+Homepage = "https://github.com/karolpiczak/youannotate"
+"Bug Tracker" = "https://github.com/karolpiczak/youannotate/issues"
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools_scm]
+version_scheme = "calver-by-date"
+local_scheme = "no-local-version"
