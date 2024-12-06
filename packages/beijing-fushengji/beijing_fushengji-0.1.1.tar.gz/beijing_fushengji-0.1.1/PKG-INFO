@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: beijing_fushengji
+Version: 0.1.1
+Summary: beijing fushengji (a simple simulation game) rewritten in Python
+Classifier: Topic :: Games/Entertainment :: Turn Based Strategy
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyinstaller>=6.10.0
+Requires-Dist: pyside6>=6.6.3.1
+
+# beijing_fushengji_rewrite
+北京浮生记重制版
