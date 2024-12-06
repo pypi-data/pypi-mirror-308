@@ -1,0 +1,7 @@
+setup.py
+baise_mondrs_kalkuliatorius/__init__.py
+baise_mondrs_kalkuliatorius/main.py
+baise_mondrs_kalkuliatorius.egg-info/PKG-INFO
+baise_mondrs_kalkuliatorius.egg-info/SOURCES.txt
+baise_mondrs_kalkuliatorius.egg-info/dependency_links.txt
+baise_mondrs_kalkuliatorius.egg-info/top_level.txt
