@@ -1,0 +1,3 @@
+[console_scripts]
+mvr-make-package=mvr_make_package.cli:main
+
