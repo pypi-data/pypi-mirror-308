@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vscenv/__init__.py
+vscenv/vscenv.py
+vscenv.egg-info/PKG-INFO
+vscenv.egg-info/SOURCES.txt
+vscenv.egg-info/dependency_links.txt
+vscenv.egg-info/entry_points.txt
+vscenv.egg-info/not-zip-safe
+vscenv.egg-info/top_level.txt
