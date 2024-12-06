@@ -1,0 +1,7 @@
+main.py
+setup.py
+midi_melody_extraction.egg-info/PKG-INFO
+midi_melody_extraction.egg-info/SOURCES.txt
+midi_melody_extraction.egg-info/dependency_links.txt
+midi_melody_extraction.egg-info/requires.txt
+midi_melody_extraction.egg-info/top_level.txt
