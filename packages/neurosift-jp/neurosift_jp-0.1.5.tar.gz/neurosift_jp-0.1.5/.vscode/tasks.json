@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compare neurosift-lib directories",
+            "type": "shell",
+            "command": "meld src/neurosift-lib ../neurosift/gui/src/neurosift-lib",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "close": true
+            },
+            "group": {
+                "kind": "none"
+            }
+        },
+        {
+            "label": "Release Package",
+            "type": "shell",
+            "command": "./scripts/release.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "group": {
+                "kind": "none"
+            }
+        }
+    ]
+}
