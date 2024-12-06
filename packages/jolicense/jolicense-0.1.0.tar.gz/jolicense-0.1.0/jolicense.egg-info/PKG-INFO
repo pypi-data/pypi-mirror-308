@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jolicense
+Version: 0.1.0
+Summary: A GitHub-based license system
+Home-page: https://github.com/oxjoman21/jolicense
+Author: Joman21
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: colorama>=0.4.4
+
+
+# JoLicense
+
+A GitHub-based license system for Python projects.

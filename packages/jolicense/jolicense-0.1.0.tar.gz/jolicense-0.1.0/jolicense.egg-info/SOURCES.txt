@@ -1,0 +1,11 @@
+README.md
+setup.py
+jolicense/__init__.py
+jolicense/license_system.py
+jolicense/logger.py
+jolicense/settings.py
+jolicense.egg-info/PKG-INFO
+jolicense.egg-info/SOURCES.txt
+jolicense.egg-info/dependency_links.txt
+jolicense.egg-info/requires.txt
+jolicense.egg-info/top_level.txt
