@@ -1,0 +1,5 @@
+yggdrasil_engine/__init__.py,sha256=xZnoI8O2drXlnDxKN5vGcmaweVmLPDZfNBWtSOITH_0,38
+yggdrasil_engine/lib/libyggdrasilffi.so,sha256=-Jv9tXWqYGPzoKjpSlmCu4uL1qosIYRipHeT8_Hcajw,1460072
+yggdrasil_engine-0.1.0b2.dist-info/METADATA,sha256=ubzmJu8TdTr2vrZuhMv2kOOH0YEXTjViJ0GuSzjUHaE,1278
+yggdrasil_engine-0.1.0b2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+yggdrasil_engine-0.1.0b2.dist-info/RECORD,,
