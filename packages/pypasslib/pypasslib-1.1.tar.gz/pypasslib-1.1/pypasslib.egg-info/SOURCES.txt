@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pypasslib/__init__.py
+pypasslib/main.py
+pypasslib.egg-info/PKG-INFO
+pypasslib.egg-info/SOURCES.txt
+pypasslib.egg-info/dependency_links.txt
+pypasslib.egg-info/top_level.txt
