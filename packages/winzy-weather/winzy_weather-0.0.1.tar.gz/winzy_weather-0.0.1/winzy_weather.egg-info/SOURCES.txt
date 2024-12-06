@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_weather.py
+winzy_weather/__init__.py
+winzy_weather.egg-info/PKG-INFO
+winzy_weather.egg-info/SOURCES.txt
+winzy_weather.egg-info/dependency_links.txt
+winzy_weather.egg-info/entry_points.txt
+winzy_weather.egg-info/requires.txt
+winzy_weather.egg-info/top_level.txt
