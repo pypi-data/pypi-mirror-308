@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: libjob
+Version: 0.1.3
+Summary: Python warpper of the Windows job feature, replacement of the resource library
+Project-URL: Repository, https://github.com/colinxu2020/libjob
+Project-URL: Issues, https://github.com/colinxu2020/libjob/issues
+Project-URL: Changelog, https://github.com/colinxu2020/libjob/ blob/master/CHANGELOG.md
+Author-email: Colinxu2020 <colinxu2020@gmail.com>
+Keywords: job,resource,win32,windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Requires-Dist: pywin32>=308
+Description-Content-Type: text/markdown
+
+# LibJob
+LibJob is the python wrapper of windows's `job` feature, which could replace `resource` easily.
+
+Using Example & Compares(when applying 100MB memory limit to given two processes):
+by `resource` standard library:
+```python
+curlimit = resource.prlimit(pid1, resource.RLIMIT_VMEM)
+resource.prlimit(pid1, resource.RLIMIT_MEMLOCK, (100 * 1024 * 1024, curlimit[1]))
+curlimit = resource.prlimit(pid2, resource.RLIMIT_VMEM)
+resource.prlimit(pid2, resource.RLIMIT_MEMLOCK, (100 * 1024 * 1024, curlimit[1]))
+```
+by using `pywin32`
+```python
+job = win32job.CreateJobObject(None, "")
+extended_info = win32job.QueryInformationJobObject(job, win32job.JobObjectExtendedLimitInformation)
+extended_info["ProcessMemoryLimit"] = 100 * 1024 * 1024
+extended_info["BasicLimitInformation"]["LimitFlags"] |= win32job.JOB_OBJECT_LIMIT_PROCESS_MEMORY
+win32job.SetInformationJobObject(job, win32job.JobObjectExtendedLimitInformation, extended_info)
+proc = win32api.OpenProcess(win32con.PROCESS_SET_QUOTA | win32con.PROCESS_TERMINATE, False, pid1)
+win32job.AssignProcessToJobObject(job, proc)
+proc = win32api.OpenProcess(win32con.PROCESS_SET_QUOTA | win32con.PROCESS_TERMINATE, False, pid2)
+win32job.AssignProcessToJobObject(job, proc)
+```
+by using `libjob`
+```python
+job = libjob.Job()
+job.process_memory_limit = 100 * 1024 * 1024
+job.assign(pid1)
+job.assign(pid2)
+```
