@@ -1,0 +1,15 @@
+# jgmd: A general-purpose utility package
+
+For learning how to create your own python package, this article is great:
+https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56
+
+
+## Notes to self:
+### To update this package:
+- update the code
+- update release version in setup.py (two spots)
+- push to repo
+- cut a new release
+- python setup.py sdist
+- twine upload dist/*
+- then upgrade the package to test the new version: pip install jgmd --upgrade
