@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cloudscraper_wrapper
+Version: 0.1.1
+Summary: A comprehensive wrapper for CloudScraper with caching and rate limiting
+Home-page: https://github.com/pedro-flow/cloudscraper-wrapper
+Author: pedro-flow
+Author-email: pedroflowss@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cloudscraper >=1.2.60
+Requires-Dist: requests >=2.25.0
+
+A comprehensive Python wrapper for CloudScraper that handles Cloudflare protection, rate limiting, and caching.
