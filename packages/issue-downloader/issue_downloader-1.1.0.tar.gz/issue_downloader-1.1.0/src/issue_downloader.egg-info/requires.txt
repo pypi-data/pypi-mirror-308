@@ -1,0 +1,16 @@
+httpx
+pydantic
+typer-slim
+
+[dev]
+issue-downloader[test]
+issue-downloader[types]
+ruff
+
+[test]
+pytest
+pytest-cov
+respx
+
+[types]
+mypy
