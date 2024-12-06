@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+diskstat/__init__.py
+diskstat/__main__.py
+diskstat/autostart.py
+diskstat/disks.py
+diskstat/main.py
+diskstat/res.py
+diskstat.egg-info/PKG-INFO
+diskstat.egg-info/SOURCES.txt
+diskstat.egg-info/dependency_links.txt
+diskstat.egg-info/entry_points.txt
+diskstat.egg-info/requires.txt
+diskstat.egg-info/top_level.txt
