@@ -1,0 +1,2 @@
+[console_scripts]
+pureff = pureff.cli.cli_commands:main
