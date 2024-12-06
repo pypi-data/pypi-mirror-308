@@ -1,0 +1,7 @@
+README.md
+setup.py
+solartoolbox.egg-info/PKG-INFO
+solartoolbox.egg-info/SOURCES.txt
+solartoolbox.egg-info/dependency_links.txt
+solartoolbox.egg-info/requires.txt
+solartoolbox.egg-info/top_level.txt
