@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/RapidRest.egg-info/PKG-INFO
+src/RapidRest.egg-info/SOURCES.txt
+src/RapidRest.egg-info/dependency_links.txt
+src/RapidRest.egg-info/requires.txt
+src/RapidRest.egg-info/top_level.txt
+src/restrapid/__init__.py
+src/restrapid/management/__init__.py
+src/restrapid/management/commands/__init__.py
+src/restrapid/management/commands/rapidrest.py
