@@ -1,0 +1,17 @@
+pypostester/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+pypostester/core/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+pypostester/core/backtester.py,sha256=-x7Z_var4AH708wotEDhKPjkBEhzAIeTkrMCZAzVDTw,4797
+pypostester/indicators/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+pypostester/indicators/base.py,sha256=qDeabZf2GuPZQivCq1Yexge0Y0dgWWGTMJ_CE_BGg8w,486
+pypostester/indicators/registry.py,sha256=qp-F5mX3QjGkTUmF0_LQg5yQ6buW051hlUEB8mtMpq0,1595
+pypostester/indicators/returns.py,sha256=59XC8QqpP60uX7H1sOFYaDRik_9KZXfzp54pm3nWooI,1301
+pypostester/indicators/risks.py,sha256=b2WytypiX78Gsw_r17zl-AMVpIkNC_uc15ikFWViG5U,3893
+pypostester/utils/__init__.py,sha256=-UemVj5zWKiXLsM7SL99nZKvAF5T6Afou8yiMeXPU5Q,18
+pypostester/utils/i18n.py,sha256=4rLvTzl_Lw5LocbNucv2YyTH4j3JfwyESrvWfSbe6T8,3718
+pypostester/utils/validation.py,sha256=8_3D9rhz7xSFzemzBCGPo6y--spYqH1Htz93NUAb8c8,4990
+pypostester/utils/visualization.py,sha256=hS8eHHmGhBMXnLCGvXslGkEPOAcPxz6wwZGxeTVpViA,11702
+pypostester-0.1.3.dist-info/LICENSE,sha256=oxA9-juFBCBko0t5sgbp4gsOl--8j_ekp8jqLVLIVJw,1069
+pypostester-0.1.3.dist-info/METADATA,sha256=OOdTKrMSlN3qXeyWArTyLDJ7ldJwnvqcOrkvHDlpzeY,4700
+pypostester-0.1.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pypostester-0.1.3.dist-info/top_level.txt,sha256=5HTxIk5G5g7BhGMtUGucVtDc3KQaCJWa4uNGIDRtE3o,12
+pypostester-0.1.3.dist-info/RECORD,,
