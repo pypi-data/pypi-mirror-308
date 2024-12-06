@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: json_schema_mapper
+Version: 0.0.2
+Summary: JSON schema mapper
+Author: Abdelrahman Torky
+Author-email: 24torky@gmail.com
+Requires-Dist: pydantic
