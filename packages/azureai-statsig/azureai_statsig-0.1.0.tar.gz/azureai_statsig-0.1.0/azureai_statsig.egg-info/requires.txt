@@ -1,0 +1,2 @@
+statsig
+azure-ai-inference

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+azureai/__init__.py
+azureai/azure_ai.py
+azureai/get_statsig_user.py
+azureai/model_client.py
+azureai_statsig.egg-info/PKG-INFO
+azureai_statsig.egg-info/SOURCES.txt
+azureai_statsig.egg-info/dependency_links.txt
+azureai_statsig.egg-info/requires.txt
+azureai_statsig.egg-info/top_level.txt
+tests/test_completions.py
+tests/test_embeddings.py
+tests/test_get_model_info.py
