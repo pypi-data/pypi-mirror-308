@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ckanext-event-audit
+Version: 0.1.0
+Author-email: DataShades <datashades@linkdigital.com.au>, Oleksandr Cherniavskyi <mutantsan@gmail.com>
+License: AGPL
+Project-URL: Homepage, https://github.com/DataShades/ckanext-event-audit
+Project-URL: Documentation, https://datashades.github.io/ckanext-event-audit/
+Keywords: CKAN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic <3.0.0,>=2.3.0
+Requires-Dist: boto3 <2.0.0,>=1.28.35
+Provides-Extra: dev
+Requires-Dist: boto3-stubs[logs] <2.0.0,>=1.35.0 ; extra == 'dev'
+Requires-Dist: pytest-ckan ; extra == 'dev'
+Requires-Dist: mkdocs <1.7,>=1.6.1 ; extra == 'dev'
+Provides-Extra: xlsx
+Requires-Dist: openpyxl <4.0.0,>=3.1.2 ; extra == 'xlsx'
+
+[![Tests](https://github.com/DataShades/ckanext-event-audit/actions/workflows/test.yml/badge.svg)](https://github.com/DataShades/ckanext-event-audit/actions/workflows/test.yml)
+
+# ckanext-event-audit
+
+This extension will capture and retain a comprehensive record of all changes within a CKAN app. 
+
+Read the [documentation](https://datashades.github.io/ckanext-event-audit/) for a full user guide.
+
+TODO:
+- [ ] add config option to exclude result and payload fields from being stored
+
+## Developer installation
+
+To install ckanext-event-audit for development, activate your CKAN virtualenv and
+do:
+
+    pip install -e '.[dev, xlsx]'
+
+## Tests
+
+To run the tests, do:
+
+    pytest --ckan-ini=test.ini
+
+## License
+
+[AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
