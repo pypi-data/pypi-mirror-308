@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+kit_up/__init__.py
+kit_up.egg-info/PKG-INFO
+kit_up.egg-info/SOURCES.txt
+kit_up.egg-info/dependency_links.txt
+kit_up.egg-info/top_level.txt

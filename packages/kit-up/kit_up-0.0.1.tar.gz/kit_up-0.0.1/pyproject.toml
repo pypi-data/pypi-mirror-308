@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kit-up"
+version = "0.0.1"
+authors = [
+  { name="Dima Burmistrov", email="pyctrl.dev@gmail.com" },
+]
+description = "Kit Up!"
+readme = "README.rst"
+license = {file = "LICENSE"}
+
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+keywords = ["app", "domain", "model", "structure", "kit-up"]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/pyctrl/kit-up"
+"Bug Tracker" = "https://gitlab.com/pyctrl/kit-up/-/issues"
