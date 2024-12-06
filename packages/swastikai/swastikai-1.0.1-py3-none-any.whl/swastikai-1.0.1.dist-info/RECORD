@@ -1,0 +1,12 @@
+swastikai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swastikai/memory.py,sha256=EaITGxeCCQjThYderVy8gZ-l9fWE1kOW2xHZ0VNpX9Q,2309
+swastikai/memory_async.py,sha256=vrw8zc9RuCJngflT2PWleH11XqLzhckVvD5xblLUChs,2393
+swastikai/utils.py,sha256=g1K1x6sGE2N7i8A23mwt6DVhY7Gp839pxau7ESsIgNk,580
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=RexKuNhH1H_a3byBdy-x3XrHyaGWQ8-bTR-b4JaKZMg,756
+tests/test_async.py,sha256=K0SrKT8p_iI7t59aaTNM3Euohpaz4-KTG-HdSOLVS6g,791
+swastikai-1.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+swastikai-1.0.1.dist-info/METADATA,sha256=oYBKyzi1yDbgxZhvoy5UKRbLgYZoIMyhLCruwEtMmBo,6533
+swastikai-1.0.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+swastikai-1.0.1.dist-info/top_level.txt,sha256=FDjgUOS0vYAcdATtDPDikYs8cw3MugragYcsBNfqBEg,16
+swastikai-1.0.1.dist-info/RECORD,,
