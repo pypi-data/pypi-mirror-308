@@ -1,0 +1,9 @@
+---
+host_prefix: ""
+logging:
+  level: INFO
+  flask_debug: false
+login:
+  active: false
+  username: admin
+  password: factgenie
