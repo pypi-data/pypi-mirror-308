@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+rekor_types/__init__.py
+rekor_types/py.typed
+sigstore_rekor_types.egg-info/PKG-INFO
+sigstore_rekor_types.egg-info/SOURCES.txt
+sigstore_rekor_types.egg-info/dependency_links.txt
+sigstore_rekor_types.egg-info/requires.txt
+sigstore_rekor_types.egg-info/top_level.txt
