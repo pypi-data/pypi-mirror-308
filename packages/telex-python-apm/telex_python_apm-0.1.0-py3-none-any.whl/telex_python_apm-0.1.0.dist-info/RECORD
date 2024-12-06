@@ -1,0 +1,8 @@
+fastapi/__init__.py,sha256=k4rxckB146lXe3ePJZkSoWromYFUW3U4-6jn56wFEIo,41
+fastapi/middleware.py,sha256=UhY9wbGR389LusLwX22XWhyFSJEfk3G-nGmrfpiv2oA,1839
+fastapi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi/tests/test_middleware.py,sha256=BFwB-bez4zzzCBrnRz4D3eatMqgFVDbZzGfN_GB-GUI,2562
+telex_python_apm-0.1.0.dist-info/METADATA,sha256=anwywwzz8DaKa55JXK68yycjkDTJRLaH1xiEwIDsrK0,2508
+telex_python_apm-0.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+telex_python_apm-0.1.0.dist-info/top_level.txt,sha256=jCs7Y2FZcj1M0VkBSvuiOKxPvIBG313CqGNCHSNrk9Y,8
+telex_python_apm-0.1.0.dist-info/RECORD,,
