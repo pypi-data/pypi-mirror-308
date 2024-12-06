@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: lnfundamentals
+Version: 0.0.1a6
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
