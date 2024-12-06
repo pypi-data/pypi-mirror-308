@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "aox-cli"
+version = "0.1.0"
+description = "CLI tool for managing and running AO Counter"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "aox" }  
+]
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+pre-commit = "^3.6.0"
+
+
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+typer = ">=0.12.5"
+rich = ">=13.9.3"
+ell-ai = ">=0.0.14"
+openai = ">=1.54.1"
+
+
+[tool.poetry.scripts]
+aox = "aox.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
