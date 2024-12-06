@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: streebog-lc
+Version: 0.2.0
+Summary: 
+License: MIT
+Author: Lex Cheshir
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+Python library for computing streebog hashes with go under the hood
+
+currently in development
