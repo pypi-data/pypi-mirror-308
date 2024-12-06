@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+JunoAccessManager.egg-info/PKG-INFO
+JunoAccessManager.egg-info/SOURCES.txt
+JunoAccessManager.egg-info/dependency_links.txt
+JunoAccessManager.egg-info/requires.txt
+JunoAccessManager.egg-info/top_level.txt
+junoaccessmanager/__init__.py
+junoaccessmanager/api/__init__.py
+junoaccessmanager/api/user.py
