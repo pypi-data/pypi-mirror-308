@@ -1,0 +1,10 @@
+quran_search_in_text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quran_search_in_text/ayeh_yab.py,sha256=5U7PJrxCkkR-LHKIQ_MQOk1DBHA7HI2CwtUysw9oi6E,21953
+quran_search_in_text/packages/ayat.txt,sha256=oJv8JriSql10MoH0WGmb75hzNkXfbGj4_mU46ss5YF8,1245957
+quran_search_in_text/packages/surehname_ayehnumber.txt,sha256=j8wGrvQwOy7nOd6grnb2Mva3OWA2w7L2Lqf4cF3D1Qg,96415
+quran_search_in_text/packages/surehnumber_ayehnumber.txt,sha256=CMJKEE1LcQfXm_BaDWPIpe72XQShnigWiSxqqJVItgw,42375
+quran_search_in_text-0.0.10.dist-info/LICENSE,sha256=arQL7L9cmRmuyvdOERKWtz3J3-RfybPoB30M-RSVDtA,1076
+quran_search_in_text-0.0.10.dist-info/METADATA,sha256=X8KeH55tAeH7nwMhdYJkSZrYS1Vxe8pbAKLz5sjFV-U,5474
+quran_search_in_text-0.0.10.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+quran_search_in_text-0.0.10.dist-info/top_level.txt,sha256=ICaGVZ_GqK30Gc36kpJWM3TNukrZw5ItzjJ_412UIwo,21
+quran_search_in_text-0.0.10.dist-info/RECORD,,
