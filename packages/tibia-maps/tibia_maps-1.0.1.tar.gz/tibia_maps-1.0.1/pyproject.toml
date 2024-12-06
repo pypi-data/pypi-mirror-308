@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=70.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tibia-maps"
+requires-python = ">=3"
+authors = [
+  { name = "Krishant Timilsina", email = "krishtimil@gmail.com" },
+]
+description = "Floor map data for Tibia"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = []
+classifiers = ["Programming Language :: Python :: 3"]
+dynamic = ["version", "dependencies"]
+
+
+[project.urls]
+Homepage = "https://github.com/krishantt/tibia-maps"
+Issues = "https://github.com/krishantt/tibia-maps/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"tibia_maps" = "tibia_maps"
+
+[tool.setuptools.dynamic]
+version = { attr = "tibia_maps.__version__" }
+dependencies = { file = "requirements.txt" }
+
+[tool.isort]
+line_length = 79
+force_single_line = true
+
+[tool.black]
+line-length = 79
+preview = true
+
+[tool.pyright]
+include = ["tibia_maps", "test.py"]
+typeCheckingMode = "strict"
