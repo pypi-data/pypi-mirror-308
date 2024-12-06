@@ -1,0 +1,11 @@
+# sanitize-jhlong
+
+## 项目简介
+`sanitize-jhlong` 是一个用于处理时间数据的 Python 函数库，能够将时间字符串格式化为标准的 `分钟.秒钟` 格式。该库的设计目标是帮助开发者更方便地处理和格式化时间数据。
+
+## 安装方法
+您可以通过以下命令从 PyPI 安装该库：
+
+```bash
+pip install sanitize-jhlong
+```
