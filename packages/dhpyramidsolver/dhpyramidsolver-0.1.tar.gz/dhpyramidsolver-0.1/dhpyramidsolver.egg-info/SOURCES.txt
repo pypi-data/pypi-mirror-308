@@ -1,0 +1,8 @@
+setup.py
+dhpyramidsolver/__init__.py
+dhpyramidsolver/main.py
+dhpyramidsolver.egg-info/PKG-INFO
+dhpyramidsolver.egg-info/SOURCES.txt
+dhpyramidsolver.egg-info/dependency_links.txt
+dhpyramidsolver.egg-info/entry_points.txt
+dhpyramidsolver.egg-info/top_level.txt
