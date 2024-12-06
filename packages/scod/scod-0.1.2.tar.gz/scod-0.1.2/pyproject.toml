@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "scod"
+version = "0.1.2"
+authors = ["Ricardo Castro <srrenks@gmail.com>"]
+description = "This module is essential for preprocessing receipt images to improve visual quality and facilitate automatic analysis."
+readme = "README.md"
+license = "MIT"
+keywords = ["api", "scod brasil", "scod"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.2"
+
+[project.urls]
+Repository = "https://github.com/SrRenks/scod.git"
