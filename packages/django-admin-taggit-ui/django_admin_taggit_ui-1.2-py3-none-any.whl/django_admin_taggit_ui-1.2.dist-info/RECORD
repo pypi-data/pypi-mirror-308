@@ -1,0 +1,16 @@
+taggit_ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taggit_ui/__version__.py,sha256=g6zhPyD9UelvcYrhtmQjIk-7_RH9Bu2W8YLlyW3M5OM,661
+taggit_ui/actions.py,sha256=TCJWyMJtNLl25difkTE8D7C4MClPKe_lmKym_xpmCC0,3367
+taggit_ui/apps.py,sha256=FIUuQkIXR2umVadJwxeNXpBraI3kjNl8NjUXn7Be2Ws,95
+taggit_ui/filters.py,sha256=jh1nYTxb3sPqpDF3wIlgrH6Z6ah-ODQD8ku_6z2Flus,3340
+taggit_ui/forms.py,sha256=rPpPhu429LXxJPq8FWKLPEpydv0--lRwgQ49_HcekLY,646
+taggit_ui/urls.py,sha256=BwJHP1yGS2Vtkw4-roNUvWqzf3pcH_Q6qAm015uJkAE,203
+taggit_ui/views.py,sha256=v6etXBT9gtP23IDZiHulq-JZgFLaAlK7FXu5agb3HGI,1333
+taggit_ui/templates/admin/manage-tags-form.html,sha256=37sBXvurbJPBGECSpecRIhs7v8Sxdkfu9mqL938iMVA,668
+taggit_ui/templates/admin/tag-filter.html,sha256=QZVUcNP1nhyRh3pePSJOvjqHBeK_PfiyrBrZ9oaDmyg,2861
+django_admin_taggit_ui-1.2.dist-info/LICENCE,sha256=tX6ebBwRR6gwYZUbX0cqvA6AUzglAZIDuwE3-tNRlIo,1521
+django_admin_taggit_ui-1.2.dist-info/METADATA,sha256=tqkinV4B8wW4OaupjvHNZWu9xb7fwjHkfq2V3mfG7TA,4353
+django_admin_taggit_ui-1.2.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+django_admin_taggit_ui-1.2.dist-info/top_level.txt,sha256=GMfvSFVECDMq_W8uRWhocs551ub2ZW5u0plyiZKSfpw,10
+django_admin_taggit_ui-1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_admin_taggit_ui-1.2.dist-info/RECORD,,
