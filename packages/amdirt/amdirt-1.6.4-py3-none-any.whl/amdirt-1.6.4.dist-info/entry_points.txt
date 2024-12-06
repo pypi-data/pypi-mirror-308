@@ -1,0 +1,2 @@
+[console_scripts]
+amdirt = amdirt.cli:cli
