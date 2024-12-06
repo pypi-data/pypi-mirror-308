@@ -1,0 +1,13 @@
+watchfs/__init__.py,sha256=twLBLDmqHB7N75ojuQ5A7onyzsz3kY1AwFPRXBx5TRg,287
+watchfs/__main__.py,sha256=wKAYhkftscVou6kvfvSDKXKVH3QNvp7SWZUzNNLE1Ng,5056
+watchfs/as_sync.py,sha256=qq9ZpAWZAQ77N4ELyUO0Rqk0Jid4dQCwSGTWSRwcdYc,424
+watchfs/colorful.py,sha256=1LBDWBi5NZ7nhgo4th0LdmqvefOoSof8lDWknFt_x-Q,357
+watchfs/exceptions.py,sha256=z0AtAGYgBHBAAEyqSicvyelUBaokt-lH4OnrgKsuSYY,845
+watchfs/filters.py,sha256=Tz7F0OVDjS1upaXimAFinUTvXbV2bT8B9i6jz025Z4Q,2536
+watchfs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watchfs/rusty.py,sha256=GcW0ix8e6qzzTx_YwulXMs8iZf7hlCs0-XRenuBMrPQ,865
+watchfs-0.1.3.dist-info/METADATA,sha256=hkwoEucN5TX6O3_iQQsPGvEtrwi-KJ4aG4OJpxpfJxw,2347
+watchfs-0.1.3.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+watchfs-0.1.3.dist-info/entry_points.txt,sha256=2r0_jAA1pv5gGyZPDCl2oNPN1QrJm2HjLe8HOEFR8Wc,50
+watchfs-0.1.3.dist-info/licenses/LICENSE,sha256=3G3GbxmFkHSpMiP2W8IoBZnPFOPrV3M57ZwuPD_BlDU,1090
+watchfs-0.1.3.dist-info/RECORD,,
