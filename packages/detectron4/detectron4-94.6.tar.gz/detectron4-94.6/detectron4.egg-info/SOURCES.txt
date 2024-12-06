@@ -1,0 +1,7 @@
+main.py
+setup.py
+detectron4.egg-info/PKG-INFO
+detectron4.egg-info/SOURCES.txt
+detectron4.egg-info/dependency_links.txt
+detectron4.egg-info/requires.txt
+detectron4.egg-info/top_level.txt
