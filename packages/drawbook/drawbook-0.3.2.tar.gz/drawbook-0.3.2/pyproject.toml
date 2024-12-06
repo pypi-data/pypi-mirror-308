@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "hatchling",
+    "hatch-requirements-txt",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "drawbook"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+description = "A Python library for illustrating children's books."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version", "dependencies"]
+
+[tool.hatch.build]
+only-packages = true
+artifacts = ["*.pyd", "*.so"]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/drawbook"
+"Bug Tracker" = "https://github.com/yourusername/drawbook/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/requirements.txt"
+]
+
+[tool.hatch.version]
+path = "version.txt"
+pattern = "^(?P<version>[0-9]+\\.[0-9]+\\.[0-9]+)$"
+
+[tool.hatch.build.targets.wheel]
+packages = ["drawbook"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+filename = "requirements.txt"
