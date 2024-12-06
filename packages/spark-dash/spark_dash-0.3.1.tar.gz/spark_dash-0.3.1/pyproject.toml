@@ -1,0 +1,25 @@
+[project]
+name = "spark-dash"
+version = "0.3.1"
+description = "Spark-worker의 CPU 사용량을 확인하며 Scale in/out을 할 수 있는 dashboard를 제공합니다."
+authors = [
+    {name = "Mingk42", email = "xoals123456t@gmail.com"},
+]
+dependencies = [
+    "streamlit>=1.40.1",
+    "schedule>=1.2.2",
+    "tz-kst>=0.5.3",
+    "matplotlib>=3.9.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+run-dashboard="spark_dash.cmd:run"
+
+[tool.pdm]
+distribution = true
+
+[tool.setuptools]
+package-dir = {"" = "src"}
