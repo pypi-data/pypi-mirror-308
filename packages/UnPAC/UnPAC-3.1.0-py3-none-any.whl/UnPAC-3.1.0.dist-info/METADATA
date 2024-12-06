@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: UnPAC
+Version: 3.1.0
+License-File: LICENSE.txt
+Requires-Dist: setuptools >=61.0
+Requires-Dist: Pandas >=2.2.2
+Requires-Dist: zipp >=3.17.0
+Requires-Dist: dicom2nifti >=2.4.11
+Requires-Dist: pydicom >=3.0.0
+Requires-Dist: regex >=2023.10.3
+
