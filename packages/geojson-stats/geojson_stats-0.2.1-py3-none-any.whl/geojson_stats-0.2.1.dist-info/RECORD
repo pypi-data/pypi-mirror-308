@@ -1,0 +1,13 @@
+geojson_stats-0.2.1.dist-info/METADATA,sha256=TcY5CVR_26tSRp9CjvQWh3BXyvGQ9TV00VVVzGTl-jI,3855
+geojson_stats-0.2.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+geojson_stats-0.2.1.dist-info/entry_points.txt,sha256=jAzhLOCf_ycO13XZ51aQgSt-tvi464aibvtJEoixFnk,72
+geojson_stats-0.2.1.dist-info/licenses/LICENSE.md,sha256=5OJovemUIvPUdoFeqYzfz-JCTAvxHJka8Rnyr_csQe8,34102
+geojson_stats/.DS_Store,sha256=kyr5uZijdmoRq6xJ5ttj9edtEOJvgtD0E1OEwpx828Q,6148
+geojson_stats/__init__.py,sha256=94xZ2fWoembrma3GQAH-tLnAgVXy8dpSN8b2AQBgqkc,74
+geojson_stats/__version__.py,sha256=-65oUjpPVi0h2cKyvokryftU7QBcZSh2sW5eCmz133o,43
+geojson_stats/cli.py,sha256=66ih4G-eqmDvTMe5lWp43-T39ujNA2Vbo7bKwwvNP9U,2936
+geojson_stats/geoutils.py,sha256=NzY117deQICfWdg4OsxEc2M2RHj5Np6d5tHVT8mdBwM,956
+geojson_stats/html.py,sha256=ahsJ4SAWRWyhB5sfteMwQLhMLTUdYAzqNzgNhLBZ5zc,1192
+geojson_stats/models.py,sha256=LBQEzGY4s4Rx8ojCFKcu5IQnmWn0vwt-y5cOFj0dyso,3534
+geojson_stats/stats.py,sha256=5sMZnvYgOY2NrQB6K-quZiRsXiTNrGIz83K_pWYxDxc,6663
+geojson_stats-0.2.1.dist-info/RECORD,,
