@@ -1,0 +1,12 @@
+fast_license/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_license/__main__.py,sha256=OsM0lnfRDuwu76j65wU0n4hkKOVvt2zVEUR2dAeUzbA,44
+fast_license/api_manager.cpython-310-darwin.so,sha256=_gZ6PjDjqLi6Rd7qMbbmuMMwpQVKY9k90AxaEwhQ6dk,137248
+fast_license/api_manager.pyi,sha256=c0JeNaF6ZP5R2loTCHNXsS6QYmMpgJBu5tHYhcWK6J4,424
+fast_license/license.cpython-310-darwin.so,sha256=Puy5TvTTjl3TWAJ6d2lvRhg4l2m8jfw3kbHTiRvvebI,157312
+fast_license/license.pyi,sha256=t21dufFf0V4pYyEt5bHsaCPX9IupiTfY39ysupMbHkw,556
+fast_license/middleware.cpython-310-darwin.so,sha256=zpLzm8Dup7xFuHyYzhVPYh-o5z-bNbyjhCuqqfI_tCw,102232
+fast_license/middleware.pyi,sha256=tLow2m7Rmh5mCmQYlnM4rygaJ9-C3i7hQXbA0oBDMrw,496
+fast_license-0.1.0.dist-info/METADATA,sha256=m8jlge2tdXVoTnlNA0rN1Sn-ZQ90rBS6U_w4fzdkmTg,1574
+fast_license-0.1.0.dist-info/WHEEL,sha256=3ggQLyEtwymd0rFFn7Y7bZeC-TPY--XSbFQw5jO7PyA,111
+fast_license-0.1.0.dist-info/top_level.txt,sha256=qsko6xQYQZO2ldrOrVJEATWhJH0RC0Witc1etj3P6DQ,13
+fast_license-0.1.0.dist-info/RECORD,,

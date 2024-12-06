@@ -1,0 +1,23 @@
+import datetime
+import pathlib
+
+CW_DIR: pathlib.Path
+PRIVATE_FILE: pathlib.Path
+PUBLIC_FILE: pathlib.Path
+LICENSE_FILE: pathlib.Path
+
+class License:
+    @staticmethod
+    def generate_keys() -> None: ...
+    @staticmethod
+    def encode(data: bytes) -> str: ...
+    @staticmethod
+    def decode(data: str) -> bytes: ...
+    @classmethod
+    def encrypt(cls, data: str) -> None: ...
+    @classmethod
+    def decrypt(cls, private_key: bytes, data: str) -> datetime.datetime: ...
+    @classmethod
+    def cli_decrypt(cls) -> None: ...
+
+def cli() -> None: ...
