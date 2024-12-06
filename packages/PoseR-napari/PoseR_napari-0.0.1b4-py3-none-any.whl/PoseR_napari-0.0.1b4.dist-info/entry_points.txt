@@ -1,0 +1,2 @@
+[napari.manifest]
+PoseR-napari = poser:napari.yaml
