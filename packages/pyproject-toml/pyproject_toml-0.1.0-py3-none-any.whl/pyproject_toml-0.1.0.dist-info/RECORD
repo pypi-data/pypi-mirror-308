@@ -1,0 +1,9 @@
+pyproject_toml/__init__.py,sha256=0LcPiHvGpWOPzpOh7Cs5sHinXDlvcu_9d37UKODOQVY,4243
+pyproject_toml/project.py,sha256=G50pXTgt7C1B4AFuUTPiFycbvINMkKWoQrmOvfdsBg8,2379
+pyproject_toml/utils.py,sha256=ultW4cyvYYwDYwFLCnrM1kmnk4delQ4e79gDhAtfLAE,62
+pyproject_toml/build_system/__init__.py,sha256=gRMX7plLU8IpD9TSD-1IqHJZNCAyK2EadGiotAuKAJY,649
+pyproject_toml/build_system/build_backend.py,sha256=r-mk6evBd0_0KCyxXp0tXaRaRfWpp-LW8gdSN0fLAGg,639
+pyproject_toml-0.1.0.dist-info/METADATA,sha256=-_qQ4Io44Uve9RoukoIN9Z11U-0r0uNcNy_S-U2XYRI,950
+pyproject_toml-0.1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+pyproject_toml-0.1.0.dist-info/top_level.txt,sha256=wsHlMB8Emu5D8GvotZbONwxwPbImeSL0mvcrVwylAq4,15
+pyproject_toml-0.1.0.dist-info/RECORD,,
