@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tir_guardrails
+Version: 0.0.8.dev0
+Summary: TIR Guardrails is a safety framework for monitoring and mitigating harmful or inappropriate outputs in AI systems
+Author: Atharva Pakade
+Author-email: pakade310@gmail.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: better-profanity
+Requires-Dist: presidio-analyzer[transformers]
+Requires-Dist: presidio-anonymizer
+Requires-Dist: alt-profanity-check
+Requires-Dist: openai
+Requires-Dist: fuzzysearch
+Requires-Dist: python-dotenv
+
