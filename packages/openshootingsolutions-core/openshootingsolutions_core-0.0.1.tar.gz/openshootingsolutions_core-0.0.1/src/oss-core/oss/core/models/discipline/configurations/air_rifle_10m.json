@@ -1,0 +1,85 @@
+{
+  "name": "Air rifle 10m",
+  "name_abbreviation": "AIRR10",
+  "identifier": "ecc967cc-0f7d-4d62-aaa5-45508d6ee382",
+  "timer_type": "single_stage",
+  "description": "Air rifle 10m based on the KNSA rules",
+  "managing_organization": "KNSA",
+  "phases": [
+    {
+      "name": "Phase 1 - Sight in shots",
+      "steps": [
+        {
+          "name": "Step 1 - Start of phase",
+          "actions": [
+            {
+              "name": "Signal 0.5 seconds",
+              "action": "signal",
+              "arguments": [
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Step 2 - Wait while firing",
+          "actions": [
+            {
+              "name": "Wait 15 minutes",
+              "action": "wait",
+              "arguments": [
+                15.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Step 3 - End of phase",
+          "actions": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phase 2 - Competition shots",
+      "steps": [
+        {
+          "name": "Step 1 - Start of phase",
+          "actions": [
+            {
+              "name": "Signal 0.5 seconds",
+              "action": "signal",
+              "arguments": [
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Step 2 - Wait while firing",
+          "actions": [
+            {
+              "name": "Wait 15 minutes",
+              "action": "wait",
+              "arguments": [
+                15.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Step 3 - End of phase",
+          "actions": [
+            {
+              "name": "Signal 0.5 seconds",
+              "action": "signal",
+              "arguments": [
+                0.5
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

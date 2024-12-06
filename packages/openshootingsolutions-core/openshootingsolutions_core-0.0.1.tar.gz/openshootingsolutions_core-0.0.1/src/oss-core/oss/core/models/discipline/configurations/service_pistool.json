@@ -1,0 +1,242 @@
+{
+  "name": "Servicepistool",
+  "name_abbreviation": "SP",
+  "identifier": "9eb6ac9a-2c49-4926-976b-c66b3de4f819",
+  "timer_type": "multi_stage",
+  "description": "Service Pistool met de standaard regels van de KNSA",
+  "managing_organization": "KNSA",
+  "stages": [
+    {
+      "name": "Stage 1 - 25m",
+      "description": "Left target 6 shots in 15 seconds",
+      "name_abbreviation": "25m",
+      "phases": [
+        {
+          "name": "Phase 1",
+          "description": "Phase 1",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 2 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 15.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stage 2 - 20m",
+      "description": "Left target 3 shots, right target 3 shots in 10 seconds",
+      "name_abbreviation": "20m",
+      "phases": [
+        {
+          "name": "Phase 1",
+          "description": "Phase 1",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 2 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 10.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stage 3 - 15m",
+      "description": "Right target 3x2 shots in 3x3 seconds with a 3 seconds break",
+      "name_abbreviation": "20m",
+      "phases": [
+        {
+          "name": "Phase 1",
+          "description": "Phase 1",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 2 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 3.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Phase 2",
+          "description": "Phase 2",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 2 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 3.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Phase 3",
+          "description": "Phase 3",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 2 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 3.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stage 4 - 10m",
+      "description": "Left target 3 shots, right target 3 shots in 6 seconds",
+      "name_abbreviation": "10m",
+      "phases": [
+        {
+          "name": "Phase 1",
+          "description": "Phase 1",
+          "steps":[
+            {
+              "name": "Step 1 - Start phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 0.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Step 3 - End phase",
+              "actions": [
+                {
+                  "name": "Signal 0.5 seconds",
+                  "start_offset": 3.0,
+                  "worker": "audio",
+                  "action": "buzzer",
+                  "arguments": [
+                    0.5
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
