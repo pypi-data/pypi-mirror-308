@@ -1,0 +1,11 @@
+drf_excel_export/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_excel_export/export.py,sha256=3kYmNICHcsxwJp-E7HCCr6QFqM5k08cWw3kScSksMxM,3685
+drf_excel_export/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_excel_export/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_excel_export/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_excel_export/management/commands/export_excel.py,sha256=Ox8ANh-69couiBFZlQs18VYHSkEtVhpSg-Yk1rPhRV4,698
+drf_excel_export-0.1.1.dist-info/LICENSE,sha256=oUx3MixOlULW-GVKw4HmkatdpbeSUbqUfSLhp4u8bCU,1075
+drf_excel_export-0.1.1.dist-info/METADATA,sha256=_kZMTO9CSMb0rvXbxHYUO6euBgw8JbY9Q1drwWJu5Dg,4316
+drf_excel_export-0.1.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+drf_excel_export-0.1.1.dist-info/top_level.txt,sha256=0o0RzR6E4zOOYqGINE20iA96Id2vsa4JToTV-q-nQtc,17
+drf_excel_export-0.1.1.dist-info/RECORD,,
