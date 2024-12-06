@@ -1,0 +1,88 @@
+[license](https://img.shields.io/github/license/MediaCompLab/CharNet.svg)
+![package](https://github.com/MediaCompLab/CharNet/actions/workflows/python-package.yml/badge.svg?event=push)
+![publish](https://github.com/MediaCompLab/CharNet/actions/workflows/python-publish.yml/badge.svg)
+
+# CIGA: Character Interaction Graph Analyzer
+
+CharNet is a Python package designed for performing graph analysis on dynamic social networks based on narratives.
+It is a reimplementation of CharNet using igraph.
+
+- **Github:** https://github.com/MediaCompLab/CIGA
+
+## Simple example
+
+---
+
+```python
+import ciga as cg
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame({
+        'Season': [1, 1, 1, 1],
+        'Episode': [1, 1, 1, 1],
+        'Scene': [1, 1, 2, 2],
+        'Line': [1, 2, 1, 2],
+        'Speaker': ['Sheldon', 'Leonard', 'Penny', 'Sheldon'],
+        'Listener': ['Leonard', 'Sheldon', 'Sheldon', 'Penny'],
+        'Words': ['Hello', 'Hi there', 'How are you?', 'Fine, thank you']
+    })
+
+def weight_func(interaction):
+    return 1
+
+position = ('Season', 'Episode', 'Scene', 'Line')
+interactions = cg.prepare_data(data=df,
+                               position=position,
+                               source='Speaker', 
+                               target='Listener', 
+                               interaction='Words')
+sub_interactions = cg.segment(interactions, start=(1, 1, 1, 1), end=(2, 1, 1, 1))
+weights = cg.calculate_weights(sub_interactions, weight_func)
+agg_weights = cg.agg_weights(data=weights, 
+                             position=position[:-1], 
+                             agg_func=lambda x: sum(x))
+
+tg = cg.TGraph(data=agg_weights, 
+               position=position[:-1], 
+               directed=False)
+
+graph = tg.get_graph((1, 1, 1))
+fig, ax = plt.subplots()
+cg.iplot(graph, target=ax)
+plt.show()
+
+res = cg.tgraph_degree(tg, weighted=True, w_normalized=False, normalized=True)
+
+res.to_csv('results.csv')
+```
+
+## Install
+
+---
+
+Install the latest version of CharNet:
+
+```bash
+$ pip install ciga
+```
+Install with all optional dependencies:
+```bash
+$ pip install ciga[all]
+```
+
+## To Do
+- [x] Add non-directed graph support
+- [x] Add closeness centrality
+- [x] Add Eigenvector centrality
+- [ ] Add Leiden community detection
+- [ ] Add temporal visualization
+- [ ] Add centrality visualizer (with visualization)
+
+## License
+
+Released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+```
+Copyright (c) 2024 Media Comprehension Lab
+```
