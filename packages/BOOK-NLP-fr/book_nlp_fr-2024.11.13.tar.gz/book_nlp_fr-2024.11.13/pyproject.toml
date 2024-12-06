@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "BOOK_NLP_fr"
+version = "2024.11.13"
+authors = [
+  { name="Antoine BOURGOIS", email="antoine.bourgois@protonmail.com" },
+]
+description = "BOOK_NLP_fr"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[tool.hatch.build]
+include = ["src/BOOK_NLP_fr/__init__.py", "src/BOOK_NLP_fr/data/**"]
+
+[tool.hatch.packages]
+# Tell hatchling that your package is inside src/
+include = ["src/BOOK_NLP_fr"]
