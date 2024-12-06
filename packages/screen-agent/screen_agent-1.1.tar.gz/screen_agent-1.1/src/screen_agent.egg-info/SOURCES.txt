@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/screen-agent/__init__.py
+src/screen_agent.egg-info/PKG-INFO
+src/screen_agent.egg-info/SOURCES.txt
+src/screen_agent.egg-info/dependency_links.txt
+src/screen_agent.egg-info/top_level.txt
