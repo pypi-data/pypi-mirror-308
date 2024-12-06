@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/cloudscraper_wrapper.egg-info/PKG-INFO
+src/cloudscraper_wrapper.egg-info/SOURCES.txt
+src/cloudscraper_wrapper.egg-info/dependency_links.txt
+src/cloudscraper_wrapper.egg-info/requires.txt
+src/cloudscraper_wrapper.egg-info/top_level.txt
