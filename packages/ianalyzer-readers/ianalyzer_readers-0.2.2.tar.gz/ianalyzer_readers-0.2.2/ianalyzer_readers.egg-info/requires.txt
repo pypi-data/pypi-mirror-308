@@ -1,0 +1,9 @@
+beautifulsoup4
+lxml
+openpyxl
+rdflib
+
+[dev]
+pytest
+mkdocs
+mkdocstrings-python
