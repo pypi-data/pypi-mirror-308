@@ -1,0 +1,3 @@
+[console_scripts]
+freeselcall=freeselcall:__main__.main
+
