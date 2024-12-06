@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: SimAnn
+Version: 1
+Summary: Simple Simulated Annealing curve fit algorithm
+Author: Giacomo Corucci
+Author-email: giacomocorucci@virgilio.it
+Requires-Dist: numpy
+
