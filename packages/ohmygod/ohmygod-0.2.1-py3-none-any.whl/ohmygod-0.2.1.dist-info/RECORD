@@ -1,0 +1,10 @@
+ohmygod/__init__.py,sha256=8G758u_d0wEI7dNEbm6pvjcx6Uh45ZcQi70zO409LVk,165
+ohmygod/main.py,sha256=DaqnyqA7mMSdWIwQsKAunIxJo5-lL4ujA1UrF4727_k,3336
+ohmygod/messenger/__init__.py,sha256=5UEreczQRL23NjV5dgo0nWgRLV_Uxi7TskOoE0daYhE,94
+ohmygod/messenger/buddha.py,sha256=Xs2xSQ1D-zLHzc55cLB4GnhMbOCjrZx0pgZgqRDAZ2A,4794
+ohmygod/messenger/messenger.py,sha256=eG-CiIaUY_Qvqj9cW2MaKNgBNrjtwTGt2ewwzimK1GI,1138
+ohmygod/utils.py,sha256=J-dtPf-XgS1hGkQnirqcEcFXaXpSiZvwMjUSVUxlN9g,3136
+ohmygod-0.2.1.dist-info/LICENSE,sha256=FNIjveZhob5xb64ZGnmO4hVqrVxQ1QWlL6NnnBV310U,1065
+ohmygod-0.2.1.dist-info/METADATA,sha256=uj7tWKu4Z2PuCtQtUipJlSfvmYi_IndSkSVlWcCWpm0,1474
+ohmygod-0.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ohmygod-0.2.1.dist-info/RECORD,,
