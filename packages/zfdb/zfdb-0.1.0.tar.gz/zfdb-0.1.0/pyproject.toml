@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "zfdb"
+version = "0.1.0"
+description = "Simple interface to the ZIP files to use them as a database"
+authors = ["Oleksii <semolex@live.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
