@@ -1,0 +1,46 @@
+# gensec
+
+gensec is a command-line tool designed to simplify the process of generating scure configuration files such as Dockerfiles and Helm charts. The CLI prompts users for input as needed and includes interactive options to customize configurations effectively.
+
+
+## Features
+
+- **Generate Dockerfiles**: Create secure and customizable Dockerfiles for different programming languages.
+- **Generate Helm charts**: Create Helm chart templates for Kubernetes deployments.
+- **List available commands**: Display the available commands and their descriptions.
+
+## Installation
+
+You can install the `gensec` package directly from PyPI:
+```
+
+bash pip install gensec
+
+```
+
+# Usage
+
+After installing the package, you can use the following commands:
+
+## List Available Commands
+To list all available commands, run:
+```
+gensec list
+```
+
+## Generate a Dockerfile
+To generate a Dockerfile, use the dockerfile command:
+```
+gensec dockerfile --language <programming_language> --port <port_number> --entrypoint <entry_point>
+
+```
+
+If the details are not provided, the tool will prompt you to select the language, port, and entrypoint interactively.
+
+## Generate a Helm Chart
+To generate a Helm chart, use the helmchart command:
+```
+gensec helmchart --name <service_name>
+```
+If the details are not provided, the tool will prompt you to enter the service name interactively.
+
