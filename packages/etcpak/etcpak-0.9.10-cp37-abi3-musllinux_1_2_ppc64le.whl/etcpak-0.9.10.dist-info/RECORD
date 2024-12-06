@@ -1,0 +1,11 @@
+etcpak-0.9.10.dist-info/top_level.txt,sha256=T2D0x7SQLUB3U1bXC2uotzkyB-VtZlC_mQ2wYZB9Y8E,7
+etcpak-0.9.10.dist-info/RECORD,,
+etcpak-0.9.10.dist-info/LICENSE,sha256=7TQ7Mb6Vzmu0LVXIDQC3x_qY2ZwDeeSFfw440oNBoW8,1062
+etcpak-0.9.10.dist-info/METADATA,sha256=mWCeIfZG67DL_4mR-eZNmI2KwKhVF4Ikoa9iMeBOjuA,5958
+etcpak-0.9.10.dist-info/WHEEL,sha256=t0s-pOXfpw_XMbb3sGK4CHeQWCh39UEey7ro7T-OXEg,112
+etcpak.libs/libstdc++-29c3693a.so.6.0.32,sha256=7pf4QLdG7P4-aVKnlhOHU7zBGpB-CaqtnNcVcYKmyD8,4173945
+etcpak.libs/libgcc_s-18b5a48e.so.1,sha256=X8nOhj6mV31CR0pvcD4XBrQK5m2OqE48A-QRQDIm-e4,200345
+etcpak/_etcpak_none.abi3.so,sha256=Mvs0hX2IJtEpv23KYoXdU_w_AiNBVcNSmxsqHNPGpHI,2235345
+etcpak/__init__.py,sha256=LU7a9NIkerb0ugk6Shk0ACjuq0IfBhFHLSJKNpR7NU8,2996
+etcpak/__init__.pyi,sha256=dAWRHFU_XeK6vLZPfmmSZXtirsEM3EEhgf1dyn-DK9Y,4698
+etcpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
