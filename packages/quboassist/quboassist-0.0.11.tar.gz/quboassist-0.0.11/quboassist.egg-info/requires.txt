@@ -1,0 +1,6 @@
+numpy
+quboassistfunc
+
+[dev]
+build
+twine
