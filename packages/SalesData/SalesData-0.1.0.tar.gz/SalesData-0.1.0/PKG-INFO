@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: SalesData
+Version: 0.1.0
+Summary: A PySpark-based sales data processing tool
+Home-page: https://github.com/DiogoRM-DEUS-DE/ABN_CHALLENGE
+Author: Diogo Mariano
+Author-email: diogo.mariano@deus.ai
+Requires-Python: >=3.10
