@@ -1,0 +1,8 @@
+juicefs_client/__init__.py,sha256=nBrZvIO-79SOY324vS2OxRWLOZPH_gJMeM2yNPwjjMo,86
+juicefs_client/__main__.py,sha256=7ZpjlXNvuIRSi0JtecwD_Cxe0RGBC0vQp0VOFuh1OS0,64
+juicefs_client/client.py,sha256=K5u0ctc_7l4_ZRfc0tOGfMWAveQQR2aAYhIoIGJzqg4,20130
+juicefs_client-0.1.12.dist-info/LICENSE,sha256=u5fm2mDS9PXImKcGfoOyHBkO_EYcbx99fXjIdRx7K5w,1066
+juicefs_client-0.1.12.dist-info/METADATA,sha256=8kZipitSArLRh6VxiadceuYdbPuR3rEs1WwVagiKEoI,3925
+juicefs_client-0.1.12.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+juicefs_client-0.1.12.dist-info/top_level.txt,sha256=6XCkEEmz6yXslmM0aAbjARSQI9QWnjxOjPbVp1fR7uc,15
+juicefs_client-0.1.12.dist-info/RECORD,,
