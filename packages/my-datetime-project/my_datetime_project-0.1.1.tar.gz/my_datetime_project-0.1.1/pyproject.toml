@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "my_datetime_project"
+version = "0.1.1"
+description = "A simple Python project to print current date and time"
+authors = [
+    {name = "zhouyx", email = "zhouyx.100@gmail.com"}
+]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
