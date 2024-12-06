@@ -1,0 +1,12 @@
+douban2notion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+douban2notion/__main__.py,sha256=x-cLwZlg5bxDDAU3aBn3kH4ryoudfkhR95-a9FNspRM,61
+douban2notion/config.py,sha256=dypN1bzrkjW-X-gDHJw4-JucicMgcPIFj1DqZc6GZkk,1317
+douban2notion/douban.py,sha256=4fw-xq3F7Js2g8T1K0M8bPMJwAvI5l3az9sWfi2NDdo,10310
+douban2notion/notion_helper.py,sha256=oi3QIIctwGVfqeCIfqRbMMBUy13EYPacANQT-LK9mno,10824
+douban2notion/update_heatmap.py,sha256=D7z0hKMx0tT27aEvJQT6OXQVeEzzm_RGK_tNJTFZLWA,1226
+douban2notion/utils.py,sha256=P60Th-I2GuG_YWnmKnNCjJyUix8chFRXlFZA1qtBtaE,11091
+douban2notion-0.0.2.dist-info/METADATA,sha256=kSFwTtviNfjwIA-DeFPUYGR6Z_TiZHw16Q_FWbudhrg,2478
+douban2notion-0.0.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+douban2notion-0.0.2.dist-info/entry_points.txt,sha256=gW4UltYDXqMeW8tjmUhRuYy1hxYx0M-PHMuxp32w9yE,97
+douban2notion-0.0.2.dist-info/top_level.txt,sha256=digiHTPsxQUhzr9QwWBS8yIkvbJyKwUVAqVGgBQO5WU,14
+douban2notion-0.0.2.dist-info/RECORD,,
