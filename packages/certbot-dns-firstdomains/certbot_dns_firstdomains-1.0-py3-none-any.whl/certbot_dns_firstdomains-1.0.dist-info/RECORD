@@ -1,0 +1,8 @@
+certbot_dns_firstdomains/__init__.py,sha256=-wv963o4-3bGIY2VViOFyfHeawjKXZx9fMU11WMxmXY,57
+certbot_dns_firstdomains/dns_firstdomains.py,sha256=44P6ia7H1IQ1gJU5vbGqu5U1LG7UCt1lRDMMeFqa9aI,5145
+certbot_dns_firstdomains-1.0.dist-info/LICENSE.txt,sha256=PRK8CnGeg3hfia_Xr7oXbttQH8fmPhAF_cmZ8LT1PFw,1056
+certbot_dns_firstdomains-1.0.dist-info/METADATA,sha256=c1SV7I6CFGM3-6v0FwzKu5swj7S-p9bOn5sDwBTlUbM,4296
+certbot_dns_firstdomains-1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+certbot_dns_firstdomains-1.0.dist-info/entry_points.txt,sha256=mnz6KN__1niRkBEezm5RyKprENLnn48Zd3mEmwuntAY,93
+certbot_dns_firstdomains-1.0.dist-info/top_level.txt,sha256=fX6QEkqJGoQQvPvwAGksrgebLuq-jOmMQu-ng8hDsqY,25
+certbot_dns_firstdomains-1.0.dist-info/RECORD,,

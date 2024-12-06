@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-firstdomains = certbot_dns_firstdomains.dns_firstdomains:Authenticator
