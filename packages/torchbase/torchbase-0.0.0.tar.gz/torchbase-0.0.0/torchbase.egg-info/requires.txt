@@ -1,0 +1,12 @@
+torch
+numpy
+python_dateutil
+scikit-learn
+tensorboard
+torchinfo
+
+[interactive]
+jupyter
+jupyterlab
+ipykernel
+matplotlib
