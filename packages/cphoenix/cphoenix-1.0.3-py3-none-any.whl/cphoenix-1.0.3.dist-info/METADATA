@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cphoenix
+Version: 1.0.3
+Summary: Function to help interactive with CADSHOUSE
+Home-page: https://github.com/pypa/sampleproject
+Author: Data Platform
+Author-email: example@gmail.com.vn
+License: CADS
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyiceberg[s3fs]
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+
