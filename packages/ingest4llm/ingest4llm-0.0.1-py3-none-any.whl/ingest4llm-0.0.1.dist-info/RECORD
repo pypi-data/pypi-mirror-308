@@ -1,0 +1,9 @@
+ingest4llm/__init__.py,sha256=SGu4Is_EaqdI4HnGpma2zboA37jgkvJPtb-3xcswszE,199
+ingest4llm/_client.py,sha256=Uln8VmoB3BvYM-thYuvdfc9tHoblP9WK4oRDOLhDW10,7847
+ingest4llm/_constants.py,sha256=6l3mQcBGCkK_VXGWVY5E7L2vNInyZD8WeXG8Gw7l4ew,369
+ingest4llm/_types.py,sha256=UUKRYmJ0eksYPgPrINZe0HszB4mwbOWI5EU3IZzWYRk,5975
+ingest4llm/ingestor.py,sha256=qaRhJHwghyK4vQiRTBWuIKm_IZJw7_1a3oA9_5obHm8,1436
+ingest4llm/utils.py,sha256=HafU4K9s65-gpw-9JZFUDfZ1wBzfu8ZGwV285XpAeAo,266
+ingest4llm-0.0.1.dist-info/METADATA,sha256=QXL7LcQJJ6OqYHJw6-p9xI9EjKsrjzGTA_F2w6pWnCw,654
+ingest4llm-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ingest4llm-0.0.1.dist-info/RECORD,,
