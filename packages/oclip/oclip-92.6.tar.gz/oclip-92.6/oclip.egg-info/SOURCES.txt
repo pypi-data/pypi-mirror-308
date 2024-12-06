@@ -1,0 +1,7 @@
+main.py
+setup.py
+oclip.egg-info/PKG-INFO
+oclip.egg-info/SOURCES.txt
+oclip.egg-info/dependency_links.txt
+oclip.egg-info/requires.txt
+oclip.egg-info/top_level.txt
