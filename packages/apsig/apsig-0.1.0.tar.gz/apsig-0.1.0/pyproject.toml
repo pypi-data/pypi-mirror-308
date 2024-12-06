@@ -1,0 +1,30 @@
+[project]
+name = "apsig"
+version = "0.1.0"
+description = "Signature implementation used in ActivityPub."
+authors = [
+    { name = "AmaseCocoa", email = "amase.cocoa@gmail.com" },
+]
+dependencies = [
+    "cryptography>=43.0.1",
+    "pynacl>=1.5.0",
+    "pyld>=2.0.4",
+    "aiohttp>=3.10.5",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test = "python test_runner.py"
