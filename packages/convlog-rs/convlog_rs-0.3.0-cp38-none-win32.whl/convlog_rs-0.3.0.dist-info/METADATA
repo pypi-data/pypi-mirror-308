@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: convlog_rs
+Version: 0.3.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+License-File: LICENSE
+Summary: A rust binding for convlog
+Author-email: Equim <>, baiqwerdvd <158065462+baiqwerdvd@users.noreply.github.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# convlog
+
+A rust binding for [convlog](https://github.com/Equim-chan/mjai-reviewer/tree/master/convlog)
+
