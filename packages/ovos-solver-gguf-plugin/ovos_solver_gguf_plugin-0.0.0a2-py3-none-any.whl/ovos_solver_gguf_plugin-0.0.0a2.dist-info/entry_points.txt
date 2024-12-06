@@ -1,0 +1,3 @@
+[neon.plugin.solver]
+ovos-solver-gguf-solver-plugin = ovos_gguf_solver:GGUFSolver
+
