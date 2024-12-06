@@ -1,0 +1,7 @@
+main.py
+setup.py
+FedDecorr.egg-info/PKG-INFO
+FedDecorr.egg-info/SOURCES.txt
+FedDecorr.egg-info/dependency_links.txt
+FedDecorr.egg-info/requires.txt
+FedDecorr.egg-info/top_level.txt
