@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: FlexLogger
+Version: 1.0.0
+Summary: Wrapper for remote logging to a Database with the help of an API REST.For now the required server is a custom-made database being served by an API Rest.If someone other than me shows interest in this, I can happily share my Schema (Database and API Rest)
+Author: Anderson
+Author-email: anderbytes@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests ~=2.32.3
+Requires-Dist: fastapi ~=0.115.5
+
