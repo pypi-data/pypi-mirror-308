@@ -1,0 +1,11 @@
+name: Dependabot auto-merge & tests
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  tests:
+    uses: centralnicgroup-opensource/rtldev-middleware-shareable-workflows/.github/workflows/python-sdk-test.yml@main
+    secrets: inherit

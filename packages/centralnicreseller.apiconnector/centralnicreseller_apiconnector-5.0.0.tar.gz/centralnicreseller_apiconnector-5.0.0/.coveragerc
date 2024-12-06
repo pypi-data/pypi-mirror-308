@@ -1,0 +1,7 @@
+[run]
+concurrency = multiprocessing
+parallel = true
+sigterm = true
+omit = 
+    centralnicreseller/__init__.py
+    centralnicreseller/apiconnector/__init__.py
