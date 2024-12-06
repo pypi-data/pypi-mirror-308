@@ -1,0 +1,9 @@
+unwatermark/__init__.py,sha256=yek9NdoWg9hd0aC40xhP_mlIbDgIWXPGYOLNuIDrzUs,108
+unwatermark/async_unwater.py,sha256=CPkl5Q8rwCpq0V_Iyks2dldUn8twl3KrA4O1LVxc3Hc,2355
+unwatermark/models.py,sha256=16xG_q5MKAUKUx0U-i9FBzBQIZXE1bznPfRs2sSB_UU,541
+unwatermark/unwater.py,sha256=J4MyX09Dq3DFYwNxaWh3HF6ZhdczDYbOObVMgB0pehM,2268
+unwatermark-1.5.0.dist-info/LICENSE,sha256=ahgeeoxcaoeeB68Bz-KyHjV98C2WPYet6QeA4vaVPmA,1066
+unwatermark-1.5.0.dist-info/METADATA,sha256=KjxcAmc0ywp642bCOBeTyICFTc15pWKKGGowLvrwEUQ,2365
+unwatermark-1.5.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+unwatermark-1.5.0.dist-info/top_level.txt,sha256=x5fTT7R0BlgxO7Ye8KpNvkL5Ptk0bl7b9F-Yyqg6Oh8,12
+unwatermark-1.5.0.dist-info/RECORD,,
