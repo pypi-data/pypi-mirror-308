@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+integracaoTracker/__init__.py
+integracaoTracker/module_integracao.py
+integracaoTracker/utils.py
+pacofunctions.egg-info/PKG-INFO
+pacofunctions.egg-info/SOURCES.txt
+pacofunctions.egg-info/dependency_links.txt
+pacofunctions.egg-info/requires.txt
+pacofunctions.egg-info/top_level.txt
+utilFunctions/__init__.py
+utilFunctions/config.py
+utilFunctions/module.py
+utilFunctions/data/fretes.db
+utilFunctions/data/shapesMiniAnel.shp
