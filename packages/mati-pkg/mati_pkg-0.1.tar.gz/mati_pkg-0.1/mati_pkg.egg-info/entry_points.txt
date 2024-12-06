@@ -1,0 +1,2 @@
+[console_scripts]
+my_package_greet = my_package.main:greet

@@ -1,0 +1,9 @@
+README.md
+setup.py
+mati_pkg/__init__.py
+mati_pkg/main.py
+mati_pkg.egg-info/PKG-INFO
+mati_pkg.egg-info/SOURCES.txt
+mati_pkg.egg-info/dependency_links.txt
+mati_pkg.egg-info/entry_points.txt
+mati_pkg.egg-info/top_level.txt
