@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: yampit
+Version: 0.3.0
+Summary: Builds datasets, jumps through FDBs.
+Author-email: Tobias Kölling <tobias.koelling@mpimet.mpg.de>, Lukas Kluft <lukas.kluft@mpimet.mpg.de>
+Requires-Python: >=3.11
+Requires-Dist: eccodes>=2.38.3
+Requires-Dist: polytope-client>=0.7.4
+Description-Content-Type: text/markdown
+
+# YAMPIT
+Builds datasets, jumps through FDBs.
