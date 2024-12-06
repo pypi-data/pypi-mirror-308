@@ -1,0 +1,10 @@
+setup.py
+aggPy/__init__.py
+aggPy/main.py
+aggPy/plot_csv.py
+aggPy/time_corr_Ct.py
+aggPy.egg-info/PKG-INFO
+aggPy.egg-info/SOURCES.txt
+aggPy.egg-info/dependency_links.txt
+aggPy.egg-info/requires.txt
+aggPy.egg-info/top_level.txt
