@@ -1,0 +1,13 @@
+sbx_superlim/__init__.py,sha256=DesN0NJ2_9S9JKjwIfWMP1mAZ91ViW7kK2p0B16gB6I,1691
+sbx_superlim/common.py,sha256=8GgzhHWLNp2wD6Hy-P4GcXYqr6FGLdraQy8aP6CRYJs,1125
+sbx_superlim/exporters.py,sha256=Co9Vz4FoLu309fZj0gxHg-P7ilHlAW0PaXDSlerlS5M,5295
+sbx_superlim/helpers.py,sha256=5AFqoN7hbxbDUAM5kLlpNXdoBxM83sZwttuWGgnxgko,179
+sbx_superlim/annotators/absabank_imm.py,sha256=YsleEpLSsbKDO54_c2PjWFpbTWdBjWEPU0SMFxr6yIU,1272
+sbx_superlim/annotators/argumentation_sent.py,sha256=2I2-MVR0SOcx1cWhxf4zjYIILjJdFcVAStm3eAkkUfU,2070
+sbx_superlim/annotators/dalaj_ged.py,sha256=vobOnQGoVk2aMoHdJj9-hccRi4KPlENDoTcfC_OqSXE,1206
+sbx_superlim/annotators/swenli.py,sha256=-fgZUaE17Aqk7yJLwU0UvOoTwjnzLhv_R0RIX3vxiyQ,1215
+sparv_sbx_superlim-0.1.0.dist-info/METADATA,sha256=_3OZjHCDZzP5dwuiUfatq7jPPfP9elZzKCZJu6YPmUQ,4085
+sparv_sbx_superlim-0.1.0.dist-info/WHEEL,sha256=3U_NnUcV_1B1kPkYaPzN-irRckL5VW_lytn0ytO_kRY,87
+sparv_sbx_superlim-0.1.0.dist-info/entry_points.txt,sha256=DmlfFmPqwN-PjLwL468hCTUjjWovqJvQTJc8FO0yw7I,43
+sparv_sbx_superlim-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sparv_sbx_superlim-0.1.0.dist-info/RECORD,,
