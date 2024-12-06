@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: bezierfit
+Version: 0.0.1a1.dev1
+Project-URL: Documentation, https://github.com/Sergiu Deitsch/bezierfit#readme
+Project-URL: Issues, https://github.com/Sergiu Deitsch/bezierfit/issues
+Project-URL: Source, https://github.com/Sergiu Deitsch/bezierfit
+Author-email: Sergiu Deitsch <sergiu.deitsch@gmail.com>
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# bezierfit
+
+[![PyPI - Version](https://img.shields.io/pypi/v/bezierfit.svg)](https://pypi.org/project/bezierfit)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bezierfit.svg)](https://pypi.org/project/bezierfit)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install bezierfit
+```
+
+## License
+
+`bezierfit` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
