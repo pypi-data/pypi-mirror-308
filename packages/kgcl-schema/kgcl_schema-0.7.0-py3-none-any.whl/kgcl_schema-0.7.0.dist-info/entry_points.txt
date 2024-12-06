@@ -1,0 +1,6 @@
+[console_scripts]
+generate_viz_json=src.kgcl_schema.scripts.generate_json:generate_viz_json
+kgcl-apply=kgcl.kgcl:cli
+kgcl-diff=kgcl.kgcl_diff:cli
+kgcl-parse=kgcl.grammar.parser:cli
+
