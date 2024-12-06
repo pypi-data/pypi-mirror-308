@@ -1,0 +1,10 @@
+aws_cdk/aws_kinesisfirehose_destinations_alpha/__init__.py,sha256=B-X_YdswBqZ-onQ-7QslUD2GMFOQaKJipVhbUdTFQa8,65410
+aws_cdk/aws_kinesisfirehose_destinations_alpha/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_kinesisfirehose_destinations_alpha/_jsii/__init__.py,sha256=9bJLLKaaOFFbG7s6ppx33_nkrzEUqxZvjdBrXraYTjs,1576
+aws_cdk/aws_kinesisfirehose_destinations_alpha/_jsii/aws-kinesisfirehose-destinations-alpha@2.167.0-alpha.0.jsii.tgz,sha256=iVctrGVOf2eZ8ZcGIsXmYRyl1ne3-79opQ7TcT6nY4k,43669
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/LICENSE,sha256=kEDF86xJUQh1E9M7UPKKbHepBEdFxIUyoGfTwQB7zKg,11391
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/METADATA,sha256=qa8BNPYk8nnkcle_Px7gY0vy9I-vcphNuGM_nODOIKU,2402
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/NOTICE,sha256=dXf56qvx2VDNCaqiRscOD2IH5GbmqbnKRzroZCeLtaQ,113
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_kinesisfirehose_destinations_alpha-2.167.0a0.dist-info/RECORD,,
