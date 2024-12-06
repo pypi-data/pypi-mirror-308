@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "openfund-py"
+version = "0.1.1"
+description = ""
+authors = ["yang99love <yang99love@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "openfund", from = "src"}]
+
+[tool.poetry.dependencies] # main dependency group
+python = ">=3.9"
+scikit-learn = "^1.5.2"
+loguru = "^0.7.2"
+flake8 = "^7.1.1"
+toml = "^0.10.2"
+binance-futures-connector = "^4.1.0"
+binance-connector = "^3.9.0"
+requests = "^2.31.0"
+websocket-client = "^1.6.3"
+pycryptodome = "^3.15.0"
+twine = "^5.1.1"
+
+[tool.poetry.group.test.dependencies]
+binance-futures-connector = "^4.1.0"
+binance-connector = "^3.9.0"
+requests = "^2.31.0"
+websocket-client = "^1.6.3"
+pycryptodome = "^3.15.0"
+pytest-mock = "*"
+pytest-cov = ">=2.8.1"
+pytest = ">=6.2.5"
+sure = ">=2.0.0"
+responses = ">=0.10.12"
+pytest-pep8 = ">=1.0.6"
+black = "*"
+flake8 = "*"
+sphinx = "*"
+sphinx_rtd_theme = "*"
+tox = "*"
+tox-pyenv = "*"
+wheel = "*"
+
+[tool.pytest.ini_options] # mandatory section name
+addopts = "-s --no-header --no-summary" # force cmd flags
+testpaths = [ # what directories contain tests
+    "tests",
+]
+pythonpath = [ # what to add to the python path
+    "."
+]
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
