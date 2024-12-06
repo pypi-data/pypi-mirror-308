@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/sweetrpg_common/__init__.py
+src/sweetrpg_common/constants.py
+src/sweetrpg_common.egg-info/PKG-INFO
+src/sweetrpg_common.egg-info/SOURCES.txt
+src/sweetrpg_common.egg-info/dependency_links.txt
+src/sweetrpg_common.egg-info/entry_points.txt
+src/sweetrpg_common.egg-info/top_level.txt

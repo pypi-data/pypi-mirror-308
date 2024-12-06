@@ -1,0 +1,2 @@
+[console_scripts]
+sweetrpg-common = sweetrpg_common.cli:main
