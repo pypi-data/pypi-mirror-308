@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+agentfail/__init__.py
+agentfail/client.py
+agentfail.egg-info/PKG-INFO
+agentfail.egg-info/SOURCES.txt
+agentfail.egg-info/dependency_links.txt
+agentfail.egg-info/requires.txt
+agentfail.egg-info/top_level.txt

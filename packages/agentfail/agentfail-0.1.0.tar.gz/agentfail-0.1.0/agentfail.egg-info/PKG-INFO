@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: agentfail
+Version: 0.1.0
+Summary: A Python client for the agent.fail API
+Home-page: https://github.com/agentfail/python-client
+Author: Your Name
+Author-email: AIED <admin@aied.uk>
+Project-URL: Homepage, https://github.com/agentfail/python-client
+Project-URL: Bug Tracker, https://github.com/agentfail/python-client/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Requires-Dist: websockets>=10.0
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: pydantic>=1.8.0
