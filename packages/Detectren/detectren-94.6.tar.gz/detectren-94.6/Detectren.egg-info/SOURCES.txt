@@ -1,0 +1,7 @@
+main.py
+setup.py
+Detectren.egg-info/PKG-INFO
+Detectren.egg-info/SOURCES.txt
+Detectren.egg-info/dependency_links.txt
+Detectren.egg-info/requires.txt
+Detectren.egg-info/top_level.txt
