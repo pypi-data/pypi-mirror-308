@@ -1,0 +1,4 @@
+[console_scripts]
+okta-group=okta_client.get_okta_group:cli
+okta-user=okta_client.get_okta_user:cli
+
