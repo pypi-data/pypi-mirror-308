@@ -1,0 +1,799 @@
+= Netrics
+:idprefix:
+:idseparator: -
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:toc: preamble
+:toc-title: Contents
+
+The network measurements execution framework.
+
+Netrics streamlines the development, debugging, distribution and periodic execution of tasks – specifically supporting the execution of computer network measurements.
+
+This software is both a framework and a bundle: Netrics is distributed with built-in, research-backed measurements, _and_ the installed software may be trivially configured and extended.
+
+The project aims to support network researchers, engineers, providers and users.
+
+Features:
+
+* Configuration for Humans: in either YAML or TOML formats
+* Measurements built in: Provide your own measurements or hit the ground running with built-in, pre-configured measurements from Ookla, Measurement Lab, iPerf, and more
+* Open, operating system-level interfaces: measurements are implemented as arbitrary executables reading structured standard input parameters, writing structured standard output results, _etc_.
+* Diverse installation targets: native support for _*nix_ devices featuring Python version 3.8 or later, via pip or via all-in-one pre-built bundles – and, Docker images, too!
+* Debugging tools: command-line utilities to test and debug measurement executables – on your laptop or on your Raspberry Pi
+* Python SDK: simple tools to help in the implementation of measurements in Python (and serving as prototypes for their implementation in other languages)
+
+[TIP]
+====
+Not interested in network measurements?
+
+Netrics is itself a distribution of https://github.com/chicago-cdac/fate[Fate], a general-purpose, feature-rich scheduler for periodic tasks.
+====
+
+== Demo
+
+Not quite ready to dive in? Check out our https://github.com/internet-equity/netrics-docker[guide in the netrics-demo repository].
+
+== Installation
+
+=== Docker images
+
+Netrics publishes a number of https://github.com/internet-equity/netrics/pkgs/container/netrics[Debian-based Docker images], for the ease of users familiar with Docker, to support otherwise unsupported systems, and otherwise to provision Netrics in systems utilizing containers.
+
+For example, to get started with the default Netrics Docker image:
+
+[source,sh]
+----
+docker run ghcr.io/internet-equity/netrics
+----
+
+=== Package managers
+
+NOTE: Netrics is not yet available to install via operating system package managers.
+
+=== One-line installer
+
+The "one-line" installation script is the recommended method for _most_ humans to get started with Netrics.
+
+The script will download and unpack the <<Pre-built bundle,pre-built bundle>> appropriate to your system, as well as perform the software's <<Initialization,initialization>>.
+
+The one-liner below will install Netrics for the current user:
+
+[source,sh]
+----
+curl -sL https://github.com/internet-equity/netrics/raw/0.0.1/install.py | python3
+----
+
+To install Netrics system-wide you might use `sudo`:
+
+[source,sh]
+----
+curl -sL https://github.com/internet-equity/netrics/raw/0.0.1/install.py | sudo python3
+----
+
+[TIP]
+====
+You may pass arguments to the installer – even in the above form – separated from the Python executable with a single dash:
+
+[source,sh]
+----
+curl -sL https://github.com/internet-equity/netrics/raw/0.0.1/install.py | python3 - --help
+----
+
+And, for example, if the installer cannot find a suitable location for the Netrics executables – one which is both writeable by the current user and on the `PATH` of the current user – then specification of the installation path argument is **required**.
+====
+
+Alternatively, download the installer to interact with it:
+
+[source,sh]
+----
+curl -LO https://github.com/internet-equity/netrics/raw/0.0.1/install.py
+
+python3 install.py --help
+----
+
+=== Pre-built bundle
+
+Netrics software is implemented in https://python.org/[Python] and requires Python version 3.8 or above.
+
+Casual inspection of your system's `/usr/bin/` directory may indicate which versions of Python you have installed:
+
+[source,sh]
+----
+ls -1 /usr/bin/python3.*
+----
+
+Python installed? Great. That's all the pre-built bundle needs.
+
+Find the appropriate build for your system on the https://github.com/internet-equity/netrics/releases/latest[Netrics release announcement page].
+
+For example, the below package includes the Netrics software bundle version `0.0.1`, and all its CLI commands, pre-built for the ARM CPU architecture (`aarch64`) and Python version 3.8 (`py38`):
+
+    netrics-all-0.0.1-py38-aarch64.zip
+
+Having downloaded the above ZIP file, installation is as simple as the following:
+
+[source,sh]
+----
+sudo unzip netrics-all-0.0.1-py38-aarch64.zip -d /usr/local/bin
+----
+
+Alternatively, install Netrics to any directory from which you'd like to execute it, or to any writeable directory on your PATH, _e.g._:
+
+[source,sh]
+----
+unzip netrics-all-0.0.1-py38-aarch64.zip -d ~/.local/bin
+----
+
+[TIP]
+====
+If you're into that kind of thing, a (multi)-line no-brainer – making use of the TAR file alternative – might look like the following:
+
+[source,sh]
+----
+ARCH=$(arch)
+
+PYTHON=py$(python3 -c "import sys; print(*sys.version_info[:2], sep='')")
+
+NETRICS=$(curl -s https://api.github.com/repos/internet-equity/netrics/releases/latest | jq -r .tag_name)
+
+curl -sL https://github.com/internet-equity/netrics/releases/download/$NETRICS/netrics-all-$NETRICS-$PYTHON-$ARCH.tar | sudo tar -xf - -C /usr/local/bin/
+----
+
+…But, why not use the <<One-line installer,one-line installer>>, instead?
+====
+
+=== pip[x]
+
+With Python installed, the Package Installer for Python – `pip` – should be installed, as well. If not, it may be installed with the following:
+
+[source,sh]
+----
+python3 -m ensurepip --upgrade
+----
+
+Netrics may then be installed via `pip install`. Refer to the sections that follow for specific information on downloading and installing the Netrics package.
+
+[TIP]
+====
+Commands of the form `pip install [URI]` will install Netrics to a system **globally**. As such, these may require `root` access, and risk library dependency conflicts.
+
+As appropriate to the target system, you might instead install Netrics under your user path only:
+
+[source,sh]
+----
+pip install --user [URI]
+----
+
+Or, to ensure successful installation, consider a https://docs.python.org/3.8/tutorial/venv.html[virtual environment], with which to isolate the library's dependencies from others on the system.
+
+Better yet, consider the additional utility https://pypa.github.io/pipx/installation/[pipx]:
+
+[source,sh]
+----
+pipx install [URI]
+----
+
+With `pipx` installed, the above command alone will create a virtual environment and install Netrics into it, such that the library is available to your user, (and without `root` access).
+
+Finally, consider one of the preceding installation methods, such as the <<One-line installer,one-line installer>>, which will attempt to install Netrics as a <<Pre-built bundle,pre-built, pre-packaged bundle>>, without risking the above concerns.
+====
+
+==== PyPI
+
+Netrics may be installed from https://pypi.org/project/netrics-measurements/[PyPI] via `pip`, _e.g._:
+
+[source,sh]
+----
+pip install netrics-measurements
+----
+
+==== Source
+
+Netrics may be installed from its https://github.com/chicago-cdac/netrics[source repository] via `pip`.
+
+To make use of an SSH configuration, _e.g._:
+
+[source,sh]
+----
+pip install git+ssh://git@github.com/chicago-cdac/netrics.git
+----
+
+Note that the above URI may also include a Git reference specification, such as a tag or a branch:
+
+[source,sh]
+----
+pip install git+ssh://git@github.com/chicago-cdac/netrics.git@main
+----
+
+Alternatively, you may supply HTTPS URIs to the above.
+
+With HTTPS, it is also possible to request a code archive of a particular tag or branch, (which may be faster than the above):
+
+[source,sh]
+----
+pip install https://github.com/chicago-cdac/netrics/archive/REF.zip
+----
+
+=== Testing installation
+
+Any operable installation of Netrics should be able to execute the following command:
+
+[source,sh]
+----
+netrics debug execute netrics-ping
+----
+
+The report printed by the above should include the line: `Status: OK (Exit code 0)`.
+
+
+== Initialization
+
+Outside of <<docker-images,the Docker container>>, and <<package-managers,installation by a package manager>> or by <<One-line installer,the one-line installer>>, initialization is suggested to set up your Netrics installation.
+
+<<Pre-built bundle>>, <<PyPI>> and <<source,source>> distributions feature the `netrics` sub-command `init`:
+
+[source,sh]
+----
+netrics init
+----
+
+The above, (executed from a standard shell), will walk you through the process of initializing your system for Netrics, (executing all tasks which follow below).
+
+=== Configuration initialization
+
+To initialize configuration in particular, `init` features the sub-command `conf`:
+
+[source,sh]
+----
+netrics init conf
+----
+
+The above will copy the built-in default configuration distributed with Netrics to the appropriate path on your system (or to a specified path). From there, this configuration may be customized.
+
+=== Shell completion
+
+To install Netrics command tab-completion for your shell, `init` features the sub-command `comp`:
+
+[source,sh]
+----
+netrics init comp
+----
+
+The above will install tab-completion files for your user, system-wide, (or to a specified path).
+
+Shells currently supported include: bash, fish and tcsh.
+
+== Configuration
+
+NOTE: Netrics is _really_ a distribution of https://github.com/chicago-cdac/fate[Fate], and as such shares its configuration and execution scheme.
+
+Netrics expects two configuration files: *measurements* and *defaults*.
+
+Should either file not be found on the sytem, Netrics will fall back to its built-in configuration. As necessary for your installation, to initialize these files for customization, see <<Initialization>>.
+
+TIP: Netrics supports both TOML and YAML configuration formats.
+
+=== CLI
+
+[NOTE]
+====
+The commands `conf` and `default` are WIP.
+
+In lieu of these, files `measurements` and `defaults` may be edited directly.
+====
+
+=== Measurements
+
+The measurements file configures and schedules programs to be executed by Netrics. These configured programs are alternately called "measurements," "tasks" and "modules."
+
+Only one setting is strictly required of a measurement: its `schedule`. (Without this setting, a measurement _may_ be executed ad-hoc via the `debug` command; however, it cannot be scheduled.)
+
+Additionally, measurement configuration must indicate what is to be executed. This may be indicated either via the setting `exec` or `command`, or it will be inferred.
+
+The example below demonstrates configuration options further.
+
+[cols="2",options=header]
+|===
+^|measurements.toml
+^|measurements.yaml
+
+a|
+[source,toml]
+----
+[ping]
+schedule = "0 */6 * *"
+
+[ping-slim]
+command = "ping"
+schedule = "*/30 * * *"
+param = {target = ["google.com"]}
+
+[cowsay]
+exec = "cowsay"
+schedule = "@hourly"
+param = "yo dawg"
+path = {result = "/root/cows/"}
+
+[cowsay-custom]
+exec = ["cowsay", "-e", "^^"]
+schedule = "@daily"
+param = "i heard you like cows"
+# no file extension for result files; do not attempt to detect
+format = {result = ""}
+path = {result = "/root/cows/"}
+
+[dump-db]
+exec = ["sh", "/home/ubuntu/dump-db"]
+schedule = "@daily"
+format = {result = "csv"}
+----
+
+a|
+[source,yaml]
+----
+ping:
+  schedule: "0 */6 * *"
+
+ping-slim:
+  command: ping
+  schedule: "*/30 * * *"
+  param: {target: [google.com]}
+
+cowsay:
+  exec: cowsay
+  schedule: "@hourly"
+  param: yo dawg
+  path: {result: /root/cows/}
+
+cowsay-custom:
+  exec: [cowsay, -e, ^^]
+  schedule: "@daily"
+  param: i heard you like cows
+  # no file extension for result files; do not attempt to detect
+  format: {result: null}
+  path: {result: /root/cows/}
+
+dump-db:
+  exec: [sh, /home/ubuntu/dump-db]
+  schedule: "@daily"
+  format: {result: csv}
+----
+|===
+
+==== schedule
+
+TODO
+
+==== exec
+
+In the above example, the "measurements" `cowsay`, `cowsay-custom` and `dump-db` each specify the `exec` setting. With this setting, a measurement may execute _any_ system command.
+
+Note, however, that Netrics _will not_, by default, launch a shell to interpret the value of your measurement's `exec` setting. This setting must be either a string or an array indicating an executable command available through the process environment's `PATH`. Command arguments are _only_ accepted via array notation.
+
+==== command
+
+Netrics further features a plug-in system whereby programs abiding by <<the-contract,its contract>> are granted greater functionality. Any program _may_ abide by this contract, (including those specified via `exec`). Programs available through the process environment's `PATH` under a name bearing the `netrics-` prefix – _e.g._, `netrics-ping` – enjoy the small privilege of becoming Netrics "commands."
+
+In the above example, the measurement `ping-slim` specifies the command `ping`. This simply instructs Netrics to execute a program under the name `netrics-ping`.
+
+The example measurement `ping` neglects to specify a command at all. The `ping` command will be inferred for it as well – this is: the program `netrics-ping`.
+
+==== param
+
+Under the <<the-contract,framework contract>>, programs may be given configured parameters via their process's standard input.
+
+The example measurement `ping-slim` is configured to input to the `ping` command the parameters:
+
+[source,json]
+----
+{
+  "target": ["google.com"]
+}
+----
+
+The `cowsay` measurement, on the other hand, is configured with the scalar string input: `"yo dawg"`.
+
+Structured (non-scalar) parameters are serialized to JSON by default. (This default may be overidden either per-measurement or globally. See: <<format>>.)
+
+==== format
+
+The `format` setting, when specified, *must* be a mapping.
+
+The defaults of settings nested under `format` may be overidden per-measurement or globally.
+
+*param*
+
+The nested setting `param` indicates the serialization format of structured parameters (given by top-level measurement setting `param`). JSON (`json`), TOML (`toml`) and YAML (`yaml`) serialization formats are supported. The default format is JSON.
+
+*result*
+
+The nested setting `result` indicates in what format results will be produced by the measurement's
+standard output.
+
+The default for this setting is "auto" – Netrics will attempt to characterize the
+measurement result format, so as to assign an appropriate extension to its generated file name.
+JSON (`json`), TOML (`toml`) and YAML (`yaml`) serializations support "auto" characterization.
+
+Alternatively, the result format may be specified explicitly: in addition to the values `json`,
+`toml` and `yaml`, this setting supports `csv`.
+
+Finally, result characterization may be disabled by any "false-y" value, such as `null` (in YAML), or the empty string (generally).
+
+==== path
+
+The `path` setting, when specified, *must* be a mapping.
+
+The defaults of settings nested under `path` may be overidden per-measurement or globally.
+
+*result*
+
+The nested setting `result` indicates the directory path to which measurement result files are written. The default path is installation-dependent (_e.g._, `/var/log/netrics/result/` when Netrics is installed system-wide).
+
+=== Defaults
+
+Settings `format` and `path` may be overidden globally via the defaults file, as in the example below.
+
+[cols="2",options=header]
+|===
+^|defaults.toml
+^|defaults.yaml
+
+a|
+[source,toml]
+----
+[format]
+param = "json"
+result = "auto"
+
+[path]
+result = "/var/log/netrics/result/"
+----
+
+a|
+[source,yaml]
+----
+format:
+  param: json
+  result: auto
+
+path:
+  result: /var/log/netrics/result/
+----
+|===
+
+=== Testing configuration
+
+Configuration may be tested with the `debug` command `run`:
+
+[source,sh]
+----
+netrics debug run [options] task
+----
+
+
+== Built-in measurements
+
+Netrics includes a set of built-in measurement commands, such as `netrics-ping`.
+
+Any task configuration may specify the `command` setting with the value `ping` to make use of this built-in; (or, a task with the label `ping` may omit this setting to default to this command).
+
+[cols="1,1,2,2",options=header]
+|===
+|command
+|executable
+|parameters (defaults)
+|description
+
+|`dev`
+|`netrics-dev`
+|...
+|...
+
+|`dns-latency`
+|`netrics-dns-latency`
+|...
+|...
+
+|`lml`
+|`netrics-lml`
+|...
+|...
+
+|`speed-ndt7`
+|`netrics-speed-ndt7`
+|...
+|Run a network diagnostic test using Measurement Lab's ndt7-client.
+
+|`speed-ookla`
+|`netrics-speed-ookla`
+|...
+|Run a network diagnostic test using Ookla's Speedtest.
+
+|`ping`
+|`netrics-ping`
+a|```json
+{
+  "count": 10,
+  "interval": 0.25,
+  "targets": [
+    "facebook.com",
+    "google.com",
+    "nytimes.com"
+  ],
+  "timeout": 5,
+  "verbose": false
+}
+```
+|Execute the `ping` utility, in parallel, for each host listed by parameter `targets`, given the iputils ping arguments `count`, `interval` and `timeout`. Data are parsed and recorded as a JSON document, with keys for each target host.
+
+|`traceroute`
+|`netrics-traceroute`
+|...
+|...
+|===
+
+
+== Development
+
+=== Novel measurements
+
+The Netrics framework invokes executables available through the operating system. As such, built-in measurements enjoy next-to-nil privilege relative to any other installed executable. Measurements abiding by the framework's expectations may be scheduled with a minimum of effort, provided that they follow the contract below.
+
+==== The contract
+
+The framework communicates with the programs it executes through the operating system, principally via processes' standard input, standard output, standard error and exit code.
+
+*Minima*
+
+An executed task must at minimum:
+
+* write its result to standard output (though this is ignored if reporting failure)
+* report its success or failure via exit code (only exit code `0` indicates successful execution)
+
+TIP: The examples below represent shell scripts; and, Netrics's built-in measurements are implemented in Python. Tasks may execute _any_ program. And "commands" named with the `netrics-` prefix may themselves be implemented in _any_ language.
+
+This may be accomplished as simply as the following example executable, which reports network status as indicated by sending an ICMP Echo request (ping) to host example.com:
+
+[source,sh]
+----
+#!/bin/sh
+
+# For this simple example we're not interested in detailed ping data
+# (and we don't want it echo'd as a "result") -- discard it.
+
+ping -c 1 -w 1 example.com > /dev/null <1>
+
+# Rather, determine our result according to ping's own exit codes.
+
+case $? in
+0)
+echo '{"example.com": "FAST ENOUGH"}' <2>
+exit 0 <3>
+;;
+1) <4>
+echo '{"example.com": "TOO SLOW"}'
+exit 0
+;;
+*)
+exit 1 <5>
+;;
+esac
+----
+<1> As noted in the preceding comment, care must be taken with shell scripts which pass through sub-processes' standard output and error. Any standard output is treated as part of a measurement's "result." And any standard error will be logged.
+<2> Results are reported via an executable's standard output. Results may be in _any_ plain text format (or none at all). (JSON is merely a handy one, and enjoys automatic detection.)
+<3> The default exit code of a program is of course `0`. It doesn't hurt to make this explicit: any non-zero exit code indicates to the framework a failed execution. Failures are logged as such. Any content written to standard output by a failed task is not recorded as a measurement result.
+<4> The underlying `ping` utility (from Linux package iputils) communicates state with its own exit codes: exit code `1` indicates packets were not received. This is an error state for iputils; but, for our measurement, this is a valid result. We detect this state, report it, and exit with the success code `0`.
+<5> Any other case indicates an error with our measurement. We exit with a non-zero exit code to notify the framework of this failure. As this is a shell script, any standard error written by the `ping` utility has been passed through and captured; (and, we could write our own).
+
+*Parameterization*
+
+Tasks' input may be configured in the *measurements* file and is supplied to executables via their standard input. Structured input is serialized in JSON format by default. (See: <<param>>.)
+
+We might extend our example to read and process JSON-encoded standard input via the `jq` utility:
+
+[source,bash]
+----
+#!/bin/bash
+
+# collect targets from standard input parameters
+#
+# we expect input of the form:
+#
+#     {
+#       "targets": ["host0", "host1", ..., "hostN"]
+#     }
+#
+
+PARAM="$(jq -r '.targets | join(" ")' 2> /dev/null)" <1>
+
+# default to just Wikipedia
+
+if [ -z "$PARAM" ]; then
+  PARAM="wikipedia.org"
+fi <2>
+
+# run all measurements concurrently
+# (and collect their PIDs for inspection)
+
+PIDS=()
+
+for dest in $PARAM; do
+  ping -c 1 -w 1 $dest > /dev/null &
+  pids+=($!)
+done <3>
+
+# collect measurements' exit codes
+
+CODES=()
+
+for pid in ${PIDS[*]}; do
+  wait $pid
+  CODES+=($?)
+done
+
+# convert exit code to a status
+
+STATUS=()
+
+for code in ${CODES[*]}; do
+  case "$code" in
+  0)
+  STATUS+=("FAST ENOUGH")
+  ;;
+  1)
+  STATUS+=("TOO SLOW")
+  ;;
+  *)
+  echo 'FAILURE!!!' > &2
+  exit 1 <4>
+  ;;
+  esac
+done
+
+# generate report
+
+jq '
+  [ .targets,  .statuses | split(" ") ]
+  | transpose
+  | map( {(.[0]): .[1]})
+' <<DOC
+  {
+    "targets": "$PARAM",
+    "statuses": "${STATUS[@]}"
+  }
+DOC <5>
+----
+<1> It's perfectly reasonable to log issues with parameterization to standard error. But there _might_ be no input at all. Rather than differentiate these cases in our shell script, we just silence any complaints from `jq`.
+<2> The user may elect not to configure any parameters, and so we fall back to a default.
+<3> Our underlying measurement is much the same as before; only now, we test each configured target in parallel.
+<4> Any of our measurements could still fail in a way we don't know how to handle. In this case, this task elects to report the entire run as a failure. Additionally, a profoundly interesting message is logged via standard error.
+<5> Yikes!!! We elected to write our executable in Bash to show how simple it _can_ be. But there's nothing simple about that. Admittedly, we might have serialized our result in any format – CSV is supported, for one; and, even space- or tab-separated values would suffice, here. But, now we've demonstrated the limits of this implementation, as well. For _your_ executable, you might select another language….
+
+For more robust examples, consult link:src/netrics/measurement/[Netrics's built-in measurement commands] (implemented in Python).
+
+==== Plug-in commands
+
+Measurement executables may nominally associate themselves with the Netrics framework and become "commands" by simply being available on the process environment `PATH` under a name beginning with the prefix `netrics-`.
+
+In this manner, <<built-in-measurements,built-in measurements>> such as `netrics-ping` are distributed alongside the `netrics` framework command, and may be referred to in configuration as `ping`.
+
+Any other discovered executable, such as `netrics-cowsay`{empty}footnote:[There is no `netrics-cowsay` … yet!], will be treated the same way.
+
+==== Testing
+
+===== execute
+
+Any executable may be invoked (with optional arguments) by the Netrics `execute` command:
+
+[source,sh]
+----
+netrics debug execute [options] command [arguments]
+----
+
+The above generates an execution report for use in development and debugging.
+
+Options such as `-i|--stdin` may be useful to supply measurment parameters to the executable according to the <<the-contract,framework's contract>>.
+
+===== run
+
+Once added to Netrics configuration, executables become _tasks_, (also known as _measurements_ or _modules_). These may be invoked ad-hoc by the `run` command:
+
+[source,sh]
+----
+netrics debug run [options] task
+----
+
+The options and output of the `run` command are similar to those of `execute`.
+
+Unlike with scheduled tasks, the results of tasks performed by `run` are not, by default, persisted to file. Either specify option `--record` to capture these as configured, or option `--stdout` to capture these at an arbitrary path.
+
+=== Adding builtins
+
+[IMPORTANT]
+====
+Note that this – and further sections – are _not_ necessary to deploy your own Netrics measurements.
+
+Builtins are distributed with _all_ installations for _all_ users of Netrics: to demonstrate intended functionality, to document _one_ manner of designing robust measurements, and as a common core of network measurements.
+
+If you believe your measurement should be included in this manner and for these reasons, read on.
+
+If you merely want to add your measurement to your own deployments, consult <<Novel measurements>> and <<Configuration>>.
+====
+
+Having <<testing,tested your novel measurement>>, it might be added to the Netrics framework for availability across _all_ installations of this software via https://github.com/chicago-cdac/netrics/pulls[pull request].
+
+At this time, all Netrics builtins are implemented in Python, as simple submodules of the Netrics sub-package link:src/netrics/measurement/[netrics.measurement]. As such, built-in measurement module files need _not_ be marked with the "execute" bit _nor_ need they include a "shebang" line (_e.g._ `#!/usr/bin/env python3`).
+
+==== Pull request checklist
+
+1. Name your module succinctly and appropriately for its functionality. Do not include any `netrics-` prefix. _E.g._: `MOD.py`.
+1. Place your module under the path: link:src/netrics/measurement/[src/netrics/measurement/].
+1. The functionality of your measurement should be invoked entirely by a module-level function: `main()`. This function will be invoked without arguments.
+1. Optional: Enable invocation of your module through the package – `python -m netrics.measurement.MOD` – with the final module-level block:
++
+[source,python]
+----
+if __name__ == '__main__':
+    main()
+----
+1. Configure the Netrics distribution to install your command executable by adding a line to the link:pyproject.toml[] file section `tool.poetry.scripts`, _e.g._:
++
+[source,toml]
+----
+[tool.poetry.scripts]
+netrics-MOD = "netrics.measurement.MOD:main"
+----
+1. Add your command to this document's table of <<built-in-measurements,built-in measurements>>.
+
+=== Extending the framework
+
+[IMPORTANT]
+====
+Note that these steps are not necessary to the development of <<Novel measurements>>.
+====
+
+==== Set-up
+
+The Netrics framework is implemented in https://www.python.org/[Python] and the framework's distribution is managed via https://python-poetry.org/[Poetry].
+
+*Python v3.8* may be supplied by an operating system package manager, by https://www.python.org/[python.org], or by a utility such as https://github.com/pyenv/pyenv[pyenv]; pyenv is _recommended_ for development but _not required_.
+
+With Python installed, *Poetry* may be installed https://python-poetry.org/docs/#installation[according to its instructions].
+
+TIP: If you are managing your own virtual environment, _e.g._ via https://github.com/pyenv/pyenv-virtualenv[pyenv-virtualenv], then this step may be as simple as `pip install poetry`. However, this tooling is not required, and Poetry offers its own automated set-up, as well as management of virtual environments.
+
+Finally, from the root directory of a repository clone, the framework may be installed in development mode:
+
+[source,sh]
+----
+poetry install
+----
+
+NOTE: Poetry will use any existing, activated virtual environment, or create its own into which dependencies will be installed.
+
+The `netrics` command is now available for use in your development environment.
+
+[IMPORTANT]
+====
+For simplicity, it is presumed that `netrics` is available on your `PATH`. However, this depends upon activation of your virtual environment.
+
+A virtual environment under management by Poetry may be activated via sub-shell with:
+
+[source,sh]
+----
+poetry shell
+----
+
+Alternatively, any command installed into Poetry's virtual environment may be executed ad-hoc via the `run` command:
+
+[source,sh]
+----
+poetry run netrics ...
+----
+====
