@@ -1,0 +1,72 @@
+[project]
+name = "napari-SMLMLAB"
+dynamic = ["version"]
+authors = [{ name="Piers Turner", email="piers.turner@physics.ox.ac.uk"},]
+description = "Napari widget for BP04 Practical."
+readme = "README.md"
+license = {file = "LICENSE"}
+
+classifiers = [
+"Framework :: napari",
+"Environment :: Plugins",
+"License :: OSI Approved :: BSD License",
+"Programming Language :: Python :: 3.9",
+"Operating System :: OS Independent",
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "napari[all]==0.5.0",
+    "numpy",
+    "magicgui",
+    "qtpy",
+    "scipy",
+    "pyqtgraph",
+    "picassosr==0.7.3",
+    "matplotlib",
+    "scipy",
+    "tqdm",
+    "pyqt5-tools",
+    "trackpy",
+]
+
+[project.optional-dependencies]
+testing = [
+    "tox",
+    "pytest", # https://docs.pytest.org/en/latest/contents.html
+    "pytest-cov", # https://pytest-cov.readthedocs.io/en/latest/
+    "pytest-qt", # https://pytest-qt.readthedocs.io/en/latest/
+    "napari",
+    "pyqt5",
+]
+
+[build-system]
+requires = ["setuptools>=42.0.0", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "smlmlab.__init__.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml","*.dll"]
+
+[tool.black]
+line-length = 79
+target-version = ['py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[project.urls]
+"Homepage" = "https://github.com/piedrro/napari-bacseg"
+"Bug Tracker" = "https://github.com/piedrro/napari-bacseg/issues"
+
+[project.entry-points."napari.manifest"]
+"napari-SMLMLAB" = "smlmlab:napari.yaml"
