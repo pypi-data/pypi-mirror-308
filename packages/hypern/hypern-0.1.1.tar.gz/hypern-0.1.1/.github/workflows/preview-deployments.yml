@@ -1,0 +1,94 @@
+# CI to release the project for Linux, Windows, and MacOS
+# The purpose of this action is to verify if the release builds are working or not.
+
+name: Preview Release
+
+on:
+  push:
+    branches:
+      - stag
+      - main
+  pull_request:
+    branches:
+      - stag
+      - main
+
+jobs:
+  macos:
+    runs-on: macos-12
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin
+      - name: Build wheels - x86_64
+        uses: PyO3/maturin-action@v1
+        with:
+          target: x86_64
+          args: -i python --release --out dist
+      - name: Install build wheel - x86_64
+        run: |
+          pip install --force-reinstall dist/*.whl
+          cd ~ && python -c 'import hypern'
+      - name: Build wheels - universal2
+        uses: PyO3/maturin-action@v1
+        with:
+          args: -i python --release --target universal2-apple-darwin --out dist
+      - name: Install build wheel - universal2
+        run: |
+          pip install --force-reinstall dist/*_universal2.whl
+          cd ~ && python -c 'import hypern'
+
+  windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+        target: [x64, x86]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: ${{ matrix.target }}
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          args: -i python --release --out dist
+      - name: Install build wheel
+        shell: bash
+        run: |
+          pip install --force-reinstall dist/*.whl
+          cd ~ && python -c 'import hypern'
+
+  linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+        target: [x86_64, i686]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Build Wheels
+        uses: PyO3/maturin-action@v1
+        with:
+          target: ${{ matrix.target }}
+          manylinux: auto
+          args: -i python${{ matrix.python-version }} --release --out dist
+      - name: Install build wheel
+        if: matrix.target == 'x86_64'
+        run: |
+          pip install --force-reinstall dist/*.whl
+          cd ~ && python -c 'import hypern'
