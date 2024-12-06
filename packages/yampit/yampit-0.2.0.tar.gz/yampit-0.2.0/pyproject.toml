@@ -1,0 +1,27 @@
+[project]
+name = "yampit"
+version = "0.2.0"
+description = "Builds datasets, jumps through FDBs."
+readme = "README.md"
+authors = [
+    { name = "Tobias Kölling", email = "tobias.koelling@mpimet.mpg.de" },
+    { name = "Lukas Kluft", email = "lukas.kluft@mpimet.mpg.de" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "eccodes>=2.38.3",
+    "polytope-client>=0.7.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "healpy>=1.18.0",
+    "ipython>=8.29.0",
+    "matplotlib>=3.9.2",
+    "xarray>=2024.10.0",
+    "zarr>=2.18.3",
+]
