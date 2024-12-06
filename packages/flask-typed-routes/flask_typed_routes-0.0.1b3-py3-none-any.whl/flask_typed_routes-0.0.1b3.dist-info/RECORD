@@ -1,0 +1,11 @@
+flask_typed_routes/__init__.py,sha256=XeD47crRbJg7VsIb73KQa-9C0sn1PZxPCfdrIy6pXzo,410
+flask_typed_routes/app.py,sha256=0raqU8q5FjD8bPBigHgDNdqWWD3ZT_CqikvFxDGwktg,1230
+flask_typed_routes/errors.py,sha256=bN1GGO7kCRmjPIkaxlin7e1y5blUE2JPkf8nb7_XWdU,419
+flask_typed_routes/fields.py,sha256=pmgnXvJ8mrWwscezATmV-Tv9kGTh36nerFuW8WngEMs,2217
+flask_typed_routes/main.py,sha256=Kgm1X30uTPUdsAj9YPpqDI26ycuK_UxNDFFbeQa6hLA,3150
+flask_typed_routes/utils.py,sha256=xj1KS1aLRgwzJUCtXTwwu5HAFas_N3w_5ZRuefBWk4k,2753
+flask_typed_routes-0.0.1b3.dist-info/LICENSE,sha256=WPmrhRJ6f6jOhxpX4RG5EuWlN7BdqBmtddf7M5qyGt0,1078
+flask_typed_routes-0.0.1b3.dist-info/METADATA,sha256=VkC8ZksiUTaSUX-Z_0aY7igxHCUM89Q4vApyLB48WV8,6203
+flask_typed_routes-0.0.1b3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+flask_typed_routes-0.0.1b3.dist-info/top_level.txt,sha256=QNGV4BpEcufwuQ2I6oO142vgB5KLT-jXpD592hl0TA8,19
+flask_typed_routes-0.0.1b3.dist-info/RECORD,,
