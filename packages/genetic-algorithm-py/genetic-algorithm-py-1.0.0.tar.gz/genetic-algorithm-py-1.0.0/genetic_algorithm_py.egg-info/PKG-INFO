@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: genetic-algorithm-py
+Version: 1.0.0
+Summary: A genetic algorithm library for solving optimization problems
+Home-page: https://github.com/MrHardik-k/genetic-algorithm
+Author: Kanzariya Hardik
+Author-email: hardikkanzariya091@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Genetic Algorithm Library
+
+A customizable genetic algorithm library for optimization tasks in Python. This package provides a flexible framework to implement and experiment with different genetic algorithms including strategies for selection, mutation, crossover, and fitness functions.
+
+## Features
+
+- Easy-to-use API for building genetic algorithms.
+- Multiple strategies for selection, crossover, mutation, and fitness functions.
+- Default implementations for popular strategies and fitness functions.
+- Extendable and customizable design for easy adaptation to specific use cases.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install genetic-algorithm-py
+
