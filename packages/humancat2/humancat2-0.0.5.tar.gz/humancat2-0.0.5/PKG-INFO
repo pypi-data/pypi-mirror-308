@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: humancat2
+Version: 0.0.5
+Summary: GitHub Action Build Test Sample
+Home-page: https://github.com/ParkJaeyun94/github-action-course
+Author: jaeyun
+Author-email: imjyp2727@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: sample,cat,human,humancat
+Platform: UNKNOWN
+Requires-Python: >=3.8
