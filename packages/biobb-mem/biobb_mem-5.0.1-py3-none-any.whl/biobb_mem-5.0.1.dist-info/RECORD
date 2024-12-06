@@ -1,0 +1,15 @@
+biobb_mem/__init__.py,sha256=oECbZMbkkkooEqgM3DD8y2LNkLfLfjMwZCmErbMieEk,106
+biobb_mem/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_mem/ambertools/__init__.py,sha256=dzeGsDrVZR4p05fplJzF2jvKzJdtSk-eNn96qL6pbm8,50
+biobb_mem/ambertools/cpptraj_density.py,sha256=XimGJwyATFLXBFTvipAiD329a_8ZRhLcBnaQWjqEOr4,11884
+biobb_mem/lipyphilic_biobb/__init__.py,sha256=psWqhWoOIcyQijz-V_LdstqBH5fr6k7qg-YMfj1Quys,60
+biobb_mem/lipyphilic_biobb/lpp_assign_leaflets.py,sha256=M52CcXnfZ_kv4uvCHSFZKF15iip7rK1nDrd8gV4DtZ4,9583
+biobb_mem/mdanalysis_biobb/__init__.py,sha256=7jg8rHisdtN2vPKGgmWIJMqh49uG5mJrWdCG6i5SSkE,49
+biobb_mem/mdanalysis_biobb/mda_hole.py,sha256=A6iYkka2j1SRKp3m_mWrvKGsrv838C_gfAvZVPLZxg0,8621
+biobb_mem/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_mem-5.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+biobb_mem-5.0.1.dist-info/METADATA,sha256=PzednfH1WTeZNaSOgHaoWFDL7iyBo6EaVyv59Z-1MSs,6790
+biobb_mem-5.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+biobb_mem-5.0.1.dist-info/entry_points.txt,sha256=jCGVkhmvmRINiCNfqDQEe-x7fV7uWuel2KQcvHmFkmY,204
+biobb_mem-5.0.1.dist-info/top_level.txt,sha256=4M0cePt634ZaskH1ZritWxQOzOjygU3hVjXf3dDnKR8,10
+biobb_mem-5.0.1.dist-info/RECORD,,
