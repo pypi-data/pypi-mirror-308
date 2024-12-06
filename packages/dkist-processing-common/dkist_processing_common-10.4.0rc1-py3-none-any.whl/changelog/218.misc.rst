@@ -1,0 +1,2 @@
+Functions that build the list of items to transfer for a trial outflow are now based on lists of tags
+instead of configuration switches.
