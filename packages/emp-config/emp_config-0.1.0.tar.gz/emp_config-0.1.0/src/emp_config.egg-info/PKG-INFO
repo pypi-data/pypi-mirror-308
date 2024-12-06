@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: emp-config
+Version: 0.1.0
+Summary: Custom configuration loader with integrated Fallback to local retrievement of environment variables in case Spring Config Server isn't available
+Home-page: https://github.com/AbdoCherry/EMP_UTL-S
+Author: AbdoCherry
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# EMP - Config
+
+This repository provides a configuration loader utility tailored for the **EMP project**. It simplifies the management and retrieval of configuration values across services by integrating with a secured Spring Cloud Config Server and supports fallback to OS environment variables when needed. The package is available via PyPi and can be included in any Python-based EMP service.
+
+## Configuration Loader Module
+
+The `load_cnf` function enables EMP services to load configurations dynamically, based on the specified environment, for seamless transitions between development, staging, and production setups. This approach ensures consistent, secure configuration access across all EMP services.
+
+### Key Features
+
+- **Primary Source: Spring Cloud Config Server**: The loader first attempts to connect to a Spring Cloud Config Server at a configurable address and port. By default, it connects to `localhost` on port `8888`, but you can specify a different host via the `BASE_URL` environment variable.
+- **Secured Access**: Since the Config Server is protected by Spring Security, it requires a username and password, provided through the `EMP_CONFIG_USERNAME` and `EMP_ENCRYPT_KEY` environment variables.
+- **Fallback Mechanism**: If the Config Server is unavailable, the loader retrieves values from OS environment variables, ensuring uninterrupted access to necessary configurations.
+
+### Installation
+
+Install the package via pip:
+
+```bash
+pip3 install emp-config
+```
+
+### Usage
+
+1. Import the `load_cnf` function
+
+    ```python
+    from emp_config import load_cnf
+    ```
+
+2. Retrieve configurations for your service
+    
+    ```python
+    env_vars: Dict[str, str] = load_cnf(
+        service_name = 'location-service',
+        required_keys = ['AWS_KEY_IAM', 'AWS_IAM_SECRET'])
+    ```
+
+3.	The env_vars dictionary now contains the required configuration keys.
+
+__Additional Notes__
+
+- Environment Configuration: Set the environment variable BASE_URL to customize the host for the Config Server. The default port is 8888, but this can be changed in the server setup if needed.
+- Fallback to OS Variables: If the Config Server cannot be reached, the module attempts to load configurations from the OS environment, ensuring critical variables remain accessible.
+- Security Requirements: Ensure EMP_CONFIG_USERNAME and EMP_ENCRYPT_KEY are set in your environment for authenticated access to the Config Server.
+
+*This configuration loader module is custom-built for the EMP project, facilitating secure, centralized configuration management.*
+
