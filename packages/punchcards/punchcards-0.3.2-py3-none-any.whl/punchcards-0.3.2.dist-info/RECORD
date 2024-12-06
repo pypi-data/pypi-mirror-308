@@ -1,0 +1,10 @@
+punchcards/__init__.py,sha256=QlkFIjvX4OzwnG2WinYD7v0kb8bm9T-Wn1g-0f3IrDU,113
+punchcards/cli.py,sha256=ipxcFD5E5Ut3zvhIFesIT5l6nlslE3toefqbxhcnPdI,995
+punchcards/normalize.py,sha256=V4GaQTLqrKDYOfLl5RL7WV-rTJMudNkODowFEJXjcD0,4831
+punchcards/punchcard.py,sha256=0LO43HSC92R3UWZAVVk-scloxCs5FI_PWE0s8sHPfuU,16220
+punchcards-0.3.2.dist-info/LICENSE.txt,sha256=1bx9GkjMUo5cdnfbhS7BuL_n7TuTOjIWS1bR4K3eAP4,34274
+punchcards-0.3.2.dist-info/METADATA,sha256=a3HrzkqJRu5i-KtYitm-ADoWl74BVfFlV670WNu8XGM,825
+punchcards-0.3.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+punchcards-0.3.2.dist-info/entry_points.txt,sha256=9BZLnKP37XY450xuNk-4mBa7lKJKD6eIAn2sapVu4cA,89
+punchcards-0.3.2.dist-info/top_level.txt,sha256=4esZpEDnBTN4FSTMi6mNlv7dtb7KXiK0zKguvW89ZXc,11
+punchcards-0.3.2.dist-info/RECORD,,
