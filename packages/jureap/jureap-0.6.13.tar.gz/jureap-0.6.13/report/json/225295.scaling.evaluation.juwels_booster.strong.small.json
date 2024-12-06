@@ -1,0 +1,174 @@
+{
+    "pipeline": "225295",
+    "prefix": "scaling.evaluation.juwels_booster.strong.small",
+    "csv_data": [
+        {
+            "system": "juwelsbooster",
+            "version": "2024.01",
+            "queue": "booster",
+            "variant": "strong.small",
+            "jobid": "10463841",
+            "nodes": "16",
+            "taskspernode": "4",
+            "threadspertask": "12",
+            "runtime": "84.09",
+            "success": "true",
+            "qubits": "37",
+            "ngates": "407",
+            "gpus": "64",
+            "mem/gpu[GiB]": "32.0",
+            "totaltime": "84.09",
+            "inittime": "4.05",
+            "mpitime": "58.35",
+            "comptime": "25.74",
+            "circuittime": "81.09",
+            "norm": "1.000000",
+            "directory": "../../../outpath/000000/000000_execute/work/h37"
+        },
+        {
+            "system": "juwelsbooster",
+            "version": "2024.01",
+            "queue": "booster",
+            "variant": "strong.small",
+            "jobid": "10463843",
+            "nodes": "32",
+            "taskspernode": "4",
+            "threadspertask": "12",
+            "runtime": "45.28",
+            "success": "true",
+            "qubits": "37",
+            "ngates": "407",
+            "gpus": "128",
+            "mem/gpu[GiB]": "16.0",
+            "totaltime": "50.56",
+            "inittime": "3.36",
+            "mpitime": "36.96",
+            "comptime": "13.60",
+            "circuittime": "48.33",
+            "norm": "1.166667",
+            "directory": "../../../outpath/000000/000001_execute/work/h37"
+        },
+        {
+            "system": "juwelsbooster",
+            "version": "2024.01",
+            "queue": "booster",
+            "variant": "strong.small",
+            "jobid": "10463845",
+            "nodes": "64",
+            "taskspernode": "4",
+            "threadspertask": "12",
+            "runtime": "26.01",
+            "success": "true",
+            "qubits": "37",
+            "ngates": "407",
+            "gpus": "256",
+            "mem/gpu[GiB]": "8.0",
+            "totaltime": "32.00",
+            "inittime": "3.46",
+            "mpitime": "23.95",
+            "comptime": "8.05",
+            "circuittime": "29.65",
+            "norm": "1.333333",
+            "directory": "../../../outpath/000000/000002_execute/work/h37"
+        }
+    ],
+    "json_data": {
+        "version": 1,
+        "reporter": {
+            "generator": "jureap-gitlab-exacb",
+            "info": {
+                "pipeline": "225295",
+                "job": "1175770",
+                "commit": "a6230291534d94871aa4c0799d57194bfd7775de",
+                "username": "willsch1",
+                "project": "/p/project1/ehqcs",
+                "budget": "ehqcs",
+                "system": "juwelsbooster",
+                "version": "2024.12",
+                "timestamp": "2024-10-18T23:20:50+02:00"
+            }
+        },
+        "parameter": {},
+        "experiment": {
+            "system": "juwelsbooster",
+            "version": "2024.12",
+            "variant": "strong.small",
+            "timestamp": "2024-10-18T23:20:50+02:00"
+        },
+        "data": [
+            {
+                "success": "true",
+                "runtime": "84.09",
+                "parameter": {
+                    "nodes": "16",
+                    "taskspernode": "4",
+                    "threadspertask": "12"
+                },
+                "slurm_jobid": "10463841",
+                "queue": "booster",
+                "metrics": {
+                    "qubits": "37",
+                    "ngates": "407",
+                    "gpus": "64",
+                    "mem/gpu[GiB]": "32.0",
+                    "totaltime": "84.09",
+                    "inittime": "4.05",
+                    "mpitime": "58.35",
+                    "comptime": "25.74",
+                    "circuittime": "81.09",
+                    "norm": "1.000000",
+                    "directory": "../../../outpath/000000/000000_execute/work/h37"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "45.28",
+                "parameter": {
+                    "nodes": "32",
+                    "taskspernode": "4",
+                    "threadspertask": "12"
+                },
+                "slurm_jobid": "10463843",
+                "queue": "booster",
+                "metrics": {
+                    "qubits": "37",
+                    "ngates": "407",
+                    "gpus": "128",
+                    "mem/gpu[GiB]": "16.0",
+                    "totaltime": "50.56",
+                    "inittime": "3.36",
+                    "mpitime": "36.96",
+                    "comptime": "13.60",
+                    "circuittime": "48.33",
+                    "norm": "1.166667",
+                    "directory": "../../../outpath/000000/000001_execute/work/h37"
+                }
+            },
+            {
+                "success": "true",
+                "runtime": "26.01",
+                "parameter": {
+                    "nodes": "64",
+                    "taskspernode": "4",
+                    "threadspertask": "12"
+                },
+                "slurm_jobid": "10463845",
+                "queue": "booster",
+                "metrics": {
+                    "qubits": "37",
+                    "ngates": "407",
+                    "gpus": "256",
+                    "mem/gpu[GiB]": "8.0",
+                    "totaltime": "32.00",
+                    "inittime": "3.46",
+                    "mpitime": "23.95",
+                    "comptime": "8.05",
+                    "circuittime": "29.65",
+                    "norm": "1.333333",
+                    "directory": "../../../outpath/000000/000002_execute/work/h37"
+                }
+            }
+        ]
+    },
+    "workload_factor": "2.05"
+}
