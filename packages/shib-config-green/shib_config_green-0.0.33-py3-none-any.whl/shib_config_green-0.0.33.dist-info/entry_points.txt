@@ -1,0 +1,2 @@
+[console_scripts]
+run-shib = run:main
