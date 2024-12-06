@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: patra-toolkit
+Version: 0.1.2
+Summary: Toolkit for semi-automated modelcard creation for AI/ML models.
+Home-page: https://github.com/Data-to-Insight-Center/patra-toolkit.git
+Author: Data to Insight Center
+Author-email: d2i@iu.edu
+License: BSD-3-Clause
+License-File: LICENSE
+Requires-Dist: jsonschema>4.18.5
+Requires-Dist: fairlearn~=0.11.0
+Requires-Dist: shap~=0.46.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy<2.0.0,>=1.23.5
+Requires-Dist: requests>2.32.2
+
