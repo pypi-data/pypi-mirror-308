@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mumuk
+Version: 0.1.0
+Summary: Assistant for the lazy
+Author-Email: Rodolfo Olivieri <rodolfo.olivieri3@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# mumuk
+Assistant for the lazy
