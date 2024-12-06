@@ -1,0 +1,7 @@
+main.py
+setup.py
+FedDecor.egg-info/PKG-INFO
+FedDecor.egg-info/SOURCES.txt
+FedDecor.egg-info/dependency_links.txt
+FedDecor.egg-info/requires.txt
+FedDecor.egg-info/top_level.txt
