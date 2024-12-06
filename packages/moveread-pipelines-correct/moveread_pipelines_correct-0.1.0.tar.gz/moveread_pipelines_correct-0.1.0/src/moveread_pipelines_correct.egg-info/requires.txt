@@ -1,0 +1,10 @@
+lazy-loader
+sequence-edits
+python-kv
+pipeteer
+
+[run]
+sse-starlette
+game-prediction
+fastapi
+uvicorn
