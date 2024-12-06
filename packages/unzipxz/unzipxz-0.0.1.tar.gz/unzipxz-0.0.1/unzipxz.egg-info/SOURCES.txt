@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+unzipxz.py
+unzipxz.egg-info/PKG-INFO
+unzipxz.egg-info/SOURCES.txt
+unzipxz.egg-info/dependency_links.txt
+unzipxz.egg-info/top_level.txt

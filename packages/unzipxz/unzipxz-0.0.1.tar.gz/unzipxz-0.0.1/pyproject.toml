@@ -1,0 +1,18 @@
+[project]
+name = "unzipxz"
+version = "0.0.1"
+authors = [
+  { name="ayamessh" },
+]
+description = "uwu requests www"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://discord.com/oppz"
+Issues = "https://discord.com/oppz"
