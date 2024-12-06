@@ -1,0 +1,1 @@
+from .anaiza import anaiza_text_effect
