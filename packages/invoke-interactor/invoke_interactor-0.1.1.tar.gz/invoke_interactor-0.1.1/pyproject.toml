@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "invoke-interactor"
+version = "0.1.1"
+description = "Python sdk for interact"
+authors = ["Interact Devs <interactdevs21@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "interact", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.8.2"
+django = "^5.0.7"
+requests = "^2.32.3"
+langfuse = "^2.53.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
