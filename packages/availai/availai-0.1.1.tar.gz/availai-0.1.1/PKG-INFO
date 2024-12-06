@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: availai
+Version: 0.1.1
+Summary: A library for computer vision and machine learning
+Author: Vasyl Arsenii
+Author-email: varsenyi@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ultralytics>=8.3.28
+Requires-Dist: wandb>=0.18.6
+
+# availai
+
+**`availai`** is a Python library for managing and building computer vision workflows, with initial support for logging datasets on [Weights & Biases (W&B)](https://wandb.ai/). Future updates will expand functionality to include various computer vision, machine learning, and deep learning tasks, as well as tools for audio processing, NLP, and large language models (LLMs).
+
+## Features
+
+- **Log Datasets on Weights & Biases**: Easily log your datasets as artifacts on W&B to track and version data for machine learning experiments.
+
+## Installation
+
+You can install `availai` from PyPI:
+
+```bash
+pip install availai
