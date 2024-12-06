@@ -1,0 +1,14 @@
+websiteapp/__init__.py,sha256=olhvkpRM3HWBRpyB9fMmVD1MiyZAqybjXJmyq0M-fXE,440
+websiteapp/about.py,sha256=AG9epXDYaBWiP97YcM7dXCLdNmAQa1okDOBd2edejOw,3029
+websiteapp/const.py,sha256=fPJAqzq_XrzLPOe_jhkA0zT-LLq1m2OPEwP6J_wlpos,1239
+websiteapp/utils.py,sha256=bxxhtiV5evXyUaquuy3RdiWdbNEohRcpDfwzZLeKYLo,5037
+websiteapp/webapp.py,sha256=G9H4QyqszbDFcKbbJipDYEc89_sODRgsSupxpwiLSrY,12089
+websiteapp/webengine.py,sha256=CimReD6oJ5gWES63-0BgY-hCnFx2W0i_ypJBRjKDLyk,5861
+websiteapp/icons/default.png,sha256=l6He2OikhjF5hjazH77GZ8Sul6U6LWKNS_6UegLotZc,192458
+websiteapp/icons/logo.png,sha256=xLgJ1K5o-ie6L-iLyRSwJ-5Q6VUaiP-5Lro9YfnecEo,75775
+website_as_app-1.4.0.dist-info/LICENSE.md,sha256=DHzOIoPYQaKg3vzoyEOSsrx4oYUSXQePRfcJEQ6KgcU,1106
+website_as_app-1.4.0.dist-info/METADATA,sha256=_mEGL6VoERXnZ21J3TxxXmPKPt1egQ2swJBSQ4YekBI,2619
+website_as_app-1.4.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+website_as_app-1.4.0.dist-info/entry_points.txt,sha256=wDaHueZVjGzrXZKduPhHjZtYQi6eoXj8UBO7nSlyFeA,96
+website_as_app-1.4.0.dist-info/top_level.txt,sha256=sIuGI3fNulZizRCK8JBjKOZgVY3bpkymo8eLrBLdnqA,11
+website_as_app-1.4.0.dist-info/RECORD,,
