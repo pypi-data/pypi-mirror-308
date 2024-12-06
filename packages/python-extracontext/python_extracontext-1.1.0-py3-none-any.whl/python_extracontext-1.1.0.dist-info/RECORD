@@ -1,0 +1,12 @@
+extracontext/__init__.py,sha256=mMyVvAb3-gY35qvgZKA5ZAAWHLhPqmYBq1a4K2glGcA,395
+extracontext/_future_task.py,sha256=HxVkRKuETqFlRRAmqOPAbh7NvWCX0sCgk3IAjlwZ_28,1914
+extracontext/base.py,sha256=fNAmoIfq2aweGe_s1vbFGbaO13ypyswrSsITcHV-3_I,712
+extracontext/contextlocal.py,sha256=Ffwh2xXIuN2Wrz8qlgokp8JcIUgN7tP04OfQg_SKdG8,9843
+extracontext/contextlocal_native.py,sha256=_dZgwon286cDsCu94QkUA2PaBg3VDHcZjuPjM5hIP1Y,9055
+extracontext/executor.py,sha256=a-TC26bzkoRWt3iWvO0AkajdHVdwUoG0TrCInPdZmZ4,2153
+extracontext/mapping.py,sha256=IQvJreYKGujBIlcrq7GXVggopORaMT3SyIeLXNCkM1A,1888
+python_extracontext-1.1.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+python_extracontext-1.1.0.dist-info/METADATA,sha256=ndfaduyU_hxi5bNwnChsAIuxhwEqomoRT3fbk5hG1B8,20271
+python_extracontext-1.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+python_extracontext-1.1.0.dist-info/top_level.txt,sha256=r0JvexrESeoDk32GNGKs1pSnl-SA_3YiMrDcGIT952A,13
+python_extracontext-1.1.0.dist-info/RECORD,,
