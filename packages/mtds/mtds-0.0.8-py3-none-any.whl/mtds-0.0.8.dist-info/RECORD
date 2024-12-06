@@ -1,0 +1,10 @@
+mtds/__init__.py,sha256=wXUSnG0EIF-oEWmNsReR1BmzjwxUi__70jdpzOPVAnE,262
+mtds/common/enums.py,sha256=RMvFY95kNvc7H8YOQ5rUp2W8yPcArZhj4O5GpJHoNqs,256
+mtds/kafka_client.py,sha256=pP-TFBRboZ_QVSgY-N7LgWjp9yDKesvpr2VzXEx3xwc,3357
+mtds/model_client.py,sha256=qYDLu16-ziIeqWxE9t-fQHsLd0iOrcfvNBIR_mEf7es,724
+mtds/mtds.py,sha256=V3qM4r268EeT05sNBbJpFwB8LMuUdaqwbLa-h4xZAAo,13572
+mtds/redis_client.py,sha256=Pdlivhf4n8zZ_xjfXvdDeRMvG0N2dh8BZrmT8DQOo18,2662
+mtds/s3_client.py,sha256=f1U3dIZu27GmMmN86XsxXVrLP7KkQnsPs3m4GRDn-Nk,771
+mtds-0.0.8.dist-info/METADATA,sha256=6Rs-OD0AkaOM2-TEd-LYBsR9IWCUTgGxF5uIU7uv0Bk,825
+mtds-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mtds-0.0.8.dist-info/RECORD,,
