@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cs-workflows-helper-libs
+Version: 1.0.1
+Summary: Shared libraries used in cs-workflows
+Author: CanonicalLtd
+Author-email: jaas-dev@lists.launchpad.net
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: PGPy (>=0.6.0,<0.7.0)
+Requires-Dist: gspread (>=6.1.4,<7.0.0)
+Requires-Dist: paramiko (>=3.5.0,<4.0.0)
+Requires-Dist: pydantic-settings (>=2.4.0,<3.0.0)
+Requires-Dist: trino[sqlalchemy] (>=0.329.0,<0.330.0)
+Project-URL: source, https://github.com/canonical/cs-workflows/tree/main/libs
+Description-Content-Type: text/markdown
+
+# Workflow Helper Libs
