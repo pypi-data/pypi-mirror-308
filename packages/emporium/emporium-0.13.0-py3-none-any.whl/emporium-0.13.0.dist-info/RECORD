@@ -1,0 +1,14 @@
+emporium-0.13.0.dist-info/METADATA,sha256=hXMdKmYzO_l9AYeO_SP4Gb5AB2d-q3tcO9SGF6NXNmI,1129
+emporium-0.13.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+emporium-0.13.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+emporium-0.13.0.dist-info/licenses/LICENSE,sha256=O0NNdkeqFJVHbZj-SILD8nvnElj9JyHLh9b15_uoJJU,1100
+emporium/__init__.py,sha256=R7q7CHtQWcgK038EMliOV8dDpz8zKQBBiNw4Ouq1oiw,173
+emporium/base.py,sha256=XQxnDKiiQZ9ncTermpu90FR4qLLZ_oV12rCkF1ELKS8,1752
+emporium/cached.py,sha256=JtMzCy3MbTEgmGTDE1OdyVC_sr-t-9tLKEo3b-I9VJ0,1362
+emporium/factory.py,sha256=ETJbyA8p1o2jf9FR9Fh-sF7YqDwnv6_8yV1i14RPRcU,1131
+emporium/gcs.py,sha256=_SK_rq9-yis0hUH4yKUbupwXiGrtd818egFIuBygZ0k,3533
+emporium/local.py,sha256=QP-y4V2FoQnYyQ6vFG6mwZ7nyROCW6p2tswPKtEmYDM,1988
+emporium/memory.py,sha256=EBH3pEDVVGl9Pg8XY722LCtYwHElq2fRCP8yH201fS8,2550
+emporium/s3.py,sha256=IMebF9YMnGqave39bt5DptXrfvGlf364szU7Uem-NxQ,6434
+emporium/utils.py,sha256=E6B1aHSjuIAbdiNutTYFrErjAWSeI079P1y5el-Zcz0,227
+emporium-0.13.0.dist-info/RECORD,,
