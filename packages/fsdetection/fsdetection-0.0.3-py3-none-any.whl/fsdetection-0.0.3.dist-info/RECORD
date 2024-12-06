@@ -1,0 +1,14 @@
+fsdetection/__init__.py,sha256=Hpm_l9c-VJch_MjQoY8WHOo56y8P-nKJPhK6qBUUY8I,123
+fsdetection/datasets/__init__.py,sha256=w9YFyT0WNQkFAEKbXqzcomjfW9P0VDPkT8YaYsXQ1uE,139
+fsdetection/datasets/fs_arrow_dataset.py,sha256=L1MNwIX7BKzn9hysrpxyXGmsxONzreVGmgJGhwOG6Yo,3331
+fsdetection/datasets/fs_builder.py,sha256=fBdOLF76qbFbSzUG2TeMl2nQGQEAgzha9OiqKL6B-ME,1662
+fsdetection/datasets/fs_load.py,sha256=ucKgLxnnMq56DQqV_ACZZEDILJqTLZixhss8f3iQ_3k,24002
+fsdetection/datasets/packaged_modules/__init__.py,sha256=4O_KrusQrzaV9p0DVgbUNG9ubaB4JBg-zob9AhdMGKI,261
+fsdetection/datasets/packaged_modules/parquet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsdetection/datasets/packaged_modules/parquet/fs_parquet.py,sha256=6dZ9EbFiPf-eWApkn--ze54mCU2vGQbKc-E2yAGSnsQ,165
+fsdetection/transformers/__init__.py,sha256=xvUBq90SYjEYZQmnVkYaAuw4_Ys8XqjO1ZM5HYXZspE,33
+fsdetection/transformers/fs_trainer.py,sha256=-MZBkMWsRM6XWQ_vnkSMcI1QqYjHsV_MOH3DHRb7zdc,5037
+fsdetection-0.0.3.dist-info/METADATA,sha256=insXu37-kvFM3NEo-yBH8qHTqRal1m4gEYoyhN9J22c,1308
+fsdetection-0.0.3.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+fsdetection-0.0.3.dist-info/licenses/LICENSE,sha256=vV__9EbXCNM9M38T0uKfvfonxzbMzeyx4dXJlloSZPo,1068
+fsdetection-0.0.3.dist-info/RECORD,,
