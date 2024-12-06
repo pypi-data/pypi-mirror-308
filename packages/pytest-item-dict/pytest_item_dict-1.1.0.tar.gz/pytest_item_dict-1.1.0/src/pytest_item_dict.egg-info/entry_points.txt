@@ -1,0 +1,2 @@
+[pytest11]
+item-dict = pytest_item_dict.plugin
