@@ -1,0 +1,11 @@
+icoco/VERSION,sha256=vmlfyAkq03BtfX07UQTh6vj-aWZuWVjjdcmVKgb6lRQ,6
+icoco/__init__.py,sha256=VbWiySlVQ243LLti49x1lZx3xaJZuJl37zv46vzXEkU,791
+icoco/exception.py,sha256=u7L98-o02Uwve-mH5WTLJ9D6JuhnUInVGuhlx5SZfzw,3145
+icoco/problem.py,sha256=4qRVS-MrIxAAN_tKxLnT2BJqaRd9-beivEPmjEr5R2w,47543
+icoco/utils.py,sha256=lr877Cfs6_r8lWbP_fb4HjzpbEzpZTG1tsof8qwROrI,4428
+icoco/version.py,sha256=1owEgViRj_kkplHYXDr_W4qg4N3TOpcel2gYOtAcX0I,801
+icoco-2.0.3.dist-info/LICENSE,sha256=60g1-rYv-ihlhia33lGnN-_4bKV8OQKks8u2gJ7unUk,1302
+icoco-2.0.3.dist-info/METADATA,sha256=SQdOGeBw0Ixq7T5yUtjjMFmKsMx-L9ok0cYXe-KZX0Q,2610
+icoco-2.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+icoco-2.0.3.dist-info/top_level.txt,sha256=BZuzLYg0IQPuOjdMYWWhspSgMMIAsyOCbUFQ1NxMwVI,6
+icoco-2.0.3.dist-info/RECORD,,
