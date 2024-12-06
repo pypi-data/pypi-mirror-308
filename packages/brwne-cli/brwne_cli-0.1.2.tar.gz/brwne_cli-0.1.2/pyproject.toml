@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "brwne-cli"
+version = "0.1.2"
+description = ""
+authors = ["PirateShip Pte. Ltd. <team@thepirateship.net>"]
+readme = "README.md"
+license = "cannot_describe"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+click = "^8.1.7"
+requests = "^2.32.3"
+keyring = "^25.5.0"
+pydantic = "^2.9.2"
+inquirerpy = "^0.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bro = "brwne_cli.__init__:cli"
