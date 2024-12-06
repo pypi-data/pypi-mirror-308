@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: swissdox
+Version: 1.1.0
+Summary: An SDK for the Swissdox@LiRI database.
+Home-page: https://github.com/ETS-HS24/20-minuten/tree/main/Swissdox
+Author: Nordin Dari
+Author-email: nordinbensalem.dari@uzh.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: python-dotenv
+Requires-Dist: jsonschema
+
