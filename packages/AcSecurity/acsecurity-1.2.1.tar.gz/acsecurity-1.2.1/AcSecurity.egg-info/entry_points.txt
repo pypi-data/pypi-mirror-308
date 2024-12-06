@@ -1,0 +1,2 @@
+[console_scripts]
+acsecurity = src.scanner:main
