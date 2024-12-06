@@ -1,0 +1,5 @@
+# MANIFEST.in
+include Fcstatistics/*.pyd
+include src/*.pyc         # 컴파일된 바이트코드만 포함
+exclude src/*.py          # 소스 파일 제외
+recursive-include Fcstatistics *.pxd *.c *.h
