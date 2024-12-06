@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: poetry-git-version-plugin
+Version: 2.0.0
+Summary: Poetry plugin to get package version from git
+Author-email: Alekse Marusich <alekse.marusich@rocshers.com>
+License: MIT
+Project-URL: Homepage, https://projects.rocshers.com/open-source/poetry-git-version-plugin
+Project-URL: Repository, https://gitlab.com/rocshers/python/poetry-git-version-plugin
+Keywords: rocshers,poetry,git
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: packaging-version-increment >=0.1.3
+Requires-Dist: packaging-version-git >=0.1.1
+Requires-Dist: pydantic >=2.7.0
+Requires-Dist: pydantic-settings >=2.3.0
+Requires-Dist: poetry >=1.3.2
+
+# Poetry Git Version Plugin
+
+Poetry plugin to set package version based on git tag.
+
+[![PyPI](https://img.shields.io/pypi/v/poetry-git-version-plugin)](https://pypi.org/project/poetry-git-version-plugin/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/poetry-git-version-plugin)](https://pypi.org/project/poetry-git-version-plugin/)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rocshers_poetry-git-version-plugin&metric=coverage)](https://sonarcloud.io/summary/new_code?id=rocshers_poetry-git-version-plugin)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rocshers_poetry-git-version-plugin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rocshers_poetry-git-version-plugin)
+
+[![Downloads](https://static.pepy.tech/badge/poetry-git-version-plugin)](https://clickpy.clickhouse.com/dashboard/poetry-git-version-plugin)
+[![GitLab stars](https://img.shields.io/gitlab/stars/rocshers/python/poetry-git-version-plugin)](https://gitlab.com/rocshers/python/poetry-git-version-plugin)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/rocshers/python/poetry-git-version-plugin)](https://gitlab.com/rocshers/python/poetry-git-version-plugin)
+
+## Features
+
+- **No needed installed Git**
+- **Git tag** parsing
+- Different **types of release**
+- Setting found or generated version as package **poetry.version**
+- Maintenance of **PEP 440**
+- `Auto-increment` depending on release type
+- [Command](#poetry-git-version) to output a new version
+- [Command](#poetry-set-git-version) to update the pyproject version
+
+## Quick start
+
+```bash
+poetry self add poetry-git-version-plugin
+poetry git-version # Write package version based on git tag
+poetry build # Build package with version based on git tag
+```
+
+## Configs
+
+### release_type
+
+Determines which release type to use.
+
+- type: Enum
+  - tag
+  - alpha
+  - beta
+  - rc
+  - post
+  - dev
+- Default = "dev"
+
+**Value definition:**
+
+```toml
+# Environment
+export PACKAGE_VERSION_RELEASE_TYPE=dev
+# pyproject.toml
+[tool.poetry-git-version-plugin]
+release_type = "dev"
+```
+
+**Values:**
+
+Given: current tag - **1.2.3**, distance - **4**.
+
+Possible values ​​and version result:
+
+- **tag** -> 1.2.1
+- **alpha** -> 1.2.1**a**4
+- **beta** -> 1.2.1**b**4
+- **rc** -> 1.2.1**rc**4
+- **post** -> 1.2.3.**post**4
+- **dev** -> 1.2.3.**dev**4
+
+### local
+
+Determines whether to add locale to the version
+
+- type: bool
+- Default = true
+
+**Value definition:**
+
+```toml
+# Environment
+export PACKAGE_VERSION_LOCAL=true
+# pyproject.toml
+[tool.poetry-git-version-plugin]
+local = true
+```
+
+**Values:**
+
+Given: current tag - **1.2.3**, distance - **4**, hash  - **09dc5d2d7d8132c94c9c77ac27e1f594963a8ed4**.
+
+Possible values ​​and version result:
+
+- **false** -> 1.2.1a4
+- **true** -> 1.2.1a4+**09dc5d2**
+
+## Commands
+
+### poetry git-version
+
+
+```bash
+$ poetry git-version # Write package version based on git tag
+1.2.3.dev4+09dc5d2
+```
+
+### poetry set-git-version
+
+
+```bash
+$ poetry git-version # Set new version in pyproject 
+The new version has been installed: 1.2.3.dev4+09dc5d2
+
+$ cat pyproject.toml | grep version
+version = "1.2.3.dev4+09dc5d2"
+```
+
+## Use cases
+
+### Publishing python package to pypi via poetry with version equal to git tag
+
+.gitlab-ci.yml:
+
+```yaml
+pypi:
+  stage: publishing
+  image: python:3.10
+  tags:
+    - docker
+  script:
+    - export PACKAGE_VERSION_RELEASE_TYPE=alpha
+    - poetry self add poetry-git-version-plugin
+    - poetry config repositories.pypi https://upload.pypi.org/legacy/
+    - poetry config pypi-token.pypi ${PYPI_TOKEN}
+    - poetry publish -r pypi --build
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+```
+
+- When creating a git tag: new package with version == {TAG}
+- When pushing to CI_DEFAULT_BRANCH: new package with version == {TAG}a{N}
+
+### Publishing python package to private pypi via poetry with version equal to git tag and commit hash
+
+.gitlab-ci.yml:
+
+```yaml
+pypi:
+  stage: publishing
+  image: python:3.10
+  tags:
+    - docker
+  script:
+    - export PACKAGE_VERSION_RELEASE_TYPE=alpha
+    - export PACKAGE_VERSION_local=true
+    - poetry self add poetry-git-version-plugin
+    - poetry config repositories.gitlab "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/packages/pypi"
+    - poetry config http-basic.gitlab gitlab-ci-token "$CI_JOB_TOKEN"
+    - poetry publish -r gitlab --build
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+```
+
+- When creating a git tag: new package with version == {TAG}
+- When pushing to CI_DEFAULT_BRANCH: new package with version == {TAG}a{N}+{COMMIT_HASH}
+
+## Contribute
+
+Issue Tracker: <https://gitlab.com/rocshers/python/poetry-git-version-plugin/-/issues>  
+Source Code: <https://gitlab.com/rocshers/python/poetry-git-version-plugin>
+
+Before adding changes:
+
+```bash
+make install-dev
+```
+
+After changes:
+
+```bash
+make format test
+```
