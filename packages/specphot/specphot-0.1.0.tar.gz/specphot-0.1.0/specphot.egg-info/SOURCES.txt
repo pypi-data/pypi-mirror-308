@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+data/f200w.par
+data/jades-gdn2-v3_prism-clear_1181_23167_jades_23167-goods-n-mediumhst.spec.fits
+notebooks/specphot_example_notebook.ipynb
+specphot/__init__.py
+specphot/utils.py
+specphot.egg-info/PKG-INFO
+specphot.egg-info/SOURCES.txt
+specphot.egg-info/dependency_links.txt
+specphot.egg-info/top_level.txt

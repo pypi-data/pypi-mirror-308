@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: specphot
+Version: 0.1.0
+Summary: This Python package provides tools for comparison of spectra and photometry.
+Home-page: https://github.com/leonardo-clarke/specphot
+Author: Leonardo Clarke
+Author-email: leoclarke@astro.ucla.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
