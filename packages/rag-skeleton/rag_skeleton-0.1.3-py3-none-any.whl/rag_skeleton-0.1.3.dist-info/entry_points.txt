@@ -1,0 +1,2 @@
+[console_scripts]
+rag_skeleton = rag_skeleton.__main__:entry
