@@ -1,0 +1,4 @@
+[console_scripts]
+VDR = gamdvdr.VDR:main
+VDR_comb = gamdvdr.combine_replicas:main
+VDR_param = gamdvdr.VDR_param:main

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+gamdvdr/VDR.py
+gamdvdr/VDR_Indep.py
+gamdvdr/VDR_methods.py
+gamdvdr/VDR_param.py
+gamdvdr/__init__.py
+gamdvdr/combine_replicas.py
+gamdvdr.egg-info/PKG-INFO
+gamdvdr.egg-info/SOURCES.txt
+gamdvdr.egg-info/dependency_links.txt
+gamdvdr.egg-info/entry_points.txt
+gamdvdr.egg-info/requires.txt
+gamdvdr.egg-info/top_level.txt
