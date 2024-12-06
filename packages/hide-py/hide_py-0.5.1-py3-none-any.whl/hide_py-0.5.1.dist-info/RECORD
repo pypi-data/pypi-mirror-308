@@ -1,0 +1,14 @@
+hide/__init__.py,sha256=NA22AU7Oxh0Ewn_m4RZqdbvVs4caw08RHdfjTxm_ubM,53
+hide/client/__init__.py,sha256=f54SznSU9fix_BmT-_Ry9Zb_DDKyDkANkd2KcABPZqI,41
+hide/client/hide_client.py,sha256=pdW9rQ-_IE6DZzS7q6Ja21Gr82ldyRyiFiBfhR3SwIk,8709
+hide/devcontainer/__init__.py,sha256=Iy5ASahsI3CCuRJSf9ZKwXYuGFun9_w7vt8w42z6plM,287
+hide/devcontainer/model.py,sha256=cO5P-1axx_yTXikigNCrPM6QayjDCYZwXyRU_sFhA4Y,13282
+hide/langchain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hide/langchain/toolkit.py,sha256=itICJcx6mKHtUn7wc82S8t-MRBIhyEUOnIX01c7OYpk,959
+hide/model.py,sha256=IPiDPLbZ0GOO_6HdajbAv_HdToOv02DnldoI2LnrXPk,9378
+hide/toolkit/__init__.py,sha256=zbGQPq4pJ2Q_fJmhmqMKbd1E9wAf52Qx_CkWUv6dWqI,29
+hide/toolkit/toolkit.py,sha256=8KU9AGHXTy6nVZdaONlmIhntIosCQlZ9AIzPH6vHhu8,5631
+hide_py-0.5.1.dist-info/LICENSE,sha256=p0APD1Xh4d4rJwI6R0-ZZABF3SlTNEsNtejRQDa9S3E,1070
+hide_py-0.5.1.dist-info/METADATA,sha256=nGzgnycIDn9WwhVkGavfIhDYWrEngSKozztdh71Jefk,3859
+hide_py-0.5.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+hide_py-0.5.1.dist-info/RECORD,,
