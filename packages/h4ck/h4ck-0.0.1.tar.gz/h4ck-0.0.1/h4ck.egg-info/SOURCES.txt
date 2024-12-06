@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+h4ck/__init__.py
+h4ck/h4ck.py
+h4ck.egg-info/PKG-INFO
+h4ck.egg-info/SOURCES.txt
+h4ck.egg-info/dependency_links.txt
+h4ck.egg-info/top_level.txt
