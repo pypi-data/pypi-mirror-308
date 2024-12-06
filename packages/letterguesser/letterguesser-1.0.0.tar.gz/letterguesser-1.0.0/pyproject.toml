@@ -1,0 +1,54 @@
+[tool.poetry]
+name = 'letterguesser'
+version = "1.0.0"
+description = 'Cool letter guesser program'
+authors = ['ange1o <etew0z1a@anonaddy.me>']
+readme = 'README.md'
+license = 'MIT'
+include= [
+    "letterguesser/assets/locales/en/LC_MESSAGES/messages.mo",
+    "letterguesser/assets/locales/uk/LC_MESSAGES/messages.mo"
+]
+
+[tool.poetry.dependencies]
+python  = '>=3.10, <3.14'
+customtkinter = "^5.2.2"
+ctktable = "^1.1"
+babel = "^2.16.0"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.11.0"
+pytest = "^8.3.3"
+mypy = "^1.13.0"
+flake8 = "^7.1.1"
+pytest-cov = "^6.0.0"
+polib = "^1.2.0"
+tox = "^4.23.2"
+
+[tool.poetry.build]
+script = "build.py"
+
+[tool.pytest.ini_options]
+addopts= "--cov letterguesser"
+testpaths = [
+    "tests"
+]
+
+[tool.mypy]
+mypy_path = "."
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+[build-system]
+requires = ['poetry-core', 'Babel']
+build-backend = 'poetry.core.masonry.api'
+
