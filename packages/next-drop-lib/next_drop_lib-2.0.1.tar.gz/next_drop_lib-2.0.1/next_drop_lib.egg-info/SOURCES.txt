@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+next_drop_lib/__init__.py
+next_drop_lib/file_receiver.py
+next_drop_lib/file_sender.py
+next_drop_lib/nextdrop_general.py
+next_drop_lib.egg-info/PKG-INFO
+next_drop_lib.egg-info/SOURCES.txt
+next_drop_lib.egg-info/dependency_links.txt
+next_drop_lib.egg-info/requires.txt
+next_drop_lib.egg-info/top_level.txt

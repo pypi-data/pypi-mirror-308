@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: next-drop-lib
+Version: 2.0.1
+Summary: A high-speed data pipeline library
+Author: DiamondGotCat
+Author-email: chii@kamu.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: aiohttp
+Requires-Dist: tqdm
+Requires-Dist: zstandard
