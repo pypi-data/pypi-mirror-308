@@ -1,0 +1,7 @@
+README.md
+setup.py
+anacondada/__init__.py
+anacondada.egg-info/PKG-INFO
+anacondada.egg-info/SOURCES.txt
+anacondada.egg-info/dependency_links.txt
+anacondada.egg-info/top_level.txt
