@@ -1,0 +1,113 @@
+During the interactive lectures of the OTC 2025 shore-based course, you will
+need to install tools and libraries for reading, processing and visualizing
+data.
+
+To make sure all students get the same environment, a bundle containing
+SEAScope, Python 3.12.6 and additional material required by some lectures has
+been created.
+
+
+Installation
+============
+
+To install the software bundle:
+
+1. Locate a disk/partition with the most free space on your computer (software
+   itself does not take much space, but data used during the lectures will
+   require several gigabytes)
+
+2. Create a new directory on that disk/partition, all the software and data
+   used during the course will be stored in that directory.
+
+   Note that moving the directory elsewhere or renaming it will create
+   problems, so choose wisely (using a short and meaningful name such as
+   ``otc25`` is recommended).
+
+   This directory will be referred to as the "OTC directory" in the upcoming
+   instructions.
+
+3. Download the bundle corresponding to your operating system:
+
+   - Linux: https://ftp.odl.bzh/odl/events/otc25/software/linux-otc25-bundle.sh
+   - Windows: https://ftp.odl.bzh/odl/events/otc25/software/windows-otc25-bundle.bat
+   - macOS (Intel): https://ftp.odl.bzh/odl/events/otc25/software/macos_intel-otc25-bundle.command
+   - macOS (Apple Silicon [1]_): https://ftp.odl.bzh/odl/events/otc25/software/macos_silicon-otc25-bundle.command
+
+4.  Save it in the OTC directory.
+
+5. Open your file browser (or a terminal) and go to the OTC directory, then
+   double-click on the bundle file (or execute it from the terminal).
+
+   The installation of the bundle will start and will take several minutes.
+
+   A message is displayed at the end of the installation process, explaining
+   how to open a new terminal already set up for the training course.
+
+Verification
+============
+
+The software bundle includes a small tool to check that the environment is
+correctly installed.
+
+To perform this check:
+
+1. Using a file browser, go to the OTC directory
+
+2. Go to the ``seascope`` sub-directory
+
+3. Double-click on the ``seascope`` file (Linux), ``SEAScope`` shortcut
+   (Windows) or ``SEAScope.command`` file (macOS).
+
+   The SEAScope viewer will start and display a globe.
+
+   Keep the viewer running, it will be used in the next steps.
+
+4. In your file browser, go back to the OTC directory, there should be a file
+   named "Terminal" with either the ``.sh`` (Linux), ``.bat`` (Windows) or
+   the ``.command`` (macOS) extension.
+
+   Double-click on that file (or execute it) to open a terminal.
+
+5. In the terminal, type:
+
+   .. code:: bash
+
+      otc2025-check-environment
+
+   It might take some time depending on your computer but at the end it should
+   open a Jupyter notebook in your web browser, and the "OTC" letters should
+   appear on the globe in the SEAScope viewer.
+
+   Please follow the instructions mentioned in the notebook to determine
+   whether or not the tests were successful.
+
+6. Close the notebook in your web browser. You can also stop the SEAScope
+   viewer and close your terminal.
+
+   You're ready for the interactive lectures! :)
+
+Additional information
+======================
+
++-----------------------------------------------------------------------------+
+| The OTC environment installed with the bundle scripts are independent from  |
+| your operating system and should not require any admin permissions.         |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| The bundle scripts modify some Python packages to make them compatible with |
+| Python 3.12.                                                                |
++-----------------------------------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+| In order to keep instructions simple for all the students during the        |
+| lectures, the version of SEAScope included in the macOS bundles does not    |
+| contain the macOS-specific features that are otherwise available when       |
+| downloading SEAScope from https://seascope.oceandatalab.com.                |
+|                                                                             |
+| Please note that this change may invalidate some macOS-specific information |
+| found on the website and in the user manual.                                |
++-----------------------------------------------------------------------------+
+
+
+.. [1] Apple Silicon is for M1 / M2 / M3 CPUs
