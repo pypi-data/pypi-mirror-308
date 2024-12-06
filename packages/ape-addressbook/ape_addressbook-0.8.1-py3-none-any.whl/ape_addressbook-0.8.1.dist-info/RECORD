@@ -1,0 +1,10 @@
+ape_addressbook/__init__.py,sha256=KuZNgmJYhYDuPQFCe4cDD56GLaoTq9opPajn422mWRs,610
+ape_addressbook/addresses.py,sha256=hEp77Soa_C3mikfLzuCBcck146p-mvVXKHEg3ahGFK0,2903
+ape_addressbook/converters.py,sha256=FAvyE68i-WStvYk2cp8hoFMgUwx5-Bd8Oj-wUJv7QhQ,422
+ape_addressbook/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ape_addressbook/version.py,sha256=Z8fNqmfsoA07nbVEewR90wZCgaN6eyDwPwgtgc2KIak,411
+ape_addressbook-0.8.1.dist-info/LICENSE,sha256=wKVouzimXmZeaCj3f48Vua0vk91U4vjrrt2Ax0u3qBs,11342
+ape_addressbook-0.8.1.dist-info/METADATA,sha256=ktsygF-N5yyG3iWf61FM2t37odQ3CQI324ZZu_ANgyo,4046
+ape_addressbook-0.8.1.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+ape_addressbook-0.8.1.dist-info/top_level.txt,sha256=5XNzRpkAiRg9X0HcgPhFq32YwVvl_yLZ5KvVl83b_-U,16
+ape_addressbook-0.8.1.dist-info/RECORD,,
