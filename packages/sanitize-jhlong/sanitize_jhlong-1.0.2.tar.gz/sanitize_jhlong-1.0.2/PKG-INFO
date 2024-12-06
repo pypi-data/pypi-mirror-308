@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sanitize_jhlong
+Version: 1.0.2
+Summary: 处理计时数据的一个函数
+Author: jhlong
+Author-email: jhlong2024@163.com
+Description-Content-Type: text/markdown
+
+# sanitize-jhlong
+
+## 项目简介
+`sanitize-jhlong` 是一个用于处理时间数据的 Python 函数库，能够将时间字符串格式化为标准的 `分钟.秒钟` 格式。该库的设计目标是帮助开发者更方便地处理和格式化时间数据。
+
+## 安装方法
+您可以通过以下命令从 PyPI 安装该库：
+
+```python
+pip install sanitize-jhlong
+```
+
+## 使用方法
+导入库并调用`sanitize` 函数:
+
+```python
+from sanitize_jhlong import sanitize
+
+# 示例
+time_string = "2:34"
+formatted_time = sanitize(time_string)
+print(formatted_time)  # 输出 "2.34"
+
+```
+
+## 功能说明
+-时间格式转换：支持`分钟:秒钟` 和`分钟-秒钟`格式的转换
+-错误处理：当输入数据不符合标准格式时，会自动返回原始字符串，确保代码运行的稳定性。
+    -(在 Markdown 中，您可以通过在子项前增加四个空格来创建嵌套列表：)
+
+## 示例代码
+以下是一些使用示例：
+
+```python
+from sanitize_jhlong import sanitize
+
+# 支持的时间格式
+print(sanitize("2:45"))  # 输出 "2.45"
+print(sanitize("3-21"))  # 输出 "3.21"
+
+# 不支持的格式将返回原始字符串
+print(sanitize("hello"))  # 输出 "hello"
+
+```
+
+## 贡献指南
+如果您有兴趣为 `sanitize-jhlong`项目做出贡献，欢迎提交 pull request 或 issue！
+我们乐意接受任何有助于改进项目的反馈和建议。
+
+## 联系方式
+如果您在使用过程中遇到问题，请联系作者：jhlong2024@163.com
