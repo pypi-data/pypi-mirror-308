@@ -1,0 +1,11 @@
+InstructionCLI/__init__.py,sha256=1xqmPEianMGOhphsVWoAcjJ1f7NBuamCDwWtnu8WQRQ,651
+InstructionCLI/applyParameter.py,sha256=02bDagGaTakFMm3l76RQlCtSaSmPeNAUVKNPi6ddEUs,2028
+InstructionCLI/applyParameters.py,sha256=f3nHlnXYzx_8t65qCQXgkY_ULVH8Ud-5hrIGlDGwn18,1233
+InstructionCLI/cli.py,sha256=Ww95Fxuck6nVbmuEBH16OeSQal6o_34LdtBqF6Ivw5k,12846
+InstructionCLI/config.py,sha256=XyifcU4n8v_x9svFL4RpuGUiqPICjr1xu8o7mMJK60Y,192
+InstructionCLI/exception.py,sha256=nsVMFLh8rUce43648gymeP-DGMseb9fWW7vyruNV_LE,586
+InstructionCLI/instruction.py,sha256=Ro5-rCDjdFyX5RY1xw_hvBvQQkI2KIctPeosWCQ8zGo,3793
+instructioncli-0.0.3.dist-info/METADATA,sha256=vtSYZdNFVYn2sbGduq9H83mzRyE73BFV4Up6LrKVQoU,502
+instructioncli-0.0.3.dist-info/WHEEL,sha256=WJ9WQ4-pUYxfD_tEj5GvKSG9KSULNumqkTQdolV8mME,87
+instructioncli-0.0.3.dist-info/licenses/LICENSE,sha256=G7tuxvt2n2_UUa8j92dz6E5AMyCXkcYXQN-Yf5WfQfs,1090
+instructioncli-0.0.3.dist-info/RECORD,,
