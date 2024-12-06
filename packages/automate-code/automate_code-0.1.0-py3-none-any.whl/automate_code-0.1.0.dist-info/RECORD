@@ -1,0 +1,10 @@
+automate_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automate_code/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automate_code/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automate_code/management/commands/code_generator.py,sha256=nGjTyl5keQRwdLSwglHx7lBoItPR9pr38S4zHEgrfso,4762
+automate_code-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automate_code-0.1.0.dist-info/METADATA,sha256=6BVBQ3e8XiFWw1FEt-pwXyG1FzOfREp-ePrVABQOdfo,873
+automate_code-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+automate_code-0.1.0.dist-info/entry_points.txt,sha256=X3ig-g0MOYxV6HXJQ7_0jPxYa04P9DiM3kcmpXJNVMQ,92
+automate_code-0.1.0.dist-info/top_level.txt,sha256=oCaFJrRIn5wABldqfELslDD95Qu-Vr6mBgNsmHK9UpE,14
+automate_code-0.1.0.dist-info/RECORD,,
