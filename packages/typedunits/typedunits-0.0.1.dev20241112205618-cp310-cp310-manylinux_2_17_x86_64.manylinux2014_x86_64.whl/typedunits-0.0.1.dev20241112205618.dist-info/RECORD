@@ -1,0 +1,17 @@
+tunits_core.cpython-310-x86_64-linux-gnu.so,sha256=u2rM9Am5O_pwkkGl7GsXUlukS46V2RCwZk_6SjZHXgw,7529056
+tunits/units.py,sha256=2uiWhHWJKFjwnEoLtN8XLMITQ2v_QpXxaKRspjc-teI,109100
+tunits/__init__.py,sha256=5tn_Sq6HHe2eXVpe54GdKHLAf6NUBVHTFoRljfZ4Gjw,2094
+tunits/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tunits/proto/tunits.proto,sha256=3bx5r-oF36muPpq2HyGufgpCiE335DDjTcc5YRgkz3M,2912
+tunits/proto/tunits_pb2.py,sha256=cfJBqDUEqK0DYZn2n8m7JSBWgbJvk1HdPAQBsKbKdKw,4206
+tunits/proto/tunits_pb2.pyi,sha256=QHdGN2fUkXZwhIaX_dY_41elG-vAGwEcBwKopC7n2pY,11569
+tunits/core/_all_cythonized.c,sha256=M4R9KjqGU_vxLoQsKysVb1YRY-OUpXhrZ252mFWzjb8,3967314
+tunits/core/__init__.py,sha256=49GSI7aPz7fSWxGECpu8eP0Y4jvvr_CWPwkfBGjxvYo,2447
+tunits/core/__init__.pyi,sha256=h3LoVqkOIP_gPoBZI_0gPVUsz7qIKge4k3UadnLbavk,34003
+tunits/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typedunits-0.0.1.dev20241112205618.dist-info/top_level.txt,sha256=qs_vq3aijSEYR1hj89KC2UHpYXXsPQMCQK1Vtqj4O9o,19
+typedunits-0.0.1.dev20241112205618.dist-info/RECORD,,
+typedunits-0.0.1.dev20241112205618.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+typedunits-0.0.1.dev20241112205618.dist-info/AUTHORS,sha256=67OcWY9Da-JUBZcgQblVrIiXT3rv_HIf-DRtDyqVCMo,297
+typedunits-0.0.1.dev20241112205618.dist-info/METADATA,sha256=dq3Hc4-ThPj_kYjNqHvaeJ7Qkd80D4KchMncTn_Rx_M,4816
+typedunits-0.0.1.dev20241112205618.dist-info/WHEEL,sha256=4dqzVPfxz-9huGbvEiYZ7yC6G-pNyseC2Wb1caF1wE4,151
