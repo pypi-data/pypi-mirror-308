@@ -1,0 +1,9 @@
+[tool.pylint.main]
+# Files or directories to be skipped. They should be base names, not paths.
+ignore = ["LICENSE", "pyproject.toml", "version.py",
+          "README.md", "demo.py", "conftest.py"]
+
+# Files or directories matching the regular expression patterns are skipped. The
+# regex matches against base names, not paths. The default value ignores Emacs
+# file locks
+ignore-patterns = ["^\\.#", "^test_"]
