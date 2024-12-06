@@ -1,0 +1,8 @@
+gamspy_cbc/__init__.py,sha256=sCeqFl67f4Tbh_4YmzbPcwLU3ifLesZulv9z-vWoYXk,347
+gamspy_cbc/cbccclib64.dll,sha256=aeabh8uhcia48R-zlYtrrZ3XrzrCQAWjC_UCK_EtbE4,11555328
+gamspy_cbc/optcbc.def,sha256=iTcInUny0cH0ei3apenYipzq83JAFMBiWv4NaB8qiSg,18255
+gamspy_cbc/version.py,sha256=y5fnLahza0TN9pP5mtoaKF4ztBQWVYS2tXRKUmZFhu8,22
+gamspy_cbc-48.3.0.dist-info/METADATA,sha256=BcXX76L-kAyYnSovCrV1xaJwgTwB72SIVmjhDGeU5CU,60
+gamspy_cbc-48.3.0.dist-info/WHEEL,sha256=7kUuRJZXU1NWHXt75CfMHh6-y6C3u_DGs3nNOsM_Gfg,103
+gamspy_cbc-48.3.0.dist-info/top_level.txt,sha256=IcTgSB0GiKn1AAeyYp_UDQixhnMIDBuufgKjfrBEqt4,11
+gamspy_cbc-48.3.0.dist-info/RECORD,,
