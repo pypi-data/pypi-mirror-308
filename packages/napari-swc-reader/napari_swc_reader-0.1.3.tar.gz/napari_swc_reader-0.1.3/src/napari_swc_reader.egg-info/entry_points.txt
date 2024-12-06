@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-swc-reader = napari_swc_reader:napari.yaml
