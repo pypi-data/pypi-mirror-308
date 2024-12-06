@@ -1,0 +1,52 @@
+[project]
+name = "d3ploy"
+version = "4.4.2"
+description = "Easily deploy to S3 with multiple environment support."
+authors = [
+    {name = "dryan", email = "dryan@users.noreply.github.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.35.58",
+    "colorama>=0.4.6",
+    "packaging>=24.2",
+    "pathspec>=0.12.1",
+    "tqdm>=4.67.0",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+homepage = "https://github.com/dryan/d3ploy"
+repository = "https://github.com/dryan/d3ploy"
+documentation = "https://github.com/dryan/d3ploy#readme"
+
+[project.scripts]
+d3ploy = "d3ploy:cli"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[dependency-groups]
+dev = [
+    "ipython>=8.29.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.7.3",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling",]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/test*.py"]
+addopts = ["--cov=d3ploy", "--cov-report=term-missing", "--cov-report=html", "--cov-fail-under=100"]
