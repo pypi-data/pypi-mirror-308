@@ -1,0 +1,78 @@
+
+TabbedContent {
+    width: 50;
+}
+
+/* Matches the Arguments panel */
+
+#arguments-panel {
+    border: round grey;
+}
+
+/* Matches the RichLog widget where output will appear */
+
+#console-log {
+    border: round grey;
+    height: 2fr;
+}
+
+TaskButton {
+    min-width: 90%;
+    background: $panel-lighten-1;
+    border-top: tall $panel-lighten-1;
+    border-bottom: tall $panel-lighten-1;
+}
+
+TaskButton:focus {
+    border: round $accent;
+    text-style: bold;
+    background-tint: white 10%;
+}
+
+TaskButton:hover {
+    background: $secondary-background !important;
+}
+
+TaskButton:hover:focus {
+    background-tint: white 10%;
+}
+
+TaskButton.immediate_run {
+    background: cornflowerblue;
+}
+
+TaskButton.immediate_run:focus {
+    background-tint: white 10%;
+}
+
+Tooltip {
+    padding: 1 2;
+    background: $primary;
+    color: auto 90%;
+    max-width: 80;
+}
+
+YesNoDialog {
+    align: center middle;
+}
+
+YesNoDialog > Vertical {
+    border: thick $primary 50%;
+    width: 50%;
+    height: 15;
+    background: $boost;
+    Label {
+        text-style: bold;
+        margin: 2 4;
+    }
+    Markdown {
+       margin: 2 4;
+    }
+    Horizontal {
+        width: 100%;
+        align: center top;
+        #btn-dialog-yes {
+            margin-right: 2;
+        }
+    }
+}
