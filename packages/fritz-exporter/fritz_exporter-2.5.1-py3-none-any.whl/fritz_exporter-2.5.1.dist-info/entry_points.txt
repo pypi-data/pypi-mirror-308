@@ -1,0 +1,3 @@
+[console_scripts]
+fritzexporter=fritzexporter.__main__:main
+
