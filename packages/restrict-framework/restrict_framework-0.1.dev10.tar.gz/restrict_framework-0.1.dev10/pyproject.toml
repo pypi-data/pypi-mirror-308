@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "restrict-framework"
+version = "0.1.dev10"
+description = "A functional resource-oriented Web framework"
+authors = ["Curtis Schlak"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://restrictframework.io"
+repository = "https://gitlab.com/restrict-framework/restrict.py"
+documentation = "https://restrictframework.io"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.urls]
+"Issues" = "https://gitlab.com/restrict-framework/restrict.py/-/issues"
+
+[tool.poetry.plugins.'pygments.lexers']
+resource_lexer = 'restrict_framework.lexers.pygments_resource_lexer:ResourceLexer'
+
+[tool.poetry.dependencies]
+python = "^3.12"
+starlette = "^0.37.2"
+python-multipart = "^0.0.17"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pyclean = "^3.0.0"
+uvicorn = "^0.32.0"
+
+
+[tool.poetry.group.docs.dependencies]
+jupyter-book = "^1.0.0"
+pygments = "^2.18.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pytest-watcher = "^0.4.3"
+pytest-cov = "^6.0.0"
+
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--cov --cov-report html --cov-report term --cov-report xml:coverage.xml"
+
+[tool.coverage.run]
+omit = [
+  "./restrict_framework/ply/*",
+  "./tests/*",
+  "./restrict_framework/__init__.py",
+  "./*.out",
+  "./htmlcov/*",
+]
+
+[tool.black]
+line-length = 80
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
