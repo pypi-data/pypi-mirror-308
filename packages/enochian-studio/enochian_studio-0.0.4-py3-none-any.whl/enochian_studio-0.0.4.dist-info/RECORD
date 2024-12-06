@@ -1,0 +1,10 @@
+enochian_studio/__init__.py,sha256=6aYXEXARzn_r7e9XumrRv-VjNO1P-aIHwkEG-zh80rw,152
+enochian_studio/cli.py,sha256=hgMJmQZ75nvUaZRZ5PEEAcpI40-F8e3sYmqL622uxFA,4279
+enochian_studio/installer.py,sha256=KOx0zWwCI46tN3inptnqmn73fBQ3ZTEHm9Ter848gCU,1200
+enochian_studio/node_runner.py,sha256=CHYKa9Zh4RDzywyKnaJ6GEOOs5Bbpi6P1fTE9kcpWo4,5911
+enochian_studio/package.json,sha256=X1FtEMVPF3kYOSijlxV5gjR7uD-P-Ex6EzJRDCeuXk8,152
+enochian_studio-0.0.4.dist-info/METADATA,sha256=d-JlQEmAd8nG5BB7y643QT6UQa9gdObGcotII3xQsuA,2093
+enochian_studio-0.0.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+enochian_studio-0.0.4.dist-info/entry_points.txt,sha256=MzGVINXnOrtC-RUPq4h48p6r44QLMUG7zcXzGbGL3hU,61
+enochian_studio-0.0.4.dist-info/licenses/LICENSE,sha256=JrBonUa9E9HM7K6s1NkmsgQp9CeLclL_G2qFPe3jsM8,1067
+enochian_studio-0.0.4.dist-info/RECORD,,

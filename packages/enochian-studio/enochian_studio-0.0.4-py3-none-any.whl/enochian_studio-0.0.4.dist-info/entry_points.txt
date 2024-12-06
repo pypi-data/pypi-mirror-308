@@ -1,0 +1,2 @@
+[console_scripts]
+enochian-studio = enochian_studio.cli:main
