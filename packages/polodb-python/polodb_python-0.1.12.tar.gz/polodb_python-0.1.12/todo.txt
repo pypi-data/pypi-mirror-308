@@ -1,0 +1,3 @@
+--> Have to define secrets, will be good to have token only for this repo 
+--> Have to add publication github action 
+have to test and see 
