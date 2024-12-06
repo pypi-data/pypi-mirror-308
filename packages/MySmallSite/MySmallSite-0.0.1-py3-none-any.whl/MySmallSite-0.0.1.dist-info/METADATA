@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MySmallSite
+Version: 0.0.1
+Summary: MySmallSite Generater
+Home-page: https://github.com/h-e1p/MySmallSite
+Author: h-e1p
+Author-email: xe1f.epii@gmail.com
+Keywords: xelp,xelf,xe1p,xe1f,h-e1p,h-elp,h-eip,he1p,MySmallSite,mysmallsite,My Small Site,my small site,mys,*.mys,.mys,*mys,mss
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.5
+License-File: LICENSE
+
