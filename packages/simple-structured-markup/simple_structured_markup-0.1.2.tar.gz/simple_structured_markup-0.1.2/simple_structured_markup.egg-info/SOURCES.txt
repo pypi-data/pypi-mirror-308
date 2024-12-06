@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+simple_structured_markup/__init__.py
+simple_structured_markup/simple_structured_markup.py
+simple_structured_markup.egg-info/PKG-INFO
+simple_structured_markup.egg-info/SOURCES.txt
+simple_structured_markup.egg-info/dependency_links.txt
+simple_structured_markup.egg-info/top_level.txt
