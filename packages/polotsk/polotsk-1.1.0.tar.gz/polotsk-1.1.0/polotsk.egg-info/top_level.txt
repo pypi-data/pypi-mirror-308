@@ -1,0 +1,3 @@
+polotsk
+polotsk-admin
+polotsk-admin/app/main
