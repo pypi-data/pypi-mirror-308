@@ -1,0 +1,16 @@
+*.py[cod]
+*.egg
+*.egg-info
+dist
+build
+*__pycache__*
+*.swp
+.tox
+.coverage
+.vscode/
+.changelog_generator.toml
+.python-version
+site/
+api-test.py
+repopack-output.txt
+.envrc
