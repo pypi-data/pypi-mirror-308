@@ -1,0 +1,2 @@
+[console_scripts]
+pkl-github-actions-step-generator = pkl_github_actions_step_generator:entry_point
