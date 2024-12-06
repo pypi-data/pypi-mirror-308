@@ -1,0 +1,35 @@
+{
+  "qualifiers": [
+    {
+      "name": "Negation",
+      "values": [
+        "Affirmed",
+        "Negated"
+      ]
+    },
+    {
+      "name": "Temporality",
+      "values": [
+        "Current",
+        "Historical"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "qualifier": "Negation.Negated",
+      "direction": "preceding",
+      "max_scope": 5,
+      "patterns": [
+        "geen"
+      ]
+    },
+    {
+      "qualifier": "Temporality.Historical",
+      "direction": "following",
+      "patterns": [
+        "weken geleden"
+      ]
+    }
+  ]
+}
