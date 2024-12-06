@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pos_fiap_couras-package
+Version: 1.0.0
+Summary: Descricao da sua lib pos_fiap_couras
+Home-page: https://github.com/tadrianonet/pos_fiap_couras
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# POS Fiap
+
+A simple example library
+
+# Licence
+
+Distribuidi sob a licença MIT. Veja `LICENSE` para mais informações
