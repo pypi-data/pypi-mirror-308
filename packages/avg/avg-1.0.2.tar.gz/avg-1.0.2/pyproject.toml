@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avg"
+version = "1.0.2"
+description = "Animated Scalable Vector Graphics"
+readme = "README.md"
+authors = [
+    {name = "David Woodburn", email = "david.woodburn@icloud.com"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/davidwoodburn/avg"
+"Bug Tracker" = "https://gitlab.com/davidwoodburn/avg/-/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}

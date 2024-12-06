@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/avg/__init__.py
+src/avg/avg.py
+src/avg.egg-info/PKG-INFO
+src/avg.egg-info/SOURCES.txt
+src/avg.egg-info/dependency_links.txt
+src/avg.egg-info/top_level.txt
+src/avg/examples/spinning_triangle.py
+src/avg/examples/static_triangle.py
