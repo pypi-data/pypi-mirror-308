@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: lib4gd
+Version: 0.2.3
+Summary: A comprehensive library for image handling and Google Drive file downloading.
+Home-page: https://github.com/4dg-ai/lib4gd
+Author: Tejas R Simha
+Author-email: tejas@4gd.ai
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles>=0.8.0
+Requires-Dist: google-auth>=2.0.0
+Requires-Dist: google-auth-oauthlib>=0.4.0
+Requires-Dist: google-auth-httplib2>=0.1.0
+Requires-Dist: google-api-python-client>=2.0.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: Pillow>=8.0.0
+Requires-Dist: asyncssh>=2.0.0
+
+# lib4gd
+
+**lib4gd** is a Python library designed for efficient image handling, Google Drive, and SFTP file downloading. It also provides resource management for consistent concurrency control.
+
+## Features
+
+- **Image Handling:** 
+  - Convert images between Base64, PIL, and OpenCV formats.
+  - Batch process images with efficient concurrency.
+
+- **File Downloading:**
+  - Download files from Google Drive using service account credentials.
+  - Download files from SFTP servers with parallel processing.
+
+- **Resource Management:**
+  - Centralized control of thread pools and semaphores for consistent concurrency management across the library.
+
+## Installation
+
+### Install via SSH
+```bash
+pip install git+ssh://git@github.com/4dg-ai/lib4gd.git
+```
+
+### Install via HTTPS with Personal Access Token
+```bash
+pip install git+https://<username>:<token>@github.com/4dg-ai/lib4gd.git
+```
+
+Replace `<username>` with your GitHub username and `<token>` with your Personal Access Token.
+
+## Submodules
+
+- [Image Handling](lib4gd/image_handling/README.md)
+- [Google Drive Downloading](lib4gd/image_downloading/README.md#google-drive-downloading)
+- [SFTP Downloading](lib4gd/image_downloading/README.md#sftp-downloading)
