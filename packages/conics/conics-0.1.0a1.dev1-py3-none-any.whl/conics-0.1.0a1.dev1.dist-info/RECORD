@@ -1,0 +1,13 @@
+conics/__about__.py,sha256=NDav1oxEMW-zxMsX0DPdKF0NQQ2Her6TFdwejdU2gH8,151
+conics/__init__.py,sha256=aEa9E67Izy5ZHm0tCdIz8DjeUyQ2sYidvxkyfmY81rw,1149
+conics/_conic.py,sha256=BtQKXi8_lG6weVvxJJtimiM3gsTTPYbFGS7fS7ikA4w,25198
+conics/_ellipse.py,sha256=8zjoTjuUMPkwsHdy_YgWi5D9JfRzMM-ZOUqt1q3Ss0E,4821
+conics/_harker.py,sha256=dudf4t_3_oyPkq2htoqpCZBqMqyZHIcZ4Cs7GjD0pCk,7511
+conics/_nievergelt.py,sha256=69tFWZoeu5R7yYP-_9toWG8P3GNwT1NoednellrPZXs,6395
+conics/_parabola.py,sha256=iiaJ67oiao8KK6ONk9cPEDakuLHrRuqcUl9KMRrZ6qQ,6056
+conics/fitting.py,sha256=Pb7mNWW-S4S3QO1TmcZdOTvLP0mh6x3wiPcTbjzB1A0,3507
+conics/geometry.py,sha256=0-0eOXhedZsWPNNKTv-QK8e_PsViIJdZfkS_nWJBpcI,1120
+conics-0.1.0a1.dev1.dist-info/METADATA,sha256=MhLIiSC1LxH058vhCnWHZEkUJFDfGACndRMDpIQP57Q,2082
+conics-0.1.0a1.dev1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+conics-0.1.0a1.dev1.dist-info/licenses/LICENSE,sha256=uaxS-UcOYq1K6ZUNGvmgltOMuZzYTZBX2hGol-zyyW4,11345
+conics-0.1.0a1.dev1.dist-info/RECORD,,
