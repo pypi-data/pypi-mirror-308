@@ -1,0 +1,10 @@
+etcpak-0.9.10.dist-info/top_level.txt,sha256=T2D0x7SQLUB3U1bXC2uotzkyB-VtZlC_mQ2wYZB9Y8E,7
+etcpak-0.9.10.dist-info/RECORD,,
+etcpak-0.9.10.dist-info/LICENSE,sha256=7TQ7Mb6Vzmu0LVXIDQC3x_qY2ZwDeeSFfw440oNBoW8,1062
+etcpak-0.9.10.dist-info/METADATA,sha256=mWCeIfZG67DL_4mR-eZNmI2KwKhVF4Ikoa9iMeBOjuA,5958
+etcpak-0.9.10.dist-info/WHEEL,sha256=6x2vofriAzf6eiHHR236wJzUsz3PJdNSWYw-XfNMdKQ,150
+etcpak/_etcpak_neon.cpython-37m-aarch64-linux-gnu.so,sha256=f0gr_9Q3EnkMBI_tSJ9E9bRe-OZw_nsZUJkKeD9TfHE,2835968
+etcpak/_etcpak_none.abi3.so,sha256=rI9lU2hJEboESltot6teSxL0pOa8-HKGiS530zw8oos,2835968
+etcpak/__init__.py,sha256=LU7a9NIkerb0ugk6Shk0ACjuq0IfBhFHLSJKNpR7NU8,2996
+etcpak/__init__.pyi,sha256=dAWRHFU_XeK6vLZPfmmSZXtirsEM3EEhgf1dyn-DK9Y,4698
+etcpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
