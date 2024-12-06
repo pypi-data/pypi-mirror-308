@@ -1,0 +1,71 @@
+# This workflow will install Python dependencies,
+# run tests and lint with a variety of Python versions/
+
+name: Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Cache test data
+        uses: actions/cache@v3
+        with:
+          path: src/scope/data
+          key: ${{ runner.os }}-test-data-${{ hashFiles('**/test-data-hash') }}
+          restore-keys: |
+            ${{ runner.os }}-test-data-
+      - name: Download test data if not cached
+        if: steps.cache-test-data.outputs.cache-hit != 'true'
+        run: |
+          echo "Downloading test data..."
+          cd src/scope
+          chmod +x download_data.bash
+          ./download_data.bash
+          cd ../../
+        
+            
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install -U pip
+          python3 -m pip install -U setuptools setuptools_scm pep517
+          python3 -m pip install -e .
+
+
+      - name: Run tests
+        run: |
+         pip install pytest
+         pip install pytest-cov
+         export NUMBA_DISABLE_JIT=1
+         pytest --cov=src/scope --cov-report=xml
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          directory: ./coverage/reports/
+          env_vars: OS,PYTHON
+          fail_ci_if_error: true
+          files: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          path_to_write_report: ./coverage/codecov_report.txt
+          verbose: true
