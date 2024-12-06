@@ -1,0 +1,9 @@
+telex_python_apm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telex_python_apm/fastapi/__init__.py,sha256=k4rxckB146lXe3ePJZkSoWromYFUW3U4-6jn56wFEIo,41
+telex_python_apm/fastapi/middleware.py,sha256=Ni9uvse-efw24OxMBWg91DSPggVWZlvnsS-m7bedilE,1831
+telex_python_apm/fastapi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telex_python_apm/fastapi/tests/test_middleware.py,sha256=BFwB-bez4zzzCBrnRz4D3eatMqgFVDbZzGfN_GB-GUI,2562
+telex_python_apm-0.1.5.dist-info/METADATA,sha256=3oCMNJ4kG2d_5IqnW0Y8-siUKbY1T-Zz4Zig_0fqv6I,2508
+telex_python_apm-0.1.5.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+telex_python_apm-0.1.5.dist-info/top_level.txt,sha256=svP0b6Qn8v5fHnReqNVEA96k2jsDNh9n-pk-0kzUa30,17
+telex_python_apm-0.1.5.dist-info/RECORD,,
