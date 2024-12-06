@@ -1,0 +1,2 @@
+[console_scripts]
+gemini-chat = gemini_terminal.main:main
