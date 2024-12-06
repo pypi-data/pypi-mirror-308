@@ -1,0 +1,69 @@
+# Character Occurrence Counter with Caching
+
+This project is an application that takes a string or a text file as input and returns the number of characters that occur only once. The application utilizes caching to store results for previously processed strings to improve performance on repeated calls.
+
+## Features
+
+- Counts characters that occur only once in a given string or text file.
+- Implements caching to avoid recalculating for repeated inputs.
+- Command-line interface to process strings or files.
+- Uses the `collections` package for efficient counting.
+- Includes tests written in `pytest`, covering edge cases and large inputs.
+- Provides coverage reports for testing.
+
+## Prerequisites
+
+Before using this application, ensure you have:
+- Python 3.6 or later installed.
+- Necessary packages, which can be installed with:
+
+  pip install -r requirements.txt
+
+
+## Installation
+
+To install the package, run:
+
+pip install unique_character_counter
+
+
+## Usage
+
+### As a Module
+You can use the module in your Python scripts as follows:
+
+from collection.unique_char_count import get_unique_character_count
+
+result = get_unique_character_count("abcdefg")
+print(f"Number of unique characters: {result}")
+
+
+### Command-Line Interface
+To process input from the command line:
+1. For a string:
+
+   python -m unique_char_count --string "abcdefg"
+
+2. For a text file:
+
+   python -m unique_char_count --file path/to/your/file.txt
+
+
+## Testing
+
+To run tests and verify functionality:
+1. Run all tests:
+
+   pytest
+
+2. Generate a coverage report:
+
+   coverage run -m pytest
+   coverage report
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+
