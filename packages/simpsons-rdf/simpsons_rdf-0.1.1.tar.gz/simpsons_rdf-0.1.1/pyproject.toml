@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "simpsons-rdf"
+version = "0.1.1"
+description = ""
+authors = ["Natanael Arndt <arndtn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rdflib = "^7.1.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
