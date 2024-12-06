@@ -1,0 +1,2 @@
+[console_scripts]
+codeblocks = codeblocks:main
