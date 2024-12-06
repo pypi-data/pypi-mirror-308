@@ -1,0 +1,15 @@
+torchsystem/__init__.py,sha256=-_IuDIA71zFptbspHgN5gWW4zPsCAAe1AThw9G4EqnE,310
+torchsystem/aggregate.py,sha256=YVNK3pqcyhMiRxhdwQmbZkMphfEigk5i43auKmyTwLo,1199
+torchsystem/callbacks/average.py,sha256=1p06GBZl3uIBF87DvKa5CLoajHTBdMkVEpXN8ivKqdM,1498
+torchsystem/callbacks/metrics.py,sha256=GanvN2_zHxucOvVWpB5YFlkS_lsS8rKos3vqdIs8-tM,429
+torchsystem/commands.py,sha256=9DnC3czK3ngPfz-_6iXAKYS4-OlQ1fsZrZ0zAO60P2E,3130
+torchsystem/compiler.py,sha256=fmUgkA7m3HTxc8cDWOk5OtHG8kiVAHbMVMlDqBsCeXY,1605
+torchsystem/events.py,sha256=Tm8BEGjrBIDVX06pkemD-b4BM14hzvWfXzNW2bpPyU0,993
+torchsystem/loaders.py,sha256=e2QtQ79Nc30Zm-DGxfwmO8ZfjJoOEyWhyt01AHMYsZM,2408
+torchsystem/settings.py,sha256=3--h06nWc0GcW3ehNDv9HLxW56GHxUtc9W7s20sYITY,1064
+torchsystem/storage.py,sha256=8USWlA3M8B1JShUBXBQUsxoLkees-u-1ftfIMW1EVlM,3474
+torchsystem/weights.py,sha256=6zoITMkjl9WC5BdH5L890-lwppoydRNRsGTnMii60q4,1806
+torchsystem-0.1.0.dist-info/LICENSE,sha256=xaMmSaui1itQNp2WE6mT7zoqwyhLqqObOA5YW7BqXnc,1073
+torchsystem-0.1.0.dist-info/METADATA,sha256=IsCJxZ9l5rCrlJqAldSwnWKYK9yl4Kft14t7YsUtlgQ,729
+torchsystem-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+torchsystem-0.1.0.dist-info/RECORD,,

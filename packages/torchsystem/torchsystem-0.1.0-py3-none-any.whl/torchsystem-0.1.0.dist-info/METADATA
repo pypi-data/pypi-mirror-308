@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: torchsystem
+Version: 0.1.0
+Summary: An IA training system, based on domain driven design and an event driven architecture, created on top of the pybondi library.
+License: MIT
+Author: Eric Cardozo
+Author-email: eric.m.cardozo@mi.unc.edu.ar
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: mlregistry (>=1.0.0,<2.0.0)
+Requires-Dist: pybondi (>=0.2.3,<0.3.0)
+Description-Content-Type: text/markdown
+
+# torch-system
+An IA training system, created using domain driven design and an event driven architecture.
+
