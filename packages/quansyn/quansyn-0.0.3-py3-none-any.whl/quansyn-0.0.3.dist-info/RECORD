@@ -1,0 +1,9 @@
+quansyn/__init__.py,sha256=cu4EAyvvjM5u3DD-xiWjyugywNprPK60z52VTLQd07M,65
+quansyn/depval.py,sha256=qw0XzSQDtMMMH7kZbdOCW8Q_uU9WGGB2N1mA3ELK5kg,20960
+quansyn/lawfitter.py,sha256=l6sHJUqx3x6mKGaqwLHbKA5xWQ7TM8Y_jgRdtjg-4GA,4461
+quansyn/lingnet.py,sha256=_sYepG7bqB0deOdQ3_bjMiSvEkOJo3pNWQFhCp0JTTk,4098
+quansyn-0.0.3.dist-info/LICENSE,sha256=y3f2iFBGuiquHOEO7JfN4PrNDxyemD35vRO7_yZONnc,1082
+quansyn-0.0.3.dist-info/METADATA,sha256=qoTr_E8Ag8mjYa3x4HwQ_whmUsYlIGjDkf-xcjJkdqY,20294
+quansyn-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quansyn-0.0.3.dist-info/top_level.txt,sha256=e-nUPIfsKP6F9Cd87BfJrzDeK-Q8Er1rsKfl54zwqgY,8
+quansyn-0.0.3.dist-info/RECORD,,
