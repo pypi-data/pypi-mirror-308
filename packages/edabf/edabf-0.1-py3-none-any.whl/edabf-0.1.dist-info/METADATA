@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: edabf
+Version: 0.1
+Summary: A package for EDA on CSV and SQL data.
+Author: nicolas_conde_brainfood
+Requires-Python: >=3.7
+Requires-Dist: pandas==2.2.2
+Requires-Dist: polars==1.10.0
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: pymssql==2.3.1
+Requires-Dist: oracledb==1.0.0
+Requires-Dist: cx-Oracle
+Requires-Dist: XlsxWriter==3.2.0
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: pymysql
+Requires-Dist: SQLAlchemy
+
