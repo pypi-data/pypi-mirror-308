@@ -1,0 +1,9 @@
+hisscl/__init__.py,sha256=vdsIzTnzutKghaga4KPOrWk0Zarpm6rCbdIangsuvbs,543
+hisscl/ast.py,sha256=8lijWP2N4zBu-ao2MMTQiGbbSHiVhNtasvn5dBSnvi0,1964
+hisscl/interp.py,sha256=xOEIliXeycB8w9r_Hl769fkFM5DFHWArHpN_gpW5kUs,10211
+hisscl/lexer.py,sha256=PiehorPcy9N6n5XbVzJYee35RKsPwdb_nn1YdrRf50g,8999
+hisscl/parser.py,sha256=0rFabF-a8edEyNhcWjwHT5dj7_o2nl442hJs48WFDjo,9138
+hisscl-0.0.4.dist-info/METADATA,sha256=9ikT8laogbkEmyPJh4S6rjmX1ydMytEFiS8G94AiO9Q,2243
+hisscl-0.0.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+hisscl-0.0.4.dist-info/licenses/LICENSE,sha256=Pz2eACSxkhsGfW9_iN60pgy-enjnbGTj8df8O3ebnQQ,16726
+hisscl-0.0.4.dist-info/RECORD,,
