@@ -1,0 +1,17 @@
+graforvfl/__init__.py,sha256=G_kpiNNYObPFwZ6YBN1YILAl8iUjJwGZIo09LyBHSLM,537
+graforvfl/network/__init__.py,sha256=8Eicn8FRAJRcdnNvsNeqsz60x6tWNfqPX71t_RckUlk,394
+graforvfl/network/base_rvfl.py,sha256=5KwiEqVhO8bcBvy8x1xhPEZ_lYoYgNXPsFzdF-NOzKg,13928
+graforvfl/network/gfo_rvfl_tuner.py,sha256=HkX0NCoCYVuUYVqJ-eUJR79eICTm9e_VR-DZKvRgOdA,13047
+graforvfl/network/standard_rvfl.py,sha256=79QY_JZbh0y6UsAhiOpU7J1LrSI9QmxUJY0AN8eDwBM,12243
+graforvfl/shared/__init__.py,sha256=JzQbAkdbYbEhfrasCGESesRReEYo7LrYJBR4IGqKEgE,315
+graforvfl/shared/activator.py,sha256=EeSdDqFzYi7ofndrezWOQPe33mI9X_HjXhiEiOuIlO4,5116
+graforvfl/shared/boundary_controller.py,sha256=YFjx-a1InboMNL2X_7ttYe-pjHpnnsBsVqPA8qJEUf0,3565
+graforvfl/shared/data_processor.py,sha256=_G1g7VJqEfP4YLVrw9wGXyg6SbJEksa9v23KhkqAbrQ,7635
+graforvfl/shared/randomer.py,sha256=JBQV15Y6kxb4_M85K47WCc1UUDQJ8FfGnRzM4JFYyrE,3011
+graforvfl/shared/scaler.py,sha256=cYzvtJSNtnv-URnrANz-wC5WyYLmoqadZtNe92g1dgs,8268
+graforvfl/shared/scorer.py,sha256=b_j5ODJlW-QIol2NOFD_p-HwDVMlxf5-CbaOpIUJcek,2140
+graforvfl-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+graforvfl-1.2.0.dist-info/METADATA,sha256=AZ-bYvvX7fxdTzNAPnAwG90Ny0J21fx08-tCOovfbgE,10193
+graforvfl-1.2.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+graforvfl-1.2.0.dist-info/top_level.txt,sha256=1O91JSiMuSH5BiaI2O2YTOMHVG40ZOs1rafSc_wuqf8,10
+graforvfl-1.2.0.dist-info/RECORD,,
