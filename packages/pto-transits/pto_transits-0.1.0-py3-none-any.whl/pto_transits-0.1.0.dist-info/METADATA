@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pto-transits
+Version: 0.1.0
+Summary: Planner for Transits Observations.
+License: GPL-3.0-or-later
+Author: Michal Steiner
+Author-email: Michal.Steiner@unige.ch
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: astropy
+Requires-Dist: colorlog
+Requires-Dist: dill
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyvo
+Requires-Dist: seaborn
+Requires-Dist: specutils
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# About PTO (Planner of Transit Observations):
+`PTO` is a code that allows the user to calculate transit windows and plot their visibility for given location. Currently, main focus of `PTO` is handling high-resolution observations of transits, but further extensions can be made.
+
+Furthermore, sample selection can be done easily through the NASA Exoplanet archive tables, as these are automatically downloaded by `PTO`.
+
+
+
+
