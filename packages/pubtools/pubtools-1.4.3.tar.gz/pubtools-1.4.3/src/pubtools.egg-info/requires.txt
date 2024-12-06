@@ -1,0 +1,6 @@
+pluggy
+setuptools
+
+[tracing]
+opentelemetry-api
+opentelemetry-sdk
