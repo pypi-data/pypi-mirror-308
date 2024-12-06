@@ -1,0 +1,10 @@
+README.md
+setup.py
+stones_statistics/Stat.py
+stones_statistics/__init__.py
+stones_statistics/example.py
+stones_statistics.egg-info/PKG-INFO
+stones_statistics.egg-info/SOURCES.txt
+stones_statistics.egg-info/dependency_links.txt
+stones_statistics.egg-info/requires.txt
+stones_statistics.egg-info/top_level.txt
