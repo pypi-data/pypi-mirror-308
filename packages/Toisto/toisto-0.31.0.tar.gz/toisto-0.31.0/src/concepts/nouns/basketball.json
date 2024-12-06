@@ -1,0 +1,11 @@
+{
+    "basketball": {
+        "hypernym": "sport",
+        "en": "basketball",
+        "fi": [
+            "koripallo",
+            "koris*"
+        ],
+        "nl": "het basketbal"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "badminton": {
+        "hypernym": "sport",
+        "roots": {
+            "fi": "ball"
+        },
+        "en": "badminton",
+        "fi": [
+            "sulkapallo",
+            "sulkis*"
+        ],
+        "nl": "het badminton"
+    }
+}
