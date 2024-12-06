@@ -1,0 +1,6 @@
+copy
+math
+numpy
+matplotlib.pyplot
+scipy
+scipy.linalg

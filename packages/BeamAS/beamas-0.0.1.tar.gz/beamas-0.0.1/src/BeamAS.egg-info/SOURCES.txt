@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/BeamAS.egg-info/PKG-INFO
+src/BeamAS.egg-info/SOURCES.txt
+src/BeamAS.egg-info/dependency_links.txt
+src/BeamAS.egg-info/requires.txt
+src/BeamAS.egg-info/top_level.txt
+src/beamas/__init__.py
+src/beamas/beamas.py

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BeamAS"  
+version = "0.0.1"    
+description = "Beam Analysis Software"
+readme = "README.md" 
+authors = [{name = "BeamAS", email = "beamas.contact@gmail.com"}]
+license = {text = "MIT"}  
+dependencies = [
+    "copy",
+    "math",
+    "numpy",
+    "matplotlib.pyplot",
+    "scipy",
+    "scipy.linalg",
+    
+]
+requires-python = ">=3.6"  
+
+
