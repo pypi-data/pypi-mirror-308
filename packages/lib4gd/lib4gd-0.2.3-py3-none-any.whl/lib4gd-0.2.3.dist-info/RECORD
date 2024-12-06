@@ -1,0 +1,14 @@
+lib4gd/__init__.py,sha256=2C5COIBKV-Q_CRFqCp4Lw6sCPs8PbXZZVu8ZlFpA6Vk,105
+lib4gd/resource_manager.py,sha256=nHpQjx9LUIZFTuvNcv_NO934YE_94d6mEfK2xZf7frE,2302
+lib4gd/file_transfer/__init__.py,sha256=Mhi_BH21cdkYspVsLMoCIBYA4ovfZ9ERSRieDAJt6T4,154
+lib4gd/file_transfer/google_drive.py,sha256=XD1yGqhnH-QY6QnvfdmGR0_fP7arwcX7UxNAHdQm7EU,3837
+lib4gd/file_transfer/sftp.py,sha256=JPUu2zhYt5KBvwmFPk_9mfYGEbPhhfwTgqNMALE_l3c,2655
+lib4gd/image_handling/__init__.py,sha256=ib4bUsqCD_H6dx1A_fhm_lTgFe3UAqlN4z-EFhT-NKE,105
+lib4gd/image_handling/handle_base64.py,sha256=fSANdpV7ryPt1x9Nq2UlPC_zvDZHE3sXMDboZRNlzzU,5579
+lib4gd/mongo_handler/__init__.py,sha256=BSrGH-iT0hszw_Gg8nqyWfTbbt7OedNecvCr78bF90w,24
+lib4gd/mongo_handler/mongo_crud.py,sha256=SROzvjLyKzLM-YPII-fej5iWE3AMFiB8dmzR1cNZVvA,2474
+lib4gd-0.2.3.dist-info/LICENSE,sha256=DYNXKauT8gK9-l-ahbc7ENer87-9LEVk5YOk9l61f1Y,1063
+lib4gd-0.2.3.dist-info/METADATA,sha256=8yVAvghkDiX4hOJK-w_eHS1bbKs3IPJ_aNmn_iPFF90,2009
+lib4gd-0.2.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+lib4gd-0.2.3.dist-info/top_level.txt,sha256=L0J6XeaNbhxwpWw65Yf-cKVklMkufIFjPIMoK-sufiw,7
+lib4gd-0.2.3.dist-info/RECORD,,
