@@ -1,0 +1,20 @@
+name: Test directory script
+
+on:
+  schedule:
+    - cron: '45 11,23 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      praw_refresh_token:  ${{secrets.PRAW_REFRESH_TOKEN}}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -e .
+      - name: directory
+        run: python3 rcounting/scripts/update_thread_directory.py -v --sleep 5
