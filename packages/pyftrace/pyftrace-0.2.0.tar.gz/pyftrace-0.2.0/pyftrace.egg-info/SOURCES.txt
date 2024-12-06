@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyftrace/__init__.py
+pyftrace/main.py
+pyftrace/tracer.py
+pyftrace/tui.py
+pyftrace/utils.py
+pyftrace.egg-info/PKG-INFO
+pyftrace.egg-info/SOURCES.txt
+pyftrace.egg-info/dependency_links.txt
+pyftrace.egg-info/entry_points.txt
+pyftrace.egg-info/requires.txt
+pyftrace.egg-info/top_level.txt
+tests/__init__.py
+tests/runtests.py
