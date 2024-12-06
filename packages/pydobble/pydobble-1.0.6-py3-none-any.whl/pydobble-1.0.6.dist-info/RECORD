@@ -1,0 +1,14 @@
+./.gitignore,sha256=TOuWxhKA8PqUBDvVUms-A7jWljvKxu0yfRSCG28r1kE,35
+./LICENSE,sha256=E3JHFHZFZY6YDaUSzqO9QgE5wvr2HmYlY5PByCZ6J8g,1058
+./PKG-INFO,sha256=lfFlIjsp55T_zJQkyFJMxTOPyZGwScVGRmm14zn8u5M,950
+./README.md,sha256=4hy8cUN2sHWofUeFwBAdmvBA8orIFNvpFnQZtm08N5o,473
+./dobble.py,sha256=cUql6wAhHeU7UQ9PDEk8tHv2wkFKLJ_JI_Zei5nAfAw,17072
+./emojis.txt,sha256=lr-cpj-sDUfA3eZhbx-kbjydDYaeSObHcCv1g8PzWZM,1388
+./pyproject.toml,sha256=y5AYwV5Ifu9iisfky7NNOnUu33os3hdf5vu1NoPuVAM,850
+./src/pydobble/dobble.py,sha256=cUql6wAhHeU7UQ9PDEk8tHv2wkFKLJ_JI_Zei5nAfAw,17072
+./src/pydobble/emojis.txt,sha256=lr-cpj-sDUfA3eZhbx-kbjydDYaeSObHcCv1g8PzWZM,1388
+pydobble-1.0.6.dist-info/METADATA,sha256=lfFlIjsp55T_zJQkyFJMxTOPyZGwScVGRmm14zn8u5M,950
+pydobble-1.0.6.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pydobble-1.0.6.dist-info/entry_points.txt,sha256=cLQM-69eNTg6fjUAlJ3VGshHzF7hLrWBhIqofu-J5VQ,39
+pydobble-1.0.6.dist-info/licenses/LICENSE,sha256=E3JHFHZFZY6YDaUSzqO9QgE5wvr2HmYlY5PByCZ6J8g,1058
+pydobble-1.0.6.dist-info/RECORD,,
