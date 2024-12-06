@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: labthings-picamera2
+Version: 0.0.1.dev0
+Summary: Picamera2 support for LabThings-FastAPI
+Author-email: Richard Bowman <richard.bowman@cantab.net>
+Project-URL: Homepage, https://github.com/rwb27/labthings-picamera2
+Project-URL: Bug Tracker, https://github.com/rwb27/labthings-picamera2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: picamera2~=0.3.12
+Requires-Dist: labthings-fastapi
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: labthings-fastapi[dev]; extra == "dev"
+
+# labthings-picamera2
+A LabThings-FastAPI Thing for working with picamera2
