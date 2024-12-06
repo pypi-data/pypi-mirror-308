@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cus_lib
+Version: 0.0.2
+Summary: custom common fun
+Author-email: lhy <oceanliu335372871@gmail.com>
+Project-URL: Homepage, https://github.com/crazyetiii/common_lib
+Project-URL: Issues, https://github.com/crazyetiii/common_lib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# `__init__.py`中写法
+1. 使用方式
+2. 导包，可选
+
+```
+cus_lib
+
+Usage:
+
+    from cus_log import setup_logger
+
+    logger = setup_logger("test.log")
+    logger.info('test cus_lib!')
+"""
+
+# after you launch code,can see 'test.log' file. 
+```
+
+# build
+
+```bash
+py -m build
+```
+
+# 分发
+
+```bash
+twine upload dist/*
+# 输入token
+```
+
