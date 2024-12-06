@@ -1,0 +1,14 @@
+smartarchive/SqlUtil.py,sha256=jU5U8qI9j9A7870xMZqcjjyLkyBP5ErnuW3fe0qWBog,815
+smartarchive/ToolPlugin.py,sha256=rZlBJ6_k47apKywSxMu-soc6j9yaW0tDFS1AFbL717Q,1091
+smartarchive/ZPOpenAILike(1).py,sha256=MGs-sWfTblKeLbIFw1jXNOy_EIw-Nc0hMAXjsHIBbeI,4173
+smartarchive/ZPOpenAILike.py,sha256=84gCDfEM7kv54xXMsGdysGJrkunGFOwxuveIVJPq1XI,2733
+smartarchive/ZPOpenAILikeNew.py,sha256=MGs-sWfTblKeLbIFw1jXNOy_EIw-Nc0hMAXjsHIBbeI,4173
+smartarchive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smartarchive/chatServer.py,sha256=IB8P3WfBH2haF7iViuktrO2jNSFdhD8Dr0MJOr_Svsc,6781
+smartarchive/docServer.py,sha256=ys1m5lqz-3Tl-pu_mYMWeKj7oWmo0spJFfimjvdRhd0,9051
+smartarchive/docServerOpenAI.py,sha256=EC0cpNGkR2tYZssKsWg-osvZ3bcAv_gvdRSPf14aoJA,2738
+smartarchive/test.py,sha256=_eGT80aGFs7XqGoBpmKOc6GQPtdQx-o4MEEHfKouf3M,406
+smartarchive-0.1.dist-info/METADATA,sha256=3GcahEWkup8g2bxq5vWz6czQxxjT0AMLIY0y33jUUoc,187
+smartarchive-0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+smartarchive-0.1.dist-info/top_level.txt,sha256=6NpmN0CXOTtODTwoyw-gnVad5Lh8mbBDM2FNMrrwhSY,13
+smartarchive-0.1.dist-info/RECORD,,
