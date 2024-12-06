@@ -1,0 +1,16 @@
+matplotlib
+datasets
+fastprogress
+fastcore
+torch<=2.5.0,>=1.7
+torcheval
+diffusers
+einops
+timm
+wandb
+mlflow
+accelerate
+tensorboard
+
+[dev]
+nbdev
