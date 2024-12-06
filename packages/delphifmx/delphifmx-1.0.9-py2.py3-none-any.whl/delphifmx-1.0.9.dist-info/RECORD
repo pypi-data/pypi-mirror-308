@@ -1,0 +1,15 @@
+delphifmx/__init__.py,sha256=J7RgUpB2JXHGliljWOfGXuViSKSO2VIQsAoM0w7JcOg,2895
+delphifmx/__version__.py,sha256=29gfaFnVGHlO4YwJu6vgvQjCQwPqDmuCvkEOYMZyflo,411
+delphifmx/darwin_arm.py,sha256=ySzbQVneGRv26WhL4qwiBT1iC_qDRZ49po7MrZWn0Ag,1560
+delphifmx/Android/libDelphiFMX.so,sha256=qu60catia6XuWP6zttGtL-h_Gox55xY1X1uJpjHEL1k,32442908
+delphifmx/Android64/libDelphiFMX.so,sha256=gIr5iIQzXn0uQb8ucx489rz2Nu8OEGSbYWV0IP49Lwc,53094904
+delphifmx/Linux64/libDelphiFMX.so,sha256=nUCvNutejCX_RKc8jBn3pNBo1Ge_emNJl2DeVo3nYJw,34315360
+delphifmx/OSX64/libDelphiFMX.dylib,sha256=C44tERLZXbS0HLCF-hsOZ6MKl8hCewoX_ToA9nCCsSE,23666872
+delphifmx/OSXARM64/libDelphiFMX.dylib,sha256=HLDCGj6SHsioLI4wQ_qHoRUF3f3hBCpEmdpRhqB-JEU,23302984
+delphifmx/Win32/DelphiFMX.pyd,sha256=QfXyg05aAxIZLoDcwiyHcfLysdx784D4k-kazOzPN7g,13772800
+delphifmx/Win64/DelphiFMX.pyd,sha256=7taamTVTW_t6crzVXOAWMGEjP5EoDnA86I16gFB_N_4,19918336
+delphifmx/doc/docs.xml,sha256=WuibDEnZKkbv2h5APkLjVzxAEVZynEQeZzBP0bD74j4,1893470
+delphifmx-1.0.9.dist-info/METADATA,sha256=CjCCN_ou1nXaDWD3z29h0c1Tro1mq9aZ_1hDg36O8BY,5101
+delphifmx-1.0.9.dist-info/WHEEL,sha256=B03JAMGq6-VHSCrtDNma_J9UaPCNDvoQGYRXpzGHxgg,109
+delphifmx-1.0.9.dist-info/top_level.txt,sha256=rpESKl3sJw1cEcnKmYsMRCwmYPV-Suwi-h6nCSD3yu8,10
+delphifmx-1.0.9.dist-info/RECORD,,
