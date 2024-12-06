@@ -1,0 +1,6 @@
+[console_scripts]
+format=scripts:format
+format-fusion=formatfusion.__main__:__main__
+lint=scripts:lint
+test=scripts:test
+

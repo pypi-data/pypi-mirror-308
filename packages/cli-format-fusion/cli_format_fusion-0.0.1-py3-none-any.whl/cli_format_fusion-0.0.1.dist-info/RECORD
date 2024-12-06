@@ -1,0 +1,12 @@
+formatfusion/__main__.py,sha256=d1EPuAisg5NTTPMDVR0_tlBGPDzRHdoZw1ipFwMJxPQ,252
+formatfusion/commands/__init__.py,sha256=8PSU3LT436CSOhFLVKupKjF5nj0dG6nGiUxc1xzfD5M,35
+formatfusion/commands/cmd_image.py,sha256=OUfG2IhrSOBePNfNiHAtUAIGpVIF221ulYFNRJVT3SQ,1253
+formatfusion/commands/cmd_yaml.py,sha256=ALGIb2bQ7oTgmcccfOVPK9W82Bn-L47T0LBbJDTQ9mY,1446
+formatfusion/converting.py,sha256=cWZ6544TR49bB5VGYc2nsn2rIfNWEQr3cHWtyyGkvpM,651
+formatfusion/helpers.py,sha256=DDde19I3C6JbyId9cfzCqlmlnZ8HQdOI9pZOUZlysH4,904
+formatfusion/main.py,sha256=L9E_sBXq0Ym1LUph_S15v6UHVRbiUSLhCQQjHsQj4tY,1459
+cli_format_fusion-0.0.1.dist-info/entry_points.txt,sha256=6Lye3-qMZTvqz1FtQDkLnlJKnEHfHX_Ic-OnFSKK4Ws,122
+cli_format_fusion-0.0.1.dist-info/LICENSE,sha256=Tz_IaNoPq1X9oYY0Kis2iNH1guUiY9HLY6hTXMbPSyQ,11537
+cli_format_fusion-0.0.1.dist-info/METADATA,sha256=vwwsBy9EcZtbYNe1oqMcr5UZXJlXTcrkNhNtzMYx2JI,1164
+cli_format_fusion-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cli_format_fusion-0.0.1.dist-info/RECORD,,
