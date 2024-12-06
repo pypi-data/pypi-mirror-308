@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: hackbot
+Version: 0.1.1
+Summary: CLI tool for source code analysis using the Hackbot service
+Author-email: Hugo Berg <hugo@gatlingx.com>
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.10.10
+Requires-Dist: twine>=5.1.1
+Description-Content-Type: text/markdown
+
+# Hackbot
+
+CLI tool for source code analysis using the [GatlingX Hackbot](https://hackbot.org/) service.
+
+## Installation
+
+```bash
+pip
