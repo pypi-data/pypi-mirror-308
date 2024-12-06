@@ -1,0 +1,2 @@
+[console_scripts]
+alpha_hybird_train = scripts.train_model:main
