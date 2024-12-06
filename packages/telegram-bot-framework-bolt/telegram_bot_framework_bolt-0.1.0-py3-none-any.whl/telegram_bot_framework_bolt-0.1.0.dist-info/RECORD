@@ -1,0 +1,8 @@
+bot/__init__.py,sha256=9_z8a8pR2nUuzGvcKVxasmWxeSx2OhfmTRyhf0w6oz8,172
+bot/core.py,sha256=zWMlOSwjVyxEQ6x5hGa2sw8yHt_v3PbJqlvHAUZhhR4,7886
+bot/handlers.py,sha256=xb3kZSJE7Q9WAG-PhMIir6FT194YJBsq0WFoROTrqYY,1874
+bot/settings.py,sha256=3I3dv74zFlOE_fU-JjIKONgDQVISUkEBSQITl51x_N8,528
+telegram_bot_framework_bolt-0.1.0.dist-info/METADATA,sha256=Ah0U4tRmnhzgzt9CVtb-Yi8oTAGl4w4w6kaddc_87N0,552
+telegram_bot_framework_bolt-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+telegram_bot_framework_bolt-0.1.0.dist-info/top_level.txt,sha256=BfGEUPXgtCpne5POfPQ8gBzacfrzBulmV45hd8vheOI,4
+telegram_bot_framework_bolt-0.1.0.dist-info/RECORD,,
