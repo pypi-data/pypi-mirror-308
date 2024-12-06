@@ -1,0 +1,10 @@
+melon_translate_client/__init__.py,sha256=YIAL7FPitZw1bmxWrdQ5eZvHTc9NlTM-_F1X1_NOQiA,29
+melon_translate_client/models.py,sha256=_OewgkSkREIxdzfMNCv8jPGK2vxgpPvvBJeCe6bPT8o,6459
+melon_translate_client/module.py,sha256=YOTzOJcvkyoCxsbbNtnolOsnuO2FtS0nJscM0Vxmyyg,987
+melon_translate_client/request.py,sha256=-YT7Cmt0RKvX7K9T0biKQcmV52CtLOHQWJvX-fCZehY,4451
+melon_translate_client/settings.py,sha256=sLbcOcHndRVOazPP2kT0IVxOOi6yTLODKHQgVNvg050,1440
+melon_translate_client/tests/__init__.py,sha256=X054J_6-9TF5FsSVSot97Nby-kFQZ_DkbjdQ7l-2G9o,41
+melon_translate_client/tests/pytest_fixtures.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+melon_translate_client-0.17.0.dist-info/METADATA,sha256=1zvH04qIjK2u7EeeD7SXMR0UormHIutz6n8rqIRf324,678
+melon_translate_client-0.17.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+melon_translate_client-0.17.0.dist-info/RECORD,,
