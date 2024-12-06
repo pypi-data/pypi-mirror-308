@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cosmctl
+Version: 0.1.10
+Summary: CLI tool for deploying cosm lab projects
+Author: COSM DevOps
+Author-email: 373265@niuitmo.ru
+Description-Content-Type: text/markdown
+
+# cosmctl
+
