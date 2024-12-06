@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: recall-space-benchmarks
+Version: 0.0.4
+Summary: The benchmark package allows you to test AI Brain
+Home-page: https://github.com/Recall-Space/recall-space-benchmarks
+Author: Recall Space
+Author-email: info@recall.space
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: pymongo<5.0.0
+Requires-Dist: langchain-openai<1.0.0
+
