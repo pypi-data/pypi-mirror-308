@@ -1,0 +1,12 @@
+briff/__init__.py,sha256=N31iFr6vu4fbEamCrCrNBIUnNFOSZg9IoKP5YpNFM-8,193
+briff/briff_multiviews.py,sha256=hEzjbjiG5q9bNAhpfJ2xR7akElqbBB7-6mgpzZ3S1xc,12754
+briff/briff_pairwise.py,sha256=DXmejqF2tj3e2wUiZsdL_S7c0kEok8lDpR3OEQH9reU,12506
+briff/flames.py,sha256=oGCpxkaR0AteG7hCFl8GH6BYJFQFVQqFuKoiZP8BApg,9336
+briff/icp.py,sha256=Jr-wzLRlkyKwcz09iY-i9nmsci-8LuPZxXDEvLjtrqQ,11373
+briff/jrmpc.py,sha256=SxizCfa6c6jx-QE97A4d4E6q5V7cHw1VqDvVd33zb1Y,7371
+briff/pcd_utils.py,sha256=Xnehjj1Nq69jdAqRK42FAUhxxDV4_wVnm6StilflufQ,4263
+briff/so3.py,sha256=4jlsISsy0bEfs1C9c5LZt2L-CFuSYCmu-PW8-oVbchU,10753
+briff-0.1.1.dist-info/METADATA,sha256=jvWKwuTyN5918JDQqiv0r7ozTsynTerebyJUiqJfKR4,724
+briff-0.1.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+briff-0.1.1.dist-info/top_level.txt,sha256=Rsc0GuZW4LETNkZBzuV9hVOOmsAe6xREWjENTCn-B2I,6
+briff-0.1.1.dist-info/RECORD,,
