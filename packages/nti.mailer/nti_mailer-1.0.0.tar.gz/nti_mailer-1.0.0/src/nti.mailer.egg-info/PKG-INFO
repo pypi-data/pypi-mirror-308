@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: nti.mailer
+Version: 1.0.0
+Summary: Integrates pyramid_mailer and repoze.sendmail with Amazon SES.
+Home-page: https://github.com/OpenNTI/nti.mailer
+Author: Josh Zuech
+Author-email: open-source@nextthought.com
+License: Apache
+Keywords: Base
+Classifier: Framework :: Zope3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: gevent
+Requires-Dist: setuptools
+Requires-Dist: boto3
+Requires-Dist: BTrees
+Requires-Dist: itsdangerous
+Requires-Dist: nti.schema
+Requires-Dist: repoze.sendmail
+Requires-Dist: premailer>=3.7.0
+Requires-Dist: pyramid_mailer
+Requires-Dist: six
+Requires-Dist: ZODB
+Requires-Dist: zc.displayname
+Requires-Dist: zope.annotation
+Requires-Dist: zope.catalog
+Requires-Dist: zope.component
+Requires-Dist: zope.container
+Requires-Dist: zope.dottedname
+Requires-Dist: zope.i18n
+Requires-Dist: zope.interface
+Requires-Dist: zope.intid
+Requires-Dist: zope.location
+Requires-Dist: zope.schema
+Requires-Dist: zope.security
+Provides-Extra: test
+Requires-Dist: nti.testing; extra == "test"
+Requires-Dist: zope.testrunner; extra == "test"
+Requires-Dist: nti.app.pyramid-zope>=0.0.3; extra == "test"
+Requires-Dist: pyramid_chameleon; extra == "test"
+Requires-Dist: pyramid_mako; extra == "test"
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == "docs"
+Requires-Dist: repoze.sphinx.autointerface; extra == "docs"
+Requires-Dist: sphinxcontrib-programoutput; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+
+============
+ nti.mailer
+============
+
+.. image:: https://github.com/NextThought/nti.mailer/actions/workflows/tests.yml/badge.svg
+   :target: https://github.com/NextThought/nti.mailer
+   :alt: nti.mailer test status and repository
+
+.. image:: https://coveralls.io/repos/github/NextThought/nti.mailer/badge.svg?branch=master
+    :target: https://coveralls.io/github/NextThought/nti.mailer?branch=master
+
+.. image:: https://readthedocs.org/projects/ntimailer/badge/?version=latest
+   :target: https://ntimailer.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+
+=========
+ Changes
+=========
+
+1.0.0 (2024-11-12)
+==================
+
+- Drop support for Python < 3.10.
+- Use native namespace packages.
+
+
+0.0.1a2 (2021-09-07)
+====================
+
+- Translate the *subject* argument given to the default
+  ``ITemplatedMailer`` implementation. See `issue 18
+  <https://github.com/NextThought/nti.mailer/issues/18>`_.
+
+- Deprecate the *message_factory* argument to
+  ``ITemplatedMailer.queue_simple_html_text_email``. If you use this
+  argument, please bring up your use-case in the issue tracker.
+
+- Reach 100% test coverage.
+
+0.0.1a1 (2021-08-12)
+====================
+
+- Initial PyPI release.
+
+- Add support for Python 3.6 through 3.9. 3.10 is expected when
+  zodbpickle supports it.
