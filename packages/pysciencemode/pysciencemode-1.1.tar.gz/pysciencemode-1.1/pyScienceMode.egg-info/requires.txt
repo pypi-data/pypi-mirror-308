@@ -1,0 +1,5 @@
+numpy
+crccheck
+colorama
+pyserial
+typing
