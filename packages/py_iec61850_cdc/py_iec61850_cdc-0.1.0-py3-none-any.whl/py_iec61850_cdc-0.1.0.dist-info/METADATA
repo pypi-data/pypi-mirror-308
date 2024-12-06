@@ -1,0 +1,185 @@
+Metadata-Version: 2.3
+Name: py_iec61850_cdc
+Version: 0.1.0
+Summary: A package for Pythonic IEC 61850-7-3 common data classes.
+Project-URL: Homepage, https://codeberg.org/khawkings/py_iec61850_cdc
+Project-URL: Issues, https://codeberg.org/khawkings/py_iec61850_cdc/issues
+Author-email: Kyle Hawkings <kyle.hawkings@gmail.com>
+Classifier: Framework :: Pydantic :: 2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=2.0
+Description-Content-Type: text/markdown
+
+# py-iec61850-cdc
+
+This library provides IEC 61850 common data classes conforming to the requirements
+of IEC 61850-7-3 Ed. 2.1 2020-02 as Python objects for use in Python code.  It also
+provides serialization to JSON for the objects.
+
+IEC 61850-7-2 object / type support is limited to only those types required to support
+IEC 61850-7-3 objects.  This may be extended in the future.
+
+The intended purpose is to extend PNNL's Volttron (https://volttron.org/) platform
+to allow IEC 61850 on the message bus, historians, etc.
+
+## Usage
+
+The intended usage is to invoke objects in Pythonic servers, such as:
+- Modbus (https://github.com/pymodbus-dev/pymodbus),
+- Modbus TK (https://github.com/ljean/modbus-tk),
+- DNP3 (https://github.com/ChargePoint/pydnp3), or
+- IEC 61850 (https://github.com/arthurzas/py61850).
+
+Following polling, objects can be created in the IEC types and distributed using JSON over
+a message bus, via an API, etc., while still retaining their IEC member structure.
+
+This can also be used to provide commands via RPC.  Upon receipt of a py_iec61850_cdc type,
+a service (e.g. Volttron Agent), can determine if that point exists and then modify it.
+
+This makes for a much easier approach to constructing and sending point commands.  The server
+is the only party that really needs to understand the internal implementation of the point name
+and the callers don't care about the server-specific implementation.  They need only "change this
+point" by sending one of the command points to the server.
+
+The library will also provide a factory function to take JSON and properly deliver back an
+appropriate type from the library.  This allows servers to receive a message and act very simply.
+
+```
+from py_iec61850_cdc import INS
+```
+
+## Searching for Objects / Attributes
+
+Objects are sorted within the library based on logical usage, and annotated with IEC standard
+and clause numbers, to allow them to be found by users.
+
+For platforms with grep:
+```
+grep <IEC clause #> src/py_iec61850_cdc/*
+grep '6.2.4.2' src/py_iec61850_cdc/*
+```
+```
+grep <IEC class name> src/py_iec61850_cdc/*
+grep 'APC' src/py_iec61850_cdc/*
+```
+
+Caution should be used by users to go and read the object definition before using objects.
+This library replaces CamelCase attribute names with underscored_naming as per PEP8.
+
+Some attribute names had to be changed due to conflict with Python internal naming, such as 'maximum' to 'maximum_value'.
+
+'range' is changed to 'range_v' wherever it is used.
+```
+# Can't do this.  'range' is a protected name in Python.
+MV.range
+# Use this instead:
+MV.range_v
+```
+
+'min' and 'max' are changed to 'minimum' and 'maximum' wherever they are used.
+```
+# Can't do this:
+SV.min
+SV.max
+# Use this instead:
+SV.minimum
+SV.maximum
+```
+
+## ToDo
+
+- [DONE] Refactor and Pydanticize
+    - Note: The refactor task includes updating the copyright statement, adding IEC standards references to each object as comments, and changing dataclasses to Pydantic BaseModel objects.
+    - basetypes.py   - Complete
+    - enums.py       - Complete
+    - attributes.py  - Complete
+    - abstracts.py   - Complete
+    - status.py      - Complete
+    - measurand.py   - Complete
+    - controls.py    - Complete
+    - description.py - Complete
+    - service.py     - Complete
+    - settings.py    - Complete
+- [DONE] Fix all basetype.py field definitions to use field_type() functions.
+    - basetypes.py   - N/A
+    - enums.py       - N/A
+    - attributes.py  - Complete
+    - abstracts.py   - Complete
+    - status.py      - Complete
+    - measurand.py   - Complete
+    - controls.py    - Complete
+    - description.py - Complete
+    - service.py     - Complete
+    - settings.py    - Complete
+- [DONE] Correct JSON exporting functions to include type information (except lists).
+    - basetypes.py   - Complete
+    - enums.py       - N/A
+    - attributes.py  - Complete
+    - abstracts.py   - Complete
+    - status.py      - Complete
+    - measurand.py   - Complete
+    - controls.py    - Complete
+    - description.py - Complete
+    - service.py     - Complete
+    - settings.py    - Complete
+- Basic tests
+  - [DONE] Validate all base types obey their types and limits.
+  - Validate default constructors for each type?
+- Fix JSON alias for lists?
+- Contemplate whether self-defined internal methods belong in the base classes or "extension" classes.
+- Add IEC 61850-7-3 specified functionality (possibly as py_iec61850_cdc.util functions).
+    - Addressing methods for keeping the .i and .f members of AnalogueValue synchronized.
+    - Addressing methods for translation between AnalogueValue and process measurement (pVal) using ScaledValueConfig. 
+    - Addressing methods for relating RangeConfig to Validity_T and DetailQual.
+    - Add methods to RangeConfig to limit to min / max values as per the specified IEC type (e.g. INT32).
+    - Address methods for substitution values (e.g. SubstitutionCDC) to be triggered to non-process.
+    - Add math functions to like types (e.g. MV) that do addition, subtraction, multiplication, etc.
+        - These should address the allowable ranges as well.
+    - Timestamp
+        - Address conversion functions and use of Pythonic time types.
+        - Address recorded behavior of Timestamp (i.e. when value changes).
+        - Make it easy to incorporate DNP3 Timestamping.
+    - BCR-specific
+        - Add a freezing method to BCR.
+        - Add pulsQty to value calculations (see pulsQty description).
+    - Figure out how Originator works and make sure we can set it properly.
+    - Prepare validations as per limitations expressed throughout standard
+        - e.g. 'numHar' <= 1 + 1/2 *('smpRate') * ('numCyc')
+    - Prepare mag writes based on instmag, per db.
+    - For CMVs:
+        - Add various standard functions like RE() and IM() to compute real and complex parts.
+    - Add curve setting / evaluating functions (e.g. ANSI / IEC or polynomial.
+    - Add 61850-7-4 info.
+- Add type-casting factory function based on d, dU, cdcName, and dataNs.
+    - These add the correct types.
+- Add factory functions between standard Python types and IEC types (e.g. Timestamp and CalendarTime)
+- [DONE] Add aliases for JSON export that match to actual attribute naming (i.e. CamelCase instead of pythonic_naming)
+- (Stretch goal) Add Pythonic exceptions that can be caught by users based on comparisons, etc.
+
+## Usage of Pydantic
+
+Pydantic forms a foundation for this library, as IEC 61850-7-3 is a typed dataset.  Python is great
+because there is no typing.  However, it's also awful because there is no typing.  There is risk of
+interaction with implementations where these datatypes get misused without obeying the constraints
+expressed in the IEC standards.  As a result, py_iec61850_cdc enforces the typing, sizes, etc. using
+Pydantic.
+
+Catching validation errors in Python code using this library should follow Pydantic rules, such as:
+```
+try:
+    some_code()
+except ValidationError as exc:
+    print(repr(exc.errors()[0]['type']))
+```
+
+Some behaviors are implemented using Pydantic "after" model validation, such as:
+- appropriately updating point quality in response to exceeding configured ranges,
+- appropriately updating timestamps, or
+- appropriately updating mag based on instmag and db.
+
+For model export, aliases are defined using the CamelCase approach of IEC 61850, to allow it to interact
+with conformant services that are expecting the naming contained in IEC 61850.
