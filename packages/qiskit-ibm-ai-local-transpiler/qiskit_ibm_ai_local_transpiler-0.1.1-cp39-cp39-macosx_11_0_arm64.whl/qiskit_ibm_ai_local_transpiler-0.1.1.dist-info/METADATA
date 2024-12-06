@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: qiskit-ibm-ai-local-transpiler
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: qiskit >=1.2
+Requires-Dist: networkx ==2.8.5
+Requires-Dist: jsonschema ~=4.23
+Requires-Dist: pytest >=5.4.0 ; extra == 'testing'
+Requires-Dist: pytest-asyncio ; extra == 'testing'
+Requires-Dist: black ==24.1.0 ; extra == 'testing'
+Requires-Dist: black[jupyter] ==24.1.0 ; extra == 'testing'
+Provides-Extra: testing
+Summary: A local version of the AI Transpiler
+Author: David Kremer
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# AI Transpiler Local
+
+This package allows you to run a local version of the AI-powered transpiler passes.
+
+## Using the AI Transpiler locally
+
+Check out the related documentation in <https://docs.quantum.ibm.com/guides/ai-transpiler-passes>
+
