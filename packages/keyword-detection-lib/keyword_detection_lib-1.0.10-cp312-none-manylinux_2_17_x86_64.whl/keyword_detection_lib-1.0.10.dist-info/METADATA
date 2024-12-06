@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: keyword_detection_lib
+Version: 1.0.10
+Summary: Keyword detection library
+Home-page: https://github.com/frymanofer/PythonWakeWordPrivate
+Author: Davoice
+Author-email: info@Davoice.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.12.*
+Requires-Dist: numpy
+Requires-Dist: onnxruntime
+Requires-Dist: pyaudio
+Requires-Dist: pycryptodome
+Requires-Dist: setuptools
+
