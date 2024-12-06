@@ -1,0 +1,1384 @@
+
+# Cluster RBAC and IAM Analysis
+---
+
+**Cluster:** *integrationc2*
+
+**Reporting time:** *('2024-10-16 16:00:41 UTC',)*
+
+This report identifies all Deployments, StatefulSets and DaemonsSets present at time of
+reporting, that are running under a service account, and will report
+
+- which kubernetes roles or clusterroles are associated with these service accounts,
+- what Kubernetes permissions these roles grant
+- If the service accounts is associated with an AWS IAM role through an annotation, the
+  associated AWS IAM role and its permissions
+
+---
+
+
+## **Namespace big-monolith**
+
+
+### Deployment hunger-check-deployment
+#### **Runs Using Service Account: big-monolith-sa**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+---
+
+
+## **Namespace default**
+
+
+### DaemonSet falco
+#### **Runs Using Service Account: falco**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "c378d6eb-9e8c-426f-86d2-88a35dee48ee",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "falco",
+            "Role Permissions": "extensions,  - get, list, watch - nodes, namespaces, pods, replicationcontrollers, replicasets, services, daemonsets, deployments, events, configmaps",
+            "id": 0
+        },
+        {
+            "Role Name": "falco",
+            "Role Permissions": "apps - get, list, watch - daemonsets, deployments, replicasets, statefulsets",
+            "id": 1
+        },
+        {
+            "Role Name": "falco",
+            "Role Permissions": " get -",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment falco-falcosidekick
+#### **Runs Using Service Account: falco-falcosidekick**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment foobar1
+#### **Runs Using Service Account: foobar1-account**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "c5bbdac9-128c-49cc-b51c-75b6e016cd8c",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "foobar1-role-cluster",
+            "Role Permissions": "kopf.dev - list, watch, patch, get, create - clusterkopfpeerings, widgets",
+            "id": 0
+        },
+        {
+            "Role Name": "foobar1-role-cluster",
+            "Role Permissions": "apiextensions.k8s.io - list, watch, patch, get, create - customresourcedefinitions, widgets",
+            "id": 1
+        },
+        {
+            "Role Name": "foobar1-role-cluster",
+            "Role Permissions": " get, watch, list - namespaces, pods",
+            "id": 2
+        },
+        {
+            "Role Name": "foobar1-role-cluster",
+            "Role Permissions": "admissionregistration.k8s.io/v1, admissionregistration.k8s.io/v1beta1 - create, patch - validatingwebhookconfigurations, mutatingwebhookconfigurations",
+            "id": 3
+        },
+        {
+            "Role Name": "foobar1-role-cluster",
+            "Role Permissions": "kopf.dev - list, watch - kopfexamples",
+            "id": 4
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment frontend
+#### **Runs Using Service Account: frontend**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment nginx
+#### **Runs Using Service Account: nginx**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment payments
+#### **Runs Using Service Account: payments**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment postgres
+#### **Runs Using Service Account: postgres**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment products-api
+#### **Runs Using Service Account: products-api**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment public-api
+#### **Runs Using Service Account: public-api**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+---
+
+
+## **Namespace kube-system**
+
+
+### DaemonSet aws-node
+#### **Runs Using Service Account: aws-node**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "06abdf87-3d38-454e-86e5-8b461374fcdb",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "aws-node",
+            "Role Permissions": "crd.k8s.amazonaws.com - get, list, watch - eniconfigs",
+            "id": 0
+        },
+        {
+            "Role Name": "aws-node",
+            "Role Permissions": " list, watch, get - pods, namespaces",
+            "id": 1
+        },
+        {
+            "Role Name": "aws-node",
+            "Role Permissions": " list, watch, get, update - nodes",
+            "id": 2
+        },
+        {
+            "Role Name": "aws-node",
+            "Role Permissions": "extensions - list, watch - *",
+            "id": 3
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet csi-secrets-store-provider-aws
+#### **Runs Using Service Account: csi-secrets-store-provider-aws**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "5361fada-fbb7-4224-85e5-b13c2bfb7c0e",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "csi-secrets-store-provider-aws-cluster-role",
+            "Role Permissions": " create - serviceaccounts/token",
+            "id": 0
+        },
+        {
+            "Role Name": "csi-secrets-store-provider-aws-cluster-role",
+            "Role Permissions": " get - serviceaccounts",
+            "id": 1
+        },
+        {
+            "Role Name": "csi-secrets-store-provider-aws-cluster-role",
+            "Role Permissions": " get - pods",
+            "id": 2
+        },
+        {
+            "Role Name": "csi-secrets-store-provider-aws-cluster-role",
+            "Role Permissions": " get - nodes",
+            "id": 3
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet csi-secrets-store-secrets-store-csi-driver
+#### **Runs Using Service Account: secrets-store-csi-driver**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "f6f45156-1216-4cb6-a58f-088b6dc81589",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "secretprovidersyncing-role",
+            "Role Permissions": " create, delete, get, list, patch, update, watch - secrets",
+            "id": 0
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": " create, patch - events",
+            "id": 1
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": " get, list, watch - pods",
+            "id": 2
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": "secrets-store.csi.x-k8s.io - get, list, watch - secretproviderclasses",
+            "id": 3
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": "secrets-store.csi.x-k8s.io - create, delete, get, list, patch, update, watch - secretproviderclasspodstatuses",
+            "id": 4
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": "secrets-store.csi.x-k8s.io - get, patch, update - secretproviderclasspodstatuses/status",
+            "id": 5
+        },
+        {
+            "Role Name": "secretproviderclasses-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - csidrivers",
+            "id": 6
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet ebs-csi-node
+#### **Runs Using Service Account: ebs-csi-node-sa**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "84f0ee2f-f525-4fbf-92b7-f0bcb469178a",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": " get, patch - nodes",
+            "id": 0
+        },
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - volumeattachments",
+            "id": 1
+        },
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": "storage.k8s.io - get - csinodes",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet ebs-csi-node-windows
+#### **Runs Using Service Account: ebs-csi-node-sa**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "2e337d5a-c361-42cc-867d-0d9f33d49d83",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": " get, patch - nodes",
+            "id": 0
+        },
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - volumeattachments",
+            "id": 1
+        },
+        {
+            "Role Name": "ebs-csi-node-role",
+            "Role Permissions": "storage.k8s.io - get - csinodes",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet kube-proxy
+#### **Runs Using Service Account: kube-proxy**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "605c720f-e3c3-4b61-b98b-b6c1f7fd2a9b",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "system:node-proxier",
+            "Role Permissions": " list, watch - endpoints, services",
+            "id": 0
+        },
+        {
+            "Role Name": "system:node-proxier",
+            "Role Permissions": " get, list, watch - nodes",
+            "id": 1
+        },
+        {
+            "Role Name": "system:node-proxier",
+            "Role Permissions": "events.k8s.io - create, patch, update - events",
+            "id": 2
+        },
+        {
+            "Role Name": "system:node-proxier",
+            "Role Permissions": "discovery.k8s.io - list, watch - endpointslices",
+            "id": 3
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### DaemonSet tetragon
+#### **Runs Using Service Account: tetragon**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "a698f9be-13fe-40a6-baf7-080d7b60de70",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "tetragon",
+            "Role Permissions": " get, list, watch - pods, services",
+            "id": 0
+        },
+        {
+            "Role Name": "tetragon",
+            "Role Permissions": "cilium.io - get, list, watch - tracingpolicies, tracingpoliciesnamespaced",
+            "id": 1
+        },
+        {
+            "Role Name": "tetragon",
+            "Role Permissions": "apiextensions.k8s.io - get, list, watch - customresourcedefinitions",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment aws-load-balancer-controller
+#### **Runs Using Service Account: aws-load-balancer-controller**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "6b85e0a5-0e4f-42ba-8cd7-3e96c1fedbfd",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "elbv2.k8s.aws - create, delete, get, list, patch, update, watch - targetgroupbindings",
+            "id": 0
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "elbv2.k8s.aws - get, list, watch - ingressclassparams",
+            "id": 1
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": " create, patch - events",
+            "id": 2
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": " get, list, watch - pods",
+            "id": 3
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "networking.k8s.io - get, list, watch - ingressclasses",
+            "id": 4
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "extensions, networking.k8s.io - get, list, patch, update, watch - services, ingresses",
+            "id": 5
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": " get, list, watch - nodes, namespaces, endpoints",
+            "id": 6
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "elbv2.k8s.aws, extensions, networking.k8s.io - update, patch - targetgroupbindings/status, pods/status, services/status, ingresses/status",
+            "id": 7
+        },
+        {
+            "Role Name": "aws-load-balancer-controller-role",
+            "Role Permissions": "discovery.k8s.io - get, list, watch - endpointslices",
+            "id": 8
+        }
+    ]
+}
+```
+
+
+
+- AWS IAM roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "7d410c20-8e04-4a9c-9fb1-8a58def304c0",
+    "columns": [
+        {
+            "title": "Associated Iam Role",
+            "field": "Associated IAM Role"
+        },
+        {
+            "title": "Aws Role Permissions",
+            "field": "AWS Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - iam:CreateServiceLinkedRole on: *",
+            "id": 0
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:DescribeAccountAttributes, ec2:DescribeAddresses, ec2:DescribeAvailabilityZones, ec2:DescribeInternetGateways, ec2:DescribeVpcs, ec2:DescribeVpcPeeringConnections, ec2:DescribeSubnets, ec2:DescribeSecurityGroups, ec2:DescribeInstances, ec2:DescribeNetworkInterfaces, ec2:DescribeTags, ec2:GetCoipPoolUsage, ec2:DescribeCoipPools, elasticloadbalancing:DescribeLoadBalancers, elasticloadbalancing:DescribeLoadBalancerAttributes, elasticloadbalancing:DescribeListeners, elasticloadbalancing:DescribeListenerCertificates, elasticloadbalancing:DescribeSSLPolicies, elasticloadbalancing:DescribeRules, elasticloadbalancing:DescribeTargetGroups, elasticloadbalancing:DescribeTargetGroupAttributes, elasticloadbalancing:DescribeTargetHealth, elasticloadbalancing:DescribeTags on: *",
+            "id": 1
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - cognito-idp:DescribeUserPoolClient, acm:ListCertificates, acm:DescribeCertificate, iam:ListServerCertificates, iam:GetServerCertificate, waf-regional:GetWebACL, waf-regional:GetWebACLForResource, waf-regional:AssociateWebACL, waf-regional:DisassociateWebACL, wafv2:GetWebACL, wafv2:GetWebACLForResource, wafv2:AssociateWebACL, wafv2:DisassociateWebACL, shield:GetSubscriptionState, shield:DescribeProtection, shield:CreateProtection, shield:DeleteProtection on: *",
+            "id": 2
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:AuthorizeSecurityGroupIngress, ec2:RevokeSecurityGroupIngress on: *",
+            "id": 3
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:CreateSecurityGroup on: *",
+            "id": 4
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:CreateTags on: arn:aws:ec2:*:*:security-group/*",
+            "id": 5
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:CreateTags, ec2:DeleteTags on: arn:aws:ec2:*:*:security-group/*",
+            "id": 6
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - ec2:AuthorizeSecurityGroupIngress, ec2:RevokeSecurityGroupIngress, ec2:DeleteSecurityGroup on: *",
+            "id": 7
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:CreateLoadBalancer, elasticloadbalancing:CreateTargetGroup on: *",
+            "id": 8
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:CreateListener, elasticloadbalancing:DeleteListener, elasticloadbalancing:CreateRule, elasticloadbalancing:DeleteRule on: *",
+            "id": 9
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:AddTags, elasticloadbalancing:RemoveTags on: arn:aws:elasticloadbalancing:*:*:targetgroup/*/*, arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*, arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
+            "id": 10
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:AddTags, elasticloadbalancing:RemoveTags on: arn:aws:elasticloadbalancing:*:*:listener/net/*/*/*, arn:aws:elasticloadbalancing:*:*:listener/app/*/*/*, arn:aws:elasticloadbalancing:*:*:listener-rule/net/*/*/*, arn:aws:elasticloadbalancing:*:*:listener-rule/app/*/*/*",
+            "id": 11
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:AddTags on: arn:aws:elasticloadbalancing:*:*:targetgroup/*/*, arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*, arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
+            "id": 12
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:ModifyLoadBalancerAttributes, elasticloadbalancing:SetIpAddressType, elasticloadbalancing:SetSecurityGroups, elasticloadbalancing:SetSubnets, elasticloadbalancing:DeleteLoadBalancer, elasticloadbalancing:ModifyTargetGroup, elasticloadbalancing:ModifyTargetGroupAttributes, elasticloadbalancing:DeleteTargetGroup on: *",
+            "id": 13
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:RegisterTargets, elasticloadbalancing:DeregisterTargets on: arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
+            "id": 14
+        },
+        {
+            "Associated IAM Role": "AmazonEKSLoadBalancerControllerRole",
+            "AWS Role Permissions": "Allow - elasticloadbalancing:SetWebAcl, elasticloadbalancing:ModifyListener, elasticloadbalancing:AddListenerCertificates, elasticloadbalancing:RemoveListenerCertificates, elasticloadbalancing:ModifyRule on: *",
+            "id": 15
+        }
+    ]
+}
+```
+
+
+### Deployment coredns
+#### **Runs Using Service Account: coredns**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "e19f455b-1bf2-4bea-aec8-695661d2f8bd",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "system:coredns",
+            "Role Permissions": " list, watch - endpoints, services, pods, namespaces",
+            "id": 0
+        },
+        {
+            "Role Name": "system:coredns",
+            "Role Permissions": " get - nodes",
+            "id": 1
+        },
+        {
+            "Role Name": "system:coredns",
+            "Role Permissions": "discovery.k8s.io - list, watch - endpointslices",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment ebs-csi-controller
+#### **Runs Using Service Account: ebs-csi-controller-sa**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "18d96528-e7d5-49de-9c8a-4e01977d51ec",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "ebs-external-attacher-role",
+            "Role Permissions": " get, list, watch, update, patch - persistentvolumes",
+            "id": 0
+        },
+        {
+            "Role Name": "ebs-external-attacher-role",
+            "Role Permissions": " get, list, watch - nodes",
+            "id": 1
+        },
+        {
+            "Role Name": "ebs-external-attacher-role",
+            "Role Permissions": "csi.storage.k8s.io - get, list, watch - csinodeinfos",
+            "id": 2
+        },
+        {
+            "Role Name": "ebs-external-attacher-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch, update, patch - volumeattachments",
+            "id": 3
+        },
+        {
+            "Role Name": "ebs-external-attacher-role",
+            "Role Permissions": "storage.k8s.io - patch - volumeattachments/status",
+            "id": 4
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": " get, list, watch, create, patch, delete - persistentvolumes",
+            "id": 5
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": " get, list, watch, update - persistentvolumeclaims",
+            "id": 6
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - storageclasses",
+            "id": 7
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": " list, watch, create, update, patch - events",
+            "id": 8
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "snapshot.storage.k8s.io - get, list - volumesnapshots",
+            "id": 9
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "snapshot.storage.k8s.io - get, list - volumesnapshotcontents",
+            "id": 10
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - csinodes",
+            "id": 11
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": " get, list, watch - nodes",
+            "id": 12
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - volumeattachments",
+            "id": 13
+        },
+        {
+            "Role Name": "ebs-external-provisioner-role",
+            "Role Permissions": "storage.k8s.io - get - volumeattributesclasses",
+            "id": 14
+        },
+        {
+            "Role Name": "ebs-external-snapshotter-role",
+            "Role Permissions": " list, watch, create, update, patch - events",
+            "id": 15
+        },
+        {
+            "Role Name": "ebs-external-snapshotter-role",
+            "Role Permissions": "snapshot.storage.k8s.io - get, list, watch - volumesnapshotclasses",
+            "id": 16
+        },
+        {
+            "Role Name": "ebs-external-snapshotter-role",
+            "Role Permissions": "snapshot.storage.k8s.io - create, get, list, watch, update, delete, patch - volumesnapshotcontents",
+            "id": 17
+        },
+        {
+            "Role Name": "ebs-external-snapshotter-role",
+            "Role Permissions": "snapshot.storage.k8s.io - update, patch - volumesnapshotcontents/status",
+            "id": 18
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": " get, list, watch, update, patch - persistentvolumes",
+            "id": 19
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": " get, list, watch - persistentvolumeclaims",
+            "id": 20
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": " update, patch - persistentvolumeclaims/status",
+            "id": 21
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - storageclasses",
+            "id": 22
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": " list, watch, create, update, patch - events",
+            "id": 23
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": " get, list, watch - pods",
+            "id": 24
+        },
+        {
+            "Role Name": "ebs-external-resizer-role",
+            "Role Permissions": "storage.k8s.io - get, list, watch - volumeattributesclasses",
+            "id": 25
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment tetragon-operator
+#### **Runs Using Service Account: tetragon-operator-service-account**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "a93d8f7f-9ed7-4c26-9cc1-c92b458f46e1",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "tetragon-operator",
+            "Role Permissions": " get, list, watch - pods",
+            "id": 0
+        },
+        {
+            "Role Name": "tetragon-operator",
+            "Role Permissions": "cilium.io - create, delete, get, list, patch, update, watch - podinfo",
+            "id": 1
+        },
+        {
+            "Role Name": "tetragon-operator",
+            "Role Permissions": "apiextensions.k8s.io - create - customresourcedefinitions",
+            "id": 2
+        },
+        {
+            "Role Name": "tetragon-operator",
+            "Role Permissions": "apiextensions.k8s.io - update, get, list, watch - customresourcedefinitions",
+            "id": 3
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+---
+
+
+## **Namespace kubernetes-dashboard**
+
+
+### Deployment dashboard-metrics-scraper
+#### **Runs Using Service Account: kubernetes-dashboard**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "e9f2b014-6719-44b8-a88e-abec1d0738d2",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "kubernetes-dashboard",
+            "Role Permissions": "metrics.k8s.io - get, list, watch - pods, nodes",
+            "id": 0
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment kubernetes-dashboard
+#### **Runs Using Service Account: kubernetes-dashboard**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "6b194145-4359-4407-a100-44d81e80ea54",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "kubernetes-dashboard",
+            "Role Permissions": "metrics.k8s.io - get, list, watch - pods, nodes",
+            "id": 0
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+---
+
+
+## **Namespace opentelemetry-operator-system**
+
+
+### Deployment opentelemetry-operator-controller-manager
+#### **Runs Using Service Account: opentelemetry-operator-controller-manager**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "a16bc7e8-4963-4ae0-963d-b957a06c0825",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "opentelemetry-operator-proxy-role",
+            "Role Permissions": "authentication.k8s.io - create - tokenreviews",
+            "id": 0
+        },
+        {
+            "Role Name": "opentelemetry-operator-proxy-role",
+            "Role Permissions": "authorization.k8s.io - create - subjectaccessreviews",
+            "id": 1
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": " create, delete, get, list, patch, update, watch - configmaps, pods, serviceaccounts, services",
+            "id": 2
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": " create, patch - events",
+            "id": 3
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": " list, watch - namespaces",
+            "id": 4
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "apps - create, delete, get, list, patch, update, watch - daemonsets, deployments, statefulsets",
+            "id": 5
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "apps - get, list, watch - replicasets",
+            "id": 6
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "autoscaling - create, delete, get, list, patch, update, watch - horizontalpodautoscalers",
+            "id": 7
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "coordination.k8s.io - create, get, list, update - leases",
+            "id": 8
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "monitoring.coreos.com - create, delete, get, list, patch, update, watch - podmonitors, servicemonitors",
+            "id": 9
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "networking.k8s.io - create, delete, get, list, patch, update, watch - ingresses",
+            "id": 10
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - get, list, patch, update, watch - instrumentations",
+            "id": 11
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - create, delete, get, list, patch, update, watch - opampbridges",
+            "id": 12
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - update - opampbridges/finalizers",
+            "id": 13
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - get, patch, update - opampbridges/status",
+            "id": 14
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - get, list, patch, update, watch - opentelemetrycollectors",
+            "id": 15
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - get, patch, update - opentelemetrycollectors/finalizers",
+            "id": 16
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "opentelemetry.io - get, patch, update - opentelemetrycollectors/status",
+            "id": 17
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "policy - create, delete, get, list, patch, update, watch - poddisruptionbudgets",
+            "id": 18
+        },
+        {
+            "Role Name": "opentelemetry-operator-manager-role",
+            "Role Permissions": "route.openshift.io - create, delete, get, list, patch, update, watch - routes, routes/custom-host",
+            "id": 19
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+---
+
+
+## **Namespace spyderbat**
+
+
+### DaemonSet spyderbat-nanoagent
+#### **Runs Using Service Account: spyderbat-serviceaccount**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "6f9d388f-57b0-4623-89a7-73827127fd18",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "spyderbat-cluster-write",
+            "Role Permissions": "* - get, list, watch - *",
+            "id": 0
+        },
+        {
+            "Role Name": "spyderbat-cluster-write",
+            "Role Permissions": "* - delete, watch, get, list - pods",
+            "id": 1
+        },
+        {
+            "Role Name": "spyderbat-kspm",
+            "Role Permissions": "* - create, delete, watch, get, list - jobs",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### Deployment clustermonitor-deployment
+#### **Runs Using Service Account: spyderbat-serviceaccount**
+
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "324e777a-3110-4fb3-9e95-5e65bc56670a",
+    "columns": [
+        {
+            "title": "Role Name",
+            "field": "Role Name"
+        },
+        {
+            "title": "Role Permissions",
+            "field": "Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Role Name": "spyderbat-cluster-write",
+            "Role Permissions": "* - get, list, watch - *",
+            "id": 0
+        },
+        {
+            "Role Name": "spyderbat-cluster-write",
+            "Role Permissions": "* - delete, watch, get, list - pods",
+            "id": 1
+        },
+        {
+            "Role Name": "spyderbat-kspm",
+            "Role Permissions": "* - create, delete, watch, get, list - jobs",
+            "id": 2
+        }
+    ]
+}
+```
+
+
+
+- No AWS IAM roles are associated with this service account.
+
+
+### StatefulSet awsagent-testing-211125369423
+#### **Runs Using Service Account: aws-agent**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- AWS IAM roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "08536145-8854-4a2f-9239-f7946df874e4",
+    "columns": [
+        {
+            "title": "Associated Iam Role",
+            "field": "Associated IAM Role"
+        },
+        {
+            "title": "Aws Role Permissions",
+            "field": "AWS Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Associated IAM Role": "spyderbat-aws-agent-sender-role",
+            "AWS Role Permissions": "Allow - secretsmanager:GetSecretValue, secretsmanager:DescribeSecret on: arn:aws:secretsmanager:us-west-2:429857113775:secret:integration/aws-agent-secrets-Fqngkp",
+            "id": 0
+        },
+        {
+            "Associated IAM Role": "spyderbat-aws-agent-sender-role",
+            "AWS Role Permissions": "Allow - ec2:DescribeInstances on: *",
+            "id": 1
+        }
+    ]
+}
+```
+
+
+### StatefulSet awsagent-testing-429857113775
+#### **Runs Using Service Account: aws-agent**
+
+- No Kubernetes roles are associated with this service account.
+
+
+
+- AWS IAM roles associated with this service account, and the permissions they grant:
+```grid
+{
+    "id": "9849654b-b10b-4c35-9b39-6c0ff6e0092e",
+    "columns": [
+        {
+            "title": "Associated Iam Role",
+            "field": "Associated IAM Role"
+        },
+        {
+            "title": "Aws Role Permissions",
+            "field": "AWS Role Permissions"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "Associated IAM Role": "spyderbat-aws-agent-sender-role",
+            "AWS Role Permissions": "Allow - secretsmanager:GetSecretValue, secretsmanager:DescribeSecret on: arn:aws:secretsmanager:us-west-2:429857113775:secret:integration/aws-agent-secrets-Fqngkp",
+            "id": 0
+        },
+        {
+            "Associated IAM Role": "spyderbat-aws-agent-sender-role",
+            "AWS Role Permissions": "Allow - ec2:DescribeInstances on: *",
+            "id": 1
+        }
+    ]
+}
+```
+
+
+---
+

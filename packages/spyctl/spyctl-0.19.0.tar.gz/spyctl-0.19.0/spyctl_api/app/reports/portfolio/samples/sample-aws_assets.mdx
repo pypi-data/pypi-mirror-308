@@ -1,0 +1,1083 @@
+
+# AWS Assets Reports
+---
+**Reporting time:** *('2024-10-09 21:18:05 UTC',)*
+This report provides an overview of the AWS compute assets discovered in the AWS accounts
+we are collecting data from.
+
+## Account Overview and Spyderbat monitoring coverage
+The following table provides a summary overview of the number of EKS clusters and EC2 instances
+by AWS account and region, and whether they are under monitoring coverage by Spyderbat.
+
+```grid
+{
+    "id": "c4550176-3112-4304-b35f-d9496fb9d34e",
+    "columns": [
+        {
+            "title": "Aws Account Id",
+            "field": "AWS Account ID"
+        },
+        {
+            "title": "Resource Type",
+            "field": "Resource Type"
+        },
+        {
+            "title": "Total",
+            "field": "Total"
+        },
+        {
+            "title": "Monitored",
+            "field": "Monitored"
+        },
+        {
+            "title": "Coverage",
+            "field": "Coverage"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "AWS Account ID": "211125369423",
+            "Resource Type": "EC2 Instances",
+            "Total": 22,
+            "Monitored": 9,
+            "Coverage": "41%",
+            "id": 0
+        },
+        {
+            "AWS Account ID": "211125369423",
+            "Resource Type": "EKS Clusters",
+            "Total": 5,
+            "Monitored": 3,
+            "Coverage": "60%",
+            "id": 1
+        },
+        {
+            "AWS Account ID": "429857113775",
+            "Resource Type": "EC2 Instances",
+            "Total": 47,
+            "Monitored": 7,
+            "Coverage": "15%",
+            "id": 2
+        },
+        {
+            "AWS Account ID": "429857113775",
+            "Resource Type": "EKS Clusters",
+            "Total": 4,
+            "Monitored": 1,
+            "Coverage": "25%",
+            "id": 3
+        }
+    ]
+}
+```
+
+## EKS Cluster Overview
+You can find more detail regarding the individual EKS clusters discovered and their monitoring coverage
+in the following table.
+```grid
+{
+    "id": "75e25a52-0418-4ce2-a9c0-8016183ac3f0",
+    "columns": [
+        {
+            "title": "Aws Account Id",
+            "field": "aws_account_id"
+        },
+        {
+            "title": "Region",
+            "field": "region"
+        },
+        {
+            "title": "Monitored",
+            "field": "monitored"
+        },
+        {
+            "title": "Name",
+            "field": "name"
+        },
+        {
+            "title": "Version",
+            "field": "version"
+        },
+        {
+            "title": "Cluster Status",
+            "field": "cluster_status"
+        },
+        {
+            "title": "Nr Nodegroups",
+            "field": "Nr Nodegroups"
+        },
+        {
+            "title": "Min Nodes",
+            "field": "Min Nodes"
+        },
+        {
+            "title": "Max Nodes",
+            "field": "Max Nodes"
+        },
+        {
+            "title": "Desired Nodes",
+            "field": "Desired Nodes"
+        },
+        {
+            "title": "Instance Types",
+            "field": "Instance Types"
+        },
+        {
+            "title": "Ami Types",
+            "field": "AMI Types"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "edge-k8s",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 2,
+            "Min Nodes": 2,
+            "Max Nodes": 2,
+            "Desired Nodes": 2,
+            "Instance Types": "m6g.large, c7g.2xlarge",
+            "AMI Types": "AL2_ARM_64",
+            "id": 0
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "scrumptious-mushroom-1721066845",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 1
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-devops",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 2
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-prod",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 3
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc3",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 4
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "int-k8s",
+            "version": "1.29",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 4,
+            "Min Nodes": 4,
+            "Max Nodes": 4,
+            "Desired Nodes": 4,
+            "Instance Types": "c7g.2xlarge, c5.2xlarge, c5a.2xlarge, c5ad.2xlarge, c5d.2xlarge, c6a.2xlarge, c6i.2xlarge, c6id.2xlarge, c6in.2xlarge, c7a.2xlarge, c7i.2xlarge, inf1.2xlarge, m7g.xlarge",
+            "AMI Types": "AL2_ARM_64, AL2_x86_64_GPU",
+            "id": 5
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "productionc1",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 6
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "security-evaluator-cluster",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 1,
+            "Min Nodes": 1,
+            "Max Nodes": 1,
+            "Desired Nodes": 1,
+            "Instance Types": "m5.large",
+            "AMI Types": "AL2_x86_64",
+            "id": 7
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1",
+            "version": "1.30",
+            "cluster_status": "ACTIVE",
+            "Nr Nodegroups": 2,
+            "Min Nodes": 2,
+            "Max Nodes": 2,
+            "Desired Nodes": 2,
+            "Instance Types": "m5.large",
+            "AMI Types": "BOTTLEROCKET_x86_64, AL2_x86_64",
+            "id": 8
+        }
+    ]
+}
+```
+
+## EC2 Instance Overview
+You can find more detail regarding the individual EC2 instances discovered and their monitoring coverage
+in the following table.
+
+```grid
+{
+    "id": "0ab31fa0-ff96-4af5-81aa-a429527367bd",
+    "columns": [
+        {
+            "title": "Aws Account Id",
+            "field": "aws_account_id"
+        },
+        {
+            "title": "Region",
+            "field": "region"
+        },
+        {
+            "title": "Monitored",
+            "field": "monitored"
+        },
+        {
+            "title": "Name",
+            "field": "name"
+        },
+        {
+            "title": "Instance Id",
+            "field": "instance_id"
+        },
+        {
+            "title": "Instancetype",
+            "field": "InstanceType"
+        },
+        {
+            "title": "Corecount",
+            "field": "CoreCount"
+        },
+        {
+            "title": "Architecture",
+            "field": "Architecture"
+        }
+    ],
+    "options": {
+        "rowspanning": true
+    },
+    "data": [
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "chickenbat-monitored-bc",
+            "instance_id": "i-09c047c546a482617",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 0
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "clock_instance",
+            "instance_id": "i-0b628d4d3ee48dcc6",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 1
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "edge-k8s-cast-162d48e3",
+            "instance_id": "i-0c39f2b046ab6da9f",
+            "InstanceType": "c6g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 2
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "edge-k8s-cast-c3cec210",
+            "instance_id": "i-0110462a1264cfc86",
+            "InstanceType": "m6g.xlarge",
+            "CoreCount": 4,
+            "Architecture": "arm64",
+            "id": 3
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_api",
+            "instance_id": "i-05cdee2648517b93c",
+            "InstanceType": "t4g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 4
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_api",
+            "instance_id": "i-09c556567fccb0d36",
+            "InstanceType": "t4g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 5
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_infra",
+            "instance_id": "i-0d7ca889884f2cb52",
+            "InstanceType": "t4g.small",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 6
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "kubecon-demo-netcat",
+            "instance_id": "i-06b313cb5d42c95ef",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 7
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "ruhika-instance",
+            "instance_id": "i-0d1670cd10bb1c32e",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 8
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "scrumptious-mushroom-1721066845-ng-fe91b9e9-Node",
+            "instance_id": "i-028fdcf567f5a2353",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 9
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "scrumptious-mushroom-1721066845-ng-fe91b9e9-Node",
+            "instance_id": "i-03469fe80cf92455c",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 10
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-east-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-deploy",
+            "instance_id": "i-0fffdd343a848bc6e",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 11
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "No",
+            "name": "Brent's Dev Box",
+            "instance_id": "i-0ef659bc6f63fc119",
+            "InstanceType": "t2.2xlarge",
+            "CoreCount": 8,
+            "Architecture": "x86_64",
+            "id": 12
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "bastion-box",
+            "instance_id": "i-0585b6bb707327622",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 13
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-devops-devops-nodes-Node",
+            "instance_id": "i-019d9cd23b4ba097c",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 14
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-devops-devops-nodes-Node",
+            "instance_id": "i-0b5018b8246f997bb",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 15
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-prod-prod-nodes-Node",
+            "instance_id": "i-073ba58bc873801a4",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 16
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-1",
+            "monitored": "Yes",
+            "name": "kubecon-demo-23-prod-prod-nodes-Node",
+            "instance_id": "i-0b8adb0913e07db9b",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 17
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "brent's test machine",
+            "instance_id": "i-036e26f8bf0631b95",
+            "InstanceType": "t3.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 18
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc3-intcluster3-Node",
+            "instance_id": "i-036407c65cb120596",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 19
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc3-intcluster3-Node",
+            "instance_id": "i-055096be19dad997c",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 20
+        },
+        {
+            "aws_account_id": "211125369423",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc3-intcluster3-Node",
+            "instance_id": "i-08202c853d64a3dc9",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 21
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "CloudTrail Forwarder",
+            "instance_id": "i-0acf9befaebe32c49",
+            "InstanceType": "t2.nano",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 22
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "ISN CO-RE Test",
+            "instance_id": "i-026fc562d817c33ce",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 23
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "ISN Core BUILD",
+            "instance_id": "i-0c0cd3df6babf4714",
+            "InstanceType": "t2.xlarge",
+            "CoreCount": 4,
+            "Architecture": "x86_64",
+            "id": 24
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "IntegrationTestRunner",
+            "instance_id": "i-0bedd66c65d497d0f",
+            "InstanceType": "t2.small",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 25
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "Jasons e2e runner test",
+            "instance_id": "i-001b7175339bcc286",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 26
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "Kyle's BPF instance",
+            "instance_id": "i-080c818eb559c9ebe",
+            "InstanceType": "t2.large",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 27
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "Kyle's Falco Test",
+            "instance_id": "i-077d4b042380d62fa",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 28
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "Microk8stest 3",
+            "instance_id": "i-0089ea3c32cb16459",
+            "InstanceType": "t2.large",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 29
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "Test Ubuntu 20",
+            "instance_id": "i-0a3122b14ec784bdb",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 30
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "beau-express",
+            "instance_id": "i-0a6516a34e20da835",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 31
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "brents_test_machine",
+            "instance_id": "i-00cb983b86db90a31",
+            "InstanceType": "c6g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 32
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "brian_mopcop_tester",
+            "instance_id": "i-0f281db6dde916123",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 33
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "buildmachine",
+            "instance_id": "i-0a299ff43c0679f9c",
+            "InstanceType": "t3a.2xlarge",
+            "CoreCount": 4,
+            "Architecture": "x86_64",
+            "id": 34
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "buildmachine_arm64",
+            "instance_id": "i-0af75ac1b6b3796de",
+            "InstanceType": "c7g.2xlarge",
+            "CoreCount": 8,
+            "Architecture": "arm64",
+            "id": 35
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "clear-container-logs",
+            "instance_id": "i-0e982dac1cd07b622",
+            "InstanceType": "t2.small",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 36
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_analytics_professional",
+            "instance_id": "i-018890be140c2126d",
+            "InstanceType": "m6i.2xlarge",
+            "CoreCount": 4,
+            "Architecture": "x86_64",
+            "id": 37
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_api",
+            "instance_id": "i-0c9800f74c2af00d3",
+            "InstanceType": "t4g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 38
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_api",
+            "instance_id": "i-0f0beb85594788412",
+            "InstanceType": "t4g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 39
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_infra",
+            "instance_id": "i-08eebfbb08d713c6f",
+            "InstanceType": "t4g.small",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 40
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_orc",
+            "instance_id": "i-0dd27efd2cad84805",
+            "InstanceType": "t4g.medium",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 41
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_orc",
+            "instance_id": "i-0e169261f8bcefc2b",
+            "InstanceType": "t4g.medium",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 42
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_pa3_professional_s100s101",
+            "instance_id": "i-0ea5cc04135e252ef",
+            "InstanceType": "m6g.2xlarge",
+            "CoreCount": 8,
+            "Architecture": "arm64",
+            "id": 43
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "i_s3_query_worker",
+            "instance_id": "i-04e0ae78a3a755624",
+            "InstanceType": "t4g.xlarge",
+            "CoreCount": 4,
+            "Architecture": "arm64",
+            "id": 44
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "int-k8s-cast-1dac475f",
+            "instance_id": "i-0403a7ecda4ad8ce3",
+            "InstanceType": "i3.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 45
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "int-k8s-cast-43ebe2b6",
+            "instance_id": "i-08136af494c8ca353",
+            "InstanceType": "m6g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 46
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "int-k8s-cast-b08bf04e",
+            "instance_id": "i-01c282685c8418273",
+            "InstanceType": "m6g.large",
+            "CoreCount": 2,
+            "Architecture": "arm64",
+            "id": 47
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "int-k8s-cast-e20920a4",
+            "instance_id": "i-0c0c097fa7b350500",
+            "InstanceType": "r6g.xlarge",
+            "CoreCount": 4,
+            "Architecture": "arm64",
+            "id": 48
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "integration.kit.s3worker",
+            "instance_id": "i-00e7423925125fe6f",
+            "InstanceType": "t2.small",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 49
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "jasontest",
+            "instance_id": "i-00606b9ad4760a817",
+            "InstanceType": "t2.micro",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 50
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "mkfifo-instance",
+            "instance_id": "i-0fb27ff06e82a1752",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 51
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "proxy_test_view",
+            "instance_id": "i-06f476e48a218f1ac",
+            "InstanceType": "t2.small",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 52
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "static-pod-test",
+            "instance_id": "i-00ac5e0772c0f20dd",
+            "InstanceType": "t2.large",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 53
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "static-ruhika-99",
+            "instance_id": "i-0227e26229f995482",
+            "InstanceType": "t2.large",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 54
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-east-1",
+            "monitored": "No",
+            "name": "t_analytics",
+            "instance_id": "i-0e00dcca08d8d2408",
+            "InstanceType": "m6g.xlarge",
+            "CoreCount": 4,
+            "Architecture": "arm64",
+            "id": 55
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "RancherForTestClusters",
+            "instance_id": "i-0b2ea3a6c93d0e403",
+            "InstanceType": "c5.xlarge",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 56
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "productionc1-prodc1nodes-Node",
+            "instance_id": "i-0422e84b86453d4df",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 57
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "productionc1-prodc1nodes-Node",
+            "instance_id": "i-0920b688238edb968",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 58
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "productionc1-prodc1nodes-Node",
+            "instance_id": "i-0932acda4e1310cd5",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 59
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "security-evaluator-cluster-sec-eval-nodes-Node",
+            "instance_id": "i-0192e97242e5bcc05",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 60
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "No",
+            "name": "security-evaluator-cluster-sec-eval-nodes-Node",
+            "instance_id": "i-0d7cab2333a3e33b5",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 61
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "Microk8s Test",
+            "instance_id": "i-08ddc98315f34c32d",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 62
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "bastion_box",
+            "instance_id": "i-0372d16311d93b8ff",
+            "InstanceType": "t2.medium",
+            "CoreCount": 2,
+            "Architecture": "x86_64",
+            "id": 63
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1-bottlerocket-nodegroup-Node",
+            "instance_id": "i-0a03a9c6c20afab68",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 64
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1-bottlerocket-nodegroup-Node",
+            "instance_id": "i-0d6ed63a24ad09aea",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 65
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1-integrationc1nodes2-Node",
+            "instance_id": "i-0717423e548619fb5",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 66
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1-integrationc1nodes2-Node",
+            "instance_id": "i-0b7ab987dfede0fa2",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 67
+        },
+        {
+            "aws_account_id": "429857113775",
+            "region": "us-west-2",
+            "monitored": "Yes",
+            "name": "integrationc1-integrationc1nodes2-Node",
+            "instance_id": "i-0be4d4ac9de5a5b28",
+            "InstanceType": "m5.large",
+            "CoreCount": 1,
+            "Architecture": "x86_64",
+            "id": 68
+        }
+    ]
+}
+```
+

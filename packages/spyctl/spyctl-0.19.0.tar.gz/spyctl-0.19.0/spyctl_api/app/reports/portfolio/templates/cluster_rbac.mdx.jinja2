@@ -1,0 +1,49 @@
+{% if error %}
+### An error was encountered while generating the report
+{{ error.message }}
+
+{% else %}
+# Cluster RBAC and IAM Analysis
+---
+
+**Cluster:** *{{ cluster_name }}*
+
+**Reporting time:** *{{ time }}*
+
+This report identifies all Deployments, StatefulSets and DaemonsSets present at time of
+reporting, that are running under a service account, and will report
+
+- which kubernetes roles or clusterroles are associated with these service accounts,
+- what Kubernetes permissions these roles grant
+- If the service accounts is associated with an AWS IAM role through an annotation, the
+  associated AWS IAM role and its permissions
+
+---
+{% for namespace in resources %}
+
+## **Namespace {{ namespace.namespace }}**
+
+{% for resource in namespace.data %}
+### {{ resource.kind }} {{ resource.name }}
+#### **Runs Using Service Account: {{ resource.service_account }}**
+{% if resource.has_k8s_role %}
+- Kubernetes roles associated with this service account, and the permissions they grant:
+```grid
+{{ resource.k8s_rbac_grid }}
+```
+{% else %}
+- No Kubernetes roles are associated with this service account.
+{% endif %}
+
+{% if resource.has_aws_role %}
+- AWS IAM roles associated with this service account, and the permissions they grant:
+```grid
+{{ resource.aws_rbac_grid }}
+```
+{% else %}
+- No AWS IAM roles are associated with this service account.
+{% endif %}
+{% endfor %}
+---
+{% endfor %}
+{% endif %}

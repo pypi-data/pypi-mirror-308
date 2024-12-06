@@ -1,0 +1,35 @@
+{% if error %}
+### An error was encountered while generating the report
+{{ error.message }}
+
+{% else %}
+# AWS Assets Reports
+---
+**Reporting time:** *{{ time }}*
+This report provides an overview of the AWS compute assets discovered in the AWS accounts
+we are collecting data from.
+
+## Account Overview and Spyderbat monitoring coverage
+The following table provides a summary overview of the number of EKS clusters and EC2 instances
+by AWS account and region, and whether they are under monitoring coverage by Spyderbat.
+
+```grid
+{{ coverage_grid }}
+```
+
+## EKS Cluster Overview
+You can find more detail regarding the individual EKS clusters discovered and their monitoring coverage
+in the following table.
+```grid
+{{ cluster_summary_grid }}
+```
+
+## EC2 Instance Overview
+You can find more detail regarding the individual EC2 instances discovered and their monitoring coverage
+in the following table.
+
+```grid
+{{ instance_summary_grid }}
+```
+
+{% endif %}

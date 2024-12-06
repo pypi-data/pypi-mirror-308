@@ -1,0 +1,32 @@
+{% if error %}
+### An error was encountered while generating the report
+{{ error.message }}
+
+{% else %}
+# Linux CUPS Vulnerability Assessment report
+---
+**Reporting Time:** *{{ time }}
+
+This report assesses your Linux systems for the CUPS Linux RCE vulnerability
+as described in this [blog post](https://www.evilsocket.net/2024/09/26/Attacking-UNIX-systems-via-CUPS-Part-I/).
+
+
+{% if impacted %}
+We have found the following processes running the vulnerable CUPS service:
+
+```grid
+{{ impacted_procs_grid }}
+```
+
+The following are the machines on which these processes run.
+```grid
+{{ impacted_machines_grid }}
+```
+We recommend fully disabling the CUPS service on these machines to mitigate the vulnerability as described in the blog post.
+
+{% else %}
+
+Good news. No processes associated with the CUPS vulnerability were found on the systems monitored by Spyderbat.
+{% endif %}
+
+{% endif %}
