@@ -1,0 +1,2 @@
+[console_scripts]
+fnet-import-parser = cli.index:main

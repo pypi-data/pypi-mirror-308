@@ -1,0 +1,191 @@
+Metadata-Version: 2.1
+Name: fnet-import-parser
+Version: 0.0.3
+Summary: A Python dependency analyzer for import parsing and metadata extraction.
+Home-page: https://gitlab.com/fnetai/py-import-parser
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: stdlib-list
+Requires-Dist: pyyaml
+
+### README.md
+
+# fnet-import-parser
+
+`fnet-import-parser` is a powerful Python dependency analyzer that parses `import` statements, extracts metadata, and provides insights into your project's dependencies. It supports detecting unused imports, resolving circular dependencies, and exporting results in structured formats like JSON or YAML.
+
+---
+
+## Features
+
+- **Dependency Analysis**: Identifies and categorizes built-in, third-party, and local dependencies.
+- **Unused Import Detection**: Highlights unused imports for cleanup.
+- **Metadata Extraction**: Extracts metadata hints from comments above import statements.
+- **Circular Dependency Detection**: Warns about circular dependencies in the analyzed files.
+- **Flexible Output Formats**: Provides results in both JSON and YAML formats.
+
+---
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install fnet-import-parser
+```
+
+---
+
+## Usage
+
+### Command-Line Interface (CLI)
+
+The tool provides a CLI for analyzing Python files.
+
+#### Basic Usage
+
+```bash
+fnet-import-parser --entry_file path/to/your_script.py --output_format json
+```
+
+#### Options
+- `--entry_file`: The entry point Python file for analysis (required).
+- `--output_format`: The format for the results (`json` or `yaml`).
+
+---
+
+### Example
+
+#### Input Script: `example.py`
+
+```python
+import os
+import sys
+# @hint: requests (channel=pypi)
+import requests
+from mymodule import myfunc
+```
+
+#### Running the Command
+
+```bash
+fnet-import-parser --entry_file example.py --output_format json
+```
+
+#### Output (JSON)
+
+```json
+{
+  "all": [
+    {
+      "type": "builtin",
+      "path": "os",
+      "imported_by": [
+        {
+          "path": "example.py",
+          "used": true,
+          "line": 1
+        }
+      ]
+    },
+    {
+      "type": "builtin",
+      "path": "sys",
+      "imported_by": [
+        {
+          "path": "example.py",
+          "used": true,
+          "line": 2
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "path": "requests",
+      "imported_by": [
+        {
+          "path": "example.py",
+          "used": true,
+          "line": 3
+        }
+      ],
+      "metadata": {
+        "package": "requests",
+        "channel": "pypi"
+      }
+    },
+    {
+      "type": "local",
+      "path": "mymodule",
+      "imported_by": [
+        {
+          "path": "example.py",
+          "used": true,
+          "line": 4
+        }
+      ]
+    }
+  ],
+  "unreferenced": [],
+  "unnecessary": [],
+  "required": {
+    "builtin": [
+      {
+        "type": "builtin",
+        "path": "os"
+      },
+      {
+        "type": "builtin",
+        "path": "sys"
+      }
+    ],
+    "third-party": [
+      {
+        "type": "package",
+        "path": "requests",
+        "metadata": {
+          "package": "requests",
+          "channel": "pypi"
+        }
+      }
+    ],
+    "local": [
+      {
+        "type": "local",
+        "path": "mymodule"
+      }
+    ]
+  }
+}
+```
+
+---
+
+### Python API
+
+You can also use `fnet-import-parser` programmatically in your Python projects.
+
+#### Example
+
+```python
+from src.index import default
+
+kwargs = {
+    "entry_file": "path/to/your_script.py",
+    "output_format": "yaml"
+}
+result = default(**kwargs)
+print(result)
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+This README provides a complete, concise, and user-friendly introduction to your project, ensuring anyone can easily understand and get started with it. 🚀
