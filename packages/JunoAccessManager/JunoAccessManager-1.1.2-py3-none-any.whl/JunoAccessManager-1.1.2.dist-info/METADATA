@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: JunoAccessManager
+Version: 1.1.2
+Summary: 租户接入
+Author: Yuhui.Wang
+Author-email: wangyuhui341@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backports.tarfile
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: docutils
+Requires-Dist: idna
+Requires-Dist: importlib-metadata
+Requires-Dist: jaraco.classes
+Requires-Dist: jaraco.context
+Requires-Dist: jaraco.functools
+Requires-Dist: keyring
+Requires-Dist: markdown-it-py
+Requires-Dist: mdurl
+Requires-Dist: more-itertools
+Requires-Dist: nh3
+Requires-Dist: pkginfo
+Requires-Dist: pulsar-client
+Requires-Dist: Pygments
+Requires-Dist: pywin32-ctypes
+Requires-Dist: readme-renderer
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: rfc3986
+Requires-Dist: rich
+Requires-Dist: twine
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: zipp
+
+JunoAccess
+==========
+## 项目概述
+JunoAccessManager，也就是数翰智联管理工具，是浙江数翰科技有限公司开发的一款针对国产工业物联网关的现场自控数据读写、记录与跟踪系统的Pulsar连接管理工具。
+
+## 版本
+0.0.1
+
+## 前期准备
+要求系统部署的目标服务器与Pulsar消息队列服务所在服务器处于同一网段的内网中。
+
+## 部署流程
+### 1. 所需环境
+* Python 3.11 +
+
+### 2. 安装 JunoAccess
+```shell
+$ cd JunoAccessManager
+$ pip install -r ./requirements.txt
+```
