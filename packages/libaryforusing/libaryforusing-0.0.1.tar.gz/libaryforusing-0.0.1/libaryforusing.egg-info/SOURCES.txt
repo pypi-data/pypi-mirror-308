@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+PyLib/__init__.py
+PyLib/base.py
+libaryforusing.egg-info/PKG-INFO
+libaryforusing.egg-info/SOURCES.txt
+libaryforusing.egg-info/dependency_links.txt
+libaryforusing.egg-info/top_level.txt
