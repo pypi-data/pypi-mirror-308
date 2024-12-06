@@ -1,0 +1,13 @@
+README.md
+setup.py
+ml_convertor_free.egg-info/PKG-INFO
+ml_convertor_free.egg-info/SOURCES.txt
+ml_convertor_free.egg-info/dependency_links.txt
+ml_convertor_free.egg-info/entry_points.txt
+ml_convertor_free.egg-info/requires.txt
+ml_convertor_free.egg-info/top_level.txt
+src/__init__.py
+src/checker.py
+src/convertor.py
+src/main.py
+src/winOffeceInstaller.py
