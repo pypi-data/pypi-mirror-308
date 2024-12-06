@@ -1,0 +1,8 @@
+setup.py
+FlexLogger.egg-info/PKG-INFO
+FlexLogger.egg-info/SOURCES.txt
+FlexLogger.egg-info/dependency_links.txt
+FlexLogger.egg-info/requires.txt
+FlexLogger.egg-info/top_level.txt
+Log/Log.py
+Log/__init__.py
