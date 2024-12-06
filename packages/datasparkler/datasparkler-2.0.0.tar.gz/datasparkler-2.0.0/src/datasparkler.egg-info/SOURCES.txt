@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/datasparkler.egg-info/PKG-INFO
+src/datasparkler.egg-info/SOURCES.txt
+src/datasparkler.egg-info/dependency_links.txt
+src/datasparkler.egg-info/top_level.txt
+src/datasparkler/src/__init__.py
+src/datasparkler/src/main.py
+src/datasparkler/src/my_data_import_lib.py
+src/datasparkler/src/my_data_preprocessing_lib.py
+src/datasparkler/src/my_data_saving_lib.py
+src/datasparkler/src/my_visualization_lib.py
+src/datasparkler/tests/test_data_import.py
+src/datasparkler/tests/test_data_preprocessing.py
+src/datasparkler/tests/test_data_visualization.py
