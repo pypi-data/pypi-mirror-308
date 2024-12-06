@@ -1,0 +1,15 @@
+__init__.py,sha256=QYcY1CA2uWwugRvlskXdIbg1xp2YpOrE9IyWnX1nDd8,33
+_version.py,sha256=acuR_XSJzp4OrQ5T8-Ac5gYe48mUwObuwjRmisFmZ7k,22
+exchange.py,sha256=yU7PycwqjnYUzVMMLgFmt-Fs9At2L1yf6Ya5L3tk4RQ,1458
+venrate.py,sha256=dhliLlQ4n9_xjSQuJkRIgUDcpndNFHeMWNPw1C_e7ho,1870
+platforms/__init__.py,sha256=QYcY1CA2uWwugRvlskXdIbg1xp2YpOrE9IyWnX1nDd8,33
+platforms/bcv.py,sha256=rL3R_QzhV9GzGc4SFMASwketZtWDeI2spht3hqSePk0,5559
+platforms/binance.py,sha256=EyZg2lW15JGXPfDJ2tSQQYnG5OhAs0dgsIwNjnOlAzY,2858
+platforms/monitordolar.py,sha256=Srb_zt9gvWYa47F6NrLz2L449-_9YFfHQanecMU4eUo,3630
+platforms/yadio.py,sha256=RTmMN0Uxv9pejthmrfih-RDOfRU2MNwBD_1kosQlEsU,1753
+venrate-1.0.4.dist-info/COPYING,sha256=-JHhLXXB2RRUeojKiRRTDHyJ1QiOCtrDfwbahUOb6Yc,35150
+venrate-1.0.4.dist-info/LICENSE,sha256=R3sH5LETJ4kpCwVrl7kIt8FGLUAzgA--elGqux623HM,691
+venrate-1.0.4.dist-info/METADATA,sha256=BsWNCpyBZeN2SXYzVHVi_0a4rB_G8Ffh5jZtgO8QQcY,5218
+venrate-1.0.4.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+venrate-1.0.4.dist-info/top_level.txt,sha256=XBVgMPV5hOmzqQKTmRQrT18Qo3jO1e2xS6JgGZfVW9M,45
+venrate-1.0.4.dist-info/RECORD,,
