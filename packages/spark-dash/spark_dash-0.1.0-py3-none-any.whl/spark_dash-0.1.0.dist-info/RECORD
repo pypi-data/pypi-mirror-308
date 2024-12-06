@@ -1,0 +1,12 @@
+spark_dash/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spark_dash/cmd.py,sha256=IoDFxDcJoaANAXrbV8vVMnqbV0BUyntI5_nXT028jEQ,111
+spark_dash/config.ini,sha256=H-ETMktFbmOM4zP2G47jIi_Rk3qHXbQdNoJzoEP-ZuM,71
+spark_dash/main.py,sha256=YvFa953NWws2VJ0s0UHy5vwatybj2vq27uUsDtMVu3g,2704
+spark_dash/utils.py,sha256=NzZq42S_NM7tNif8yzDRtOXVeOuNpqPLr9uIHZGRM8I,4326
+spark_dash/pages/scale_log.py,sha256=_SwDCQbJyFVJaG9UxVcY0RtFQ3598IF232NM-bjQr1U,1040
+spark_dash/pages/usage_log.py,sha256=Qn5QNY2RoSUf5i7JXM-m4Bfm330dwfaTh-vOSr95e1I,833
+spark_dash-0.1.0.dist-info/METADATA,sha256=KO-SVukdGUL6sBfHGDfkLAOTvO7V8VSmZ3pE6lO6LuY,2457
+spark_dash-0.1.0.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+spark_dash-0.1.0.dist-info/entry_points.txt,sha256=PnK4USGiO5q4yWHWqS7FBJ-pq2ztZcSjDZtHtTxnrcM,53
+spark_dash-0.1.0.dist-info/top_level.txt,sha256=SMLH-QbBDGJUTURB_irdugEBAwJCmm08CL_jX_yL8Ko,11
+spark_dash-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+run-dashboard = spark_dash.cmd:run
