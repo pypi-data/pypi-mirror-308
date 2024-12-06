@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ci-cd-tool"
+version = "0.1.0"
+description = "A CI/CD command line tool."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+cc = "src.ci_cd_tool.cli:main"  # main 함수가 포함된 경로로 수정 필요
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
