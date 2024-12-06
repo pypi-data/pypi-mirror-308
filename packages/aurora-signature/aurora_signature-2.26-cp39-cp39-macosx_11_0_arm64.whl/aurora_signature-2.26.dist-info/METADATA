@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aurora_signature
+Version: 2.26
+Requires-Python: >=3.6
+Requires-Dist: asn1crypto
+Requires-Dist: uritools
+Requires-Dist: oscrypto
+Requires-Dist: tzlocal
+Requires-Dist: pycryptodome
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: cryptography==41.0.5
+Requires-Dist: pytz
+
