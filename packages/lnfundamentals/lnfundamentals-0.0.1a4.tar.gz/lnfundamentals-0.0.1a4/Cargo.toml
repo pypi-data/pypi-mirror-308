@@ -1,0 +1,4 @@
+[workspace]
+members = ["fundamentals", "ffi/ffi-fundamentals"]
+
+resolver = "2"
