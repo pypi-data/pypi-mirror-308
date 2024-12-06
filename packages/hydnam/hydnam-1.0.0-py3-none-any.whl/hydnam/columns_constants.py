@@ -1,0 +1,6 @@
+TIME_SERIES = 'TimeSeries'
+TEMPERATURES = 'Temperatures'
+PRECIPITATIONS = 'Precipitations'
+EVAPOTRANSPIRATIONS = 'Evapotranspirations'
+DISCHARGES = 'Discharges'
+INTERVAL = 'Interval'
