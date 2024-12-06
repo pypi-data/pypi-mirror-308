@@ -1,0 +1,123 @@
+import os
+from datetime import date, datetime
+from pathlib import Path
+from typing import TYPE_CHECKING, Literal, Optional
+from uuid import uuid4
+
+from jinja2 import Template
+from nbformat import NotebookNode, writes
+from pydantic import DirectoryPath, Field, field_validator
+
+from nbprint.config.base import BaseModel, Role
+
+if TYPE_CHECKING:
+    from .config import Configuration
+
+__all__ = ("Outputs", "NBConvertOutputs")
+
+
+class Outputs(BaseModel):
+    path_root: DirectoryPath = Field(default=Path.cwd())
+    naming: str = Field(default="{{name}}-{{date}}")
+
+    tags: list[str] = Field(default=["nbprint:outputs"])
+    role: Role = Role.OUTPUTS
+    ignore: bool = True
+
+    @field_validator("path_root", mode="before")
+    @classmethod
+    def convert_str_to_path(cls, v) -> Path:
+        if isinstance(v, str):
+            v = Path(v)
+        if isinstance(v, Path):
+            v.resolve().mkdir(parents=True, exist_ok=True)
+            return v
+        raise TypeError
+
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.path_root = self.path_root.resolve()
+        self.path_root.mkdir(parents=True, exist_ok=True)
+
+    def _get_name(self, config: "Configuration") -> str:
+        return config.name
+
+    def _get_date(self, **_) -> str:
+        return date.today().isoformat()
+
+    def _get_datetime(self, **_) -> str:
+        return datetime.now().isoformat()
+
+    def _get_uuid(self, **_) -> str:
+        return uuid4()
+
+    def _get_sha(self, config: "Configuration") -> str:
+        import hashlib
+
+        return hashlib.sha256(config.model_dump_json(by_alias=True).encode()).hexdigest()
+
+    def run(self, config: "Configuration", gen: NotebookNode) -> Path:
+        # create file or folder path
+        name = Template(self.naming).render(
+            name=self._get_name(config=config),
+            date=self._get_date(config=config),
+            datetime=self._get_datetime(config=config),
+            uuid=self._get_uuid(config=config),
+            sha=self._get_sha(config=config),
+        )
+        file = Path(str(Path(self.path_root).resolve() / f"{name}.ipynb"))
+        file.write_text(writes(gen))
+        return file
+
+    def generate(self, metadata: dict, config: "Configuration", parent: BaseModel, **kwargs) -> NotebookNode:
+        return super().generate(metadata=metadata, config=config, parent=parent, attr="outputs", **kwargs)
+
+
+class NBConvertOutputs(Outputs):
+    target: Optional[Literal["ipynb", "html", "pdf", "webpdf"]] = "html"  # TODO: nbconvert types
+    execute: Optional[bool] = True
+    timeout: Optional[int] = 600
+    template: Optional[str] = "nbprint"
+
+    @field_validator("target", mode="before")
+    @classmethod
+    def validate_target(cls, v) -> str:
+        if v is None:
+            return "html"
+        if v == "pdf":
+            return "webpdf"
+        return v
+
+    def run(self, config: "Configuration", gen: NotebookNode) -> Path:
+        from nbconvert.nbconvertapp import main as execute_nbconvert
+
+        # set for convenience
+        os.environ["PSP_JUPYTER_HTML_EXPORT"] = "1"
+
+        # run the nbconvert
+        notebook = super().run(config=config, gen=gen)
+
+        cmd = [
+            str(notebook),
+            f"--to={self.target}",
+            f"--template={self.template}",
+        ]
+
+        if self.execute:
+            cmd.extend(
+                [
+                    "--execute",
+                    f"--ExecutePreprocessor.timeout={self.timeout}",
+                ]
+            )
+
+        execute_nbconvert(cmd)
+        return Path(str(notebook).replace(".ipynb", f".{self.target}"))
+
+
+# class PapermillOutputs(NBConvertOutputs):
+#     def run(self, config: "Configuration", gen: NotebookNode) -> Path:
+#         from nbconvert.nbconvertapp import main
+
+#         notebook = super().run(config=config, gen=gen)
+#         main([notebook, f"--to={self.target}", f"--template={self.template}", "--execute"])
