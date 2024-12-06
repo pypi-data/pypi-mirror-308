@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: diskstat
+Version: 0.1.5
+Summary: Visualize your disk free space without Windows Explorer
+Project-URL: Homepage, https://github.com/soda92/diskstat
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyside6 >=6.8.0.1
+Requires-Dist: pywin32 >=308
+
+# diskstat
+
+Visualize your disk free space without Windows Explorer.
+
+## Screenshots
+<img src="https://raw.githubusercontent.com/soda92/diskstat/refs/heads/main/image.png" alt="demo" style="width:400px;"/>
+
+## Features
+
+Red bar when free space is lower than 10% (Same as Windows Explorer).
+
+System tray for easy reopen.
+
+Use `Ctrl + R` to refresh (reopen will also refresh automatically).
+
