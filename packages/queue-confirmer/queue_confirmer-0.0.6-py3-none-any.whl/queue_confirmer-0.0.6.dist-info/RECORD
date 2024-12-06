@@ -1,0 +1,12 @@
+libname/__init__.py,sha256=7Q8KLIZs8YlmdtyzfrZwiVEMMGf_FsSgjZuQ1s_LQS8,79
+libname/client.py,sha256=huKrHyaD_DlnZxA-9rWaBwb0LTXjdD-OIo9XHaI7pcA,1247
+libname/server.py,sha256=4DcV3O83OBS0MSNa8WLb5NXppIBPS90dSAuaLbm9Ko4,1033
+queueconfirmer/__init__.py,sha256=NnBAGMbw3IHdcXOckJ8hSefrNMVgqOyQzTJFj0srT7g,81
+queueconfirmer/client.py,sha256=out52cX7T0ny067G_CM5fEP-PajM2EWRz7pPuSOByHU,1343
+queueconfirmer/server.py,sha256=4DcV3O83OBS0MSNa8WLb5NXppIBPS90dSAuaLbm9Ko4,1033
+venv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venv/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+queue_confirmer-0.0.6.dist-info/METADATA,sha256=Nq_6JTYgFzGxsIpWAUFgVqmpTJbt8oNeoR8FjwMhSag,1373
+queue_confirmer-0.0.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+queue_confirmer-0.0.6.dist-info/top_level.txt,sha256=XwvHw46dfXJXdyL3nt_uaFyOwn2-QgGdgMED3zsVL5M,20
+queue_confirmer-0.0.6.dist-info/RECORD,,
