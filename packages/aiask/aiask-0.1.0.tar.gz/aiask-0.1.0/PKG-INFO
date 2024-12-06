@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: aiask
+Version: 0.1.0
+Summary: AIAsk is an intelligent AI assistant that leverages AI to enhance your daily life.
+Author-email: curry tang <twn39@163.com>
+Requires-Python: >=3.10
+Requires-Dist: langchain-openai>=0.2.8
+Requires-Dist: langchain>=0.3.7
+Requires-Dist: llama-index-llms-openai>=0.2.16
+Requires-Dist: llama-index-llms-openrouter>=0.2.1
+Requires-Dist: llama-index>=0.11.23
+Requires-Dist: openai>=1.54.4
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer[all]>=0.13.0
+Description-Content-Type: text/markdown
+
+# aiask
+
+Describe your project here.
