@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dh_test_package_cli
+Version: 0.1.1
+Summary: A short description of the package
+Home-page: https://github.com/yourusername/my_package
+Author: sample name
+Author-email: ds2000434@protonmail.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+cli
