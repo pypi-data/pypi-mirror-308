@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=3Z_3D9S3LeNBgys0Z05_2hnfNOYVcHirmHThYbF4F8s,163
+LICENSE,sha256=2HewbRAKjX4PcXepCznuUmYXLEblkV3SHBx77rPjQ1A,1481
+qm_saas/__init__.py,sha256=Kccmk--j1pkC71Mz7fOdgWk-cWV2dzS-FzjGf-p1czI,204
+qm_saas/api.py,sha256=utM-uJ_aHqMVCKKt4AmRdSPu-_oG-gpaGUvGLkKC4cA,3435
+qm_saas/client.py,sha256=Xoy4gL8i32Pt7mPE4NPz6rTJTNXgDdIBH5dG55E6sWw,9715
+qm_saas-1.1.1.dist-info/LICENSE,sha256=2HewbRAKjX4PcXepCznuUmYXLEblkV3SHBx77rPjQ1A,1481
+qm_saas-1.1.1.dist-info/METADATA,sha256=B-KVrnSOnmns_jAb--pSFGr2l7JbSteqO1H9sZwWvn8,1115
+qm_saas-1.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+qm_saas-1.1.1.dist-info/RECORD,,
