@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: aocs_lab
+Version: 0.0.1
+Summary: A small example package
+Author-email: wz <wzhmwz@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+执行特定模块
+
+```
+python -m gyro.gyro
+```
