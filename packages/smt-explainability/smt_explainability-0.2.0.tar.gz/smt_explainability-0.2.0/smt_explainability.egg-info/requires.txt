@@ -1,0 +1,2 @@
+smt>=2.8.0
+smt-design-space-ext>=0.3.0

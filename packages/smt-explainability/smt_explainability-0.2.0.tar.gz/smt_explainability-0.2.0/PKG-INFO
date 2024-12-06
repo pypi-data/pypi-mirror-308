@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: smt-explainability
+Version: 0.2.0
+Author: Daffa Robani et al.
+Author-email: robani.daffa@gmail.com
+Maintainer: Paul Saves
+Maintainer-email: paul.saves@onera.fr
+License: BSD-3
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: smt>=2.8.0
+Requires-Dist: smt-design-space-ext>=0.3.0
