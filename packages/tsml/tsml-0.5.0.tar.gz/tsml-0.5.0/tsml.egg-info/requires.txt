@@ -1,0 +1,32 @@
+numba<0.61.0,>=0.55.0
+numpy<2.2.0,>=1.21.0
+scipy<1.14.0,>=1.9.0
+pandas<2.3.0,>=1.5.3
+scikit-learn<1.4.0,>=1.0.0
+packaging>=20.0
+
+[all_extras]
+grailts
+scikit-fda>=0.7.0
+statsmodels>=0.12.1
+stumpy>=1.6.0
+wildboar
+
+[dev]
+pre-commit
+pytest
+pytest-randomly
+pytest-timeout
+pytest-xdist[psutil]
+pytest-cov
+pytest-rerunfailures
+
+[unstable_extras]
+pycatch22
+
+[unstable_extras:platform_system == "Linux" and python_version < "3.12"]
+mrsqm>=0.0.7
+mrseql<0.1.0,>=0.0.4
+
+[unstable_extras:python_version < "3.12"]
+pyfftw>=0.12.0
