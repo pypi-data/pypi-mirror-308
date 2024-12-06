@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: docketanalyzer
+Version: 0.2.7
+Home-page: https://github.com/docketanalyzer/docketanalyzer
+Author: Nathan Dahlberg
+License-File: LICENSE
+Requires-Dist: awscli
+Requires-Dist: bs4
+Requires-Dist: click
+Requires-Dist: elasticsearch
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: peewee
+Requires-Dist: psycopg2-binary
+Requires-Dist: python-dotenv
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: simplejson
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: twine
+Provides-Extra: all
+Requires-Dist: accelerate; extra == "all"
+Requires-Dist: openai; extra == "all"
+Requires-Dist: torch; extra == "all"
+Requires-Dist: sentencepiece; extra == "all"
+Requires-Dist: groq; extra == "all"
+Requires-Dist: cohere; extra == "all"
+Requires-Dist: scikit-learn; extra == "all"
+Requires-Dist: pdfplumber; extra == "all"
+Requires-Dist: pytesseract; extra == "all"
+Requires-Dist: tensorboard; extra == "all"
+Requires-Dist: anthropic; extra == "all"
+Requires-Dist: python-magic; extra == "all"
+Requires-Dist: tiktoken; extra == "all"
+Requires-Dist: datasets; extra == "all"
+Requires-Dist: docketanalyzer; extra == "all"
+Requires-Dist: juriscraper; extra == "all"
+Requires-Dist: transformers; extra == "all"
+Provides-Extra: chat
+Requires-Dist: anthropic; extra == "chat"
+Requires-Dist: cohere; extra == "chat"
+Requires-Dist: docketanalyzer; extra == "chat"
+Requires-Dist: groq; extra == "chat"
+Requires-Dist: openai; extra == "chat"
+Requires-Dist: tiktoken; extra == "chat"
+Provides-Extra: flp
+Requires-Dist: juriscraper; extra == "flp"
+Provides-Extra: ocr
+Requires-Dist: pdfplumber; extra == "ocr"
+Requires-Dist: pytesseract; extra == "ocr"
+Requires-Dist: python-magic; extra == "ocr"
+Provides-Extra: pipelines
+Requires-Dist: accelerate; extra == "pipelines"
+Requires-Dist: datasets; extra == "pipelines"
+Requires-Dist: docketanalyzer; extra == "pipelines"
+Requires-Dist: scikit-learn; extra == "pipelines"
+Requires-Dist: sentencepiece; extra == "pipelines"
+Requires-Dist: tensorboard; extra == "pipelines"
+Requires-Dist: torch; extra == "pipelines"
+Requires-Dist: transformers; extra == "pipelines"
+
