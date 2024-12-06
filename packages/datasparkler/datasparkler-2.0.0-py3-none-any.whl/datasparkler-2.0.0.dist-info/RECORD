@@ -1,0 +1,14 @@
+datasparkler/src/__init__.py,sha256=eYTG0iK4kI9RR_ehYVSt_At-g3bwBLRLQGJVstame18,145
+datasparkler/src/main.py,sha256=VyXJeh3v7Ini-NRp2yD86F5B4uMC8DwfxxkPFFHx250,1539
+datasparkler/src/my_data_import_lib.py,sha256=fGoI6IlIHGKaxK-dvajr0M3BUKEPsXe8t_v5ZWDbo-I,1553
+datasparkler/src/my_data_preprocessing_lib.py,sha256=djyl9gtozrOLc6vWaOzWX5jd5SroDUpwN2x6eXasZE0,5233
+datasparkler/src/my_data_saving_lib.py,sha256=1FHBPWhEMHTeRwwSyP_aUkABh913neJet7Cg8kq5fjU,925
+datasparkler/src/my_visualization_lib.py,sha256=HGsFrNfAywm3ZUGazwELVl5lV6T5tOchtFg66GXuwFE,1502
+datasparkler/tests/test_data_import.py,sha256=jhfYGBz8SAntItNndETBeOFv780K69Cdm57Wcx0CiaU,1193
+datasparkler/tests/test_data_preprocessing.py,sha256=PfOn1oPl8Q2bf6F7Y5bPbosRjgm7YSjeEV6in40MiSg,1467
+datasparkler/tests/test_data_visualization.py,sha256=37v3KVfEyLYI8ZEq5hNoGYMZ4rSJ2Dp6fM7oRg5hxvU,1168
+datasparkler-2.0.0.dist-info/LICENSE,sha256=pKGpg06-lbhVwMmY6shYfw1wdYT52vJoYkCnWc11hXE,1052
+datasparkler-2.0.0.dist-info/METADATA,sha256=LLYu9kcCWL0pP6XR3xHHUMwDeirzfGQwYBPxy7UgrZE,4422
+datasparkler-2.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+datasparkler-2.0.0.dist-info/top_level.txt,sha256=JojBoXiGmphei31b2KXfCNv8LWyUDLnZz3m6yy_pTdE,13
+datasparkler-2.0.0.dist-info/RECORD,,
