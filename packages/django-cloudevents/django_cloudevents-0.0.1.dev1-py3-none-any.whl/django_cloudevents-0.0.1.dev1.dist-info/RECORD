@@ -1,0 +1,7 @@
+django_cloudevents/__init__.py,sha256=y1nMJnOy9IUJ8Ib09xfK8Whsx7Sy68Y6_phNQdpcViY,128
+django_cloudevents/urls.py,sha256=IpfebPRIfLNWWOmLjw0N_glQ7pN2lzDcHLoXUxQSmsk,161
+django_cloudevents/views.py,sha256=iE3J6ZSl8BsZWJT_xa---IhimpjRLb8LnJmtpcrbcv4,1644
+django_cloudevents-0.0.1.dev1.dist-info/METADATA,sha256=_RLJyeHiTEW_YQDTI0bkTdtrsWTTns4sD2k3G9Art_o,1706
+django_cloudevents-0.0.1.dev1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+django_cloudevents-0.0.1.dev1.dist-info/licenses/LICENSE.txt,sha256=o1RNnLgn-ale4TkWNgcvhDVSEGcX8qhQj8fK-4yOlXQ,1111
+django_cloudevents-0.0.1.dev1.dist-info/RECORD,,
