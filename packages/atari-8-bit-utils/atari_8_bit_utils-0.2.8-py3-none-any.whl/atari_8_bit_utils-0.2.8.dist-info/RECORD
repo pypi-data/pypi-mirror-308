@@ -1,0 +1,12 @@
+atari_8_bit_utils/__about__.py,sha256=G6Dbxq2ws-1ZAXwDD8q0KWueYtso_Y6Uyvtj8sRWsPI,22
+atari_8_bit_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atari_8_bit_utils/a8utils.py,sha256=mZWCzHlPY0ZTMW75pMHTa8piQc7-QQLXbgI89qVCRto,3433
+atari_8_bit_utils/atascii.py,sha256=X8ogPaeQrJP8yy7Un-RbUuWidg2i6QVOOjnFX2fUAgM,5520
+atari_8_bit_utils/behavior.py,sha256=6e9dd61DSQoBGofqwCr6x7C_j-xaAkq197zN6IazKt4,3196
+atari_8_bit_utils/sync.py,sha256=iPN8JGQlHOxONtc7Pmotf-DltIRVezcPbA02lpFf9mQ,9199
+atari_8_bit_utils/tree.py,sha256=k4T-iQsvxUbIgnwMU4qSVANrHDycjsMgw2qxswg92q0,1781
+atari_8_bit_utils-0.2.8.dist-info/METADATA,sha256=Lf792BVNkB0UghPRUwjtdLCIwbIT1u5Dc0FHY8LcmTs,4459
+atari_8_bit_utils-0.2.8.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+atari_8_bit_utils-0.2.8.dist-info/entry_points.txt,sha256=vqjUeR8sx2zQZkarKvdTyxApanTD_qVdUGD1xLO6p_I,58
+atari_8_bit_utils-0.2.8.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+atari_8_bit_utils-0.2.8.dist-info/RECORD,,
