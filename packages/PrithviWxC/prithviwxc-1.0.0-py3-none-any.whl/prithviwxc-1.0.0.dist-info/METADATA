@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: PrithviWxC
+Version: 1.0.0
+Summary: Prithvi-WxC - Weather and climate foundational model.
+Author: Johannes Schmude, Daniel Salles Civitarese, Sujit Roy, Shraddha Singh, Johannes Jakubik, Julian Kuehnert
+Author-email: Will Torjak <w.trojak@ibm.com>
+Requires-Python: >=3.10
+Requires-Dist: h5py ~= 3.3
+Requires-Dist: numpy ~= 1.26
+Requires-Dist: pandas
+Requires-Dist: torch >= 2.2
+Requires-Dist: huggingface_hub >= 0.25 ; extra == "examples"
+Requires-Dist: notebook ~= 7.2 ; extra == "examples"
+Requires-Dist: matplotlib >= 3.8 ; extra == "examples"
+Requires-Dist: pyyaml ~= 6.0 ; extra == "examples"
+Provides-Extra: examples

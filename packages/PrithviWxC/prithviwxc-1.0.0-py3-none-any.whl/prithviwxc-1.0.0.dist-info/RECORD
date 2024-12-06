@@ -1,0 +1,9 @@
+PrithviWxC/__init__.py,sha256=cB2wIeAt3mIqDpUokKMXXaM61lj_GPB_jXjHzfqmzAY,164
+PrithviWxC/model.py,sha256=thtZ6Oey_TJGrU3ssj-WeuFxaPZ71c1s9TI80VN4T2U,44750
+PrithviWxC/rollout.py,sha256=3Anv-WDuWUUdwqR1kIa9sYYdNj90rZTGg9clmzzhXcU,1336
+PrithviWxC/dataloaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PrithviWxC/dataloaders/merra2.py,sha256=wLuiO-6--SEh6sk4K1Zr6SnX9sKJyMtkKln_ogGggS4,38948
+PrithviWxC/dataloaders/merra2_rollout.py,sha256=jQLKpPgBhvBbbWVdEaMseAJVYidCNFc3qv-mpunKO4s,17650
+prithviwxc-1.0.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+prithviwxc-1.0.0.dist-info/METADATA,sha256=sLBwPtwLmP0ID5maXDL6nqq2rQl-NDh2QaSQdgfjgl4,650
+prithviwxc-1.0.0.dist-info/RECORD,,
