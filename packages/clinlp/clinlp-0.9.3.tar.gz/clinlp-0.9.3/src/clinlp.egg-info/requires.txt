@@ -1,0 +1,13 @@
+intervaltree~=3.1
+makefun~=1.15
+numpy~=2.0
+pandas~=2.2
+pydantic~=2.6
+spacy~=3.8
+
+[metrics]
+nervaluate==0.1.8
+scikit-learn~=1.5
+
+[transformers]
+transformers[torch]~=4.30
