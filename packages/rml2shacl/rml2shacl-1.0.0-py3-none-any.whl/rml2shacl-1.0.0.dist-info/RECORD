@@ -1,0 +1,11 @@
+rml2shacl/RML.py,sha256=5Tn1sDNXxS8UDU_e2y_o7wbgmI0tU7ztci509Fx866s,11565
+rml2shacl/RMLtoShacl.py,sha256=smRexa90R6nNA0szOt0_jXHSsJ6kZLVCPO6GSa2cZBQ,9508
+rml2shacl/SHACL.py,sha256=_zOk4lz2YCOnFVGWbUaoF4UB3X6pdSxayB2-fucW32c,933
+rml2shacl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rml2shacl/__main__.py,sha256=G1ZHbD_-WZQiW1OSBYRLOGLwWQAd0gWYA2vvJodRy9M,1223
+rml2shacl/rml_model.py,sha256=5n0OTkbE51d-D-B1Zh79wCDMMHBTbMnAuyqeynXpg8o,2375
+rml2shacl/visualize.py,sha256=ffPhNUsaH3pvP0ZPV0kE92dTsLpgYLbuXXk7Z8mdNwg,2312
+rml2shacl-1.0.0.dist-info/LICENSE,sha256=w-AA1zqmWv3to0IPAAFmnWRKALtDBYEa8Hh8HCUmR1I,1083
+rml2shacl-1.0.0.dist-info/METADATA,sha256=RlWjLZMrKyg7FfhlRrjw1smOx3bs4mc27K-5_8b1cC8,1624
+rml2shacl-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+rml2shacl-1.0.0.dist-info/RECORD,,
