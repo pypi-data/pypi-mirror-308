@@ -1,0 +1,5 @@
+nixos_schema/__init__.py,sha256=KqtjTF5cB1HKHp1NAZ2UywIQlXFZ8q76H3h0hBoTqZ8,54
+nixos_schema-0.1.dist-info/METADATA,sha256=ZmNPBtrOyQ1utea4cN1HchJ7RQWa5v4W-1MQwS-lOEc,535
+nixos_schema-0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+nixos_schema-0.1.dist-info/top_level.txt,sha256=SPaEwR-mFFY5rn8c0h7N4w9rFB0b2TGQQ7Mv3_I8Cps,13
+nixos_schema-0.1.dist-info/RECORD,,
