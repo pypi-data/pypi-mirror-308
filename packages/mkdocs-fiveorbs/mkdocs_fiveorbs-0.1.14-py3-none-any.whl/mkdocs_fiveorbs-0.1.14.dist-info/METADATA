@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mkdocs-fiveorbs
+Version: 0.1.14
+Summary: Default mkdocs theme for FiveOrbs projects
+Home-page: https://github.com/fiveorbs/mkdocs-theme
+Author: ebene fünf GmbH
+Author-email: fiveorbs@ebenefuenf.de
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: mkdocs >=1.6
+Requires-Dist: mkdocs-macros-plugin >=0.7
+Requires-Dist: pymdown-extensions >=10.3
+
+FiveOrbs MkDocs Theme
+=====================
+
+This is a theme for MkDocs which is mainly used for the documentation of
+[FiveOrbs](https://fiveorbs.dev) projects 
+
+## Installation
+
+Install the package from PyPi using `pip`:
+
+    pip install mkdocs-fiveorbs
+
+Add the theme to your `mkdocs.yml` file:
+
+    theme:
+        name: fiveorbs
+
+## Development server
+
+    mkdocs serve -w theme   
+
+## Styles
+
+Install Dart Sass via `npm install -g sass`. During develompment:
+
+    sass --watch styles:theme
+
+## Deploy to PyPi
+
+Install `uv` if not already done. Bump version number in
+`setup.py`, then:
+
+    git tag -a X.X.X -m "Release Version X.X.X"
+    git push origin vX.X.X
+    sass --style=compressed --no-source-map styles:theme
+    uv build
+    uv publish --username <user> --token <token> # or uv-publish with .pypirc
