@@ -1,0 +1,10 @@
+pyPCoA/__init__.py,sha256=wopLvZ9zHX959mTa1F7QKYByKWjVcWkc7WJzI51R87k,36
+pyPCoA/core.py,sha256=dheRqU8f77ZtEfZ-v5ChFm56JqMuf-ndtz1tQSo1ym4,4420
+pyPCoA/data/PCoA_BrayCurtis_R.csv,sha256=QYZ8FpTgsorkbukKl3AU981N4xfhX90B81um6TjwysU,721
+pyPCoA/data/sample_data.csv,sha256=3vmUKXP815OHi0lryZ9kpKskTuG46Rkse9KCjf55-zE,68690
+pyPCoA-0.1.4.1.dist-info/LICENSE,sha256=d6TmqvRK8I3_m1jzFpOE8MowIdxQhU52mJ_GEGomXRc,1065
+pyPCoA-0.1.4.1.dist-info/METADATA,sha256=cQjJioqztzEOmEPi_a3MNBJmT8dvK2hIbuHbb9s24Sk,2212
+pyPCoA-0.1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyPCoA-0.1.4.1.dist-info/entry_points.txt,sha256=SGgmfpfBwTqsxkaFbnoUSF4-7HrdjqGlZE34rDNZTbQ,44
+pyPCoA-0.1.4.1.dist-info/top_level.txt,sha256=ZNWZJWlpqCLcLoo6xOcJOp1wX45s2TZ1cw0nfIM6JWM,7
+pyPCoA-0.1.4.1.dist-info/RECORD,,
