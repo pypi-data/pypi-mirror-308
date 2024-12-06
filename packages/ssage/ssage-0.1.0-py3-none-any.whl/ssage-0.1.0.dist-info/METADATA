@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ssage
+Version: 0.1.0
+Summary: Super-Simple AGE - A wrapper around python age (actually good encryption)
+Author-email: Adam Hlavacek <git@adamhlavacek.com>
+Project-URL: Homepage, https://github.com/esoadamo/ssage
+Project-URL: Issues, https://github.com/esoadamo/ssage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: age ==0.5.1
+
+# Super-Simple AGE
+
+A wrapper around the [age](https://pypi.org/project/age/) encryption library that makes it easier to use.
+Age stands for Actually Good Encryption, and is a modern encryption library that is easy to use and secure.
+
+## Code Example
+
+```python
+from ssage import SSAGE
+e = SSAGE(SSAGE.generate_private_key())
+encrypted = e.encrypt('Hello, world!')
+print(encrypted)
+decrypted = e.decrypt(encrypted)
+print(decrypted)
+assert decrypted == 'Hello, world!'
+print('Test passed!')
+```
