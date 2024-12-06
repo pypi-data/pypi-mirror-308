@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nlip-server"
+version = "0.1.0"
+description = ""
+authors = ["Dinesh Verma <dverma@us.ibm.com>", "Abhay Ratnaparkhi <abhay.ratnaparkhi1@ibm.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.4"
+nlip-sdk = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
