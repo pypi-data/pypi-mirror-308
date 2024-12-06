@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: athena-pysdk
+Version: 0.1.4
+Summary: athena python sdk
+Home-page: UNKNOWN
+Author: Bwl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: starlette-context (==0.3.6)
+Requires-Dist: pinpointPy (==1.2.0)
+
+UNKNOWN
+
