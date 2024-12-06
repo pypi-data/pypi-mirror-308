@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+
+[build-docs]
+Sphinx
+pydata-sphinx-theme
+jupytext
+myst_nb
+myst_parser
+
+[test]
+pytest
+scipy
+h5py
+anndata
