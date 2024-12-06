@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/avar/__init__.py
+src/avar/avar.py
+src/avar.egg-info/PKG-INFO
+src/avar.egg-info/SOURCES.txt
+src/avar.egg-info/dependency_links.txt
+src/avar.egg-info/requires.txt
+src/avar.egg-info/top_level.txt
+src/avar/examples/eg_basic_five.py
+src/avar/examples/eg_two_fogms.py

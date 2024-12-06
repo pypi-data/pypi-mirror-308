@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avar"
+version = "0.1.4"
+description = "Allan variance tools"
+readme = "README.md"
+authors = [
+    {name = "David Woodburn", email = "david.woodburn@icloud.com"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/davidwoodburn/avar"
+"Bug Tracker" = "https://gitlab.com/davidwoodburn/avar/-/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
