@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: spottedPy
+Version: 0.1.1
+Summary: Spatial hotspot analysis
+Download-URL: https://github.com/secrierlab/SpottedPy/archive/refs/tags/0.1.1.zip
+Author: E. Withnell
+Author-email: eloise.withnell.20@ucl.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE

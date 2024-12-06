@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spottedPy.egg-info/PKG-INFO
+spottedPy.egg-info/SOURCES.txt
+spottedPy.egg-info/dependency_links.txt
+spottedPy.egg-info/requires.txt
+spottedPy.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+scanpy
+libpysal
+esda
+numpy
+pandas
+squidpy
+matplotlib
+seaborn
+tqdm
+scikit-learn
+statsmodels
