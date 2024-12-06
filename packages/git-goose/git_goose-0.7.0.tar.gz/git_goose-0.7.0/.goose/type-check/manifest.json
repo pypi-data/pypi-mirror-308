@@ -1,0 +1,1 @@
+{"source_ecosystem":{"language":"python","version":"3.13"},"source_dependencies":["identify","mypy","pydantic","pytest","rich","typer","types-pyyaml"],"lock_files":[{"path":"requirements.txt","checksum":"sha256:8e214311d6b90cdc4d7337d7e3960b1a2b9a53cfe38a919bea9b1cd8bc0c9600"}],"checksum":"sha256:980aac2f200513d9791028f9f13e3650b535a285d210317b2edd94fcb22d0966"}

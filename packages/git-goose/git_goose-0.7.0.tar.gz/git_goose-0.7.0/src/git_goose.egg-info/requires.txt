@@ -1,0 +1,17 @@
+uv
+pydantic
+PyYAML
+nodeenv
+identify
+typer
+rich
+shellingham
+
+[docs]
+mkdocs
+mike
+mkdocs-material
+markdown-include
+
+[test]
+pytest
