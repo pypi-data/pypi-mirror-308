@@ -1,0 +1,17 @@
+z3c.recipe.i18n-2.1-py3.11-nspkg.pth,sha256=JXMxbvV4meo6FFgpdBBbxgx8m2foNt4geHAidesQPpY,988
+z3c/recipe/i18n/README.rst,sha256=Lrn5IWvnTg-_iirCw5eMJzzqhjOvMAyO4mlvj3xiZD8,4557
+z3c/recipe/i18n/__init__.py,sha256=P3dP1WvPKbWkkqmzLJmd7Ks3btsucQCPtfrqoYSRLdA,17
+z3c/recipe/i18n/i18n.py,sha256=rIDz4mba4CntHH8v6fNjDnQod0JIx1wu9x8kYD5Q_wI,6851
+z3c/recipe/i18n/i18ncompile.py,sha256=2iGl7MWBhi4DxhKyLHqN9dyBAXMcPBOXFhqBHJ4Vud4,2711
+z3c/recipe/i18n/i18nextract.py,sha256=CBIqwwMoo-igv7xe1ZLyMdmqlNCXFzSfSwcDw35BqiE,7158
+z3c/recipe/i18n/i18nmergeall.py,sha256=9o2FK6okCFW0woaoj1Re-bRtu-Ae7Sumd-O8rkQFTdI,2858
+z3c/recipe/i18n/i18nstats.py,sha256=OQ8m4GlD3rxyGODiHxoMNFMLVUMHL5XIm_5Pzo4HET4,5038
+z3c/recipe/i18n/testing.zcml,sha256=Gl-C8EabVZI3PuW6jFyh704R6cBNR0qHfidp56YQJIw,25
+z3c/recipe/i18n/tests.py,sha256=MRWxkLkGT68IkMCWWTjmck3dGR_CmRkscKuzoVa3Ktg,2611
+z3c.recipe.i18n-2.1.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.recipe.i18n-2.1.dist-info/METADATA,sha256=MK8Dffi6_e7APNIFtvcDe0l0JPLG397CyvAA5eoVnuQ,10382
+z3c.recipe.i18n-2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+z3c.recipe.i18n-2.1.dist-info/entry_points.txt,sha256=SSJuJ870SmwdOUjKULJhyvsmeK31d6WJ6JM0DvDrAok,52
+z3c.recipe.i18n-2.1.dist-info/namespace_packages.txt,sha256=LiwBGNj6i1fm4yUm-yky6C1lCDbhjwIjxIXSZbkEQHY,15
+z3c.recipe.i18n-2.1.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.recipe.i18n-2.1.dist-info/RECORD,,
