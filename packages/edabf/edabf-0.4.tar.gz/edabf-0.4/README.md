@@ -1,0 +1,81 @@
+
+# EDA BF - Exploratory Data Analysis Package
+
+Este paquete permite realizar un análisis exploratorio de datos (EDA) de archivos CSV, Parquet y bases de datos SQL (MySQL, PostgreSQL, SQL Server, Oracle), generando informes en formato Excel.
+
+## Módulos
+
+### 1. `archivo.py`
+Este módulo procesa un archivo individual (CSV o Parquet) y genera un informe EDA en formato Excel.
+
+#### Función principal
+- `process_single_file(file_path, output=None, limite=None)`: Procesa un archivo y genera un informe en Excel.
+  - **Parámetros**:
+    - `file_path` (str): Ruta del archivo a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel (opcional).
+    - `limite` (int): Límite opcional de filas a leer del archivo.
+  - **Descripción**: Carga el archivo especificado, procesa los datos y genera un informe en Excel con métricas EDA.
+
+### 2. `dataset.py`
+Este módulo se conecta a una base de datos SQL, extrae todas las tablas de un esquema específico y genera un informe EDA para cada una en un archivo Excel.
+
+#### Función principal
+- `process_dataset(db_type, server, user, password, database, schema, path_instaclient=None, output=None, limit_tables=5)`: Procesa múltiples tablas de un esquema en la base de datos y genera un informe en un archivo Excel.
+  - **Parámetros**:
+    - `db_type` (str): Tipo de base de datos (`mysql`, `postgresql`, `sqlserver`, `oracle`).
+    - `server`, `user`, `password`, `database`, `schema` (str): Detalles de conexión a la base de datos.
+    - `output` (str): Ruta de salida para el archivo Excel.
+    - `limit_tables` (int): Límite opcional para el número de tablas a procesar.
+  - **Descripción**: Conecta a la base de datos, carga las tablas de un esquema especificado y genera un informe EDA en Excel.
+
+### 3. `masivo.py`
+Este módulo permite procesar múltiples archivos (CSV y Parquet) en una carpeta y generar un informe EDA consolidado en un archivo Excel.
+
+#### Función principal
+- `process_folder(folder_path, output=None, limite=None)`: Procesa múltiples archivos en una carpeta y genera un informe en un solo archivo Excel.
+  - **Parámetros**:
+    - `folder_path` (str): Ruta de la carpeta con los archivos a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel.
+    - `limite` (int): Límite opcional de filas a leer por archivo.
+  - **Descripción**: Busca archivos CSV y Parquet en la carpeta especificada, carga cada archivo, y genera un informe en Excel.
+
+### 4. `table.py`
+Este módulo permite procesar una sola tabla de una base de datos y generar un informe EDA en Excel.
+
+#### Función principal
+- `process_single_table(db_type, server, user, password, database, schema, table_name, path_instaclient=None, output=None)`: Procesa una tabla específica de una base de datos y genera un informe EDA en Excel.
+  - **Parámetros**:
+    - `db_type` (str): Tipo de base de datos (`mysql`, `postgresql`, `sqlserver`, `oracle`).
+    - `server`, `user`, `password`, `database`, `schema`, `table_name` (str): Detalles de conexión y tabla a procesar.
+    - `output` (str): Ruta de salida para el archivo Excel.
+  - **Descripción**: Conecta a la base de datos y genera un informe EDA de la tabla especificada en formato Excel.
+
+
+## Uso
+
+### Procesar un Archivo Individual
+```python
+from edabf import process_single_file
+process_single_file("ruta/al/archivo.csv", output="salida.xlsx", limite=1000)
+```
+
+### Procesar Múltiples Tablas de un Esquema de Base de Datos
+```python
+from edabf import process_dataset
+process_dataset("mysql", "servidor", "usuario", "contraseña", "base_datos", "esquema", output="salida_dataset.xlsx")
+```
+
+### Procesar una Carpeta de Archivos
+```python
+from edabf import process_folder
+process_folder("ruta/a/carpeta", output="salida_masivo.xlsx")
+```
+
+### Procesar una Tabla de una Base de Datos
+```python
+from edabf import process_single_table
+process_single_table("postgresql", "servidor", "usuario", "contraseña", "base_datos", "esquema", "nombre_tabla", output="salida_table.xlsx")
+```
+
+## Licencia
+Este proyecto está bajo la licencia MIT.
