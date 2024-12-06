@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: connectus
+Version: 0.0.4
+Summary: Librería para la gestión de dispositivos físicos y virtuales.
+Home-page: https://github.com/javierquinttana
+Author: Javier A. Quintana Hernandez
+Author-email: javierquinttana@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+Requires-Dist: opcua
+Requires-Dist: cryptography
+Requires-Dist: influxdb-client
+Requires-Dist: aiohttp
+Requires-Dist: aiocsv
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
