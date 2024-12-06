@@ -1,0 +1,15 @@
+qax/__init__.py,sha256=kXz4LtPyd_QQEBp1PMtcoggU_nnQCKyTTWe-sNJMEas,344
+qax/common/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+qax/common/type_utils.py,sha256=0_WPuiETOqQHGFZ63gm5kIkoWnWVRBr-cLmvwbEuz08,905
+qax/common/utils.py,sha256=5QVP2YguViU8Dx3agKXTiMBmYAr2KmsdOBXv0u0W5E4,3729
+qax/constants.py,sha256=S3Sm71byhSo4iByuE350u2BLYNS8OCzaSIfR7UcvEr0,2040
+qax/implicit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qax/implicit/implicit_array.py,sha256=thO6QIsptlsVnSGGqNK_aYaRREMpZ7EStJPl5ixiVGo,19276
+qax/implicit/implicit_utils.py,sha256=GyZ5WsmSWqTQzuHYnVMIVTOkjTRboGNGj9PAKREGjlg,7705
+qax/primitives.py,sha256=GHzI_XgL-z6TOj6GBXbAjw9vl_cJyDPghUcODxlPKM0,1444
+qax/symbols.py,sha256=AYM1jSIOo2CvBCwQvq8P2Dnp2XG68HaPLTMrflb04yU,6629
+qax/utils.py,sha256=RDolT0MBvl4x_KRur-8-9RpF6HVuDdZp9Z-jSjA02o0,67
+qax-0.4.1.dist-info/LICENSE,sha256=LHux3gBOiLHVgvnKjriCLXDjb6DdRbFzJQQ7BQ9cPvA,1070
+qax-0.4.1.dist-info/METADATA,sha256=qKlRyWT6DRSAEQ3ETtHhAszn-q-NpXilKgz-_UwJXMs,18368
+qax-0.4.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+qax-0.4.1.dist-info/RECORD,,
