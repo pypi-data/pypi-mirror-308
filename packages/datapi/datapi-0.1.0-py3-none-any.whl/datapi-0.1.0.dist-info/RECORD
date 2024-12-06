@@ -1,0 +1,14 @@
+datapi/__init__.py,sha256=4nVKKV4-myvHCXJOycVwVvKV4TRsufEnASlbkMeqpdo,1222
+datapi/api_client.py,sha256=61TasjNjfc3HHtBQt7nNsAr-_uvt-1kJgQYnBlcFWCA,13573
+datapi/catalogue.py,sha256=eFxKXcZmnfZigShMgd9mF90CeCYe9JMmQIK2pj5iR1M,4674
+datapi/config.py,sha256=oIhoyZxm9X-fA_W_LeWXxXlGW5GUOyBHLV16nND8ouU,1430
+datapi/legacy_api_client.py,sha256=29JDJAWznx_NrsvAX-WO87Xl8nmicVhaOp2gvxhj-GY,9452
+datapi/processing.py,sha256=NP_hAgmJSzEaUcjj14pEEs-eRzxMaE9F9LwIRMGz-10,21732
+datapi/profile.py,sha256=josvQPZsXriTOw7tRwlAi1cnW5hILMtlacM_SBjhKdI,2529
+datapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapi/version.py,sha256=FGsmFbZ942cZk42U_qHqxgRCbsD--5Vld_eR6xKJ-mQ,72
+datapi-0.1.0.dist-info/LICENSE,sha256=e2Qp4JUZeHZZSYCADyp1B3siZB5aQE5MRCYRx7vqlNI,11346
+datapi-0.1.0.dist-info/METADATA,sha256=G5Y91SonU8YHPnVU2IN0739zuR9WfAVP4tyZJaG8kOg,17410
+datapi-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+datapi-0.1.0.dist-info/top_level.txt,sha256=TnO2XCKDcBSRDPsscKddNBP1iZdWG_4dU0reeuIyEdw,7
+datapi-0.1.0.dist-info/RECORD,,
