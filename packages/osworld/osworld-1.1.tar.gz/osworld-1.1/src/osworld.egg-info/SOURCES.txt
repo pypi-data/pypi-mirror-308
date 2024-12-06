@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/osworld/__init__.py
+src/osworld.egg-info/PKG-INFO
+src/osworld.egg-info/SOURCES.txt
+src/osworld.egg-info/dependency_links.txt
+src/osworld.egg-info/top_level.txt
