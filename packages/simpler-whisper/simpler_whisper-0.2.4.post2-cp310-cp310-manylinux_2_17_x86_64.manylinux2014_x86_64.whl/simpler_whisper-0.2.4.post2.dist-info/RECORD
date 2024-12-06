@@ -1,0 +1,9 @@
+simpler_whisper-0.2.4.post2.dist-info/top_level.txt,sha256=Yk8UtXqBZduTEFDCj7GDo-vWHE8x7j5CfpTacQR1XA0,16
+simpler_whisper-0.2.4.post2.dist-info/RECORD,,
+simpler_whisper-0.2.4.post2.dist-info/LICENSE,sha256=ZdKO47ebfnWaGROwiCF8GwSDmFokJ7_YPqpB-HEc9ds,1090
+simpler_whisper-0.2.4.post2.dist-info/METADATA,sha256=PQRm45TiRsImdXeUPchq1ic2HpUQwf4H19_DJvSwZkY,3821
+simpler_whisper-0.2.4.post2.dist-info/WHEEL,sha256=00ZqUltSr86DjA23C3-UwhMTpYtngQxTsng9bbKR2LM,151
+simpler_whisper/whisper.py,sha256=xQmf0TsRZ-UR2SjtleczYRj3aERZg9tQ9eAY4j6HRK4,7719
+simpler_whisper/__init__.py,sha256=PC1GVXO2pPEB0y9Xc9JwLz-eua5spR-GJE2yGGfKrac,698
+simpler_whisper/_whisper_cpp.cpython-37m-x86_64-linux-gnu.so,sha256=VZXn439UMBe2IlOWr02P6qqeDA531TTDECZpU8wRTPE,1700345
+simpler_whisper.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
