@@ -1,0 +1,9 @@
+README.md
+setup.py
+acs_classifex/__init__.py
+acs_classifex/ner_model.py
+acs_classifex.egg-info/PKG-INFO
+acs_classifex.egg-info/SOURCES.txt
+acs_classifex.egg-info/dependency_links.txt
+acs_classifex.egg-info/requires.txt
+acs_classifex.egg-info/top_level.txt
