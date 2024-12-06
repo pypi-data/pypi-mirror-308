@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+swastikai/__init__.py
+swastikai/memory.py
+swastikai/memory_async.py
+swastikai/utils.py
+swastikai.egg-info/PKG-INFO
+swastikai.egg-info/SOURCES.txt
+swastikai.egg-info/dependency_links.txt
+swastikai.egg-info/requires.txt
+swastikai.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
+tests/test_async.py
