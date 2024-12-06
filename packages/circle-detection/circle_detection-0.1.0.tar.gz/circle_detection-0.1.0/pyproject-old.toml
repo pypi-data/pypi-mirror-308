@@ -1,0 +1,3 @@
+[tool.scikit-build]
+build.verbose = true
+build-dir = "build"
