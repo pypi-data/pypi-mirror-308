@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/__main__.py
+src/code_suggestions.py
+src/config.py
+sweepai.egg-info/PKG-INFO
+sweepai.egg-info/SOURCES.txt
+sweepai.egg-info/dependency_links.txt
+sweepai.egg-info/entry_points.txt
+sweepai.egg-info/requires.txt
+sweepai.egg-info/top_level.txt
