@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sherbystats
+Version: 0.0.30
+Summary: Ryan @ UdeS
+Home-page: https://www.usherbrooke.ca/gchimiquebiotech/departement/professeurs/ryan-gosselin/
+Author: Ryan Gosselin
+Author-email: ryan.gosselin@usherbrooke.ca
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+    
+    
+    
+GCB140. STATISTIQUES EN INGÉNIERIE    
+anova:        Analyse de variance    
+doe:          Plans d'expérience 2k et 2k-p    
+mlr:          Régression linéaire    
+xlsread:      Lire document Excel    
+    
+    
+GCH755. Apprentissage machine données multivariées    
+colorspectra    
+dtw    
+dtw_multi    
+lags    
+lda    
+mlr    
+normplot    
+pca    
+pca_trou    
+pcr    
+pls    
+vif    
+vip    
+xlsread    
+    
+    
+GCH757. Planification et analyse des expériences    
+anova    
+binaire    
+binaire3D    
+doe    
+mlr    
+ternaire    
+xlsread    
+    
