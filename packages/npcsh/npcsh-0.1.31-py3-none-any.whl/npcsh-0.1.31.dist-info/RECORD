@@ -1,0 +1,17 @@
+npcsh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npcsh/command_history.py,sha256=vE7LSPruFTIaxDenrGtIcD9qvmldjToPp5pN1qQ4gbQ,3344
+npcsh/helpers.py,sha256=5zPdf_PZdk38WMHgJKTrYig6nSKblYvavCjtt1Afg-U,25260
+npcsh/llm_funcs.py,sha256=zDQrZSDXR4mBoJfTtEB2aiREd_qn9Lol6s9T3X_FKeI,49634
+npcsh/main.py,sha256=rpf_2ysx3cR3eHsrvZApprJ-3D3-OrWcJ15bM1bc97I,81
+npcsh/modes.py,sha256=bqQ-n7hfWolZqOYX_6-QuGrhGqsg96u-uSZxuf9P--k,21005
+npcsh/npc_compiler.py,sha256=MtAoOT7FV5_7s5a0DI5WhvHYthhYUVrDvNI3t4dT5L8,16756
+npcsh/npcsh.py,sha256=MmyzBqPr-wCH1HjwPqCRPQJZtXFBZNYHFm6HFa-LuLI,25908
+npcsh/transformer_testing.py,sha256=EZVOiNekQFX5_iKVZPpt_oFPYjTQ7BWE5pvkE60OSf8,663
+npcsh/npc_profiles/sibiji.npc,sha256=TY5FHFNkq8xSyLgXz9x23IHA2TRMJMM1pfjXwv6kRR4,281
+npcsh-0.1.31.data/data/npcsh/npc_profiles/sibiji.npc,sha256=TY5FHFNkq8xSyLgXz9x23IHA2TRMJMM1pfjXwv6kRR4,281
+npcsh-0.1.31.dist-info/LICENSE,sha256=j0YPvce7Ng9e32zYOu0EmXjXeJ0Nwawd0RA3uSGGH4E,1070
+npcsh-0.1.31.dist-info/METADATA,sha256=ApVXJZkSvxp0T8cyMM1JQo7MKS9YadgW0MpE0EmfmQE,7486
+npcsh-0.1.31.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+npcsh-0.1.31.dist-info/entry_points.txt,sha256=_n86Qhl0Dl5RFsV4XJcRv3GZoW8TbPF46UZq-SZavEY,43
+npcsh-0.1.31.dist-info/top_level.txt,sha256=kHSNgKMCkfjV95-DH0YSp1LLBi0HXdF3w57j7MQON3E,6
+npcsh-0.1.31.dist-info/RECORD,,
