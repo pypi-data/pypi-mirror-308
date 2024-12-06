@@ -1,0 +1,7 @@
+README.md
+setup.py
+discord_webhook_async.egg-info/PKG-INFO
+discord_webhook_async.egg-info/SOURCES.txt
+discord_webhook_async.egg-info/dependency_links.txt
+discord_webhook_async.egg-info/requires.txt
+discord_webhook_async.egg-info/top_level.txt
