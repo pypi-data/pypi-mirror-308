@@ -1,0 +1,2 @@
+[console_scripts]
+cmakemake = cmakemake_cli.main:main
