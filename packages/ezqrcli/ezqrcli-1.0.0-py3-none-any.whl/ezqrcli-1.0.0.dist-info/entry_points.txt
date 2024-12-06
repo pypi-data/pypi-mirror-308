@@ -1,0 +1,3 @@
+[console_scripts]
+ezqrcli=ezqrcli.__main__:main
+

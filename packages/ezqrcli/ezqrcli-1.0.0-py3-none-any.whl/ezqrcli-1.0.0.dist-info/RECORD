@@ -1,0 +1,8 @@
+ezqrcli/__init__.py,sha256=fbYWvGZQiPEzhYIADW6iY24s6e_UTnirLH9-NK4-Wig,392
+ezqrcli/__main__.py,sha256=ejDw4bBh5BzZ_5veZCKs5dEo4jyXZATbsoysSOnkhQk,1943
+ezqrcli/qr_cli.py,sha256=q-5yVFZ01MfsaeNv-VBITFD3-zDIWc4n6g411N_92wk,9457
+ezqrcli/util.py,sha256=WM-YW41UL3D111td4Jj2kSx6YFM-3DAQinZS6StWpts,1598
+ezqrcli-1.0.0.dist-info/entry_points.txt,sha256=tUzKEkNCyOlMaSseCg11tcspJJ2N0OU4TjzRuTENVJw,49
+ezqrcli-1.0.0.dist-info/METADATA,sha256=VdnP-9p2PeA_fWPjJVHboHTsiEo6e74qGwNhkP9h9Kw,4302
+ezqrcli-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ezqrcli-1.0.0.dist-info/RECORD,,
