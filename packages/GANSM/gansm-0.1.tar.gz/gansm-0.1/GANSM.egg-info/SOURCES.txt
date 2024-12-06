@@ -1,0 +1,9 @@
+README.md
+setup.py
+GANSM/__init__.py
+GANSM/main.py
+GANSM.egg-info/PKG-INFO
+GANSM.egg-info/SOURCES.txt
+GANSM.egg-info/dependency_links.txt
+GANSM.egg-info/requires.txt
+GANSM.egg-info/top_level.txt
