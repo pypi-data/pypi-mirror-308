@@ -1,0 +1,322 @@
+from __future__ import annotations
+
+from datetime import datetime
+import os
+from typing import Any, ClassVar
+from urllib.parse import urlparse
+
+from githarbor.core.base import Repository
+from githarbor.core.models import (
+    Branch,
+    Commit,
+    Issue,
+    PullRequest,
+    User,
+    Workflow,
+    WorkflowRun,
+)
+from githarbor.exceptions import AuthenticationError, ResourceNotFoundError
+
+
+try:
+    from atlassian import Bitbucket
+    from atlassian.errors import ApiError
+except ImportError:
+    pass
+
+
+class BitbucketRepository(Repository):
+    """Bitbucket repository implementation."""
+
+    url_patterns: ClassVar[list[str]] = ["bitbucket.org"]
+    raw_prefix = "https://bitbucket.org/{owner}/{name}/raw/{sha}/{path}"
+
+    def __init__(
+        self,
+        owner: str,
+        name: str,
+        token: str | None = None,
+        url: str = "https://api.bitbucket.org",
+    ) -> None:
+        try:
+            t = token or os.getenv("BITBUCKET_TOKEN")
+            if not t:
+                msg = "Bitbucket token is required"
+                raise ValueError(msg)
+
+            self._bb = Bitbucket(url=url, token=t)
+            self._owner = owner
+            self._name = name
+            print(owner, name, token)
+            self._repo = self._bb.get_repo(self._owner, self._name)
+
+        except ImportError as e:
+            msg = "atlassian-python-api package is required. Install with 'pip install atlassian-python-api'"
+            raise ImportError(msg) from e
+        except ApiError as e:
+            msg = f"Bitbucket authentication failed: {e!s}"
+            raise AuthenticationError(msg) from e
+
+    @classmethod
+    def from_url(cls, url: str, **kwargs: Any) -> BitbucketRepository:
+        """Create from URL like 'https://bitbucket.org/workspace/repo'."""
+        parsed = urlparse(url)
+        parts = parsed.path.strip("/").split("/")
+        if len(parts) < 2:
+            msg = f"Invalid Bitbucket URL: {url}"
+            raise ValueError(msg)
+
+        return cls(
+            owner=parts[0],
+            name=parts[1],
+            token=kwargs.get("token") or os.getenv("BITBUCKET_TOKEN"),
+            url=f"{parsed.scheme}://{parsed.netloc}",
+        )
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @property
+    def default_branch(self) -> str:
+        repo = self._bb.get_repository(self._owner, self._name)
+        return repo["mainbranch"]["name"]
+
+    def get_branch(self, name: str) -> Branch:
+        try:
+            branch = self._bb.get_branch(self._owner, self._name, name)
+            return Branch(
+                name=branch["name"],
+                sha=branch["target"]["hash"],
+                protected=False,  # Bitbucket handles branch protection differently
+            )
+        except ApiError as e:
+            msg = f"Branch {name} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def get_pull_request(self, number: int) -> PullRequest:
+        try:
+            pr = self._bb.get_pullrequest(self._owner, self._name, number)
+            return PullRequest(
+                number=pr["id"],
+                title=pr["title"],
+                description=pr.get("description", ""),
+                state=pr["state"],
+                source_branch=pr["source"]["branch"]["name"],
+                target_branch=pr["destination"]["branch"]["name"],
+                created_at=datetime.strptime(pr["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"),
+                updated_at=datetime.strptime(pr["updated_on"], "%Y-%m-%dT%H:%M:%S.%f%z")
+                if pr.get("updated_on")
+                else None,
+                merged_at=None,  # Bitbucket doesn't provide merged_at
+                closed_at=None,  # Bitbucket doesn't provide closed_at
+                author=User(
+                    username=pr["author"]["nickname"],
+                    name=pr["author"].get("display_name"),
+                    avatar_url=pr["author"]
+                    .get("links", {})
+                    .get("avatar", {})
+                    .get("href"),
+                )
+                if pr.get("author")
+                else None,
+            )
+        except ApiError as e:
+            msg = f"Pull request #{number} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def list_pull_requests(self, state: str = "open") -> list[PullRequest]:
+        try:
+            prs = self._bb.get_pullrequests(self._owner, self._name, state=state.lower())
+            return [
+                PullRequest(
+                    number=pr["id"],
+                    title=pr["title"],
+                    description=pr.get("description", ""),
+                    state=pr["state"],
+                    source_branch=pr["source"]["branch"]["name"],
+                    target_branch=pr["destination"]["branch"]["name"],
+                    created_at=datetime.strptime(
+                        pr["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                    ),
+                )
+                for pr in prs
+            ]
+        except ApiError as e:
+            msg = f"Failed to list pull requests: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def get_commit(self, sha: str) -> Commit:
+        try:
+            commit = self._bb.get_commit(self._owner, self._name, sha)
+            return Commit(
+                sha=commit["hash"],
+                message=commit["message"],
+                created_at=datetime.strptime(commit["date"], "%Y-%m-%dT%H:%M:%S%z"),
+                author=User(
+                    username=commit["author"]["raw"].split("<")[0].strip(),
+                    email=commit["author"]["raw"].split("<")[1].strip(">"),
+                    name=commit["author"]["raw"].split("<")[0].strip(),
+                ),
+                url=commit.get("links", {}).get("html", {}).get("href"),
+            )
+        except ApiError as e:
+            msg = f"Commit {sha} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def list_commits(self, branch: str | None = None) -> list[Commit]:
+        try:
+            commits = self._bb.get_commits(
+                self._owner, self._name, branch=branch if branch else self.default_branch
+            )
+            return [
+                Commit(
+                    sha=commit["hash"],
+                    message=commit["message"],
+                    created_at=datetime.strptime(commit["date"], "%Y-%m-%dT%H:%M:%S%z"),
+                    author=User(
+                        username=commit["author"]["raw"].split("<")[0].strip(),
+                        email=commit["author"]["raw"].split("<")[1].strip(">"),
+                        name=commit["author"]["raw"].split("<")[0].strip(),
+                    ),
+                    url=commit.get("links", {}).get("html", {}).get("href"),
+                )
+                for commit in commits
+            ]
+        except ApiError as e:
+            msg = f"Failed to list commits: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def get_workflow(self, workflow_id: str) -> Workflow:
+        """Get a specific workflow.
+
+        Note: Bitbucket Pipelines are different from GitHub Actions workflows.
+        This is a basic implementation that maps pipelines to workflows.
+        """
+        try:
+            pipeline = self._bb.get_pipeline(self._owner, self._name, workflow_id)
+            return Workflow(
+                id=str(pipeline["uuid"]),
+                name=pipeline["target"]["ref_name"],
+                path=pipeline["target"]["selector"]["pattern"],
+                state=pipeline["state"]["name"],
+                created_at=datetime.strptime(
+                    pipeline["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                ),
+                updated_at=datetime.strptime(
+                    pipeline["completed_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                )
+                if pipeline.get("completed_on")
+                else None,
+                triggers=["push"],  # Simplified trigger list
+            )
+        except ApiError as e:
+            msg = f"Pipeline {id} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def list_workflows(self) -> list[Workflow]:
+        """List workflows (pipelines in Bitbucket terminology)."""
+        try:
+            pipelines = self._bb.get_pipelines(self._owner, self._name)
+            return [
+                Workflow(
+                    id=str(pipeline["uuid"]),
+                    name=pipeline["target"]["ref_name"],
+                    path=pipeline["target"]["selector"]["pattern"],
+                    state=pipeline["state"]["name"],
+                    created_at=datetime.strptime(
+                        pipeline["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                    ),
+                    updated_at=datetime.strptime(
+                        pipeline["completed_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                    )
+                    if pipeline.get("completed_on")
+                    else None,
+                    triggers=["push"],  # Simplified trigger list
+                )
+                for pipeline in pipelines
+            ]
+        except ApiError as e:
+            msg = f"Failed to list pipelines: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def get_workflow_run(self, run_id: str) -> WorkflowRun:
+        """Get a specific workflow run (pipeline run in Bitbucket terminology)."""
+        try:
+            pipeline = self._bb.get_pipeline(self._owner, self._name, run_id)
+            return WorkflowRun(
+                id=str(pipeline["uuid"]),
+                name=pipeline["target"]["ref_name"],
+                workflow_id=str(pipeline["uuid"]),
+                status=pipeline["state"]["name"],
+                conclusion=pipeline["state"]["result"]["name"]
+                if pipeline["state"].get("result")
+                else None,
+                branch=pipeline["target"]["ref_name"],
+                commit_sha=pipeline["target"]["commit"]["hash"],
+                url=pipeline.get("links", {}).get("html", {}).get("href"),
+                created_at=datetime.strptime(
+                    pipeline["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                ),
+                updated_at=datetime.strptime(
+                    pipeline["completed_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                )
+                if pipeline.get("completed_on")
+                else None,
+                started_at=datetime.strptime(
+                    pipeline["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                ),
+                completed_at=datetime.strptime(
+                    pipeline["completed_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                )
+                if pipeline.get("completed_on")
+                else None,
+            )
+        except ApiError as e:
+            msg = f"Pipeline run {id} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def get_issue(self, issue_id: int) -> Issue:
+        try:
+            issue = self._bb.get_issue(self._owner, self._name, issue_id)
+            return Issue(
+                number=issue["id"],
+                title=issue["title"],
+                description=issue.get("content", {}).get("raw", ""),
+                state=issue["state"],
+                created_at=datetime.strptime(
+                    issue["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                ),
+                updated_at=datetime.strptime(
+                    issue["updated_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                )
+                if issue.get("updated_on")
+                else None,
+            )
+        except ApiError as e:
+            msg = f"Issue {issue_id} not found: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+    def list_issues(self, state: str = "open") -> list[Issue]:
+        try:
+            issues = self._bb.get_issues(self._owner, self._name, state=state)
+            return [
+                Issue(
+                    number=issue["id"],
+                    title=issue["title"],
+                    description=issue.get("content", {}).get("raw", ""),
+                    state=issue["state"],
+                    created_at=datetime.strptime(
+                        issue["created_on"], "%Y-%m-%dT%H:%M:%S.%f%z"
+                    ),
+                )
+                for issue in issues
+            ]
+        except ApiError as e:
+            msg = f"Failed to list issues: {e!s}"
+            raise ResourceNotFoundError(msg) from e
+
+
+if __name__ == "__main__":
+    repo = BitbucketRepository.from_url("https://bitbucket.org/phil__65/testrepo/")
+    print(repo)

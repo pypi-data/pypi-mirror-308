@@ -1,0 +1,86 @@
+Metadata-Version: 2.3
+Name: githarbor
+Version: 0.0.1
+Summary: Unified client for GitHub, GitLab and BitBucket
+Project-URL: Documentation, https://phil65.github.io/githarbor/
+Project-URL: Source, https://github.com/phil65/githarbor
+Author-email: Philipp Temminghoff <philipptemminghoff@googlemail.com>
+License: MIT License
+        
+        Copyright (c) 2024, Philipp Temminghoff
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Provides-Extra: all
+Requires-Dist: atlassian-python-api; extra == 'all'
+Requires-Dist: pygithub; extra == 'all'
+Requires-Dist: python-gitlab; extra == 'all'
+Provides-Extra: bitbucket
+Requires-Dist: atlassian-python-api; extra == 'bitbucket'
+Provides-Extra: github
+Requires-Dist: pygithub; extra == 'github'
+Provides-Extra: gitlab
+Requires-Dist: python-gitlab; extra == 'gitlab'
+Description-Content-Type: text/markdown
+
+# GitHarbor
+
+[![PyPI License](https://img.shields.io/pypi/l/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Package status](https://img.shields.io/pypi/status/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Daily downloads](https://img.shields.io/pypi/dd/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Weekly downloads](https://img.shields.io/pypi/dw/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Monthly downloads](https://img.shields.io/pypi/dm/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Distribution format](https://img.shields.io/pypi/format/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Wheel availability](https://img.shields.io/pypi/wheel/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Python version](https://img.shields.io/pypi/pyversions/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Implementation](https://img.shields.io/pypi/implementation/githarbor.svg)](https://pypi.org/project/githarbor/)
+[![Releases](https://img.shields.io/github/downloads/phil65/githarbor/total.svg)](https://github.com/phil65/githarbor/releases)
+[![Github Contributors](https://img.shields.io/github/contributors/phil65/githarbor)](https://github.com/phil65/githarbor/graphs/contributors)
+[![Github Discussions](https://img.shields.io/github/discussions/phil65/githarbor)](https://github.com/phil65/githarbor/discussions)
+[![Github Forks](https://img.shields.io/github/forks/phil65/githarbor)](https://github.com/phil65/githarbor/forks)
+[![Github Issues](https://img.shields.io/github/issues/phil65/githarbor)](https://github.com/phil65/githarbor/issues)
+[![Github Issues](https://img.shields.io/github/issues-pr/phil65/githarbor)](https://github.com/phil65/githarbor/pulls)
+[![Github Watchers](https://img.shields.io/github/watchers/phil65/githarbor)](https://github.com/phil65/githarbor/watchers)
+[![Github Stars](https://img.shields.io/github/stars/phil65/githarbor)](https://github.com/phil65/githarbor/stars)
+[![Github Repository size](https://img.shields.io/github/repo-size/phil65/githarbor)](https://github.com/phil65/githarbor)
+[![Github last commit](https://img.shields.io/github/last-commit/phil65/githarbor)](https://github.com/phil65/githarbor/commits)
+[![Github release date](https://img.shields.io/github/release-date/phil65/githarbor)](https://github.com/phil65/githarbor/releases)
+[![Github language count](https://img.shields.io/github/languages/count/phil65/githarbor)](https://github.com/phil65/githarbor)
+[![Github commits this week](https://img.shields.io/github/commit-activity/w/phil65/githarbor)](https://github.com/phil65/githarbor)
+[![Github commits this month](https://img.shields.io/github/commit-activity/m/phil65/githarbor)](https://github.com/phil65/githarbor)
+[![Github commits this year](https://img.shields.io/github/commit-activity/y/phil65/githarbor)](https://github.com/phil65/githarbor)
+[![Package status](https://codecov.io/gh/phil65/githarbor/branch/main/graph/badge.svg)](https://codecov.io/gh/phil65/githarbor/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyUp](https://pyup.io/repos/github/phil65/githarbor/shield.svg)](https://pyup.io/repos/github/phil65/githarbor/)
+
+[Read the documentation!](https://phil65.github.io/githarbor/)
+

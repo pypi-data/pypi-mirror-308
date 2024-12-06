@@ -1,0 +1,21 @@
+from __future__ import annotations
+
+import os
+
+from githarbor.providers.bitbucketrepository import BitbucketRepository
+
+
+TOKEN = os.getenv("BITBUCKET_TOKEN")
+
+
+def supports_url():
+    assert BitbucketRepository.supports_url("https://bitbucket.org/owner/repo")
+    assert not BitbucketRepository.supports_url("https://github.com/owner/repo")
+
+
+def test_from_url():
+    # Valid URL and credentials
+    provider = BitbucketRepository.from_url(
+        "https://bitbucket.org/phil__65/testrepo", token=TOKEN
+    )
+    assert isinstance(provider, BitbucketRepository)
