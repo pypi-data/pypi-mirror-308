@@ -1,0 +1,6 @@
+stream_unzip-0.0.98.dist-info/RECORD,,
+stream_unzip-0.0.98.dist-info/METADATA,sha256=TJ9gAUvEcnFiFwRS5y3NywknFYpP-_4QXUobUlXorXA,3259
+stream_unzip-0.0.98.dist-info/WHEEL,sha256=AEwoxUZcnuXB60a-AcAOJ6U1r7EwvIGsZKf75BwULAY,147
+stream_unzip-0.0.98.dist-info/licenses/LICENSE,sha256=yraCHM6jyGpFX5ls3FiI7Bp6DEIsAYqNbsy3zHoV8eE,1091
+stream_unzip/_zipcrypto.cpython-311-x86_64-linux-gnu.so,sha256=rMb2MJG7iZIRwMYmNqJu6lxxhEeaKBsbQ9exQEUYsoU,584920
+stream_unzip/__init__.py,sha256=Td_lRsCtLayXWPWkyrL1LjvNomeWtPS6KseXHJs1XRs,23803
