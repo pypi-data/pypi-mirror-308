@@ -1,0 +1,10 @@
+xradarsat2/__init__.py,sha256=zRmHzTbcTvRFArNYtyMizR-GB4JnqKjclq255Y5DHEo,280
+xradarsat2/radarSat2_tiff_reader.py,sha256=Pr--utHkePksJW0rLc5-RsUy3dQELLb-H6P8fCRotuU,5763
+xradarsat2/radarSat2_xarray_reader.py,sha256=5b4hBLseJzT2PhNn4pme2FmhgAqeBH9U5sZmQ5bkWzQ,76592
+xradarsat2/utils.py,sha256=Poozy9ztt8BuurU5IM1RRhtFvqLIJgKUKaFzcHu03rk,1145
+xradarsat2/xradarsat2-config.yaml,sha256=tLcQg0nGYoe5n-PKJbXV5ua43QUJd8uTZAnNZQ2QZcw,88
+xradarsat2-2024.11.12.dist-info/LICENSE.md,sha256=Q7TBHxOpWI_fNTTXVS2GqSaGFHdsefHrV_H6Mrs1S7s,1064
+xradarsat2-2024.11.12.dist-info/METADATA,sha256=EuxFtEvmCqEVZ-qdhW0Gjht_Nv2X9_iOxHR2u3p_46g,9358
+xradarsat2-2024.11.12.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+xradarsat2-2024.11.12.dist-info/top_level.txt,sha256=EbVa617g91wuyRtm_WKh_sfjZyqOCz7J09U9YjqzhAo,11
+xradarsat2-2024.11.12.dist-info/RECORD,,
