@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: django-creta-auth
+Version: 0.1.6
+Summary: A boilerplate Django app package for easy integration
+Home-page: https://github.com/RUNNERS-IM/django-creta-auth
+Author: Runners Co., Ltd.
+Author-email: dev@runners.im
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: django>=3.0
+Requires-Dist: requests
+
+# django_creta_auth
+
+**Current version: 0.1.6**
+
+Boilerplate for a Django Package
+
+## 1. Installation
+
+The preferred installation method is directly from pypi:
+
+```bash
+# Install the package.
+$ pip install -U django_creta_auth
+```
+
+## Quickstart
+
+1. Add django_creta_auth to your INSTALLED_APPS in settings.py:
+
+```python
+INSTALLED_APPS = [
+    ...,
+    'django_creta_auth'
+]
+```
+
+2. Include the django_creta_auth URLs in your urls.py:
+
+```python
+from django.urls import path, include
+
+urlpatterns = [
+    ...,
+    path('auth/', include('django_creta_auth.urls')),
+]
+```
+
+3. Run ``python manage.py migrate``
+   Create the models.
+
+```bash
+CRETA_AUTH_BASE_URL = 'https://....'
+```
+
+4. Run ``python manage.py migrate``
+   Create the models.
+
+```bash
+$ python manage.py migrate
+```
+
+## Usage
+
+### Endpoints
+
+- Register User: POST /auth/register/
+- Login User: POST /auth/login/
+- Reset Password: POST /auth/reset-password/
+- Update Password: POST /auth/update-password/
+- Send Verification Key: POST /auth/send-verification-key/
+- Verify Key: GET /auth/verify-key/
+- Find Existing User: GET /auth/find-existing-user/
+- Send Password Reset: POST /auth/send-password-reset/
+- Verify Password Reset: GET /auth/verify-password-reset/
+- Validate Session: GET /auth/validate-session/
+- Refresh Session: POST /auth/refresh-session/
+- Logout User: POST /auth/logout/
+- Google OAuth Login: GET /auth/oauth/google/
+- Apple OAuth Login: GET /auth/oauth/apple/
+- Upsert OAuth User: POST /auth/oauth/upsertUser/
+  Gateway Functions
+  The gateway.py module provides functions to interact with the authentication API directly.
+
+### Functions
+
+- register_user(email, password, name, is_two_factor, email_verified_at): Registers a new user.
+- login_user(email, password): Logs in a user.
+- reset_password(email, key, password): Resets the user's password.
+- update_password(session_token, old_password, new_password): Updates the user's password.
+- send_verification_key(email, call_back_url): Sends a verification key to the user's email.
+- verify_key(email, key): Verifies the key sent to the user's email.
+- find_existing_user(email): Checks if a user with the given email exists.
+- send_password_reset(email, call_back_url): Sends a password reset link to the user's email.
+- verify_password_reset(email, key): Verifies the password reset key.
+- validate_session(session_token): Validates the session token.
+- refresh_session(refresh_token): Refreshes the session token.
+- logout_user(session_token): Logs out the user.
+- google_oauth_login(origin_url): Logs in using Google OAuth.
+- apple_oauth_login(origin_url): Logs in using Apple OAuth.
+- upsert_oauth_user(provider, provider_user_id, access_token, refresh_token, name, picture_url, email): Upserts a user
+  using OAuth.
+
+## Contributes
+
+## The MIT License
+
+Copyright (c) 2023 Runners Co., Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
