@@ -1,0 +1,7 @@
+main.py
+setup.py
+compressa.egg-info/PKG-INFO
+compressa.egg-info/SOURCES.txt
+compressa.egg-info/dependency_links.txt
+compressa.egg-info/requires.txt
+compressa.egg-info/top_level.txt
