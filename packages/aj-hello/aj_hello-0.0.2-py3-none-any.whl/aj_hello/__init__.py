@@ -1,0 +1,1 @@
+from .main import aj_hello
