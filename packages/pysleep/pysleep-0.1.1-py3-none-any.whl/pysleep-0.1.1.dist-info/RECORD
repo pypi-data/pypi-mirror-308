@@ -1,0 +1,9 @@
+pysleep-0.1.1.dist-info/METADATA,sha256=RY1Tiz3rD9nToMHWKpTgf_mOgb7Lt0Ul8Ogb8algSFs,281
+pysleep-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pysleep-0.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pysleep-0.1.1.dist-info/licenses/LICENSE,sha256=rHKO8x4-Xy2BNIntgLQYHE0r4Z4jVjJ-ZJ-7lgK7KDA,1069
+pysleep/__init__.py,sha256=OAEyL-hTsYXHw9Lq-B32S6sMdi5bf_4mPY2id_0GRr4,377
+pysleep/label.py,sha256=qgiMcDwDIlTvXHTrDTHv8A3SnPD1xuy0YV072q6CCiw,137
+pysleep/stat.py,sha256=12UQHyZY15rdxArNEpFjKEdJLoZIKAqA2MOCWqp2OmY,8701
+pysleep/stat_test.py,sha256=WP8L5qBreVg_HFV2OFII-W1mYXdRST3qX8CCwJT3nWk,1763
+pysleep-0.1.1.dist-info/RECORD,,
