@@ -1,0 +1,10 @@
+README.md
+setup.py
+simplegame/__init__.py
+simplegame/sg.py
+simplegame.egg-info/PKG-INFO
+simplegame.egg-info/SOURCES.txt
+simplegame.egg-info/dependency_links.txt
+simplegame.egg-info/not-zip-safe
+simplegame.egg-info/requires.txt
+simplegame.egg-info/top_level.txt
