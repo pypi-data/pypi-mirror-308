@@ -1,0 +1,12 @@
+unsloth_zoo/__init__.py,sha256=Fxr4JbMCs6M5sSjMGsv3osRAb1_XXi8TmVM9d2yc1pY,1406
+unsloth_zoo/dataset_utils.py,sha256=nud3ivudcFKZja6Po27jkN_wu1Q-rWaf0ozgCeghOQw,10778
+unsloth_zoo/gradient_checkpointing.py,sha256=PfwtrK8QDviS11mVWZN6_VuUSNelpLQuwig3T4qWT84,8980
+unsloth_zoo/loss_utils.py,sha256=1AmaqVBM5XGN7Vvk2qMgbahpsickyVRaiqwpGPqnVsU,4523
+unsloth_zoo/patching_utils.py,sha256=tF4ft9Yd5MBuuN67N1MIn4vlHL3sv7miOmkX2_lmWd0,11897
+unsloth_zoo/tokenizer_utils.py,sha256=oHqJkyac1v2Oze5bo1Ub99qaIBwNq_G3d23iiPsELHM,21166
+unsloth_zoo/training_utils.py,sha256=8l9F83K3xNgBfRzhuNvk9eRETJ-4Lbp2lnUfbq-HPxo,12474
+unsloth_zoo-2024.11.5.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+unsloth_zoo-2024.11.5.dist-info/METADATA,sha256=bqbQ5KXkxpJpJt0EhWiQuWofUw1bgyJBfYtdzlXIY0k,16869
+unsloth_zoo-2024.11.5.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+unsloth_zoo-2024.11.5.dist-info/top_level.txt,sha256=Q-w7nsKmMo1WAuJdixIl_JbMR50kd34zrukKtYDYcRE,12
+unsloth_zoo-2024.11.5.dist-info/RECORD,,
