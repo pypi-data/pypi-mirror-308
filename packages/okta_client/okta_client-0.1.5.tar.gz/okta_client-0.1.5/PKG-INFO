@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: okta_client
+Version: 0.1.5
+Summary: An Okta client
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: okta (>=2.9.5,<3.0.0)
+Requires-Dist: yatc (>=0.1.0,<0.2.0)
