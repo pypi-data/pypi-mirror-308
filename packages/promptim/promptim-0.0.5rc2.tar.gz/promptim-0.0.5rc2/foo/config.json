@@ -1,0 +1,19 @@
+{
+  "name": "foo",
+  "dataset": "tweet-optim",
+  "description": "foo",
+  "evaluators": "./task.py:evaluators",
+  "evaluator_descriptions": {
+    "my_example_criterion": "CHANGEME: This is a description of what the example criterion is testing. It is provided to the metaprompt to improve how it responds to different results."
+  },
+  "optimizer": {
+    "model": {
+      "model": "claude-3-5-sonnet-20241022",
+      "max_tokens_to_sample": 8192
+    }
+  },
+  "initial_prompt": {
+    "identifier": "langchain-ai/tweet-generator-example:starter"
+  },
+  "$schema": "https://raw.githubusercontent.com/hinthornw/promptimizer/refs/heads/main/config-schema.json"
+}
