@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: robotframework-djangolaunch
+Version: 1.0
+Summary: A Robot Framework library for starting and stopping Django.
+Home-page: https://github.com/mrannanj/robotframework-djangolaunch
+Author: Martti Rannanjärvi
+Author-email: martti.rannanjarvi@iki.fi
+License: Apache License 2.0
+Keywords: robotframework django test
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+License-File: LICENSE.txt
+Requires-Dist: Django
+Requires-Dist: robotframework
+
+==============================================================================
+A Robot Framework library for starting and stopping Django.
+==============================================================================
+
+
+Introduction
+------------
+
+DjangoLaunch is a Robot Framework library for starting and stoppping Django.
+
+It has been forked from
+https://github.com/kitconcept/robotframework-djangolibrary
+
+
+Documentation
+-------------
+
+Keywords are documented in `Robot Framework Django Launch Keyword Documentation`_.
+
+
+Installation
+------------
+
+Install with::
+
+  pip install robotframework-djangolaunch
+
+Example
+-------
+
+An example using robotframework-browser::
+
+  *** Variables ***
+
+  ${SERVER}               http://localhost:55001
+
+
+  *** Settings ***
+
+  Documentation   Django Robot Tests
+  Library         DjangoLaunch  127.0.0.1  55001  settings=mysite.robotframework_settings
+  Library         Browser
+  Suite Setup     Open Django and Browser
+  Suite Teardown  Close Django and Browser
+
+
+  *** Keywords ***
+
+  Open Django and Browser
+    Start Django
+    New Persistent Context
+
+  Close Django and Browser
+    Close Browser
+    Stop Django
+
+
+  *** Test Cases ***
+
+  Scenario: As a visitor I can visit the django default page
+    New Page  ${SERVER}
+    Get Element  text=Hello, World
+
+The `GitHub project main workflow`_  has a live example on how to install
+dependencies and runt it.
+
+
+License
+-------
+
+Copyright kitconcept GmbH.
+
+Distributed under the terms of the Apache License 2.0,
+robotframework-djangolaunch is free and Open Source software.
+
+
+Credits
+-------
+
+This library was developed by Timo Stollenwerk at kitconcept.
+
+.. image:: kitconcept.png
+   :alt: kitconcept
+   :target: https://kitconcept.com/
+
+.. _`Robot Framework Django Launch Keyword Documentation`: https://mrannanj.github.io/robotframework-djangolaunch/
+.. _`GitHub project main workflow`: .github/workflows/main.yml
+
+
+1.0 (2024-11-13)
+------------------
+
+- Add an example of how to use this to the README.
+
+0.9 (2024-11-11)
+------------------
+
+- Publish Keyword documentation.
+
+0.2 (2024-11-10)
+------------------
+
+- Cosmetic cleanups.
+
+0.1 (2024-11-09)
+------------------
+
+- Initial release. This is a fork of robotframework-djangolibrary that
+  only supports starting and stopping Django.
+
