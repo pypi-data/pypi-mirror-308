@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/git_ai_summarize/__init__.py
+src/git_ai_summarize/models.py
+src/git_ai_summarize/summarize.py
+src/git_ai_summarize/utils.py
+src/git_ai_summarize.egg-info/PKG-INFO
+src/git_ai_summarize.egg-info/SOURCES.txt
+src/git_ai_summarize.egg-info/dependency_links.txt
+src/git_ai_summarize.egg-info/entry_points.txt
+src/git_ai_summarize.egg-info/requires.txt
+src/git_ai_summarize.egg-info/top_level.txt
