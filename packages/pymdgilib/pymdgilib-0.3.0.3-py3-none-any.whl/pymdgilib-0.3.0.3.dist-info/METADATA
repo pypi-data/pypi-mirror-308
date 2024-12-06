@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pymdgilib
+Version: 0.3.0.3
+Summary: Microchip Data Gateway Interface Tools
+Author-email: Microchip Technology <support@microchip.com>
+License: MIT
+Project-URL: Homepage, https://www.microchip.com
+Keywords: Microchip
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: appdirs
+Requires-Dist: pyusb
+Requires-Dist: tomli>=1.1.0; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: pylint>=2.15; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mock; extra == "doc"
+Requires-Dist: sphinx; extra == "doc"
+Provides-Extra: test
+Requires-Dist: mock; extra == "test"
+Requires-Dist: pytest; extra == "test"
+
+# Microchip Data Gateway Interface Tools
+
+The `pymdgilib` Python package contains various tools to support devices that implement the Microchip Data Gateway Interface (DGI) protocol.
+
+![PyPI - Format](https://img.shields.io/pypi/format/pymdgilib)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pymdgilib)
+![PyPI - License](https://img.shields.io/pypi/l/pymdgilib)
+
+## Installation
+Install using pip from [pypi](https://pypi.org/project/pymdgilib):
+```sh
+pip install pymdgilib
+```
+
+## Command line interface - pydgi
+
+`pydgi` is a command line interface to interact with DGI interfaces.
+
+For help run:
+`pydgi --help`
+
+To monitor DGI GPIO0 for 5 seconds run:
+`pydgi gpio read --pin 0x1 --sampling-time 5`
+
+To set GPIO0 to high on the board with USB serial number MCHP3280042700000498 run:
+`pydgi --serial MCHP3280042700000498 gpio write --pin 0x1 --value 0x1`
+
+## Using pymdgilib as a library
+
+Examples on how to use pymdgilib as a library are located in `pymdgilib/examples`.
+
+# Changelog
+
+## [0.3.0] - November 2024
+Initial release of the package.

@@ -1,0 +1,2 @@
+[console_scripts]
+pydgi = pymdgilib.pydgi_cli:main
