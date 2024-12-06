@@ -1,0 +1,9 @@
+SELECT ?x ?a ?a
+FROM <>
+FROM <>
+WHERE {
+  ?a ?b ?x
+  {
+    SELECT * WHERE {}
+  }
+}
