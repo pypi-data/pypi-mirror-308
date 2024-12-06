@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: polotsk
+Version: 1.1.0
+Summary: This is polotsk module
+Keywords: polotsk python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# POLOTSK
+
+* polotsk project
+* polotsk admin
+
+```bash
+python3.11 -m pip uninstall polotsk --break-system-packages
+python3.11 -m pip install polotsk --upgrade --break-system-packages
+ls $HOME/.local/lib/python3.11/site-packages/polotsk/
+ls $HOME/.local/lib/python3.11/site-packages/polotsk-admin/
+python3.11 -m polotsk-admin --app nn
+```
