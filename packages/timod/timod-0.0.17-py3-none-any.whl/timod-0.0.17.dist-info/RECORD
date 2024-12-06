@@ -1,0 +1,7 @@
+timod/__init__.py,sha256=zRmq1bZFxaFSADzoSn8voQ00YgtsOAjnvuo7h_H1g4c,130
+timod/taichi_kernel_module.py,sha256=d5qw1UUV1NJJ1SdO-RSdT-zKQp4l4PuskHCnJ7MKpzk,6773
+timod-0.0.17.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+timod-0.0.17.dist-info/METADATA,sha256=b24PLZIqHVcUliVM6tbEe6nWfafGEiI4DHhJIY3b82s,1522
+timod-0.0.17.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+timod-0.0.17.dist-info/top_level.txt,sha256=aB1TeEsooAQ_aAjNx5vlNXBF2-KafUPB52ZIl1SsDdE,6
+timod-0.0.17.dist-info/RECORD,,
