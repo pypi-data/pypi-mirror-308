@@ -1,0 +1,2 @@
+[console_scripts]
+gandmardu = gandmardu.main:create_hello_world_file
