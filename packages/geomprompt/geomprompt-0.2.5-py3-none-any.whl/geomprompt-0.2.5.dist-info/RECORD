@@ -1,0 +1,12 @@
+geomprompt/__init__.py,sha256=7OYaQ1U9v0jB67-GqssJSluqs8YUDLW-VLl2HkrI92M,169
+geomprompt/ridges/__init__.py,sha256=0NP2ZZ9SMIMeyXW5ARVRVBW1QxOeT__qAjDzpBntFR4,76
+geomprompt/ridges/io.py,sha256=X_wP9OiBZsVL32XqpQqvoF6BNwHxVViC97k_hsFfPUA,3153
+geomprompt/ridges/ridge_detect.py,sha256=gIPUCnXZ1HdynsibOU6l5gvh8S-hBCHH9XHU1uPXhUQ,15066
+geomprompt/ridges/ridge_prompts.py,sha256=ZobgnOW1j8Ca3xQduLti43ieOdb1b78lJ7BoxRoNC9Q,13593
+geomprompt/ridges/segment.py,sha256=mVy214UjPx2lfv8R-qcXsrzsZMKAMtJtSJLuaDRBv6Q,4041
+geomprompt-0.2.5.dist-info/AUTHORS.md,sha256=J8wLwa6SMVzYTxlDSjZFX7VYB3N6D6g-04dgzLDhYI4,352
+geomprompt-0.2.5.dist-info/LICENSE,sha256=8Qqfy8i31PqnYNP_SCmk5QJO0ARJ5n-W1dwWerDqpmU,34475
+geomprompt-0.2.5.dist-info/METADATA,sha256=0Sj0OrvstSNnLJEWSk5be16dw4z_3yjNOBwLN429vVc,4902
+geomprompt-0.2.5.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+geomprompt-0.2.5.dist-info/top_level.txt,sha256=wqyDjqDeJZMEUuUrioEHZCGs1SNLqIXxhfxxqxn-K80,11
+geomprompt-0.2.5.dist-info/RECORD,,
