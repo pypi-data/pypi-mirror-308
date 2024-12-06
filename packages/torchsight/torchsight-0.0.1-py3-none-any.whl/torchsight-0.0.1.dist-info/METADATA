@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: torchsight
+Version: 0.0.1
+Summary: Tools for profiling, visualizing and reducing memory overhead while training model wth Pytorch.
+Home-page: https://github.com/Ben-Schneider-code/TorchSight
+Author: Benjamin Schneider
+Author-email: benjamin.schneider@uwaterloo.ca
+License: MIT
+Project-URL: Source Code, https://github.com/Ben-Schneider-code/TorchSight
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+
+# TorchSight
+Tools for profiling, visualizing and reducing memory overhead while training model wth Pytorch.
