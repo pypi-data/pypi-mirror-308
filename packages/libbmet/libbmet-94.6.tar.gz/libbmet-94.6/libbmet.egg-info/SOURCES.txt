@@ -1,0 +1,7 @@
+main.py
+setup.py
+libbmet.egg-info/PKG-INFO
+libbmet.egg-info/SOURCES.txt
+libbmet.egg-info/dependency_links.txt
+libbmet.egg-info/requires.txt
+libbmet.egg-info/top_level.txt
