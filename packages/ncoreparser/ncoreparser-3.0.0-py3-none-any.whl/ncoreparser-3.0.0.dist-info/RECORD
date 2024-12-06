@@ -1,0 +1,12 @@
+ncoreparser/__init__.py,sha256=bv1ZmAss6lC6wvml1oLyP2zoCP_-ovSKEoVm96Xywm0,316
+ncoreparser/client.py,sha256=4tVb2T7ai-yCpZWPKgD6OpD5TxOqz9-5wniXyrZTevw,5908
+ncoreparser/client_async.py,sha256=MYn40eDR-7BWVhb4LuilGMr6iTyXlIsZSDyp--9-7LE,6131
+ncoreparser/data.py,sha256=bEz5YxDYlceUA4TQ_A985zNtIvgsfwO-KMDn7FAoXDA,3887
+ncoreparser/error.py,sha256=3miPyYsCgNN0djCiWqmXrpGBumHbHn7uC6GNEu8mSzY,192
+ncoreparser/parser.py,sha256=bBlfKPDrSup5adz4YFqix9wr7Pkynlx_P7klk81xw7w,5890
+ncoreparser/torrent.py,sha256=qj8vebrafDVVQBboYoqs4AmznSECD6JUPJQWsfFvHzs,1249
+ncoreparser/util.py,sha256=LxQYr_pHsft8dvpwEkCe7aYZqBwTLvXsTYtmIDBQVwc,2618
+ncoreparser-3.0.0.dist-info/METADATA,sha256=8Bm2lJw_nBlnwIHa4YY5kE7BYQ8WmLn-YkY3n_RWv_8,4364
+ncoreparser-3.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ncoreparser-3.0.0.dist-info/licenses/LICENSE,sha256=yXUdXegqLKZ48VoEPZ-YYje08vmKRdB3C2Xh6IA8HLU,1068
+ncoreparser-3.0.0.dist-info/RECORD,,
