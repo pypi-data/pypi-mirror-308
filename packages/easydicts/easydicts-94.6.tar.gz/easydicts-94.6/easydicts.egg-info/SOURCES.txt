@@ -1,0 +1,7 @@
+main.py
+setup.py
+easydicts.egg-info/PKG-INFO
+easydicts.egg-info/SOURCES.txt
+easydicts.egg-info/dependency_links.txt
+easydicts.egg-info/requires.txt
+easydicts.egg-info/top_level.txt
