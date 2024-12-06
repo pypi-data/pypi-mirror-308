@@ -1,0 +1,2 @@
+[console_scripts]
+fieldsurveys = fieldsurveys:copy_app_files
