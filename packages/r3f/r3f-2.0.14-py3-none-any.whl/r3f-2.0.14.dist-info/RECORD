@@ -1,0 +1,9 @@
+r3f/__init__.py,sha256=eW4RCM6vRAEGEmLkdKJscBDDaHjLOSTTnvPRTKjcysY,50
+r3f/r3f.py,sha256=YtN3Pv3X8mwQOAYIIIxqVnKzquvkZtYMzbSuDmL7wfY,103820
+r3f/test_r3f.py,sha256=J2EeyCRCIDCTyIA-N2XGFMdJfkV-PyuUCSM165WvR2g,20421
+r3f/speed/matmul3d.py,sha256=1YHDMgdpPam1Z6fw4QWPJnP3SC7QK8DpgtXJttxLqlg,1927
+r3f-2.0.14.dist-info/LICENSE.txt,sha256=Hg-_zWN3Ez00jmxQM2R1TrMvYiS6PILfsg9EXTGvTk8,1141
+r3f-2.0.14.dist-info/METADATA,sha256=BC9apnO3Dy77bFnIdh9Ovj0kibUEz835_TXjl3-f8ws,6661
+r3f-2.0.14.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+r3f-2.0.14.dist-info/top_level.txt,sha256=ORjdRLylJO7WNPTQqNs0JyNcgYWzv2kNpLm82ZVLc5w,4
+r3f-2.0.14.dist-info/RECORD,,
