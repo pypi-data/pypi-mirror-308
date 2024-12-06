@@ -1,0 +1,8 @@
+pysenseword/__init__.py,sha256=bC2N6uXMnGPECzZnetniypmhDekQEjhjlexcmGdd0lE,11502
+pysenseword/detect.py,sha256=_QyTuJlOEUxVXBvIItYDmAb0kS0myADFrsaJS8TToVM,5793
+pysenseword/dict_deduplicate.py,sha256=M68IlgM6q8uGoXhUk1hHTB4f5Ep_h2qOEreYZGbkz5E,627
+pysenseword-0.1.0.dist-info/LICENSE,sha256=f3gxYh_KSDWtUNn-jKBHgdOMVslfv41XZSvLPBiF1l8,1088
+pysenseword-0.1.0.dist-info/METADATA,sha256=5KAPXvQ7WyhOSvmr6_VorG18JZGTZDYmwupJpxIHcEw,702
+pysenseword-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pysenseword-0.1.0.dist-info/top_level.txt,sha256=wkuObmE9XfnlpW9AumiOAOXP0HMiZ-9ThDMrz4h3B0E,12
+pysenseword-0.1.0.dist-info/RECORD,,
