@@ -1,0 +1,8 @@
+setup.py
+Combinify/__init__.py
+Combinify/combinatory.py
+Combinify.egg-info/PKG-INFO
+Combinify.egg-info/SOURCES.txt
+Combinify.egg-info/dependency_links.txt
+Combinify.egg-info/requires.txt
+Combinify.egg-info/top_level.txt
