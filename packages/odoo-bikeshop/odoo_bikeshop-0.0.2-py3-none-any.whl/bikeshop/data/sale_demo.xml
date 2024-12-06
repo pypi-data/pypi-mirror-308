@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="service_0" model="product.product">
+    <field name="name">Bike Tune</field>
+    <field name="purchase_ok">0</field>
+    <field name="type">service</field>
+    <field name="list_price">125.0</field>
+    <field name="invoice_policy">order</field>
+    <field name="standard_price">150.0</field>
+    <field name="labor_hours">1.5</field>
+  </record>
+
+  <record id="res_partner_1" model="res.partner">
+    <field name="name">Joanne Wood</field>
+    <field name="is_company">0</field>
+    <field name="street">100 McLinden Dr</field>
+    <field name="city">Atlanta</field>
+    <field name="state_id" ref='base.state_us_11'/>
+    <field name="zip">30303</field>
+    <field name="country_id" ref="base.us"/>
+    <field name="email">jo@example.com</field>
+    <field name="phone">(555)-555-5555</field>
+  </record>
+
+  <record id="bike_1" model="bikeshop.bicycle">
+    <field name="serial">SN123abc</field>
+    <field name="color">Dark Teal</field>
+    <field name="make">New Albion</field>
+    <field name="model">Drake</field>
+    <field name="owner_id" ref="bikeshop.res_partner_1"/>
+  </record>
+
+  <record id="work_order_1" model="sale.order">
+    <field name="partner_id" ref="bikeshop.res_partner_1"/>
+    <field name="partner_invoice_id" ref="bikeshop.res_partner_1"/>
+    <field name="partner_shipping_id" ref="bikeshop.res_partner_1"/>
+    <field name="bike_id" ref="bikeshop.bike_1"/>
+    <field name="date_order" eval="(DateTime.today() - relativedelta(days=2)).strftime('%Y-%m-%d %H:%M')"/>
+  </record>
+
+  <record id="work_order_line_1" model="sale.order.line">
+    <field name="order_id" ref="work_order_1"/>
+    <field name="product_id" ref="bikeshop.service_0"/>
+    <field name="product_uom_qty">1</field>
+    <field name="price_unit">100</field>
+  </record>
+</odoo>

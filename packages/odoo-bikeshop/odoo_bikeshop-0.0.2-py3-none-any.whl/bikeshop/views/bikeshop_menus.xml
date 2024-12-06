@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+  <menuitem
+    name="Bike Shop"
+    id="bikeshop_menu_root"
+    web_icon="bikeshop,static/description/icon.png"
+    sequence="5"/>
+  <menuitem id="bikeshop_menu_root" name="Bike Shop">
+    <menuitem id="sale_order_menu" name="Work Orders">
+      <menuitem id="sale_order_in_queue_menu_action" action="sale_order_in_queue_action"/>
+      <menuitem id="sale_order_delayed_menu_action" action="sale_order_delayed_action"/>
+      <menuitem id="sale_order_model_menu_action" action="sale_order_action"/>
+    </menuitem>
+    <menuitem id="res_partner_menu" name="Customers">
+      <menuitem id="bikeshop_bicycles_model_menu_action" action="bikeshop_bicycle_action"/>
+      <menuitem id="res_partner_model_menu_action" action="res_partner_action"/>
+    </menuitem>
+    <menuitem id="menu_bikeshop_config" name="Configuration" sequence="50">
+      <menuitem id="product_product_model_menu_action" action="product_product_action"/>
+      <menuitem id="bikeshop_delay_reason_model_menu_action" action="bikeshop_delay_reason_action"/>
+    </menuitem>
+  </menuitem>
+</odoo>

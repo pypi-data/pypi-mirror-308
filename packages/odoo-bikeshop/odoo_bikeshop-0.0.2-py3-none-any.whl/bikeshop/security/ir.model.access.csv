@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+bikeshop.access_bikeshop_bicycle_user,access_bikeshop_bicycle_user,bikeshop.model_bikeshop_bicycle,base.group_user,1,1,1,1
+bikeshop.access_bikeshop_bicycle_shop_user,access_bikeshop_bicycle_shop_user,bikeshop.model_bikeshop_bicycle,bikeshop.group_shop_user,1,1,1,1
+bikeshop.access_sale_order,access_sale_order,bikeshop.model_sale_order,bikeshop.group_shop_user,1,1,1,1
+bikeshop.access_bikeshop_delay_reason_shop_user,access_bikeshop_delay_reason_shop_user,bikeshop.model_bikeshop_delay_reason,bikeshop.group_shop_user,1,0,0,0
+bikeshop.access_bikeshop_delay_reason_shop_manager,access_bikeshop_delay_reason_shop_manager,bikeshop.model_bikeshop_delay_reason,bikeshop.group_shop_manager,1,1,1,1
