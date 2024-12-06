@@ -1,0 +1,2 @@
+[console_scripts]
+assets = assets.cli:cli
