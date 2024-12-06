@@ -1,0 +1,16 @@
+airflow_providers_mattermost/__init__.py,sha256=o5HjMDipOBNf1Qnl4lqVJRvJAnjFH5fGJtbbuetdlcM,488
+airflow_providers_mattermost/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_providers_mattermost/common/attachments.py,sha256=dThAXQdzgS7u_DSKlRvfhaglwnZBX8f1aKxiG1u7fLI,943
+airflow_providers_mattermost/common/types.py,sha256=20uXkBGgucP2rQhucQPHnxs9qVgMGruZTq9mYGadz-g,82
+airflow_providers_mattermost/hooks/__init__.py,sha256=REuJ5WA2JR7EcqQV7jqsBlOAZ0NIMQXTil4_HNIlK5s,70
+airflow_providers_mattermost/hooks/mattermost.py,sha256=o7H8FUbLE505cW5q7ZUQWwa8lWk4OS-pndtdPFZxaXE,3788
+airflow_providers_mattermost/notifiers/__init__.py,sha256=-qahMe2EixZN2mfkn24wjE4iqqepMgoiksQbpLEZrFo,78
+airflow_providers_mattermost/notifiers/mattermost.py,sha256=WTX6RiklK9Gng3iBT9GX-XEzyApIS_iQErl9xr7gfFk,2147
+airflow_providers_mattermost/operators/__init__.py,sha256=1NXWB7TfTGnpVlsuNC6kgFoVERujsex1dsrNaGqO5VM,78
+airflow_providers_mattermost/operators/mattermost.py,sha256=C58qXiBdn9tYMXg0t0hw-yUZBFZ7tp7-fzxFiJUkeRk,2367
+airflow_providers_mattermost-0.3.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+airflow_providers_mattermost-0.3.0.dist-info/METADATA,sha256=r0g_jJCH78W6nmfA94Qi_133qB0BW0lMzEnI4c33hQM,15864
+airflow_providers_mattermost-0.3.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+airflow_providers_mattermost-0.3.0.dist-info/entry_points.txt,sha256=t5PumVixxW8oElO-0aBVWC4advZSVztyZSuBB1KgRo8,98
+airflow_providers_mattermost-0.3.0.dist-info/top_level.txt,sha256=3ymSNakIlS4CkRJsInJNJxvbYNJhKAxfbvi2PzsaRdA,29
+airflow_providers_mattermost-0.3.0.dist-info/RECORD,,
