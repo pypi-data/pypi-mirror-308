@@ -1,0 +1,10 @@
+frequenz/client/electricity_trading/__init__.py,sha256=nwg7YdWqiN4a6fiqL5ZrZO4UsEEja-JuYMgtLtve6Ws,6029
+frequenz/client/electricity_trading/_client.py,sha256=P-vEPQ8tEjass47MSD-4PXCz_UudopbJXvlKZlJb8RQ,35346
+frequenz/client/electricity_trading/_types.py,sha256=ypbjF1qg1uZXf6IQ_OgZFy0iVsfNMKXwiOX-XBIV-b8,65173
+frequenz/client/electricity_trading/conftest.py,sha256=N94JqZVXUBcXDyVJt47J4ZttIkn_q0WAWXozO1ofV9s,543
+frequenz/client/electricity_trading/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz_client_electricity_trading-0.3.0.dist-info/LICENSE,sha256=zt0sW1KvE_KWE2ILOabrQYlfOoP0zUZXC3xCLrzGpIA,1089
+frequenz_client_electricity_trading-0.3.0.dist-info/METADATA,sha256=jxrsESqcdwLGmtFX_B9g-_q2Ah_pINyFf67Apw9KSTA,6293
+frequenz_client_electricity_trading-0.3.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+frequenz_client_electricity_trading-0.3.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_client_electricity_trading-0.3.0.dist-info/RECORD,,
