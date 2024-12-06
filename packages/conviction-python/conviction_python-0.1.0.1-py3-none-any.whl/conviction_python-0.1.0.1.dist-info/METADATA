@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: conviction-python
+Version: 0.1.0.1
+Summary: Python SDK for Conviction AI
+Project-URL: Homepage, https://conviction.ai
+Author-email: Conviction AI <hello@conviction.ai>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# Conviction Python SDK
+
+Python SDK for Conviction AI
+
+## Installation 
+
+```bash
+pip install conviction-python
+```
