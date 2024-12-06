@@ -1,0 +1,48 @@
+[project]
+name = "hcp-vault-secrets-wrapper"
+description = "A wrapper for handling HCP Vault Secrets on an app-by-app basis"
+version = "0.7.5"
+authors = [{name = "Matthew Wright", email = "matt.jeremy.wright@gmail.com"}]
+dependencies = ["build>=1.2.2.post1,<2"]
+requires-python = ">= 3.6"
+readme = "README.md"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hcp"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
+
+[tool.pixi.pypi-dependencies]
+hcp_vault_secrets_wrapper = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+python = ">=3.6,<3.13"
+
+[tool.pixi.feature.test.dependencies]
+pytest = "*"
+python-dotenv = "*"
+
+[tool.pixi.feature.test.tasks]
+test = "pytest"
+
+[tool.pixi.feature.publish.dependencies]
+twine = "*"
+
+[tool.pixi.feature.publish.tasks]
+publish = "python -m twine upload dist/*"
+
+[tool.pixi.feature.build.tasks]
+build = "python -m build"
+
+[tool.pixi.environments]
+test = ["test"]
+publish = ["publish"]
+build = ["build"]
