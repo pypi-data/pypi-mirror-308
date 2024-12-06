@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: cmakeperf
+Version: 0.6.0
+Summary: Measure compilation performance with CMake
+Author-email: Paul Gessinger <hello@paulgessinger.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: filelock>=3.16.1
+Requires-Dist: numpy>=2.1.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: typer>=0.13.0
