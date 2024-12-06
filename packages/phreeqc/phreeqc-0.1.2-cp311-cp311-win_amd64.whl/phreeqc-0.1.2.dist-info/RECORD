@@ -1,0 +1,8 @@
+phreeqc/__init__.py,sha256=fXZYKZtAk7Bu2Bu-PvVVQrWAsq4DkjNKl6E9tWPwQeI,120
+phreeqc/__init__.pyi,sha256=MYp-gM5QSNwUrg-HkfAfG9bpvUzzceTIoH1gObYVwyo,1124
+phreeqc/IPhreeqc.cp311-win_amd64.pyd,sha256=TLjQL5CV54fLto1mAA5vhfW217Z3jt-HY29TaFybBME,2139136
+phreeqc/IPhreeqc.lib,sha256=Yisa6L8VmMWsxojxHB5eEhM3m75HZi8VEhWdm9xyAew,315514
+phreeqc-0.1.2.dist-info/METADATA,sha256=kSV63ASceDztOEswpqTEVbhhIvXYXt6H8KAXffALGlk,2543
+phreeqc-0.1.2.dist-info/WHEEL,sha256=kXCl1J14PkmxQKXf5U_5vxmme_OmC3Ydcral7u0yA3M,106
+phreeqc-0.1.2.dist-info/licenses/LICENSE,sha256=KgttXOVJ-TBdm1TeCh97ibC3F6lncBvhnqRi7qwTyLs,1089
+phreeqc-0.1.2.dist-info/RECORD,,
