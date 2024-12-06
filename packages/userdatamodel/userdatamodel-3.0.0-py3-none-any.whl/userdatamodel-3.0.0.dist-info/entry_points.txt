@@ -1,0 +1,3 @@
+[console_scripts]
+userdatamodel-init=bin/userdatamodel-init:main
+
