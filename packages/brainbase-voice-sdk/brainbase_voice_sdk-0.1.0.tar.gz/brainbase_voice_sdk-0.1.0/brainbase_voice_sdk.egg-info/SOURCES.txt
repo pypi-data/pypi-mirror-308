@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+brainbase_voice_sdk.egg-info/PKG-INFO
+brainbase_voice_sdk.egg-info/SOURCES.txt
+brainbase_voice_sdk.egg-info/dependency_links.txt
+brainbase_voice_sdk.egg-info/requires.txt
+brainbase_voice_sdk.egg-info/top_level.txt

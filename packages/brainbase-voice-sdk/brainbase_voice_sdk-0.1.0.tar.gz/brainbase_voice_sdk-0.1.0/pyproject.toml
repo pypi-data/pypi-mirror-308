@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brainbase-voice-sdk"
+version = "0.1.0"
+description = "SDK for interacting with the Brainbase Voice API"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "MIT" }
+authors = [
+    { name = "Gokhan Egri", email = "gokhan@usebrainbase.xyz" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "requests>=2.25.1",
+    "pydantic>=1.8.2",
+]
+
+[project.urls]
+"Documentation" = "https://github.com/yourusername/call_api_sdk#readme"
+"Source Code" = "https://github.com/yourusername/call_api_sdk"
+"Bug Tracker" = "https://github.com/yourusername/call_api_sdk/issues"
+
+[tool.setuptools.packages.find]
+include = ["brainbase-voice-sdk"]
