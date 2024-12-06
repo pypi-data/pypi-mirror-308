@@ -1,0 +1,68 @@
+msgid "experiment_number"
+msgstr "Номер експерименту"
+
+msgid "attempts"
+msgstr "Використано символів"
+
+msgid "attempt"
+msgstr "Спроба"
+
+msgid "last_char"
+msgstr "Останній введений символ"
+
+msgid "random_text_part"
+msgstr "Довільна частина тексту"
+
+msgid "used_chars"
+msgstr "Використані символи"
+
+msgid "no_input"
+msgstr "Не було надано жодних даних"
+
+msgid "main_input_label"
+msgstr "Ваш символ"
+
+msgid "main_input_placeholder"
+msgstr "Розпочніть експеримент"
+
+msgid "next"
+msgstr "Наступний експеримент"
+
+msgid "reset"
+msgstr "Скинути"
+
+msgid "char_numbers"
+msgstr "символів"
+
+msgid "ngram_selector_label"
+msgstr "Порядок N-грами"
+
+msgid "status_label"
+msgstr "Статус"
+
+msgid "start"
+msgstr "Розпочати експеримент"
+
+msgid "invalid_char"
+msgstr "Введіть символ лише з українського алфавіту"
+
+msgid "win"
+msgstr "Ви вгадали. Для продовження натисніть 'Наступний експеримент' або 'Рестарт', щоб почати спочатку"
+
+msgid "incorrect"
+msgstr "Ви не вгадали, введіть інший символ"
+
+msgid "used_char"
+msgstr "Ви вже використали цей символ, введіть інший"
+
+msgid "probability"
+msgstr "Ймовірність"
+
+msgid "table_placeholder"
+msgstr "-\_(0_o)_/-\nДані відсутні"
+
+msgid "guessed_chars"
+msgstr "Вгадані символи"
+
+msgid "char"
+msgstr "Символ"
