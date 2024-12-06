@@ -1,0 +1,12 @@
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 00:51:20,397 | INFO | 139773805065792 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 00:51:20,399 | INFO | 139773805065792 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 01:02:12,326 | INFO | 140472817284672 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:12,328 | INFO | 140472817284672 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 01:02:45,717 | INFO | 139889115919936 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:45,718 | INFO | 139889115919936 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'

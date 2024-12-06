@@ -1,0 +1,268 @@
+0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f20867ae680>)> -- SET INJECT
+2024-11-15 00:47:29,855 | INFO | 139778105528320 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f20867ae680>)> -- SET INJECT
+1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)> -- SET INJECT
+2024-11-15 00:47:29,856 | INFO | 139778105528320 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)> -- SET INJECT
+2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f20867de3b0>)> -- SET INJECT
+2024-11-15 00:47:29,856 | INFO | 139778105528320 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f20867de3b0>)> -- SET INJECT
+3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)> -- SET INJECT
+2024-11-15 00:47:29,856 | INFO | 139778105528320 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)> -- SET INJECT
+4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f20867de4d0>)> -- SET INJECT
+2024-11-15 00:47:29,856 | INFO | 139778105528320 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f20867de4d0>)> -- SET INJECT
+5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)> -- SET INJECT
+2024-11-15 00:47:29,856 | INFO | 139778105528320 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)> -- SET INJECT
+6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0> -- SET INJECT
+2024-11-15 00:47:29,859 | INFO | 139778105528320 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0> -- SET INJECT
+7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00> -- SET INJECT
+2024-11-15 00:47:29,859 | INFO | 139778105528320 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00> -- SET INJECT
+8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f20864a5fc0> -- SET INJECT
+2024-11-15 00:47:29,938 | INFO | 139778105528320 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f20864a5fc0> -- SET INJECT
+9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f20864a6050> -- SET INJECT
+2024-11-15 00:47:29,938 | INFO | 139778105528320 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f20864a6050> -- SET INJECT
+10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f20864a60e0> -- SET INJECT
+2024-11-15 00:47:29,938 | INFO | 139778105528320 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f20864a60e0> -- SET INJECT
+11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70> -- SET INJECT
+2024-11-15 00:47:29,940 | INFO | 139778105528320 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70> -- SET INJECT
+12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f20864a6b90> -- SET INJECT
+2024-11-15 00:47:29,940 | INFO | 139778105528320 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f20864a6b90> -- SET INJECT
+13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f20864a6c20> -- SET INJECT
+2024-11-15 00:47:29,940 | INFO | 139778105528320 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f20864a6c20> -- SET INJECT
+14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f2086477490> -- SET INJECT
+2024-11-15 00:47:29,941 | INFO | 139778105528320 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f2086477490> -- SET INJECT
+15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)> -- SET INJECT
+2024-11-15 00:47:29,941 | INFO | 139778105528320 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)> -- SET INJECT
+16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f20864a6950>)> -- SET INJECT
+2024-11-15 00:47:29,942 | INFO | 139778105528320 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f20864a6950>)> -- SET INJECT
+17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f20864a7490>)> -- SET INJECT
+2024-11-15 00:47:29,942 | INFO | 139778105528320 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f20864a7490>)> -- SET INJECT
+18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f20862c1ab0>)> -- SET INJECT
+2024-11-15 00:47:29,949 | INFO | 139778105528320 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f20862c1ab0>)> -- SET INJECT
+19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f20862c1b40>)> -- SET INJECT
+2024-11-15 00:47:29,949 | INFO | 139778105528320 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f20862c1b40>)> -- SET INJECT
+20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f20862c1870>)> -- SET INJECT
+2024-11-15 00:47:29,950 | INFO | 139778105528320 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f20862c1870>)> -- SET INJECT
+21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f20862c16c0>)> -- SET INJECT
+2024-11-15 00:47:29,950 | INFO | 139778105528320 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f20862c16c0>)> -- SET INJECT
+22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f1fa02d0dc0> -- SET INJECT
+2024-11-15 00:47:33,207 | INFO | 139778105528320 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f1fa02d0dc0> -- SET INJECT
+23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f1fa02d1c60> -- SET INJECT
+2024-11-15 00:47:33,211 | INFO | 139778105528320 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f1fa02d1c60> -- SET INJECT
+24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)> -- SET INJECT
+2024-11-15 00:47:33,219 | INFO | 139778105528320 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)> -- SET INJECT
+fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)>::0::3 -- SYNC ACTION
+2024-11-15 00:47:45,951 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)>::0::3 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0>::1::0 -- SYNC ACTION
+2024-11-15 00:49:03,537 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,389 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,395 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,398 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,399 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00>::2::0 -- SYNC ACTION
+2024-11-15 00:51:20,587 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00>::2::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,588 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,589 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)>::1::1 -- SYNC ACTION
+2024-11-15 00:51:20,594 | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)>::1::1 -- SYNC ACTION
+0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7ff4fdd72440>)> -- SET INJECT
+2024-11-15 00:57:27,180 | INFO | 140690498215936 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7ff4fdd72440>)> -- SET INJECT
+1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7ff4fdda01f0>)> -- SET INJECT
+2024-11-15 00:57:27,181 | INFO | 140690498215936 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7ff4fdda01f0>)> -- SET INJECT
+2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7ff4fdda2170>)> -- SET INJECT
+2024-11-15 00:57:27,181 | INFO | 140690498215936 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7ff4fdda2170>)> -- SET INJECT
+3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7ff4fdda2200>)> -- SET INJECT
+2024-11-15 00:57:27,181 | INFO | 140690498215936 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7ff4fdda2200>)> -- SET INJECT
+4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7ff4fdda2290>)> -- SET INJECT
+2024-11-15 00:57:27,181 | INFO | 140690498215936 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7ff4fdda2290>)> -- SET INJECT
+5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7ff4fdda2320>)> -- SET INJECT
+2024-11-15 00:57:27,181 | INFO | 140690498215936 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7ff4fdda2320>)> -- SET INJECT
+6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0> -- SET INJECT
+2024-11-15 00:57:27,183 | INFO | 140690498215936 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0> -- SET INJECT
+7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7ff4fdda3910> -- SET INJECT
+2024-11-15 00:57:27,184 | INFO | 140690498215936 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7ff4fdda3910> -- SET INJECT
+8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7ff4fd86dd80> -- SET INJECT
+2024-11-15 00:57:27,259 | INFO | 140690498215936 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7ff4fd86dd80> -- SET INJECT
+9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7ff4fd86de10> -- SET INJECT
+2024-11-15 00:57:27,259 | INFO | 140690498215936 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7ff4fd86de10> -- SET INJECT
+10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7ff4fd86dea0> -- SET INJECT
+2024-11-15 00:57:27,259 | INFO | 140690498215936 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7ff4fd86dea0> -- SET INJECT
+11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7ff4fd86e830> -- SET INJECT
+2024-11-15 00:57:27,260 | INFO | 140690498215936 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7ff4fd86e830> -- SET INJECT
+12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7ff4fd86e950> -- SET INJECT
+2024-11-15 00:57:27,260 | INFO | 140690498215936 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7ff4fd86e950> -- SET INJECT
+13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7ff4fd86e9e0> -- SET INJECT
+2024-11-15 00:57:27,261 | INFO | 140690498215936 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7ff4fd86e9e0> -- SET INJECT
+14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7ff4fd846a10> -- SET INJECT
+2024-11-15 00:57:27,262 | INFO | 140690498215936 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7ff4fd846a10> -- SET INJECT
+15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7ff4fd86e3b0>)> -- SET INJECT
+2024-11-15 00:57:27,262 | INFO | 140690498215936 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7ff4fd86e3b0>)> -- SET INJECT
+16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7ff4fd86e710>)> -- SET INJECT
+2024-11-15 00:57:27,262 | INFO | 140690498215936 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7ff4fd86e710>)> -- SET INJECT
+17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7ff4fd86f250>)> -- SET INJECT
+2024-11-15 00:57:27,262 | INFO | 140690498215936 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7ff4fd86f250>)> -- SET INJECT
+18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7ff4fd884700>)> -- SET INJECT
+2024-11-15 00:57:27,268 | INFO | 140690498215936 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7ff4fd884700>)> -- SET INJECT
+19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7ff4fd884670>)> -- SET INJECT
+2024-11-15 00:57:27,268 | INFO | 140690498215936 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7ff4fd884670>)> -- SET INJECT
+20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885900>)> -- SET INJECT
+2024-11-15 00:57:27,269 | INFO | 140690498215936 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885900>)> -- SET INJECT
+21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885c60>)> -- SET INJECT
+2024-11-15 00:57:27,270 | INFO | 140690498215936 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885c60>)> -- SET INJECT
+22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7ff413884a60> -- SET INJECT
+2024-11-15 00:57:30,604 | INFO | 140690498215936 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7ff413884a60> -- SET INJECT
+23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7ff413885900> -- SET INJECT
+2024-11-15 00:57:30,609 | INFO | 140690498215936 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7ff413885900> -- SET INJECT
+24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)> -- SET INJECT
+2024-11-15 00:57:30,610 | INFO | 140690498215936 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)> -- SET INJECT
+fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+2024-11-15 00:58:51,504 | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+2024-11-15 00:58:51,505 | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+2024-11-15 00:59:17,813 | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+2024-11-15 01:00:12,701 | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7fc342cae560>)> -- SET INJECT
+2024-11-15 01:01:30,986 | INFO | 140477041500160 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7fc342cae560>)> -- SET INJECT
+1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)> -- SET INJECT
+2024-11-15 01:01:30,986 | INFO | 140477041500160 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)> -- SET INJECT
+2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7fc342cd6290>)> -- SET INJECT
+2024-11-15 01:01:30,986 | INFO | 140477041500160 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7fc342cd6290>)> -- SET INJECT
+3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)> -- SET INJECT
+2024-11-15 01:01:30,986 | INFO | 140477041500160 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)> -- SET INJECT
+4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7fc342cd63b0>)> -- SET INJECT
+2024-11-15 01:01:30,987 | INFO | 140477041500160 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7fc342cd63b0>)> -- SET INJECT
+5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)> -- SET INJECT
+2024-11-15 01:01:30,987 | INFO | 140477041500160 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)> -- SET INJECT
+6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0> -- SET INJECT
+2024-11-15 01:01:30,989 | INFO | 140477041500160 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0> -- SET INJECT
+7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30> -- SET INJECT
+2024-11-15 01:01:30,989 | INFO | 140477041500160 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30> -- SET INJECT
+8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7fc3427ddea0> -- SET INJECT
+2024-11-15 01:01:31,064 | INFO | 140477041500160 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7fc3427ddea0> -- SET INJECT
+9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7fc3427ddf30> -- SET INJECT
+2024-11-15 01:01:31,064 | INFO | 140477041500160 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7fc3427ddf30> -- SET INJECT
+10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7fc3427ddfc0> -- SET INJECT
+2024-11-15 01:01:31,064 | INFO | 140477041500160 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7fc3427ddfc0> -- SET INJECT
+11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950> -- SET INJECT
+2024-11-15 01:01:31,065 | INFO | 140477041500160 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950> -- SET INJECT
+12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7fc3427dea70> -- SET INJECT
+2024-11-15 01:01:31,066 | INFO | 140477041500160 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7fc3427dea70> -- SET INJECT
+13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7fc3427deb00> -- SET INJECT
+2024-11-15 01:01:31,066 | INFO | 140477041500160 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7fc3427deb00> -- SET INJECT
+14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7fc3427b2ad0> -- SET INJECT
+2024-11-15 01:01:31,067 | INFO | 140477041500160 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7fc3427b2ad0> -- SET INJECT
+15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)> -- SET INJECT
+2024-11-15 01:01:31,067 | INFO | 140477041500160 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)> -- SET INJECT
+16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7fc3427de830>)> -- SET INJECT
+2024-11-15 01:01:31,067 | INFO | 140477041500160 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7fc3427de830>)> -- SET INJECT
+17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7fc3427df370>)> -- SET INJECT
+2024-11-15 01:01:31,067 | INFO | 140477041500160 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7fc3427df370>)> -- SET INJECT
+18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7fc3427f4820>)> -- SET INJECT
+2024-11-15 01:01:31,073 | INFO | 140477041500160 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7fc3427f4820>)> -- SET INJECT
+19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7fc3427f4790>)> -- SET INJECT
+2024-11-15 01:01:31,073 | INFO | 140477041500160 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7fc3427f4790>)> -- SET INJECT
+20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5a20>)> -- SET INJECT
+2024-11-15 01:01:31,075 | INFO | 140477041500160 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5a20>)> -- SET INJECT
+21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5d80>)> -- SET INJECT
+2024-11-15 01:01:31,075 | INFO | 140477041500160 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5d80>)> -- SET INJECT
+22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7fc260700b80> -- SET INJECT
+2024-11-15 01:01:34,730 | INFO | 140477041500160 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7fc260700b80> -- SET INJECT
+23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7fc260701a20> -- SET INJECT
+2024-11-15 01:01:34,735 | INFO | 140477041500160 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7fc260701a20> -- SET INJECT
+24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)> -- SET INJECT
+2024-11-15 01:01:34,736 | INFO | 140477041500160 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)> -- SET INJECT
+fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)>::0::3 -- SYNC ACTION
+2024-11-15 01:01:39,373 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)>::0::3 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0>::1::0 -- SYNC ACTION
+2024-11-15 01:01:39,375 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,323 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,325 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,327 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,328 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30>::2::0 -- SYNC ACTION
+2024-11-15 01:02:12,507 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30>::2::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,508 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,509 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)>::1::1 -- SYNC ACTION
+2024-11-15 01:02:12,513 | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)>::1::1 -- SYNC ACTION
+0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f3b5b6224d0>)> -- SET INJECT
+2024-11-15 01:02:40,736 | INFO | 139893340418048 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f3b5b6224d0>)> -- SET INJECT
+1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)> -- SET INJECT
+2024-11-15 01:02:40,736 | INFO | 139893340418048 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)> -- SET INJECT
+2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f3b5b64e200>)> -- SET INJECT
+2024-11-15 01:02:40,736 | INFO | 139893340418048 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f3b5b64e200>)> -- SET INJECT
+3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)> -- SET INJECT
+2024-11-15 01:02:40,737 | INFO | 139893340418048 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)> -- SET INJECT
+4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f3b5b64e320>)> -- SET INJECT
+2024-11-15 01:02:40,737 | INFO | 139893340418048 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f3b5b64e320>)> -- SET INJECT
+5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)> -- SET INJECT
+2024-11-15 01:02:40,737 | INFO | 139893340418048 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)> -- SET INJECT
+6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760> -- SET INJECT
+2024-11-15 01:02:40,740 | INFO | 139893340418048 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760> -- SET INJECT
+7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0> -- SET INJECT
+2024-11-15 01:02:40,740 | INFO | 139893340418048 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0> -- SET INJECT
+8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f3b5b4ade10> -- SET INJECT
+2024-11-15 01:02:40,824 | INFO | 139893340418048 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f3b5b4ade10> -- SET INJECT
+9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f3b5b4adea0> -- SET INJECT
+2024-11-15 01:02:40,824 | INFO | 139893340418048 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f3b5b4adea0> -- SET INJECT
+10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f3b5b4adf30> -- SET INJECT
+2024-11-15 01:02:40,824 | INFO | 139893340418048 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f3b5b4adf30> -- SET INJECT
+11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0> -- SET INJECT
+2024-11-15 01:02:40,826 | INFO | 139893340418048 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0> -- SET INJECT
+12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f3b5b4ae9e0> -- SET INJECT
+2024-11-15 01:02:40,826 | INFO | 139893340418048 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f3b5b4ae9e0> -- SET INJECT
+13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f3b5b4aea70> -- SET INJECT
+2024-11-15 01:02:40,826 | INFO | 139893340418048 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f3b5b4aea70> -- SET INJECT
+14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f3b5b47e950> -- SET INJECT
+2024-11-15 01:02:40,828 | INFO | 139893340418048 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f3b5b47e950> -- SET INJECT
+15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)> -- SET INJECT
+2024-11-15 01:02:40,828 | INFO | 139893340418048 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)> -- SET INJECT
+16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f3b5b4ae7a0>)> -- SET INJECT
+2024-11-15 01:02:40,828 | INFO | 139893340418048 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f3b5b4ae7a0>)> -- SET INJECT
+17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f3b5b4af2e0>)> -- SET INJECT
+2024-11-15 01:02:40,828 | INFO | 139893340418048 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f3b5b4af2e0>)> -- SET INJECT
+18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f3b5b2c4790>)> -- SET INJECT
+2024-11-15 01:02:40,837 | INFO | 139893340418048 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f3b5b2c4790>)> -- SET INJECT
+19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f3b5b2c4700>)> -- SET INJECT
+2024-11-15 01:02:40,838 | INFO | 139893340418048 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f3b5b2c4700>)> -- SET INJECT
+20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5990>)> -- SET INJECT
+2024-11-15 01:02:40,839 | INFO | 139893340418048 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5990>)> -- SET INJECT
+21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5cf0>)> -- SET INJECT
+2024-11-15 01:02:40,840 | INFO | 139893340418048 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5cf0>)> -- SET INJECT
+22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f3a793c8af0> -- SET INJECT
+2024-11-15 01:02:44,441 | INFO | 139893340418048 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f3a793c8af0> -- SET INJECT
+23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f3a793c9990> -- SET INJECT
+2024-11-15 01:02:44,450 | INFO | 139893340418048 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f3a793c9990> -- SET INJECT
+24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)> -- SET INJECT
+2024-11-15 01:02:44,451 | INFO | 139893340418048 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)> -- SET INJECT
+fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)>::0::3 -- SYNC ACTION
+2024-11-15 01:02:45,710 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)>::0::3 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,712 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,713 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,715 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,717 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,718 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)>::3::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0>::2::0 -- SYNC ACTION
+2024-11-15 01:02:45,899 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0>::2::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,901 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,901 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)>::1::1 -- SYNC ACTION
+2024-11-15 01:02:45,910 | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)>::1::1 -- SYNC ACTION

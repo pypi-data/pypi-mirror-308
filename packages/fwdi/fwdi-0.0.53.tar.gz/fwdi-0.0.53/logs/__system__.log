@@ -1,0 +1,554 @@
+2024-11-14 20:58:45,155 | passlib.utils.compat | DEBUG | 140004982915072 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-14 20:58:45,156 | passlib.utils.compat | DEBUG | 140004982915072 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-14 20:58:45,156 | passlib.utils.compat | DEBUG | 140004982915072 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:29:45,816 | passlib.utils.compat | DEBUG | 139808577916928 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:29:45,817 | passlib.utils.compat | DEBUG | 139808577916928 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:29:45,817 | passlib.utils.compat | DEBUG | 139808577916928 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:42:42,072 | passlib.utils.compat | DEBUG | 140078524076032 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:42:42,073 | passlib.utils.compat | DEBUG | 140078524076032 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:42:42,073 | passlib.utils.compat | DEBUG | 140078524076032 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:42:49,477 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:42:49,477 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:42:49,478 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f669171feb0>
+2024-11-15 00:42:49,479 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | Create dependency injection Persistence
+2024-11-15 00:42:49,479 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | Create dependency injection Application
+2024-11-15 00:42:49,479 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | Create dependency injection Infrastructure
+2024-11-15 00:42:49,479 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | Build services
+2024-11-15 00:42:49,484 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | Create dependency injection Utilites
+2024-11-15 00:42:49,484 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | Create dependency injection Presentation
+2024-11-15 00:42:49,484 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f65970ab8e0>>
+2024-11-15 00:42:49,486 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f65970ecee0>
+2024-11-15 00:42:49,502 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 00:42:49,503 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140078524076032 | Inititalize DB
+2024-11-15 00:42:49,506 | peewee | DEBUG | 140078524076032 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:42:49,521 | peewee | DEBUG | 140078524076032 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:42:49,524 | peewee | DEBUG | 140078524076032 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 00:42:49,528 | peewee | DEBUG | 140078524076032 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 00:42:49,531 | peewee | DEBUG | 140078524076032 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 00:42:49,535 | peewee | DEBUG | 140078524076032 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 00:42:49,538 | peewee | DEBUG | 140078524076032 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 00:42:49,541 | peewee | DEBUG | 140078524076032 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 00:42:49,545 | peewee | DEBUG | 140078524076032 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 00:42:49,546 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "scope" ("name", "description") VALUES (?, ?)', ['admin', 'Administration access.'])
+2024-11-15 00:42:49,548 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "scope" ("name", "description") VALUES (?, ?)', ['embedding', 'Embedding access'])
+2024-11-15 00:42:49,551 | peewee | DEBUG | 140078524076032 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 00:42:49,551 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "permissions" ("name") VALUES (?)', ['Admin'])
+2024-11-15 00:42:49,554 | peewee | DEBUG | 140078524076032 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 00:42:49,555 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "permissions_scope_through" ("permissions_id", "scope_id") VALUES (?, ?)', [1, 1])
+2024-11-15 00:42:49,558 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "permissions_scope_through" ("permissions_id", "scope_id") VALUES (?, ?)', [1, 2])
+2024-11-15 00:42:49,561 | peewee | DEBUG | 140078524076032 | ('UPDATE "permissions" SET "name" = ? WHERE ("permissions"."id" = ?)', ['Admin', 1])
+2024-11-15 00:42:49,562 | peewee | DEBUG | 140078524076032 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 00:42:49,562 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140078524076032 | fwdi.Utilites.jwt_tools:admin
+2024-11-15 00:42:49,746 | peewee | DEBUG | 140078524076032 | ('INSERT INTO "user" ("username", "full_name", "email", "hashed_password", "disabled", "scopes_id") VALUES (?, ?, ?, ?, ?, ?)', ['admin', 'Admin adminich', 'admin@admin.ru', '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', False, 1])
+2024-11-15 00:42:49,749 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f6689080f70>
+2024-11-15 00:42:49,752 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f66890812d0>
+2024-11-15 00:42:49,754 | logs/ITSHelper_WebApplication.log | INFO | 140078524076032 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:42:49,759 | asyncio | DEBUG | 140078524076032 | Using selector: EpollSelector
+2024-11-15 00:43:17,005 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_begin with no data
+2024-11-15 00:43:17,005 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_field with data[54:73]
+2024-11-15 00:43:17,005 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_value with data[75:101]
+2024-11-15 00:43:17,005 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_end with no data
+2024-11-15 00:43:17,005 | multipart.multipart | DEBUG | 140078524076032 | Calling on_headers_finished with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_data with data[105:110]
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_end with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_begin with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_field with data[166:185]
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_value with data[187:213]
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_end with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_headers_finished with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_data with data[217:222]
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_end with no data
+2024-11-15 00:43:17,006 | multipart.multipart | DEBUG | 140078524076032 | Calling on_end with no data
+2024-11-15 00:43:17,027 | logs/ITSHelper_TokenController.log | DEBUG | 140074299684416 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596e7cac0>
+2024-11-15 00:45:04,622 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_begin with no data
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_field with data[54:73]
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_value with data[75:101]
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_end with no data
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_headers_finished with no data
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_data with data[105:110]
+2024-11-15 00:45:04,623 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_end with no data
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_begin with no data
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_field with data[166:185]
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_value with data[187:213]
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_header_end with no data
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_headers_finished with no data
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_data with data[217:222]
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_part_end with no data
+2024-11-15 00:45:04,624 | multipart.multipart | DEBUG | 140078524076032 | Calling on_end with no data
+2024-11-15 00:45:04,628 | logs/ITSHelper_TokenController.log | DEBUG | 140074299684416 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596ee4c40>
+2024-11-15 00:46:47,098 | passlib.utils.compat | DEBUG | 140150662299648 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:46:47,099 | passlib.utils.compat | DEBUG | 140150662299648 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:46:47,099 | passlib.utils.compat | DEBUG | 140150662299648 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:47:29,830 | passlib.utils.compat | DEBUG | 139778105528320 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:47:29,830 | passlib.utils.compat | DEBUG | 139778105528320 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:47:29,830 | passlib.utils.compat | DEBUG | 139778105528320 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:47:29,855 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f20867ae680>)> -- SET INJECT
+2024-11-15 00:47:29,856 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)> -- SET INJECT
+2024-11-15 00:47:29,856 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f20867de3b0>)> -- SET INJECT
+2024-11-15 00:47:29,856 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)> -- SET INJECT
+2024-11-15 00:47:29,856 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f20867de4d0>)> -- SET INJECT
+2024-11-15 00:47:29,856 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)> -- SET INJECT
+2024-11-15 00:47:29,859 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0> -- SET INJECT
+2024-11-15 00:47:29,859 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00> -- SET INJECT
+2024-11-15 00:47:29,938 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f20864a5fc0> -- SET INJECT
+2024-11-15 00:47:29,938 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f20864a6050> -- SET INJECT
+2024-11-15 00:47:29,938 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f20864a60e0> -- SET INJECT
+2024-11-15 00:47:29,940 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70> -- SET INJECT
+2024-11-15 00:47:29,940 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f20864a6b90> -- SET INJECT
+2024-11-15 00:47:29,940 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f20864a6c20> -- SET INJECT
+2024-11-15 00:47:29,941 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f2086477490> -- SET INJECT
+2024-11-15 00:47:29,941 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)> -- SET INJECT
+2024-11-15 00:47:29,942 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f20864a6950>)> -- SET INJECT
+2024-11-15 00:47:29,942 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f20864a7490>)> -- SET INJECT
+2024-11-15 00:47:29,949 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f20862c1ab0>)> -- SET INJECT
+2024-11-15 00:47:29,949 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f20862c1b40>)> -- SET INJECT
+2024-11-15 00:47:29,950 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f20862c1870>)> -- SET INJECT
+2024-11-15 00:47:29,950 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f20862c16c0>)> -- SET INJECT
+2024-11-15 00:47:33,207 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f1fa02d0dc0> -- SET INJECT
+2024-11-15 00:47:33,208 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:47:33,208 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:47:33,209 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f209f023130>
+2024-11-15 00:47:33,209 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | Create dependency injection Persistence
+2024-11-15 00:47:33,209 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | Create dependency injection Application
+2024-11-15 00:47:33,209 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | Create dependency injection Infrastructure
+2024-11-15 00:47:33,210 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | Build services
+2024-11-15 00:47:33,211 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f1fa02d1c60> -- SET INJECT
+2024-11-15 00:47:33,219 | logs/ITSHelper___inject__.log | INFO | 139778105528320 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)> -- SET INJECT
+2024-11-15 00:47:33,219 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | Create dependency injection Utilites
+2024-11-15 00:47:33,220 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | Create dependency injection Presentation
+2024-11-15 00:47:33,220 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1fa02e1d80>>
+2024-11-15 00:47:33,222 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1fa02d1fc0>
+2024-11-15 00:47:33,231 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 00:47:33,231 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139778105528320 | Inititalize DB
+2024-11-15 00:47:33,339 | peewee | DEBUG | 139778105528320 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:47:33,340 | peewee | DEBUG | 139778105528320 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:47:33,341 | peewee | DEBUG | 139778105528320 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 00:47:33,341 | peewee | DEBUG | 139778105528320 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 00:47:33,341 | peewee | DEBUG | 139778105528320 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 00:47:33,341 | peewee | DEBUG | 139778105528320 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 00:47:33,342 | peewee | DEBUG | 139778105528320 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 00:47:33,342 | peewee | DEBUG | 139778105528320 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 00:47:33,342 | peewee | DEBUG | 139778105528320 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 00:47:33,343 | peewee | DEBUG | 139778105528320 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 00:47:33,343 | peewee | DEBUG | 139778105528320 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 00:47:33,344 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f20862c1360>
+2024-11-15 00:47:33,347 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f20862c13f0>
+2024-11-15 00:47:33,349 | logs/ITSHelper_WebApplication.log | INFO | 139778105528320 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:47:33,352 | asyncio | DEBUG | 139778105528320 | Using selector: EpollSelector
+2024-11-15 00:47:36,951 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_begin with no data
+2024-11-15 00:47:36,951 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_field with data[54:73]
+2024-11-15 00:47:36,951 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_value with data[75:101]
+2024-11-15 00:47:36,951 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_end with no data
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_headers_finished with no data
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_data with data[105:110]
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_end with no data
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_begin with no data
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_field with data[166:185]
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_value with data[187:213]
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_header_end with no data
+2024-11-15 00:47:36,952 | multipart.multipart | DEBUG | 139778105528320 | Calling on_headers_finished with no data
+2024-11-15 00:47:36,953 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_data with data[217:222]
+2024-11-15 00:47:36,953 | multipart.multipart | DEBUG | 139778105528320 | Calling on_part_end with no data
+2024-11-15 00:47:36,953 | multipart.multipart | DEBUG | 139778105528320 | Calling on_end with no data
+2024-11-15 00:47:45,951 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f1fa02d1f30>)>::0::3 -- SYNC ACTION
+2024-11-15 00:48:53,885 | logs/ITSHelper_TokenController.log | DEBUG | 139773805065792 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f1fa0030c40>
+2024-11-15 00:49:03,537 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f20867dfac0>::1::0 -- SYNC ACTION
+2024-11-15 00:51:17,328 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139773805065792 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00cb160>
+2024-11-15 00:51:20,389 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,391 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139773805065792 | fwdi.Persistence.manager_db_context
+2024-11-15 00:51:20,392 | peewee | DEBUG | 139773805065792 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 00:51:20,394 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139773805065792 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 00:51:20,395 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f20864a65f0>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,397 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139773805065792 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 00:51:20,398 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f20867de440>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,398 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139773805065792 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin
+2024-11-15 00:51:20,399 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139773805065792 | {'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}
+2024-11-15 00:51:20,399 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139773805065792 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 00:51:20,399 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f20867dd090>)>::3::0 -- SYNC ACTION
+2024-11-15 00:51:20,399 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139773805065792 | fwdi.Utilites.jwt_tools:admin
+2024-11-15 00:51:20,587 | logs/ITSHelper_TokenController.log | DEBUG | 139773805065792 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 00:51:20,587 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f20867dfd00>::2::0 -- SYNC ACTION
+2024-11-15 00:51:20,588 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139773805065792 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00caef0>:admin@admin.ru
+2024-11-15 00:51:20,588 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,589 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139773805065792 | fwdi.Persistence.manager_db_context
+2024-11-15 00:51:20,589 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f20864a6a70>::1::0 -- SYNC ACTION
+2024-11-15 00:51:20,589 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139773805065792 | fwdi.Persistence.manager_db_context
+2024-11-15 00:51:20,590 | peewee | DEBUG | 139773805065792 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-11-15 00:51:20,591 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139773805065792 | 1
+2024-11-15 00:51:20,591 | peewee | DEBUG | 139773805065792 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-11-15 00:51:20,593 | peewee | DEBUG | 139773805065792 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-11-15 00:51:20,594 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139773805065792 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 00:51:20,594 | logs/ITSHelper_TokenController.log | DEBUG | 139773805065792 | ['admin', 'embedding']
+2024-11-15 00:51:20,594 | logs/ITSHelper___inject__.log | INFO | 139773805065792 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f20867de560>)>::1::1 -- SYNC ACTION
+2024-11-15 00:51:20,595 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139773805065792 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin', 'embedding']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1fa00cbf70>
+2024-11-15 00:51:20,596 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139773805065792 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk1ODgwfQ.vEuEuSmDmJ2qNlQoFpaphDaeS-EvYw1vyglv6lZ2u-Q
+2024-11-15 00:51:20,596 | logs/ITSHelper_TokenController.log | DEBUG | 139773805065792 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk1ODgwfQ.vEuEuSmDmJ2qNlQoFpaphDaeS-EvYw1vyglv6lZ2u-Q
+2024-11-15 00:54:52,835 | passlib.utils.compat | DEBUG | 140600353341440 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:54:52,835 | passlib.utils.compat | DEBUG | 140600353341440 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:54:52,836 | passlib.utils.compat | DEBUG | 140600353341440 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:55:31,745 | passlib.utils.compat | DEBUG | 140463572127744 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:55:31,745 | passlib.utils.compat | DEBUG | 140463572127744 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:55:31,745 | passlib.utils.compat | DEBUG | 140463572127744 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:55:57,540 | passlib.utils.compat | DEBUG | 140399345090560 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:55:57,540 | passlib.utils.compat | DEBUG | 140399345090560 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:55:57,540 | passlib.utils.compat | DEBUG | 140399345090560 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:56:01,000 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:56:01,000 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:56:01,001 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7fb142c4abf0>
+2024-11-15 00:56:01,001 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | Create dependency injection Persistence
+2024-11-15 00:56:01,001 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | Create dependency injection Application
+2024-11-15 00:56:01,001 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | Create dependency injection Infrastructure
+2024-11-15 00:56:01,003 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | Build services
+2024-11-15 00:56:01,005 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | Create dependency injection Utilites
+2024-11-15 00:56:01,005 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | Create dependency injection Presentation
+2024-11-15 00:56:01,005 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb04969ba90>>
+2024-11-15 00:56:01,007 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb0496dcf70>
+2024-11-15 00:56:01,017 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 00:56:01,017 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140399345090560 | Inititalize DB
+2024-11-15 00:56:01,018 | peewee | DEBUG | 140399345090560 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:56:01,019 | peewee | DEBUG | 140399345090560 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:56:01,019 | peewee | DEBUG | 140399345090560 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 00:56:01,020 | peewee | DEBUG | 140399345090560 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 00:56:01,020 | peewee | DEBUG | 140399345090560 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 00:56:01,020 | peewee | DEBUG | 140399345090560 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 00:56:01,020 | peewee | DEBUG | 140399345090560 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 00:56:01,021 | peewee | DEBUG | 140399345090560 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 00:56:01,021 | peewee | DEBUG | 140399345090560 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 00:56:01,022 | peewee | DEBUG | 140399345090560 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 00:56:01,022 | peewee | DEBUG | 140399345090560 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 00:56:01,022 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fb12b6ecf70>
+2024-11-15 00:56:01,025 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fb12b6ed2d0>
+2024-11-15 00:56:01,027 | logs/ITSHelper_WebApplication.log | INFO | 140399345090560 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:56:01,029 | asyncio | DEBUG | 140399345090560 | Using selector: EpollSelector
+2024-11-15 00:56:03,187 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_begin with no data
+2024-11-15 00:56:03,187 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_field with data[54:73]
+2024-11-15 00:56:03,187 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_value with data[75:101]
+2024-11-15 00:56:03,187 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_end with no data
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_headers_finished with no data
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_data with data[105:110]
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_end with no data
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_begin with no data
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_field with data[166:185]
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_value with data[187:213]
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_end with no data
+2024-11-15 00:56:03,188 | multipart.multipart | DEBUG | 140399345090560 | Calling on_headers_finished with no data
+2024-11-15 00:56:03,189 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_data with data[217:222]
+2024-11-15 00:56:03,189 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_end with no data
+2024-11-15 00:56:03,189 | multipart.multipart | DEBUG | 140399345090560 | Calling on_end with no data
+2024-11-15 00:56:03,200 | logs/ITSHelper_TokenController.log | DEBUG | 140395119900224 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb049450c70>
+2024-11-15 00:56:29,352 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_begin with no data
+2024-11-15 00:56:29,352 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_field with data[54:73]
+2024-11-15 00:56:29,352 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_value with data[75:101]
+2024-11-15 00:56:29,352 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_end with no data
+2024-11-15 00:56:29,352 | multipart.multipart | DEBUG | 140399345090560 | Calling on_headers_finished with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_data with data[105:110]
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_end with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_begin with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_field with data[166:185]
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_value with data[187:213]
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_header_end with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_headers_finished with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_data with data[217:222]
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_part_end with no data
+2024-11-15 00:56:29,353 | multipart.multipart | DEBUG | 140399345090560 | Calling on_end with no data
+2024-11-15 00:56:29,357 | logs/ITSHelper_TokenController.log | DEBUG | 140395119900224 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb0494bd0f0>
+2024-11-15 00:57:27,159 | passlib.utils.compat | DEBUG | 140690498215936 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 00:57:27,159 | passlib.utils.compat | DEBUG | 140690498215936 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 00:57:27,159 | passlib.utils.compat | DEBUG | 140690498215936 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 00:57:27,180 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7ff4fdd72440>)> -- SET INJECT
+2024-11-15 00:57:27,181 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7ff4fdda01f0>)> -- SET INJECT
+2024-11-15 00:57:27,181 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7ff4fdda2170>)> -- SET INJECT
+2024-11-15 00:57:27,181 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7ff4fdda2200>)> -- SET INJECT
+2024-11-15 00:57:27,181 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7ff4fdda2290>)> -- SET INJECT
+2024-11-15 00:57:27,181 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7ff4fdda2320>)> -- SET INJECT
+2024-11-15 00:57:27,183 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0> -- SET INJECT
+2024-11-15 00:57:27,184 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7ff4fdda3910> -- SET INJECT
+2024-11-15 00:57:27,259 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7ff4fd86dd80> -- SET INJECT
+2024-11-15 00:57:27,259 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7ff4fd86de10> -- SET INJECT
+2024-11-15 00:57:27,259 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7ff4fd86dea0> -- SET INJECT
+2024-11-15 00:57:27,260 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7ff4fd86e830> -- SET INJECT
+2024-11-15 00:57:27,260 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7ff4fd86e950> -- SET INJECT
+2024-11-15 00:57:27,261 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7ff4fd86e9e0> -- SET INJECT
+2024-11-15 00:57:27,262 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7ff4fd846a10> -- SET INJECT
+2024-11-15 00:57:27,262 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7ff4fd86e3b0>)> -- SET INJECT
+2024-11-15 00:57:27,262 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7ff4fd86e710>)> -- SET INJECT
+2024-11-15 00:57:27,262 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7ff4fd86f250>)> -- SET INJECT
+2024-11-15 00:57:27,268 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7ff4fd884700>)> -- SET INJECT
+2024-11-15 00:57:27,268 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7ff4fd884670>)> -- SET INJECT
+2024-11-15 00:57:27,269 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885900>)> -- SET INJECT
+2024-11-15 00:57:27,270 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885c60>)> -- SET INJECT
+2024-11-15 00:57:30,604 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7ff413884a60> -- SET INJECT
+2024-11-15 00:57:30,604 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:57:30,605 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:57:30,605 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7ff50dd9a3b0>
+2024-11-15 00:57:30,606 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | Create dependency injection Persistence
+2024-11-15 00:57:30,606 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | Create dependency injection Application
+2024-11-15 00:57:30,606 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | Create dependency injection Infrastructure
+2024-11-15 00:57:30,608 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | Build services
+2024-11-15 00:57:30,609 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7ff413885900> -- SET INJECT
+2024-11-15 00:57:30,610 | logs/ITSHelper___inject__.log | INFO | 140690498215936 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)> -- SET INJECT
+2024-11-15 00:57:30,610 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | Create dependency injection Utilites
+2024-11-15 00:57:30,611 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | Create dependency injection Presentation
+2024-11-15 00:57:30,611 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7ff41388c310>>
+2024-11-15 00:57:30,613 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7ff413885bd0>
+2024-11-15 00:57:30,621 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 00:57:30,621 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140690498215936 | Inititalize DB
+2024-11-15 00:57:30,623 | peewee | DEBUG | 140690498215936 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:57:30,623 | peewee | DEBUG | 140690498215936 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 00:57:30,623 | peewee | DEBUG | 140690498215936 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 00:57:30,624 | peewee | DEBUG | 140690498215936 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 00:57:30,624 | peewee | DEBUG | 140690498215936 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 00:57:30,624 | peewee | DEBUG | 140690498215936 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 00:57:30,624 | peewee | DEBUG | 140690498215936 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 00:57:30,625 | peewee | DEBUG | 140690498215936 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 00:57:30,625 | peewee | DEBUG | 140690498215936 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 00:57:30,626 | peewee | DEBUG | 140690498215936 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 00:57:30,626 | peewee | DEBUG | 140690498215936 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 00:57:30,627 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885cf0>
+2024-11-15 00:57:30,629 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885d80>
+2024-11-15 00:57:30,631 | logs/ITSHelper_WebApplication.log | INFO | 140690498215936 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:57:30,633 | asyncio | DEBUG | 140690498215936 | Using selector: EpollSelector
+2024-11-15 00:58:34,062 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_begin with no data
+2024-11-15 00:58:34,062 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_field with data[54:73]
+2024-11-15 00:58:34,062 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_value with data[75:101]
+2024-11-15 00:58:34,062 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_end with no data
+2024-11-15 00:58:34,062 | multipart.multipart | DEBUG | 140690498215936 | Calling on_headers_finished with no data
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_data with data[105:110]
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_end with no data
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_begin with no data
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_field with data[166:185]
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_value with data[187:213]
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_end with no data
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_headers_finished with no data
+2024-11-15 00:58:34,063 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_data with data[217:222]
+2024-11-15 00:58:34,064 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_end with no data
+2024-11-15 00:58:34,064 | multipart.multipart | DEBUG | 140690498215936 | Calling on_end with no data
+2024-11-15 00:58:51,504 | logs/ITSHelper___inject__.log | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+2024-11-15 00:58:51,505 | logs/ITSHelper_TokenController.log | DEBUG | 140686273803840 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff4137dd570>
+2024-11-15 00:58:51,505 | logs/ITSHelper___inject__.log | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+2024-11-15 00:59:10,374 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_begin with no data
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_field with data[54:73]
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_value with data[75:101]
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_end with no data
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_headers_finished with no data
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_data with data[105:110]
+2024-11-15 00:59:10,375 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_end with no data
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_begin with no data
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_field with data[166:185]
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_value with data[187:213]
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_header_end with no data
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_headers_finished with no data
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_data with data[217:222]
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_part_end with no data
+2024-11-15 00:59:10,376 | multipart.multipart | DEBUG | 140690498215936 | Calling on_end with no data
+2024-11-15 00:59:17,813 | logs/ITSHelper___inject__.log | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7ff413885ab0>)>::0::3 -- SYNC ACTION
+2024-11-15 00:59:51,889 | logs/ITSHelper_TokenController.log | DEBUG | 140686273803840 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff411c16d40>
+2024-11-15 01:00:12,701 | logs/ITSHelper___inject__.log | INFO | 140686273803840 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7ff4fdda36d0>::1::0 -- SYNC ACTION
+2024-11-15 01:01:30,964 | passlib.utils.compat | DEBUG | 140477041500160 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 01:01:30,965 | passlib.utils.compat | DEBUG | 140477041500160 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 01:01:30,965 | passlib.utils.compat | DEBUG | 140477041500160 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 01:01:30,986 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7fc342cae560>)> -- SET INJECT
+2024-11-15 01:01:30,986 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)> -- SET INJECT
+2024-11-15 01:01:30,986 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7fc342cd6290>)> -- SET INJECT
+2024-11-15 01:01:30,986 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)> -- SET INJECT
+2024-11-15 01:01:30,987 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7fc342cd63b0>)> -- SET INJECT
+2024-11-15 01:01:30,987 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)> -- SET INJECT
+2024-11-15 01:01:30,989 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0> -- SET INJECT
+2024-11-15 01:01:30,989 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30> -- SET INJECT
+2024-11-15 01:01:31,064 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7fc3427ddea0> -- SET INJECT
+2024-11-15 01:01:31,064 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7fc3427ddf30> -- SET INJECT
+2024-11-15 01:01:31,064 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7fc3427ddfc0> -- SET INJECT
+2024-11-15 01:01:31,065 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950> -- SET INJECT
+2024-11-15 01:01:31,066 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7fc3427dea70> -- SET INJECT
+2024-11-15 01:01:31,066 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7fc3427deb00> -- SET INJECT
+2024-11-15 01:01:31,067 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7fc3427b2ad0> -- SET INJECT
+2024-11-15 01:01:31,067 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)> -- SET INJECT
+2024-11-15 01:01:31,067 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7fc3427de830>)> -- SET INJECT
+2024-11-15 01:01:31,067 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7fc3427df370>)> -- SET INJECT
+2024-11-15 01:01:31,073 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7fc3427f4820>)> -- SET INJECT
+2024-11-15 01:01:31,073 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7fc3427f4790>)> -- SET INJECT
+2024-11-15 01:01:31,075 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5a20>)> -- SET INJECT
+2024-11-15 01:01:31,075 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5d80>)> -- SET INJECT
+2024-11-15 01:01:34,730 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7fc260700b80> -- SET INJECT
+2024-11-15 01:01:34,731 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:01:34,731 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:01:34,732 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7fc35aef2350>
+2024-11-15 01:01:34,732 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | Create dependency injection Persistence
+2024-11-15 01:01:34,732 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | Create dependency injection Application
+2024-11-15 01:01:34,732 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | Create dependency injection Infrastructure
+2024-11-15 01:01:34,734 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | Build services
+2024-11-15 01:01:34,735 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7fc260701a20> -- SET INJECT
+2024-11-15 01:01:34,736 | logs/ITSHelper___inject__.log | INFO | 140477041500160 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)> -- SET INJECT
+2024-11-15 01:01:34,737 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | Create dependency injection Utilites
+2024-11-15 01:01:34,737 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | Create dependency injection Presentation
+2024-11-15 01:01:34,737 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fc260708370>>
+2024-11-15 01:01:34,739 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fc260701cf0>
+2024-11-15 01:01:34,747 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 01:01:34,747 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140477041500160 | Inititalize DB
+2024-11-15 01:01:34,748 | peewee | DEBUG | 140477041500160 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 01:01:34,749 | peewee | DEBUG | 140477041500160 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 01:01:34,749 | peewee | DEBUG | 140477041500160 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 01:01:34,750 | peewee | DEBUG | 140477041500160 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 01:01:34,750 | peewee | DEBUG | 140477041500160 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 01:01:34,750 | peewee | DEBUG | 140477041500160 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 01:01:34,750 | peewee | DEBUG | 140477041500160 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 01:01:34,751 | peewee | DEBUG | 140477041500160 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 01:01:34,751 | peewee | DEBUG | 140477041500160 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 01:01:34,752 | peewee | DEBUG | 140477041500160 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 01:01:34,752 | peewee | DEBUG | 140477041500160 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 01:01:34,753 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5e10>
+2024-11-15 01:01:34,754 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5ea0>
+2024-11-15 01:01:34,756 | logs/ITSHelper_WebApplication.log | INFO | 140477041500160 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 01:01:34,759 | asyncio | DEBUG | 140477041500160 | Using selector: EpollSelector
+2024-11-15 01:01:35,828 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_begin with no data
+2024-11-15 01:01:35,829 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_field with data[54:73]
+2024-11-15 01:01:35,829 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_value with data[75:101]
+2024-11-15 01:01:35,829 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_end with no data
+2024-11-15 01:01:35,830 | multipart.multipart | DEBUG | 140477041500160 | Calling on_headers_finished with no data
+2024-11-15 01:01:35,830 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_data with data[105:110]
+2024-11-15 01:01:35,830 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_end with no data
+2024-11-15 01:01:35,831 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_begin with no data
+2024-11-15 01:01:35,831 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_field with data[166:185]
+2024-11-15 01:01:35,831 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_value with data[187:213]
+2024-11-15 01:01:35,831 | multipart.multipart | DEBUG | 140477041500160 | Calling on_header_end with no data
+2024-11-15 01:01:35,831 | multipart.multipart | DEBUG | 140477041500160 | Calling on_headers_finished with no data
+2024-11-15 01:01:35,832 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_data with data[217:222]
+2024-11-15 01:01:35,832 | multipart.multipart | DEBUG | 140477041500160 | Calling on_part_end with no data
+2024-11-15 01:01:35,832 | multipart.multipart | DEBUG | 140477041500160 | Calling on_end with no data
+2024-11-15 01:01:39,373 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7fc260701bd0>)>::0::3 -- SYNC ACTION
+2024-11-15 01:01:39,375 | logs/ITSHelper_TokenController.log | DEBUG | 140472817284672 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fc260651540>
+2024-11-15 01:01:39,375 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7fc342cd77f0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,322 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140472817284672 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53ff10>
+2024-11-15 01:02:12,323 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,323 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140472817284672 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:12,324 | peewee | DEBUG | 140472817284672 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 01:02:12,325 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140472817284672 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 01:02:12,325 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7fc3427de4d0>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,326 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140472817284672 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 01:02:12,327 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7fc342cd6320>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,327 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140472817284672 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin
+2024-11-15 01:02:12,328 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140472817284672 | {'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}
+2024-11-15 01:02:12,328 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140472817284672 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:12,328 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7fc342cd43a0>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:12,328 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140472817284672 | fwdi.Utilites.jwt_tools:admin
+2024-11-15 01:02:12,507 | logs/ITSHelper_TokenController.log | DEBUG | 140472817284672 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:12,507 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7fc342cd7a30>::2::0 -- SYNC ACTION
+2024-11-15 01:02:12,508 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140472817284672 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53e530>:admin@admin.ru
+2024-11-15 01:02:12,508 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,508 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140472817284672 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:12,509 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7fc3427de950>::1::0 -- SYNC ACTION
+2024-11-15 01:02:12,509 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140472817284672 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:12,510 | peewee | DEBUG | 140472817284672 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-11-15 01:02:12,510 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140472817284672 | 1
+2024-11-15 01:02:12,510 | peewee | DEBUG | 140472817284672 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-11-15 01:02:12,511 | peewee | DEBUG | 140472817284672 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-11-15 01:02:12,513 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140472817284672 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 01:02:12,513 | logs/ITSHelper_TokenController.log | DEBUG | 140472817284672 | ['admin', 'embedding']
+2024-11-15 01:02:12,513 | logs/ITSHelper___inject__.log | INFO | 140472817284672 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7fc342cd6440>)>::1::1 -- SYNC ACTION
+2024-11-15 01:02:15,468 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140472817284672 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin', 'embedding']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fc25f53d9c0>
+2024-11-15 01:02:15,470 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140472817284672 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTM1fQ.Z5V89pyOBTnZewui0iKvRKzZTGGcQZfhO_AsT_T-RBQ
+2024-11-15 01:02:15,470 | logs/ITSHelper_TokenController.log | DEBUG | 140472817284672 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTM1fQ.Z5V89pyOBTnZewui0iKvRKzZTGGcQZfhO_AsT_T-RBQ
+2024-11-15 01:02:40,710 | passlib.utils.compat | DEBUG | 139893340418048 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-11-15 01:02:40,711 | passlib.utils.compat | DEBUG | 139893340418048 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-11-15 01:02:40,711 | passlib.utils.compat | DEBUG | 139893340418048 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-11-15 01:02:40,736 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 0::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.decode_payload_token at 0x7f3b5b6224d0>)> -- SET INJECT
+2024-11-15 01:02:40,736 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 1::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)> -- SET INJECT
+2024-11-15 01:02:40,736 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 2::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_password_hash at 0x7f3b5b64e200>)> -- SET INJECT
+2024-11-15 01:02:40,737 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 3::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)> -- SET INJECT
+2024-11-15 01:02:40,737 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 4::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.get_user_by_email at 0x7f3b5b64e320>)> -- SET INJECT
+2024-11-15 01:02:40,737 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 5::fwdi.Utilites.jwt_tools::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)> -- SET INJECT
+2024-11-15 01:02:40,740 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 6::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760> -- SET INJECT
+2024-11-15 01:02:40,740 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 7::fwdi.Application.Usecase.user_repository::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0> -- SET INJECT
+2024-11-15 01:02:40,824 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 8::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.login at 0x7f3b5b4ade10> -- SET INJECT
+2024-11-15 01:02:40,824 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 9::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.get at 0x7f3b5b4adea0> -- SET INJECT
+2024-11-15 01:02:40,824 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 10::fwdi.Infrastructure.Rest.rest_client::<function RestClientFWDI.post at 0x7f3b5b4adf30> -- SET INJECT
+2024-11-15 01:02:40,826 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 11::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0> -- SET INJECT
+2024-11-15 01:02:40,826 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 12::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_permission at 0x7f3b5b4ae9e0> -- SET INJECT
+2024-11-15 01:02:40,826 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 13::fwdi.Persistence.manager_db_context::<function ManagerDbContextFWDI.get_metadata_scopes at 0x7f3b5b4aea70> -- SET INJECT
+2024-11-15 01:02:40,828 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 14::fastapi.security.oauth2::<fastapi.security.oauth2.OAuth2PasswordBearer object at 0x7f3b5b47e950> -- SET INJECT
+2024-11-15 01:02:40,828 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 15::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)> -- SET INJECT
+2024-11-15 01:02:40,828 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 16::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_user at 0x7f3b5b4ae7a0>)> -- SET INJECT
+2024-11-15 01:02:40,828 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 17::fwdi.Infrastructure.JwtService.jwt_service::<staticmethod(<function JwtServiceFWDI.get_current_active_user at 0x7f3b5b4af2e0>)> -- SET INJECT
+2024-11-15 01:02:40,837 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 18::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_model_v3 at 0x7f3b5b2c4790>)> -- SET INJECT
+2024-11-15 01:02:40,838 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 19::Application.Usecase.embedding_data_model::<staticmethod(<function EmbeddingDataModel.embedding_question at 0x7f3b5b2c4700>)> -- SET INJECT
+2024-11-15 01:02:40,839 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 20::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5990>)> -- SET INJECT
+2024-11-15 01:02:40,840 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 21::Presentation.Endpoints.embedding_endpoints::<staticmethod(<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5cf0>)> -- SET INJECT
+2024-11-15 01:02:44,441 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 22::Infrastructure.Embeddings.embedding_models::<function EmbeddingModel.encode at 0x7f3a793c8af0> -- SET INJECT
+2024-11-15 01:02:44,442 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:02:44,442 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:02:44,443 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f3b739bba90>
+2024-11-15 01:02:44,443 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | Create dependency injection Persistence
+2024-11-15 01:02:44,444 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | Create dependency injection Application
+2024-11-15 01:02:44,444 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | Create dependency injection Infrastructure
+2024-11-15 01:02:44,448 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | Build services
+2024-11-15 01:02:44,450 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 23::fwdi.Presentation.DefaultControllers.home_controller::<function Controller.index at 0x7f3a793c9990> -- SET INJECT
+2024-11-15 01:02:44,451 | logs/ITSHelper___inject__.log | INFO | 139893340418048 | 24::fwdi.Presentation.DefaultControllers.token_controller::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)> -- SET INJECT
+2024-11-15 01:02:44,452 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | Create dependency injection Utilites
+2024-11-15 01:02:44,452 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | Create dependency injection Presentation
+2024-11-15 01:02:44,453 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3a793d01f0>>
+2024-11-15 01:02:44,455 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f3a793c9c60>
+2024-11-15 01:02:44,469 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'embedding': 'Embedding access'}
+2024-11-15 01:02:44,469 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139893340418048 | Inititalize DB
+2024-11-15 01:02:44,471 | peewee | DEBUG | 139893340418048 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-11-15 01:02:44,472 | peewee | DEBUG | 139893340418048 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-11-15 01:02:44,472 | peewee | DEBUG | 139893340418048 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-11-15 01:02:44,473 | peewee | DEBUG | 139893340418048 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-11-15 01:02:44,473 | peewee | DEBUG | 139893340418048 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-11-15 01:02:44,473 | peewee | DEBUG | 139893340418048 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-11-15 01:02:44,474 | peewee | DEBUG | 139893340418048 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-11-15 01:02:44,474 | peewee | DEBUG | 139893340418048 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-11-15 01:02:44,475 | peewee | DEBUG | 139893340418048 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-11-15 01:02:44,476 | peewee | DEBUG | 139893340418048 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-11-15 01:02:44,476 | peewee | DEBUG | 139893340418048 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 01:02:44,477 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5d80>
+2024-11-15 01:02:44,481 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5e10>
+2024-11-15 01:02:44,485 | logs/ITSHelper_WebApplication.log | INFO | 139893340418048 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 01:02:44,489 | asyncio | DEBUG | 139893340418048 | Using selector: EpollSelector
+2024-11-15 01:02:45,692 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_begin with no data
+2024-11-15 01:02:45,693 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_field with data[54:73]
+2024-11-15 01:02:45,693 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_value with data[75:101]
+2024-11-15 01:02:45,694 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_end with no data
+2024-11-15 01:02:45,694 | multipart.multipart | DEBUG | 139893340418048 | Calling on_headers_finished with no data
+2024-11-15 01:02:45,694 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_data with data[105:110]
+2024-11-15 01:02:45,694 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_end with no data
+2024-11-15 01:02:45,694 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_begin with no data
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_field with data[166:185]
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_value with data[187:213]
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_header_end with no data
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_headers_finished with no data
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_data with data[217:222]
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_part_end with no data
+2024-11-15 01:02:45,695 | multipart.multipart | DEBUG | 139893340418048 | Calling on_end with no data
+2024-11-15 01:02:45,710 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function TokenController.post at 0x7f3a793c9b40>)>::0::3 -- SYNC ACTION
+2024-11-15 01:02:45,711 | logs/ITSHelper_TokenController.log | DEBUG | 139889115919936 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f3a7911d3f0>
+2024-11-15 01:02:45,712 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_all at 0x7f3b5b64f760>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,713 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139889115919936 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919cc40>
+2024-11-15 01:02:45,713 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,714 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139889115919936 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:45,714 | peewee | DEBUG | 139889115919936 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-11-15 01:02:45,715 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139889115919936 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 01:02:45,715 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtServiceFWDI.authenticate_user at 0x7f3b5b4ae440>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,717 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139889115919936 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin:admin
+2024-11-15 01:02:45,717 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.get_user_by_username at 0x7f3b5b64e290>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,717 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139889115919936 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]:admin
+2024-11-15 01:02:45,718 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139889115919936 | {'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}
+2024-11-15 01:02:45,718 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139889115919936 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:45,718 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.verify_password at 0x7f3b5b64c280>)>::3::0 -- SYNC ACTION
+2024-11-15 01:02:45,718 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139889115919936 | fwdi.Utilites.jwt_tools:admin
+2024-11-15 01:02:45,899 | logs/ITSHelper_TokenController.log | DEBUG | 139889115919936 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:45,899 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function UserRepositoryFWDI.get_user_scopes at 0x7f3b5b64f9a0>::2::0 -- SYNC ACTION
+2024-11-15 01:02:45,900 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139889115919936 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919d120>:admin@admin.ru
+2024-11-15 01:02:45,901 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,901 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139889115919936 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:45,901 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<function ManagerDbContextFWDI.get_metadata_user at 0x7f3b5b4ae8c0>::1::0 -- SYNC ACTION
+2024-11-15 01:02:45,901 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139889115919936 | fwdi.Persistence.manager_db_context
+2024-11-15 01:02:45,903 | peewee | DEBUG | 139889115919936 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-11-15 01:02:45,903 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139889115919936 | 1
+2024-11-15 01:02:45,904 | peewee | DEBUG | 139889115919936 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-11-15 01:02:45,907 | peewee | DEBUG | 139889115919936 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-11-15 01:02:45,909 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139889115919936 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 01:02:45,910 | logs/ITSHelper_TokenController.log | DEBUG | 139889115919936 | ['admin', 'embedding']
+2024-11-15 01:02:45,910 | logs/ITSHelper___inject__.log | INFO | 139889115919936 | fwdi.Utilites.ext_reflection::<staticmethod(<function JwtToolsFWDI.create_access_token at 0x7f3b5b64e3b0>)>::1::1 -- SYNC ACTION
+2024-11-15 01:02:45,911 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139889115919936 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin', 'embedding']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f3a7919d1e0>
+2024-11-15 01:02:45,912 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139889115919936 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTY1fQ.EAduN4z8A7B1TPVfTRggAWhmo3Ir-xdlFt1x1qqeyx4
+2024-11-15 01:02:45,912 | logs/ITSHelper_TokenController.log | DEBUG | 139889115919936 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTY1fQ.EAduN4z8A7B1TPVfTRggAWhmo3Ir-xdlFt1x1qqeyx4

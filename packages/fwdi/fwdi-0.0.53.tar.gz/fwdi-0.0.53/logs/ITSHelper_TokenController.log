@@ -1,0 +1,36 @@
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596e7cac0>
+2024-11-15 00:43:17,027 | DEBUG | 140074299684416 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596e7cac0>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596ee4c40>
+2024-11-15 00:45:04,628 | DEBUG | 140074299684416 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f6596ee4c40>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f1fa0030c40>
+2024-11-15 00:48:53,885 | DEBUG | 139773805065792 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f1fa0030c40>
+username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 00:51:20,587 | DEBUG | 139773805065792 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+['admin', 'embedding']
+2024-11-15 00:51:20,594 | DEBUG | 139773805065792 | ['admin', 'embedding']
+Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk1ODgwfQ.vEuEuSmDmJ2qNlQoFpaphDaeS-EvYw1vyglv6lZ2u-Q
+2024-11-15 00:51:20,596 | DEBUG | 139773805065792 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk1ODgwfQ.vEuEuSmDmJ2qNlQoFpaphDaeS-EvYw1vyglv6lZ2u-Q
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb049450c70>
+2024-11-15 00:56:03,200 | DEBUG | 140395119900224 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb049450c70>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb0494bd0f0>
+2024-11-15 00:56:29,357 | DEBUG | 140395119900224 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb0494bd0f0>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff4137dd570>
+2024-11-15 00:58:51,505 | DEBUG | 140686273803840 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff4137dd570>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff411c16d40>
+2024-11-15 00:59:51,889 | DEBUG | 140686273803840 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7ff411c16d40>
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fc260651540>
+2024-11-15 01:01:39,375 | DEBUG | 140472817284672 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fc260651540>
+username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:12,507 | DEBUG | 140472817284672 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+['admin', 'embedding']
+2024-11-15 01:02:12,513 | DEBUG | 140472817284672 | ['admin', 'embedding']
+Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTM1fQ.Z5V89pyOBTnZewui0iKvRKzZTGGcQZfhO_AsT_T-RBQ
+2024-11-15 01:02:15,470 | DEBUG | 140472817284672 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTM1fQ.Z5V89pyOBTnZewui0iKvRKzZTGGcQZfhO_AsT_T-RBQ
+fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f3a7911d3f0>
+2024-11-15 01:02:45,711 | DEBUG | 139889115919936 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f3a7911d3f0>
+username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+2024-11-15 01:02:45,899 | DEBUG | 139889115919936 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa'
+['admin', 'embedding']
+2024-11-15 01:02:45,910 | DEBUG | 139889115919936 | ['admin', 'embedding']
+Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTY1fQ.EAduN4z8A7B1TPVfTRggAWhmo3Ir-xdlFt1x1qqeyx4
+2024-11-15 01:02:45,912 | DEBUG | 139889115919936 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iLCJlbWJlZGRpbmciXSwiZXhwIjoxNzMyMTk2NTY1fQ.EAduN4z8A7B1TPVfTRggAWhmo3Ir-xdlFt1x1qqeyx4

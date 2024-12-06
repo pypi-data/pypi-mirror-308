@@ -1,0 +1,30 @@
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00cb160>
+2024-11-15 00:51:17,328 | DEBUG | 139773805065792 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00cb160>
+[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 00:51:20,394 | DEBUG | 139773805065792 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00caef0>:admin@admin.ru
+2024-11-15 00:51:20,588 | DEBUG | 139773805065792 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1fa00caef0>:admin@admin.ru
+1
+2024-11-15 00:51:20,591 | DEBUG | 139773805065792 | 1
+SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 00:51:20,594 | DEBUG | 139773805065792 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53ff10>
+2024-11-15 01:02:12,322 | DEBUG | 140472817284672 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53ff10>
+[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 01:02:12,325 | DEBUG | 140472817284672 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53e530>:admin@admin.ru
+2024-11-15 01:02:12,508 | DEBUG | 140472817284672 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fc25f53e530>:admin@admin.ru
+1
+2024-11-15 01:02:12,510 | DEBUG | 140472817284672 | 1
+SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 01:02:12,513 | DEBUG | 140472817284672 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919cc40>
+2024-11-15 01:02:45,713 | DEBUG | 139889115919936 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919cc40>
+[{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+2024-11-15 01:02:45,715 | DEBUG | 139889115919936 | [{'username': 'admin', 'hashed_password': '$2b$12$Sxq0pqPmxq/XdMs5AX.IKeF7uCIczqErjtK/mOpynjMIHafWpbMEa', 'email': 'admin@admin.ru'}]
+fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919d120>:admin@admin.ru
+2024-11-15 01:02:45,900 | DEBUG | 139889115919936 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f3a7919d120>:admin@admin.ru
+1
+2024-11-15 01:02:45,903 | DEBUG | 139889115919936 | 1
+SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-11-15 01:02:45,909 | DEBUG | 139889115919936 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)

@@ -1,0 +1,120 @@
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:42:49,477 | INFO | 140078524076032 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:42:49,477 | INFO | 140078524076032 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 00:42:49,479 | INFO | 140078524076032 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 00:42:49,479 | INFO | 140078524076032 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 00:42:49,479 | INFO | 140078524076032 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f65970ab8e0>>
+2024-11-15 00:42:49,484 | INFO | 140078524076032 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f65970ab8e0>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f65970ecee0>
+2024-11-15 00:42:49,486 | INFO | 140078524076032 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f65970ecee0>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f6689080f70>
+2024-11-15 00:42:49,749 | INFO | 140078524076032 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f6689080f70>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f66890812d0>
+2024-11-15 00:42:49,752 | INFO | 140078524076032 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f66890812d0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:42:49,754 | INFO | 140078524076032 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:47:33,208 | INFO | 139778105528320 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:47:33,208 | INFO | 139778105528320 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 00:47:33,209 | INFO | 139778105528320 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 00:47:33,209 | INFO | 139778105528320 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 00:47:33,209 | INFO | 139778105528320 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1fa02e1d80>>
+2024-11-15 00:47:33,220 | INFO | 139778105528320 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1fa02e1d80>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1fa02d1fc0>
+2024-11-15 00:47:33,222 | INFO | 139778105528320 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1fa02d1fc0>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f20862c1360>
+2024-11-15 00:47:33,344 | INFO | 139778105528320 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f20862c1360>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f20862c13f0>
+2024-11-15 00:47:33,347 | INFO | 139778105528320 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f20862c13f0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:47:33,349 | INFO | 139778105528320 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:56:01,000 | INFO | 140399345090560 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:56:01,000 | INFO | 140399345090560 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 00:56:01,001 | INFO | 140399345090560 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 00:56:01,001 | INFO | 140399345090560 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 00:56:01,001 | INFO | 140399345090560 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb04969ba90>>
+2024-11-15 00:56:01,005 | INFO | 140399345090560 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb04969ba90>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb0496dcf70>
+2024-11-15 00:56:01,007 | INFO | 140399345090560 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb0496dcf70>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fb12b6ecf70>
+2024-11-15 00:56:01,022 | INFO | 140399345090560 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fb12b6ecf70>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fb12b6ed2d0>
+2024-11-15 00:56:01,025 | INFO | 140399345090560 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fb12b6ed2d0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:56:01,027 | INFO | 140399345090560 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:57:30,604 | INFO | 140690498215936 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 00:57:30,605 | INFO | 140690498215936 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 00:57:30,606 | INFO | 140690498215936 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 00:57:30,606 | INFO | 140690498215936 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 00:57:30,606 | INFO | 140690498215936 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7ff41388c310>>
+2024-11-15 00:57:30,611 | INFO | 140690498215936 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7ff41388c310>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7ff413885bd0>
+2024-11-15 00:57:30,613 | INFO | 140690498215936 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7ff413885bd0>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885cf0>
+2024-11-15 00:57:30,627 | INFO | 140690498215936 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7ff4fd885cf0>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885d80>
+2024-11-15 00:57:30,629 | INFO | 140690498215936 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7ff4fd885d80>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 00:57:30,631 | INFO | 140690498215936 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:01:34,731 | INFO | 140477041500160 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:01:34,731 | INFO | 140477041500160 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 01:01:34,732 | INFO | 140477041500160 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 01:01:34,732 | INFO | 140477041500160 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 01:01:34,732 | INFO | 140477041500160 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fc260708370>>
+2024-11-15 01:01:34,737 | INFO | 140477041500160 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fc260708370>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fc260701cf0>
+2024-11-15 01:01:34,739 | INFO | 140477041500160 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fc260701cf0>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5e10>
+2024-11-15 01:01:34,753 | INFO | 140477041500160 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7fc3427f5e10>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5ea0>
+2024-11-15 01:01:34,754 | INFO | 140477041500160 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7fc3427f5ea0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 01:01:34,756 | INFO | 140477041500160 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:02:44,442 | INFO | 139893340418048 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+2024-11-15 01:02:44,442 | INFO | 139893340418048 | fwdi.WebApp.web_application:{'name': 'Embedding service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-11-15 01:02:44,443 | INFO | 139893340418048 | Create dependency injection Persistence
+Create dependency injection Application
+2024-11-15 01:02:44,444 | INFO | 139893340418048 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-11-15 01:02:44,444 | INFO | 139893340418048 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3a793d01f0>>
+2024-11-15 01:02:44,453 | INFO | 139893340418048 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3a793d01f0>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f3a793c9c60>
+2024-11-15 01:02:44,455 | INFO | 139893340418048 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f3a793c9c60>
+fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5d80>
+2024-11-15 01:02:44,477 | INFO | 139893340418048 | fwdi.WebApp.web_application:/api/v1.0/embedding_models:<function EmbeddingEndpoints.embedding_models at 0x7f3b5b2c5d80>
+fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5e10>
+2024-11-15 01:02:44,481 | INFO | 139893340418048 | fwdi.WebApp.web_application:/api/v1.0/embedding_question:<function EmbeddingEndpoints.embedding_question at 0x7f3b5b2c5e10>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
+2024-11-15 01:02:44,485 | INFO | 139893340418048 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5002}
