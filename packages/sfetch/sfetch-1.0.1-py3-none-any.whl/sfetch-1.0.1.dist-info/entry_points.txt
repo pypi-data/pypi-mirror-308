@@ -1,0 +1,5 @@
+[console_scripts]
+sfetch = sfetch.main:main
+
+[gui_scripts]
+sfetch = sfetch.main:main_gui
