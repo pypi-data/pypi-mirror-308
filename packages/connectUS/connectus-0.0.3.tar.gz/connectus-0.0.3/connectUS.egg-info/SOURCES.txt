@@ -1,0 +1,5 @@
+connectUS.egg-info/PKG-INFO
+connectUS.egg-info/SOURCES.txt
+connectUS.egg-info/dependency_links.txt
+connectUS.egg-info/requires.txt
+connectUS.egg-info/top_level.txt
