@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Kam_Ultimate_Reporter.egg-info/PKG-INFO
+Kam_Ultimate_Reporter.egg-info/SOURCES.txt
+Kam_Ultimate_Reporter.egg-info/dependency_links.txt
+Kam_Ultimate_Reporter.egg-info/entry_points.txt
+Kam_Ultimate_Reporter.egg-info/requires.txt
+Kam_Ultimate_Reporter.egg-info/top_level.txt
