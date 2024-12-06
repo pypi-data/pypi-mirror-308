@@ -1,0 +1,67 @@
+.. _spkg_threejs:
+
+threejs: JavaScript library to display 3D graphics in the browser
+===========================================================================
+
+Description
+-----------
+
+Three.js is a JavaScript library to display 3D graphics in the browser.
+
+License
+-------
+
+MIT License
+
+
+Upstream Contact
+----------------
+
+Home page: http://threejs.org
+
+Dependencies
+------------
+
+None.
+
+
+Special Update/Build Instructions
+---------------------------------
+
+None.
+
+Type
+----
+
+standard
+
+
+Dependencies
+------------
+
+
+Version Information
+-------------------
+
+package-version.txt::
+
+    r122.p0
+
+
+Equivalent System Packages
+--------------------------
+
+.. tab:: conda-forge
+
+   .. CODE-BLOCK:: bash
+
+       $ conda install threejs-sage=122.\* 
+
+
+
+See https://repology.org/project/threejs/versions, https://repology.org/project/threejs-sage/versions
+
+However, these system packages will not be used for building Sage
+because ``spkg-configure.m4`` has not been written for this package;
+see :issue:`27330` for more information.
+
