@@ -1,0 +1,15 @@
+agl_report_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agl_report_reader/report_reader.py,sha256=fPPUPshKo1URto_5xsaxc3UGoVcpxeKyhuNOO2wYz1E,3303
+agl_report_reader/settings.py,sha256=4CHLBlx82ICx7abBO0DW2G7BQEGhrWYSzRZ5L-to7dw,1546
+agl_report_reader/utils.py,sha256=INha94j-PphAebfGPHhJQPZKox6vWsX-XGoZR2kRUps,2509
+agl_report_reader/anonymization/__init__.py,sha256=hegJcbpLr8aatdGkq17qgsLuDFBSps0V3YDS-BH-MCc,3609
+agl_report_reader/anonymization/names.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agl_report_reader/anonymization/redact.py,sha256=5w9FOTJAGTV2bgyK_ycc9FYRuuvkZDUHO-ugXlH9D38,1380
+agl_report_reader/extraction/__init__.py,sha256=0Vzl3gRNQCWmUDSv3jZJXtx5Pr_FB124A-zVjhjZkH8,1434
+agl_report_reader/extraction/examination_data.py,sha256=WZJBUfLVupl2OcAqRpavEU9HVZcyZ5xuaWRB4S9iWx8,3054
+agl_report_reader/extraction/other_data.py,sha256=hPL8puupwtCjSBMkrOnSQ8MecL5XdFtgFTZ9onbkY0w,245
+agl_report_reader/extraction/patient_data.py,sha256=l7TtILEIq9zQYvxFTmW3FtYPwaPh8RsjeavuvZokI1A,2794
+agl_report_reader-0.4.0.dist-info/METADATA,sha256=4g-U4wvtTgv-TDvrSiwq6jhBkERSXYWNcuKd8FoymLQ,276
+agl_report_reader-0.4.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+agl_report_reader-0.4.0.dist-info/licenses/LICENSE,sha256=PDMVMHJ66XCSUlXcSOEvYdDSxL32P8BJtLX4Ckfhaos,1063
+agl_report_reader-0.4.0.dist-info/RECORD,,
