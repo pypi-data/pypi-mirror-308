@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+automatedqa/__init__.py
+automatedqa/__main__.py
+automatedqa/browser.py
+automatedqa.egg-info/PKG-INFO
+automatedqa.egg-info/SOURCES.txt
+automatedqa.egg-info/dependency_links.txt
+automatedqa.egg-info/requires.txt
+automatedqa.egg-info/top_level.txt
+automatedqa/__pycache__/__init__.cpython-311.pyc
+automatedqa/__pycache__/__main__.cpython-311.pyc
+automatedqa/__pycache__/browser.cpython-311.pyc
