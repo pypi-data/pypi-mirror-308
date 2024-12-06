@@ -1,0 +1,10 @@
+from enum import Enum
+
+
+class CommonOpCode(Enum):
+    # access codes / 0000X family
+    AGGREGATE_NOT_FOUND = 1
+    AGGREGATE_HYDRATATION_FAILED = 2
+    REPOSITORY_ACTION_UNDEFINED = 3
+    AGGREGATE_PERSTENCE_FAILED = 4
+    AGGREGATE_VALIDATION_FAILED = 5

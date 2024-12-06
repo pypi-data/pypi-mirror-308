@@ -1,0 +1,72 @@
+{% macro tablename(context, name) -%}
+    {{ context }}_{{ name }}
+{%- endmacro %}
+
+{% macro field_name(field) -%}
+    {% if "_" in field.name[0] %}{{ field.name[1:] }}{% else %}field.name{% endif %}
+{%- endmacro %}
+
+{% macro type_sql(field) -%}
+    {%- if field.type == "str" -%}
+        VARCHAR({% if field.max_length %}{{ field.max_length }}{% else %}255{% endif %})
+    {%- elif field.type == "int" -%}
+        INTEGER
+    {%- elif field.type == "bool" -%}
+        BOOLEAN
+    {%- elif field.type == "float" -%}
+        NUMERIC(10,2)
+    {%- elif field.type == "list" -%}
+        TEXT
+    {%- endif -%}
+{%- endmacro %}
+
+{% macro fk_id(field) %}
+    {{- field_name(field) }}_id
+{%- endmacro %}
+
+{% macro many2many_id(entity_name) -%}
+    {{ entity_name }}_id
+{%- endmacro %}
+
+{% macro field_type(field) %}
+    {{- type_sql(field) }}
+    {%- if field.is_required %} NOT NULL{% endif %}
+    {%- if field.is_pk %} PRIMARY KEY{% endif %}
+{%- endmacro %}
+
+{% macro column(field) %}
+    {{- field_name(field) }} {{ field_type(field) }}
+{%- endmacro %}
+
+{% macro fk_column(field) %}
+    {{- fk_id(field) }} {{ field_type(field) }}
+{%- endmacro %}
+
+{% macro fk_constraint_name(context, relation) -%}
+    fk_{{ tablename(context, relation.on_entity) }}_{{ field_name(relation.on_field) }}
+{%- endmacro %}
+
+{% macro many2many_tablename(context, relation) -%}
+    {{ tablename(context, relation.from_entity) }}__{{ relation.on_entity }}
+{%- endmacro %}
+
+{% macro create_table(context, entity) -%}
+-- Table {{ tablename(context, entity.name) }}
+CREATE TABLE {{ tablename(context, entity.name) }}
+(
+    {%- for field in entity.not_entity_fields %}
+    {{ column(field) }}{{- "," if not loop.last else "" -}}
+    {% endfor %}
+);
+{{ create_index(context, entity) -}}
+{%- endmacro %}
+{% macro create_index(context, entity) %}
+-- Indexes
+-- supprimer ceux qui sont inutiles
+{%- for field in entity.not_entity_fields %}
+    {%- if not field.is_pk %}
+CREATE INDEX idx_{{ field_name(field)  }}
+ON {{ tablename(context, entity.name) }} ({{ field_name(field)  }});
+    {%- endif %}
+{% endfor %}
+{%- endmacro -%}

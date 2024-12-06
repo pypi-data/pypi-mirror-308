@@ -1,0 +1,3 @@
+ template with context:
+ - param1: {{ params1 }}
+ - param2: {{ params2 }}

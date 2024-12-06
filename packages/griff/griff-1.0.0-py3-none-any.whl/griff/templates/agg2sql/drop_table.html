@@ -1,0 +1,21 @@
+--
+-- generated on {{ creation_date }}
+-- @context: {{ context }}
+--
+{% import "agg2sql/utils.html" as u -%}
+{% macro drop_table(entity) -%}
+DROP TABLE IF EXISTS {{ u.tablename(context, entity.name) }} CASCADE;
+{%- endmacro %}
+{{ drop_table(inspected_agg.aggregate) -}}
+{% for entity in inspected_agg.entities %}
+{{ drop_table(entity) }}
+{%- endfor %}
+{% for relation in inspected_agg.relations %}
+--
+-- Relation: {{ u.tablename(context, relation.from_entity) }} -> {{ u.tablename(context, relation.on_entity) }}
+--
+ALTER TABLE IF EXISTS {{ u.tablename(context, relation.from_entity) }}
+DROP CONSTRAINT {{ u.fk_constraint_name(context, relation) }};
+-- or --
+DROP TABLE IF EXISTS {{ u.many2many_tablename(context, relation) }} CASCADE;
+{% endfor %}
