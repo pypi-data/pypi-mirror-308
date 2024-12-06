@@ -1,0 +1,2 @@
+[console_scripts]
+wagon = wagon:main

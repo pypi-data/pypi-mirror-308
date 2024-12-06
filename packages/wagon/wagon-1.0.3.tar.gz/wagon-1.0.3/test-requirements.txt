@@ -1,0 +1,4 @@
+mock
+pytest
+pytest-cov
+distro>=1.7.0

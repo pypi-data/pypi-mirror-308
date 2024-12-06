@@ -1,0 +1,7 @@
+wheel
+pkginfo<2,>=1.9.6
+
+[dist]
+distro>=1.7.0
+
+[venv]
