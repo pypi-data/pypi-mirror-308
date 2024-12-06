@@ -1,0 +1,2 @@
+[console_scripts]
+semi-secret = semi_secret.cli:main
