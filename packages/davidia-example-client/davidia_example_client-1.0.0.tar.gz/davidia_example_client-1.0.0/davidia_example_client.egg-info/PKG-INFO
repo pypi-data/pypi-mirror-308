@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: davidia-example-client
+Version: 1.0.0
+Summary: Example frontend for Davidia
+Home-page: https://github.com/DiamondLightSource/davidia
+Author-email: dataanalysis@diamond.ac.uk
+Requires-Python: >=3.10
+Requires-Dist: davidia
+
+Static files to serve for an example Davidia plot client
