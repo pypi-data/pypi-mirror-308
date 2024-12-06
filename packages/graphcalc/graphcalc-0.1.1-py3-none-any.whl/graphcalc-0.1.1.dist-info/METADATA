@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: graphcalc
+Version: 0.1.1
+Summary: A Python package for graph computation functions
+Home-page: https://github.com/randydavila/graphcalc
+Author: Randy Davila
+Author-email: rrd6@rice.edu
+License: MIT
+Keywords: graph theory,networkx,graph computation
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: contourpy ==1.3.0
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: exceptiongroup ==1.2.2
+Requires-Dist: fonttools ==4.54.1
+Requires-Dist: importlib-resources ==6.4.5
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: kiwisolver ==1.4.7
+Requires-Dist: networkx ==3.2.1
+Requires-Dist: numpy ==2.0.2
+Requires-Dist: packaging ==24.2
+Requires-Dist: pillow ==11.0.0
+Requires-Dist: pluggy ==1.5.0
+Requires-Dist: PuLP ==2.9.0
+Requires-Dist: pyparsing ==3.2.0
+Requires-Dist: pytest ==8.3.3
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: six ==1.16.0
+Requires-Dist: tomli ==2.1.0
+Requires-Dist: zipp ==3.21.0
+
+# graphcalc
+
+## Overview
+
+`graphcalc` is a Python package for performing a variety of graph computations, including maximum clique detection, chromatic number calculation, and vertex cover identification. It is built on top of `networkx` and provides efficient implementations of fundamental graph theory algorithms.
+
+## Features
+
+- **Maximum Clique**: Finds the maximum clique in a given graph.
+- **Chromatic Number**: Computes the minimum number of colors required for graph coloring.
+- **Vertex and Edge Cover**: Determines vertex and edge covers.
+- **Matching and Independence**: Calculates maximum matching and independent sets.
+
+## Installation
+
+To install `graphcalc`, make sure you have Python 3.7 or higher, then install it:
+
+```bash
+pip install graphcalc
+```
+
