@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+package/src/__init__.py
+package/src/libr.py
+package/src/main.py
+package/src/manage/main.py
+package/src/manage/app/main/main.py
+package/src/polotsk.egg-info/PKG-INFO
+package/src/polotsk.egg-info/SOURCES.txt
+package/src/polotsk.egg-info/dependency_links.txt
+package/src/polotsk.egg-info/top_level.txt
