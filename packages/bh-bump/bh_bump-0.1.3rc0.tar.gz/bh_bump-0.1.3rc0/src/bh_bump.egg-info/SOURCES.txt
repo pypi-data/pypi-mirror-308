@@ -1,0 +1,16 @@
+pyproject.toml
+src/bh_bump/__init__.py
+src/bh_bump/__main__.py
+src/bh_bump/constants.py
+src/bh_bump/note.py
+src/bh_bump/toml.py
+src/bh_bump/util.py
+src/bh_bump.egg-info/PKG-INFO
+src/bh_bump.egg-info/SOURCES.txt
+src/bh_bump.egg-info/dependency_links.txt
+src/bh_bump.egg-info/entry_points.txt
+src/bh_bump.egg-info/requires.txt
+src/bh_bump.egg-info/top_level.txt
+src/bh_bump/data/bumpversion.cfg
+src/bh_bump/data/test_dummy.py
+tests/test_bumping.py
