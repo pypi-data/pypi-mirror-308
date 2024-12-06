@@ -1,0 +1,4 @@
+[console_scripts]
+beaver = testomaton.beaver:main
+jigsaw = testomaton.jigsaw:main
+tomato = testomaton.tomato:main
