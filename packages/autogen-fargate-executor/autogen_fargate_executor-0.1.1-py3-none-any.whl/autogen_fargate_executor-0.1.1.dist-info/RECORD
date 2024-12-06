@@ -1,0 +1,6 @@
+autogen_fargate_executor/__init__.py,sha256=L3zBDNPNp9jDk7Yip4mYGxRNXkrj79Y1uwVz6ZA-yXQ,76
+autogen_fargate_executor/executor.py,sha256=lSEv2XNsO-HVPfaxw_SA_pE1snHk1LrgTpD2Sv3fx_0,11799
+autogen_fargate_executor-0.1.1.dist-info/LICENSE,sha256=yGAvI-VCtQdH9j2wvVJi0Slu-r2A60Nk_00tD8io3iI,1069
+autogen_fargate_executor-0.1.1.dist-info/METADATA,sha256=sdRzr6tkuUEBfIzoLDqwGh40nepKhT1LXfhuchz-sg8,4967
+autogen_fargate_executor-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+autogen_fargate_executor-0.1.1.dist-info/RECORD,,
