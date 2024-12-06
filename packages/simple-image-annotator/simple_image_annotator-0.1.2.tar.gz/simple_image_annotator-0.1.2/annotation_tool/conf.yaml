@@ -1,0 +1,6 @@
+autosave_interval_sec: 30
+font_size: 10
+group_class_separator: '[G:C]'
+indexing_timeout_sec: 5
+keep_aspectratio: true
+previous_project: C:/Users/Raphael/Desktop/test_annotation_images/p1_new.pkl
