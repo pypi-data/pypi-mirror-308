@@ -1,0 +1,2 @@
+[console_scripts]
+pr = smart_pr_generator.main:main
