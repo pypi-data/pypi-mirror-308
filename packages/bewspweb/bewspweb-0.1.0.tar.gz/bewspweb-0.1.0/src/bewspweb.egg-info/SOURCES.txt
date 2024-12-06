@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/bewspweb/__init__.py
+src/bewspweb/bewspweb.py
+src/bewspweb.egg-info/PKG-INFO
+src/bewspweb.egg-info/SOURCES.txt
+src/bewspweb.egg-info/dependency_links.txt
+src/bewspweb.egg-info/requires.txt
+src/bewspweb.egg-info/top_level.txt
+test/test.py
+test/teste_1.py
