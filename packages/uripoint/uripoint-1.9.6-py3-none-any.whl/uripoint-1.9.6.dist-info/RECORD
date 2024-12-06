@@ -1,0 +1,13 @@
+uripoint/__init__.py,sha256=8a308M4QYRxnihRj3C9HXzJxY6exMV17tPpEG0ikJHU,722
+uripoint/cli.py,sha256=8B8Oam292yIBzHFsEYEaNneMoDS6-14emTGiJDmcabA,8256
+uripoint/main.py,sha256=7JMQliYpbeX3zVZx6gaCgCpLm620_J0OUHCbW4OH_x4,6177
+uripoint/process.py,sha256=YkCSpo-xIAFdLvUDTmwR7zQxN5ioNv2OfqVDPJre4og,4082
+uripoint/process_utils.py,sha256=3y1_c6NqaAJbZLZ06dcOvaLUM1aweXe6iMaiaJa65bI,1494
+uripoint/protocols.py,sha256=XJB0vLRBDvw9QxenCrH3jUeFkF9yaBif40Qory_iskY,8331
+uripoint/router.py,sha256=aAGflmH9blcx8yr_aJ4VS-08sZ5uhLOSItnBy13bGGI,4392
+uripoint-1.9.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uripoint-1.9.6.dist-info/METADATA,sha256=gbEJsxKZdyXb-AEbawr3l_91KgXRZ5k5GAdfQ_QelHs,48406
+uripoint-1.9.6.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+uripoint-1.9.6.dist-info/entry_points.txt,sha256=7UDFioOe56ANal14pdERpPgIU1PiRWXv7N90WbKIx4o,48
+uripoint-1.9.6.dist-info/top_level.txt,sha256=cuvsm5FEc4pD7kfDRSd_jkiZ8zFxc8UxwfF0vP9-bFo,9
+uripoint-1.9.6.dist-info/RECORD,,
