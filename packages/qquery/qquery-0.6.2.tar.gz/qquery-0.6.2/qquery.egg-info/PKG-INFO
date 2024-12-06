@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: qquery
+Version: 0.6.2
+Summary: Interface to Quicken For Mac database
+Author-email: Harry Dolan <harry.dolan@gmail.com>
+Project-URL: Homepage, https://github.com/HarryDolan/qquery
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt

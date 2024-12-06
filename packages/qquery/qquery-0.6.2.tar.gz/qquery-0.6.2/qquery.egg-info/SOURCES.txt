@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+qquery/__init__.py
+qquery/command_line.py
+qquery.egg-info/PKG-INFO
+qquery.egg-info/SOURCES.txt
+qquery.egg-info/dependency_links.txt
+qquery.egg-info/entry_points.txt
+qquery.egg-info/top_level.txt
