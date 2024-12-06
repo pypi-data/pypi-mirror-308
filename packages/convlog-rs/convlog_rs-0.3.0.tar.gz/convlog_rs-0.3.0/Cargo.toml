@@ -1,0 +1,26 @@
+[package]
+name = "convlog_rs"
+version = "0.3.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "_convlog"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ahash = "0.8.11"
+num_enum = "0.7.3"
+pyo3 = "0.22.0"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.132"
+serde_repr = "0.1.19"
+serde_tuple = "1.0.0"
+serde_with = "3.11.0"
+thiserror = "2.0.3"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+opt-level = 3
