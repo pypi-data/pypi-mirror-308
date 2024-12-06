@@ -1,0 +1,8 @@
+aiortc
+websockets
+requests
+numpy>=2.1.3
+
+[local]
+opencv-python
+pyaudio
