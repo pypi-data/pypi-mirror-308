@@ -1,0 +1,5 @@
+click>=8.1.7
+openai>=1.54.4
+pydantic>=2.9.2
+pydub>=0.25.1
+ruff>=0.7.3
