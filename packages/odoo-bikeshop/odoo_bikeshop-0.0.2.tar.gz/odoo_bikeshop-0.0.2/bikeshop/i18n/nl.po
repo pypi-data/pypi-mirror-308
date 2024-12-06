@@ -1,0 +1,456 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bikeshop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240512\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 15:45+0000\n"
+"PO-Revision-Date: 2024-06-09 01:44+0000\n"
+"Last-Translator: Vistaus <Vistaus@users.noreply.translate.codeberg.org>\n"
+"Language-Team: Dutch <https://translate.codeberg.org/projects/odoo-bikeshop/"
+"bikeshop/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5.5\n"
+
+#. module: bikeshop
+#: model:ir.model,name:bikeshop.model_sale_order
+msgid ""
+"\n"
+"    Work Order\n"
+"    "
+msgstr ""
+"\n"
+"    Werkopdracht\n"
+"    "
+
+#. module: bikeshop
+#: model:ir.model,name:bikeshop.model_bikeshop_bicycle
+msgid "A customer owned bicycle"
+msgstr "Fiets van een klant"
+
+#. module: bikeshop
+#: model:ir.model,name:bikeshop.model_mail_activity
+msgid "Activity"
+msgstr "Activiteit"
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.sale_order_action
+#: model:ir.ui.menu,name:bikeshop.sale_order_model_menu_action
+msgid "All Work Orders"
+msgstr "Alle werkopdrachten"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.product_product_view_search
+msgid "Archived"
+msgstr "Gearchiveerd"
+
+#. module: bikeshop
+#: model:bikeshop.delay_reason,name:bikeshop.bikeshop_delay_reason_customer
+msgid "Awaiting Customer Response"
+msgstr "In afwachting van antwoord van klant"
+
+#. module: bikeshop
+#: model:bikeshop.delay_reason,name:bikeshop.bikeshop_delay_reason_parts
+msgid "Awaiting Parts"
+msgstr "In afwachting van onderdelen"
+
+#. module: bikeshop
+#: model:bikeshop.delay_reason,name:bikeshop.bikeshop_delay_reason_resources
+msgid "Awaiting Resources"
+msgstr "In afwachting van bronnen"
+
+#. module: bikeshop
+#: model:bikeshop.delay_reason,name:bikeshop.bikeshop_delay_reason_warranty
+msgid "Awaiting Warranty"
+msgstr "In afwachting van garantie"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__battery_key
+msgid "Battery Key"
+msgstr "Accusleutel"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__bike_id
+msgid "Bicycle"
+msgstr "Fiets"
+
+#. module: bikeshop
+#: model:mail.activity.type,name:bikeshop.mail_activity_bikeshop_repair
+msgid "Bicycle Repair"
+msgstr "Fietsreparatie"
+
+#. module: bikeshop
+#: model:ir.model.constraint,message:bikeshop.constraint_bikeshop_bicycle_unique_sn
+msgid "Bicycle serial numbers should be unique."
+msgstr "Serienummers van fietsen dienen uniek te zijn."
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.bikeshop_bicycle_action
+#: model:ir.ui.menu,name:bikeshop.bikeshop_bicycles_model_menu_action
+msgid "Bicycles"
+msgstr "Fietsen"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_form
+msgid "Bike"
+msgstr "Fiets"
+
+#. module: bikeshop
+#: model:ir.actions.client,name:bikeshop.action_bikeshop
+#: model:ir.ui.menu,name:bikeshop.bikeshop_menu_root
+msgid "Bike Shop"
+msgstr "Fietsenwinkel"
+
+#. module: bikeshop
+#: model:product.template,name:bikeshop.service_0_product_template
+msgid "Bike Tune"
+msgstr "Fietsafstelling"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_res_partner__bike_ids
+#: model:ir.model.fields,field_description:bikeshop.field_res_users__bike_ids
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_tree
+#: model_terms:ir.ui.view,arch_db:bikeshop.res_partner_view_tabs
+msgid "Bikes"
+msgstr "Fietsen"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_product_product__labor_hours
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__labor_hours
+msgid "Book Hours"
+msgstr "Werkuren"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__color
+msgid "Color"
+msgstr "Kleur"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Complete Work"
+msgstr "Werk afronden"
+
+#. module: bikeshop
+#: model:ir.ui.menu,name:bikeshop.menu_bikeshop_config
+msgid "Configuration"
+msgstr "Instellen"
+
+#. module: bikeshop
+#: model:ir.model,name:bikeshop.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Create Invoice"
+msgstr "Factuur opmaken"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__create_uid
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__create_uid
+msgid "Created by"
+msgstr "Opgemaakt door"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__create_date
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__create_date
+msgid "Created on"
+msgstr "Opgemaakt op"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Customer Notes"
+msgstr "Klantaantekeningen"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__customer_request
+msgid "Customer Request"
+msgstr "Klantverzoek"
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.res_partner_action
+#: model:ir.ui.menu,name:bikeshop.res_partner_menu
+#: model:ir.ui.menu,name:bikeshop.res_partner_model_menu_action
+#: model_terms:ir.ui.view,arch_db:bikeshop.res_partner_view_tree
+msgid "Customers"
+msgstr "Klanten"
+
+#. module: bikeshop
+#: model:bikeshop.bicycle,color:bikeshop.bike_1
+msgid "Dark Teal"
+msgstr "Donkergroenblauw"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Delay"
+msgstr "Vertraging"
+
+#. module: bikeshop
+#. odoo-python
+#: code:addons/bikeshop/models/sale_order.py:0
+#: model:ir.actions.act_window,name:bikeshop.bikeshop_delay_reason_action
+#: model:ir.model,name:bikeshop.model_bikeshop_delay_reason
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__delay_reason
+#: model:ir.ui.menu,name:bikeshop.bikeshop_delay_reason_model_menu_action
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_delay_reason
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+#, python-format
+msgid "Delay Reason"
+msgstr "Reden van vertraging"
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.sale_order_delayed_action
+#: model:ir.model.fields.selection,name:bikeshop.selection__sale_order__wo_status__delay
+#: model:ir.ui.menu,name:bikeshop.sale_order_delayed_menu_action
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+msgid "Delayed"
+msgstr "Vertraagd"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_delay_reason
+msgid "Discard"
+msgstr "Negeren"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__display_name
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__display_name
+msgid "Display Name"
+msgstr "Getoonde naam"
+
+#. module: bikeshop
+#: model:ir.model.fields.selection,name:bikeshop.selection__sale_order__wo_status__draft
+msgid "Draft"
+msgstr "Concept"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__date_deadline
+msgid "Due Date"
+msgstr "Einddatum"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__evaluation
+msgid "Evaluation"
+msgstr "Evaluatie"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_form
+msgid "History"
+msgstr "Geschiedenis"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__id
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__id
+msgid "ID"
+msgstr "Id"
+
+#. module: bikeshop
+#: model:ir.model.fields.selection,name:bikeshop.selection__sale_order__wo_status__queue
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+msgid "In Queue"
+msgstr "In wachtrij"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__notes
+msgid "Internal Notes"
+msgstr "Interne aantekeningen"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__write_uid
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__write_uid
+msgid "Last Updated by"
+msgstr "Bijgewerkt door"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__write_date
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__write_date
+msgid "Last Updated on"
+msgstr "Bijgewerkt op"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__make
+msgid "Make"
+msgstr "Fabrikant"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__model
+msgid "Model"
+msgstr "Model"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_delay_reason__name
+#: model_terms:ir.ui.view,arch_db:bikeshop.res_partner_view_tree
+msgid "Name"
+msgstr "Naam"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__notes
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_form
+msgid "Notes"
+msgstr "Aantekeningen"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Notes from the customer on drop off."
+msgstr "Aantekeningen van de klant na aflevering."
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Notes from the service advisor to the customer."
+msgstr "Aantekeningen van de serviceadviseur aan de klant."
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Notes from the technician to the customer."
+msgstr "Aantekeningen van de reparateur aan de klant."
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tree
+msgid "Number"
+msgstr "Aantal"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__owner_id
+msgid "Owner"
+msgstr "Eigenaar"
+
+#. module: bikeshop
+#: model:ir.model,name:bikeshop.model_product_product
+msgid "Product Variant that includes book hours for labor"
+msgstr "Productvariant inclusief werkuren"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.product_product_view_tree
+msgid "Products"
+msgstr "Producten"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_delay_reason
+msgid "Reason"
+msgstr "Reden"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_delay_reason_view_tree
+msgid "Reasons"
+msgstr "Redenen"
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.sale_order_in_queue_action
+#: model:ir.ui.menu,name:bikeshop.sale_order_in_queue_menu_action
+msgid "Repair Queue"
+msgstr "Reparatiewachtrij"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+msgid "Repair State"
+msgstr "Reparatiestaat"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__display_state
+msgid "Repair Status"
+msgstr "Reparatiestatus"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.product_product_view_tree
+msgid "Sales Price"
+msgstr "Verkoopprijs"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_delay_reason
+msgid "Save"
+msgstr "Opslaan"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Schedule"
+msgstr "Inplannen"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Send by Email"
+msgstr "Versturen via e-mail"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__serial
+msgid "Serial Number"
+msgstr "Serienummer"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.product_product_view_search
+msgid "Service"
+msgstr "Dienstverlening"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Service Advisor Notes"
+msgstr "Aantekeningen van serviceadviseur"
+
+#. module: bikeshop
+#: model:ir.actions.act_window,name:bikeshop.product_product_action
+#: model:ir.ui.menu,name:bikeshop.product_product_model_menu_action
+#: model_terms:ir.ui.view,arch_db:bikeshop.product_product_view_search
+msgid "Services"
+msgstr "Diensten"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tree
+msgid "Tax Total"
+msgstr "Btw-totaal"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid "Technician Notes"
+msgstr "Aantekeningen van reparateur"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tabs
+msgid ""
+"The customer will be able to see these notes. Be careful what you write."
+msgstr "Let op: de klant kan deze aantekeningen inzien."
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tree
+msgid "Total Tax Excluded"
+msgstr "Totaal, excl. btw"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tree
+msgid "Total Tax Included"
+msgstr "Totaal, incl. btw"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_form
+msgid "View"
+msgstr "Bekijken"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_sale_order__wo_status
+msgid "WO Status"
+msgstr "Opdrachtstatus"
+
+#. module: bikeshop
+#: model:ir.model.fields.selection,name:bikeshop.selection__sale_order__wo_status__done
+msgid "Work Complete"
+msgstr "Werk afgerond"
+
+#. module: bikeshop
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+msgid "Work Order"
+msgstr "Werkopdracht"
+
+#. module: bikeshop
+#: model:ir.model.fields,field_description:bikeshop.field_bikeshop_bicycle__workorder_id
+#: model:ir.model.fields,field_description:bikeshop.field_res_partner__workorder_id
+#: model:ir.model.fields,field_description:bikeshop.field_res_users__workorder_id
+#: model:ir.ui.menu,name:bikeshop.sale_order_menu
+#: model_terms:ir.ui.view,arch_db:bikeshop.bikeshop_bicycle_view_form
+#: model_terms:ir.ui.view,arch_db:bikeshop.res_partner_view_tabs
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_search
+#: model_terms:ir.ui.view,arch_db:bikeshop.sale_order_view_tree
+msgid "Work Orders"
+msgstr "Werkopdrachten"

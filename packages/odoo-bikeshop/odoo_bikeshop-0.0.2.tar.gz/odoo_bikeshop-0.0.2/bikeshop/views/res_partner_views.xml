@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="res_partner_action" model="ir.actions.act_window">
+		<field name="name">Customers</field>
+		<field name="res_model">res.partner</field>
+		<field name="view_mode">list,form</field>
+	</record>
+
+  <record id="res_partner_view_tree" model="ir.ui.view">
+    <field name="name">res.partner.view.list</field>
+    <field name="model">res.partner</field>
+    <field eval="3" name="priority"/>
+    <field name="arch" type="xml">
+      <list string="Customers">
+        <field name="display_name" string="Name"/>
+        <field name="phone" optional="show"/>
+        <field name="mobile" optional="hide" />
+        <field name="email" optional="show" />
+        <field name="city"/>
+        <field name="state_id" optional="hide" readonly="1"/>
+        <field name="country_id" optional="show" readonly="1"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="res_partner_view_tabs" model="ir.ui.view">
+    <field name="name">res.partner.view.buttons</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form" />
+    <field name="priority" eval="3"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='email']" position="after">
+        <field name="contact_method" required="1"/>
+      </xpath>
+      <xpath expr="//page[@name='internal_notes']" position="after">
+        <page name='work_orders' string='Work Orders'>
+          <field name="workorder_id">
+            <list string="Work Orders">
+              <field name="name"/>
+              <field name="state"/>
+              <field name="create_date"/>
+							<field name="activity_ids" widget="list_activity" optional="show"/>
+              <field name="customer_request"/>
+            </list>
+          </field>
+        </page>
+        <page name='bikes' string='Bikes'>
+          <field name="bike_ids"/>
+        </page>
+      </xpath>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="sale_order_action" model="ir.actions.act_window">
+    <field name="name">All Work Orders</field>
+    <field name="res_model">sale.order</field>
+    <field name="view_mode">list,form,calendar,activity</field>
+    <field name="context">
+      {
+      "search_default_groupby_repair_state": 1,
+      }
+    </field>
+  </record>
+
+  <record id="sale_order_in_queue_action" model="ir.actions.act_window">
+    <field name="name">Repair Queue</field>
+    <field name="res_model">sale.order</field>
+    <field name="view_mode">list,form,calendar,activity</field>
+    <field name="context">
+      {
+      "search_default_in_queue": 1,
+      "in_queue_only": True,
+      }
+    </field>
+  </record>
+
+  <record id="sale_order_delayed_action" model="ir.actions.act_window">
+    <field name="name">Delayed</field>
+    <field name="res_model">sale.order</field>
+    <field name="view_mode">list,form,calendar,activity</field>
+    <field name="context">
+      {
+      "search_default_delayed": 1,
+      "search_default_groupby_delay_reason": 1,
+      }
+    </field>
+  </record>
+
+  <record id="sale_order_view_search" model="ir.ui.view">
+    <field name="name">sale.order.view.search</field>
+    <field name="model">sale.order</field>
+    <field name="priority" eval="3"/>
+    <field name="arch" type="xml">
+      <search string="Work Orders">
+        <field name="name" string="Work Order"/>
+        <separator/>
+        <filter string="In Queue" name="in_queue" domain="[('wo_status', '=', 'queue'), ('state', '!=', 'cancel')]"/>
+        <filter string="Delayed" name="delayed" domain="[('wo_status', '=', 'delay'), ('state', '!=', 'cancel')]"/>
+        <filter string="Delay Reason" name="groupby_delay_reason" context="{'group_by': 'delay_reason'}" />
+        <filter string="Repair State" name="groupby_repair_state" context="{'group_by': 'display_state'}" />
+      </search>
+    </field>
+  </record>
+
+  <record id="sale_order_view_tree" model="ir.ui.view">
+    <field name="name">sale.order.view.list</field>
+    <field name="model">sale.order</field>
+    <field name="priority">1</field>
+    <field name="arch" type="xml">
+      <list class="o_sale_order"
+        string="Work Orders"
+        decoration-muted="state == 'cancel'">
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_deadline" optional="show"/>
+      <field name="date_order" widget="date" optional="hide" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide"/>
+      <field name="expected_date" optional="hide"/>
+      <field name="create_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="bike_id"/>
+      <field name="display_state" column_invisible="context.get('in_queue_only', False)"/>
+      <field name="activity_ids" widget="list_activity" optional="hide"/>
+      <field name="labor_hours" optional="show"/>
+      <field name="customer_request" optional="hide"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id"
+        groups="base.group_multi_company"
+        optional="show"
+        readonly="1"/>
+      <field name="amount_untaxed"
+        sum="Total Tax Excluded"
+        widget="monetary"
+        optional="hide"/>
+      <field name="amount_tax"
+        sum="Tax Total"
+        widget="monetary"
+        optional="hide"/>
+      <field name="amount_total"
+        sum="Total Tax Included"
+        widget="monetary"
+        decoration-bf="1"
+        decoration-info="invoice_status == 'to invoice'"
+        optional="show"/>
+      <field name="tag_ids"
+        widget="many2many_tags"
+        options="{'color_field': 'color'}"
+        optional="hide"/>
+      <field name="state"
+        decoration-success="state == 'sale'"
+        decoration-info="state == 'draft'"
+        decoration-primary="state == 'sent'"
+        widget="badge"
+        optional="hide"/>
+      <field name="invoice_status"
+        decoration-success="invoice_status == 'invoiced'"
+        decoration-info="invoice_status == 'to invoice'"
+        decoration-warning="invoice_status == 'upselling'"
+        widget="badge"
+        optional="hide"/>
+      <field name="amount_to_invoice" optional="hide"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+  </field>
+</record>
+
+<record id="sale_order_view_delay_reason" model="ir.ui.view">
+  <field name="name">sale.order.view.delay_reason</field>
+  <field name="model">sale.order</field>
+  <field name="arch" type="xml">
+    <form string="Delay Reason">
+      <header>
+        <field name="wo_status" widget="statusbar" statusbar_visible="queue,delay,done"/>
+      </header>
+      <label for="delay_reason">Reason</label>
+      <field name="delay_reason" required="True"/>
+      <footer>
+        <button name="action_set_delay_reason" string="Save" type="object"
+          class="btn-primary"/>
+        <button name="cancel" string="Discard" special="cancel"/>
+      </footer>
+    </form>
+  </field>
+</record>
+
+<record id="sale_order_view_tabs" model="ir.ui.view">
+  <field name="name">sale.order.view.pages</field>
+  <field name="model">sale.order</field>
+  <field name="inherit_id" ref="sale.view_order_form" />
+  <field name="priority" eval="3"/>
+  <field name="arch" type="xml">
+    <xpath expr="//button[@id='create_invoice']" position="replace">
+      <button id="create_invoice" name="%(sale.action_view_sale_advance_payment_inv)d" string="Create Invoice"
+        type="action" class="btn-primary" data-hotkey="i"
+        invisible="invoice_status != 'to invoice' or wo_status != 'done'"/>
+    </xpath>
+    <xpath expr="//button[@id='create_invoice_percentage']" position="replace">
+      <button name="action_finish_repair" string="Complete Work" type="object" class="btn-primary"
+        invisible="state != 'sale' or wo_status != 'queue'"/>
+      <button name="action_schedule_repair" string="Schedule" type="object" class="btn-primary"
+        invisible="state != 'sale' or (wo_status != 'draft' and wo_status != 'delay')"/>
+      <button name="action_delay_repair" string="Delay" type="object"
+        invisible="state != 'sale' and state != 'cancel' or wo_status == 'done'"/>
+      <button id="create_invoice_percentage" name="%(sale.action_view_sale_advance_payment_inv)d" string="Create Invoice"
+        type="action" context="{'default_advance_payment_method': 'percentage'}" data-hotkey="i"
+        invisible="invoice_status != 'draft' or state != 'sale' or wo_status != 'done'"/>
+    </xpath>
+    <xpath expr="//button[@id='send_by_email']" position="replace">
+      <button name="action_quotation_send" id="send_by_email"
+        string="Send by Email" type="object"
+        invisible="state not in ('sent', 'sale') or wo_status != 'done'"
+        data-hotkey="g"
+        context="{'validate_analytic': True}"/>
+    </xpath>
+    <xpath expr="//field[@name='state']" position="replace">
+      <field name="state" widget="statusbar" statusbar_visible="draft,sent,queue,sale" invisible="state !='cancel' and wo_status != 'draft'"/>
+      <field name="wo_status" widget="statusbar" statusbar_visible="queue,done" invisible="state != 'sale' or wo_status == 'draft'"/>
+    </xpath>
+    <xpath expr="//page[@name='customer_signature']" position="after">
+      <page string="Customer Notes">
+        <p class="alert alert-warning" role="alert">
+          The customer will be able to see these notes. Be careful what you write.
+        </p>
+        <field name="customer_request" placeholder="Notes from the customer on drop off."/>
+      </page>
+      <page string="Service Advisor Notes">
+        <p class="alert alert-warning" role="alert">
+          The customer will be able to see these notes. Be careful what you write.
+        </p>
+        <field name="evaluation" placeholder="Notes from the service advisor to the customer."/>
+      </page>
+      <page string="Technician Notes">
+        <p class="alert alert-warning" role="alert">
+          The customer will be able to see these notes. Be careful what you write.
+        </p>
+        <field name="notes" placeholder="Notes from the technician to the customer."/>
+      </page>
+    </xpath>
+    <xpath expr="//group[@name='partner_details']" position="inside">
+      <field name="partner_id_contact_method"/>
+      <field name="partner_id_email"/>
+      <field name="partner_id_phone"/>
+      <field name="partner_id_mobile"/>
+      <field name="bike_id" domain="[('owner_id', '=', partner_id)]"/>
+    </xpath>
+    <field name="date_order" position="after">
+      <field name="create_date"/>
+    </field>
+    <field name="payment_term_id" position="after">
+      <field name="date_deadline"/>
+      <field name="delay_reason" readonly="1" options="{'no_open': True}" decoration-warning="True" invisible="wo_status != 'delay'"/>
+    </field>
+  </field>
+</record>
+</odoo>

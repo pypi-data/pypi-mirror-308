@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="1">
+    <record id="mail_activity_bikeshop_repair" model="mail.activity.type">
+      <field name="name">Bicycle Repair</field>
+      <field name="icon">fa-bicycle</field>
+      <field name="res_model">sale.order</field>
+      <field name="keep_done">1</field>
+    </record>
+  </data>
+</odoo>

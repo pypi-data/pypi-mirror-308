@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "odoo-bikeshop"
+version = "0.0.2"
+description = "A work order management solution for bicycle repair shops built as an Odoo 17 addon."
+authors = ["Sam Whited <sam@samwhited.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://www.atlbikeshed.com"
+repository = "https://codeberg.org/atlbikeshed/odoo-bikeshop/"
+keywords = ["odoo", "odoo18", "bicycle", "bike shop"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Environment :: Plugins",
+	"Framework :: Odoo :: 18.0",
+	"Intended Audience :: Other Audience",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Topic :: Office/Business",
+]
+packages = [{include = "bikeshop"}]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://codeberg.org/atlbikeshed/odoo-bikeshop/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[[tool.poetry.source]]
+name = "codeberg"
+url = "https://codeberg.org/api/packages/atlbikeshed/pypi"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
