@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: fspacker
+Version: 0.3.2
+Summary: Fast & Simple Packer toolset for python.
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rtoml>=0.11.0
+Requires-Dist: stdlib-list>=0.10.0
+Requires-Dist: types-requests>=2.32.0.20241016
+Description-Content-Type: text/markdown
+
+# fspacker
+
+Fast & Simple Packer toolset for python.
+
+Main features:
+
+- [ ] 10-100x faster than existing deploy libs (such as Py2exe, PyInstaller, Nuitka...)
+- [x] Supports windows 7 ~ 11, linux and macOS
+- [ ] Supports multi-project deployment
+- [ ] Supports archiving with zip or 7z
+- [ ] Supports compilation with nuitka
+
+## Table of contents
+
+[Getting Started](#getting-started)
+
+## Getting Started
+
+Usage:
+
+```bash
+pip install fspacker
+fsp myapp.py
+```
+
+## Examples
+
+### GUI Dev
+
+#### PyQt Project
+
+#### Tk Project
+
+#### GTK Project
+
+### Scientific Dev
+
+#### Numpy
+
+#### Matplotlib + Numpy
+
+#### Torch
