@@ -1,0 +1,5 @@
+[console_scripts]
+comfy-idl = comfyui_idl.cli:main
+
+[gui_scripts]
+
