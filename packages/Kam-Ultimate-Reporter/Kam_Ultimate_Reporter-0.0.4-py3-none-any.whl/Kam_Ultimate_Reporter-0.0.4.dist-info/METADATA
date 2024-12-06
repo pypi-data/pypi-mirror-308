@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Kam-Ultimate-Reporter
+Version: 0.0.4
+Summary: A CLI tool for generating reports from the Kam Ultimate Reporter library system
+Author: Ahmad Awada
+Author-email: ahmed.a.awada@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: inquirer >=3.4.0
+Requires-Dist: pandas >=2.2.3
+Requires-Dist: openpyxl >=3.1.5
+Requires-Dist: folioclient >=0.61.1
+Requires-Dist: httpx >=0.27.2
+
