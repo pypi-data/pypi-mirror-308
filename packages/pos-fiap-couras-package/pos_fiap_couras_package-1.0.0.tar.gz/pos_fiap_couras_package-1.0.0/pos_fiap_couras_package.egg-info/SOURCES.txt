@@ -1,0 +1,9 @@
+README.md
+setup.py
+pos_fiap_couras/__init__.py
+pos_fiap_couras/core.py
+pos_fiap_couras_package.egg-info/PKG-INFO
+pos_fiap_couras_package.egg-info/SOURCES.txt
+pos_fiap_couras_package.egg-info/dependency_links.txt
+pos_fiap_couras_package.egg-info/top_level.txt
+tests/test_core.py
