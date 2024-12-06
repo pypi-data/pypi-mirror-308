@@ -1,0 +1,10 @@
+swpwrxblock_build_backend/__init__.py,sha256=EI15wImHOeqYZP32xzLydmlmsa5f-XG29O76RfMMy1U,171
+swpwrxblock_build_backend/backend.py,sha256=15day9dRfKw7gW5aoO-5Ey0JpPNcLzyHg1QH4ckFqBU,3685
+swpwrxblock_build_backend/collect_reactapp.py,sha256=o1YqIuC2wki2cypa_2EIDJzP9zAzRRhHEalaXb7LLR0,12316
+swpwrxblock_build_backend/const.py,sha256=BBQZq5S8tor5WXS3GLGjS5ugiBODWfWE0BxMvf-X4oI,189
+swpwrxblock_build_backend/utils.py,sha256=cgjc--1QlL0RPPe4R1j0O9Rq6U6D6v_Y8Ffeqq7g47k,655
+swpwrxblock_build_backend-18.0.5.dist-info/LICENSE.TXT,sha256=Y9rP0CI4gUEAC2ZiybWuwlVMHwyE1eXValXJL23q00A,1064
+swpwrxblock_build_backend-18.0.5.dist-info/METADATA,sha256=8UWfldDj-8OnMCE9VUUf5XhMQqjq5Lsdoay28du53nY,2194
+swpwrxblock_build_backend-18.0.5.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+swpwrxblock_build_backend-18.0.5.dist-info/top_level.txt,sha256=PDnLMjqO2ETqibSwfSdPdm-A3j0PTHYNrUZtJMwUBC4,26
+swpwrxblock_build_backend-18.0.5.dist-info/RECORD,,
