@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: procyon-py
+Version: 0.1.0
+Summary: A terminal based UI library for Python
+Home-page: https://github.com/evanlaube/procyon-py
+Author: Evan Laube
+Author-email: laubeevan@gmail.com
+License: GPL 3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: windows
+Requires-Dist: windows-curses; extra == "windows"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# procyon-py
+A Terminal based UI library for python
