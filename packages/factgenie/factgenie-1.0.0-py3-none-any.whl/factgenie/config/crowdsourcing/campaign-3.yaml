@@ -1,0 +1,55 @@
+annotation_granularity: words
+annotation_span_categories:
+- color: '#ffbcbc'
+  name: Incorrect
+- color: '#e9d2ff'
+  name: Not checkable
+- color: '#fff79f'
+  name: Misleading
+- color: '#bbbbbb'
+  name: Other
+annotator_instructions: |-
+  In this task, you will annotate outputs of an automatic text generation system. For each example, you will see **data** on the left side and the corresponding generated **text** on the right side. Your task is to **annotate errors** in the text with respect to the data.
+
+  There are four types of errors that you can mark in the generated text:
+
+  1.  <span style="background-color: #FFBCBC"><b>Incorrect fact</b></span>: The fact in the text contradicts the data.
+  2.  <span style="background-color: #e9d2ff"><b>Not checkable</b></span> : The fact in the text cannot be checked given the data.
+  3.  <span style="background-color: #FFF79F"><b>Misleading</b></span>: The fact in the text is misleading in the given context.
+  4.  <span style="background-color: #bbbbbb"><b>Other</b></span> : The text is problematic for another reason, e.g. grammatically or stylistically incorrect, irrelevant, or repetitive.
+
+  You can annotate the errors by selecting the appropriate error category and dragging your mouse over the text, highlighting the error span.
+
+  Once you think you have marked all the errors present in the text, click the **✅ Mark example as complete** button (you can still update the annotation later).
+
+  You will be able to submit the annotations once they are all are marked as complete.
+annotators_per_example: 3
+examples_per_batch: 10
+final_message: |-
+  Your annotations have been submitted.
+
+  Your Prolific completion code is **CK388WFU**.
+
+  **[Return to Prolific](https://app.prolific.co/submissions/complete?cc=CK388WFU)**
+flags:
+- The text 100% accurate and does not contain any errors.
+- The text is missing or incomplete.
+- The text is severely off-topic (seems completely unrelated to the data).
+idle_time: 120
+options:
+- label: abc
+  type: slider
+  values:
+  - a
+  - b
+  - c
+- label: This is a super long input
+  type: select
+  values:
+  - This is a super long input 1
+  - This is a super long input 2
+  - This is a super long input 3
+service: prolific
+sort_order: sort-example-ids-shuffle-setups
+text_fields:
+- Missing inputs
