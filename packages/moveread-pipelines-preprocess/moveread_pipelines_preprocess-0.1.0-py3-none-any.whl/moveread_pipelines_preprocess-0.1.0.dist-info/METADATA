@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: moveread-pipelines-preprocess
+Version: 0.1.0
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/pipelines.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: lazy-loader
+Requires-Dist: pipeteer
+Requires-Dist: pure-cv
+Requires-Dist: python-kv
+Requires-Dist: pydantic
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: haskellian
+Requires-Dist: dslog
+Requires-Dist: moveread-pipelines-tatr
+Requires-Dist: scoresheet-models
+Requires-Dist: moveread-core
+
