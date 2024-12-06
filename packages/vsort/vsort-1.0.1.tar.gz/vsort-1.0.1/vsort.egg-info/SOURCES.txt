@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vsort/__init__.py
+vsort.egg-info/PKG-INFO
+vsort.egg-info/SOURCES.txt
+vsort.egg-info/dependency_links.txt
+vsort.egg-info/requires.txt
+vsort.egg-info/top_level.txt
