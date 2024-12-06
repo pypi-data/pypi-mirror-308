@@ -1,0 +1,3 @@
+[console_scripts]
+urljsf=urljsf.cli:main
+
