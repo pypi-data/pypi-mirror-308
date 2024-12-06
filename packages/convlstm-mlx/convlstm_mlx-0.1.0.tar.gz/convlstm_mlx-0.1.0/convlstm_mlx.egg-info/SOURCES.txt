@@ -1,0 +1,9 @@
+README.md
+setup.py
+convlstm-mlx/__init__.py
+convlstm-mlx/conv_lstm.py
+convlstm_mlx.egg-info/PKG-INFO
+convlstm_mlx.egg-info/SOURCES.txt
+convlstm_mlx.egg-info/dependency_links.txt
+convlstm_mlx.egg-info/requires.txt
+convlstm_mlx.egg-info/top_level.txt
