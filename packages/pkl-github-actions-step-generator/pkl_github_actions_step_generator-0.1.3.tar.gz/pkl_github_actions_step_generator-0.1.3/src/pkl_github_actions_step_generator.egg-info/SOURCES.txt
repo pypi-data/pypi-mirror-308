@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/pkl_github_actions_step_generator.egg-info/PKG-INFO
+src/pkl_github_actions_step_generator.egg-info/SOURCES.txt
+src/pkl_github_actions_step_generator.egg-info/dependency_links.txt
+src/pkl_github_actions_step_generator.egg-info/entry_points.txt
+src/pkl_github_actions_step_generator.egg-info/top_level.txt
+tests/test_cli.py
