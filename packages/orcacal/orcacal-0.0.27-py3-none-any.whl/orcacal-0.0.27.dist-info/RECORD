@@ -1,0 +1,14 @@
+orcacal/AssistFun.py,sha256=5fjhyIeRShBIgrPmmm6XBMq1HpUlskBzXAE3KT_EGTs,5023
+orcacal/__init__.py,sha256=umGPvkAHJB0GAPrCFyxmnF5_UYYP-fZ_x5cwPAqmCFQ,24
+orcacal/Multiwfn/Multiwfn.exe,sha256=jfvScnwQBV05ozKhxeVM6oQB5ymHRBjpopAWIzV-unk,35374080
+orcacal/Multiwfn/Multiwfn_Linux,sha256=qemE3s21zymvC71qtvzKsyNNcGLlg-JE686SB9hzl3I,9934160
+orcacal/Multiwfn/NAdOs.mwfn,sha256=TOqvFIWSCZmw00F3AKAsrM1g4ywnWS2z4jk-O9g3iNQ,5585235
+orcacal/Multiwfn/libiomp5md.dll,sha256=CtcfRm0RXTU9zpS6MrY-KI9IGY6J9VHUbczkYf7b0ZU,2047000
+orcacal/Multiwfn/settings.ini,sha256=3YquCe_jwKRSqkCdOldqGY7C3L-5uNtF_Mn5lna1iCA,20097
+orcacal/orcacal/__init__.py,sha256=5hjMPjo5k8GKvdD0pHWY9JyLnSolJOSb-FJND95DFR8,64
+orcacal/orcacal/orcacal.py,sha256=DshuECM9CHkavSQDFkjMb6EQwaelT7Gwa1Nof_ZwvZg,11160
+orcacal-0.0.27.dist-info/LICENSE,sha256=gOWIuTGiUJnw71SgMXpfROUHHYRHvF03mi3L8rdwkmk,1084
+orcacal-0.0.27.dist-info/METADATA,sha256=9h4mthSY-GaweUDJxz0u3d-yLTwPJPK-LLr0DHwDeoQ,4845
+orcacal-0.0.27.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+orcacal-0.0.27.dist-info/top_level.txt,sha256=TH-o-i-7LeGRelnT1vB0RgzRT2Q37JOsedPVO7VkNn4,8
+orcacal-0.0.27.dist-info/RECORD,,
