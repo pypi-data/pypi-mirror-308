@@ -1,0 +1,9 @@
+recipe_database_scraper/__init__.py,sha256=OoMnVC_hqnr9yxjjBiVJRfK9LWc7aQanLAuCQZlsi_Q,3860
+recipe_database_scraper/_exceptions.py,sha256=gjIBiWu-egZNTLYh_HSASOi0P8vB3CEMkDENVafNqX8,1570
+recipe_database_scraper/_utils.py,sha256=E5te3p9dbypf0a2g6_QJxU80ffXwMZFqNqVi0_sh7vU,6085
+recipe_database_scraper/get_html.py,sha256=j-RTMUQF1sTmcP8UzFdZ_t9guZVgmbELpuB6zxOUr_I,3638
+recipe_database_scraper/recipe_scraper.py,sha256=x3eL05ybftYdMye_UaR0uSYEZ6BDh1MOAgl6JFokeqw,11784
+recipe_database_scraper/sitemap_scraper.py,sha256=dW9lG0tSdOnrVpaXDwY0MBC3V4WKn3P-OCwRgkYKQC0,7192
+recipe_database_scraper-0.2.0.dist-info/METADATA,sha256=MOxqYGELrehtEntaDpN-9X7eAEIm54ig55xSCKdrKDM,3840
+recipe_database_scraper-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+recipe_database_scraper-0.2.0.dist-info/RECORD,,
