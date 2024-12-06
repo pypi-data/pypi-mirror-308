@@ -1,0 +1,2 @@
+[console_scripts]
+install_pyrosetta = install_pyrosetta.install_pyrosetta_command
