@@ -1,0 +1,10 @@
+recursive-include src *.ex
+recursive-include src *.md
+recursive-include src *.txt
+recursive-include docs *
+recursive-include sphinx *.py
+include *.rst
+include Makefile
+include constraints.txt
+include *.yaml
+include .coveragerc
