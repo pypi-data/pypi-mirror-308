@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/restrapid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/restrapid/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/restrapid/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/restrapid/management/commands/rapidrest.py,sha256=nPJVZuA76LR5PNxEe4QWvcCOpesMtRbS7HyTvm977UU,4376
+RapidRest-0.1.1.dist-info/LICENSE,sha256=6DUX4oCzoFX4Zk5qu8UgpyoNI_4Jen4Mc7-xFH0HO4Q,501
+RapidRest-0.1.1.dist-info/METADATA,sha256=PvswzCMI4VsOgerMi6uRnZBz0XxJhUeK5w9SXywTU1k,1158
+RapidRest-0.1.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+RapidRest-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+RapidRest-0.1.1.dist-info/RECORD,,
