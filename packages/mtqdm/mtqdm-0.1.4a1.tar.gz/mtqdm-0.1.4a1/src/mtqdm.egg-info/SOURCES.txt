@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/mtqdm/__init__.py
+src/mtqdm/core.py
+src/mtqdm/py.typed
+src/mtqdm.egg-info/PKG-INFO
+src/mtqdm.egg-info/SOURCES.txt
+src/mtqdm.egg-info/dependency_links.txt
+src/mtqdm.egg-info/requires.txt
+src/mtqdm.egg-info/top_level.txt
+tests/test_mtqdm.py

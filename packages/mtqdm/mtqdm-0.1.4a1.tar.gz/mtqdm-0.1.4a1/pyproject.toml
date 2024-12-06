@@ -1,0 +1,30 @@
+[project]
+name = "mtqdm"
+version = "0.1.4a1"
+description = "Put tqdm on your menu bar."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.12"
+authors = [
+    { name="Ooj" }
+]
+keywords = ["progress", "progressbar", "menubar", "tqdm", "macos"]
+classifiers = [
+    "Environment :: MacOS X",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "rumps>=0.4.0",
+    "tqdm>=4.67.0"
+]
+[tool.uv]
+dev-dependencies = [
+  "fonttools",
+  "pytest",
+]
+[project.urls]
+homepage = "https://github.com/0oj/mtqdm"
+repository = "https://github.com/0oj/mtqdm"
