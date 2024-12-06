@@ -1,0 +1,9 @@
+.idea/
+__pycache__
+*.pyc
+database/
+docker-compose.yml
+venv/
+dist/
+*.egg-info
+.env
