@@ -1,0 +1,2 @@
+[winzy.plugins]
+wlist = winzy_whitelist:wlist_plugin
