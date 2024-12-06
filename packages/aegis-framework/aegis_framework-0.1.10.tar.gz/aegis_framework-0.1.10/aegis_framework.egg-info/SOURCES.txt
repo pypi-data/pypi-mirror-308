@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+aegis_framework.egg-info/PKG-INFO
+aegis_framework.egg-info/SOURCES.txt
+aegis_framework.egg-info/dependency_links.txt
+aegis_framework.egg-info/requires.txt
+aegis_framework.egg-info/top_level.txt
