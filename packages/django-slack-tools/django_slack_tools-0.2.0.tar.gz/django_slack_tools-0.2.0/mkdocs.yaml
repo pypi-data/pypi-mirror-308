@@ -1,0 +1,35 @@
+site_name: django-slack-tools
+repo_url: https://github.com/lasuillard/django-slack-tools
+repo_name: lasuillard/django-slack-tools
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_submodules: false
+  - search
+nav:
+  - Introduction: index.md
+  - Tutorials:
+    - Quick Start: tutorials/quick-start.md
+  - API References:
+    - Slack Messages:
+      - Models: api-references/slack-messages/models.md
+      - Messaging Backends: api-references/slack-messages/messaging-backends.md
+      - Sending Messages: api-references/slack-messages/sending-messages.md
+      - Celery Support: api-references/slack-messages/celery.md
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
