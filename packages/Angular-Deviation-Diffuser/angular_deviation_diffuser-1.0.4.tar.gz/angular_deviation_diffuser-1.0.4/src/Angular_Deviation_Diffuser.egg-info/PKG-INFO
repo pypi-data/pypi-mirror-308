@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: Angular_Deviation_Diffuser
+Version: 1.0.4
+Summary: This is a Transformer-Based diffusion model for Efficient Protein Conformational Ensemble Generation
+Author-email: yi yang <yiyangalan@gmail.com>
+License: MIT License
+        
+        Copyright (c) [2024] [YI YANG]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/AlanYangYi/angular_deviation_diffuser
+Keywords: diffusion model,protein conformation,angular deviation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lightning>=2.4.0
+Requires-Dist: transformers>=4.20.0
+Requires-Dist: biotite==0.35.0
+Requires-Dist: pandas
+Requires-Dist: pyrosetta-installer
+
+# Angular Deviation Diffuser
+
+## Overview
+
+**Angular Deviation Diffuser** is a transformer-based diffusion model designed for efficiently generating conformational ensembles of protein backbones by using angular deviations as data flow. It aims to overcome the limitations of traditional molecular dynamics (MD) simulations by providing a fast and computationally efficient approach for sampling protein conformational landscapes. This model leverages the concepts of SE(3) symmetry, angular deviations, and diffusion processes to produce dynamic ensembles that closely match those generated through MD simulations, thereby offering a new way to study protein structure and function.
+
+## Background
+
+Protein dynamics are essential for understanding biological functionality, as proteins exist not only in a single static structure but also in multiple dynamic conformational states. MD simulations are the gold standard for studying these dynamics, but they are resource-intensive and limited in their ability to fully explore all possible conformational states. The Angular Deviation Diffuser addresses these limitations by utilizing advanced deep learning techniques, specifically a diffusion model integrated with SE(3) invariance, to efficiently generate accurate protein conformations.
+
+## Features
+
+- **Angular Deviation-Based Diffusion**: Uses angular deviations rather than absolute angles for data representation, improving stability and efficiency.
+- **Transformer Backbone**: Utilizes a transformer architecture for learning protein dynamics from training data, capturing the conformational space effectively.
+- **SE(3) Symmetry Integration**: Ensures the generated conformations respect the inherent rotational and translational symmetry of molecular systems.
+- **Efficient Ensemble Generation**: Capable of generating diverse conformational ensembles in significantly less time compared to traditional MD simulations.
+
+## Installation
+
+To use Angular Deviation Diffuser, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/Angular-Deviation-Diffuser.git
+   cd Angular-Deviation-Diffuser
+   ```
+2. **Install the dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+The following steps outline how to use the code to generate protein conformations:
+
+1. **Data Preparation**: Extract the backbone angles (φ, ψ, ω) and bond angles (θ₁, θ₂, θ₃) from MD simulations. Calculate angular deviations relative to a reference structure.
+2. **Training the Model**: Train the transformer-based diffusion model using the angular deviation data extracted in the previous step.
+   
+3. **Generating Conformations**: Generate a diverse ensemble of protein backbone conformations using the trained model.
+   
+4. **Adding Side Chains**: Use PyRosetta to add side chains to the generated backbone structures.
+   
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+Special thanks to our research team for their contributions and support throughout the development of this model.
+
