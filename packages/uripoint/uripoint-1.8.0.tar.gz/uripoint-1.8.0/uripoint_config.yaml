@@ -1,0 +1,6 @@
+- data:
+    status: OK
+  hostname: localhost
+  path: /api/status
+  port: 8001
+  protocol: http
