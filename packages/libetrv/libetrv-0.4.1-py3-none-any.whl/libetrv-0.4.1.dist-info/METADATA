@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: libetrv
+Version: 0.4.1
+Summary: Monitor and control your eTRV from Python
+Home-page: https://github.com/AdamStrojek/libetrv
+Author: Adam Strojek
+Author-email: adam@strojek.info
+License: Apache License 2.0
+Download-URL: https://github.com/AdamStrojek/libetrv/archive/v0.4.1.tar.gz
+Keywords: danfoss,etrv,libetrv
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: fire
+Requires-Dist: bluepy
+Requires-Dist: xxtea
+Requires-Dist: loguru
+Requires-Dist: cstruct
+
+UNKNOWN
+
