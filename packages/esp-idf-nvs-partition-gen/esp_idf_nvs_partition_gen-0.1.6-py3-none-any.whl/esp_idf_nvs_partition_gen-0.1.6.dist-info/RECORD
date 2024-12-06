@@ -1,0 +1,8 @@
+esp_idf_nvs_partition_gen/__init__.py,sha256=gW5NUxwGdPsiQjn0cOuuQT11pfthByI5DITDg_HMhLQ,22
+esp_idf_nvs_partition_gen/__main__.py,sha256=pBLAsL-wcm60MBKhnnDIY0ofhhH6VDER6seDKwM53Uc,75
+esp_idf_nvs_partition_gen/nvs_partition_gen.py,sha256=WtzQ54fqQbjDodQr3rPcwzPi1jlJ7gd4uhDGupAa2A4,46687
+esp_idf_nvs_partition_gen-0.1.6.dist-info/LICENSE,sha256=Av-TG_oXJSCUlYSDbQDLLPFtw4cskCGjaZqTEuQ4wkE,11365
+esp_idf_nvs_partition_gen-0.1.6.dist-info/METADATA,sha256=_bDQqHint5mvwcOH1wXGBd6ZTdv5-Acx0fA9XEihkY0,14952
+esp_idf_nvs_partition_gen-0.1.6.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+esp_idf_nvs_partition_gen-0.1.6.dist-info/top_level.txt,sha256=ijIiEGbtVUVjLoZhCSqgm4ibiUYujjshC9o-NH9k0ZM,26
+esp_idf_nvs_partition_gen-0.1.6.dist-info/RECORD,,
