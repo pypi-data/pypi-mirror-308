@@ -1,0 +1,68 @@
+[project]
+name = "autogen-fargate-executor"
+version = "0.1.1"
+authors = [
+  { name="Iman Kamyabi", email="engkamyabi@gmail.com" },
+]
+description = "AWS Fargate code executor for AutoGen - Run code securely and scale beyond local resources"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: System :: Distributed Computing",
+]
+
+[project.urls]
+Homepage = "https://github.com/imankamyabi/autogen-fargate-executor"
+Issues = "https://github.com/imankamyabi/autogen-fargate-executor/issues"
+
+[tool.poetry]
+name = "autogen-fargate-executor"
+version = "0.1.1"
+description = "AWS Fargate code executor for AutoGen - Run code securely and scale beyond local resources"
+authors = ["Iman Kamyabi <engkamyabi@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/imankamyabi/autogen-fargate-executor"
+repository = "https://github.com/imankamyabi/autogen-fargate-executor"
+documentation = "https://github.com/imankamyabi/autogen-fargate-executor#readme"
+keywords = ["autogen", "aws", "fargate", "executor", "serverless", "ai", "code-execution"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: System :: Distributed Computing",
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.34.0"
+autogen-agentchat = "^0.2.38"
+flaml = {extras = ["automl"], version = "^2.3.2"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
