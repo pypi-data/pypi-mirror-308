@@ -1,0 +1,7 @@
+main.py
+setup.py
+compressi.egg-info/PKG-INFO
+compressi.egg-info/SOURCES.txt
+compressi.egg-info/dependency_links.txt
+compressi.egg-info/requires.txt
+compressi.egg-info/top_level.txt
