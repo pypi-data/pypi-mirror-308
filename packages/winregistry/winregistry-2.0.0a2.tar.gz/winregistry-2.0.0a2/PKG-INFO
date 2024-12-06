@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: winregistry
+Version: 2.0.0a2
+Summary: Library aimed at working with Windows registry
+Home-page: https://github.com/shpaker/winregistry
+License: MIT
+Keywords: windows,registry,regedit,winreg
+Author: Aleksandr Shpak
+Author-email: shpaker@gmail.com
+Requires-Python: >=3.9
+Classifier: Framework :: Robot Framework :: Library
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/shpaker/winregistry
+Description-Content-Type: text/markdown
+
+# WinRegistry
+
+[![PyPI](https://img.shields.io/pypi/v/winregistry.svg)](https://pypi.python.org/pypi/winregistry)
+[![PyPI](https://img.shields.io/pypi/dm/winregistry.svg)](https://pypi.python.org/pypi/winregistry)
+
+Python package aimed at working with Windows Registry 
+
+## Installation
+
+Install via PyPI:
+
+```bash
+pip install winregistry
+```
+
+## Usage
+
+```python
+import winreg
+
+from winregistry import connect_registry
+
+_SUB_KEY_NAME = "SOFTWARE\_REMOVE_ME_"
+
+
+# connect to registry
+with connect_registry(winreg.HKEY_LOCAL_MACHINE) as hklm:
+  
+  # create registry key
+  hklm.create_key(_SUB_KEY_NAME)
+  
+  # open registry subkey
+  with hklm.open_key(_SUB_KEY_NAME) as subkey:
+    
+    # set value to subkey
+    subkey.set_value("remove_me", winreg.REG_SZ, "Remove me!")
+    
+    # read value
+    value = subkey.read_value("remove_me")
+    
+    # change data of value
+    value.data = "Don't forget remove me!"
+    
+    # delete value in subkey
+    hklm.delete_key(_SUB_KEY_NAME)
+```
+
