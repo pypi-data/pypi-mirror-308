@@ -1,0 +1,2 @@
+recursive-include ok/binaries *
+exclude *.pyx
