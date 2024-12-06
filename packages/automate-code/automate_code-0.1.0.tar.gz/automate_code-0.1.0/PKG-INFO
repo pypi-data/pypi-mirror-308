@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: automate_code
+Version: 0.1.0
+Summary: A Django management command to generate views and serializers for models automatically
+Home-page: https://github.com/yourusername/automate_code
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Description: # Automate Code
+        
+        `automate_code` is a Django management command that automatically generates views and serializers for models in a specified Django app.
+        
+        ## Installation
+        
+        ```bash
+        pip install automate_code
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/automate_code/__init__.py
+src/automate_code.egg-info/PKG-INFO
+src/automate_code.egg-info/SOURCES.txt
+src/automate_code.egg-info/dependency_links.txt
+src/automate_code.egg-info/entry_points.txt
+src/automate_code.egg-info/requires.txt
+src/automate_code.egg-info/top_level.txt
+src/automate_code/management/__init__.py
+src/automate_code/management/commands/__init__.py
+src/automate_code/management/commands/code_generator.py

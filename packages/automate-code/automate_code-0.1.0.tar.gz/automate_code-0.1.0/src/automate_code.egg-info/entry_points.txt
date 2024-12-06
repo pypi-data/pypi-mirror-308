@@ -1,0 +1,3 @@
+[console_scripts]
+automate_code = automate_code.management.commands.code_generator:Command
+
