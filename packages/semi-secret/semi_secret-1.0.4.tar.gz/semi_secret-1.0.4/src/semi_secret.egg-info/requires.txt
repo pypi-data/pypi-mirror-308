@@ -1,0 +1,11 @@
+cryptography>=3.4.7
+appdirs>=1.4.4
+
+[dev]
+black
+isort
+mypy
+pytest
+tox
+ruff
+pytest-xdist
