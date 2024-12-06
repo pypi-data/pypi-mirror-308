@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyOSCUD/__init__.py
+pyOSCUD/pyOSCUD.py
+pyOSCUD.egg-info/PKG-INFO
+pyOSCUD.egg-info/SOURCES.txt
+pyOSCUD.egg-info/dependency_links.txt
+pyOSCUD.egg-info/requires.txt
+pyOSCUD.egg-info/top_level.txt
