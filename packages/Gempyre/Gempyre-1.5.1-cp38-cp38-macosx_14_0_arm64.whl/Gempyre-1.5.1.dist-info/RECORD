@@ -1,0 +1,10 @@
+Gempyre/__init__.py,sha256=vqvSLXG9Q1IvA4fBrDvOyyTdaGdx0H6wFFaPP2hd7Bg,25
+Gempyre/_gempyre.cpython-38-darwin.so,sha256=NuEScA375Hv8JFfNEH9g2kt4idIWckLrIrJy5wpGMMI,1484432
+Gempyre/resource.py,sha256=7B9T-JUMhkJT22Wr7T9DsLDzJfFKBBY9KpA88psyL0w,1675
+Gempyre_utils/__init__.py,sha256=Q8RA1UAKUmrXHKSgokZs-8dlmY4VJMQGJnKBy1arKCs,106
+Gempyre_utils/resource.py,sha256=NDWmm6uRWPi8uBtyZLhQFzu-OZZj6vUxOlBbF3MAyL0,1590
+Gempyre-1.5.1.dist-info/LICENSE.txt,sha256=R_bgbqZ9omvkAuksluTjkLug8lxgsNorQDBkQSwlGFI,1071
+Gempyre-1.5.1.dist-info/METADATA,sha256=k8oLDMnKBRQOExl9PthVSpwM1Es02ciYS8IENVSAp9s,5346
+Gempyre-1.5.1.dist-info/WHEEL,sha256=4KmH1xaFd-LLfQ-hIUSMolr1c4cfHXMiqmFx8GoLXDk,102
+Gempyre-1.5.1.dist-info/top_level.txt,sha256=Bihbfsm-NcW6fTkMTlFygrkf1RBg0ZpsRX_3g6RC1xQ,22
+Gempyre-1.5.1.dist-info/RECORD,,
