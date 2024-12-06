@@ -1,0 +1,12 @@
+etcpak/_etcpak_avx2.pypy39-pp73-darwin.so,sha256=xD7K80VRG95hdasSvyHwFJSQqUMWC1pjV-YRJHlER9Y,205136
+etcpak/_etcpak_sse41.pypy39-pp73-darwin.so,sha256=bOlBJD3M1lgUfU1r25eajFNmrm0WwXMr3IzcohI3B4k,195560
+etcpak/_etcpak_none.pypy39-pp73-darwin.so,sha256=scqZ6LaRG04V4QQ6nUQDxqQ1KhVryOedwL8XMpTcwpE,195560
+etcpak/__init__.pyi,sha256=dAWRHFU_XeK6vLZPfmmSZXtirsEM3EEhgf1dyn-DK9Y,4698
+etcpak/__init__.py,sha256=LU7a9NIkerb0ugk6Shk0ACjuq0IfBhFHLSJKNpR7NU8,2996
+etcpak/_etcpak_avx512.pypy39-pp73-darwin.so,sha256=Ky3mgNWRHQ-Gv2Bl-_gr_R4O6cx_0J92bZnu6a9nqNI,209232
+etcpak/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etcpak-0.9.10.dist-info/RECORD,,
+etcpak-0.9.10.dist-info/LICENSE,sha256=7TQ7Mb6Vzmu0LVXIDQC3x_qY2ZwDeeSFfw440oNBoW8,1062
+etcpak-0.9.10.dist-info/WHEEL,sha256=1v0vT7wFP8gXEgdKRW9JS8qqxfWl8zTARDU9X3HNPME,116
+etcpak-0.9.10.dist-info/top_level.txt,sha256=T2D0x7SQLUB3U1bXC2uotzkyB-VtZlC_mQ2wYZB9Y8E,7
+etcpak-0.9.10.dist-info/METADATA,sha256=_ilOomLqb4aLYX7XUMD_KKOOhibyvibF4KI5nEfYG8k,5950
