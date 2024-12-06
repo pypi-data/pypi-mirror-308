@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wanyun_JitSdk
+Version: 1.0.1
+Summary: 极态官方授权Api的SDK
+Author: zangtao
+Author-email: noguchisyou123456@gmail.com
+Keywords: python,jit,sdk,apiAuth
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: requests
+
+极态官方授权Api的SDK，可以方便快捷地接入并使用经过授权的API接口
