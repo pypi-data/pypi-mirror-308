@@ -1,0 +1,14 @@
+augmentations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+augmentations/add_noise.py,sha256=Fup6lE8F8G7A7h10hlLvjWXMphh8za_gTnXcUuBQ4iE,1593
+augmentations/elastic_deformation.py,sha256=II57qOooMPZX9g8zsOuy_t9inekdjM2dTH9lU4UezoA,1447
+augmentations/flip.py,sha256=FrOoWfUu1txbfOhxbUf2Qr_sFLyETA6cp8sGnR9P5SA,645
+augmentations/gaussian_blur.py,sha256=Mpthca2k0rLam6ZXG-beWY7RY3jMDYlxEx1w3ZYLlZQ,485
+augmentations/intensity_scaling.py,sha256=T_lt4qQrqHJgBhYV6dJ4jzD59ulTozwIlvYVkNweIcg,984
+augmentations/occlusion.py,sha256=uWFc1QX4aSjxcKhdJGo888VCcI6MXzf4guJTeZ1nqR4,1360
+augmentations/random_crop_and_scale.py,sha256=0HCRNWd_02vVl2wFdQef0tDb8QNE8ohQG3VVu9tuodU,1571
+augmentations/random_rotation.py,sha256=EfRU6LmUUmHDsV-SZGZx1XabZClCyQU_2mPobw7yIFk,934
+MedAugment-0.1.dist-info/LICENSE,sha256=F96EzotgWhhpnQTW2TcdoqrMDir1jyEo6H915tGQ-QE,11524
+MedAugment-0.1.dist-info/METADATA,sha256=nvLLxwEF3z1e6YEo0TgayA0v8BsKeGKhKfdA1rE7ceM,278
+MedAugment-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+MedAugment-0.1.dist-info/top_level.txt,sha256=Ug6Mu1SQebIvf3t-5ItEUzBo0k1mEkbsTX512b2-Bmg,14
+MedAugment-0.1.dist-info/RECORD,,

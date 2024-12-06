@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MedAugment
+Version: 0.1
+Summary: A Medical Imaging Augmentation Library
+Home-page: UNKNOWN
+Author: lunovian
+Author-email: UNKNOWN
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+
+UNKNOWN
+
+
