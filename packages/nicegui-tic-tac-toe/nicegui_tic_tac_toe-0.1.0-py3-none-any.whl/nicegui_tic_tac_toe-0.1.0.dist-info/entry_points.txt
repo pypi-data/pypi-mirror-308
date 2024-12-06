@@ -1,0 +1,2 @@
+[console_scripts]
+tic-tac-toe = nicegui_tic_tac_toe:main
