@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: text-toolbox
+Version: 0.1.0
+Summary: A simple text processing toolkit
+Author: 夏军
+Author-email: ajame988@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Text Toolbox
+
+A simple Python package for text processing.
+
+## Installation
+
+```bash
+pip install text-toolbox
