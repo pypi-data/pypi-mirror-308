@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: brain-boost
+Version: 0.1
+Summary: Librería de ejercicios para mejorar la memoria y agilidad mental
+Home-page: https://github.com/Elisaruam/brain-boost.git
+Author: Elisaruam
+Author-email: elisa.ruiz@alumni.mondragon.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

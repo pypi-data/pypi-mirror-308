@@ -1,0 +1,9 @@
+setup.py
+brain_boost/__init__.py
+brain_boost/general_knowledge.py
+brain_boost/memory_exercise.py
+brain_boost/mental_math.py
+brain_boost.egg-info/PKG-INFO
+brain_boost.egg-info/SOURCES.txt
+brain_boost.egg-info/dependency_links.txt
+brain_boost.egg-info/top_level.txt
