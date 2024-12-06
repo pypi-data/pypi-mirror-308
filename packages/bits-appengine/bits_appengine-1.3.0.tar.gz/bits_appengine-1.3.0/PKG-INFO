@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bits-appengine
+Version: 1.3.0
+Summary: BITS App Engine
+Home-page: https://github.com/broadinstitute/bits-appengine.git
+License: BSD-3-Clause
+Keywords: appengine
+Author: Lukas Karlsson
+Author-email: karlsson@broadinstitute.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: flask
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth
+Requires-Dist: google-cloud-datastore
+Requires-Dist: google-cloud-firestore
+Requires-Dist: httplib2
+Requires-Dist: oauth2client
+Requires-Dist: toml
+Project-URL: Repository, https://github.com/broadinstitute/bits-appengine.git
+Description-Content-Type: text/markdown
+
+# bits-pypi-template
+
+BITS pypi package template
+
+To start a new BITS pypi package, create a new repo based off of this template. Then:
+
+1) Rename `bits/example` directory to `bits/<packagename>`
+2) In `package.sh`, change `bits_example` to `bits_<packagename>`
+3) In `bits/<packagename>/__init__.py`, change mentions of `Example` to `PackageName`
+4) In `test.py`, change `bits.example` to `bits.<packagename>`
+5) Also in `test.py`, change mentions of `Example` to `PackageName`
+6) Run `./test.py` to make sure everything is working
+
