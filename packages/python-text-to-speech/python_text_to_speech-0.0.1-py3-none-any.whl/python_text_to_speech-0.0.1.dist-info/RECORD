@@ -1,0 +1,9 @@
+python-text-to-speech/TTS.py,sha256=m_kcXqfiv7RzAvGvR8ivfoVJk1N9e0erxasxF7-6wyg,6272
+python-text-to-speech/__init__.py,sha256=xttYx8UD19k69sdEbsT3OycpY46J8fPdAeApuNssXe8,24
+python-text-to-speech/Registry/__init__.py,sha256=dF85tk2LYNhHg2aCKlBkzmCKIvY-CYavgkKKMUnP-xg,47
+python-text-to-speech/Registry/handle_voice.py,sha256=cAx1ZEKJGd_w34JPS2M6rD-GHyEjtCW912HhAIE6QJk,4043
+python_text_to_speech-0.0.1.dist-info/LICENSE,sha256=vrjkLp1rQoTgMwTQWoGgdVIAqWX8jQpeCuoehM-AXW4,1361
+python_text_to_speech-0.0.1.dist-info/METADATA,sha256=7C4yBPkPvtvJwn_F180NlB4srUtjJTaSOzEMVu06oA0,4650
+python_text_to_speech-0.0.1.dist-info/WHEEL,sha256=a7TGlA-5DaHMRrarXjVbQagU3Man_dCnGIWMJr5kRWo,91
+python_text_to_speech-0.0.1.dist-info/top_level.txt,sha256=Qi8AQdF_D9yKBpRCkVCJ_5rpTf0pgz-KB88jvfdUEFw,22
+python_text_to_speech-0.0.1.dist-info/RECORD,,
