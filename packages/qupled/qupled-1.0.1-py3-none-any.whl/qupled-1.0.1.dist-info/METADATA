@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: qupled
+Version: 1.0.1
+Summary: qupled: a package to investigate quantum plasmas via the dielectric formalism
+Author-email: Federico Lucco Castello <federico.luccocastello@gmail.com>
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+
