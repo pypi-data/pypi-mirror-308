@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flask_make"
+version = "1.0.6"
+authors = [
+  { name="Dilraj Singh", email="dilraj082@gmail.com" },
+]
+description = "A custom CLI command to create a new Flask app with a basic structure, creates virtual environment and installs requirements"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["flask", "template", "app"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Flask",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/dilrajs616/flask-make"
+Issues = "https://github.com/dilrajs616/flask-make/discussions"
+
+[project.scripts]
+flask-make = "flask_make:main"
