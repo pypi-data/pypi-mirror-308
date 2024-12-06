@@ -1,0 +1,13 @@
+casino_bdata4_e/__init__.py,sha256=ABYrrKjo5STSFa9gQ0WmFQqsjVSbjud-Ez_ZPf0v5JM,644
+casino_bdata4_e/bingo.py,sha256=rVK5pDLjqSh0aMt_DMRC3zG6fhj0STRQksEp7bkFh44,4922
+casino_bdata4_e/cartas.py,sha256=-oXC208H5fjt1hfdTPc03KVVZKjMgH64Ms4E9suS2sw,7737
+casino_bdata4_e/dado.py,sha256=4fcpSn6f9Q9ftDpLNnZm9xQZRmJMEt4WU2kicEyRHco,8765
+casino_bdata4_e/main.py,sha256=6_7zM1PqafFAXBdPGdMeUn_RPNbxjRj43zk_vomLSMI,1726
+casino_bdata4_e/moneda.py,sha256=BkC_zNUqEZ59r0LkFXRmSgqyM_a4T3TXv6UVcP0nWUM,693
+casino_bdata4_e/probabilidad.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+casino_bdata4_e/ruleta.py,sha256=_EcCbKJxWjZ43MvQz2JjkHarEOA4AByZrGbZTIhAd-k,4146
+casino_bdata4_e-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+casino_bdata4_e-0.0.1.dist-info/METADATA,sha256=xO5hPHEyJ6HBDbkM1HiImkEcOk908kRduAabmL_0Sn4,462
+casino_bdata4_e-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+casino_bdata4_e-0.0.1.dist-info/top_level.txt,sha256=YM3FfCJyF6Q_4M3kQUAquXBojuPi76xv6e9L25JiSn4,16
+casino_bdata4_e-0.0.1.dist-info/RECORD,,
