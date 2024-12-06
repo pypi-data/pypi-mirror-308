@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/viewcsv/__init__.py
+src/viewcsv/cli.py
+src/viewcsv/count_cjk.py
+src/viewcsv.egg-info/PKG-INFO
+src/viewcsv.egg-info/SOURCES.txt
+src/viewcsv.egg-info/dependency_links.txt
+src/viewcsv.egg-info/entry_points.txt
+src/viewcsv.egg-info/requires.txt
+src/viewcsv.egg-info/top_level.txt
