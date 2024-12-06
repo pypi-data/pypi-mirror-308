@@ -1,0 +1,14 @@
+scdataloader/VERSION,sha256=xipcxhrEUlk1dT9ewoTAoFKksdpLOjWA3OK313ohVK4,6
+scdataloader/__init__.py,sha256=5y9VzRhOAUWeYMn2MrRRRlzgdiMjRFytr7gcn-I6IkE,147
+scdataloader/__main__.py,sha256=VXrt2IykBypnIXWydwA7NfF7LtRGc-0Khjtm5OIBNpI,6527
+scdataloader/base.py,sha256=M1gD59OffRdLOgS1vHKygOomUoAMuzjpRtAfM3SBKF8,338
+scdataloader/collator.py,sha256=gzHiuixUwK8JClhAbG12kgWMU_VTKkowibA-tDFpbwo,11341
+scdataloader/config.py,sha256=rrW2DZxG4J2_pmpDbXXsaKJkpNC57w5dIlItiFbANYw,2905
+scdataloader/data.py,sha256=3dCp-lIAfOkCi76SH5W3iSqFmAWZslwARkN9v5mylz8,14907
+scdataloader/datamodule.py,sha256=B-udBevPSPF__hfy0pOz1dGovgE95K2pxPupjB7RblI,16936
+scdataloader/preprocess.py,sha256=pH4EPrcRqH34o3t5X3A4kETiYdCZngih5SdP_PPfgOo,29178
+scdataloader/utils.py,sha256=7tgt3sPj_XTKb-UlJDAZWvQr0_DG9VTC6ioiLdBWFFE,22498
+scdataloader-1.2.2.dist-info/METADATA,sha256=XMtKO9ImiyY--F92njvMUe69OaJgDx8C3xQtBAXqo8g,9800
+scdataloader-1.2.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+scdataloader-1.2.2.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scdataloader-1.2.2.dist-info/RECORD,,
