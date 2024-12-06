@@ -1,0 +1,115 @@
+Metadata-Version: 2.3
+Name: ledshim
+Version: 0.0.3
+Summary: LED SHIM Driver
+Project-URL: GitHub, https://www.github.com/pimoroni/led-shim
+Project-URL: Homepage, https://www.pimoroni.com
+Author-email: Philip Howard <phil@pimoroni.com>
+Maintainer-email: Philip Howard <phil@pimoroni.com>
+License: MIT License
+        
+        Copyright (c) 2017 Pimoroni Ltd.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: Pi,Raspberry
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.7
+Requires-Dist: smbus2
+Description-Content-Type: text/markdown
+
+# LED SHIM
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/pimoroni/led-shim/test.yml?branch=main)](https://github.com/pimoroni/led-shim/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/pimoroni/led-shim/badge.svg?branch=main)](https://coveralls.io/github/pimoroni/led-shim?branch=main)
+[![PyPi Package](https://img.shields.io/pypi/v/ledshim.svg)](https://pypi.python.org/pypi/ledshim)
+[![Python Versions](https://img.shields.io/pypi/pyversions/ledshim.svg)](https://pypi.python.org/pypi/ledshim)
+
+https://shop.pimoroni.com/products/led-shim
+
+28 tiny RGB LED pixels in a single row that just slip right onto your Pi's pins, no soldering required! LED SHIM is ideal for status updates, notifications, a VU meter, or as a bar graph for sensor readings.
+
+## Installing
+
+### Full install (recommended):
+
+We've created an easy installation script that will install all pre-requisites and get your LED SHIM
+up and running with minimal efforts. To run it, fire up Terminal which you'll find in Menu -> Accessories -> Terminal on your Raspberry Pi desktop, as illustrated below:
+
+![Finding the terminal](http://get.pimoroni.com/resources/github-repo-terminal.png)
+
+In the new terminal window type the command exactly as it appears below (check for typos) and follow the on-screen instructions:
+
+```bash
+git clone https://github.com/pimoroni/led-shim
+cd led-shim
+./install.sh
+```
+
+### Development:
+
+If you want to contribute, or like living on the edge of your seat by having the latest code, you should clone this repository, `cd` to the library directory, and run:
+
+```bash
+./install.sh --unstable
+```
+
+In all cases you will have to enable the i2c bus:
+
+```
+sudo raspi-config nonint do_i2c 0
+```
+
+## Documentation & Support
+
+* Guides and tutorials - https://learn.pimoroni.com/led-shim
+* Function reference - http://docs.pimoroni.com/ledshim/
+* GPIO Pinout - https://pinout.xyz/pinout/led_shim
+* Get help - http://forums.pimoroni.com/c/support
+
+0.0.3
+-----
+
+* Repackage to hatch/pyproject
+* Switch to smbus2
+
+0.0.2
+-----
+
+* Add `set_multiple_pixels`
+* Updated packaging
+* Linting & minor improvements to docstrings
+
+0.0.1
+-----
+
+* Initial release
+
