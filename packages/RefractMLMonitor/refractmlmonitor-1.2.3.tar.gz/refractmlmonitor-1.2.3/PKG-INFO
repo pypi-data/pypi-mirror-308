@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: RefractMLMonitor
+Version: 1.2.3
+Summary: A Python package to monitor the drift in the machine learning models
+Author-email: mahesh.gadipea@fosfor.com
+Description-Content-Type: text/markdown
