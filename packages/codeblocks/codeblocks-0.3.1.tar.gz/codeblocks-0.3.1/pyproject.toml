@@ -1,0 +1,26 @@
+[project]
+name = "codeblocks"
+version = "0.3.1"
+description = "Extract and process code blocks from Markdown files."
+readme = "README.md"
+authors = [
+    { name = "Alexey Shamrin", email = "alexey@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click~=8.1",
+]
+homepage = "https://github.com/shamrin/codeblocks"
+
+[project.scripts]
+codeblocks = "codeblocks:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "mypy>=1.13.0",
+]
