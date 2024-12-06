@@ -1,0 +1,2 @@
+[console_scripts]
+pycas = pycas.__main__:main
