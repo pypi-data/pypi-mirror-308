@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+torchstate/__init__.py
+torchstate.egg-info/PKG-INFO
+torchstate.egg-info/SOURCES.txt
+torchstate.egg-info/dependency_links.txt
+torchstate.egg-info/requires.txt
+torchstate.egg-info/top_level.txt
+torchstate/C/__init__.py
+torchstate/C/utils.py
