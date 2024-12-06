@@ -1,0 +1,14 @@
+napari_swc_reader/__init__.py,sha256=P7O03sdXxkqEV3_Ilxfem0u1P5SneZ87l8pFLCVTZj8,249
+napari_swc_reader/_reader.py,sha256=Tpx7mzdoiKkpAbdZ6PFCrTqn2c-03zsVWBdObPqFcFE,3432
+napari_swc_reader/_sample_data.py,sha256=8zoOoCo8GOt1pufmewJCXCc01dy-YWifBjcwYa4_ED0,661
+napari_swc_reader/_version.py,sha256=L5DCMp1QAlSqy-8bW7d51bLubTxNjZGYc5fMQkb752U,411
+napari_swc_reader/napari.yaml,sha256=55Etcde_qDjXtdjEz8tAubOpNynKsmgtaf6PaU0zTK4,821
+napari_swc_reader/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_swc_reader/_tests/test_reader.py,sha256=pwNo5VmaTTRc6KAJVl8oIe8xVI7QDMlYGr9dJDP2hb4,1175
+napari_swc_reader/_tests/test_sample_data.py,sha256=ZWGpOXAQO09Re0UtGBR_o64F9eBHJXyfPyo90FEOiS4,108
+napari_swc_reader-0.1.3.dist-info/LICENSE,sha256=MxN9haHilOt5Xo84W9dcBZ9lnx6DgWSdCZpeyyA3x5Q,1491
+napari_swc_reader-0.1.3.dist-info/METADATA,sha256=ciPOb10jermrWco9M9npsMNbz5OPeG05UE6uG501lxI,6628
+napari_swc_reader-0.1.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+napari_swc_reader-0.1.3.dist-info/entry_points.txt,sha256=8AjyvbLvuPqM4ke2-oUzL5jtsCReJRFtDx-4VmXE7gc,68
+napari_swc_reader-0.1.3.dist-info/top_level.txt,sha256=kMXSDi0A_TdYVEvXoFfL65LmXGC-RD9tgvr6Wwx-S7U,18
+napari_swc_reader-0.1.3.dist-info/RECORD,,
