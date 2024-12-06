@@ -1,0 +1,10 @@
+LICENSE
+README.md
+asgi_csrf.py
+pyproject.toml
+asgi_csrf.egg-info/PKG-INFO
+asgi_csrf.egg-info/SOURCES.txt
+asgi_csrf.egg-info/dependency_links.txt
+asgi_csrf.egg-info/requires.txt
+asgi_csrf.egg-info/top_level.txt
+tests/test_asgi_csrf.py
