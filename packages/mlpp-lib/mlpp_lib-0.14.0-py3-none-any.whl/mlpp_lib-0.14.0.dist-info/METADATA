@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mlpp-lib
+Version: 0.14.0
+Summary: Collection of methods for ML-based postprocessing of weather forecasts.
+Author: Daniele Nerini
+Author-email: daniele.nerini@meteoswiss.ch
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: extended
+Provides-Extra: tensorflow
+Provides-Extra: tensorflow-cpu
+Requires-Dist: dask
+Requires-Dist: numba ; extra == "extended"
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: properscoring (>=0.1,<0.2)
+Requires-Dist: scipy
+Requires-Dist: tensorflow (>=2.16.1,<2.17.0) ; extra == "tensorflow" or extra == "extended"
+Requires-Dist: tensorflow-cpu (>=2.16.1,<2.17.0) ; extra == "tensorflow-cpu"
+Requires-Dist: tensorflow-probability (>=0.24.0,<0.25.0)
+Requires-Dist: tf-keras (>=2.16.0,<2.17.0)
+Requires-Dist: xarray
+Requires-Dist: zarr ; extra == "extended"
