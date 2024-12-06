@@ -1,0 +1,6 @@
+pyyaml>=6.0.2
+
+[dev]
+ruff>=0.7.3
+build>=1.2.2
+twine>=5.1.1
