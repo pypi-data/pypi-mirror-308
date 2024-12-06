@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: learn_genai
+Version: 0.1.0
+Summary: A package to learn Generative AI through practical examples
+Home-page: https://github.com/yourusername/learn_genai
+Author: Your Name
+Author-email: your.email@example.com
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: langchain
+Requires-Dist: langgraph
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: faiss-cpu
+
