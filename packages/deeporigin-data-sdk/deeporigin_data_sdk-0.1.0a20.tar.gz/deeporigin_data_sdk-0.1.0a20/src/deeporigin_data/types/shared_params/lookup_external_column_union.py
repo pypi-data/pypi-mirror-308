@@ -1,0 +1,57 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from __future__ import annotations
+
+from typing import List
+from typing_extensions import Literal, Required, Annotated, TypedDict
+
+from ..._utils import PropertyInfo
+
+__all__ = ["LookupExternalColumnUnion", "ConfigSelect", "ConfigFile", "ConfigNumeric"]
+
+
+class ConfigSelect(TypedDict, total=False):
+    options: Required[List[str]]
+
+    can_create: Annotated[bool, PropertyInfo(alias="canCreate")]
+
+
+class ConfigFile(TypedDict, total=False):
+    allowed_extensions: Annotated[List[str], PropertyInfo(alias="allowedExtensions")]
+
+
+class ConfigNumeric(TypedDict, total=False):
+    unit: str
+
+
+class LookupExternalColumnUnion(TypedDict, total=False):
+    config_select: Required[Annotated[ConfigSelect, PropertyInfo(alias="configSelect")]]
+
+    expression_code: Required[Annotated[str, PropertyInfo(alias="expressionCode")]]
+
+    expression_return_type: Required[
+        Annotated[Literal["text", "float", "integer"], PropertyInfo(alias="expressionReturnType")]
+    ]
+
+    reference_database_row_id: Required[Annotated[str, PropertyInfo(alias="referenceDatabaseRowId")]]
+
+    type: Required[
+        Literal[
+            "user",
+            "url",
+            "text",
+            "select",
+            "reference",
+            "integer",
+            "float",
+            "file",
+            "expression",
+            "editor",
+            "date",
+            "boolean",
+        ]
+    ]
+
+    config_file: Annotated[ConfigFile, PropertyInfo(alias="configFile")]
+
+    config_numeric: Annotated[ConfigNumeric, PropertyInfo(alias="configNumeric")]
