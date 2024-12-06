@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+pysenseword/__init__.py
+pysenseword/detect.py
+pysenseword/dict_deduplicate.py
+pysenseword.egg-info/PKG-INFO
+pysenseword.egg-info/SOURCES.txt
+pysenseword.egg-info/dependency_links.txt
+pysenseword.egg-info/top_level.txt
