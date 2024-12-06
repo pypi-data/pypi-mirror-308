@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pixel-flipdot
+Version: 0.0.4
+Summary: A simple Python package for driving Pixel Bydgoszcz flip-dot displays
+Author-email: domints <dominik@szymanski.io>
+License: MIT License
+Project-URL: Homepage, https://github.com/domints/PixelFlipDot
+Project-URL: Issues, https://github.com/domints/PixelFlipDot/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial==3.5
+Provides-Extra: images
+Requires-Dist: numpy==2.1.3; extra == "images"
+Requires-Dist: pillow==10.4.0; extra == "images"
+Provides-Extra: gpio
+Requires-Dist: gpiozero==2.0.1; extra == "gpio"
+
+# PixelFlipDot
+Python package to drive Pixel Bydgoszcz flip-dot displays
+
+![PyPI](https://img.shields.io/pypi/v/pixel-flipdot?label=pypi%20package)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pixel-flipdot)
+
+Install with `pip install pixel-flipdot`
+
+Library in very alpha stage.
+
+For usage look at: [PythonPixelBydgoszcz repo](https://github.com/domints/PythonPixelBydgoszcz)
+
+### Note for meself
+
+To build and upload to pypi do:
+`rm -rf build && python -m build && python -m twine upload dist/*`
