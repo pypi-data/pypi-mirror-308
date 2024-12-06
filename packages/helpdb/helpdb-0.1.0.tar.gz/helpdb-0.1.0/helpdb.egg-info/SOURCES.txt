@@ -1,0 +1,9 @@
+README.md
+setup.py
+dbhelp/__init__.py
+dbhelp/__main__.py
+dbhelp/helpdb.py
+helpdb.egg-info/PKG-INFO
+helpdb.egg-info/SOURCES.txt
+helpdb.egg-info/dependency_links.txt
+helpdb.egg-info/top_level.txt
