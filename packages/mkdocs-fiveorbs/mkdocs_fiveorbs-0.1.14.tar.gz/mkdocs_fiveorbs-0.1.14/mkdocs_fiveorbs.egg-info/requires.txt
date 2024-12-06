@@ -1,0 +1,3 @@
+mkdocs>=1.6
+mkdocs-macros-plugin>=0.7
+pymdown-extensions>=10.3
