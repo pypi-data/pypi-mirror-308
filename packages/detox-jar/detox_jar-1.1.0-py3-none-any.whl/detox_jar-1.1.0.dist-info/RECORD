@@ -1,0 +1,10 @@
+detox/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+detox/__main__.py,sha256=nOPyEh4dULJK-KNH2uPpYQvgRc4DI7IDab6BhSK_LlA,611
+detox/logger.py,sha256=R3tF_A-XCoCIMg3We0ETJDHIYeVQn7JR5ujGBXsXsAk,944
+detox/runner.py,sha256=5_xOvXbpsf_fyBbU6FZmOZjZ2pHBOzjEdx6alEqRtvU,7139
+detox_jar-1.1.0.dist-info/LICENSE,sha256=frOVyHZrx5o-fh5xC-kggT3MaLdp6yxV_YGpVXFHFSQ,1071
+detox_jar-1.1.0.dist-info/METADATA,sha256=ZNvnWG3MuKkVI0VIRBrJvcd-bDorpuoGhEp864snaeA,4457
+detox_jar-1.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+detox_jar-1.1.0.dist-info/entry_points.txt,sha256=9lqYzo-wHXQCqQ3KG6sZNajv-J_W1Uz7VUKBMm8i5Aw,46
+detox_jar-1.1.0.dist-info/top_level.txt,sha256=IwXUfoBlA2zQTMwFd5jnpH0izeCNH1X6RoaunQNiB1g,6
+detox_jar-1.1.0.dist-info/RECORD,,
