@@ -1,0 +1,10 @@
+entry.py,sha256=fSLmrUdA4J62fQ66Q-L1ZH5rnw7Ph5WfGlLVsos2WnU,81
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/__main__.py,sha256=VaIVBL8jR1FfGEv435RiZbTxNHNDHyfpHp5aZJ80Cqo,9703
+app/reliable.py,sha256=epY03PttfSXW1c39Al_Pc7mwMdYIegUiWVuFWlgKfWs,2076
+gauss_linear-0.5.0.dist-info/LICENSE,sha256=Z0tE1V6thSdD37qV666_X1plDtQZFKMAHfiu2fb-LO8,1066
+gauss_linear-0.5.0.dist-info/METADATA,sha256=SwnK1z48Gr01r86HprBniVvcMjExw2jZp9H2JxtLXGk,864
+gauss_linear-0.5.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gauss_linear-0.5.0.dist-info/entry_points.txt,sha256=gZlDuwiTvOx3H0_2z5vX1qRuI2EVNr0UPyglvJrOXhg,38
+gauss_linear-0.5.0.dist-info/top_level.txt,sha256=hIZQ6Ik8H83dRuns7BGjaMYFNknHseHytGOKsshfWPA,10
+gauss_linear-0.5.0.dist-info/RECORD,,
