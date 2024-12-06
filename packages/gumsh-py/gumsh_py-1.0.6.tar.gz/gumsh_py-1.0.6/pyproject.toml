@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gumsh_py"
+version = "1.0.6"
+authors = [
+  { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
+]
+description = "gumsh_py is a Python interface of charm.sh's shell tool called gum"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/alexjhewitt/gumsh_py"
+Issues = "https://github.com/alexjhewitt/gumsh_py/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gumsh_py"]
