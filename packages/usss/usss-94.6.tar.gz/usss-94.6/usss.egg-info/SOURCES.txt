@@ -1,0 +1,7 @@
+main.py
+setup.py
+usss.egg-info/PKG-INFO
+usss.egg-info/SOURCES.txt
+usss.egg-info/dependency_links.txt
+usss.egg-info/requires.txt
+usss.egg-info/top_level.txt
