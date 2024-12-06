@@ -1,0 +1,2 @@
+[console_scripts]
+bh-bump = bh_bump.__main__:main

@@ -1,0 +1,13 @@
+bh_bump/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bh_bump/__main__.py,sha256=yoJ3zupWkQrxZxcbtiwyK167PizDTaQwZUIUTlmrKdg,5807
+bh_bump/constants.py,sha256=yYbyUUHElKWm5GQkm8LWsBT0rHOtsouAnzOfFU4KHpc,446
+bh_bump/note.py,sha256=x70TFAivkPXG0YGvs6VzvPFsDsV3M6NEHLlPt_E2kgE,513
+bh_bump/toml.py,sha256=dQcEDzhfcUpKmCNu37ixLf-f3urhpwsIJwjwLG3wrVc,1181
+bh_bump/util.py,sha256=THgNajR4K_JpZi7OLSGXNThZf07Ci2Q5JgyTEN78syU,1131
+bh_bump/data/bumpversion.cfg,sha256=kgs9wrVDBo1wnAsv2eYLp_316_H-h3kyPN49UzC00bo,469
+bh_bump/data/test_dummy.py,sha256=w6kMlGpaa8fS1NhoxXKgfTdjoDAa5wso7pfpd_m8QkM,70
+bh_bump-0.1.3rc0.dist-info/METADATA,sha256=E4KFsB02NQphFsmUmg9bYoBPKSmKo8ClfOYNOuB1mFg,598
+bh_bump-0.1.3rc0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bh_bump-0.1.3rc0.dist-info/entry_points.txt,sha256=v_1F9zR1SrzH8yY1lMNSGSlRhtboxqik7JLQMC2tuVw,50
+bh_bump-0.1.3rc0.dist-info/top_level.txt,sha256=UDWXur_wURMPYqG0pFeJhWwKZZraoa_9Ld9HuqwL0SU,8
+bh_bump-0.1.3rc0.dist-info/RECORD,,
