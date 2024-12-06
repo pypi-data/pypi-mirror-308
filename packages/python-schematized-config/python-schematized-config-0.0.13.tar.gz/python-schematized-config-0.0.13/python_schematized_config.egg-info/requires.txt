@@ -1,0 +1,7 @@
+fastcore>=1.5
+jsonschema>=4.17.3
+python-dotenv>=1.0.0
+pygtrie>=2.5.0
+morefs>=0.2.2
+
+[dev]
