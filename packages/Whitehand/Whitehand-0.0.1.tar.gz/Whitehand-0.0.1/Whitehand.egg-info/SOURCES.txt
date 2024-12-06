@@ -1,0 +1,6 @@
+README
+setup.py
+Whitehand.egg-info/PKG-INFO
+Whitehand.egg-info/SOURCES.txt
+Whitehand.egg-info/dependency_links.txt
+Whitehand.egg-info/top_level.txt
