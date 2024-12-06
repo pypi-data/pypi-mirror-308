@@ -1,0 +1,8 @@
+README.md
+setup.py
+aj_hello/__init__.py
+aj_hello/main.py
+aj_hello.egg-info/PKG-INFO
+aj_hello.egg-info/SOURCES.txt
+aj_hello.egg-info/dependency_links.txt
+aj_hello.egg-info/top_level.txt
