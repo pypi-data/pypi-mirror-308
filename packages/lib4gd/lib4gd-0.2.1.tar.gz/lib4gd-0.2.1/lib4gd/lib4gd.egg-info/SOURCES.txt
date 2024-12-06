@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lib4gd/file_transfer/__init__.py
+lib4gd/file_transfer/google_drive.py
+lib4gd/file_transfer/sftp.py
+lib4gd/image_handling/__init__.py
+lib4gd/image_handling/handle_base64.py
+lib4gd/lib4gd.egg-info/PKG-INFO
+lib4gd/lib4gd.egg-info/SOURCES.txt
+lib4gd/lib4gd.egg-info/dependency_links.txt
+lib4gd/lib4gd.egg-info/requires.txt
+lib4gd/lib4gd.egg-info/top_level.txt
+lib4gd/mongo_handler/__init__.py
+lib4gd/mongo_handler/mongo_crud.py
