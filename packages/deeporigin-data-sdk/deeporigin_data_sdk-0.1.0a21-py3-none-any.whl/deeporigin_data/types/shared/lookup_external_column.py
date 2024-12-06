@@ -1,0 +1,11 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from typing import Union
+from typing_extensions import TypeAlias
+
+from .lookup_external_column_base import LookupExternalColumnBase
+from .lookup_external_column_union import LookupExternalColumnUnion
+
+__all__ = ["LookupExternalColumn"]
+
+LookupExternalColumn: TypeAlias = Union[LookupExternalColumnBase, LookupExternalColumnUnion]
