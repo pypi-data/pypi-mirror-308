@@ -1,0 +1,107 @@
+Metadata-Version: 2.3
+Name: maskbit-pytorch
+Version: 0.0.2
+Summary: MaskBit
+Project-URL: Homepage, https://pypi.org/project/maskbit-pytorch/
+Project-URL: Repository, https://github.com/lucidrains/maskbit-pytorch
+Author-email: Phil Wang <lucidrains@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Phil Wang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: artificial intelligence,attention mechanism,deep learning,image generation,scalar quantization,transformers
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Requires-Dist: accelerate
+Requires-Dist: adam-atan2-pytorch>=0.1.1
+Requires-Dist: beartype
+Requires-Dist: einops>=0.8.0
+Requires-Dist: einx>=0.3.0
+Requires-Dist: ema-pytorch
+Requires-Dist: jaxtyping
+Requires-Dist: pillow
+Requires-Dist: torch>=2.2
+Requires-Dist: torchvision
+Requires-Dist: vector-quantize-pytorch>=1.17.8
+Requires-Dist: x-transformers>=1.37.9
+Provides-Extra: examples
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+<img src="./maskbit.png" width="400px"></img>
+
+## MaskBit - Pytorch (wip)
+
+Implementation of the proposed [MaskBit](https://arxiv.org/abs/2409.16211) from Bytedance AI
+
+This paper can be viewed as a modernized version of the architecture from [Taming Transformers](https://arxiv.org/abs/2012.09841) from Esser et al.
+
+They use the binary scalar quantization proposed in [MagVit2](https://arxiv.org/abs/2310.05737) in their autoencoder, and then non-autoregressive mask decoding, where the masking is setting the bit (`-1` or `+1`) to `0`, projected for the transformer without explicit embeddings for the trit
+
+## Usage
+
+```python
+import torch
+from maskbit_pytorch import BQVAE, MaskBit
+
+images = torch.randn(1, 3, 64, 64)
+
+# train vae
+
+vae = BQVAE(
+    image_size = 64,
+    dim = 512
+)
+
+loss = vae(images, return_loss = True)
+loss.backward()
+
+# train maskbit
+
+maskbit = MaskBit(
+    vae,
+    dim = 512,
+    bits_group_size = 512,
+    depth = 2
+)
+
+loss = maskbit(images)
+loss.backward()
+
+# after much training
+
+sampled_image = maskbit.sample() # (1, 3, 64, 64)
+```
+
+## Citations
+
+```bibtex
+@inproceedings{Weber2024MaskBitEI,
+    title   = {MaskBit: Embedding-free Image Generation via Bit Tokens},
+    author  = {Mark Weber and Lijun Yu and Qihang Yu and Xueqing Deng and Xiaohui Shen and Daniel Cremers and Liang-Chieh Chen},
+    year    = {2024},
+    url     = {https://api.semanticscholar.org/CorpusID:272832013}
+}
+```
