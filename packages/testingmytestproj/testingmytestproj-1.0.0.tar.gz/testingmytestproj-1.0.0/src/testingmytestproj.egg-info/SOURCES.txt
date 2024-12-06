@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/test_proj/__init__.py
+src/test_proj/py.typed
+src/test_proj/util.py
+src/testingmytestproj.egg-info/PKG-INFO
+src/testingmytestproj.egg-info/SOURCES.txt
+src/testingmytestproj.egg-info/dependency_links.txt
+src/testingmytestproj.egg-info/requires.txt
+src/testingmytestproj.egg-info/top_level.txt
