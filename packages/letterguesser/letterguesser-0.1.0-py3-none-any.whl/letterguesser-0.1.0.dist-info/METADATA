@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: letterguesser
+Version: 0.1.0
+Summary: Cool letter guesser program
+License: MIT
+Author: ange1o
+Author-email: etew0z1a@anonaddy.me
+Requires-Python: >=3.10,<3.14
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: babel (>=2.16.0,<3.0.0)
+Requires-Dist: ctktable (>=1.1,<2.0)
+Requires-Dist: customtkinter (>=5.2.2,<6.0.0)
+Description-Content-Type: text/markdown
+
+# LetterGuesser
+ Cool python program
+
+
+
+## Localisation
+
+
+how to compile
+
+```bash 
+pybabel compile -f -d  ./letterguesser/assets/locales
+```

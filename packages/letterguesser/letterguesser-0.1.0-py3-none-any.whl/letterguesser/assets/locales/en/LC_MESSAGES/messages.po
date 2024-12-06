@@ -1,0 +1,68 @@
+msgid "experiment_number"
+msgstr "Experiment No."
+
+msgid "attempts"
+msgstr "Chars used"
+
+msgid "attempt"
+msgstr "Attempt"
+
+msgid "last_char"
+msgstr "Last char"
+
+msgid "random_text_part"
+msgstr "Random part from the text"
+
+msgid "used_chars"
+msgstr "Already used chars"
+
+msgid "no_input"
+msgstr "No input was given"
+
+msgid "main_input_label"
+msgstr "Your char"
+
+msgid "main_input_placeholder"
+msgstr "Start the experiment"
+
+msgid "next"
+msgstr "Next experiment"
+
+msgid "reset"
+msgstr "Reset"
+
+msgid "char_numbers"
+msgstr "chars"
+
+msgid "ngram_selector_label"
+msgstr "N-gram order"
+
+msgid "status_label"
+msgstr "Experiment log"
+
+msgid "start"
+msgstr "Start experiment"
+
+msgid "invalid_char"
+msgstr "Enter char only from english alphabet"
+
+msgid "win"
+msgstr "You guessed correctly! Press 'Next experiment' to continue or 'Restart' to reset all data"
+
+msgid "incorrect"
+msgstr "Wrong char, try another one"
+
+msgid "used_char"
+msgstr "You already used this char, try another one"
+
+msgid "probability"
+msgstr "Probability"
+
+msgid "table_placeholder"
+msgstr "-\_(0_o)_/-\nNo data to display"
+
+msgid "guessed_chars"
+msgstr "Guessed chars"
+
+msgid "char"
+msgstr "Char"
