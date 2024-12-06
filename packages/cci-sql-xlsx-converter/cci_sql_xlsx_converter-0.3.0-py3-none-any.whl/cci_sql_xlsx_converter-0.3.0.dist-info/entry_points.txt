@@ -1,0 +1,5 @@
+[console_scripts]
+dataset_to_excel = cci_sql_xlsx_converter:sql_to_xlsx.sql_to_xlsx
+ds2xl = cci_sql_xlsx_converter:sql_to_xlsx.sql_to_xlsx
+excel_to_dataset = cci_sql_xlsx_converter:xlsx_to_sql.xlsx_to_sql
+xl2ds = cci_sql_xlsx_converter:xlsx_to_sql.xlsx_to_sql
