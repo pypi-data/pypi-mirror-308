@@ -1,0 +1,74 @@
+[project]
+name = "px-utils"
+version = "1.1.1.dev"
+description = "Build utilities python projects"
+license = { text = "MIT" }
+authors = [{ name = "Houbie", email = "ivo@houbrechts-it.be" }]
+readme = "README.md"
+urls = { homepage = "https://github.com/pyprojectx/px-utils" }
+
+keywords = ["build", "pyprojectx"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+requires-python = ">=3.8"
+
+dependencies = []
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+]
+
+[project.scripts]
+pxmkdirs = "px_utils.cli:mkdirs"
+pxcp = "px_utils.cli:cp"
+pxmv = "px_utils.cli:mv"
+pxrm = "px_utils.cli:rm"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+[tool.ruff.lint]
+select = ["ALL"]
+fixable = ["ALL"]
+ignore = ["ISC001", "ANN", "FA", "FBT", "D100", "D102", "D103", "D104", "D105", "D213", "D203", "T201", "TRY003", "EM102", "COM812", "S602", "S603", "S604", "S605", "S607", "S324"]
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["SLF001", "S101", "I001", "INP001"]
+"bin/*" = ["INP001"]
+
+[tool.pyprojectx]
+lock-python-version = "3.8"
+[tool.pyprojectx.main]
+requirements = [
+    "uv",
+    "ruff",
+    "pre-commit",
+    "tomlkit",
+    "px-utils",
+]
+post-install = "pre-commit install"
+[tool.pyprojectx.project]
+requirements = ["-e .", "tomlkit"]
+
+[tool.pyprojectx.aliases]
+install = "uv sync"
+update = "uv lock"
+outdated = "uv pip list --outdated"
+clean = "pxrm .venv .pytest_cache dist .ruff_cache"
+full-clean = ["@clean", "pxrm .pyprojectx"]
+format = ["ruff format", "ruff check --select I --fix"]
+lint = ["ruff check"]
+test = "uv run pytest tests"
+check = ["@lint", "@test"]
+build = ["@install", "@check", "uv build", "@cli-help"]
+
+# used in github actions:
+publish = "uv publish --username __token__"
