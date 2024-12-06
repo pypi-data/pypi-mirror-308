@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/VideoScripy.egg-info/PKG-INFO
+src/VideoScripy.egg-info/SOURCES.txt
+src/VideoScripy.egg-info/dependency_links.txt
+src/VideoScripy.egg-info/entry_points.txt
+src/VideoScripy.egg-info/requires.txt
+src/VideoScripy.egg-info/top_level.txt
+src/videoscripy/__init__.py
+src/videoscripy/videoscripy.py

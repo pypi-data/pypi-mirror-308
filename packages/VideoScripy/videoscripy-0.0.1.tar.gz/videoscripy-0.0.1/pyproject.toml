@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VideoScripy"
+version = "0.0.1"
+authors = [
+  { name="luezhi", email="sunluezhi520@gmail.com" },
+]
+description = "Collection of video processes such as Optimize, Upscale and Interpolation."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["ffmpeg", "upscale", "interpolate", "video process"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Environment :: GPU :: NVIDIA CUDA"
+]
+dependencies = [
+  "psutil==6.1.0",
+  "ffmpeg-python==0.2.0",
+  "alive-progress==3.2.0",
+]
+
+[project.scripts]
+vscli = "videoscripy.videoscripy:run"
+
+
+[project.urls]
+Homepage = "https://github.com/luewh/Video-Script"
+Issues = "https://github.com/luewh/Video-Script/issues"

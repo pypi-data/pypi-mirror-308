@@ -1,0 +1,101 @@
+
+# VideoScripy
+
+VideoScripy is a collection of video processes including video Optimization, Upscale and frame Interpolation.
+
+It uses Python to generate **FFmpeg**, **Real-ESRGAN** and **IFRNet** command line script to performes serial processing on scanned mp4 and mkv videos.
+
+**⚠ Only compatible with Windows users who have Nvidia cards.**
+
+
+
+## Requirements
+
+- Windows OS
+
+- NVIDIA card
+
+Following tools in the environment variable **PATH** :
+
+- [FFmpeg](https://www.gyan.dev/ffmpeg/builds/), full build for hardware acceleration.
+
+- [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases) for video upscaling.
+
+- [Ifrnet-ncnn-vulkan](https://github.com/nihui/ifrnet-ncnn-vulkan/releases) for video frame interpolation.  
+
+
+
+## Usage
+
+```python
+from videoscripy import VideoScripy
+
+vs = VideoScripy(__file__)
+
+# get current folder video(s)
+vs.getVideo(folderDepthLimit=0)
+vs.getVideoInfo()
+
+# run process(es)
+vs.optimize()
+# vs.resize()
+# vs.upscale()
+# vs.interpolate()
+# vs.merge()
+```
+
+Or directly call vscli.exe
+
+
+
+
+## Processes Description
+
+- optimize
+
+    Reduce the video biteRate in order to gain storage space.  
+    The processed videos will have a bitRate = width * height * quality, which quality=3 is generally the lowest value before appearance of artifacts (bad images, blurry...). In other words, humain wont notice the visual difference between video of quality 3 and 6.
+
+- resize
+
+    Reduce the video width and height.
+
+- upscale
+
+    Recover old video from 360p to 4K, enhance video quality.  
+    Begin with a transformation of video to image frames, then upscale each frames, finally reassemble to video.   
+    It has the ability to start from last upscal progress if the "_upscaled_frame" wasn't deleted.
+
+- interpolate
+
+    Increase video frame rate (FPS), smooth video motions.  
+    Begin with a transformation of video to image frames, then interpolate between frames, finally reassemble to video.
+
+- merge
+
+    Merge all video, including each of its audio and subtitle by option, into mkv. Then use media player as PotPlayer to switch between video/audio/subtitle.
+
+
+
+## Credits
+
+This project relies on the following software and projects.
+- [alive-progress](https://github.com/rsalmei/alive-progress)
+- [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
+- [IFRNet](https://github.com/ltkong218/IFRNet)
+- [FFmpeg](https://www.ffmpeg.org/)
+
+
+
+## TODO list
+
+- ✅ Stop upscale and interpolate process
+- ✅ Get video walk optimize
+- [ ] Check tools
+- [ ] Sort by name
+- [ ] replace "&" by "x" in video name
+- [ ] Add FFmpeg visual quality metrics (PSNR, SSIM, VMAF)
+- [ ] Better hevc_nvenc parameters
+- [ ] Better upscale recovery
+
+

@@ -1,0 +1,2 @@
+[console_scripts]
+vscli = videoscripy.videoscripy:run
