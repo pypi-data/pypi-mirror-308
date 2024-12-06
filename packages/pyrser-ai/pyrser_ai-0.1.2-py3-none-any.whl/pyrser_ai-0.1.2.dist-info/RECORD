@@ -1,0 +1,16 @@
+pyrser_ai/__init__.py,sha256=_DhcmhsiTbhWPWciLmFgkw3YY-JMB6-32Va3WOpVMpI,62
+pyrser_ai/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrser_ai/core/extractors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrser_ai/core/extractors/base_extractor.py,sha256=NT_MBPWUlhvDQfnuBUIp2XBqFHNNiLZpzM4PUJs-dRw,247
+pyrser_ai/core/extractors/llama_index_extractor.py,sha256=TUDUtH921QPCjfWBn2uetIdzXP80RaFfcV30b62C8-Q,1373
+pyrser_ai/core/extractors/prompts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrser_ai/core/extractors/prompts/html_parser_prompt.txt,sha256=ClbPxNNUoQj275kRlVMG5pnpyx0wppBBYPn7Wn3FoUw,506
+pyrser_ai/core/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrser_ai/core/parsers/base_parser.py,sha256=hWFytiXvCiuIpQuLAw9UuAcf2vTZe-sHIwvkYtdZtjU,3595
+pyrser_ai/core/parsers/dynamic_html_parser.py,sha256=wHlL8fRhNaF-fiYnF0xnh36GLnRTvPEAzqbZhOS9pL0,688
+pyrser_ai/core/parsers/exceptions.py,sha256=e73uiBOb75t3K63YnZDyeAfzqYIEmk_xi_RMxeRrBQs,50
+pyrser_ai/core/parsers/static_html_parser.py,sha256=1K8Oav6Gl_zxJWFGqYuo-dmm0JJYtnYXx-7Amwjx8Fc,1021
+pyrser_ai-0.1.2.dist-info/METADATA,sha256=rkjJXac0xc-3aS0NY41WdJBqvr8VDVIlthgKjPdRGlI,4723
+pyrser_ai-0.1.2.dist-info/WHEEL,sha256=WJ9WQ4-pUYxfD_tEj5GvKSG9KSULNumqkTQdolV8mME,87
+pyrser_ai-0.1.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyrser_ai-0.1.2.dist-info/RECORD,,
