@@ -1,0 +1,14 @@
+grpcio
+grpcio-tools<2.0.0
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+codecov
+mypy
+gitchangelog
+mkdocs
