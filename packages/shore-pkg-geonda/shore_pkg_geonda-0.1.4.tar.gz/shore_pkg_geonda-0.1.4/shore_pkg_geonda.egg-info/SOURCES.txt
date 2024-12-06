@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shore/__init__.py
+shore/calculation.py
+shore/gview.py
+shore/input_manager.py
+shore/jobcreator.py
+shore/remote.py
+shore/results.py
+shore/workflow_graph.py
+shore_pkg_geonda.egg-info/PKG-INFO
+shore_pkg_geonda.egg-info/SOURCES.txt
+shore_pkg_geonda.egg-info/dependency_links.txt
+shore_pkg_geonda.egg-info/requires.txt
+shore_pkg_geonda.egg-info/top_level.txt
