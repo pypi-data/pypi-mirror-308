@@ -1,0 +1,6 @@
+requests
+
+[full]
+requests
+
+[minimal]
