@@ -1,0 +1,7 @@
+setup.py
+pydevexam/__init__.py
+pydevexam/main.py
+pydevexam.egg-info/PKG-INFO
+pydevexam.egg-info/SOURCES.txt
+pydevexam.egg-info/dependency_links.txt
+pydevexam.egg-info/top_level.txt
