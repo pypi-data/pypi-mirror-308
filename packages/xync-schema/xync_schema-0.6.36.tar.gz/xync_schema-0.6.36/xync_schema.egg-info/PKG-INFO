@@ -1,0 +1,267 @@
+Metadata-Version: 2.1
+Name: xync-schema
+Version: 0.6.36
+Summary: XyncNet project database model schema
+Author-email: Mike Artemiev <mixartemev@gmail.com>
+License: EULA
+Project-URL: Homepage, https://gitlab.com/xync/back/schema
+Project-URL: Repository, https://gitlab.com/xync/back/schema
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: xtg-auth
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+## INSTALL
+```bash
+# Create python virtual environment
+python3 -m venv venv
+# Activate this environment
+source venv/bin/activate
+# Install dependencies
+pip install -r requirements.dev.txt
+
+# Create pg db
+createdb --U username -W dbname
+## set password for db user
+
+# Copy .env file from sample template
+cp .env.sample .env
+## set your pg creds in .env file
+```
+
+## TEST
+```bash
+pytest
+```
+
+
+### pre-commit
+You can done `commit` only after `pytest` will done success.
+Pre-commit script stored in `.git/hooks/pre-commit` file; current script is:
+```shell
+#!/bin/sh
+pytest
+```
+
+### Relations
+```mermaid
+classDiagram
+direction BT
+class node21 {
+   timestamp(0) with time zone created_at
+   timestamp(0) with time zone updated_at
+   double precision price
+   double precision maxFiat
+   double precision minFiat
+   varchar(4095) detail
+   varchar(255) autoMsg
+   smallint status  /* defActive: 0\nactive: 1\ntwo: 2\nold: 3\nfour: 4\nnotFound: 9 */
+   integer agent_id
+   smallint direction_id
+   bigint id
+}
+class node14 {
+   bigint ad_id
+   integer pm_id
+   integer id
+}
+class node8 {
+   timestamp(0) with time zone created_at
+   timestamp(0) with time zone updated_at
+   integer exid
+   jsonb auth
+   smallint ex_id
+   bigint user_id
+   integer id
+}
+class node1 {
+   smallint type_  /* spot: 1\nearn: 2\nfound: 3 */
+   double precision free
+   double precision freeze
+   double precision lock
+   double precision target
+   integer agent_id
+   smallint coin_id
+   integer id
+}
+class coin {
+   varchar(15) ticker
+   double precision rate
+   boolean is_fiat
+   smallint id
+}
+class node22 {
+   varchar(31) exid
+   boolean p2p
+   smallint coin_id
+   smallint ex_id
+   integer id
+}
+class country {
+   integer code
+   varchar(3) short
+   varchar(63) name
+   smallint cur_id
+   smallint id
+}
+class node19 {
+   varchar(3) ticker
+   double precision rate
+   varchar(63) country
+   smallint id
+}
+class node15 {
+   varchar(31) exid
+   boolean p2p
+   smallint cur_id
+   smallint ex_id
+   integer id
+}
+class curexcountry {
+   integer curexs
+   smallint country_id
+}
+class node2 {
+   boolean sell
+   integer total
+   smallint pair_id
+   smallint id
+}
+class node5 {
+   varchar(31) name
+   varchar(63) host  /* With no protocol 'https://' */
+   varchar(63) host_p2p  /* With no protocol 'https://' */
+   varchar(63) url_login  /* With no protocol 'https://' */
+   smallint type_  /* p2p: 1\ncex: 2\nmain: 3\ndex: 4\nfutures: 8 */
+   varchar(511) logo
+   smallint id
+}
+class node13 {
+   varchar(127) detail
+   varchar(127) name
+   double precision amount
+   double precision target
+   smallint country_id
+   integer pmcur_id
+   bigint user_id
+   integer id
+}
+class node10 {
+   integer exid
+   smallint ex_id
+   integer fiat_id
+   integer id
+}
+class node3 {
+   integer amount
+   integer unit
+   integer level
+   boolean income
+   bigint added_by_id
+   integer pmcur_id
+   integer id
+}
+class node16 {
+   timestamp(0) with time zone created_at
+   timestamp(0) with time zone updated_at
+   double precision amount
+   smallint status  /* zero: 0\nactive: 1\ntwo: 2\nthree: 3\ndone: 4\nfifth: 5\ncanc... */
+   timestamp(0) with time zone notify_pay_at
+   timestamp(0) with time zone confirm_pay_at
+   bigint ad_id
+   integer fiat_id
+   integer taker_id
+   bigint id
+}
+class node9 {
+   timestamp(0) with time zone created_at
+   timestamp(0) with time zone updated_at
+   double precision fee
+   smallint coin_id
+   smallint cur_id
+   smallint ex_id
+   smallint id
+}
+class node6 {
+   varchar(63) name
+   smallint rank
+   smallint type_  /* bank: 0\nweb_wallet: 1\ncash: 2\ngift_card: 3\ncredit_card: 4 */
+   varchar(127) logo
+   boolean multiAllow
+   integer id
+}
+class node12 {
+   smallint cur_id
+   integer pm_id
+   integer id
+}
+class pmcurex {
+   boolean blocked
+   smallint ex_id
+   integer pmcur_id
+   integer id
+}
+class pmex {
+   varchar(31) exid
+   smallint ex_id
+   integer pm_id
+   integer id
+}
+class node11 {
+   smallint action  /* order_request: 1\norder_request_ask: -1\ncancel_request: 2\nr... */
+   boolean ok
+   timestamp(0) with time zone updated_at
+   smallint ex_id
+   integer id
+}
+class user {
+   timestamp(0) with time zone created_at
+   timestamp(0) with time zone updated_at
+   smallint role  /* READER: 4\nWRITER: 2\nMANAGER: 6\nADMIN: 7 */
+   smallint status  /* CREATOR: 5\nADMINISTRATOR: 4\nMEMBER: 3\nRESTRICTED: 2\nLEFT:... */
+   varchar(95) username
+   bigint ref_id
+   bigint id
+}
+
+node21  -->  node8 : agent_id-id
+node21  -->  node2 : direction_id-id
+node14  -->  node21 : ad_id-id
+node14  -->  node6 : pm_id-id
+node8  -->  node5 : ex_id-id
+node8  -->  user : user_id-id
+node1  -->  node8 : agent_id-id
+node1  -->  coin : coin_id-id
+node22  -->  coin : coin_id-id
+node22  -->  node5 : ex_id-id
+country  -->  node19 : cur_id-id
+node15  -->  node19 : cur_id-id
+node15  -->  node5 : ex_id-id
+curexcountry  -->  country : country_id-id
+curexcountry  -->  node15 : curexs-id
+node2  -->  node9 : pair_id-id
+node13  -->  country : country_id-id
+node13  -->  node12 : pmcur_id-id
+node13  -->  user : user_id-id
+node10  -->  node5 : ex_id-id
+node10  -->  node13 : fiat_id-id
+node3  -->  node12 : pmcur_id-id
+node3  -->  user : added_by_id-id
+node16  -->  node21 : ad_id-id
+node16  -->  node8 : taker_id-id
+node16  -->  node13 : fiat_id-id
+node9  -->  coin : coin_id-id
+node9  -->  node19 : cur_id-id
+node9  -->  node5 : ex_id-id
+node12  -->  node19 : cur_id-id
+node12  -->  node6 : pm_id-id
+pmcurex  -->  node5 : ex_id-id
+pmcurex  -->  node12 : pmcur_id-id
+pmex  -->  node5 : ex_id-id
+pmex  -->  node6 : pm_id-id
+node11  -->  node5 : ex_id-id
+user  -->  user : ref_id-id
+```
