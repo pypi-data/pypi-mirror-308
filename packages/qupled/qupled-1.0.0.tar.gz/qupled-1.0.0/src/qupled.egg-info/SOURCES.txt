@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/qupled.egg-info/PKG-INFO
+src/qupled.egg-info/SOURCES.txt
+src/qupled.egg-info/dependency_links.txt
+src/qupled.egg-info/top_level.txt
