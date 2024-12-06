@@ -1,0 +1,49 @@
+[project]
+name = "d3ploy"
+version = "4.4.1"
+description = "Easily deploy to S3 with multiple environment support."
+authors = [
+    {name = "dryan", email = "dryan@users.noreply.github.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.35.58",
+    "colorama>=0.4.6",
+    "packaging>=24.2",
+    "pathspec>=0.12.1",
+    "tqdm>=4.67.0",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+homepage = "https://github.com/dryan/d3ploy"
+repository = "https://github.com/dryan/d3ploy"
+documentation = "https://github.com/dryan/d3ploy#readme"
+
+[project.scripts]
+d3ploy = "d3ploy.cli"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "coverage>=7.6.4",
+    "flake8>=7.1.1",
+    "ipython>=8.29.0",
+    "isort>=5.13.2",
+    "ruff>=0.7.3",
+    "twine>=5.1.1",
+]
+
