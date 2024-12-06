@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "colorama>=0.4.6"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vpx"
+version = "0.1.21"
+description = "VPM with integrated agents"
+authors = [
+    {name = "Instachip", email = "tea@getinstachip.com"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "anthropic==0.38.0",
+    "openai==1.53.0",
+    "typer==0.12.5",
+    "python-dotenv==1.0.1",
+    "networkx==3.4.2",
+    "colorama>=0.4.6",
+    "tkinter",
+    "svgwrite>=1.4.3",
+    "Pillow>=9.0.0",
+    "cairosvg>=2.7.0",
+    "matplotlib>=3.7.1",
+    "vcd>=0.4.0",
+    "webbrowser",
+    "subprocess",
+    "tempfile",
+    "datetime",
+    "json",
+    "re",
+    "os",
+    "math",
+    "enum",
+    "dataclasses",
+    "typing",
+    "random"
+]
+
+[project.scripts]
+vpx = "vpx.cli:main"
+
+[project.entry-points."vpx.commands"]
+launch-gui = "vpx.cli:launch_gui"
+
+[tool.setuptools.packages]
+find = {}
