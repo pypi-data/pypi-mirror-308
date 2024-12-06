@@ -1,0 +1,72 @@
+# Copyright (C) 2024 - Scalizer (<https://www.scalizer.fr>).
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
+
+import os
+import pickle
+import psycopg
+import pymssql
+import pyodbc
+from psycopg.rows import dict_row
+
+from .logging import get_logger
+
+logger = get_logger(__name__)
+
+
+class SqlConnection:
+    _name = "SQL"
+    connection = None
+
+    def __init__(self, db_type, url, dbname, username, password, port=5432, **kwargs):
+        self.db_type = db_type
+        self.url = url
+        self.dbname = dbname
+        self.username = username
+        self.password = password
+        self.port = port
+        if self.db_type == "postgresql":
+            self.connection = psycopg.connect(
+                user=self.username,
+                password=self.password,
+                host=self.url,
+                dbname=self.dbname,
+                port=self.port,
+                row_factory=dict_row
+            )
+        elif self.db_type == "mysql":
+            driver = 'Devart ODBC Driver for MySQL'
+            connectionString = f'DRIVER={driver};SERVER={url};DATABASE={dbname};UID={username};Encrypt=no;PWD={password}'
+            try:
+                self.connection = pyodbc.connect(connectionString)
+            except:
+                print("https://www.devart.com/odbc/mysql/download.html")
+        elif self.db_type == "mssql":
+            driver = 'ODBC Driver 18 for SQL Server'
+            connectionString = f'DRIVER={driver};SERVER={url};DATABASE={dbname};UID={username};Encrypt=no;PWD={password}'
+            try:
+                self.connection = pyodbc.connect(connectionString)
+            except:
+                print(
+                    "https://learn.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server")
+
+    def execute(self, query, cache=False):
+        if cache:
+            if not os.path.exists('.cache'):
+                logger.info("Create cache directory .cache")
+                os.makedirs('.cache')
+            cache_filename = ".cache/" + cache + ".pickle"
+            if os.path.exists(cache_filename):
+                with open(cache_filename, "rb") as infile:
+                    results = pickle.load(infile)
+                return results
+        cursor = self.connection.cursor()
+        cursor.execute(query)
+        columns = [column[0] for column in cursor.description]
+        results = []
+        for row in cursor.fetchall():
+            results.append(dict(zip(columns, row)))
+        cursor.close()
+        if cache:
+            with open(cache_filename, "wb") as outfile:
+                pickle.dump(results, outfile)
+        return results
