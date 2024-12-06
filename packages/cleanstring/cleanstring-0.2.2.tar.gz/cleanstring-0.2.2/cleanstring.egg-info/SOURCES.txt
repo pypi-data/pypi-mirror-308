@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cleanstring/__init__.py
+cleanstring/serviceAccountKey.json
+cleanstring/str_utils.py
+cleanstring.egg-info/PKG-INFO
+cleanstring.egg-info/SOURCES.txt
+cleanstring.egg-info/dependency_links.txt
+cleanstring.egg-info/requires.txt
+cleanstring.egg-info/top_level.txt
