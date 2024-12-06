@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+makejinja/__init__.py
+makejinja/__main__.py
+makejinja/app.py
+makejinja/cli.py
+makejinja/config.py
+makejinja/plugin.py
+makejinja/py.typed
+makejinja.egg-info/PKG-INFO
+makejinja.egg-info/SOURCES.txt
+makejinja.egg-info/dependency_links.txt
+makejinja.egg-info/entry_points.txt
+makejinja.egg-info/requires.txt
+makejinja.egg-info/top_level.txt
+tests/test_makejinja.py
