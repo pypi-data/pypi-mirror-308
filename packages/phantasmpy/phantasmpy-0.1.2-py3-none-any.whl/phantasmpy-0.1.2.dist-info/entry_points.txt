@@ -1,0 +1,3 @@
+[console_scripts]
+test_get_approval=phantasmpy.client:test_get_approval
+
