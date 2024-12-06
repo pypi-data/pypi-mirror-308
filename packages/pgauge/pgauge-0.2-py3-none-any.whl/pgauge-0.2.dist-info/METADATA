@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pgauge
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Aleksandr Karpinskii
+Author-email: homm86@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.8
+Requires-Dist: colorama
+
+UNKNOWN
+
+
