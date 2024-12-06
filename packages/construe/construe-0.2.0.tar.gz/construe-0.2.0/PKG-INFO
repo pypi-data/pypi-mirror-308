@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: construe
+Version: 0.2.0
+Summary: An LLM inferencing benchmark tool focusing on device-specific latency and memory usage
+Download-URL: https://github.com/rotationalio/llm-benchmark/tarball/v0.2.0
+Author: Rotational Labs
+Author-email: support@rotational.io
+Maintainer: Rotational Labs
+Maintainer-email: support@rotational.io
+License: BSD 3
+Project-URL: Download, https://github.com/rotationalio/llm-benchmark/tarball/v0.2.0
+Project-URL: Source, https://github.com/rotationalio/llm-benchmark
+Project-URL: Tracker, https://github.com/rotationalio/llm-benchmark/issues
+Keywords: llm,benchmark,construe,inference latency,inference memory
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click==8.1.7
+Requires-Dist: einops==0.8.0
+Requires-Dist: memory-profiler==0.61.0
+Requires-Dist: numpy==2.1.3
+Requires-Dist: pillow==11.0.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: torch==2.5.1
+Requires-Dist: torchvision==0.20.1
+Requires-Dist: tqdm==4.67.0
+Requires-Dist: transformers==4.46.2
+
+# Construe: An LLM Benchmark Utility
+
+**An LLM inferencing benchmark tool focusing on device-specific latency and memory usage.**
+
+## Quick Start
+
+This package is intended to be installed with `pip` and it will create a command line program `construe` on your `$PATH` to execute benchmarking comamnds:
+
+```
+$ pip install construe
+$ which construe
+$ construe --help
+```
+
+There are several top-level configurations that you can specify either as an environment variable or a command line option before the command. The environment variables are as follows:
+
+- `$CONSTRUE_ENV` or `$ENV`: specify the name of the experimental environment for comparison purposes.
+- `$CONSTRUE_DEVICE` or `$TORCH_DEVICE`: specify the name of the default device to use with PyTorch e.g. cpu, mps, or cuda.
+
+The command line utility help is as follows:
+
+```
+Usage: construe [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version          Show the version and exit.
+  -d, --device TEXT  specify the pytorch device to run on e.g. cpu, mps or
+                     cuda
+  -e, --env TEXT     name of the experimental environment for comparison
+                     (default is hostname)
+  -h, --help         Show this message and exit.
+
+Commands:
+  basic
+  moondream
+```
+
+## Basic Benchmarks
+
+The basic benchmarks implement dot product benchmarks from the [PyTorch documentation](https://pytorch.org/tutorials/recipes/recipes/benchmark.html). These benchmarks can be run using `construe basic`; for example by running:
+
+```
+$ construe -e "MacBook Pro 2022 M1" basic -o results-macbook.pickle
+```
+
+The `-e` flag specifies the environment for comparison purposes and the `-o` flag saves the measurements out to disk as a Pickle file that can be loaded for comparison to other environments later.
+
+Command usage is as follows:
+
+```
+Usage: construe basic [OPTIONS]
+
+Options:
+  -e, --env TEXT             name of the experimental environment for
+                             comparison (default is hostname)
+  -o, --saveto TEXT          path to write the measurements pickle data to
+  -t, --num-threads INTEGER  specify number of threads for benchmark (default
+                             to maximum)
+  -F, --fuzz / --no-fuzz     fuzz the tensor sizes of the inputs to the
+                             benchmark
+  -S, --seed INTEGER         set the random seed for random generation
+  -h, --help                 Show this message and exit.
+```
+
+## Moondream Benchmarks
+
+The [moondream](https://huggingface.co/vikhyatk/moondream2) package contains small image-to-text computer vision models that can be used in the first step of a [content moderation](https://www.cloudraft.io/blog/content-moderation-using-llamaindex-and-llm) workflow (e.g. image to text, moderate text). This benchmark executes the model for _encoding_ and _inferencing_ on a small number of images and reports the average time for both operations and the line-by-line memory usage of the model.
+
+It can be run as follows:
+
+```
+$ construe moondream
+```
+
+Command usage is as follows:
+
+```
+Usage: construe moondream [OPTIONS]
+
+Options:
+  -h, --help  Show this message and exit.
+```
+
+## Releases
+
+To release the construe library and deploy to PyPI run the following commands:
+
+```
+$ python -m build
+$ twine upload dist/*
+```
