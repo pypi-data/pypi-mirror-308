@@ -1,0 +1,77 @@
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+[tool.maturin]
+python-source = "python"
+module-name = "pypipegraph2.pypipegraph2"
+
+[project]
+name = "pypipegraph2"
+version = "3.3.1"
+description = "Advanced python 'what changed and what do we need to do' tracking"
+# long-description = "README.md"
+authors = [
+ {"name" = "Florian Finkernagel", "email" = "finkernagel@imt.uni-marburg.de"}
+]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Programming Language :: Python",
+    "Programming Language :: Rust",
+]
+urls = {"homepage"= "https://github.com/TyberiusPrime/pypipegraph2"}
+
+requires-python = ">=3.8"
+dependencies = [
+	"loguru",
+	"rich",
+	"xxhash",
+	"wrapt",
+	"deepdiff",
+	"psutil",
+	"networkx",
+	"filelock",
+	"pyzstd",
+	"lib_programname",
+	"textual",
+]
+
+
+[project.optional-dependencies]
+dev = [
+	"flake8",
+	"pytest",
+	"pytest-cov",
+	"pre-commit",
+	"black",
+]
+
+test = [
+	"flake8",
+	"pytest",
+	"pytest-cov",
+]
+
+[project.license]
+text = """
+MIT License
+
+Copyright (c) 2023 Florian Finkernagel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"""
+
+
+
+[tool.pytest.ini_options]
+pythonpath = "python"
+addopts="--ignore=dev_utils"
+
+
+[project.scripts]
+ppg2-filter-constraint-violations = "pypipegraph2.cli:main_filter_constraint_violations"
+ppg2-browse-graph = "pypipegraph2.cli:view_graph_ml"
+ppg2-hash-file = "pypipegraph2.cli:hash_file"
