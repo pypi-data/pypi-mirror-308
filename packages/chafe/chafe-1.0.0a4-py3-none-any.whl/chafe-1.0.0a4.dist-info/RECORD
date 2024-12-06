@@ -1,0 +1,11 @@
+chacha/__init__.py,sha256=yTvMmv1Z0j068kJv1NyRPUfNnLJvPculzZ3XrnDTlDI,5522
+chacha/decrypt/__init__.py,sha256=kU_xO7pxluJ6t5oZxi35DYw_IScEXjGgExa0blwpUKQ,48
+chacha/decrypt/__main__.py,sha256=wG3hfVIgMcE8S6RinsvwH7dZq7PO0yh6rvI2gLu76tk,43
+chacha/encrypt/__init__.py,sha256=G_IoZpsDI6Y2PHipn8aVyBzjPmKw_gaJ3x4qdOeagR8,49
+chacha/encrypt/__main__.py,sha256=CBc_4Df5BphuONgcPEvccroKl1tGJ_lBjMdAKGUG1Zo,44
+chafe-1.0.0a4.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+chafe-1.0.0a4.dist-info/METADATA,sha256=UhaFLdKiy-r_cLlUiDZffKl_Vei6sLJElrDNm6iEQHU,2543
+chafe-1.0.0a4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+chafe-1.0.0a4.dist-info/entry_points.txt,sha256=eOG1IIdIcjng_5ced9hWjkWQgugeR5bgmjik9yq_ybI,92
+chafe-1.0.0a4.dist-info/top_level.txt,sha256=-B3x6kiOJQMIbjGfTC4FjfK7fmmQZCN7UoCQetcztwA,7
+chafe-1.0.0a4.dist-info/RECORD,,
