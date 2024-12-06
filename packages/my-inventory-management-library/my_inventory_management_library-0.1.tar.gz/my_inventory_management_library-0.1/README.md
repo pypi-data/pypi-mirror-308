@@ -1,0 +1,87 @@
+# Inventory management library
+This is an inventory management system built using Python's object-oriented programming principles. The system is designed to manage various types of inventories, such as books, movies, groceries, clothing, and electronics, each with custom attributes. This project structure supports scalability and data integrity through custom exceptions and specialized inventory classes for each product type.
+
+## Index
+1. [Installation](#installation)
+2. [Documentation](#documentation)
+3. [Features](#features)
+4. [Examples](#examples)
+5. [Contributing](#contributing)
+
+## Installation <a name="installation"></a>
+To install this project, clone the repository and install any necessary dependencies.
+```
+git clone https://github.com/username/inventory-management.git
+```
+## Documentation <a name="documentation"></a>
+This project uses Sphinx with the Read the Docs theme to generate and manage project documentation. This section explains how to set up, configure, and generate documentation, making it easier for contributors and users to understand and navigate the project.
+### Setting Up Documentation
+**1. Install Requirements**
+
+Ensure that Sphinx and the sphinx_rtd_theme are installed by running:
+```
+pip install -r requirements.txt
+```
+**2. Initialize Sphinx**
+
+In the root of the project directory, initialize Sphinx by running:
+```
+sphinx-quickstart
+```
+**3. Configure Sphinx Theme**
+
+In the docs/conf.py file, set up the Read the Docs theme by adding or modifying the following line:
+```
+html_theme = "sphinx_rtd_theme"
+```
+**4. Generate Documentation**
+
+After adding docstrings to your code (as shown in the class and method definitions), generate the HTML documentation by running:
+```
+cd docs
+make html
+```
+This will create an html folder inside docs/_build/, containing the generated documentation.
+
+**5. View Documentation**
+
+Open the index.html file in the docs/_build/html/ directory to view the documentation in your browser.
+## Features <a name="features"></a>
+- **Flexible Product Types**: Includes different types of products, each with specific attributes, such as books, movies, groceries, clothing, and electronics.
+- **Specialized Inventory Types**: Supports libraries, movie rental stores, grocery stores, clothing stores, electronics shops, and online stores.
+- **Custom Exception Handling**: Ensures data integrity by raising specific errors, such as invalid quantity values or mismatched product types.
+- **Extensibility**: Designed to be easily extended to support new product and inventory types.
+
+## Usage <a name="usage"></a>
+**Product Types**
+The system includes the following product types, each inheriting from the base Product class and featuring unique attributes:
+
+- Book: Represents books with attributes author and isbn.
+- Movie: Represents movies with attributes director and rating.
+- Food: Represents food items with an expiration_date.
+- Clothing: Represents clothing items with attributes size, color, and material.
+- Electronics: Represents electronic items with brand and warranty.
+
+Each product class has a total_value method to calculate the total stock value and a __str__ method to display its details.
+
+**Inventory Types**
+The following inventory types are available, each managing a specific product type:
+
+- Library: Manages Book products.
+- MovieRentalStore: Manages Movie products.
+- GroceryStore: Manages Food products.
+- ClothingStore: Manages Clothing products.
+- ElectronicShop: Manages Electronics products.
+- OnlineShop: A flexible inventory that can manage any type of Product.
+
+Each inventory class includes methods to:
+- Add products (restricted to the correct type per store)
+- Remove products by name
+- Update product details such as quantity and price
+
+**Exceptions**
+The system includes custom exceptions for better error handling:
+
+- InvalidQuantityError: Raised when attempting to set a negative quantity or price.
+- ProductNotAvailableError: Raised when trying to access a product that is not available in the inventory.
+- InvalidProductError: Raised when adding an incorrect product type to a specific inventory type.
