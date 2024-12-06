@@ -1,0 +1,105 @@
+{%- macro description(content) -%}
+{%- for line in content.strip().split('\n')  -%}
+/// {{ line }}
+{%- endfor %}
+{%- endmacro -%}
+open module {{ module }}
+{% if pkl_github_actions.enabled %}
+import "package://github.com/emilymclean/pkl-github-actions/releases/download/v{{ pkl_github_actions.version }}/pkl-github-actions@{{ pkl_github_actions.version }}#/actions.pkl" as pklaction
+{%- endif %}
+
+hidden const ACTION_CALL = "{{ call }}"
+
+{%- if action.outputs %}
+{%- for output in action.outputs %}
+hidden const OUTPUT_{{ output.name.upper_snake }} = "{{ output.name.real }}"
+{%- endfor %}
+{%- endif %}
+
+/// {{ action.name.real }}
+{%- if action.description %}
+///
+{{ description(action.description) }}
+{%- endif %}
+class ActionInput {
+{% for input in action.inputs %}
+    {%- if input.description %}
+    {{ description(input.description) }}
+    {%- endif %}
+    {%- if input.default %}
+    /// Default value if null is "{{ input.default }}"
+    {%- endif %}
+    {%- if input.deprecationMessage %}
+    @Deprecated { message = "{{ input.deprecationMessage }}" }
+    {%- endif %}
+    {{ input.name.camel }}: {{ input.constraint }}{% if not input.required %}? = null{% endif %}
+{% endfor %}
+}
+
+/// A "class as function", use this to construct a yaml{% if pkl_github_actions.enabled %} or pkl-github-actions{% endif %} output.
+/// To use, run `new Step { ... }.yaml`
+class Step {
+    id: String? = null
+    name: String? = null
+    `if`: String? = null
+    env: Mapping<String, Any>? = null
+    inputs: ActionInput
+
+    fixed yaml = new {
+        ["id"] = id
+        ["name"] = name
+        ["uses"] = ACTION_CALL
+        ["if"] = `if`
+        ["env"] = env
+        {%- if action.inputs %}
+        ["with"] = new {
+        {%- for input in action.inputs %}
+            ["{{ input.name.real }}"] = inputs.{{ input.name.camel }}
+        {%- endfor %}
+        }
+        {%- endif  %}
+    }
+
+    {%- if pkl_github_actions.enabled %}
+    fixed github_actions = create_github_action(this)
+    {%- endif  %}
+
+}
+
+/// A convenience function to get a yaml step. If you need parameters besides id, name, and inputs,
+/// use the "class-as-function"
+const function Step(_id: String, _name: String, _inputs: ActionInput) =
+    new Step {
+        id = _id
+        name = _name
+        inputs = _inputs
+    }.yaml
+
+{%- if action.outputs %}
+{{ '' }}
+{%- for output in action.outputs %}
+/// Generates the syntax to access the "{{ output.name.real }}" output given the step ID
+{%- if output.description %}
+///
+{{ description(output.description) }}
+{%- endif %}
+const function outputs_{{ output.name.snake }}(id: String) =
+    "steps.\(id).outputs.\(OUTPUT_{{ output.name.upper_snake }})"
+{% endfor %}
+{%- endif  %}
+
+{%- if pkl_github_actions.enabled %}
+{{ '' }}
+local const function create_github_action(step: Step) = new pklaction.ActionStep {
+  id = step.id
+  name = step.name
+  `if` = step.`if`
+  env = step.env
+  uses = ACTION_CALL
+  with = new Mapping {
+    {%- for input in action.inputs %}
+        ["{{ input.name.real }}"] = step.inputs.{{ input.name.camel }}
+    {%- endfor %}
+  }
+}
+{%- endif  %}
