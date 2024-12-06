@@ -1,0 +1,12 @@
+taskcheck/__main__.py,sha256=lm-e6s3oHTTHTP-yUHC4nQM9iaIXuj_l3qdgpkLmfaw,1507
+taskcheck/common.py,sha256=-mkQiUbN3U7Q6SFRTIEYSwdeY6Sv4y_ZtvqQCjshNJY,7381
+taskcheck/ical.py,sha256=ck9wyGRgoCNNpIGcPcTRmU2J-KWlCanNyiZJz1glV9Y,5600
+taskcheck/install.py,sha256=ZTv9U3mnMbm2gsANvcvmElUZ0uP1troHvN-4LuFpDtw,6037
+taskcheck/parallel.py,sha256=G5AtNEVT7E8QS4dwIhDwSzu3uEoddCZc_jtoQ5r_svc,10919
+taskcheck/report.py,sha256=Mj1KEnXlQpKk50aoYIxEzc4f_-RmJ_xLe9XuMVPPLY0,12498
+taskcheck-0.3.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+taskcheck-0.3.2.dist-info/METADATA,sha256=PwtBG1H_6f1R1foaEBQVRhJdVmxPmgQm4iZVdyxjTSE,5305
+taskcheck-0.3.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+taskcheck-0.3.2.dist-info/entry_points.txt,sha256=gpIiVQFGh9LYJEnbTOadiCReYYqlGXIPguyQs7uAWLc,54
+taskcheck-0.3.2.dist-info/top_level.txt,sha256=yM-sl4jZGa0XlDimBxgYEe8JouxXgEGR5H6zUuxWI7M,10
+taskcheck-0.3.2.dist-info/RECORD,,
