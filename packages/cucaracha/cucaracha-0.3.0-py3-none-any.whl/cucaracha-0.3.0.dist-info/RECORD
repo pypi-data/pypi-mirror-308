@@ -1,0 +1,8 @@
+cucaracha/__init__.py,sha256=Oh69zpcteXG9ZLMVEC4qemND74Wxq0u3MFYcXMCJNtk,16178
+cucaracha/aligment.py,sha256=-r2rMUas_GIXJ4Y_yaZ09JlW68SIWFCgLUgScWW9pt0,2890
+cucaracha/noise_removal.py,sha256=CLkMPNsiN2flT1c3Qy_Owq72Gl58WBB6RZ2w7ICiSYE,1219
+cucaracha/threshold.py,sha256=y7YSai2kZBKj_ouQ6PJN56g_eQyJHNKHPTHgYiTYRRM,3396
+cucaracha-0.3.0.dist-info/LICENSE,sha256=p_KlMU_8Phh6qGeFOas0mhrvYOfUHupVeumsTPztHrg,1083
+cucaracha-0.3.0.dist-info/METADATA,sha256=BGGBP0W7oUbOcdgrtBRuH0kQFuzoQgE5lKr-6xSjq3Q,4833
+cucaracha-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cucaracha-0.3.0.dist-info/RECORD,,
