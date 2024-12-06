@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: apsig
+Version: 0.1.1
+Summary: Signature implementation used in ActivityPub.
+Author-Email: AmaseCocoa <amase.cocoa@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: cryptography>=43.0.1
+Requires-Dist: pynacl>=1.5.0
+Requires-Dist: pyld>=2.0.4
+Requires-Dist: aiohttp>=3.10.5
+Description-Content-Type: text/markdown
+
+# apsig
+Signature implementation used in ActivityPub.
+
+This library implements the creation/verification of signatures for HTTP Signatures (draft-cavage-http-signatures-12), Linked Data Signatures, and Object Integrity Proofs (FEP-8b32).
