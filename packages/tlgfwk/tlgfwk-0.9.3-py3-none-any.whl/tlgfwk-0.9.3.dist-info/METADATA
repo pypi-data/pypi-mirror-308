@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tlgfwk
+Version: 0.9.3
+Summary: A Telegram Bot Framework for monitoring remote hosts
+Home-page: https://github.com/yourusername/tlgfwk
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: python-telegram-bot>=20.0a4
+Requires-Dist: python-dotenv>=0.21.0
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: cryptography>=3.4.7
+
