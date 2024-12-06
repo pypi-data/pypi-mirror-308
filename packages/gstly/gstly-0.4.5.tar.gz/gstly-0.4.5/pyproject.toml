@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "gstly"
+version = "0.4.5"
+description = "Internal GStreamer libraries for BrainFrame"
+authors = ["Aotu"]
+license = "Proprietary"
+
+# Only include cythonized files in final build
+include = ["gstly/**/*.so"]  # ignored in VCS, so we need to be explicit
+exclude = ["gstly/**/*.py", "gstly/**/*.pyi"]
+
+[tool.poetry.dependencies]
+python = "^3.6.2,<4.0"
+numpy = "^1.16"
+PyGObject = "^3.34.0"
+
+[tool.poetry.dev-dependencies]
+# Match the version under [build-system]
+Cython = "3.0a6"
+black = "^21.5b2"
+isort = "^5.8.0"
+pre-commit = "^2.13.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools~=50.3.2", "Cython==3.0a6"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+# The allows us to build C extensions (using Cython). Unstable feature
+# https://github.com/python-poetry/poetry/issues/2740#issuecomment-666551481
+script = "build.py"
+generate-setup-file = false
+
+[tool.isort]
+profile = "black"
+src_paths = ["gstly"]
+# build.py has sensitive import ordering
+skip = ["build.py"]
