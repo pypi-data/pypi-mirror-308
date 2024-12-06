@@ -1,0 +1,2 @@
+[winzy.plugins]
+t2i = winzy_txt2img_val_town:t2i_plugin
