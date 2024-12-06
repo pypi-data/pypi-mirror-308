@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nsfw_goto"
+version = "0.2.0"
+description = "A stable and dangerous goto implementation for Python"
+authors = ["Marcus Näslund <naslundx@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+pylint = "^3.2.6"
+isort = "^5.13.2"
+mypy = "^1.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
