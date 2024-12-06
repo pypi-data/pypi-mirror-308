@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/scrapelite/__init__.py
+src/scrapelite/_base_search.py
+src/scrapelite/_github_search.py
+src/scrapelite/_google_search.py
+src/scrapelite.egg-info/PKG-INFO
+src/scrapelite.egg-info/SOURCES.txt
+src/scrapelite.egg-info/dependency_links.txt
+src/scrapelite.egg-info/requires.txt
+src/scrapelite.egg-info/top_level.txt
