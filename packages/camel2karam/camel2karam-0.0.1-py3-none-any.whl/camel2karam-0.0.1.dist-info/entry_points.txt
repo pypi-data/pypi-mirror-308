@@ -1,0 +1,2 @@
+[console_scripts]
+camel2karam = camel2karam.cli:main
