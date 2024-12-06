@@ -1,0 +1,3 @@
+[console_scripts]
+pt-exporter = pt_exporter.__main__:main
+
