@@ -1,0 +1,7 @@
+main.py
+setup.py
+megai.egg-info/PKG-INFO
+megai.egg-info/SOURCES.txt
+megai.egg-info/dependency_links.txt
+megai.egg-info/requires.txt
+megai.egg-info/top_level.txt
