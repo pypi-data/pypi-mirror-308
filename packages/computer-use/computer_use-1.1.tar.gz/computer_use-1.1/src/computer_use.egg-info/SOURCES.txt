@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/computer-use/__init__.py
+src/computer_use.egg-info/PKG-INFO
+src/computer_use.egg-info/SOURCES.txt
+src/computer_use.egg-info/dependency_links.txt
+src/computer_use.egg-info/top_level.txt
