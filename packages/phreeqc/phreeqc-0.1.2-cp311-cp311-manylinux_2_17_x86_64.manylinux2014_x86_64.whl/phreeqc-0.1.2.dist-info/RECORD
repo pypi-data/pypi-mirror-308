@@ -1,0 +1,8 @@
+phreeqc-0.1.2.dist-info/RECORD,,
+phreeqc-0.1.2.dist-info/METADATA,sha256=kSV63ASceDztOEswpqTEVbhhIvXYXt6H8KAXffALGlk,2543
+phreeqc-0.1.2.dist-info/WHEEL,sha256=VOupRnfug01GtQYX1iAM3IeNFJwbRXAxOEBUtSnOhO4,156
+phreeqc-0.1.2.dist-info/licenses/LICENSE,sha256=rDjj5K4afoMOnzwf4FYFnBfbyre-jQBX633uMntF27c,1068
+phreeqc/__init__.py,sha256=4r3RnAv5N0C5QyG39jYa-IunFi5p1FBkigS1d1IJhr8,115
+phreeqc/IPhreeqc.cpython-311-x86_64-linux-gnu.so,sha256=VGVrhp3hc-buJv2ZOWawQGg-v7KZ7AMdq2hP1o5Y-XY,2439328
+phreeqc/IPhreeqc.cpython-311-x86_64-linux-gnu.so.,sha256=VGVrhp3hc-buJv2ZOWawQGg-v7KZ7AMdq2hP1o5Y-XY,2439328
+phreeqc/__init__.pyi,sha256=oflZRjhSX6iruOn_hfT8VO8-zwK3FmZz_Si5oult0dA,1083
