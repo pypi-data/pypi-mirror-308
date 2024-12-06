@@ -1,0 +1,3 @@
+paintcompiler>=0.3.0
+babelfont>=3.0.5
+pendot>=0.1.1
