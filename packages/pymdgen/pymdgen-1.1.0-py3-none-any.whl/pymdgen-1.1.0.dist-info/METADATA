@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: pymdgen
+Version: 1.1.0
+Summary: python code markdown documentation generator
+Author-email: 20C <code@20c.com>
+License: Apache-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: pluggy>=1.5.0
+Requires-Dist: pre-commit>=2.14.0
+Provides-Extra: dev
+Requires-Dist: codecov>=2.0.5; extra == 'dev'
+Requires-Dist: coverage>=4.1; extra == 'dev'
+Requires-Dist: markdown; extra == 'dev'
+Requires-Dist: markdown-include<1,>=0.5; extra == 'dev'
+Requires-Dist: mkdocs<2.0.0,>=1.0.0; extra == 'dev'
+Requires-Dist: pytest-cov>=5; extra == 'dev'
+Requires-Dist: pytest>=8; extra == 'dev'
+Requires-Dist: pyupgrade>=2.19; extra == 'dev'
+Requires-Dist: ruff>=0.1; extra == 'dev'
+Requires-Dist: tox-gh-actions>=3; extra == 'dev'
+Requires-Dist: tox-uv>=1.13.0; extra == 'dev'
+Requires-Dist: tox>=4; extra == 'dev'
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/pymdgen.svg?maxAge=3600)](https://pypi.python.org/pypi/pymdgen)
+[![PyPI](https://img.shields.io/pypi/pyversions/pymdgen.svg?maxAge=600)](https://pypi.python.org/pypi/pymdgen)
+[![Tests](https://github.com/20c/pymdgen/workflows/tests/badge.svg)](https://github.com/20c/pymdgen)
+[![Codecov](https://img.shields.io/codecov/c/github/20c/pymdgen/master.svg?maxAge=3600)](https://codecov.io/github/20c/pymdgen)
+
+A python code markdown documentation generator
+
+# Documentation
+
+- [latest](https://pymdgen.readthedocs.io/en/latest/)
+
+
