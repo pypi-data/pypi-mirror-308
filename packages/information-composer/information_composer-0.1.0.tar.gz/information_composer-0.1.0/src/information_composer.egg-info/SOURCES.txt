@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+src/information_composer/__init__.py
+src/information_composer.egg-info/PKG-INFO
+src/information_composer.egg-info/SOURCES.txt
+src/information_composer.egg-info/dependency_links.txt
+src/information_composer.egg-info/requires.txt
+src/information_composer.egg-info/top_level.txt
+src/information_composer/core/downloader.py
+src/information_composer/sites/base.py
