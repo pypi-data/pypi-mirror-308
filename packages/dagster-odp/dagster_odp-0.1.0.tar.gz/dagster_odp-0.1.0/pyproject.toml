@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dagster-odp"
+version = "0.1.0"
+description = "A configuration-driven framework for building Dagster pipelines"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Jonathan Bhaskar", email = "hello@jonathanb.me"},
+]
+dependencies = [
+    # Core Dagster - Pin to specific minor version for stability
+    "dagster>=1.9.1,<1.10.0",
+    "dagster-webserver>=1.9.1,<1.10.0",
+    
+    # Dagster Integrations - Keep in sync with core
+    "dagster-gcp>=0.25.1,<0.26.0",
+    "dagster-dbt>=0.25.1,<0.26.0",
+    
+    # DBT Stack - Use compatible versions
+    "dbt-core>=1.8.8,<1.9.0",
+    "dbt-bigquery>=1.8.3,<1.9.0",
+    "dbt-duckdb>=1.8.4,<1.9.0",
+    
+    # Data Loading Tool
+    "dlt[bigquery]>=0.5.4,<0.6.0",
+    
+    # Database
+    "duckdb>=1.0.0,<2.0.0",
+    
+    # Cloud Storage
+    "google-cloud-storage>=2.18.2,<3.0.0",
+    "fsspec>=2024.10.0",
+    "gcsfs>=2024.10.0",
+    
+    # Data Quality
+    "soda-core>=3.3.22,<3.4.0",
+    "soda-core-bigquery>=3.3.22,<3.4.0", 
+    "soda-core-duckdb>=3.3.22,<3.4.0",
+    
+    # Utilities
+    "chevron>=0.14.0,<0.15.0",
+    "requests>=2.32.3,<3.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    # testing
+    "pytest>=8.3.3,<9.0.0",
+    "freezegun>=1.5.1,<2.0.0",
+    "pytest-cov>=6.0.0",
+
+    # documentation
+    "mkdocs-material>=9.5.44,<10.0.0",
+    "mkdocs-glightbox>=0.4.0,<0.5.0",
+    
+    # Code quality tools
+    "black>=24.10.0",
+    "flake8>=7.1.1",
+    "flake8-bugbear>=24.10.31",
+    "isort>=5.13.2",
+    "mypy>=1.13.0",
+    "pylint>=3.3.1",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.9"
+disallow_untyped_defs = true
+disable_error_code = "import-untyped"
+exclude = ["tests/"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=dagster_odp --cov-report=xml --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.pylint.main]
+recursive = true
+ignore-paths = ["tests"]
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = [
+    "W0511",  # Disable TODO/FIXME warnings
+    "C0114",  # Disable missing-module-docstring
+]
