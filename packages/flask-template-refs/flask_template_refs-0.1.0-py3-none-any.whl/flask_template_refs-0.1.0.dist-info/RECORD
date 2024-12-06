@@ -1,0 +1,8 @@
+flask_template_refs/__init__.py,sha256=YYrAzTlogyDNQLObdDS0Gq2UehjUarzjjUfEGlhT_iI,111
+flask_template_refs/errors.py,sha256=cz0ap-1ZysQQym_UzN0z3kQZMoRT3wPD1LtVJk_QNEw,300
+flask_template_refs/ftr.py,sha256=HDQx8PHJPYI5Ue1HKR00ynj4TKIqZFJHYfIVgxt775k,4323
+flask_template_refs/references.py,sha256=QtyStbiYwbnlr87rLRiesV0oGHoV28QCh8YBkMILzLA,56
+flask_template_refs/references.pyi,sha256=cjqgjHhuFUWmL65X0EvWpv6Oh5lcTe2hfQ4-AjzkPU4,161
+flask_template_refs-0.1.0.dist-info/METADATA,sha256=MtCe7jgS6FV_aTcCWLV6LaDj6nU7dWefnP_JIlHAx3E,416
+flask_template_refs-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+flask_template_refs-0.1.0.dist-info/RECORD,,

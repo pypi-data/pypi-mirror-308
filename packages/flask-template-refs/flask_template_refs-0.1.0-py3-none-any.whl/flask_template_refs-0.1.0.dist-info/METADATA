@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: flask-template-refs
+Version: 0.1.0
+Summary: Flask extension that creates template references, enabling simple access to templates with dot notation and auto-completion.
+Author-email: LouisCoutel <louiscoutel75@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: flask>=3.0.3
+Requires-Dist: pytest>=8.3.3
+Description-Content-Type: text/markdown
+
+# templates-refs
+
+Describe your project here.
