@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_txt2img_val_town.py
+winzy_txt2img_val_town/__init__.py
+winzy_txt2img_val_town.egg-info/PKG-INFO
+winzy_txt2img_val_town.egg-info/SOURCES.txt
+winzy_txt2img_val_town.egg-info/dependency_links.txt
+winzy_txt2img_val_town.egg-info/entry_points.txt
+winzy_txt2img_val_town.egg-info/requires.txt
+winzy_txt2img_val_town.egg-info/top_level.txt
