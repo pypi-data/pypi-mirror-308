@@ -1,0 +1,12 @@
+README.md
+setup.py
+M_todos_de_ordenamiento.egg-info/PKG-INFO
+M_todos_de_ordenamiento.egg-info/SOURCES.txt
+M_todos_de_ordenamiento.egg-info/dependency_links.txt
+M_todos_de_ordenamiento.egg-info/top_level.txt
+Métodos_Ordenamiento/Métodos.py
+Métodos_Ordenamiento/__init__.py
+m_todos_de_ordenamiento.egg-info/PKG-INFO
+m_todos_de_ordenamiento.egg-info/SOURCES.txt
+m_todos_de_ordenamiento.egg-info/dependency_links.txt
+m_todos_de_ordenamiento.egg-info/top_level.txt
