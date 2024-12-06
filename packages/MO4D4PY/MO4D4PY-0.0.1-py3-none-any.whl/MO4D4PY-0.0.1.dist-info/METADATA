@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: MO4D4PY
+Version: 0.0.1
+Summary: Paquete para simplificar el uso de la API de MO4D en Python
+Home-page: https://github.com/xxxxxx
+Author: Nacho Alvarez
+Author-email: joseignacio.alvarez@eviden.com
+License: MIT
+Keywords: python,EVIDEN,MO4D4PY
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# MO4D4PY
+
+Este paquete permite utilizar la API del MO4D de Eviden. 
+Facilita la configuracion y uso de los diferentes EndPoints 
+de los template de MO4D.
+
+Otro producto desarrollado por:
+ "la Abadia Digital de los Evangelizadores" de Eviden.
+
+## Instalación
+
+
+pip install MO4D4PY
