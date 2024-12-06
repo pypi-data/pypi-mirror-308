@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "visisipy"
+description = "Accessible vision simulations in Python."
+authors = [
+    { name = "Corné Haasjes" },
+    { name = "Jan-Willem Beenakker" },
+]
+maintainers = [
+    { name = "MReye research group", email = "zospy@mreye.nl" }
+]
+dependencies = [
+    "zospy==1.2.1",
+    "matplotlib",
+    "numpy",
+    "scipy"
+]
+requires-python = ">=3.9, <3.14"
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "visisipy/__init__.py"
+
+[tool.hatch.envs.default]
+python = "3.12"
+
+[tool.hatch.envs.hatch-static-analysis]
+config-path = "ruff_defaults.toml"
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.9", "3.10", "3.11", "3.12"]
+
+[tool.pytest.ini_options]
+markers = [
+    "needs_opticstudio: test needs OpticStudio and will be skipped if it is not available",
+]
+
+[tool.coverage.report]
+omit = [
+    "tests/*",
+]
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError"
+]
+
+[tool.ruff]
+extend = "ruff_defaults.toml"
+line-length = 120
+
+[tool.ruff.lint]
+extend-ignore = [
+    "B028",
+    "TRY003", # Avoid specifying long messages outside the exception class
+    "EM101", # Exception must not use a string literal, assign to variable first
+    "EM102", # Exception must not use an f-string literal, assign to variable first
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"examples/*" = ["INP001"]
+"tests/*" = ["ARG001", "ARG002"]
+"tests/opticstudio/*" = ["SLF001"]
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-names-type = "csv"
