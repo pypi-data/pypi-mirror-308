@@ -1,0 +1,17 @@
+README.md
+setup.py
+learn_genai.egg-info/PKG-INFO
+learn_genai.egg-info/SOURCES.txt
+learn_genai.egg-info/dependency_links.txt
+learn_genai.egg-info/entry_points.txt
+learn_genai.egg-info/requires.txt
+learn_genai.egg-info/top_level.txt
+notebooks/__init__.py
+ollama/__init__.py
+projects/__init__.py
+projects/document_summarizer/__init__.py
+projects/document_summarizer/summarizer.py
+projects/langgraph_agents/__init__.py
+projects/langgraph_agents/agents.py
+projects/rag_with_faiss/__init__.py
+projects/rag_with_faiss/rag.py
