@@ -1,0 +1,8 @@
+README.md
+setup.py
+PythonPuppeteerClient/__init__.py
+PythonPuppeteerClient/main.py
+cloudbrowser_puppeteer_connector.egg-info/PKG-INFO
+cloudbrowser_puppeteer_connector.egg-info/SOURCES.txt
+cloudbrowser_puppeteer_connector.egg-info/dependency_links.txt
+cloudbrowser_puppeteer_connector.egg-info/top_level.txt
