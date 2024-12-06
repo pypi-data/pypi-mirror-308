@@ -1,0 +1,12 @@
+lazy-loader
+pipeteer
+pure-cv
+python-kv
+pydantic
+fastapi
+uvicorn
+haskellian
+dslog
+moveread-pipelines-tatr
+scoresheet-models
+moveread-core
