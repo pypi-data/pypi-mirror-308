@@ -1,0 +1,27 @@
+[project]
+name = "stellarismodparser"
+version = "1.0.6"
+authors = [
+  { name="cswimr", email="seaswimmerthefsh@gmail.com" },
+]
+description = "Parse Stellaris's mod descriptor files."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "semver>=3.0.2",
+]
+
+[project.urls]
+Homepage = "https://www.coastalcommits.com/cswimr/stellarismodparser"
+Issues = "https://www.coastalcommits.com/cswimr/stellarismodparser/issues"
+
+[dependency-groups]
+dev = [
+    "pylint>=3.3.1",
+    "ruff>=0.7.3",
+]
