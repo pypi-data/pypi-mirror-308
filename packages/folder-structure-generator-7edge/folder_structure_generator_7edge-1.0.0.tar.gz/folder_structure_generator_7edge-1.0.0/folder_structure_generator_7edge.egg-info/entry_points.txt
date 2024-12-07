@@ -1,0 +1,2 @@
+[console_scripts]
+generate-structure = folder_structure_generator.generator:create_service_structure
