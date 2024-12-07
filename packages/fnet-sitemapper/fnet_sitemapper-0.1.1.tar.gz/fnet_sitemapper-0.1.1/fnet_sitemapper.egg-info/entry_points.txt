@@ -1,0 +1,2 @@
+[console_scripts]
+fnet_sitemapper = fnet_sitemapper.cli:main

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fnet_sitemapper
+Version: 0.1.1
+Requires-Python: >=3.12
+Requires-Dist: xmltodict
+Requires-Dist: requests
