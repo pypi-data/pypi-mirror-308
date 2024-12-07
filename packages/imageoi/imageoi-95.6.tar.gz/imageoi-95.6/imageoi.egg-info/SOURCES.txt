@@ -1,0 +1,7 @@
+main.py
+setup.py
+imageoi.egg-info/PKG-INFO
+imageoi.egg-info/SOURCES.txt
+imageoi.egg-info/dependency_links.txt
+imageoi.egg-info/requires.txt
+imageoi.egg-info/top_level.txt
