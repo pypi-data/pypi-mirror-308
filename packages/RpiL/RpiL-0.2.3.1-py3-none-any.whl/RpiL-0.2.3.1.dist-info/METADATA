@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: RpiL
+Version: 0.2.3.1
+Summary: Library for controlling Raspberry Pi hardware.
+Home-page: https://rpil.readthedocs.io
+Author: Zevi Berlin
+Author-email: zeviberlin@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pigpio
+Requires-Dist: gpiozero
+Provides-Extra: rpi
+Requires-Dist: RPi.GPIO ; extra == 'rpi'
+Requires-Dist: Adafruit-DHT ; extra == 'rpi'
+
+
+    RpiL is a Python library for controlling Raspberry Pi hardware.
+    
