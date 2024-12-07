@@ -1,0 +1,12 @@
+moloch_versioning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moloch_versioning/changelog_manager.py,sha256=mzkpjsf_zpa25JFkc-hEBbd9zvc67FkQmPWUzGmNF2Y,2426
+moloch_versioning/config.py,sha256=mJBZdIZMEpBkQKdHox-9YtCsp2bOwnXf__s-rjdXdl8,3053
+moloch_versioning/hashing.py,sha256=TH5_fdD2uSydju4sxlYt6CXIrUAT4Px1zhE0wukTKaI,932
+moloch_versioning/name_generator.py,sha256=-FhUz3T0iOJjnSSEsSie1ISEQfrjMQOq99QGzUyQhRU,1434
+moloch_versioning/version_control_system.py,sha256=uZr4TpN2bmG55KokI9dsnc_P-SjGPqM4eDZ5PY9btgI,1571
+moloch_versioning/version_manager.py,sha256=oa3Rjob30wjpjiX0K6s45dLYdqf9g7GEbXNwaOHcbdE,1231
+moloch_versioning-0.1.dist-info/LICENSE,sha256=08dVr9dP_vZh4WCC1l1QWZQBga380bwV87Nuxk7xH6A,1069
+moloch_versioning-0.1.dist-info/METADATA,sha256=DKGNg5VO2Xv7gi1m51rX0d8f6Y8C1CRrO8wnxITtxaQ,1888
+moloch_versioning-0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+moloch_versioning-0.1.dist-info/top_level.txt,sha256=fVSPEYGhfXsy0qZEt5ojA-B3Zu9FcRBmtUTrbzvez1s,18
+moloch_versioning-0.1.dist-info/RECORD,,
