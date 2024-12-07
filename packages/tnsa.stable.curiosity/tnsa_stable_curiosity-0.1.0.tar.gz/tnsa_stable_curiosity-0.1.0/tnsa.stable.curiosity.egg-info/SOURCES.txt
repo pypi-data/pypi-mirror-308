@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tnsa.stable.curiosity.egg-info/PKG-INFO
+tnsa.stable.curiosity.egg-info/SOURCES.txt
+tnsa.stable.curiosity.egg-info/dependency_links.txt
+tnsa.stable.curiosity.egg-info/requires.txt
+tnsa.stable.curiosity.egg-info/top_level.txt
