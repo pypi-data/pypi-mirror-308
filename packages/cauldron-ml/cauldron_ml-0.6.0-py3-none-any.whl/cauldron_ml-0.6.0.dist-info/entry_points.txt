@@ -1,0 +1,3 @@
+[console_scripts]
+caul=cauldron_ml.cli:app
+
