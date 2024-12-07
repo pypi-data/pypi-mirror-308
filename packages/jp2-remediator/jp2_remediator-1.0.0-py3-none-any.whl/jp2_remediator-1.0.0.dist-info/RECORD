@@ -1,0 +1,14 @@
+jp2_remediator/__init__.py,sha256=oXDGpiETjqV-KJoDuibs91oVoL90MfJi2U4XmQlhx8o,1352
+jp2_remediator/box_reader.py,sha256=zix_smivCnSeHALt62stlLUIm4ayyT7UhAUoUTO7p50,8876
+jp2_remediator/box_reader_factory.py,sha256=qgQpu0x46rxTVMGFuU_HwWaEcxdJnfyXooFNL9u5lC4,329
+jp2_remediator/main.py,sha256=qJ4L0p4YRmKiTRtwlhQXfeIkljm144ahMYKwwJRizkM,1926
+jp2_remediator/processor.py,sha256=oHe4D719trDQk35w7EzUxIqAnhdSGCtBmNypNbv6Jbs,2296
+jp2_remediator/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jp2_remediator/tests/integration/test_aws_connection.py,sha256=elbMlFggsiheu0gvkendLN9byZ9S8r-8pQ3aFv-Ioxs,222
+jp2_remediator/tests/unit/test_box_reader.py,sha256=k2O1pggeH0YzIrYTmUfDT1e4AMhwUvoMGtQZcswQxqU,17825
+jp2_remediator/tests/unit/test_processor.py,sha256=rAkg4PKwNyeJQ_1ombS6tNW2se9W_QCJ2rNq98K6kLI,5267
+jp2_remediator-1.0.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+jp2_remediator-1.0.0.dist-info/METADATA,sha256=BjGvMAX9k6qMqGA878Q2SxVCViCEvMXfo0B9VCUbhv4,2905
+jp2_remediator-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+jp2_remediator-1.0.0.dist-info/top_level.txt,sha256=4FY_B473GwWm_62WWxzQfA_EfDIeBd1RoGdbPsVgq0A,15
+jp2_remediator-1.0.0.dist-info/RECORD,,
