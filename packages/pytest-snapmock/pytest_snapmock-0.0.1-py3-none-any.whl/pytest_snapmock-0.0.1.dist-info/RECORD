@@ -1,0 +1,9 @@
+pytest_snapmock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_snapmock/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+pytest_snapmock/plugin.py,sha256=8FyKgqfnbNBI6l5IDnbAAeYsFA2rfc7AkZT46yQDcOQ,6363
+pytest_snapmock-0.0.1.dist-info/LICENSE,sha256=6EXWLanrCihjK18iHWRlblY_CVvZtUP_Fs7dNTvjEH8,1067
+pytest_snapmock-0.0.1.dist-info/METADATA,sha256=U0T07CjSQ0qlW3So7TVYXSrUiOy6Y9lQoIQvqNwOYMQ,5268
+pytest_snapmock-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pytest_snapmock-0.0.1.dist-info/entry_points.txt,sha256=5Sp922Sbbrov38HWbvubEI4NUdejeVVeop-G-XlyPmE,46
+pytest_snapmock-0.0.1.dist-info/top_level.txt,sha256=yReFSZSxRSzIsmRSRAqa4GWBgOESmUHcArOQeX8MfUo,16
+pytest_snapmock-0.0.1.dist-info/RECORD,,
