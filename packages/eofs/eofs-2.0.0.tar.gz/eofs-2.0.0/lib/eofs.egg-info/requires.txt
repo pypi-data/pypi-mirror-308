@@ -1,0 +1,7 @@
+numpy
+
+[iris]
+scitools-iris
+
+[xarray]
+xarray
