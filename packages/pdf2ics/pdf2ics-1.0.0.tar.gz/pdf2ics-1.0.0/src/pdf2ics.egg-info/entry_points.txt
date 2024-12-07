@@ -1,0 +1,2 @@
+[console_scripts]
+pdf2ics = pdf2ics.pdf2ics:main
