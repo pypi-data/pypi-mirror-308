@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/RpiL.egg-info/PKG-INFO
+src/RpiL.egg-info/SOURCES.txt
+src/RpiL.egg-info/dependency_links.txt
+src/RpiL.egg-info/requires.txt
+src/RpiL.egg-info/top_level.txt
