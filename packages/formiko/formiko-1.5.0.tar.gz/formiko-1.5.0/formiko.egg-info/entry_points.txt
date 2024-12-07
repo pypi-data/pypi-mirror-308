@@ -1,0 +1,3 @@
+[gui_scripts]
+formiko = formiko.__main__:main
+formiko-vim = formiko.__main__:main_vim
