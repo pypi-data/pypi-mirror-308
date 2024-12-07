@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssage/__init__.py,sha256=JyGRnBY6kxnNLkX7fjZl6ZZPDOuyHKJrbUNj0bR-KPE,25
+ssage/ssage.py,sha256=za0LZUqOUcnMUQk-4kcBp1WYRb5Brvse5PU2cD4D6lY,7604
+ssage/backend/__init__.py,sha256=-H8u9UqRd4i_mg_X5TQLYBedy_iO9A8Ws4nAYQHum8I,75
+ssage/backend/base.py,sha256=vctst7QNR7Gdjxw6R2-X8Ie6wvJo3LXuKzcrZ1YQsg8,2012
+ssage/backend/io_helpers.py,sha256=8Z9VT7a5jdsYNUjruYdpUEutlz5qAuAHfPslKGpugRQ,2595
+ssage/backend/python_age.py,sha256=sndg1CY-xj8tOi0c01RVSgDzrWAIGTFtrkwB4WzPM5o,2278
+ssage-1.2.0.dist-info/LICENSE.txt,sha256=MfGUyTeAsKCmFRGRqVX0TuC2dC-rVCmleS-MRIY_BUc,1061
+ssage-1.2.0.dist-info/METADATA,sha256=E2St1OCuOZr84ExFoUZoOkNw2ds3FAXdDL9_vYuYf-Q,1893
+ssage-1.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+ssage-1.2.0.dist-info/top_level.txt,sha256=JGXF8mZLgEf68mTr0dT65qLUxs9o47YjbpKOx-IqoC4,15
+ssage-1.2.0.dist-info/RECORD,,
