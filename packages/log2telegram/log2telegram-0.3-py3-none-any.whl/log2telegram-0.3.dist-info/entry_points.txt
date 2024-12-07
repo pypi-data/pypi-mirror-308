@@ -1,0 +1,2 @@
+[console_scripts]
+log2telegram = log2telegram.main:main
