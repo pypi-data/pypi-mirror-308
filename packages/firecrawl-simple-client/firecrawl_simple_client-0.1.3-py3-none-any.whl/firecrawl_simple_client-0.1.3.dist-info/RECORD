@@ -1,0 +1,10 @@
+simplecrawl/__init__.py,sha256=w6wXh-mqzHX1WxlCRVIl-LYkGF_eK5zyM2RYp28RZ-8,418
+simplecrawl/async_client.py,sha256=Nc13D34l5DeENC7Zu7JnnXn6qkys_gd7NGaoP2n4xgU,10291
+simplecrawl/models.py,sha256=PY8R2UbQXlEY4zXqBOFpTmFJkb-w0MYhHB4rQuwp7jY,2386
+simplecrawl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplecrawl/sync_client.py,sha256=mCAi-u9Gf2lgeO1DY55fZVaEVBu4AETJpE1x8Tbt8Xg,9116
+firecrawl_simple_client-0.1.3.dist-info/LICENSE,sha256=kyjk3Rd72Uh0gN-wpij4gEJNGTFpknn1EsW6vLGNprc,1062
+firecrawl_simple_client-0.1.3.dist-info/METADATA,sha256=QXXmXVWQ_ARTzdNY0oajiIitygebw_VJkuTwltvS0tE,2491
+firecrawl_simple_client-0.1.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+firecrawl_simple_client-0.1.3.dist-info/top_level.txt,sha256=oQWFNX-QoZ-s8mM9vS9SDBJudoO-rjnoY4dmfUKQfLE,12
+firecrawl_simple_client-0.1.3.dist-info/RECORD,,
