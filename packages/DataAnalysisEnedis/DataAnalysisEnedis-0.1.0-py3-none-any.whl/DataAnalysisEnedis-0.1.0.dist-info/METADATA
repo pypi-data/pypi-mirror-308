@@ -1,0 +1,305 @@
+Metadata-Version: 2.1
+Name: DataAnalysisEnedis
+Version: 0.1.0
+Summary: DataAnalysis_enedis est une classe Python conçue pour faciliter l'analyse de données dans le cadre de la gestion de flux de données d'Enedis
+Home-page: https://github.com/ZephyrIt0/DataAnalysisEnedis
+Author: gld
+Author-email: dimbugrace@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyodbc
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: alive-progress
+Requires-Dist: pysftp
+
+
+
+
+
+
+
+# `DataAnalysis_enedis`
+**Author**: Grace LUSAKUMUNU DIMBU.
+
+## Table des matières
+- [Installation](#installation)
+- [Pré-requis](#pré-requis)
+- [Classes principales](#classes-principales)
+- [Exemple d'utilisation](#exemple-dutilisation)
+- [Configuration](#configuration)
+- [Tests](#tests)
+
+## Installation
+
+Pour installer la librairie, vous pouvez utiliser pip :
+
+```bash
+pip install DataAnalysis_enedis
+
+```
+
+Cette librairie permet de gérer la connexion à des bases de données, de manipuler des fichiers cryptés, de se connecter à un serveur SFTP, et d'exécuter diverses analyses de données. La classe principale `DataAnalysis_enedis` hérite de plusieurs classes utilitaires : `BDD`, `QueryFlux`, et `Decriptage`.
+
+
+# Pré-requis
+
+`DataAnalysis_enedis` est une classe Python conçue pour faciliter l'analyse de données dans le cadre de la gestion de flux de données d'Enedis. Elle permet de lire et traiter des fichiers JSON et XML, de se connecter à des bases de données PostgreSQL et SQL Server, et de gérer les fichiers décompressés et décryptés à l'aide d'AES. Cette librairie est idéale pour l'automatisation des processus de transformation, d'analyse et d'insertion des données dans une base de données.
+
+## Fonctionnalités
+
+- **Traitement des fichiers JSON et XML** : Lecture et transformation de fichiers JSON contenant des mesures et de fichiers XML spécifiques au format F12 et F15.
+- **Analyse de données** : Extraction des données pertinentes à partir des fichiers et transformation en DataFrames pour une analyse ultérieure.
+- **Connexion aux bases de données** : Connexion à des bases de données PostgreSQL et SQL Server pour insérer ou récupérer des données.
+- **Décryptage AES** : Gestion des fichiers protégés par cryptage AES pour assurer la sécurité des données.
+- **Support SFTP** : Récupération des informations de connexion SFTP pour télécharger ou envoyer des fichiers.
+
+# Méthodes
+- [__init__](#__init__)  
+  Le constructeur de la classe permet d'initialiser les différents paramètres et de charger le fichier de configuration.
+
+- [load_settings](#load_settings)  
+  Charge le fichier JSON de configuration.
+
+- [get_content_HT](#get_content_HT)  
+  Lit un fichier JSON, le transforme en DataFrame et l'enregistre dans un fichier Excel.
+
+- [f12_parse_xml_fl](#f12_parse_xml_fl)  
+  Parse un fichier XML au format F12 et retourne un DataFrame avec les données extraites.
+
+- [f15_parse_xml_fl](#f15_parse_xml_fl)  
+  Parse un fichier XML au format F15 et retourne un dictionnaire de DataFrames.
+
+- [f15_parse_xml_fa](#f15_parse_xml_fa)  
+  Parse un fichier XML F15 (version F15 avec attributs).
+
+- [get_sftp_username](#get_sftp_username)  
+  Retourne le nom d'utilisateur SFTP défini dans le fichier de configuration JSON.
+
+- [get_sftp_password](#get_sftp_password)  
+  Retourne le mot de passe SFTP défini dans le fichier de configuration JSON.
+
+- [get_sftp_server](#get_sftp_server)  
+  Retourne l'adresse du serveur SFTP définie dans le fichier de configuration JSON.
+
+- [get_sftp_directory_f15](#get_sftp_directory_f15)  
+  Retourne le répertoire F15 sur le serveur SFTP défini dans le fichier de configuration JSON.
+
+
+
+
+## Classes principales
+
+### 1. `BDD`
+
+La classe `BDD` gère la connexion à des bases de données PostgreSQL et SQL Server.
+
+#### Méthodes principales
+
+- **`__init__(self, config_path="db_settings.json")`**  
+  Initialise la connexion à la base de données en utilisant les paramètres du fichier de configuration `db_settings.json`.
+  
+- **`load_config(config_path)`**  
+  Charge les paramètres de configuration depuis un fichier JSON.
+
+- **`connect_to_postgresql()`**  
+  Établit une connexion à PostgreSQL en utilisant les paramètres fournis.
+
+- **`connect_to_sqlServer(options='-csearch_path=dbo')`**  
+  Établit une connexion à SQL Server en utilisant les paramètres de configuration.
+
+- **`create_table(table_name, columns_json, unique_columns=None)`**  
+  Crée une table dans la base de données avec les colonnes spécifiées et une contrainte unique facultative.
+
+- **`insert_into(table, data=pd.DataFrame())`**  
+  Insère les données d'un `DataFrame` Pandas dans une table SQL.
+
+- **`getEngine()`**  
+  Retourne l'instance actuelle de l'objet `engine`.
+
+- **`disconnect()`**  
+  Ferme la connexion à la base de données.
+
+### 2. `Decriptage`
+
+La classe `Decriptage` permet de décrypter des fichiers ZIP chiffrés à l'aide de la cryptographie AES et d'extraire les fichiers du ZIP.
+
+#### Méthodes principales
+
+- **`__init__(self, aes_key_hex, iv_hex)`**  
+  Initialise la clé AES et le vecteur d'initialisation (IV) en hexadécimal.
+
+- **`setKeys(aes_key_hex, iv_hex)`**  
+  Définit la clé AES et le IV pour le chiffrement et le déchiffrement.
+
+- **`decrypt_file(input_path, output_path, path_unzip)`**  
+  Décrypte un fichier ZIP chiffré et le sauvegarde dans un nouveau fichier.
+
+- **`unzip_file()`**  
+  Extrait tous les fichiers d'un fichier ZIP décrypté.
+
+### 3. `QueryFlux`
+
+La classe `QueryFlux` permet de se connecter à un serveur SFTP, de télécharger des fichiers et de gérer des dossiers distants.
+
+#### Méthodes principales
+
+- **`__init__(self, flux_name="QueryF12", path_unzip="Unzip_f12", path_decrypted="Decrypted_f12")`**  
+  Initialise la connexion au serveur SFTP et crée les répertoires nécessaires pour l'extraction des fichiers.
+
+- **`connect_to_sftp(username, password, server)`**  
+  Se connecte à un serveur SFTP en utilisant les identifiants fournis.
+
+- **`create_directory(directory)`**  
+  Crée un répertoire local pour stocker les fichiers téléchargés.
+
+- **`getFiles(files=[])`**  
+  Télécharge les fichiers spécifiés dans la liste `files` à partir du serveur SFTP.
+
+- **`setFolder_flux(folder_name)`**  
+  Définit un nouveau dossier pour stocker les fichiers téléchargés.
+
+### 4. `DataAnalysis_enedis`
+
+### Exemple d'utilisation
+
+```python
+from DataAnalysis import DataAnalysis_enedis
+
+# Initialisation de l'objet DataAnalysis_enedis
+data_analysis = DataAnalysis_enedis(config_path="db_settings.json")
+
+# Connexion à PostgreSQL
+data_analysis.connect_to_postgresql()
+
+# Création d'une table
+columns_json = {
+    "id": {"type": "INTEGER", "nullable": False},
+    "name": {"type": "VARCHAR", "nullable": True, "length": 25},
+    "created_at": {"type": "DATETIME", "nullable": False}
+}
+data_analysis.create_table("my_table", columns_json)
+
+# Insertion de données dans une table
+data = pd.DataFrame({
+    "id": [1, 2],
+    "name": ["Alice", "Bob"],
+    "created_at": ["2024-11-01", "2024-11-02"]
+})
+data_analysis.insert_into("my_table", data)
+
+# Décryptage d'un fichier ZIP
+data_analysis.setKeys(aes_key_hex="your_aes_key", iv_hex="your_iv")
+data_analysis.decrypt_file("path/to/encrypted.zip", "path/to/decrypted.zip", "path/to/unzip")
+
+# Connexion à un serveur SFTP et téléchargement de fichiers
+data_analysis.connect_to_sftp("username", "password", "ftp.server.com")
+data_analysis.getFiles(["path/to/file1.zip", "path/to/file2.zip"])
+
+```
+
+## Configuration
+
+```json
+{
+    "postgresql_database": "",
+    "postgresql_user": "",
+    "postgresql_password": "",
+    "postgresql_host": "",
+    "postgresql_port": 5432,
+    
+    "sql_server_user": "",
+    "sql_server_password": "",
+    "sql_server_host": "192.x.x.x\\SQLEXPRESS",
+    "sql_server_port": 1433,
+    "sql_server_database": "",
+    "sql_server_driver": "ODBC Driver 17 for SQL Server",
+
+    "decryptage": {
+        "aes_key_hex": "",
+        "iv_hex": ""
+    },
+    "sftp": {
+        "server": "",
+        "username": "",
+        "password": "",
+        "directory_f15": "/flux_enedis/F15",
+        "directory_f12": "/flux_enedis/F12"
+    }
+}
+
+
+```
+## Exemple 2
+
+```python
+import sys
+import pandas as pd
+from DataAnalysis import DataAnalysis_enedis
+
+ID_TEST = 3
+
+# Initialisation de la classe avec le fichier de configuration
+dataAnalysis_enedis = DataAnalysis_enedis("tests/settings.json")
+
+match (ID_TEST):
+
+    case 1:
+        # Lire les données pour le type d'injection / soutirage HT
+        data = dataAnalysis_enedis.get_content_HT("tests/data/ENEDIS_R64_P_INDEX_M073565K_00001_20241112103114_Injection.JSON", "content")
+        data['d'] = pd.to_datetime(data['d'])
+
+        # Définir les données pour l'insertion dans la base de données
+        columns_json = {
+            "prm": {"type": "VARCHAR", "length": 14, "nullable": True},
+            "d": {"type": "DATETIME", "nullable": True},
+            "v": {"type": "FLOAT", "nullable": True},
+            "unite": {"type": "VARCHAR", "length": 5, "nullable": True},
+            "grandeurPhysique": {"type": "VARCHAR", "length": 5, "nullable": True},
+            "libelleClasseTemporelle": {"type": "VARCHAR", "length": 100, "nullable": True},
+            "idCalendrier": {"type": "VARCHAR", "length": 20, "nullable": True},
+            "iv": {"type": "VARCHAR", "length": 5, "nullable": True},
+        }
+
+        # Connexion et insertion dans la base de données
+        dataAnalysis_enedis.connect_to_sqlServer()
+        dataAnalysis_enedis.create_table("ht_injection", columns_json, None)
+        dataAnalysis_enedis.insert_into("ht_injection", data)
+
+    case 2:
+        # Connexion SFTP et récupération de fichiers depuis le dossier f12
+        status = dataAnalysis_enedis.connect_to_sftp(dataAnalysis_enedis.get_sftp_username(),
+                                                    dataAnalysis_enedis.get_sftp_password(),
+                                                    dataAnalysis_enedis.get_sftp_server())
+        folders = dataAnalysis_enedis.set_root_directory()
+        files_f12 = dataAnalysis_enedis.change_directory_sftp(dataAnalysis_enedis.get_sftp_directory_f12())
+
+        dataAnalysis_enedis.setFolder_flux("fichiers_f12")
+        dataAnalysis_enedis.getFiles(files_f12)
+
+    case 3:
+        # Connexion SFTP et récupération de fichiers depuis le dossier f15
+        status = dataAnalysis_enedis.connect_to_sftp(dataAnalysis_enedis.get_sftp_username(),
+                                                    dataAnalysis_enedis.get_sftp_password(),
+                                                    dataAnalysis_enedis.get_sftp_server())
+        folders = dataAnalysis_enedis.set_root_directory()
+        files_f15 = dataAnalysis_enedis.change_directory_sftp(dataAnalysis_enedis.get_sftp_directory_f15())
+
+        # Création des répertoires et décryptage de fichiers
+        dataAnalysis_enedis.create_directory("fichiers_decrypters")
+        dataAnalysis_enedis.create_directory("content_zip")
+
+        dataAnalysis_enedis.setKeys(dataAnalysis_enedis.get_aes_key_decryptage(),
+                                    dataAnalysis_enedis.get_iv_decryptage())
+
+        dataAnalysis_enedis.decrypt_file("fichiers_f15\\17X100A100A0001A_F15_17X000001117366M_GRD-F139_0322_C_M_0_P_00001_20240603050837.zip",
+                                          "fichiers_decrypters\\17X100A100A0001A_F15_17X000001117366M_GRD-F139_0322_C_M_0_P_00001_20240603050837.zip",
+                                          "content_zip")
+```
+
+
