@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clinicaio
+Version: 0.1.0
+Summary: A Python library for input/output management of all Clinica projects.
+Home-page: https://github.com/aramis-lab/clinicaio.git
+License: MIT
+Keywords: bids,image processing,machine learning,neuroimaging,neuroscience
+Author: ARAMIS Lab
+Maintainer: Clinica developers
+Maintainer-email: clinica.run@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Project-URL: Repository, https://github.com/aramis-lab/clinicaio.git
+Description-Content-Type: text/markdown
+
+# clinicaio
+Python library for input/output management of all Clinica projects.
+
