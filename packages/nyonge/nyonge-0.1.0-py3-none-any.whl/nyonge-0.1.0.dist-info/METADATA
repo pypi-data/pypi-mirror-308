@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nyonge
+Version: 0.1.0
+Summary: A Python package to organize music files by metadata.
+Home-page: https://github.com/your-repo/song_organizer
+Author: Dancan Nyongesa
+Author-email: dan0703778685@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mutagen
+
+# song_organizer
+
+A Python package to organize music files by metadata.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```bash
+song-organizer
+```
