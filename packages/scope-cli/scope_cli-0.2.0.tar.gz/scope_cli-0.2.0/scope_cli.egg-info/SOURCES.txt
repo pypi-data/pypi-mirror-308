@@ -1,0 +1,14 @@
+README.md
+setup.py
+scope/__init__.py
+scope/dir_size.py
+scope/main.py
+scope/port_checker.py
+scope_cli.egg-info/PKG-INFO
+scope_cli.egg-info/SOURCES.txt
+scope_cli.egg-info/dependency_links.txt
+scope_cli.egg-info/entry_points.txt
+scope_cli.egg-info/requires.txt
+scope_cli.egg-info/top_level.txt
+tests/test_dir_size.py
+tests/test_port_checker.py
