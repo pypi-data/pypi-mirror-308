@@ -1,0 +1,10 @@
+detaf-0.3.1.dist-info/METADATA,sha256=BPvWQ0czG9ZlTQXbhdPF10h2RHn40qgjuqnezucDSpo,4183
+detaf-0.3.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+detaf-0.3.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+detaf-0.3.1.dist-info/licenses/LICENSE,sha256=vOMZHizxFreCe6EeFyNNmh_ewp9KsqFgqc-AHRpG5BA,1068
+detaf/__init__.py,sha256=ko6Q7B3JYmV2_T34XorE5T8o_jM3nKFnjM3OAuNH5w8,24
+detaf/cloud.py,sha256=PLQaqXg_6xvnTxfA-XXov7Nw2nKeel262EXj-_v6jMU,1618
+detaf/lib.py,sha256=kuwlAPzvI_RQkfDyssXzKZwKpes8gAFid_Gq9JjKYNY,9000
+detaf/temperature.py,sha256=WEiw6QhbbihNYQvb4PcRza7ipVkTjoRJTuUUbgCWPxE,761
+detaf/wx.py,sha256=IS05juYzQFFI-s9iOr148GN7LhA3hB1fnZHenoXXKR8,3216
+detaf-0.3.1.dist-info/RECORD,,
