@@ -1,0 +1,76 @@
+# SlackNotifPy
+
+`slacknotifpy` is a Python CLI tool that sends notifications to a specified Slack channel on job completion. This can be especially useful for tracking automated job results, such as success or failure, directly in Slack.
+
+## Features
+
+- Runs a Python script and sends a Slack notification upon completion.
+- Customizable success and failure messages.
+- Simple configuration for Slack tokens and channel IDs.
+
+## Installation
+
+Install `slacknotifpy` from PyPI:
+
+```bash
+pip install slacknotifpy
+```
+
+## Configuration
+
+To use `slacknotifpy`, you need to configure it with your Slack token and channel ID. These settings will be saved in a `.slacknotif_config` file.
+
+1. Run the following command to set up the configuration:
+
+```bash
+slacknotif config setconfig <job_script.py>
+```
+
+2. Follow the prompts to enter:
+
+- Slack Token
+- Slack Channel ID
+- Custom success and failure messages (optional)
+
+You can find the Slack token and channel ID in your Slack app settings.
+
+### Custom Messages
+
+To update the success and failure messages for a project, use:
+
+```bash
+slacknotif config setmessages <job_script.py>
+```
+
+## Usage
+
+After configuring `slacknotifpy`, you can use it to run scripts and send notifications:
+
+```bash
+slacknotif run <script_path> [job_name]
+```
+
+- `script_path`: The path to the Python script you want to run.
+- `job_name` (optional): A name for the job, used in the Slack message. Defaults to the script filename.
+
+Example:
+
+```bash
+slacknotif run my_script.py "Data Processing Job"
+```
+
+## Example Slack Notification Messages
+
+- Success: "Data Processing Job completed successfully"
+- Failure: "Data Processing Job failed"
+
+You can customize these messages using `{job_name}` as a placeholder in the config.
+
+## Command Reference
+- Configure Slack: `slacknotif config setconfig <job_script.py>`
+- Set Custom Messages: `slacknotif config setmessages <job_script.py>`
+- Run Script and Notify: `slacknotif run <script_path> [job_name]`
+
+## License
+
+This project is licensed under the MIT License.
