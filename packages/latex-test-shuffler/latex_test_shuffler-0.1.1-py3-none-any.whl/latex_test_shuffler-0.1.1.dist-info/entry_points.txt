@@ -1,0 +1,2 @@
+[console_scripts]
+latex-test-shuffler = latex_test_shuffler:main
