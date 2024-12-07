@@ -1,0 +1,16 @@
+denkproto/DENKbuffer_pb2.py,sha256=v9vQHcgHBSWrdM5Shr1NWvBhmv8gbj5U2OIJVpu835E,10281
+denkproto/DENKbuffer_pb2.pyi,sha256=doI3OWHy475BkkS9V64duMkiVGKQCIuc3n7nGlZcwjE,14171
+denkproto/ImageAnalysis_ProtobufMessages_pb2.py,sha256=EwvHz2S_JAlCu9OBS0FTDLKfvZTDuPZGiWGpQkb_95g,19793
+denkproto/ImageAnalysis_ProtobufMessages_pb2.pyi,sha256=FQlBvJ-QEhEoHE7DpXBDpLZqg7vhd2EGpiuYUSa5QME,34698
+denkproto/__about__.py,sha256=lJ4ivbKbnYXFf2Ku8SMHBz5WRCggnAB-EiaLLFW9B-8,23
+denkproto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+denkproto/modelfile_v1_pb2.py,sha256=6QgDW9odJq4hRRzz4iz0-Smw42bG0pr1LL8ub_DV0pQ,6306
+denkproto/modelfile_v1_pb2.pyi,sha256=gjTbWvg48wqGhyJb5CT0pw3yUZGhO_lSZgL7Ia2aPbY,10685
+denkproto/modelfile_v2_pb2.py,sha256=eoBMxwsAhXFFWVxGeXBV8416riuOAk7tcx3RfJxO6Ts,11986
+denkproto/modelfile_v2_pb2.pyi,sha256=aLcuUMrX3igheXo9Q2JE0fzJPmWsC3e5XqJaQJbvACw,19568
+denkproto/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+denkproto/results_pb2.py,sha256=tNf3YsOfQ6CbTloFLTP0dXdzxw6ywMh4cIgOKESZUyE,13388
+denkproto/results_pb2.pyi,sha256=xzZPmty65qEz9FzeoGwQlWMpuYxrP-cRFP97Ew8-FFI,25821
+denkproto-1.0.21.dist-info/METADATA,sha256=xO0kna_N11EUwcangT2_Iei5LIY44aPA5vi1WzLMGWA,110
+denkproto-1.0.21.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+denkproto-1.0.21.dist-info/RECORD,,
