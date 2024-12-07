@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: google-trans-lzx
+Version: 0.0.3
+Summary: 增加可用的代理入参，在构造时传入proxies
+Author: SuHun Han
+Author-email: 2739638173@qq.com
+License: MIT
+Keywords: google translate translator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Freeware
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Education
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: httpx ==0.24.0
+Requires-Dist: httpx[http2]
+
