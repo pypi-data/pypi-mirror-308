@@ -1,0 +1,15 @@
+shellviz/.DS_Store,sha256=ubEw7gaeBsyFNHA-BCArd1TvQJGbAMooiq3Lf5kqqhI,6148
+shellviz/__init__.py,sha256=lNPgY0qFWDL9_F8VGiW0ap6mNtqO5CfOz8a35ghe7iU,6928
+shellviz/build/.DS_Store,sha256=ueun-CkFjZ714tk2bmuYEAxhBItP0K07ZwWop33esy8,6148
+shellviz/build/asset-manifest.json,sha256=AVy7uRV18lB_5dI89l9oeIX28fx7EygKTg8zNQFIFRg,249
+shellviz/build/index.html,sha256=v7DU0w9oHuIh5qRs47cztpViFPy76ZawHi4dB2vMIcI,623
+shellviz/build/static/.DS_Store,sha256=zdOnEhljh0QvQexXcd1-s9dQOHj4ws_ueGV8UlyT0rs,6148
+shellviz/build/static/css/main.css,sha256=kjhfh7TLqzHN5q5j4Rg99SXLrFZx3BEPesl539DXsKs,11843
+shellviz/build/static/js/453.js,sha256=YVQxTj_V8Oz_VAujAzU66ClW-NYTdtnbvWsmCgO9ZiY,4484
+shellviz/build/static/js/main.js,sha256=v2toykHpGD6S6NxrMBDV1VvjKGaILYYkT3wkzDKC1Xo,771666
+shellviz/build/static/js/main.js.LICENSE.txt,sha256=l22lm6X9qjttcIb_MN9oXFDs2oOQAzJ2cQUn89lupU4,1937
+shellviz/utils_html.py,sha256=9-gZB-Bez5NPbz3pwaz2-cqet7smmls96NNFmlKqApM,4430
+shellviz/utils_websockets.py,sha256=GtLEGE1Te_tnIUIKSewYiBgstA5LeacEEfq7xZcHmKg,2847
+shellviz-0.3.0.dist-info/METADATA,sha256=f5q_r0fqU1esDEoEEegmIOao2LKVQ9_FRU4eMSg72sc,402
+shellviz-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shellviz-0.3.0.dist-info/RECORD,,
