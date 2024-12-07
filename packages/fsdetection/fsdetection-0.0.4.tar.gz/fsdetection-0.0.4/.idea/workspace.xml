@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98b57a77-f61b-4235-873e-aa79f12c5954" name="Changes" comment="wip indices None probleme">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HichTala&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HichTala/FSODHuggingFace.git&quot;,
+    &quot;accountId&quot;: &quot;c565684e-624a-4091-b53b-ec07699eaf42&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/miniconda3/envs/phd/lib/python3.12/site-packages/datasets/arrow_dataset.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2mTTZe86iFleZC1yaoSFN9UeQZG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.coco.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.fs_arrow_dataset.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.run_object_detection.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.temp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hicham/Documents/FSODHuggingFace&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="run_object_detection" type="PythonConfigurationType" factoryName="Python">
+      <module name="FSODHuggingFace" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="phd" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="run_object_detection.py" />
+      <option name="PARAMETERS" value="--model_name_or_path facebook/detr-resnet-50 --dataset_name detection-datasets/coco --do_train true --do_eval true --output_dir detr-finetuned-coco --num_train_epochs 100 --image_square_size 600 --fp16 true --learning_rate 5e-5 --weight_decay 1e-4 --dataloader_num_workers 4 --dataloader_prefetch_factor 2 --per_device_train_batch_size 8 --gradient_accumulation_steps 1 --remove_unused_columns false --eval_do_concat_batches false --ignore_mismatched_sizes true --metric_for_best_model eval_map --greater_is_better true --load_best_model_at_end true --logging_strategy epoch --evaluation_strategy epoch --save_strategy epoch --save_total_limit 2 --push_to_hub false --push_to_hub_model_id detr-finetuned-cppe-5-10k-steps --hub_strategy end --seed 1338 --overwrite_output_dir --unfreeze_modules backbone --freeze_at half" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98b57a77-f61b-4235-873e-aa79f12c5954" name="Changes" comment="" />
+      <created>1727099622633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727099622633</updated>
+      <workItem from="1727099623684" duration="3687000" />
+      <workItem from="1727783446703" duration="11000" />
+      <workItem from="1729158355986" duration="286000" />
+      <workItem from="1729158731785" duration="5833000" />
+      <workItem from="1729171905312" duration="4007000" />
+      <workItem from="1729500606788" duration="3650000" />
+      <workItem from="1729507531506" duration="4052000" />
+      <workItem from="1729523879936" duration="1329000" />
+      <workItem from="1729609081781" duration="5000" />
+      <workItem from="1729687369123" duration="2930000" />
+      <workItem from="1729939091171" duration="21000" />
+      <workItem from="1729939120866" duration="12866000" />
+      <workItem from="1729976365099" duration="160000" />
+      <workItem from="1730104398464" duration="20731000" />
+      <workItem from="1730194098791" duration="1870000" />
+      <workItem from="1730219090666" duration="4466000" />
+      <workItem from="1730286867223" duration="2671000" />
+      <workItem from="1730289542407" duration="15000" />
+      <workItem from="1730289567153" duration="7736000" />
+      <workItem from="1730319426931" duration="5870000" />
+      <workItem from="1730407456085" duration="367000" />
+      <workItem from="1730479296048" duration="15857000" />
+      <workItem from="1730544145979" duration="3886000" />
+      <workItem from="1730712856371" duration="8173000" />
+      <workItem from="1730801823261" duration="2124000" />
+      <workItem from="1730882280794" duration="9215000" />
+      <workItem from="1730902268454" duration="2570000" />
+      <workItem from="1730920112154" duration="764000" />
+      <workItem from="1731052416951" duration="2521000" />
+      <workItem from="1731338620605" duration="12912000" />
+      <workItem from="1731358392507" duration="801000" />
+      <workItem from="1731359300233" duration="1233000" />
+      <workItem from="1731404308709" duration="12981000" />
+      <workItem from="1731494227257" duration="5130000" />
+      <workItem from="1731519897999" duration="6535000" />
+      <workItem from="1731664361818" duration="1354000" />
+      <workItem from="1731679781796" duration="629000" />
+    </task>
+    <task id="LOCAL-00001" summary="Remove script with no trainer">
+      <option name="closed" value="true" />
+      <created>1729939408516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729939408516</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update loaders to few-shot">
+      <option name="closed" value="true" />
+      <created>1729939542676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729939542676</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Redfine functions for few shot">
+      <option name="closed" value="true" />
+      <created>1729976453397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729976453397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add the few-shot selection to the dataset">
+      <option name="closed" value="true" />
+      <created>1730111852624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730111852624</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Solve bug of missing 'test' split and removed few-shot for test set">
+      <option name="closed" value="true" />
+      <created>1730298481776</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730298481776</updated>
+    </task>
+    <task id="LOCAL-00006" summary="removed few-shot for val set, change the way sampling is done so only indices table is changed">
+      <option name="closed" value="true" />
+      <created>1730325516077</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730325516077</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Remove sampler">
+      <option name="closed" value="true" />
+      <created>1730479797913</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730479797913</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finish freezing modules">
+      <option name="closed" value="true" />
+      <created>1730544246161</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730544246161</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Resolv freezing_at problem">
+      <option name="closed" value="true" />
+      <created>1730547720337</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730547720337</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add upload dataset to hub">
+      <option name="closed" value="true" />
+      <created>1731422532473</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731422532473</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Change config name">
+      <option name="closed" value="true" />
+      <created>1731494273098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731494273098</updated>
+    </task>
+    <task id="LOCAL-00012" summary="wip indices None probleme">
+      <option name="closed" value="true" />
+      <created>1731528173716</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731528173716</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove script with no trainer" />
+    <MESSAGE value="update loaders to few-shot" />
+    <MESSAGE value="Redfine functions for few shot" />
+    <MESSAGE value="Add the few-shot selection to the dataset" />
+    <MESSAGE value="Solve bug of missing 'test' split and removed few-shot for test set" />
+    <MESSAGE value="removed few-shot for val set, change the way sampling is done so only indices table is changed" />
+    <MESSAGE value="Remove sampler" />
+    <MESSAGE value="Finish freezing modules" />
+    <MESSAGE value="Resolv freezing_at problem" />
+    <MESSAGE value="Add upload dataset to hub" />
+    <MESSAGE value="Change config name" />
+    <MESSAGE value="wip indices None probleme" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip indices None probleme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/miniconda3/envs/phd/lib/python3.12/site-packages/datasets/builder.py</url>
+          <line>998</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FSODHuggingFace$temp.coverage" NAME="temp Coverage Results" MODIFIED="1731422439910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FSODHuggingFace$fs_arrow_dataset.coverage" NAME="fs_arrow_dataset Coverage Results" MODIFIED="1731424877881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
+    <SUITE FILE_PATH="coverage/FSODHuggingFace$coco.coverage" NAME="coco Coverage Results" MODIFIED="1731494385263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset_transformations" />
+    <SUITE FILE_PATH="coverage/FSODHuggingFace$run_object_detection.coverage" NAME="run_object_detection Coverage Results" MODIFIED="1731523616791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

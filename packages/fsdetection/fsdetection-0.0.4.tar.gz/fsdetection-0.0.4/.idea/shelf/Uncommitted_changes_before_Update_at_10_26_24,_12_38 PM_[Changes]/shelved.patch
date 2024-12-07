@@ -1,0 +1,57 @@
+Index: src/fs_trainer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from transformers import Trainer\n\n\nclass FSTrainer(Trainer):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n\n    def freeze_model(self,\n                     freeze_modules=['backbone'],\n                     freeze_mode='all',\n                     backbone_freeze_at=0,\n                     distributed=False):\n        \"\"\"\n        Freeze model parameters for various modules\n        When backbone_freeze == 0, freeze all backbone parameters\n        Otherwise freeze up to res_#backbone_freeze_at layer.\n        \"\"\"\n\n        def freeze(model, freeze_at=0):\n            for idx, param in enumerate(model.parameters()):\n                if freeze_at >= idx:\n                    param.requires_grad = False\n\n        def freeze_model_filtered(model, unfrozen_names=[], unfrozen_type=None):\n            for param_name, param in model.named_parameters():\n                if unfrozen_type is None:  # freeze all param but unfrozen_names\n                    if all([(name not in param_name) for name in unfrozen_names]):\n                        param.requires_grad = False\n                else:  # keep only a type of params unfrozen within unfrozen_names, all others are frozen\n                    if all([(name not in param_name) and (unfrozen_type not in param_name) for name in unfrozen_names]):\n                        param.requires_grad = False\n\n        def freeze_model_process(model):\n            if 'backbone' in freeze_modules:\n                if freeze_mode == 'all':\n                    if backbone_freeze_at > 0:\n                        freeze(model.backbone[0], backbone_freeze_at)\n                    else:\n                        freeze_model_filtered(model.backbone)\n                elif freeze_mode == 'half':\n                    freeze(model.backbone[0], int(len(list(model.backbone.parameters())) / 2))\n                elif freeze_mode == 'bias':\n                    freeze_model_filtered(model.backbone, ['bias'])\n                elif freeze_mode == 'norm':\n                    freeze_model_filtered(model.backbone, ['norm'])\n\n        if distributed:\n            freeze_model_process(self.model.module)\n        else:\n            freeze_model_process(self.model)\n\n    def _get_train_sampler(self):\n        breakpoint()\n        return
+===================================================================
+diff --git a/src/fs_trainer.py b/src/fs_trainer.py
+--- a/src/fs_trainer.py	(revision f2fc9445f025cbda40bd4fd495dfb8bab9327edc)
++++ b/src/fs_trainer.py	(date 1729172194116)
+@@ -1,4 +1,11 @@
+-from transformers import Trainer
++from typing import Optional
++
++import datasets
++import torch
++from torch.utils.data import DataLoader, RandomSampler
++from transformers import Trainer, is_datasets_available
++from transformers.trainer_pt_utils import LengthGroupedSampler
++from transformers.trainer_utils import has_length
+ 
+ 
+ class FSTrainer(Trainer):
+@@ -49,6 +56,31 @@
+         else:
+             freeze_model_process(self.model)
+ 
+-    def _get_train_sampler(self):
+-        breakpoint()
+-        return
+\ No newline at end of file
++
++
++    def _get_train_sampler(self) -> Optional[torch.utils.data.Sampler]:
++        if self.train_dataset is None or not has_length(self.train_dataset):
++            return None
++
++        # Build the sampler.
++        if self.args.group_by_length:
++            if is_datasets_available() and isinstance(self.train_dataset, datasets.Dataset):
++                lengths = (
++                    self.train_dataset[self.args.length_column_name]
++                    if self.args.length_column_name in self.train_dataset.column_names
++                    else None
++                )
++            else:
++                lengths = None
++            model_input_name = (
++                self.processing_class.model_input_names[0] if self.processing_class is not None else None
++            )
++            return LengthGroupedSampler(
++                self.args.train_batch_size * self.args.gradient_accumulation_steps,
++                dataset=self.train_dataset,
++                lengths=lengths,
++                model_input_name=model_input_name,
++            )
++
++        else:
++            return RandomSampler(self.train_dataset)
