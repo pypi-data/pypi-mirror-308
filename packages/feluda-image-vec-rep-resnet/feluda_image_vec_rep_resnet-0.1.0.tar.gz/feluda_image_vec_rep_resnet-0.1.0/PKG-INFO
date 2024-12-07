@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: feluda-image-vec-rep-resnet
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: memray==1.12.0
+Requires-Dist: numpy==1.26.3
+Requires-Dist: pillow==11.0.0
+Requires-Dist: pyinstrument==4.6.2
+Requires-Dist: torch==2.2.0
+Requires-Dist: torchvision==0.17.0
