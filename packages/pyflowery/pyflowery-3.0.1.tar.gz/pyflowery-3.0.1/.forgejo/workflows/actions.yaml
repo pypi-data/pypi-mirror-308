@@ -1,0 +1,116 @@
+﻿name: Actions
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: docker
+    container: www.coastalcommits.com/cswimr/actions:uv
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync --no-dev
+
+      - name: Build the package
+        run: uv build
+
+      - name: Upload the package
+        uses: actions/upload-artifact@v3
+        with:
+          name: pyflowery
+          path: ./dist/*
+
+      - name: Publish to CoastalCommits
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/pypi-publish@v1.8.14
+        with:
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.COASTALCOMMITSTOKEN }}
+          repository_url: https://www.coastalcommits.com/api/packages/${{ github.repository_owner }}/pypi
+
+      - name: Publish to PyPi
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/pypi-publish@v1.8.14
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+
+  lint:
+    name: Lint with Ruff & Pylint
+    runs-on: docker
+    container: www.coastalcommits.com/cswimr/actions:uv
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Analysing code with Ruff
+        run: uv run ruff check $(git ls-files '*.py')
+        continue-on-error: true
+
+      - name: Analysing code with Pylint
+        run: uv run pylint --rcfile=.forgejo/workflows/config/.pylintrc $(git ls-files '*.py')
+
+  docs:
+    name: Build Documentation
+    runs-on: docker
+    container: www.coastalcommits.com/cswimr/actions:docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync --group docs --no-dev
+
+      - name: Set environment variables
+        uses: actions/env@v2
+
+      - name: Build documentation
+        run: |
+          export SITE_URL="https://$CI_ACTION_REF_NAME_SLUG.pyflowery.coastalcommits.com"
+          export EDIT_URI="src/branch/$CI_ACTION_REF_NAME/docs"
+          uv run mkdocs build -v
+
+      - name: Deploy documentation
+        run: |
+          GREEN='\033[0;32m'
+          YELLOW='\033[0;33m'
+          BLUE='\033[0;34m'
+
+          unset GITHUB_TOKEN
+          unset GITLAB_TOKEN
+
+          echo "${YELLOW}Deploying to ${BLUE}Meli ${YELLOW}on branch ${GREEN}$CI_ACTION_REF_NAME_SLUG${YELLOW}...\n"
+
+          npx -p "@getmeli/cli" meli upload ./site \
+            --url "https://pages.coastalcommits.com" \
+            --site "${{ vars.MELI_SITE_ID }}" \
+            --token "${{ secrets.MELI_TOKEN }}" \
+            --release "$CI_ACTION_REF_NAME_SLUG/${{ env.GITHUB_SHA }}" \
+            --branch "$CI_ACTION_REF_NAME_SLUG"
+
+          echo "\n${YELLOW}Deployed to ${BLUE}Meli ${YELLOW}on branch ${GREEN}$CI_ACTION_REF_NAME_SLUG${YELLOW}!"
+          echo "${GREEN}https://$CI_ACTION_REF_NAME_SLUG.pyflowery.coastalcommits.com/"
+        env:
+          GITEA_TOKEN: ${{ secrets.COASTALCOMMITSTOKEN }}
