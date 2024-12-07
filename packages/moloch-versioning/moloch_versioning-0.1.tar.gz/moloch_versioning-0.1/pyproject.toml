@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moloch_versioning"
+version = "0.1"
+description = "Automated version control system with customizable changelog and version management"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+  { name="Jorge Mieres", email="jamieres@gmail.com" },
+]
+license = { text = "MIT License" }
+
+[project.urls]
+Homepage = "https://github.com/jamieres/Moloch.-Automated-Version-Control-Library"
+Issues = "https://github.com/jamieres/Moloch.-Automated-Version-Control-Library/issues"
