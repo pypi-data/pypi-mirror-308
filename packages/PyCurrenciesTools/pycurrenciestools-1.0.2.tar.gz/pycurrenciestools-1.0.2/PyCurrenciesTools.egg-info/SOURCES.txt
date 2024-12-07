@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+description.txt
+long_description.rst
+requirements.txt
+setup.py
+PyCurrenciesTools/__init__.py
+PyCurrenciesTools/data.py
+PyCurrenciesTools/errors.py
+PyCurrenciesTools.egg-info/PKG-INFO
+PyCurrenciesTools.egg-info/SOURCES.txt
+PyCurrenciesTools.egg-info/dependency_links.txt
+PyCurrenciesTools.egg-info/requires.txt
+PyCurrenciesTools.egg-info/top_level.txt
