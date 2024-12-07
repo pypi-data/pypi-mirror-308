@@ -1,0 +1,12 @@
+pyeuvac/__init__.py,sha256=bcgLQM0QCq3vdvhAqBsPHddEOyzIIesWS-U1v5_6UDk,32
+pyeuvac/_euvac.py,sha256=8Hfm3lNkzONmvZCjD-pgBjOxRcCfgLDE4nf6VtJ8PTA,6423
+pyeuvac/_misc.py,sha256=081OGAwtBPNe0skjE_yB_aavveu1AAQYs8ntEUZGRpY,318
+pyeuvac/_coeffs/euvac_bands_coeffs.nc,sha256=B8KVcIU9NCE3whJtWoZbDb-42C6IOoFufV-48heteXA,10223
+pyeuvac/_coeffs/euvac_lines_coeffs.nc,sha256=MHw1AkuWWnIgJSbF0lHdxfa__RDWHVwuA2uzNxHqapE,9049
+pyeuvac/_coeffs/euvac_model_bands.nc,sha256=B8KVcIU9NCE3whJtWoZbDb-42C6IOoFufV-48heteXA,10223
+pyeuvac/_coeffs/euvac_model_lines.nc,sha256=MHw1AkuWWnIgJSbF0lHdxfa__RDWHVwuA2uzNxHqapE,9049
+pyeuvac-0.0.3b0.dist-info/LICENSE.txt,sha256=gg7U94Mk-Ev6Z8YOX4KfPGEbttmGlWvNP2LTGYQ4QYo,606
+pyeuvac-0.0.3b0.dist-info/METADATA,sha256=T2CzU9Cl4_XarWN15YLg_8SuHeFaDDQVq8o7H2ZTh2A,9247
+pyeuvac-0.0.3b0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+pyeuvac-0.0.3b0.dist-info/top_level.txt,sha256=IgUV1YHSl22_2GX5q_mxxmsV2yWaeHjPSdqz0EdbiB4,8
+pyeuvac-0.0.3b0.dist-info/RECORD,,
