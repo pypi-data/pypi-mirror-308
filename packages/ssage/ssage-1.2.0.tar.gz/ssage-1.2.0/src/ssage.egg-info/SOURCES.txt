@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/__init__.py
+src/ssage/__init__.py
+src/ssage/ssage.py
+src/ssage.egg-info/PKG-INFO
+src/ssage.egg-info/SOURCES.txt
+src/ssage.egg-info/dependency_links.txt
+src/ssage.egg-info/requires.txt
+src/ssage.egg-info/top_level.txt
+src/ssage/backend/__init__.py
+src/ssage/backend/base.py
+src/ssage/backend/io_helpers.py
+src/ssage/backend/python_age.py
+tests/test_encrypt_decrypt.py
