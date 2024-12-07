@@ -1,0 +1,2 @@
+[console_scripts]
+ctp-pipeline-viewer = ctp_pipeline_viewer.main:app

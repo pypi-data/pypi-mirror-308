@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ctp-pipeline-viewer
+Version: 0.0.1
+Summary: View one or more CTP pipelines with an optional XNAT destination
+Author-email: Patrick de Koning <pjhdekoning@lumc.nl>
+Keywords: CTP,XNAT
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Pydantic
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: httpx
+Requires-Dist: textual
+Requires-Dist: beautifulsoup4
+Requires-Dist: pydantic
+Requires-Dist: apscheduler
+Requires-Dist: textual-plotext
+Requires-Dist: textual-imageview
+Requires-Dist: textual-pandas
+Requires-Dist: textual-slider
+
