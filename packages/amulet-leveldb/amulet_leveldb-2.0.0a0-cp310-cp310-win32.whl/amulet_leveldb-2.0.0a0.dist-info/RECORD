@@ -1,0 +1,10 @@
+leveldb/__init__.py,sha256=8rbxisyKkh_9_Sp-PCa2L0Z4Rmffp4NF71L3hid-iNM,212
+leveldb/_leveldb.cp310-win32.pyd,sha256=WC0QeRMEfI4r1S2q8ZxEHF0iUpRf49m6jl3T6vSRXtc,404992
+leveldb/_leveldb.pyi,sha256=tMvosn5g7Pkde9oMkLQ1Bio2QvhjA_VrUrNzB3JDquE,2390
+leveldb/_version.py,sha256=ugl_LkuwHZxm3mjiBns0Az6fqvzpZjGvZULb_s9_UWQ,520
+leveldb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amulet_leveldb-2.0.0a0.dist-info/LICENSE,sha256=T3cgCIpMw5JGMsjnBc0hq9MBXoRRSBLF6JiaKEUPaEY,6954
+amulet_leveldb-2.0.0a0.dist-info/METADATA,sha256=B-jfOGlIRP2M_pi0IT4V9jqV78QuYrKORbti8SoTPek,1224
+amulet_leveldb-2.0.0a0.dist-info/WHEEL,sha256=SDZh2lnv3yef5ktEPZpfkF91yTDa9ZYrKY26sftCzwM,97
+amulet_leveldb-2.0.0a0.dist-info/top_level.txt,sha256=DaeMC8xhK8U8S1M29JD6oT0N6O4MYVs6VI3SQ_RUEYk,8
+amulet_leveldb-2.0.0a0.dist-info/RECORD,,
