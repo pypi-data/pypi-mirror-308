@@ -1,0 +1,20 @@
+[project]
+name = "4th-ir-ai-models"
+version = "0.5.3"
+description = "Access a collection of sophisticated AI models."
+authors = [{ name = "4th-IR", email = "a.toffah@4th-ir.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ai", "api", "automation", "ai tool", "intelligence"]
+dependencies = [
+    "requests>=2.32.3",
+]
+
+[project.urls]
+Homepage = "https://www.4th-ir.com/"
