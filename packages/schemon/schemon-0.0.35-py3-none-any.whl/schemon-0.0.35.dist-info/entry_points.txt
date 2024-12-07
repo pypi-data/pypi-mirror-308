@@ -1,0 +1,3 @@
+[console_scripts]
+schemon = schemon.main:main
+
