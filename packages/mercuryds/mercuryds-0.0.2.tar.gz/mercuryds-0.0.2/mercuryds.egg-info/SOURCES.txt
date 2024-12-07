@@ -1,0 +1,5 @@
+setup.py
+mercuryds.egg-info/PKG-INFO
+mercuryds.egg-info/SOURCES.txt
+mercuryds.egg-info/dependency_links.txt
+mercuryds.egg-info/top_level.txt
