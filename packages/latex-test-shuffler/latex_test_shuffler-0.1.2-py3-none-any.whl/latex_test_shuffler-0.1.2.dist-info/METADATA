@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: latex-test-shuffler
+Version: 0.1.2
+Summary: LaTeX test shuffler
+Author-email: Sergio Barrachina Mir <barrachi@uji.es>
+Requires-Python: >=3.11
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: rich>=13.9.4
+Requires-Dist: texsoup>=0.3.1
+Requires-Dist: tqdm>=4.67.0
+Description-Content-Type: text/markdown
+
+Inspired in a Visual Works Smalltalk application from Germán León Navarro.
