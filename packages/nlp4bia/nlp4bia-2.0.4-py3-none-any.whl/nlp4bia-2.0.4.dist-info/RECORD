@@ -1,0 +1,9 @@
+nlp4bia/__init__.py,sha256=wV-S6C0dStf4hfZpRqMS3Eq8NgLpXLXmuI2Wsh2r1po,46
+nlp4bia/datasets/Dataset.py,sha256=tTnXd2MBL8XOXSutXQwfpxrSTtEgACjWcXwfwsfQsDc,3849
+nlp4bia/datasets/config.py,sha256=RBweehqakqey_pySFUEHhy-O6jsNgeAQAEqQXImT304,396
+nlp4bia/datasets/utils/versions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp4bia-2.0.4.dist-info/LICENSE,sha256=q42KieyaPhpUKc-DkhYFBbGUfnXWSF_8d55O2WTdi_k,1071
+nlp4bia-2.0.4.dist-info/METADATA,sha256=H-KLeNPg50Q8YkrfRGBE0LO4qAL0fR3zzSlwxuErluo,2094
+nlp4bia-2.0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+nlp4bia-2.0.4.dist-info/top_level.txt,sha256=BV30J3vo6ktg5J-4WDxP0g2y4m8N996fmWzIi58PoXY,8
+nlp4bia-2.0.4.dist-info/RECORD,,
