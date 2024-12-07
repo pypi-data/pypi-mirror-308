@@ -1,0 +1,7 @@
+README.md
+setup1.py
+Movies_and_Series.egg-info/PKG-INFO
+Movies_and_Series.egg-info/SOURCES.txt
+Movies_and_Series.egg-info/dependency_links.txt
+Movies_and_Series.egg-info/requires.txt
+Movies_and_Series.egg-info/top_level.txt
