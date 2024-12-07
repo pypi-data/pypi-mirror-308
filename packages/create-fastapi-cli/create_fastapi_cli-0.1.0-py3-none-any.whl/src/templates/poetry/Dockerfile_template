@@ -1,0 +1,19 @@
+FROM reg.deeproute.ai/deeproute-all/mlp/ros_python3dot9:1.6.5
+
+WORKDIR /app
+
+COPY . /app
+
+RUN python3 -m pip install --user pipx
+RUN python3 -m pipx ensurepath
+
+RUN /bin/bash -c "source ~/.bashrc && python3 -m pipx install poetry"
+ENV PATH="/root/.local/bin:${PATH}"
+
+RUN poetry install
+
+RUN apt-get update && apt-get install -y gettext
+
+EXPOSE 8000
+
+CMD ["poetry", "run", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "info"]
