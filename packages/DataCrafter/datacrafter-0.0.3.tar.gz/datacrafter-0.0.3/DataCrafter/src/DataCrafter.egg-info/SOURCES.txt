@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+DataCrafter/src/DataCrafter.egg-info/PKG-INFO
+DataCrafter/src/DataCrafter.egg-info/SOURCES.txt
+DataCrafter/src/DataCrafter.egg-info/dependency_links.txt
+DataCrafter/src/DataCrafter.egg-info/top_level.txt
+DataCrafter/src/DataCrafter/__init__.py
+DataCrafter/src/DataCrafter/document_loaders.py
+DataCrafter/src/DataCrafter/prompt_loaders.py
+DataCrafter/src/DataCrafter/text_extarcters.py
+DataCrafter/src/DataCrafter/text_spliters.py
+DataCrafter/src/DataCrafter/utlis.py
+DataCrafter/src/DataCrafter.egg-info/PKG-INFO
+DataCrafter/src/DataCrafter.egg-info/SOURCES.txt
+DataCrafter/src/DataCrafter.egg-info/dependency_links.txt
+DataCrafter/src/DataCrafter.egg-info/top_level.txt
