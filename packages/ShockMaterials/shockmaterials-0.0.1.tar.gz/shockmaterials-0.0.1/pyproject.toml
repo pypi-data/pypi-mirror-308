@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ShockMaterials"
+version = "0.0.1"
+authors = [
+  { name="Patrick LaChapelle", email="plachap1@jh.edu" },
+  { name="Salma Garcia", email="sgarci45@jh.edu"}
+]
+description = "Package for holding properties of materials relevant to shock physics"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/wickslab/ShockMaterials"
+Issues = "https://github.com/pypa/sampleproject/issues"

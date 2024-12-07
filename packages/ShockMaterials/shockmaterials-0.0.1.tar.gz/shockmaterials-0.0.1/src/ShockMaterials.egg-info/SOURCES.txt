@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/ShockMaterials/Materials.py
+src/ShockMaterials/__init__.py
+src/ShockMaterials/example.py
+src/ShockMaterials.egg-info/PKG-INFO
+src/ShockMaterials.egg-info/SOURCES.txt
+src/ShockMaterials.egg-info/dependency_links.txt
+src/ShockMaterials.egg-info/top_level.txt
