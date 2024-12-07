@@ -1,0 +1,188 @@
+# Python Pod Manager
+
+**Python Pod Manager** is a library designed to manage Dockerized environments for Python projects with flexible dependency management and deployment options. It provides a way to run applications with specific library versions in an isolated pod environment, avoiding conflicts with the host system.
+
+## Overview
+
+With Python Pod Manager, you can configure a pod to install and run all necessary libraries without impacting the libraries on your local machine. This setup makes it easy to share your `requirements.txt` file and configuration with other users, ensuring they can reproduce the same environment without modifying their local libraries.
+
+## Configuration File Structure
+
+Here is an example configuration file (`config.yaml`) with explanations for each section:
+
+```yaml
+docker: 
+  image_name: "python:latest"          # Docker image to use
+  working_dir: "/app"                  # Working directory inside the container
+
+libraries:
+  requirements_file: "requirements.txt"  # Path to requirements file name
+  path: "/path/to/your/libraries"        # Path to the requirements_file. 
+
+  # Or like this:
+  - name: "numpy" # Library name
+    version: "2.1.0" # Library Version (Optional)
+  - name: "pandas"
+    version: "1.3.3"
+
+pod:
+  version: "latest"                  # Pod version to use
+  use_single_pod: false              # Use a single pod (true) or multiple (false)
+  custom_pod_name: "my_custom_pod"   # Custom name for the pod
+
+custom_commands:
+  - name: "RUN"                      # Command to install packages within the container
+    command: "pip install {packages} --target /app/lib"
+  - name: "CMD"                      # Command to keep the container running
+    command: "[\"tail\", \"-f\", \"/dev/null\"]"
+
+mount:
+  host_mount_path: "/path/to/local/mount"  # Local path to mount
+  pod_mount_path: "/app/lib"               # Container path for mounting
+
+deployment:
+  deployment_mode: "stack"                # Deployment mode (stack or container)
+  stack_name: "my_docker_stack"           # Docker stack name
+  compose_file: "docker-compose.yml"      # Docker Compose file for stack deployment
+  retry_attempts: 3                       # 
+  retry_interval: 5                       #
+
+additional:
+  logging:
+    log_level: "INFO"                     # Log level (INFO, DEBUG, etc.)
+    log_path: "."                         # Log file storage path
+    log_file: "log.txt"                   # Name of the log file
+```
+### Explanation of Each Section
+
+#### Docker
+
+- **`image_name`**: Specifies the Docker image to be used for creating the container.
+- **`working_dir`**: Defines the working directory inside the container where the application will reside.
+
+#### Libraries
+
+- **`requirements_file`**: Name the requirements_file. Mostly people use the `requirements.txt` but if you want to another name you can specified it.
+- **`path`**: Directory containing additional library files for requirements_file. If path not spesified library search the current working directory.
+- **Library List**: Optionally, individual libraries can be listed with their respective versions. If you don't want to use requirements.txt use this.
+
+#### Pod
+
+- **`version`**: Version of the pod build.
+- **`use_single_pod`**: Determines whether a single pod should be used (`true`) or multiple pods (`false`).
+- **`custom_pod_name`**: Assign a custom name to the single pod if needed.
+
+#### Custom Commands
+
+- This addind the lines for Dockerfile. If you want to use `ENV` or another Docker options you can add the custom command section.
+
+#### Mount
+
+- **`host_mount_path`**: Path on the host system to mount inside the container.
+- **`pod_mount_path`**: Target path inside the container where the host path is mounted.
+
+#### Deployment (Optinal)
+
+- **`deployment_mode`**: Choose between `stack` or `compose` deployment. Default is `compose`.
+- **`stack_name`**: The name assigned to the Docker stack when deployed in stack mode. Default is `my_stack`.
+- **`compose_file`**: Is You want to add a spesific exept docker-compose.yml use this. Default is `docker-compose.yml`.
+- **`retry_attempts`**:
+- **`retry_interval`**:
+
+#### Additional
+
+- **Logging Configuration**
+  - **`log_level`**: Logging level (e.g., `INFO`, `DEBUG`). If You dont want to use if Use `FATAL`.
+  - **`log_path`**: Path where log files will be stored.
+  - **`log_file`**: Name of the log file.
+
+
+## Usage
+
+1. Create and customize the configuration file (`config.yaml`) as needed on your current working directory.
+2. Initialize Python Pod Manager and run the application in the pod.
+
+### Example
+
+Use the following script to set up and manage a specific application within the pod.
+
+```python
+from pypodman import DockerManagerApp, AppManager
+
+# Initialize and run the pod
+app = DockerManagerApp()
+app.run()
+
+# Start the application
+AppManager().start_app()
+
+# Import and use required libraries as usual
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+from sklearn.decomposition import PCA
+
+class IrisDataAnalysis:
+    # Application code using libraries in the pod environment
+    def __init__(self):
+        self.data = load_iris()
+        self.df = pd.DataFrame(data=self.data.data, columns=self.data.feature_names)
+        self.df['target'] = self.data.target
+        self.pca_result = None
+        self.n_components = 2
+
+    def summarize_data(self):
+        print("Summary of the Iris dataset:")
+        print(self.df.describe())
+
+    def draw_pairplot(self):
+        sns.set_theme(style="ticks")
+        sns.pairplot(self.df, hue="target", palette="husl", markers=["o", "s", "D"])
+        plt.suptitle('Iris Pair Plot', y=1.02)
+        plt.show()
+
+    def apply_pca(self):
+        pca = PCA(n_components=self.n_components)
+        self.pca_result = pca.fit_transform(self.df.iloc[:, :-1])  # Exclude target column
+        self.df['pca_one'] = self.pca_result[:, 0]
+        self.df['pca_two'] = self.pca_result[:, 1]
+
+    def plot_pca_result(self):
+        if self.pca_result is None:
+            print("PCA has not been applied yet. Call the 'apply_pca()' method first.")
+            return
+
+        plt.figure(figsize=(8, 6))
+        sns.scatterplot(x="pca_one", y="pca_two", hue="target", palette="deep", data=self.df, s=100)
+        plt.title("PCA on Iris Dataset")
+        plt.xlabel("PCA One")
+        plt.ylabel("PCA Two")
+        plt.legend(title='Target')
+        plt.show()
+
+    def display_correlation_heatmap(self):
+        plt.figure(figsize=(10, 6))
+        corr = self.df.iloc[:, :-3].corr()  # Exclude PCA columns and target for correlation
+        sns.heatmap(corr, annot=True, cmap='coolwarm', linewidths=0.5)
+        plt.title("Correlation Heatmap of Iris Dataset")
+        plt.show()
+
+if __name__ == "__main__":
+    iris_analysis = IrisDataAnalysis()
+    iris_analysis.summarize_data()
+    iris_analysis.draw_pairplot()
+    iris_analysis.apply_pca()
+    iris_analysis.plot_pca_result()
+    iris_analysis.display_correlation_heatmap()
+```
+
+### Benefits of Using a Pod
+
+- **Dependency Isolation**: The specified libraries are installed inside the pod, so there is no need to install or uninstall them on your local machine.
+- **Easy Sharing**: Share the `requirements.txt` file and configuration with other users. They can reproduce the same environment without affecting their own library versions.
+- **Seamless Operation**: With the pod set up, you only need to run the code as usual without worrying about environment issues on the host machine.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
