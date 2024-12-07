@@ -1,0 +1,15 @@
+audiorename/__init__.py,sha256=BVbLw9oPrT_7kFQScS-tRO0HzjKqPW9N8hDfhZ_txZo,1026
+audiorename/args.py,sha256=EUzz826er8rgoG7v02gREWBS8GPNOdAlGT3ksXfDQB8,21888
+audiorename/audiofile.py,sha256=BXFhVAxrzR8l3mT8qbmF4tAP60ETVpkYKEvn1HuQXUM,14203
+audiorename/batch.py,sha256=HgE-4FzdgA2mXtgaAfnGJ1t5WR69uFl74Srgy6JbEcI,4282
+audiorename/example-config.ini,sha256=Lyaao6X9mqyk4cPVLYXXN4aXfTwjM8g6Et9MoDCJ5ME,1652
+audiorename/job.py,sha256=2wI1AW8WHzZMHXhLPWBcOZbEyDnJpwphpIZaOpj0I6o,17131
+audiorename/message.py,sha256=ylCWvJvofTd_FpyxLbUVCQ2ub-zn08GR_q4d87Aymx4,6081
+audiorename/meta.py,sha256=A2KGfJt6hWuNrcL97tS2snTXwyWfxYk42OOI3NBxQL4,21749
+audiorename/musicbrainz.py,sha256=MwTfNOjO8ePForgKvVtfYa1AfbMPsUwT0ZrkIhEtPjw,9549
+audiorename/utils.py,sha256=cp-CdenbDIhd5FzmEDNGqUUTwSvIHL-qGKGCaOB71GQ,161
+audiorename-4.0.0.dist-info/LICENSE,sha256=kHO7bBfoGJ9NwaWFvhCvAx6yCSSEsbnzmuxeYNp_vQQ,1096
+audiorename-4.0.0.dist-info/METADATA,sha256=ZAQnC04FGKAek2pugrC61wbDHVvt0audhWvtL6y7SYs,54776
+audiorename-4.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+audiorename-4.0.0.dist-info/entry_points.txt,sha256=-1pDKZI7MOuSF2SRzrs-6JO77ee9pxesbqrCxX7VJvI,52
+audiorename-4.0.0.dist-info/RECORD,,
