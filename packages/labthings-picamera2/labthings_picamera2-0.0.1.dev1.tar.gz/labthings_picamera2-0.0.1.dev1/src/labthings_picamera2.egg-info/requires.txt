@@ -1,0 +1,7 @@
+picamera2~=0.3.12
+labthings-fastapi>=0.0.6
+numpy
+scipy
+
+[dev]
+labthings-fastapi[dev,server]
