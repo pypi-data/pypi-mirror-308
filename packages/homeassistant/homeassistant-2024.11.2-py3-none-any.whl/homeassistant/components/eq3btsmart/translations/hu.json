@@ -1,0 +1,29 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "invalid_mac_address": "\u00c9rv\u00e9nytelen MAC-c\u00edm"
+        },
+        "flow_title": "eQ-3 Eszk\u00f6z [{mac}]",
+        "step": {
+            "init": {
+                "title": "\u00daj eQ-3 eszk\u00f6z konfigur\u00e1l\u00e1sa"
+            },
+            "user": {
+                "data": {
+                    "mac": "MAC-c\u00edm"
+                },
+                "title": "\u00daj eQ-3 eszk\u00f6z konfigur\u00e1l\u00e1sa"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "dst": {
+                "name": "Ny\u00e1ri id\u0151sz\u00e1m\u00edt\u00e1s"
+            }
+        }
+    }
+}
