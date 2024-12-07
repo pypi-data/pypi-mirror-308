@@ -1,0 +1,13 @@
+dbackup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbackup/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+dbackup/apps.py,sha256=kLNU4f_NoWc-K_2rLSDaiS8cRCoI_bpKm7yRpyyovXQ,152
+dbackup/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+dbackup/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+dbackup/views.py,sha256=u0FhL7RT5byf5IlcnZEMrcH2TOnQkdfRQU2SjtA26m0,66
+dbackup/management/commands/dumpdatautf8.py,sha256=iSdiaRJZoQhcREaV5indMOLdQ1C8N8FMiS89_070lJ4,2211
+dbackup/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbackup-1.0.1.dist-info/LICENSE,sha256=UcO0-cnSVfYdd9ncazk8ZJBRPDVmaGHwihMWYL3ceQI,1088
+dbackup-1.0.1.dist-info/METADATA,sha256=HVDAVPJHUPD9kZt_759yeXjRFxyJekTNk9ZuKQ0lNeA,2234
+dbackup-1.0.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+dbackup-1.0.1.dist-info/top_level.txt,sha256=ZkMTw5WI5MjXh83QBwgrPXe28W8J2DC3HTP9yaoQrU8,8
+dbackup-1.0.1.dist-info/RECORD,,
