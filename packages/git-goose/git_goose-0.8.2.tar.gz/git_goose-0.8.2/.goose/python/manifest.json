@@ -1,0 +1,1 @@
+{"source_ecosystem":{"language":"python","version":"3.13"},"source_dependencies":["pip-audit","pre-commit-hooks","ruff"],"lock_files":[{"path":"requirements.txt","checksum":"sha256:2cc12804e5aea410523f26a8b92266ebe2aba98bf260751ba28d3a8500b1c84f"}],"checksum":"sha256:144623a17cc348be0378a064ebd5f91ac1ddb12eef803344fe2b14767844fc44"}
