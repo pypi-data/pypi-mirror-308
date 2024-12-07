@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anirudhp-audio-similarity"
+version = "0.1.0" 
+description = "A package for audio similarity analysis"
+readme = "README.md"
+authors = [
+    { name = "Anirudh Praveen", email = "anirudhpraveen2000@gmail.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "numpy",
+    "scipy",
+]
+
+[project.optional-dependencies]
+cpu = [
+    "faiss-cpu>=1.7.0",
+]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "flake8",
+    "black",
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["audio_similarity"]
+include = [
+    "audio_similarity/*.py",
+    "audio_similarity/__pycache__",
+    "audio_similarity/_pycache_/*.pyc",
+    "audio_similarity/_pycache_/*.pyx",
+    "audio_similarity/*.cpython-310.pyc",
+    "audio_similarity/*.cpython-312.pyc"
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build]
+artifacts = [
+    "audio_similarity/*.pyc",
+    "audio_similarity/*.pyx",
+    "audio_similarity/*.so"
+]
