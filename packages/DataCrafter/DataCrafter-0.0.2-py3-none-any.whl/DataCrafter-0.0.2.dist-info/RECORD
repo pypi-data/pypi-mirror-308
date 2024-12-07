@@ -1,0 +1,10 @@
+DataCrafter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DataCrafter/document_loaders.py,sha256=dfn_ip0wxbd3i5iZL-A485M9fIqL8ogkj6Z0DKOQaVE,2420
+DataCrafter/prompt_loaders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DataCrafter/text_extarcters.py,sha256=sQ1lzsgEzKqqhpv3ETVJ1OFR12CuULlIBB-8D_ksFiI,6571
+DataCrafter/text_spliters.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DataCrafter/utlis.py,sha256=b1hq8iy2jcDA9Ya_PYFVPOrWiBiL5y1PsFDRAKpbkaA,493
+DataCrafter-0.0.2.dist-info/METADATA,sha256=evJn4eQO1g3In0a2YpFnMHqFJV6fZQrMd6kXHhZTz-o,467
+DataCrafter-0.0.2.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+DataCrafter-0.0.2.dist-info/top_level.txt,sha256=BvOshedxwZERCr_ZyzuvZPJzh60fjWrZOXo9EriQobU,12
+DataCrafter-0.0.2.dist-info/RECORD,,
