@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fnet_test_pip
+Version: 0.1.1
+Requires-Python: >=3.12
+Requires-Dist: pyfiglet
+Requires-Dist: gradio

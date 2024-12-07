@@ -1,0 +1,3 @@
+fnet_test_pip
+fnet_test_pip/cli
+fnet_test_pip/lib
