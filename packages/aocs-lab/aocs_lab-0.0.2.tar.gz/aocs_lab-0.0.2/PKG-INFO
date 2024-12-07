@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: aocs_lab
+Version: 0.0.2
+Summary: A small example package
+Author-email: wz <wzhmwz@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+姿轨控工具箱
