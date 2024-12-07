@@ -1,0 +1,7 @@
+main.py
+setup.py
+sphinx_rdt_theme.egg-info/PKG-INFO
+sphinx_rdt_theme.egg-info/SOURCES.txt
+sphinx_rdt_theme.egg-info/dependency_links.txt
+sphinx_rdt_theme.egg-info/requires.txt
+sphinx_rdt_theme.egg-info/top_level.txt
