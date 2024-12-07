@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: valteci
+Version: 0.0.1
+Summary: it's me!
+Project-URL: Homepage, https://pypi.org/project/valteci/
+Project-URL: My_profile, https://pypi.org/user/valteci/
+Project-URL: Github, https://github.com/valteci
+Author-email: valteci <valtecijunior@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<h1>You've found me!!</h1>

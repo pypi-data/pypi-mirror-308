@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "valteci" #nome da sua lib
+version = "0.0.1" # versão da lib
+authors = [
+  { name="valteci", email="valtecijunior@gmail.com" },
+]
+description = "it's me!"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/valteci/"
+My_profile = "https://pypi.org/user/valteci/"
+Github = "https://github.com/valteci"
