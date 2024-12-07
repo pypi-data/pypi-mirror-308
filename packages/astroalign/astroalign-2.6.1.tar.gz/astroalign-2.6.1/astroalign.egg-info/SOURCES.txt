@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+astroalign.py
+pyproject.toml
+astroalign.egg-info/PKG-INFO
+astroalign.egg-info/SOURCES.txt
+astroalign.egg-info/dependency_links.txt
+astroalign.egg-info/requires.txt
+astroalign.egg-info/top_level.txt
+docs/aa_bw.jpg
+docs/images/logo-inline-dark-light.png
+docs/images/logo-seal-dark-light.png
+tests/test_align.py

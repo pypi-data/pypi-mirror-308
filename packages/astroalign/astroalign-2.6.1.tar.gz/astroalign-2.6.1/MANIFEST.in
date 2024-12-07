@@ -1,0 +1,4 @@
+# Include logo file for README
+include docs/aa_bw.jpg
+include docs/images/logo-inline-dark-light.png
+include docs/images/logo-seal-dark-light.png
