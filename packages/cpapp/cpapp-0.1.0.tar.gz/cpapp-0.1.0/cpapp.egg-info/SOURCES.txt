@@ -1,0 +1,9 @@
+README.md
+setup.py
+cpapp/__init__.py
+cpapp/main.py
+cpapp.egg-info/PKG-INFO
+cpapp.egg-info/SOURCES.txt
+cpapp.egg-info/dependency_links.txt
+cpapp.egg-info/entry_points.txt
+cpapp.egg-info/top_level.txt
