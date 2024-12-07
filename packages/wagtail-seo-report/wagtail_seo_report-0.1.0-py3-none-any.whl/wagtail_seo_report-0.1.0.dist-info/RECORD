@@ -1,0 +1,12 @@
+wagtail_seo_report/__init__.py,sha256=uuPXB-tLYaGCLj5yLLnVP1Dea_l8KFhgZWj7PVV7bZ0,425
+wagtail_seo_report/settings.py,sha256=ro8nqEVVNVufETmOehSSRELry0Thm5swWgGggxpeXPo,233
+wagtail_seo_report/views.py,sha256=4AkiW3F1QBAzS_y3dEMIP98Xqs4Z3m9oFcp7MuzkHyI,4861
+wagtail_seo_report/wagtail_hooks.py,sha256=6p3g4HHSJHzAzYZtBn62q00kMfWNtFJNdK8VYMWo6rU,1112
+wagtail_seo_report/static/wagtail_seo_report/core.css,sha256=Gf_v4mi5Z2CZKP8l2HJqNSopSb-WSs3c_GfHlvHBATs,87
+wagtail_seo_report/templates/wagtail_seo_report/seo_score_report_results.html,sha256=yCtpZYWBmci2-JZpdH3rDLnQYcylqu-LZqKGEDFqiww,212
+wagtail_seo_report/templates/wagtail_seo_report/wagtail_seo_report.svg,sha256=XEvb7Q2eA1aRGQDBDZ4ftWIlIBkZo2nK0Ygk6e1klr4,648
+wagtail_seo_report/templates/wagtail_seo_report/listing/_list_seo_page_report.html,sha256=lqc35LBm_t2JFh_ZaNaq2KWeUoDlS_BC97Ac3fWIrBI,5390
+wagtail_seo_report-0.1.0.dist-info/METADATA,sha256=VyZZdKMBujpoz9VPRYEglmBX3--qT9AJo9em2RihNxk,612
+wagtail_seo_report-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+wagtail_seo_report-0.1.0.dist-info/top_level.txt,sha256=inOBOpBPdwDuOF5Dnb3PdQpvuh8gxS6ayQCRvT64rKE,19
+wagtail_seo_report-0.1.0.dist-info/RECORD,,
