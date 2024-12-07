@@ -1,0 +1,12 @@
+Django>=4.2.10
+artd-customer>=1.0.16
+artd-location>=1.0.5
+artd-modules>=1.0.5
+artd-partner>=1.0.7
+artd-product>=1.0.20
+artd-service>=1.0.5
+artd-urls>=1.0.5
+artd_promotion>=1.0.16
+django-json-widget>=2.0.1
+pillow>=10.4.0
+django-autocomplete-light>=3.11.0
