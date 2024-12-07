@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: shodo
+Version: 1.1.0
+Summary: Shodo Python CLI
+Home-page: https://github.com/zenproducts/shodo-python
+Author: ZenProducts Inc.
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: requests
+Provides-Extra: async
+Requires-Dist: aiohttp ; extra == 'async'
+Provides-Extra: dev
+Requires-Dist: aioresponses ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-responses ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+
+# Shodo Python
+
+The Shodo Python help you, lint Japanese text and download posts and images.
+
+## Installation
+
+Normal installation provides only Shodo Python CLI. To use the Shodo Python CLI.  
+Install Shodo Python CLI using pip:
+
+```bash
+$ pip install shodo
+```
+
+Or, to include the optional asyncio support for programming, use:
+
+```bash
+$ pip install shodo[async]
+```
+
+## Usage
+
+Installing the CLI provides access to the `shodo` command.
+
+```bash
+$ shodo [COMMAND]
+
+# Run `--help` for more information about CLI commands
+$ shodo [COMMAND] --help
+```
+
+## Commands
+
+The Shodo Python CLI provides the following commands:
+
+* [`login`](https://developer.shodo.ink/docs/shodo-cli-reference#shodo-login)
+* [`lint`](https://developer.shodo.ink/docs/shodo-cli-reference#shodo-lint)
+* [`download`](https://developer.shodo.ink/docs/shodo-cli-reference#shodo-download)
+
+## Documentation
+
+For additional information, please refer to the [Shodo Python CLI documentation](https://developer.shodo.ink/docs/shodo-cli-reference).
