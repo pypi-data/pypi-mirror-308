@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mlffbrew
+Version: 0.0.1
+Summary: Package for brewing the machine learning force field.
+Home-page: https://github.com/minu928/mlffbrew
+Author: Minwoo Kim
+Author-email: minu928@snu.ac.kr
+Keywords: MachineLearningForceField,MolecularDynamics,DensityFunctionalTheory
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy<2.0.0,>=1.22.3
+Requires-Dist: atombrew>=0.0.9
