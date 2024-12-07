@@ -1,0 +1,8 @@
+lvfs_mirror/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lvfs_mirror/lvfs_mirror.py,sha256=OFm8YbD92ymO786TNXIqQ3lisYaDZLgoO0wr4p2UBhY,21026
+lvfs_mirror/utils.py,sha256=1mCu3UkLAmlwfr_bTOsbJ05ktb8YYMUq72m4xepUNHU,2980
+lvfs_mirror-0.1.0.dist-info/LICENSE.txt,sha256=1hLGBlHOzhTfCZWQIw-JwjHjoian-o566UPOyDdgXAI,1073
+lvfs_mirror-0.1.0.dist-info/METADATA,sha256=nJjiaRBxERvFZhxKIBD-XaijYPLqIlKy1-NyYveCado,1258
+lvfs_mirror-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lvfs_mirror-0.1.0.dist-info/entry_points.txt,sha256=jdw01sU4EoFt-m9WLdlxxJZdOQrA0uAsNy6_cFgc9KE,60
+lvfs_mirror-0.1.0.dist-info/RECORD,,
