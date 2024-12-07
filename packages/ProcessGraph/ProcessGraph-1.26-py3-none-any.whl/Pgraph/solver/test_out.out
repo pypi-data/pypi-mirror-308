@@ -1,0 +1,24 @@
+Materials(3):
+M1, M2, M3
+Operating units(2):
+O1, O2
+
+Maximal Structure:
+Materials(3):
+M1, M2, M3
+Operating units(2):
+O1, O2
+
+Solution structure #1:
+Materials(2):
+M1, M2
+Operating units(1):
+O1
+
+Solution structure #2:
+Materials(2):
+M1, M3
+Operating units(1):
+O2
+
+End.
