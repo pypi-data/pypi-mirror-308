@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - "*.*.x"
+    tags:
+      - '*'
+  pull_request:
+  schedule:
+    # Weekly Monday 9AM build
+    # * is a special character in YAML so you have to quote this string
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+
+jobs:
+  test:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@924441154cf3053034c6513d5e06c69d262fb9a6  # v1.13.0
+    with:
+      envs: |
+        - linux: py310-oldestdeps-cov
+          coverage: codecov
+        - linux: py310
+        - linux: py311-cov
+          coverage: codecov
+        - linux: py312
+        - linux: py313
+        - macos: py311
+  test_upstream:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@924441154cf3053034c6513d5e06c69d262fb9a6  # v1.13.0
+    with:
+      envs: |
+        - linux: rad
+  test_with_romancal:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@924441154cf3053034c6513d5e06c69d262fb9a6  # v1.13.0
+    with:
+      envs: |
+        - linux: withromancal
+          coverage: codecov
