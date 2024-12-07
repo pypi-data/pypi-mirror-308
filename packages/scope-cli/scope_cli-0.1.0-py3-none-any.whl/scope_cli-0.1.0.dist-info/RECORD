@@ -1,0 +1,9 @@
+scope/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+scope/dir_size.py,sha256=9MIFYzBQwcpRHm1bYAv6sZo4aF4uLNwmHnbYAOfBl54,901
+scope/main.py,sha256=n57V4uX5rpJenXi0PKvZ4tuA72EzdkdBhXcq7jxd-Nc,591
+scope/port_checker.py,sha256=QA-vhkxpr3bA1CcoR2KqW0dQLxX_0EfzRZHZsyWJTmA,1841
+scope_cli-0.1.0.dist-info/METADATA,sha256=B5AhBLQTSL90zuCoxTzP73-doStJf9PFRQkTEyWy-Ww,886
+scope_cli-0.1.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+scope_cli-0.1.0.dist-info/entry_points.txt,sha256=h5PJtQVcTXgbKS4N5QGbc5hT0WB1kqGEABALoy8z9dc,46
+scope_cli-0.1.0.dist-info/top_level.txt,sha256=2CM6KU4wKPVS0iGdr72fQXzMA5Vn0U5FzuzOYCYth_8,6
+scope_cli-0.1.0.dist-info/RECORD,,
