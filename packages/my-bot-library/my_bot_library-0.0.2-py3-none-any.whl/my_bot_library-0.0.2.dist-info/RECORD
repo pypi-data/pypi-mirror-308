@@ -1,0 +1,16 @@
+andromeda/__init__.py,sha256=uIldDTxMJRVtP1e4TbLJ1HNCi9sVtfbDkdmmkC7oAm4,79
+andromeda/andromeda_app.py,sha256=YmoWAPY0m_0V01NncO2-AuCaFcBnQ6IgnbsEqbhIz1w,53859
+andromeda/config.py,sha256=infAGfrXC9TK_jFz0ClLwa442LCGwbEdweql2V8gzsY,3222
+andromeda/connect_db.py,sha256=bMLks_fSDmF_g290HD17q2tw5ABd9HyvkLFsWsesRa4,1933
+andromeda/graphql.py,sha256=Q0HO02fTjbq0VqTMjl2gWfOmFvbUCzR1JfLnDRXwyS8,18634
+andromeda/logger.py,sha256=FesRzOXnyYFAhiN2GE1ea2zFN6xebOf0kNz8viB4QIQ,1021
+andromeda/logger_function.py,sha256=FesRzOXnyYFAhiN2GE1ea2zFN6xebOf0kNz8viB4QIQ,1021
+andromeda/storage.py,sha256=D9LsieRkqIj-FxAUkx-EXtlnLmovQIql-3OXKEGLBr4,5165
+andromeda/tenant_details_functions.py,sha256=_jynvk6BWB3LxTv5mLwkcegRg0bawCvk731NhrjrX3o,1993
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_graphql_functions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_bot_library-0.0.2.dist-info/LICENSE.txt,sha256=iU6n32pkZDVcQH_o1_yNyvi3P6WBYecogpEwQcmK0W0,1056
+my_bot_library-0.0.2.dist-info/METADATA,sha256=2gtdFglJiItEjUd9cDt5b1z8BYb0CGgoEhJgIRERXHw,319
+my_bot_library-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+my_bot_library-0.0.2.dist-info/top_level.txt,sha256=vf5hbWIn15HUw7wnOi1OQFtMwmjgEc54GaMKEtU3Pg0,16
+my_bot_library-0.0.2.dist-info/RECORD,,
