@@ -1,0 +1,84 @@
+# 姿轨控工具箱
+
+当前功能
+
+1. 回归圈数分析
+2. SAR 天线受照分析
+3. 偏置对日分析
+4. 星敏布局分析
+5. 光照阴影分析
+6. 对日转对地过程的能源情况
+7. 阳照区时间分析
+8. F10.7 分析
+9. 衰减率计算
+10. 等效迎风面面积
+11. 星敏失效时间分析
+12. 飞轮惯滑时间计算
+13. Python 驱动 STK
+14. 星敏精测数据处理
+
+
+## 回归圈数分析
+
+![alt text](https://i.postimg.cc/rwys18wF/image.png)
+
+## SAR 天线受照分析
+
+![alt text](https://i.postimg.cc/8c8sMMjq/07b726e3-adbe-4110-91e6-374c52536e0c.png)
+
+## 偏置对日分析
+
+![alt text](https://i.postimg.cc/vHtDx1MN/beb2cc20-1e08-4764-8d2d-fa639751145d.png)
+
+## 星敏布局分析
+
+![alt text](https://i.postimg.cc/GpHpfqDW/image-1.png)
+
+## 光照阴影分析
+
+## 对日转对地过程的能源情况
+
+## 阳照区时间分析
+
+![alt text](https://i.postimg.cc/XNFr3HP3/b2d38290-2901-4392-83c5-190958959a8d.png)
+
+## F10.7 分析
+
+![alt text](https://i.postimg.cc/j5nLDZdH/3cce67ab-0b2e-469f-a6e5-ee13b9b8874d.png)
+
+## 衰减率计算
+
+## 等效迎风面面积
+
+![alt text](https://i.postimg.cc/sDrv2PFW/977604f2-567a-492a-a0db-02f48094ef5b.png)
+
+## 星敏失效时间分析
+
+![alt text](https://i.postimg.cc/hv9vrvmh/589514ff-5b7a-4dbf-8748-22a92947639c.png)
+
+## 飞轮惯滑时间计算
+
+## Python 驱动 STK
+
+## 精测数据处理
+
+处理结果保存为文件
+
+```
+卫星编号 C01:
+// 星敏 A:
+GsStaSetPosQuat(
+GS_CID_A,
+0.424587963520591,
+0.9053795074485957,
+0.0006712855388058576,
+0.0035437411447349332);
+
+// 星敏 B:
+GsStaSetPosQuat(
+GS_CID_B,
+-0.42665547537952286,
+0.9044132407052698,
+4.4836152554984394e-05,
+0.0013391621949117108);
+```
