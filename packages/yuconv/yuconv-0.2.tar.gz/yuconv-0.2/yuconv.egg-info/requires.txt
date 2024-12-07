@@ -1,0 +1,2 @@
+srtools
+python-docx
