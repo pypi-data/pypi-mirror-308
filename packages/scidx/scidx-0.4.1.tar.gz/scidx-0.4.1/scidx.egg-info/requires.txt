@@ -1,0 +1,11 @@
+aiokafka
+pytest
+pytest-asyncio
+pytest-env
+pytest-order
+python-dateutil
+requests
+
+[staging]
+dxspaces>=0.0.6
+numpy
