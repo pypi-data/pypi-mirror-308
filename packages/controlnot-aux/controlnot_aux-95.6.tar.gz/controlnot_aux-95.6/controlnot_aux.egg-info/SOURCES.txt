@@ -1,0 +1,7 @@
+main.py
+setup.py
+controlnot_aux.egg-info/PKG-INFO
+controlnot_aux.egg-info/SOURCES.txt
+controlnot_aux.egg-info/dependency_links.txt
+controlnot_aux.egg-info/requires.txt
+controlnot_aux.egg-info/top_level.txt
