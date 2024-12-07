@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: skyfetch
+Version: 0.0.1
+Summary: Python Library API tool to get weather data from publicly available sources
+Home-page: https://gitlab.com/rottenapplesalt/skyfetch
+License: MIT
+Author: Noa
+Author-email: rottenapplesalt@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Documentation, https://gitlab.com/rottenapplesalt/skyfetch/-/wikis/home
+Project-URL: Repository, https://gitlab.com/rottenapplesalt/skyfetch
+Description-Content-Type: text/markdown
+
+hi
