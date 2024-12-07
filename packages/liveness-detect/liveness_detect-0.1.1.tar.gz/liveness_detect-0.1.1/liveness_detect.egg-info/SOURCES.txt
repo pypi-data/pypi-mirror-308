@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+liveness_detect.egg-info/PKG-INFO
+liveness_detect.egg-info/SOURCES.txt
+liveness_detect.egg-info/dependency_links.txt
+liveness_detect.egg-info/requires.txt
+liveness_detect.egg-info/top_level.txt
+tests/test_sdk.py
