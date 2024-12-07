@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+ismail_rocket_aissaoui_group_3_aisd.egg-info/PKG-INFO
+ismail_rocket_aissaoui_group_3_aisd.egg-info/SOURCES.txt
+ismail_rocket_aissaoui_group_3_aisd.egg-info/dependency_links.txt
+ismail_rocket_aissaoui_group_3_aisd.egg-info/requires.txt
+ismail_rocket_aissaoui_group_3_aisd.egg-info/top_level.txt
+rocket/__init__.py
+rocket/rocket.py
