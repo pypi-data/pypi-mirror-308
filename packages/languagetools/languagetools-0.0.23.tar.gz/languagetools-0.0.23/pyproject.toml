@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "languagetools"
+version = "0.0.23"
+description = "Tools for language models"
+authors = ["Killian Lucas <killian@openinterpreter.com>"]
+license = "All Rights Reserved"
+readme = "README.md"
+packages = [{include = "computer"}]
+
+[tool.poetry.dependencies]
+# These packages are mandatory and form the core of this package’s distribution.
+python = "^3.10"
+openai = "^1.46.0"
+requests = "^2.32.3"
+html2text = "^2024.2.26"
+webdriver-manager = "^4.0.2"
+ipython = "^8.27.0"
+pillow = ">=10.3.0,<11.0.0"
+html2image = "^2.0.5"
+pyperclip = "^1.9.0"
+pyautogui = "^0.9.54"
+playwright = "^1.47.0"
+pytz = "^2024.2"
+pyobjc = "^10.3.1"
+yt-dlp = {extras = ["default"], version = "^2024.11.4"}
+moviepy = "^1.0.3"
+pypdf2 = "^3.0.1"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
