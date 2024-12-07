@@ -1,0 +1,6 @@
+setup.py
+testproject1999/__init__.py
+testproject1999.egg-info/PKG-INFO
+testproject1999.egg-info/SOURCES.txt
+testproject1999.egg-info/dependency_links.txt
+testproject1999.egg-info/top_level.txt
