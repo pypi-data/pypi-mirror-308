@@ -1,0 +1,3 @@
+pip install build twine
+python -m build
+twine upload dist/* -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDdkMDBjZTZjLTBlOWYtNDIzYS1iOTg0LTg5ZmJmZWI0NGQ1OAACKlszLCIxMzUxOWJkYy0yMWFmLTQ0ZWEtYmJhMC0wNTFhOWIwMTBjNGMiXQAABiD_pB8dJlgH10sVFM2Od5PKoNZh5Z6Deu76M1agokQPUg
