@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+log2telegram/log2telegram.egg-info/PKG-INFO
+log2telegram/log2telegram.egg-info/SOURCES.txt
+log2telegram/log2telegram.egg-info/dependency_links.txt
+log2telegram/log2telegram.egg-info/entry_points.txt
+log2telegram/log2telegram.egg-info/requires.txt
+log2telegram/log2telegram.egg-info/top_level.txt
