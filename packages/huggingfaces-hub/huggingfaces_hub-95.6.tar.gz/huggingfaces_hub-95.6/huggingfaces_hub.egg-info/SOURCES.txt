@@ -1,0 +1,7 @@
+main.py
+setup.py
+huggingfaces_hub.egg-info/PKG-INFO
+huggingfaces_hub.egg-info/SOURCES.txt
+huggingfaces_hub.egg-info/dependency_links.txt
+huggingfaces_hub.egg-info/requires.txt
+huggingfaces_hub.egg-info/top_level.txt
