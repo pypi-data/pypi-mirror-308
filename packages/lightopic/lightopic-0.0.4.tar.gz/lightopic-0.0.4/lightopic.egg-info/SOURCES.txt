@@ -1,0 +1,29 @@
+ requirements-dev.txt
+ requirements.txt
+.gitignore
+.pre-commit-config.yaml
+.readthedocs.yaml
+Makefile
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup_project
+uv.lock
+.github/workflows/publish-to-pypi.yml
+docs/Makefile
+docs/conf.py
+docs/index.md
+docs/make.bat
+docs/requirements.txt
+lightopic/__init__.py
+lightopic/_lightopic.py
+lightopic/_version.py
+lightopic/lightbertopic.py
+lightopic.egg-info/PKG-INFO
+lightopic.egg-info/SOURCES.txt
+lightopic.egg-info/dependency_links.txt
+lightopic.egg-info/requires.txt
+lightopic.egg-info/top_level.txt
+tests/conftest.py
+tests/test_lightbertopic.py
