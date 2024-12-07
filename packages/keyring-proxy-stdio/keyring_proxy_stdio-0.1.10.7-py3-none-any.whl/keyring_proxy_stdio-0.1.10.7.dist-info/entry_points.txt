@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[keyring.backends]
+StdioProxyBackend = keyring_proxy_stdio:StdioProxyBackend
+
