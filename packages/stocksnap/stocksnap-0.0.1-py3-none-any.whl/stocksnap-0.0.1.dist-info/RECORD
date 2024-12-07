@@ -1,0 +1,15 @@
+stocksnap/__init__.py,sha256=CHAr5tppcK1h3jBXocs11WHMArph7q_Qda_bEcq5e-0,32
+stocksnap/stocksnap.py,sha256=VbHdAz2N33ECvsWIZrK7sDQ-jO1W1x3P6slQQSGqrhs,1274
+stocksnap/assets/bse_indices_list.json,sha256=RQHm4hGo5vQ-6butcQieS4xxQdLqSNf_ahVmhOy7c5A,152
+stocksnap/assets/global_indices_list.json,sha256=uYSi93gGx7Ntz-wDbLATwFWQLeDSSDLd7APLauXL96E,629
+stocksnap/assets/nasdaq_company_list.json,sha256=y3igyQpLnHoEGRjYq4dJYBqxBhuOYFCrXm0jtA_ZNUI,169411
+stocksnap/assets/nse_company_list.json,sha256=iuIm5gEaWVxpLyhJNWCU6zs_EQfT_OJ3j3ubxE2UfwM,74375
+stocksnap/assets/nse_indices_list.json,sha256=NttBdpybr8BA3beQuY7m_QmcJglLey2cpOasWh0ZvKk,662
+stocksnap/assets/nyse_company_list.json,sha256=s8gxal4lW9sdZAvi7sB43o5ae5rmuZIVYkIO4Ll_Qu8,84589
+stocksnap/util/__init__.py,sha256=rHpuAgf32fwvS7EE3Z5IvtIh408Y2mzl4DRSkzop3ho,39
+stocksnap/util/google_finance_extraction.py,sha256=QM3i18q838vGd-6y3hfxajbeGzns2jScxaFryv79OUM,4943
+stocksnap/util/symbol_fetch.py,sha256=1U49hjoLf9MHANGS4Q-oKw7S_1hTPSAJaA9ZxoktYOM,1386
+stocksnap-0.0.1.dist-info/METADATA,sha256=16xyrHIdEeBjW-S37_kNcjZ153HsWejxYbtOm5RY-Pc,732
+stocksnap-0.0.1.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+stocksnap-0.0.1.dist-info/top_level.txt,sha256=N22zcRD7_Jsh17S7bxAtjQrs0-hLPbOf2XEAXMAa4_8,10
+stocksnap-0.0.1.dist-info/RECORD,,
