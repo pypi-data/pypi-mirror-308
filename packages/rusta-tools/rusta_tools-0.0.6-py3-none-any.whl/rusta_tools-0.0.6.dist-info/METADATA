@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: rusta_tools
+Version: 0.0.6
+Summary: Tools for scraping at Rusta
+Author-email: David Momeni <dav.momeni@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
