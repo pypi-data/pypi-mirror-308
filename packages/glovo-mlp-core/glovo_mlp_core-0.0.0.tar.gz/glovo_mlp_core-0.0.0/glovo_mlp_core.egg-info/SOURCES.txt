@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+glovo_mlp_core/__init__.py
+glovo_mlp_core.egg-info/PKG-INFO
+glovo_mlp_core.egg-info/SOURCES.txt
+glovo_mlp_core.egg-info/dependency_links.txt
+glovo_mlp_core.egg-info/top_level.txt
