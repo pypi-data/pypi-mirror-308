@@ -1,0 +1,2 @@
+[console_scripts]
+github-notifier = github_desktop_notifier.github_desktop_notifier:main
