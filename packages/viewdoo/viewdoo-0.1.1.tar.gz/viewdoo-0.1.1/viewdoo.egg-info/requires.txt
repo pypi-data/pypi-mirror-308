@@ -1,0 +1,11 @@
+matplotlib
+numpy
+pydicom
+opencv-python
+rt-utils
+scipy
+customtkinter
+nibabel
+pynrrd
+Pillow
+SimpleITK
