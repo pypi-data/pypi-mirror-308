@@ -1,0 +1,5 @@
+[console_scripts]
+keyring-proxy = keyring_proxy_cli:main
+
+[gui_scripts]
+
