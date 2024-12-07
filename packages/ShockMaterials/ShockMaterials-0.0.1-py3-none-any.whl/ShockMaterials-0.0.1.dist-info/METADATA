@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ShockMaterials
+Version: 0.0.1
+Summary: Package for holding properties of materials relevant to shock physics
+Author-email: Patrick LaChapelle <plachap1@jh.edu>, Salma Garcia <sgarci45@jh.edu>
+Project-URL: Homepage, https://github.com/wickslab/ShockMaterials
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ShockMaterials
+Package for storing properties of materials for shock experiments
