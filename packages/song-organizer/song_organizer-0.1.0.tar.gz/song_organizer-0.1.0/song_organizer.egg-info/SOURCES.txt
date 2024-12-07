@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+song_organizer/__init__.py
+song_organizer/__main__.py
+song_organizer/organizer.py
+song_organizer.egg-info/PKG-INFO
+song_organizer.egg-info/SOURCES.txt
+song_organizer.egg-info/dependency_links.txt
+song_organizer.egg-info/entry_points.txt
+song_organizer.egg-info/requires.txt
+song_organizer.egg-info/top_level.txt

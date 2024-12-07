@@ -1,0 +1,2 @@
+[console_scripts]
+song-organizer = song_organizer.__main__:main
