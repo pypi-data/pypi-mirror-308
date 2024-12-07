@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: agenteasy
+Version: 0.2.3
+Summary: An AI library for humans
+Author-email: Martin Lee <lyzmooc@163.com>
+Project-URL: Homepage, https://github.com/derMartinLi/agenteasy
+Project-URL: Issues, https://github.com/derMartinLi/agenteasy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: Jinja2
+Requires-Dist: tiktoken
+Provides-Extra: full
+Requires-Dist: redis[hiredis]; extra == "full"
+
+# Agenteasy
+<a href="https://pypi.org/project/agenteasy/">
+    <img src="https://img.shields.io/pypi/v/agenteasy"
+         alt="PyPI package version">
+  </a>
+<a href="https://dermartinli.github.io/agenteasy">
+    <img src="https://img.shields.io/badge/-documentation-blue"
+         alt="Documentation">
+</a>
+<a href="https://www.python.org">
+    <img src="https://img.shields.io/pypi/pyversions/agenteasy"
+         alt="Python versions">
+</a>
+<a href="https://github.com/derMartinLi/agenteasy/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/derMartinLi/agenteasy"
+         alt="GitHub license">
+  </a>
+</p>
+
+---
