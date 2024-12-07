@@ -1,0 +1,7 @@
+main.py
+setup.py
+typing_extension.egg-info/PKG-INFO
+typing_extension.egg-info/SOURCES.txt
+typing_extension.egg-info/dependency_links.txt
+typing_extension.egg-info/requires.txt
+typing_extension.egg-info/top_level.txt
