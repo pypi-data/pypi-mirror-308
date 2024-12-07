@@ -1,0 +1,3 @@
+[console_scripts]
+xulbux-help = XulbuX._cli_:help_command
+xx-help = XulbuX._cli_:help_command

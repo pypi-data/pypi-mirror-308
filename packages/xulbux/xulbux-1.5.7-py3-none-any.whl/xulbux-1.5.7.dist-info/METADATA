@@ -1,0 +1,101 @@
+Metadata-Version: 2.3
+Name: XulbuX
+Version: 1.5.7
+Summary: A library which includes a lot of really helpful functions.
+Project-URL: Homepage, https://github.com/XulbuX-dev/PythonLibraryXulbuX
+Project-URL: Bug Reports, https://github.com/XulbuX-dev/PythonLibraryXulbuX/issues
+Project-URL: Documentation, https://github.com/XulbuX-dev/PythonLibraryXulbuX/wiki
+Project-URL: Source Code, https://github.com/XulbuX-dev/PythonLibraryXulbuX/tree/main/src
+Project-URL: Changelog, https://github.com/XulbuX-dev/PythonLibraryXulbuX/blob/main/CHANGELOG.md
+Author-email: XulbuX <xulbux.real@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 XulbuX
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: classes,cmd,code,color,data,env,environment,file,format,functions,helper,json,library,methods,operations,path,presets,python,regex,string,structures,system,tools,types,utility,xulbux
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10.0
+Requires-Dist: keyboard>=0.13.5
+Requires-Dist: mouse>=0.7.1
+Requires-Dist: pyperclip>=1.9.0
+Requires-Dist: regex>=2023.10.3
+Provides-Extra: dev
+Requires-Dist: black>=23.7.0; extra == 'dev'
+Requires-Dist: flake8>=6.1.0; extra == 'dev'
+Requires-Dist: isort>=5.12.0; extra == 'dev'
+Requires-Dist: pytest>=7.4.2; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# **$\color{#8085FF}\Huge\textsf{XulbuX}$**
+
+**$\color{#8085FF}\textsf{XulbuX}$** is a library which includes a lot of really helpful classes, types and functions.
+
+For the libraries latest changes, see the [change log](https://github.com/XulbuX-dev/PythonLibraryXulbuX/blob/main/CHANGELOG.md).<br>
+For precise information about the library, see the library's [Wiki page](https://github.com/XulbuX-dev/PythonLibraryXulbuX/wiki).
+
+
+## Installation
+
+On all operating systems, run the following command:
+```bash
+pip install XulbuX
+```
+
+
+## Usage
+
+```python
+# GENERAL LIBRARY
+import XulbuX as xx
+# CUSTOM TYPES
+from XulbuX import rgba, hsla, hexa
+```
+The library **$\color{#8085FF}\textsf{XulbuX}$** (*below used as* `xx` *with above imported types*) contains the following modules:
+```python
+  • CUSTOM TYPES:
+     • rgba(int,int,int,float)
+     • hsla(int,int,int,float)
+     • hexa(str)
+  • PATH OPERATIONS          xx.Path
+  • FILE OPERATIONS          xx.File
+  • JSON FILE OPERATIONS     xx.Json
+  • SYSTEM ACTIONS           xx.System
+  • MANAGE ENVIRONMENT VARS  xx.EnvVars
+  • CMD LOG AND ACTIONS      xx.Cmd
+  • PRETTY PRINTING          xx.FormatCodes
+  • COLOR OPERATIONS         xx.Color
+  • DATA OPERATIONS          xx.Data
+  • STR OPERATIONS           xx.String
+  • CODE STRING OPERATIONS   xx.Code
+  • REGEX PATTERN TEMPLATES  xx.Regex
+```
+
+
+<br>
+
+--------------------------------------------------------------
+[View this library on PyPI](https://pypi.org/project/XulbuX/)
