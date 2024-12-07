@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+collapseless.egg-info/PKG-INFO
+collapseless.egg-info/SOURCES.txt
+collapseless.egg-info/dependency_links.txt
+collapseless.egg-info/top_level.txt
+example_pkg/__init__.py
