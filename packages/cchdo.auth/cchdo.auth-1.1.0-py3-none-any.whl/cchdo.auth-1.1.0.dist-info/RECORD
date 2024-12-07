@@ -1,0 +1,11 @@
+cchdo/auth/__init__.py,sha256=FXNtkb0Q_bpkPZGcGnbuV52sCDVSukDCaAY5CDT8H9U,5889
+cchdo/auth/__main__.py,sha256=txVOBKoSUFQGtEKFHCmH-sNkeJIvPgEcYueuuhB4zJQ,3130
+cchdo/auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cchdo/auth/session.py,sha256=tk6mB6tCaafARUZ0DEXL07T8b4oOSQli1K0oC5YhBE4,102
+cchdo/auth/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cchdo/auth/test/test_Auth.py,sha256=yeXzQ9ZHE5pEmsz6d7Q2RNWeiMnHa83_-Vl7rzGLAD8,1166
+cchdo.auth-1.1.0.dist-info/LICENSE.md,sha256=AwKKxNnlERUK57JtyKqxmMa3xBKkTp5_de85AGg_tZA,1504
+cchdo.auth-1.1.0.dist-info/METADATA,sha256=Xdp-vS9aZAhFi9AiHN1om89keam1H8JGqDPNp-Vvr2A,1639
+cchdo.auth-1.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+cchdo.auth-1.1.0.dist-info/top_level.txt,sha256=5tjN1VA6_Pr0JNbfJlRK9xjDa3SEtrFbFpZiZDW_C0Y,6
+cchdo.auth-1.1.0.dist-info/RECORD,,
