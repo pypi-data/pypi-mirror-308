@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dbackup/__init__.py
+dbackup/admin.py
+dbackup/apps.py
+dbackup/models.py
+dbackup/tests.py
+dbackup/views.py
+dbackup.egg-info/PKG-INFO
+dbackup.egg-info/SOURCES.txt
+dbackup.egg-info/dependency_links.txt
+dbackup.egg-info/requires.txt
+dbackup.egg-info/top_level.txt
+dbackup/management/commands/dumpdatautf8.py
+dbackup/migrations/__init__.py
