@@ -1,0 +1,17 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swarm/__init__.py,sha256=xC2Yaw1AkrZ4llvfs71ObBbvP0QoGp5YCEYdFtEVN34,95
+swarm/core.py,sha256=2hEzYEbDHDF2IWbYlvMWi3lzrxDhfbA2gxK5MGcduOk,10198
+swarm/types.py,sha256=Ptbd1L-QaQmZbGWlIc73gVTRCl1YSelT0-odYiZuQXg,1093
+swarm/util.py,sha256=DyU55bMtBqdIDS_N6OVqP_QNUM6Dhwgx7e1ZJx1XrEo,2469
+swarm/repl/__init__.py,sha256=hNU3HxjJJi6w5xgx34n3253QJPspFltrK7AM0G_1TlE,32
+swarm/repl/repl.py,sha256=Ps9p4u75bhh3nmRRc7iVGvw2Oe-DNEgNGdUi93UJlUk,2593
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_client.py,sha256=OREOM4Ao9ELS0i05yEuw0qH45cHN4pzJuOlSVfe_8P4,2908
+tests/test_core.py,sha256=rTu7CS1sscJyVaiTPhZil5anaMDxF4FadERQU0PfIpo,4722
+tests/test_util.py,sha256=OIlNCqEM9X3_35ees62RkWGJie2mYFB0HKoFnNDG3ac,1519
+aihive-0.1.0.dist-info/LICENSE,sha256=fqjcgIRHt449euVs7qdq1BvnYxithY3KuX2ysaeulCY,1195
+aihive-0.1.0.dist-info/METADATA,sha256=zV88967ARsB5AQgdXwosdkfsyLsgwe__NJZOE2HMZw0,1666
+aihive-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+aihive-0.1.0.dist-info/top_level.txt,sha256=h-29S-0z69a0PINUxSYqpXrydur1ia1Syn-3Qu9AIss,21
+aihive-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aihive-0.1.0.dist-info/RECORD,,
