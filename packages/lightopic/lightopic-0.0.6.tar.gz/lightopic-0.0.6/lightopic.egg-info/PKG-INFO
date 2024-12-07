@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: lightopic
+Version: 0.0.6
+Summary: Slimmer version of BERTopic for transforming new data with an existing, trained model.
+Author-email: Hamed Bastan-Hagh <hamed@bastanhagh.com>
+Project-URL: Repository, https://github.com/hamedbh/lightopic/
+Project-URL: Issues, https://github.com/hamedbh/lightopic/issues
+Project-URL: Documentation, https://lightopic.readthedocs.io/en/stable/index.html
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: hdbscan>=0.8.39
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: numba>=0.59.0
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: umap-learn>=0.5.7
+Provides-Extra: bertopic
+Requires-Dist: bertopic>=0.16.4; extra == "bertopic"
+Provides-Extra: dev
+Requires-Dist: bertopic>=0.16.4; extra == "dev"
+Requires-Dist: build>=1.2.2.post1; extra == "dev"
+Requires-Dist: myst-nb>=1.1.2; extra == "dev"
+Requires-Dist: pre-commit>=4.0.1; extra == "dev"
+Requires-Dist: pytest>=8.3.3; extra == "dev"
+Requires-Dist: ruff>=0.7.4; extra == "dev"
+Requires-Dist: sphinx>=8.1.3; extra == "dev"
+Requires-Dist: sphinx-autoapi>=3.3.3; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=3.0.2; extra == "dev"
+Requires-Dist: setuptools-scm>=8.1.0; extra == "dev"
+
+# Lightopic
+
+This package addresses the specific use case of deploying a [BERTopic](https://maartengr.github.io/BERTopic/index.html) model that you've trained, and now want to use for transforming new data, e.g. via an API.
+
+This came up for me because I wanted to deploy such a model API but wanted to make the deployment smaller and faster. The BERTopic package is broad, which brings with it a load of dependencies (e.g. torch, a bunch of cuda libraries). So I wrote this as a way to do the `transform` step only, with a virtual environment that's about 95% smaller than one with the actual BERTopic package.
+
+The main prerequisite is that you need to have trained a BERTopic model separately and have serialised it in a way that's compatible with `lightopic`. The `lightopic` package also offers you a way to do that: guidance on how is below. From that point you can instantiate a `Lightopic` object and use its `transform` method on new data.
+
+## Training and serialising your `LightBERTopic` model
+
+This is a necessary step: you can't instantiate a `Lightopic` object without first having trained and serialised your model. To make this part easier the `LightBERTopic` class is available: this is a child class of `bertopic.BERTopic`, only with a method added to `save_lightopic`.
+```python
+from lightopic.lightbertopic import LightBERTopic
+docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']
+
+topic_model = LightBERTopic()
+topics, probs = topic_model.fit_transform(docs)
+topic_model.save_lightopic("model_directory")
+```
+
+NB. for this to work you must have `bertopic` installed, which you can do with `pip install lightopic[bertopic]`.
+
+**NOTE**: this package is still under development, so this required format may (and probably will) change!
+
+## Using a `Lightopic` model
+
+Now the serialised model is ready to use.
+
+```python
+from lightopic import Lightopic
+topic_model = Lightopic()
+topic_model.load("model_directory")
+topic_model.transform(embeddings)
+```
+
+This transform step does not rely on BERTopic at all, so it can use the smaller installation you get from `pip install lightopic`.
