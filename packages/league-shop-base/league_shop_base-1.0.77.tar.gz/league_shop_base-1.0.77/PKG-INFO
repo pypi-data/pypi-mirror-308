@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: league-shop-base
+Version: 1.0.77
+Summary: Base models and admin for league-shop
+Author-email: Pradish Bijukchhe <pradish@sandbox.com.np>
+Project-URL: Homepage, https://github.com/sandbox-pokhara/league-shop-base
+Project-URL: Issues, https://github.com/sandbox-pokhara/league-shop-base/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: django-advanced-search
+Requires-Dist: django-form-action
+Requires-Dist: django-form-button
+Requires-Dist: django-stubs-ext
+Requires-Dist: Django<5,>=3.1
+Requires-Dist: djangorestframework
+Requires-Dist: pytz
+Requires-Dist: requests-futures
+
+# league-shop-base
+
+Base models and admin for league-shop
+
+## Installation
+
+You can install the package via pip:
+
+```
+pip install league-shop-base
+```
+
+Add `lsb` to your INSTALLED_APPS.
+
+```
+    INSTALLED_APPS = [
+        ...
+        'lsb',
+    ]
+```
+
+## To specify top sold skin values parser, add the following settings:
+
+```
+LSB_SETTINGS = {
+    'top_sold_skin_values': {
+        'func': <dotted_module_string_path>,
+        'args': <args>,
+        'kwargs': <kwargs>
+    }
+}
+For example:
+
+LSB_SETTINGS = {
+    'top_sold_skin_values': {
+        'func': 'lsb.utils.skins.get_top_sold_skin_values',
+        'args': [0, 150],
+        'kwargs': {}
+    }
+}
+
+```
