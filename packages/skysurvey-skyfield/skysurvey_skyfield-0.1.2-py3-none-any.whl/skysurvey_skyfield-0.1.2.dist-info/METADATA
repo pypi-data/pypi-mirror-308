@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: skysurvey_skyfield
+Version: 0.1.2
+Summary: Extension of skysurvey for 3D density-velocity field location
+Home-page: https://github.com/MickaelRigault/skysurvey-skyfield
+Author: Mickael Rigault
+Author-email: m.rigault@ipnl.in2p3.fr
+License: Apache Software License
+Keywords: astronomy,astrophysics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: skysurvey >=0.16.6
+Provides-Extra: docs
+Requires-Dist: nbsphinx ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
