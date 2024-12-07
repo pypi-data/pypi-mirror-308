@@ -1,0 +1,60 @@
+# Refer to: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# For pytest: https://docs.pytest.org/en/stable/reference/customize.html
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "starlingrt"
+description="[I]nteractive [R]etention [T]ime vi[S]ualization for gas chromatography."
+authors = [
+    {name = "Nathan A. Mahynski", email = "nathan.mahynski@gmail.com"}
+]
+maintainers = [
+    {name = "Nathan A. Mahynski", email = "nathan.mahynski@gmail.com"}
+]
+keywords = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+readme = "README.md"
+license = {file = "LICENSE.md"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy >= 1.23, <2.0.0",
+    "scipy",
+    "scikit-learn",
+    "matplotlib>=3.7.2",
+    "pandas==2.2",
+    "bokeh==3.0.3",
+    "xlrd==2.0.1",
+    "pre-commit==3.3.3",
+    "pytest>=7.4.0",
+    "ipykernel",
+    "mypy",
+    "sphinx"
+]
+
+[project.optional-dependencies]
+all = []
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["starlingrt*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "starlingrt.__version__"}
+
+[project.urls]
+Repository = "https://github.com/mahynski/starlingrt.git"
+Documentation = "https://starlingrt.readthedocs.io/"
+Issues = "https://github.com/mahynski/starlingrt/issues"
