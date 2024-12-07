@@ -1,0 +1,6 @@
+pyodbc
+pandas
+sqlalchemy
+pycryptodome
+alive_progress
+pysftp
