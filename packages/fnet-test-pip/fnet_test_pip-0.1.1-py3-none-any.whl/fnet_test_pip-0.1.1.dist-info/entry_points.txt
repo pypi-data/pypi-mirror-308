@@ -1,0 +1,2 @@
+[console_scripts]
+fnet_test_pip = fnet_test_pip.cli:main

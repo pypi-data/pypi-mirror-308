@@ -1,0 +1,10 @@
+fnet_test_pip/__init__.py,sha256=qp6SafVMXCL5Fpm-XYWn2RVLhk1BFio_O3RsZW0JnFo,103
+fnet_test_pip/cli/__init__.py,sha256=7QxVXFxyNRgSLZt_nadilQGkdwGIAzs0YuHt_WnLp68,43
+fnet_test_pip/cli/index.py,sha256=wziu5Lc4AWdUrSaaZiU7cj-N9EtspZ65zS91IAZ0R48,918
+fnet_test_pip/lib/__init__.py,sha256=hFqj6fxpJpJtr56l_0-Ro3--c6PcsNpHfaFF24LVA88,49
+fnet_test_pip/lib/index.py,sha256=px_sUlBpS9GcWNo4mwcqLPMr9TFS-h-EhMJ06IeKiDE,4299
+fnet_test_pip-0.1.1.dist-info/METADATA,sha256=KNyDEYRhHd0yYX8YaZAC6292-Cv9xxh7r8_O3Yb-BsQ,128
+fnet_test_pip-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fnet_test_pip-0.1.1.dist-info/entry_points.txt,sha256=Bw2jh6gAmhLhhBpjHAwSW25wHKO4B5zgSBX4dsgdHTw,57
+fnet_test_pip-0.1.1.dist-info/top_level.txt,sha256=k1S756rffl1I0b_El4qy5dbBGgbk8ms9xGrSrCaLJ9A,50
+fnet_test_pip-0.1.1.dist-info/RECORD,,
