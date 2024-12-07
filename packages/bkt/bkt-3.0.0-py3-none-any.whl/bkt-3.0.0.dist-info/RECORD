@@ -1,0 +1,10 @@
+bucket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucket/__main__.py,sha256=VlwlDPUFQme_ppKS7d1cN-_ww3xpMR2WGOPVqVUcMZo,29
+bucket/cli.py,sha256=wTOmdM0oRQ8u_RNGgyRVQbp6hz3CjSi5y1C5lPWPlu4,6268
+bucket/core.py,sha256=0hAnkn7BsFyc6nVAEN2wkpp8bAUdBU4vZfueGO3LsGo,15296
+bkt-3.0.0.dist-info/LICENSE,sha256=mtuTnz3PI9Km54RCvlcWooxeWEfxe-PXtKhY0I-3px0,4903
+bkt-3.0.0.dist-info/METADATA,sha256=ibG3HQHLo24Nti12LFSv6K6lzC5BxBevUsgfF8omO1k,1847
+bkt-3.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+bkt-3.0.0.dist-info/entry_points.txt,sha256=LjdRLMGZLsotp0AjMzZF1WEdhzVWBOB5gPJYgBYu6T4,43
+bkt-3.0.0.dist-info/top_level.txt,sha256=J3xDJcR5uJOZzfGZ9rB7h2h3xnmJdkDh1zfiE-GviyA,7
+bkt-3.0.0.dist-info/RECORD,,
