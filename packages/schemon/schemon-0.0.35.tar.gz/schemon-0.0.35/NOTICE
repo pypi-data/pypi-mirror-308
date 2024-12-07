@@ -1,0 +1,39 @@
+SCHEMON
+Copyright © 2024 Schemon Inc.
+
+1. License Terms
+This software is proprietary to **Schemon Inc.** and is provided solely for internal use by authorized users.  
+Any distribution, modification, reproduction, reverse engineering, or commercial use of this software is strictly prohibited without explicit written consent from Schemon Inc.
+
+This software is provided "as is" without warranties of any kind, either express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+For permissions or inquiries, contact Schemon Inc. at:
+
+Schemon Inc.  
+Email: brian@schemon.io
+
+2. Third-Party Software
+
+This product includes the following third-party software, which is licensed under their respective terms.  
+Please check the respective license terms for each software:
+
+- future
+- greenlet
+- pure-sasl
+- PyHive
+- python-dateutil
+- PyYAML
+- six
+- SQLAlchemy
+- thrift
+- thrift-sasl
+- typing_extensions
+- python-dotenv
+- databricks-sql-connector[sqlalchemy]
+- prettytable
+- antlr4-python3-runtime
+- requests
+- charset-normalizer
+- alembic
+- nicegui
+- pyodbc
