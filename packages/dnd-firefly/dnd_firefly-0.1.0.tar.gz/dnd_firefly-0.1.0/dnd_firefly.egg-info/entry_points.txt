@@ -1,0 +1,2 @@
+[console_scripts]
+dnd_firefly = firefly_demo.dnd_firefly:main

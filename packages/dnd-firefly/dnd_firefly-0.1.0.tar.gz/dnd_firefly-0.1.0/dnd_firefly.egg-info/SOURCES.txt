@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+dnd_firefly.egg-info/PKG-INFO
+dnd_firefly.egg-info/SOURCES.txt
+dnd_firefly.egg-info/dependency_links.txt
+dnd_firefly.egg-info/entry_points.txt
+dnd_firefly.egg-info/requires.txt
+dnd_firefly.egg-info/top_level.txt
