@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gitgen/__init__.py
+gitgen/cli.py
+gitgen.egg-info/PKG-INFO
+gitgen.egg-info/SOURCES.txt
+gitgen.egg-info/dependency_links.txt
+gitgen.egg-info/entry_points.txt
+gitgen.egg-info/top_level.txt
