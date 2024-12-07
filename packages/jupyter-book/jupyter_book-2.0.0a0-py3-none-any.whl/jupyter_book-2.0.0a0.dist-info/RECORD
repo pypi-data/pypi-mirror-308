@@ -1,0 +1,9 @@
+jupyter_book/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_book/__main__.py,sha256=uegxZOX-OYSpNvgo0NGD98aQL1AIVuhpIRIqsOcWEIQ,2636
+jupyter_book/nodeenv.py,sha256=KyWI9lyJOGBLDqs8kISwCW39Akb-c6se6WURAk7QI8c,3231
+jupyter_book/dist/jupyter-book.cjs,sha256=SI0OOToaoc-UPOlVQskDL7DwjtHI6C6hiX5KThjsXsI,12890234
+jupyter_book-2.0.0a0.dist-info/METADATA,sha256=Qj1uTfD43pWkPer8kR4JziJDYIgvMMhKiAaMpy_7MbI,2508
+jupyter_book-2.0.0a0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+jupyter_book-2.0.0a0.dist-info/entry_points.txt,sha256=cyZEZZnrULAxSlfM98cXVYJbnO8Ab85E21_RhSQxaZA,60
+jupyter_book-2.0.0a0.dist-info/licenses/LICENSE,sha256=n6EbQ9lkm-lUID6t1851z0CObeCnAxpSEgj2-TkJf0g,1520
+jupyter_book-2.0.0a0.dist-info/RECORD,,
