@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+lightopic/__init__.py
+lightopic/_lightopic.py
+lightopic/lightbertopic.py
+lightopic.egg-info/PKG-INFO
+lightopic.egg-info/SOURCES.txt
+lightopic.egg-info/dependency_links.txt
+lightopic.egg-info/requires.txt
+lightopic.egg-info/top_level.txt
+tests/test_lightbertopic.py

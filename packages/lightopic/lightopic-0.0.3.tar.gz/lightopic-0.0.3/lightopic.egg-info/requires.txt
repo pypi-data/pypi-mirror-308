@@ -1,0 +1,17 @@
+hdbscan
+joblib
+llvmlite
+numpy
+umap-learn
+
+[bertopic]
+bertopic
+
+[dev]
+bertopic
+build
+ipykernel
+nbstripout
+pre-commit
+pytest
+ruff
