@@ -1,0 +1,43 @@
+{
+    "mongodb": {
+        "connection_string": "mongodb+srv://davmomeni:mhodlkizt8t8BiEs@cluster0.xjaw6zn.mongodb.net/",
+        "database": "Rusta",
+        "week_result": "scrapy_week_result",
+        "rolling_result": "scrapy_rolling_result",
+        "active_result": "scrapy_active_result",
+        "package_result": "scrapy_package_result",
+        "old_active_result": "old_scrapy_active_result",
+        "campaign_data_week": "campaign_data_week",
+        "campaign_data_rolling": "campaign_data_rolling",
+        "campaign_data_package": "campaign_data_package",
+        "active_articles_data": "active_articles_data",
+        "epi_article_status": "epi_article_status",
+        "new_site_campaign_data_week": "new_site_campaign_data_week",
+        "new_site_campaign_data_rolling": "new_site_campaign_data_rolling",
+        "new_site_campaign_articles": "new_site_campaign_articles",
+        "new_site_campaign_result" : "scrapy_new_site_campaign_result",
+        "new_site_active_data": "new_site_active_data",
+        "new_site_active_result": "scrapy_new_site_active_result"
+        
+
+    },
+    "snowflake_rusta_dwh": {
+        "account": "RD78518.west-europe.azure",
+        "user": "CAMPAIGN_VERIFICATION",
+        "password": "jt5_*As?Ok/1#d<flYXO",
+        "database": "RUSTA_DW",
+        "schema": "CAMPAIGN_VERIFICATION",
+        "role": "CAMPAIGN_VERIFICATION_READER",
+        "warehouse": "CAMPAIGN_VERIFICATION"
+    },
+    "snowflake_rusta_crawler_dwh": {
+        "account": "RD78518.west-europe.azure",
+        "user": "CAMPAIGN_VERIFICATION",
+        "password": "jt5_*As?Ok/1#d<flYXO",
+        "database": "RUSTA_CRAWLER",
+        "schema": "RUSTA_WEB_CRAWLER",
+        "role": "CRAWLER_ADMIN",
+        "warehouse": "COMPUTE_CRAWLER"
+    }
+
+}
