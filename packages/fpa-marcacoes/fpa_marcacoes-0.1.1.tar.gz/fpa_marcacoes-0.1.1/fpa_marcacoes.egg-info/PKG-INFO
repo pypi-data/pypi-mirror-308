@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: fpa-marcacoes
+Version: 0.1.1
+Summary: An API Wrapper for the FPA's website of trainings and massage scheduler
+Home-page: UNKNOWN
+Author: André Oliveira
+Author-email: andre_pinto_oliveira@outlook.pt
+License: UNKNOWN
+Description: An API Wrapper for the FPA's website of trainings and massage scheduler
+Keywords: python,FPA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
