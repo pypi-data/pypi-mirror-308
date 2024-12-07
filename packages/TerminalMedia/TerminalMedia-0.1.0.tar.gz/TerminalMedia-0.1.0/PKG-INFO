@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: TerminalMedia
+Version: 0.1.0
+Summary: A tool to display images and videos in the terminal
+Home-page: https://github.com/Snape-max/TerminalMedia
+Author: Snape-max
+Author-email: ssnape@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
