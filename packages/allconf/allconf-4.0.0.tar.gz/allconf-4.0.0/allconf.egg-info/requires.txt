@@ -1,0 +1,5 @@
+PyYAML<7,>=6.0.1
+batutils<3,>=2
+
+[fidelius]
+fidelius<2,>=1.0
