@@ -1,0 +1,16 @@
+gridpp.py,sha256=AT307w1FxWgnodJZRKx4NV8raXKpQ4J0jawHfOBqhCI,46164
+_gridpp.cpython-312-x86_64-linux-gnu.so,sha256=cA2YuW1nqlMoFY_UR30_hV_9E61CWNFg_EqnYyxfbpg,51474425
+gridpp.libs/libsuperlu-1dbb25ff.so.5.1,sha256=FwZ3DYCQPob0FRKbK_jqOftEJvrawcVSdxDodi0zej4,505329
+gridpp.libs/libarmadillo-0a1bfd18.so.6.500.5,sha256=N7-jVea-MQemLo4UfmQdFKjPV8KaIJYStw8cVv7ZWPg,69169
+gridpp.libs/libarpack-7b0c1a60.so.2.0.0,sha256=KxQ2PImqJnFiX5PFnw2ckCwUHbKlKiAxap2-RzxKA-g,333865
+gridpp.libs/libblas-357956a1.so.3.4.2,sha256=eLqolYX0nkk2PP64pkqa0Nif8hllaovrJMGbx8jU5W0,374265
+gridpp.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+gridpp.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+gridpp.libs/liblapack-1ad85175.so.3.4.2,sha256=wrfEW65bG_XaXB2gB_JZR24uf8UxvWTrvVe6nIqfwu4,5682809
+gridpp.libs/libtatlas-6cc7999c.so.3.10,sha256=b5C4Rm5M6ufzM-_Sz_HfpnlLTF2KWvRbnEgiT537F7s,11189801
+gridpp.libs/libgfortran-91cc3cb1.so.3.0.0,sha256=VePrZzBsL_F-b4oIEOqg3LJulM2DkkxQZdUEDoeBRgg,1259665
+gridpp.libs/libsatlas-7e2f78d2.so.3.10,sha256=vA_Jrj0LlOPQ-fHuUMYXcNJZWn97TfLdNffJUCk0Rqg,11078609
+gridpp-0.6.0.dist-info/top_level.txt,sha256=j7y1dtvqtqkQTehk-CwIZ2RngrK2-mTsOZ1jtnDsfpE,15
+gridpp-0.6.0.dist-info/METADATA,sha256=Mk-07_65ZYOY2L_nJWUZ-c6jpERXYOjWLcynShdWD0k,1139
+gridpp-0.6.0.dist-info/WHEEL,sha256=8rKWvyfdp5CD7ik_vuL5S1M1g1E-Wv5v_Zlm5fMeHkw,151
+gridpp-0.6.0.dist-info/RECORD,,
