@@ -1,0 +1,2 @@
+ovos-workshop<3.0.0,>=0.0.15
+ovos-bus-client>=1.0.1
