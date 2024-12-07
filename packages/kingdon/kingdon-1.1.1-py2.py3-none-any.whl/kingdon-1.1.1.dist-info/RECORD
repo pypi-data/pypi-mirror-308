@@ -1,0 +1,16 @@
+kingdon/__init__.py,sha256=wC2iEM1xNl7KPL2ZK7oTt_F1uQQJxi06oZ0l837pv1Q,284
+kingdon/algebra.py,sha256=OJeh9thJwaIKM_I7eCXCQOPPONA4KYQi0_aJr-n8jKE,22539
+kingdon/codegen.py,sha256=r8xmiHJO0ssyf1GJXGPjptnLIz5I4bgDHF5F8TBwXYA,30650
+kingdon/graph.js,sha256=IoqCIKdwcwOPZRx_YswL80cnatrX8M-BLgx2XofLdAs,3153
+kingdon/graph.py,sha256=EPdadjw_PP8VXO3r79MXl203AkwlWEcs_IG9JrLb1dw,6772
+kingdon/matrixreps.py,sha256=oZiUwb3f-ZJ807iJMh79VRsEAQSnCZKEvUgXCzj5CRs,4502
+kingdon/multivector.py,sha256=f4ry9XTbC2XhJFSTi6bKUeSNxgbQSNat45opag5cjLI,22751
+kingdon/operator_dict.py,sha256=fBNDXc9oPTvQ6u1FMRfIp09mV4Ddp4E1lipZF8DS5wc,8017
+kingdon/polynomial.py,sha256=3s40kapUkSh9Aha7CeUeL527QYSPQFW5UzpjBUpYTik,9375
+kingdon/taperecorder.py,sha256=T8iaMseJpUh0P3Bl5iiKe9l6XdyelAiiN7liCBVAtrw,5701
+kingdon-1.1.1.dist-info/AUTHORS.rst,sha256=dQ5S8NYRpuXaMUHjq3koezo515t-tof4tRV7KQZ0u_Y,208
+kingdon-1.1.1.dist-info/LICENSE,sha256=AgBccKx3RWx3Mlx5Tbiz2yCWUmuIjT-LFrsJOmX2r1Y,1072
+kingdon-1.1.1.dist-info/METADATA,sha256=atQ2W4M65gAxOUxyFa6vAlUyD9KKBbqLw1bHcA1cs9g,9470
+kingdon-1.1.1.dist-info/WHEEL,sha256=QyeGbh-t8WT0nt0_LNSP02jN-g4ymd1egk1U3osCGMU,110
+kingdon-1.1.1.dist-info/top_level.txt,sha256=JzvG7QC8262VnkMA4rxxa_CblMP3bSYqqCJJYZk1sxU,8
+kingdon-1.1.1.dist-info/RECORD,,
