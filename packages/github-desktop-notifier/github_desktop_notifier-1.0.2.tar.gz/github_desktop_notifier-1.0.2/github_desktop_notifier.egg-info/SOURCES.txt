@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+github_desktop_notifier/__init__.py
+github_desktop_notifier/github.py
+github_desktop_notifier/github_desktop_notifier.py
+github_desktop_notifier.egg-info/PKG-INFO
+github_desktop_notifier.egg-info/SOURCES.txt
+github_desktop_notifier.egg-info/dependency_links.txt
+github_desktop_notifier.egg-info/entry_points.txt
+github_desktop_notifier.egg-info/requires.txt
+github_desktop_notifier.egg-info/top_level.txt
