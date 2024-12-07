@@ -1,0 +1,9 @@
+mqtt_backend_serrawatch/MqttClientManager.py,sha256=CvmAXqglruM9mbbD0YlUHFZQQxKIqCJpB9-RckcoHR4,2129
+mqtt_backend_serrawatch/publisher.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mqtt_backend_serrawatch/utils.py,sha256=VmsGamWacvwS6UbpKPeR808pvujRo0ohd5_mfmFNAxc,1474
+mqtt_backend_serrawatch/data/BrokerConfig.py,sha256=q48eT96xs-ShYe0XEQhIO5-zIsHqUm7vMQ4pvpaSSH8,272
+mqtt_backend_serrawatch/data/Config.py,sha256=3ddItpGlkj819mYviyZr-HSkiR-Uvj5g0-udvbV6iYQ,1806
+mqtt_backend_serrawatch/data/TopicsConfig.py,sha256=F05GI9wJF2m0BfSFx8M4yGNLE87QRya_iE7V8ZxcXJs,337
+mqtt_backend_serrawatch-0.1.3.dist-info/METADATA,sha256=dZuzZqyf8Lf5GsVcoqLyaYGwegLiQkiQI8YeqSEf8NU,1474
+mqtt_backend_serrawatch-0.1.3.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mqtt_backend_serrawatch-0.1.3.dist-info/RECORD,,
