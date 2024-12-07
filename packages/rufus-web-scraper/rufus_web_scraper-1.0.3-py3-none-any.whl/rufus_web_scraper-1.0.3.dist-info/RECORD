@@ -1,0 +1,9 @@
+rufus/__init__.py,sha256=CaeDKnqVAHM83HfpsXk50-kEUMbBIHyRZJXSz3nQinI,60
+rufus/client.py,sha256=jMM8tiM0Ka5lpJURmW3bEvuUuvb5uqm3FgrBJhmLKGk,1326
+rufus/parse.py,sha256=24oHuTD29QA9vzMKkpKjxFJEIp-wV_mIVexEIa9XOZE,1273
+rufus/scrape.py,sha256=L0S_uueZWvGXEAMRDSs4K1Jvbv6nBYQGSwSZX8ntSxU,3597
+rufus_web_scraper-1.0.3.dist-info/METADATA,sha256=m3jhu4JNsnVFkACbfcEFgMvwxEcTyrNC0TjSzLP3V-8,2407
+rufus_web_scraper-1.0.3.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+rufus_web_scraper-1.0.3.dist-info/entry_points.txt,sha256=kNMaCBEnpOKAmldCW-uNzarWelzhzt9xUwdJ80t9QM0,51
+rufus_web_scraper-1.0.3.dist-info/top_level.txt,sha256=TrYSGy3ui5Bl5giZ8Mpa4PXFnkQNRKBzNHT0viXW1ME,6
+rufus_web_scraper-1.0.3.dist-info/RECORD,,
