@@ -1,0 +1,8 @@
+seatools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ext/chrome.py,sha256=ZgpioOgjufOxp9Ogr2ywQJsjWH_jfOohpE2foy2iIzk,4594
+seatools_chrome-1.0.0.dist-info/LICENSE,sha256=c9ELyC2TG-Upe7XFGE3HWMLC0mibnbM04JfDTzHQ5cs,1089
+seatools_chrome-1.0.0.dist-info/METADATA,sha256=EisuzMBDgVze524PciQFF2hbJLKMlnU2fGRR_DUqqqA,1207
+seatools_chrome-1.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+seatools_chrome-1.0.0.dist-info/top_level.txt,sha256=RzPcP50xO2ucDJY7n5WSFeZKlGG_qfYUB-cBoOo2DPE,9
+seatools_chrome-1.0.0.dist-info/RECORD,,
