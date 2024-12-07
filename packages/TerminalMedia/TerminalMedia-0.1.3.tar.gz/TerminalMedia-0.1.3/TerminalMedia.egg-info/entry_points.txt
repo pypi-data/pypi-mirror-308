@@ -1,0 +1,4 @@
+[console_scripts]
+icat = tmt.imgcat:main
+terminalmedia = tmt.terminalmedia:main
+vcat = tmt.videocat:main
