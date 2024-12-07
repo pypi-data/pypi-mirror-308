@@ -1,0 +1,8 @@
+python-telegram-bot
+python-dotenv
+
+[dev]
+check-manifest
+
+[test]
+coverage
