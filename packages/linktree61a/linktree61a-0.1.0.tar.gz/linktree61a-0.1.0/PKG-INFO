@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: linktree61a
+Version: 0.1.0
+Summary: CS61A implementations of linked lists and trees
+Home-page: https://github.com/NathanDai5287/linktree61a
+Author: Nathan Dai
+Author-email: nathandai2000@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# linktree61a
+
+This package provides `Link` and `Tree` classes for CS61A coursework.
