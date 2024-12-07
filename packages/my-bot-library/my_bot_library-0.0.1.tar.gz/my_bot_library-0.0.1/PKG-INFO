@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: my_bot_library
+Version: 0.0.1
+Summary: Andromeda Python library
+Home-page: UNKNOWN
+Author: Susheela
+License: MIT
+Keywords: andromeda
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+
+
+Change Log
+===========
+
+0.0.1 (12 Nov 2024)
+-------------------
+- Initial release of the `andromeda` library.
+
