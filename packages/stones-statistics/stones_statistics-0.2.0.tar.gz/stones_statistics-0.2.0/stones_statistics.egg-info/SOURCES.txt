@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+stone_statistics/__init__.py
+stone_statistics/example.py
+stone_statistics/stat.py
+stone_statistics/finder/__init__.py
+stone_statistics/finder/representative_value_finder.py
+stones_statistics.egg-info/PKG-INFO
+stones_statistics.egg-info/SOURCES.txt
+stones_statistics.egg-info/dependency_links.txt
+stones_statistics.egg-info/requires.txt
+stones_statistics.egg-info/top_level.txt
