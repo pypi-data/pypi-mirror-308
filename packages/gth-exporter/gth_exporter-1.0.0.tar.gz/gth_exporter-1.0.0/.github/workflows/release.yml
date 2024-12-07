@@ -1,0 +1,44 @@
+name: release
+
+on: [push, pull_request]
+
+jobs:
+  setup_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install flit
+        run: |
+          pip install flit
+
+      - name: Build source and wheel distribution
+        run: flit build
+
+      - name: Store the distribution packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
+  pypi_publish:
+    name: Upload release to PyPI
+    needs: [setup_and_build]
+    runs-on: ubuntu-latest
+    environment:
+      name: release
+    permissions:
+      id-token: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
+      - name: Publish distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
