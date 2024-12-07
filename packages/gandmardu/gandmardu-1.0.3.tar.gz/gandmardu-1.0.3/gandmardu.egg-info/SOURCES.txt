@@ -1,0 +1,9 @@
+README.md
+setup.py
+gandmardu/__init__.py
+gandmardu/main.py
+gandmardu.egg-info/PKG-INFO
+gandmardu.egg-info/SOURCES.txt
+gandmardu.egg-info/dependency_links.txt
+gandmardu.egg-info/entry_points.txt
+gandmardu.egg-info/top_level.txt
