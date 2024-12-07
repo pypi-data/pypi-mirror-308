@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+viewdoo.egg-info/PKG-INFO
+viewdoo.egg-info/SOURCES.txt
+viewdoo.egg-info/dependency_links.txt
+viewdoo.egg-info/requires.txt
+viewdoo.egg-info/top_level.txt
