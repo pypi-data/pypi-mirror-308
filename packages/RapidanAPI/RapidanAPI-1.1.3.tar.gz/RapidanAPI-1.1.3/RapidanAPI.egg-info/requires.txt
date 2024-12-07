@@ -1,0 +1,7 @@
+requests
+pandas
+
+[dev]
+flake8
+twine
+wheel
