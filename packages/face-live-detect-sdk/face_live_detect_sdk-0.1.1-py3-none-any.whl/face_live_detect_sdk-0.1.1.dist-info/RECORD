@@ -1,0 +1,7 @@
+face_sdk/__init__.py,sha256=OaMn4Id8_hVNKNnualm7M6Gh8GMJZBVIWMIWIFzhGo0,62
+face_sdk/client.py,sha256=AAGQrOuaRr8B5-5wjXxh4U8WO9l_5s4TJsVACZBf5TU,3546
+face_sdk/utils.py,sha256=mSzwyMTZHLzJqEu5F3U-mMXYPu5hCqJfKEHh_Shxfr0,232
+face_live_detect_sdk-0.1.1.dist-info/METADATA,sha256=dkkh6JjtLfRWXdd6vqK72abBpVpSjlWhBKOBWOegpd4,918
+face_live_detect_sdk-0.1.1.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+face_live_detect_sdk-0.1.1.dist-info/top_level.txt,sha256=QJTkn5eCIQfRxehXzEtRjavgJSt9d7a4SZdvrc55REQ,9
+face_live_detect_sdk-0.1.1.dist-info/RECORD,,
