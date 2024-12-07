@@ -1,0 +1,20 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+viewdoo/__init__.py
+viewdoo/app.py
+viewdoo/conversion copy.py
+viewdoo/conversion.py
+viewdoo/find_most_unaligned.py
+viewdoo/header_controls.py
+viewdoo/header_map.py
+viewdoo/header_tag_conversions.py
+viewdoo/prepare_dicom_slice.py
+viewdoo.egg-info/PKG-INFO
+viewdoo.egg-info/SOURCES.txt
+viewdoo.egg-info/dependency_links.txt
+viewdoo.egg-info/requires.txt
+viewdoo.egg-info/top_level.txt
+viewdoo/user_themes/Blue.json
