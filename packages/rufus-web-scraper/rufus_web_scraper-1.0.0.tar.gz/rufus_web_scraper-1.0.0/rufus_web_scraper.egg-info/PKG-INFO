@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rufus-web-scraper
+Version: 1.0.0
+Summary: A Python package for web scraping and parsing using Selenium, BeautifulSoup, and Llama LLM.
+Home-page: https://github.com/rajshah21/rufus-ai-webscraper
+Author: Raj Shah
+Author-email: shahraj2100@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: selenium>=4.0.0
+Requires-Dist: beautifulsoup4>=4.10.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: langchain-ollama>=0.1.0
+
+# rufus-ai-webscraper
