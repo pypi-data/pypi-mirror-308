@@ -1,0 +1,3 @@
+[console_scripts]
+allconf-render = allconf.cli.render.main:main
+allconf-stubber = allconf.cli.stubber.main:main
