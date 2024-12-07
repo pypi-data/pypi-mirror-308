@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: tablebin
+Version: 1.1.2
+Summary: A light weight python api for the table bin platform.
+Author-email: boldrack <me@boldrack.dev>
+License: MIT License
+        
+        Copyright (c) 2024 Boldrack
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/boldrack/tablebin-python
+Keywords: table,api
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# tablebin-python
+A light weight python api for the table bin platform. 
+
+A sample code looks like below 
+
+    with open('mylist.json') as f: 
+        mylist = json.load(f)
+
+    header = tablebin.TableHeader()
+
+    hash_formatter = formatters.TableLinkFormatter(text="hash", target="https://etherscan.io/tx/{{this}}")
+    header.add_column(tablebin.TableColumn(name='hash', field_type='string', formatter=hash_formatter))
+
+    header.add_column(tablebin.TableColumn(name='owner', field_type='string'))
+    header.add_column(tablebin.TableColumn(name='eth_value', field_type='string', sortable=True))
+    header.add_column(tablebin.TableColumn(name='balance', field_type='string', sortable=True))
+    header.add_column(tablebin.TableColumn(name='total', field_type='number', sortable=True))
+    header.add_column(tablebin.TableColumn(name='count', field_type='number', sortable=True))
+
+    header.add_column(tablebin.TableColumn(name='timestamp', field_type='string'))
+    header.add_column(tablebin.TableColumn(name='buy_cap', field_type='string', sortable=True))
+
+    config = tablebin.TableConfig()
+
+    table_data = tablebin.TableData(mylist)
+
+    table_bin = tablebin.TableBin(api_key=TABLE_BIN_API_KEY)
+    # print(table_data._data)
+
+    response = table_bin.create_table(header, table_data)
