@@ -1,0 +1,10 @@
+ufaas_fastapi_business/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ufaas_fastapi_business/middlewares.py,sha256=ush2aeMUmwXwtCxB0m2ATjFLs9QWS0x9ePwSsB0J2_k,3314
+ufaas_fastapi_business/models.py,sha256=XVaMgcJbFtPkdMqgjCD8S_djd17ZogUWZ2CyqlEV4IA,6890
+ufaas_fastapi_business/routes.py,sha256=kZ4zS3mkrPF4khZY7TQCr0D6vDJwB42EOsSIT7GFwOI,5124
+ufaas_fastapi_business/schemas.py,sha256=DX7hZBjkVdPWqK13Ctwd2-W9m97OuyzuJHJdNq3m6LI,3397
+ufaas_fastapi_business-0.3.8.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+ufaas_fastapi_business-0.3.8.dist-info/METADATA,sha256=LoFjNXyTB7ygYQM16qUKkG-n0Ei6q_18jAvTV4A3qCU,2914
+ufaas_fastapi_business-0.3.8.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+ufaas_fastapi_business-0.3.8.dist-info/top_level.txt,sha256=oNMpM4NYUKWHYV9Psph4gIs_-yJt1Em786DnNaui8Jk,23
+ufaas_fastapi_business-0.3.8.dist-info/RECORD,,
