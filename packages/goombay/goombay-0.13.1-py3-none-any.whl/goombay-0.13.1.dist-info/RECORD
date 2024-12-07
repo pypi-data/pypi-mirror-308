@@ -1,0 +1,10 @@
+goombay/__init__.py,sha256=3nidQak0LZaGMp8LG2xMT8MzqOlzDsq77ynLlmlaW58,877
+goombay/benchmarks.py,sha256=OFYHHVI5fvcVkG1hIwNOyvp1AVfwwBvc5zktJe9AOeM,3305
+goombay/utils.py,sha256=EurWteQpwmjptdbw0APib8mNgpKcAbR7256GupZajjg,764
+goombay/algorithms/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+goombay/algorithms/base.py,sha256=sgxqzeEW6VwUEVNPxOE_Hn3GnhXVgxBZtdDhOWQxSfQ,3509
+goombay/algorithms/editdistance.py,sha256=pX-0bKaBflhk-Yqo4UmddRTi_o0RV7DhAAzP6Tbre60,34980
+goombay-0.13.1.dist-info/METADATA,sha256=G7V5BI2-QSpmy8aM0FW8P-B-gjf2uM-irrHdJi7qBqk,6872
+goombay-0.13.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+goombay-0.13.1.dist-info/licenses/LICENSE,sha256=qzVEwVPdUSiMMDt8s_KkkzLj5B0_XvW5NUSHgmKS418,1095
+goombay-0.13.1.dist-info/RECORD,,
