@@ -1,0 +1,16 @@
+jobskape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jobskape/dataset_evaluation.py,sha256=qnC5ppXAUkEMq93Rn8YyK9Im1o0g1nXLWd8cdsplvCU,17074
+jobskape/experiment.py,sha256=eO6Dsco1v3faAhDrq9ZPcEsF9qOAYfZYt2INAA8-lBI,4524
+jobskape/gen_prompt_template.py,sha256=17VnnVH79VxsYmqpNrU5Q43bD6Ewx2KMO8nB_Xa3Cng,5261
+jobskape/generator.py,sha256=Y52rlpT_nvTPmG8kGubZ3ADoKRkr9DMGwLS93V25kpQ,33605
+jobskape/annotator/feedback.py,sha256=4YS-myCsaVOycS2O9e_WZONNxM48FoVZRqwuiIkAMoY,5682
+jobskape/annotator/feedback_prompt_template.py,sha256=urIattRpWQApcDgHqTtQvKytTG5A8Nnt8CkHbO6ax0A,6431
+jobskape/models/skillExtract/prompt_template.py,sha256=QI9-UtVbstsgakMClLZz3qFEydATP1untcZWkjvA_bY,11049
+jobskape/models/skillExtract/utils.py,sha256=ZPYl5NFqte-dYBHgJti6qOKn_76yb4dY2ynJzgzm9Rw,30679
+jobskape/models/supervised/multilabel_classifier.py,sha256=D8vz7D6Cad9vg-FscOQaLx75zutQaeNF_h7Kedd_Amc,39354
+jobskape/utils/gen_utils.py,sha256=pnmwiUJKKdS4PcAbPlp4vSV4FfFv2eTEsQwAEVe45y8,2817
+jobskape-0.0.1.dist-info/LICENSE,sha256=JbQHkOVY3lGZHyAxaCZATdfzoLIbgupxs46YSG5aZHM,1071
+jobskape-0.0.1.dist-info/METADATA,sha256=E8hGveLwXLhaFGsteX4j8pBeRjy56MCUWu3wqVEik0c,7945
+jobskape-0.0.1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+jobskape-0.0.1.dist-info/top_level.txt,sha256=bm8KL0cdCXOVIZSlNklonh9DSxo8q_JhRbWomdeklLI,9
+jobskape-0.0.1.dist-info/RECORD,,
