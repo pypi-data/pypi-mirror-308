@@ -1,0 +1,16 @@
+armonik
+click
+PyYAML
+rich_click
+
+[dev]
+mypy
+ruff
+types-PyYAML
+
+[tests]
+coverage
+pytest
+pytest-cov
+pytest-mock
+pytest-benchmark[histogram]
