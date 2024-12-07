@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: logitest
+Version: 0.1.0
+Summary: Automated test case generation tool for Python modules.
+Home-page: https://github.com/saisrinivas-samoju/logitest
+Author: Sai Srinivas
+Author-email: saisrinivas.samoju@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: joblib
+
+# logitest
+A lightweight module for logging and testing. No fluff, just tools to get the job done efficiently.
+
