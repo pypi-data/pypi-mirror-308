@@ -1,0 +1,6 @@
+scikit-learn
+numpy
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation
+asyncio
