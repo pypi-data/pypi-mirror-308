@@ -1,0 +1,7 @@
+[
+  "openfisca_tunisia_pension/tests/formulas/pension_rsna.yaml::",
+  "openfisca_tunisia_pension/tests/formulas/salaire_reference_rsna.yaml::",
+  "openfisca_tunisia_pension/tests/test_pension.py::test_rsna",
+  "tests/formulas/pension_rsna.yaml::",
+  "tests/formulas/salaire_reference_rsna.yaml::"
+]
