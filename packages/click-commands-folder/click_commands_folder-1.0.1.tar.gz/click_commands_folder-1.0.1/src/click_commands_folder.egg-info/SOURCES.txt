@@ -1,0 +1,12 @@
+LICENSE
+README.MD
+README.md
+pyproject.toml
+src/click_commands_folder/__init__.py
+src/click_commands_folder/commands_folder.py
+src/click_commands_folder.egg-info/PKG-INFO
+src/click_commands_folder.egg-info/SOURCES.txt
+src/click_commands_folder.egg-info/dependency_links.txt
+src/click_commands_folder.egg-info/requires.txt
+src/click_commands_folder.egg-info/top_level.txt
+tests/test_commands.py
