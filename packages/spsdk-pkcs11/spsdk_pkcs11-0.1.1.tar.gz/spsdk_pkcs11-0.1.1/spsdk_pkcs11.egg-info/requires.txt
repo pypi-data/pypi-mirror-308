@@ -1,0 +1,3 @@
+spsdk>=2.2.0
+python-pkcs11
+cached-property
