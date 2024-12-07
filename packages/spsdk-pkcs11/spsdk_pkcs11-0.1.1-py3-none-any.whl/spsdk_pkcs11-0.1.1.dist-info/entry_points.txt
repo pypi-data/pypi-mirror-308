@@ -1,0 +1,2 @@
+[spsdk.sp]
+pkcs11 = spsdk_pkcs11.provider
