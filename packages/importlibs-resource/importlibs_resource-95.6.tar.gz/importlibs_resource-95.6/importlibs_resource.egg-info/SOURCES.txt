@@ -1,0 +1,7 @@
+main.py
+setup.py
+importlibs_resource.egg-info/PKG-INFO
+importlibs_resource.egg-info/SOURCES.txt
+importlibs_resource.egg-info/dependency_links.txt
+importlibs_resource.egg-info/requires.txt
+importlibs_resource.egg-info/top_level.txt
