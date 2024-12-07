@@ -1,0 +1,13 @@
+feluda/__init__.py,sha256=U3Ewb_IKWoxFv54UF3ogvIMXTIDDoKgPgAEbtf9VNaA,26
+feluda/config.py,sha256=_Ccm6Tu30e26TyAG7FjJT8zjpJ10mqvynLgiz4tELvA,2039
+feluda/feluda.py,sha256=hnsYRgletl6dvOq3IltFBM6eeunQFqd6X51LyABYY-A,448
+feluda/logger.py,sha256=wis1osnYN4MLQTSje-jRXhcgvq1xcAIUrxt5EkjCgv0,689
+feluda/operator.py,sha256=ctTCNmkJiTFA2b-GcunVmz2ChUi1mLjtm0fga1pft30,617
+feluda/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feluda/models/media.py,sha256=V_yMXy2slMNsRZS0TlChFnO-G9MMI_YnDfFg2Ox41_U,667
+feluda/models/media_factory.py,sha256=1-af3XLYzpqtlTEeHA9_r_ONl4N9TwzYP740jj0wRlk,6831
+feluda/models/s3_utils.py,sha256=VLFX3toCJRqICfOE8hYjeoOLf6FZwaZE-WckfCuMqDQ,835
+feluda-0.9.0.dist-info/METADATA,sha256=BiwaJW6EyVLtI48sguFubkjK1sKs43N4_88l9dcoirE,13407
+feluda-0.9.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+feluda-0.9.0.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+feluda-0.9.0.dist-info/RECORD,,
