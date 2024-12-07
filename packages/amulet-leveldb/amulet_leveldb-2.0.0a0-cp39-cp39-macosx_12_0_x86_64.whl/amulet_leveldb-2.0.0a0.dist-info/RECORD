@@ -1,0 +1,10 @@
+leveldb/__init__.py,sha256=43iQzwXjLW3Z4DIhfj3T1pZcNMiW00G4ddZiZw47L80,201
+leveldb/_leveldb.cpython-39-darwin.so,sha256=E2-3SogZCkoF9zriNn7g-mICid0bHdVx6tf3xMOuTts,592344
+leveldb/_leveldb.pyi,sha256=PadRXCbNjFbcKF_isUonSxwkcSqeaLbwp6ZrK3ZGccA,2317
+leveldb/_version.py,sha256=BE-9vSAM_OzisDlVEoDM1c-4-sMG1_BYOZUfx2cvDKI,499
+leveldb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amulet_leveldb-2.0.0a0.dist-info/LICENSE,sha256=6gM4LkIo_t8iVwJcEHcq-tPtYLAxa7MHia5syUNWxDg,6761
+amulet_leveldb-2.0.0a0.dist-info/METADATA,sha256=0gzgMbe51vxl_XWpeshcSqFNwzNWaMr-3XUnxrFQENA,1181
+amulet_leveldb-2.0.0a0.dist-info/WHEEL,sha256=Y-Rwc3qNYcLYXEl0I4ji6Ck0wHmc2n3RkzjPm3HLqvI,108
+amulet_leveldb-2.0.0a0.dist-info/top_level.txt,sha256=DaeMC8xhK8U8S1M29JD6oT0N6O4MYVs6VI3SQ_RUEYk,8
+amulet_leveldb-2.0.0a0.dist-info/RECORD,,
