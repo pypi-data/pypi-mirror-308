@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cpapp
+Version: 0.1.0
+Summary: A command-line tool to copy file contents based on extension.
+Home-page: https://github.com/HakimiX/cpapp
+Author: Your Name
+Author-email: mustafa.hakimi@outlook.dk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# cpapp
+
+### Build and upload
+
+1. Install setuptools and wheel (if not already installed):
+```bash
+pip install setuptools wheel
+```
+
+2. Build the package:
+```bash
+python setup.py sdist bdist_wheel
+```
+
+3. Upload the package to PyPI:
+
+First, install `twine` if you haven't:
+```bash
+pip install twine
+```
+Then upload the package:
+```bash
+twine upload dist/*
+```
+> You'll need a PyPI account to upload your package. If you don't have one, you can create it at pypi.org.
+
+
+### Install
+
+```bash
+pip install cpapp
+```
+and use it globally:
+```bash
+cpapp --ext=py
+```

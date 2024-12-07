@@ -1,0 +1,2 @@
+[console_scripts]
+cpapp = cpapp.main:main
