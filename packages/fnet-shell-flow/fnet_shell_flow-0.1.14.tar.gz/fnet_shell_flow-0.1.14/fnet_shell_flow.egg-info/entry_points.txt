@@ -1,0 +1,2 @@
+[console_scripts]
+fnet_shell_flow = fnet_shell_flow.cli:main
