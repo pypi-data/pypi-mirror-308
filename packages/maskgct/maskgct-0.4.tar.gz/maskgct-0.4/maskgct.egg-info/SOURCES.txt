@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+maskgct/__init__.py
+maskgct/version.py
+maskgct.egg-info/PKG-INFO
+maskgct.egg-info/SOURCES.txt
+maskgct.egg-info/dependency_links.txt
+maskgct.egg-info/requires.txt
+maskgct.egg-info/top_level.txt
+maskgct/tts/maskgct/config/maskgct.json
