@@ -1,0 +1,5 @@
+aiogram
+sqlitedict
+dill
+python-dotenv
+sqlalchemy
