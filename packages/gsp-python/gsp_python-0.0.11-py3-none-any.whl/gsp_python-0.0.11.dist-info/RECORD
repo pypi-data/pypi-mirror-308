@@ -1,0 +1,9 @@
+gsp_python/__init__.py,sha256=LWxnRLQ_aXvFVZqv0XbxrYwHB7_N1PZp2XdAyY1fTLI,167
+gsp_python/__main__.py,sha256=kmPwvOgmfgqlSEMtKvZF6T2DuMUIJuxdNEhOeDWbVUo,6127
+gsp_python/dataset_gen.py,sha256=6TmHEK7e7EPTZhZ7LfEKEhrcUIP5c0AskBjmODGIkUU,3458
+gsp_python/gsp.py,sha256=7-cJhcQ-fhb8GBn93BtxbZ4L5tR4xS-hKT8PMC93Vt0,20426
+gsp_python-0.0.11.dist-info/LICENSE,sha256=b_2i3_Vq-LWVx-M0TPimbUJeg4xhSKjm8Tqck8vunk4,1065
+gsp_python-0.0.11.dist-info/METADATA,sha256=QkbMF4rsktbtGpOlC8PL1WfLXkJZuzeJKpEX1l_a63U,4168
+gsp_python-0.0.11.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+gsp_python-0.0.11.dist-info/top_level.txt,sha256=oLtOYgUEjQYggNlUNeCnAtTkxZqWd8dFSKmMYy8JRqY,11
+gsp_python-0.0.11.dist-info/RECORD,,
