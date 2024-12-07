@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gsp_python/__init__.py
+gsp_python/__main__.py
+gsp_python/dataset_gen.py
+gsp_python/gsp.py
+gsp_python.egg-info/PKG-INFO
+gsp_python.egg-info/SOURCES.txt
+gsp_python.egg-info/dependency_links.txt
+gsp_python.egg-info/top_level.txt
