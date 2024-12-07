@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/justpaid/__init__.py
+src/justpaid/api.py
+src/justpaid/exceptions.py
+src/justpaid/schemas.py
+src/justpaid.egg-info/PKG-INFO
+src/justpaid.egg-info/SOURCES.txt
+src/justpaid.egg-info/dependency_links.txt
+src/justpaid.egg-info/requires.txt
+src/justpaid.egg-info/top_level.txt

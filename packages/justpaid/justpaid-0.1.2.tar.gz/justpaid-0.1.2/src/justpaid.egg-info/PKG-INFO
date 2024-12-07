@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: justpaid
+Version: 0.1.2
+Summary: A Python SDK for the JustPaid API
+Home-page: https://github.com/loopfour/justpaid-python-sdk
+Author: JustPaid Development
+Author-email: engineering@justpaid.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: pydantic>=1.8.0
+
+# JustPaid API Python SDK
+
+This SDK provides a simple interface to interact with the JustPaid API for usage-based billing.
+
+## Installation
+
+```bash
+pip install justpaid
+```
+
+## Quick Start
+
+```python
+from justpaid import JustPaidAPI
+
+# Initialize the API client
+api = JustPaidAPI(api_token="your_api_token_here")
+
+# Get billable items
+items = api.get_billable_items()
+
+print(items)
+```
+
+for more examples, see the [examples](examples/) directory.
+
+## Features
+
+- Retrieve billable items
+- Ingest usage events
+- Batch ingest multiple usage events
+
+
+## Documentation
+
+For detailed API documentation and examples, see the [docs](https://docs.justpaid.io/api-reference/) directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
