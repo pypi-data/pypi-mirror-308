@@ -1,0 +1,2 @@
+[console_scripts]
+uv-audit = uv_audit.cli:cli

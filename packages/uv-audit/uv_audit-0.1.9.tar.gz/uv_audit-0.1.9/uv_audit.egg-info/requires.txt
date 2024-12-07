@@ -1,0 +1,7 @@
+ijson>=3.3.0
+package-schemes>=0.1.2
+packaging>=24.2
+pydantic>=2.9.2
+safety-db
+toml>=0.10.2
+typer>=0.13.0

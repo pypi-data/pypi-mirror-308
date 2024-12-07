@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: uv-audit
+Version: 0.1.9
+Summary: uv Tool for checking dependencies for vulnerabilities
+Author-email: Alekse Marusich <alekse.marusich@rocshers.com>
+License: MIT
+Keywords: rocshers,uvxt,packaging,audit
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ijson>=3.3.0
+Requires-Dist: package-schemes>=0.1.2
+Requires-Dist: packaging>=24.2
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: safety-db
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.13.0
+
+# uv Audit Tool
+
+uv tool for checking dependencies for vulnerabilities
+
+[![PyPI](https://img.shields.io/pypi/v/uv-audit)](https://pypi.org/project/uv-audit/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uv-audit)](https://pypi.org/project/uv-audit/)
+[![uvxt](https://img.shields.io/badge/family-uvxt-purple)](https://pypi.org/project/uvxt/)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rocshers_uv-audit&metric=coverage)](https://sonarcloud.io/summary/new_code?id=rocshers_uv-audit)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rocshers_uv-audit&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rocshers_uv-audit)
+
+[![Downloads](https://static.pepy.tech/badge/uv-audit)](https://pepy.tech/project/uv-audit)
+[![GitLab stars](https://img.shields.io/gitlab/stars/rocshers/python/uv-audit)](https://gitlab.com/rocshers/python/uv-audit)
+[![GitLab last commit](https://img.shields.io/gitlab/last-commit/rocshers/python/uv-audit)](https://gitlab.com/rocshers/python/uv-audit)
+
+Powered by [safety](https://safetycli.com)
+
+## Functionality
+
+- Check **dependencies**
+
+## Quick start
+
+```bash
+uvx uv-audit
+
+# Or using uvxt
+uv tool install uvxt
+uvxt audit
+```
+
+## Contribute
+
+Issue Tracker: <https://gitlab.com/rocshers/python/uv-audit/-/issues>  
+Source Code: <https://gitlab.com/rocshers/python/uv-audit>
+
+Before adding changes:
+
+```bash
+make install
+```
+
+After changes:
+
+```bash
+make format test
+```
