@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: llm_structured_output_Detect_repairs
+Version: 0.1.0
+Summary: A Python package for interacting with large language models (LLMs) to extract, detect, and fix structured data.
+Author: jiayanfeng
+Author-email: jyf_bit@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: langchain
+Requires-Dist: openai
+
+# llm_structured_output_Detect_repairs
+
+## 简介
+
+`llm_structured_output_Detect_repairs` 是一个用于与大语言模型（LLMs）交互的并提取、检测和修复结构化数据的Python 包。
+
+## 安装
+
+```bash
+pip install llm_structured_output_Detect_repairs
