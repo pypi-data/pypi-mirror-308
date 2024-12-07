@@ -1,0 +1,10 @@
+README.md
+setup.py
+rufus_scraper/__init__.py
+rufus_scraper/rufus_scraper.py
+rufus_scraper/utils.py
+rufus_scraper.egg-info/PKG-INFO
+rufus_scraper.egg-info/SOURCES.txt
+rufus_scraper.egg-info/dependency_links.txt
+rufus_scraper.egg-info/requires.txt
+rufus_scraper.egg-info/top_level.txt
