@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: tnsa
+Version: 7.3.2
+Summary: A transformer model with advanced features for casual language modeling.
+Home-page: https://github.com/TnsaAi/tnsa.stable.curiosity
+Author: TNSA AI
+Author-email: tnsa.company@gmail.com
+License: NGen2Community License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow >=2.0
+Requires-Dist: numpy
+Requires-Dist: six
+
+# TNSA Curiosity
+
+**TNSA Stable Curiosity** is a transformer-based model architecture designed for casual language modeling tasks. It is an enhancement of the ARCH-X9 and NGen2 model, optimized for various NLP tasks such as text classification, token classification, and language generation. The architecture features advanced mechanisms like gradient checkpointing, making it more efficient and scalable.
+
+## Installation
+
+To install `tnsa`, you can use `pip` from PyPI:
+
+ ``` bash
+pip install tnsa 
+```
+
+## How to use Curiosity OpenModel Architecture(Based on ARCH-X 9)
+
+``` python
+from tnsa.stable.curiosity import TNSAforCasualLM
+
+# Initialize the model
+model = TNSAforCasualLM(
+    hidden_size=768,
+    num_hidden_layers=12,
+    num_attention_heads=12,
+    intermediate_size=3072,
+    intermediate_act_fn='gelu',  # Can also use other activations like 'relu'
+    hidden_dropout_prob=0.1,
+    attention_probs_dropout_prob=0.1,
+    initializer_range=0.02,
+)
+
+# Example input
+input_tensor = ...  # Your input tensor here, with shape [batch_size, seq_length, hidden_size]
+attention_mask = ...  # Your attention mask tensor here
+
+# Forward pass through the model
+output = model(input_tensor=input_tensor, attention_mask=attention_mask)
+
+print(output)
+
+#Instialize you training loop you can keep the parameters to default to re-create NGen2-Nano Base on OpenWEB
+
+```
+
+## Key Parameters
+`hidden_size`: The size of the hidden layers. Defaults to 768 (same as BERT's base).
+
+`num_hidden_layers`: The number of transformer layers. Defaults to 12.
+
+`num_attention_heads`: The number of attention heads in each layer. Defaults to 12.
+
+`intermediate_size`: The size of the intermediate (feedforward) layer. Defaults to 3072.
+
+`intermediate_act_f`n: The activation function to use in the intermediate layer. Default is gelu.
+
+`hidden_dropout_prob`: Dropout probability for hidden layers. Default is 0.1.
+
+`attention_probs_dropout_prob`: Dropout probability for attention layers. Default is 0.1.
+
+`initializer_range`: The standard deviation of the initializer. Default is 0.02.
+
+`use_gradient_checkpointing`: A boolean flag to enable or disable gradient checkpointing for memory efficiency. Default is False.
+
+## How Curiosity `OpenModelArchitecture` Differs from ARCH-X 9`(Closed Source)`
+The `Curiosity` architecture is based on the standard transformer architecture used in `NGen2`, with the following enhancements:
+
+`Gradient Checkpointing`: An optional feature to enable gradient checkpointing, allowing for more efficient memory usage during training. This is particularly useful when working with large models.
+
+`Improved Attention Mechanism`: The attention mechanism has been fine-tuned for better handling of `long-range` dependencies and more accurate attention distributions.
+
+`Optimized Architecture`: Custom improvements to layer normalization and dropout mechanisms help improve the modelâ€™s performance on 
+various `NLP` tasks.
+
+## Model Performance
+
+While `Curiosity` is similar to NGen2, it has been `fine-tuned` to outperform `NGen2` in some language modeling tasks by using a more efficient memory usage pattern, which makes it better suited for tasks with large datasets or longer sequences.
+
+## License
+The code is licensed under the NGen2Community License. Please review the LICENSE file for more details.While the base of the code is still closed sourced. you `i.e (user or developer)` should use it to develop
+custom models but not copy or modify the code itself.
+
+## Copyrighted and Licensed by:
+  **Copyright (c) 2024, TNSAAI Inc. All rights reserved.**
