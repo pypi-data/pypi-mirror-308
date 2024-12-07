@@ -1,0 +1,7 @@
+
+[depend]
+xlwt
+openpyxl
+tqdm
+bibtexparser
+watchdog
