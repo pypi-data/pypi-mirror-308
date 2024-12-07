@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: audiofoundry
+Version: 0.1.0
+Summary: Python package for AudioFoundry.
+Home-page: https://github.com/audiofoundry/python-audiofoundry
+License: GPL-3.0
+Keywords: audiofoundry
+Author: Garrett HE
+Author-email: garrett.he@outlook.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/audiofoundry/python-audiofoundry.git
+Description-Content-Type: text/markdown
+
+# python-audiofoundry
+
+Python package for AudioFoundry.
+
+## License
+
+Copyright (C) 2023 Garrett HE <garrett.he@outlook.com>
+
+The GNU General Public License (GPL) version 3, see [COPYING](./COPYING).
+
