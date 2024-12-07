@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: folder_structure_generator_7edge-new
+Version: 1.0.0
+Summary: CLI tool to generate folder structures for services
+Home-page: https://github.com/yourusername/folder-structure-generator-7edge
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Dist: InquirerPy
+
