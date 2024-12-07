@@ -1,0 +1,2 @@
+Version: 1.9.0
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-rhr_w443\\cp311-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-rhr_w443\\cp311-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-rhr_w443\\cp311-win_amd64\\built_wheel\\dftd3-1.2.1-cp311-cp311-win_amd64.whl', '--no-mangle-all']
