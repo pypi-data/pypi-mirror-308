@@ -1,0 +1,103 @@
+﻿site_name: PyFlowery Documentation
+site_url: !ENV [SITE_URL, 'https://pyflowery.coastalcommits.com']
+repo_name: CoastalCommits
+repo_url: https://www.coastalcommits.com/cswimr/PyFlowery
+edit_uri: !ENV [EDIT_URI, 'src/branch/main/docs']
+copyright: Copyright &copy; 2024, cswimr
+docs_dir: docs
+
+site_author: cswimr
+site_description: PyFlowery is an asynchronous Python library for interacting with the Flowery API.
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Usage: getting-started/usage.md
+  - Reference:
+    - FloweryAPI: ref/flowery.md
+    - Exceptions: ref/exceptions.md
+    - Models: ref/models.md
+    - Rest Adapter: ref/rest_adapter.md
+
+plugins:
+  - git-authors
+  - search
+  - social
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_options:
+              ignore_imit_summary: true
+            summary: true
+            show_root_toc_entry: false
+            filters:
+              - "!^_"
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.blocks.details
+  - pymdownx.blocks.admonition
+  - pymdownx.saneheaders
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+theme:
+  name: material
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+  logo: img/logo.png
+  favicon: img/logo.png
+  icon:
+    repo: simple/forgejo
+
+watch:
+  - ./pyflowery
