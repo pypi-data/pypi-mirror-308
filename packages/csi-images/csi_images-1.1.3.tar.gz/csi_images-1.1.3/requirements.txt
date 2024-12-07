@@ -1,0 +1,10 @@
+-e .
+PyYAML
+aicspylibczi
+opencv-python
+tifffile
+imagecodecs
+pandas
+pyreadr
+pdoc
+pytest
