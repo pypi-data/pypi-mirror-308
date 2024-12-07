@@ -1,0 +1,13 @@
+prefix=/var/folders/4b/7k50gk0j4f5bjk3799wdt8nw0000gn/T/tmp7l_c1wsj/wheel/platlib/osm2gmns
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: expat
+Version: 2.6.2
+Description: expat XML parser
+URL: https://libexpat.github.io/
+Libs: -L${libdir} -lexpat
+Libs.private: -lm
+Cflags: -I${includedir}
+Cflags.private: -DXML_STATIC
