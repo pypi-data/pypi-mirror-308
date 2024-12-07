@@ -1,0 +1,23 @@
+name: napari-intensity-plotter
+display_name: Intensity Plotter
+version: 0.1.4  # PyPI上の最新バージョンと一致させます。
+description: A plugin for plotting intensity profiles with control features in napari.
+author: Toranosuke Takagi
+license: BSD-3-Clause
+github: https://github.com/Tbrn1103/napari-intensity-plotter
+documentation: https://github.com/Tbrn1103/napari-intensity-plotter#README.md
+visibility: public
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-intensity-plotter.IntensityPlotWidget
+      python_name: napari_intensity_plotter._widget:IntensityPlotWidget
+      title: Intensity Plot
+    - id: napari-intensity-plotter.IntensityPlotControlWidget
+      python_name: napari_intensity_plotter._widget:IntensityPlotControlWidget
+      title: Intensity Plot Control
+  widgets:
+    - command: napari-intensity-plotter.IntensityPlotWidget
+      display_name: Intensity Plot
+    - command: napari-intensity-plotter.IntensityPlotControlWidget
+      display_name: Intensity Plot Control
