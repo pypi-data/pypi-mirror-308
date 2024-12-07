@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: astrodendro
+Version: 0.3.0
+Summary: Python package for computation of astronomical dendrograms
+Author: Chris Beaumont, Adam Ginsburg, Braden MacDonald, and Erik Rosolowsky
+Author-email: Thomas Robitaille <thomas.robitaille@gmail.com>
+License: MIT
+Project-URL: homepage, https://www.dendrograms.org/
+Project-URL: documentation, https://dendrograms.readthedocs.io/en/stable/
+Project-URL: repository, https://github.com/dendrograms/astrodendro
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy>=5
+Requires-Dist: h5py>=3
+Requires-Dist: matplotlib>=3.3
+Requires-Dist: numpy>=1.20
+Provides-Extra: docs
+Requires-Dist: aplpy; extra == "docs"
+Requires-Dist: numpydoc; extra == "docs"
+Requires-Dist: sphinx<7; extra == "docs"
+Requires-Dist: sphinx-astropy; extra == "docs"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+
+About
+-----
+
+The aim of this module is to provide an easy way to compute dendrograms of observed or simulated Astronomical data in Python
+
+Documentation
+-------------
+
+For information on installing and using ``astrodendro``, please visit [https://dendrograms.readthedocs.io/](https://dendrograms.readthedocs.io/)
+
+Reporting issues
+----------------
+
+Please report issues via the [GitHub issue tracker](https://github.com/dendrograms/astrodendro/issues)
+
+Credits
+-------
+
+This package was developed by:
+
+* [Braden MacDonald](https://github.com/bradenmacdonald)
+* [Chris Beaumont](https://github.com/ChrisBeaumont)
+* [Thomas Robitaille](https://github.com/astrofrog)
+* [Adam Ginsburg](https://github.com/keflavich)
+* [Erik Rosolowsky](https://github.com/low-sky)
+
+Build and coverage status
+-------------------------
+
+[![Build Status](https://travis-ci.org/dendrograms/astrodendro.svg?branch=master)](https://travis-ci.org/dendrograms/astrodendro)
+[![Coverage Status](https://coveralls.io/repos/dendrograms/astrodendro/badge.svg?branch=master)](https://coveralls.io/r/dendrograms/astrodendro?branch=master)

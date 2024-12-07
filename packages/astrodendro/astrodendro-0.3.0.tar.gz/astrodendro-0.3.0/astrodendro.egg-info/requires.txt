@@ -1,0 +1,14 @@
+astropy>=5
+h5py>=3
+matplotlib>=3.3
+numpy>=1.20
+
+[docs]
+aplpy
+numpydoc
+sphinx<7
+sphinx-astropy
+
+[test]
+pytest
+pytest-cov
