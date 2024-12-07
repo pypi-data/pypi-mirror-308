@@ -1,0 +1,10 @@
+database_wrapper_pgsql/__init__.py,sha256=1ymUDN94ShhiL_Gm5qpmRedK_qbwwlmmxCvLeiw-f_c,675
+database_wrapper_pgsql/connector.py,sha256=4UXbMNwCUILJXiZnruO-l0t6IlsNe9gcNc9srB50MHo,9766
+database_wrapper_pgsql/db_wrapper_pgsql.py,sha256=dXqRo-dDSEPiWlD0BhAjPhinEFLgcM-Jf90TxfbZXpw,3694
+database_wrapper_pgsql/db_wrapper_pgsql_async.py,sha256=7kdEJfzHeeWnPVvU5yPXujnhTUlg_jWHgYCqOlZfGrk,4357
+database_wrapper_pgsql/db_wrapper_pgsql_mixin.py,sha256=6g-zNNxrypemvnzMuWvKaHKCpkGeD1UZJGyPWQWIMxU,6042
+database_wrapper_pgsql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+database_wrapper_pgsql-0.1.42.dist-info/METADATA,sha256=ioqTg5rPDszmv2K1GHqXbnsMba-mF0k2LVqWU3KLXMo,2944
+database_wrapper_pgsql-0.1.42.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+database_wrapper_pgsql-0.1.42.dist-info/top_level.txt,sha256=EQhZLk12wRdsSp-Lo3Jc4cXmNfG8y5EouNv_7OBCSGo,23
+database_wrapper_pgsql-0.1.42.dist-info/RECORD,,
