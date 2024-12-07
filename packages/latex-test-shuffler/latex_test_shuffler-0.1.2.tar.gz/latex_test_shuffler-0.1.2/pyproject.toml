@@ -1,0 +1,22 @@
+[project]
+name = "latex-test-shuffler"
+version = "0.1.2"
+description = "LaTeX test shuffler"
+readme = "README.md"
+authors = [
+    { name = "Sergio Barrachina Mir", email = "barrachi@uji.es" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2.3",
+    "rich>=13.9.4",
+    "texsoup>=0.3.1",
+    "tqdm>=4.67.0",
+]
+
+[project.scripts]
+latex-test-shuffler = "latex_test_shuffler:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
