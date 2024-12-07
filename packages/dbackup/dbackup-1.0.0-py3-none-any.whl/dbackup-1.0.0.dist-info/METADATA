@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dbackup
+Version: 1.0.0
+Summary: A Django application for UTF-8 database backups.
+Home-page: https://github.com/eneshazr/django-dbackup
+Author: Enes HAZIR
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django >=4.2
+
+# django-dbackup
