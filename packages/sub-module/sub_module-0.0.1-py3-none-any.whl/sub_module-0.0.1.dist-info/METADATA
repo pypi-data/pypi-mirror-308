@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sub-module
+Version: 0.0.1
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: boto3 >=1
+Requires-Dist: requests >=2
+
