@@ -1,0 +1,9 @@
+env: dev
+
+mongo: "mongodb://localhost:27017"
+database: "example"
+
+# logging config
+log_level: 'DEBUG'
+log_handlers: ['console', 'file']
+log_filename: 'app.log'

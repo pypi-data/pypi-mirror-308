@@ -1,0 +1,12 @@
+FROM reg.deeproute.ai/deeproute-all/mlp/ros_python3dot9:1.6.5
+
+WORKDIR /app
+
+COPY . /app
+
+RUN python3 -m pip install -r requirements.txt
+
+EXPOSE 8000
+
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "info"]
+
