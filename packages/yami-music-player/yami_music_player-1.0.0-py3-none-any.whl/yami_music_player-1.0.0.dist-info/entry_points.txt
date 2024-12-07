@@ -1,0 +1,2 @@
+[console_scripts]
+yami = yami.main:entry
