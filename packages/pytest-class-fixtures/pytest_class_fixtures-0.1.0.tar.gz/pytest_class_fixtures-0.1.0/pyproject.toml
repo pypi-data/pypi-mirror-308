@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pytest-class-fixtures"
+version = "0.1.0"
+description = "Class as PyTest fixtures (and BDD steps)"
+authors = ["EPFL ISAS-FSD team <isas-fsd@groupes.epfl.ch>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^8.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest-bdd = "^ 7.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
