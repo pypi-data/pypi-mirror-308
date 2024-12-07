@@ -1,0 +1,8 @@
+united_payment/__init__.py,sha256=oslz5L48EA78b9RlRHsybS6IXPUSN_G7iP57Osj69O8,72
+united_payment/client.py,sha256=iRINLtgJ-0tKOw1CgPueiJvAKyomGFC3Cf_cuRXzbXo,28911
+united_payment/constants.py,sha256=sdeykWxfJjxSM7Jpe2IW2UTj3Z-POTfbYFt6xeUUQqM,173
+united_payment/exceptions.py,sha256=QwGs2rM1ZuQ1qY7p5gJWVVdHk2QMVUn_aEg5f7QNd-Q,2468
+united_payment-0.1.1.dist-info/LICENSE,sha256=aRFaZKlw7IOngdvErcSnu3djXr4qbx3Fr14vMtjsVgU,1094
+united_payment-0.1.1.dist-info/METADATA,sha256=U_W2D5-_PO_b2bgRBeCTuszGMkyiGxp5XOrl4vmXLkY,2502
+united_payment-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+united_payment-0.1.1.dist-info/RECORD,,
