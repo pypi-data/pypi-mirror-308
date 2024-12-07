@@ -1,0 +1,16 @@
+langchain-core
+langchain-anthropic
+langchain-openai
+langchain-google-genai
+langchain-mistralai
+langchain-fireworks
+langchain-together
+langchain-google-vertexai
+langchain-groq
+langchain-nvidia-ai-endpoints
+langchain-ollama
+langchain-ai21
+langchain-upstage
+langchain-databricks
+langchain-ibm
+langchain-xai
