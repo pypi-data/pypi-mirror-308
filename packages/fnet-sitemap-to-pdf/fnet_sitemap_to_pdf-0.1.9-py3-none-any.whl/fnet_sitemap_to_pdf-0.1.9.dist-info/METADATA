@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fnet_sitemap_to_pdf
+Version: 0.1.9
+Requires-Python: >=3.12
+Requires-Dist: fnet-sitemapper
+Requires-Dist: pyppeteer
+Requires-Dist: pypdf
+
