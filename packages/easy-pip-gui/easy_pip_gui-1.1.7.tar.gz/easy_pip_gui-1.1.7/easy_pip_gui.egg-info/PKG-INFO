@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: easy-pip-gui
+Version: 1.1.7
+Summary: An easy pip GUI
+Home-page: https://github.com/Fawn06220/Easy-pip-gui
+Download-URL: https://github.com/Fawn06220/Easy-pip-gui/archive/refs/tags/v1.1.6.tar.gz
+Author: François Garbez
+Author-email: fawn06220@gmail.com
+License: MIT
+Keywords: python,pip,gui
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: wxpython
+Requires-Dist: pip-api
+Requires-Dist: pip-review
+
+ENGLISH NOTICE:
+
+Hi all !
+
+I made an easy GUI to use PIP, there are some cool functionalities :
+
+FIRST READ HELP BY CLICKING "NEED HELP?" BUTTON =)
+
+- Type a library name in the field to install it e.g wxpython
+- Possibility to list installed librairies
+- Possibility to update ALL your libraries/or ONE AT ONCE
+- Possibility to uninstall last installed(e.g if mistake) or from a list of installed libs
+- You can listen to music o/ => FIXED !
+
+USAGE : python -m easy-pip-gui
+
+-13/11/2023-
+I had to list librairies as URLs to be able to get mouse events over them...
+
+----------------------------------------------------------------------------------------------------------------
+
+MODE D'EMPLOI:
+
+Salut Ã  tous et Ã  toutes !
+
+J'ai crÃ©e un GUI simple d'utilisation pour PIP, il y'a quelques fonctionnalitÃ©s sympas :
+
+VOUS POUVEZ COMMENCER PAR CLIQUER SUR LE BOUTON "NEED HELP?" =)
+
+- Taper le nom d'une librairie dans le champ de saisie pour l'installer ex: wxpython
+- PossibilitÃ© de lister les librairies installÃ©es
+- PossibilitÃ© de mettre Ã  jour TOUTES les librairies ou de le faire UNE PAR UNE
+- PossibilitÃ© de dÃ©sinstaller la derniÃ¨re(ex: en cas d'erreur) ou depuis une liste de librairies installÃ©es
+- Vous pouvez Ã©couter de la musique o/ => FIXED !
+
+UTILISATION : python -m easy-pip-gui
+
+-13/11/2023-
+J'ai dÃ» mettre la liste de librairies installÃ©es sous forme d'URLs pour capturer les MouseEvent dessus...
+
+Enjoy ;)
+contact : fawn06220@gmail.com
