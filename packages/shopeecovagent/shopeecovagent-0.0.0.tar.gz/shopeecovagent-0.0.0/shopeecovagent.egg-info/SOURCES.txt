@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopeecovagent.egg-info/PKG-INFO
+shopeecovagent.egg-info/SOURCES.txt
+shopeecovagent.egg-info/dependency_links.txt
+shopeecovagent.egg-info/top_level.txt
