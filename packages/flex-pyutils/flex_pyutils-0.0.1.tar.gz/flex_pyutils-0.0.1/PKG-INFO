@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: flex-pyutils
+Version: 0.0.1
+Summary: 常用开发工具箱
+Home-page: https://g-fxqk2467.coding.net/p/saas-flex/d/pyutils/git/tree/master
+Author: 江浩
+Author-email: jh.vip.1024@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# python实现常用工具类
+# pip install 制作
+## 打包
+## 发布
+## 使用

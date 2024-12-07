@@ -1,0 +1,9 @@
+README.md
+setup.py
+convert/__init__.py
+convert/_data_convert_.py
+flex_pyutils.egg-info/PKG-INFO
+flex_pyutils.egg-info/SOURCES.txt
+flex_pyutils.egg-info/dependency_links.txt
+flex_pyutils.egg-info/requires.txt
+flex_pyutils.egg-info/top_level.txt
