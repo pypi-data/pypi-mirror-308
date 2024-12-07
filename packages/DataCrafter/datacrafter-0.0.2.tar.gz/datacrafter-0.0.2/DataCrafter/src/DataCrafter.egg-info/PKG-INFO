@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DataCrafter
+Version: 0.0.2
+Summary: Synthetic data generator for LLM evaluation
+Author: Darshan Kumar
+Author-email: Darshan Kumar <Darshankumarr03@gmail.com>
+License: MIT
+Project-URL: Source, https://github.com/Darshanroy/synthetic-data-generator.git
+Project-URL: Tracker, https://github.com/Darshanroy/synthetic-data-generator/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# synthetic-data-generator
