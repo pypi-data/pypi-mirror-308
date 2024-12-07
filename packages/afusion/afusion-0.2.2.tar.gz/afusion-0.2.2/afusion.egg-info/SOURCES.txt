@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+app.py
+setup.py
+afusion/__init__.py
+afusion/app.py
+afusion/cli.py
+afusion.egg-info/PKG-INFO
+afusion.egg-info/SOURCES.txt
+afusion.egg-info/dependency_links.txt
+afusion.egg-info/entry_points.txt
+afusion.egg-info/requires.txt
+afusion.egg-info/top_level.txt
+afusion/__pycache__/__init__.cpython-310.pyc
+afusion/__pycache__/cli.cpython-310.pyc
