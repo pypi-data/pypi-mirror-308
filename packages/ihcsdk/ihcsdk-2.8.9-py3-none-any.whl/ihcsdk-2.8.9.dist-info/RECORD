@@ -1,0 +1,12 @@
+ihcsdk/__init__.py,sha256=ocAoa28ZKxGgMlDEHWEsd7n00OtGB0R9N7XQfRlih9Q,28
+ihcsdk/ihcclient.py,sha256=UWXxa5dPh80Bi9InrK8VfBswCS5qDBLMZQ4i5WGEz8A,24308
+ihcsdk/ihcconnection.py,sha256=qCFhU4cAWYnqgiXWF-xjUZj1TMBZ83caDj8jEE1qaoc,2889
+ihcsdk/ihccontroller.py,sha256=9D97RX8DrFMLMxDBcIrhoYY-QEeKNjbVv_PiRW0wNyU,9180
+ihcsdk/ihcsslconnection.py,sha256=q7gDchCN2_SXItp2T3dMvlXmHC7zVO5M0bqGnepiKiU,2079
+ihcsdk/certs/ihc.crt,sha256=VYY_DiHrctlXBTNXGdJ2FN4TYuVnwnpVZ1i8t2_0cec,1002
+ihcsdk/certs/ihc3.crt,sha256=Ka2L8zQ06A76W6fZc0ckScdrj1Cn-mhgqdhc61-cCrk,1398
+ihcsdk-2.8.9.dist-info/METADATA,sha256=EQsoHVGo9EvSx7pZ5Q06vHNAgCY2DhbvEM84KYe73Hc,339
+ihcsdk-2.8.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ihcsdk-2.8.9.dist-info/license.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ihcsdk-2.8.9.dist-info/top_level.txt,sha256=QgKE7TWblC-uXe5-7MVO5JtzvrPiMoVmGgKKsVR43hU,7
+ihcsdk-2.8.9.dist-info/RECORD,,
