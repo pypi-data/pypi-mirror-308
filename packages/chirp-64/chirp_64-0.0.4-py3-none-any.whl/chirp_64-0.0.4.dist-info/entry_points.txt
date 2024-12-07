@@ -1,0 +1,3 @@
+[console_scripts]
+chirp-64=chirp_64.__main__:main
+
