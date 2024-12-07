@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+freeneiroapi/__init__.py
+freeneiroapi/api.py
+freeneiroapi.egg-info/PKG-INFO
+freeneiroapi.egg-info/SOURCES.txt
+freeneiroapi.egg-info/dependency_links.txt
+freeneiroapi.egg-info/requires.txt
+freeneiroapi.egg-info/top_level.txt
