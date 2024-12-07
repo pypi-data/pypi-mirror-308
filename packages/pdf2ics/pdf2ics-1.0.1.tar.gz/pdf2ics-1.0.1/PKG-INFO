@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pdf2ics
+Version: 1.0.1
+Summary: Convert basketball schedule PDF to ICS calendar file
+Home-page: https://github.com/jaxnoth/pdf2ics
+Author: Stephen Swan
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: pdfplumber
+Requires-Dist: icalendar
+Requires-Dist: pytz
+
+# PDF to ICS Calendar Converter
+
+Convert basketball schedule PDFs to ICS calendar files.
+## Features
+
+- Converts PDF basketball schedules to ICS calendar format
+- Handles various time formats including TBD games
+- Automatically sets appropriate time zones (Eastern Time/Indiana)
+- Creates calendar events with:
+  - Team names and opponents
+  - Game locations
+  - 2-hour duration for timed games
+  - Full-day events for TBD times
+- Robust error handling for various PDF formats
+
+## Usage
+```bash
+pdf2ics <path_to_pdf> <output_file>
+```
+### Example
+```bash
+pdf2ics basketball_schedule.pdf basketball_schedule.ics
+```
+## Requirements
+- Python 3.6 or higher
+- PDF must contain a table with columns for:
+  - Date (MM/DD/YY format)
+  - Time
+  - Team
+  - Opponent
+  - Location
+
+## Installation
+```bash
+pip install pdf2ics
+```
+
