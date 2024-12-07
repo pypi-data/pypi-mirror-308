@@ -1,0 +1,3 @@
+[console_scripts]
+gth_exporter=gth_exporter.main:main
+
