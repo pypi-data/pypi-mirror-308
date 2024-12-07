@@ -1,0 +1,16 @@
+pandas>=1.0
+
+[dev]
+country_converter[lint,test]
+
+[lint]
+black>=22.3.0
+isort>=5.5.2
+
+[test]
+coveralls
+pytest>=5.4.0
+pytest-black
+pytest-cov>=2.7.0
+pytest-datadir
+pytest-mypy
