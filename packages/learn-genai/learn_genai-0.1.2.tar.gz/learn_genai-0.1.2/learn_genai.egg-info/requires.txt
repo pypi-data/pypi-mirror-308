@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-community
+langgraph
+beautifulsoup4
+requests
+chromadb
+ollama
