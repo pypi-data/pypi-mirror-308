@@ -1,0 +1,66 @@
+Metadata-Version: 2.3
+Name: kaitian
+Version: 0.0.2
+Summary: High-level machine learning library.
+Author-email: AshSwing <ashswing@email.cn>
+Requires-Python: <3.11,>=3.8
+Requires-Dist: catboost~=1.2.7; python_version < '3.9'
+Requires-Dist: catboost~=1.2.7; python_version >= '3.9'
+Requires-Dist: lightgbm>=4.2.0; python_version >= '3.9'
+Requires-Dist: lightgbm~=4.5.0; python_version < '3.9'
+Requires-Dist: matplotlib~=3.7.5; python_version < '3.9'
+Requires-Dist: matplotlib~=3.7.5; python_version >= '3.9'
+Requires-Dist: numba<0.59,~=0.58.0; python_version < '3.9'
+Requires-Dist: numba~=0.60.0; python_version >= '3.9'
+Requires-Dist: numpy<1.25,~=1.24; python_version < '3.9'
+Requires-Dist: numpy~=1.26.4; python_version >= '3.9'
+Requires-Dist: optuna-integration~=4.1.0; python_version < '3.9'
+Requires-Dist: optuna~=4.0.0; python_version < '3.9'
+Requires-Dist: optuna~=4.0.0; python_version >= '3.9'
+Requires-Dist: pandas<2.1,~=2.0; python_version < '3.9'
+Requires-Dist: pandas~=2.2.3; python_version >= '3.9'
+Requires-Dist: polars<1.9,~=1.8.2; python_version < '3.9'
+Requires-Dist: polars>=1.9.0; python_version >= '3.9'
+Requires-Dist: rich~=13.7.1; python_version < '3.9'
+Requires-Dist: rich~=13.7.1; python_version >= '3.9'
+Requires-Dist: scikit-learn~=1.2.2; python_version < '3.9'
+Requires-Dist: scikit-learn~=1.2.2; python_version >= '3.9'
+Requires-Dist: xgboost~=2.0.3; python_version < '3.9'
+Requires-Dist: xgboost~=2.0.3; python_version >= '3.9'
+Description-Content-Type: text/x-rst
+
+================================================
+KaiTian: High-level Package for Machine Learning
+================================================
+
+KaiTian is a high-level package for machine learning. It provides a simple and
+intuitive interface for users to train and evaluate machine learning models.
+It also provides a variety of tools for data preprocessing, model selection,
+and model saving & loading.
+
+🏗️ Install KaiTian in Specific Environment
+==========================================
+
+In general, the new release of KaiTian will be uploaded to pypi, you can 
+install KaiTian simply with:
+
+.. code-block:: bash
+    
+    pip install kaitian
+
+To install KaiTian in Kaggle notebook offline, you need to upload the `.whl` file as 
+a dataset and execute:
+
+.. code-block:: bash
+    
+    pip install --no-index -q /kaggle/input/{dataset}/{kaitian_version.whl}
+
+All the requriements of KaiTian are alrealy included in Kaggle environment, 
+so you don't need try to find them while installing.
+
+If you do need to install KaiTian with some updated requriements, try this:
+
+.. code-block:: bash
+    
+    pip install --no-index -q --find-links /path/to/requriements/pkgs /kaggle/input/{dataset}/{kaitian_version.whl}
+
