@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: pyjats
+Version: 0.0.1
+Summary: Sample Python Project for creating a new Python Module
+Author-email: Daniel Ciborowski <dciborow@microsoft.com>
+Requires-Python: >=3.8.1
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: lxml==5.3.0
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: xsdata==24.11
+Requires-Dist: xsdata_pydantic==24.5
+Requires-Dist: pyspark>=3.0.0 ; extra == "spark"
+Requires-Dist: bandit[toml]==1.7.10 ; extra == "test"
+Requires-Dist: black==24.10.0 ; extra == "test"
+Requires-Dist: check-manifest==0.50 ; extra == "test"
+Requires-Dist: flake8-bugbear==24.10.31 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8 ; extra == "test"
+Requires-Dist: flake8-pyproject ; extra == "test"
+Requires-Dist: pre-commit==4.0.1 ; extra == "test"
+Requires-Dist: pylint==3.3.1 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: pytest-cov==6.0.0 ; extra == "test"
+Requires-Dist: pytest-mock<3.14.1 ; extra == "test"
+Requires-Dist: pytest-runner ; extra == "test"
+Requires-Dist: pytest==8.3.3 ; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == "test"
+Requires-Dist: shellcheck-py==0.10.0.1 ; extra == "test"
+Project-URL: Documentation, https://github.com/microsoft/python-package-template/tree/main#readme
+Project-URL: Source, https://github.com/microsoft/python-package-template
+Project-URL: Tracker, https://github.com/microsoft/python-package-template/issues
+Provides-Extra: spark
+Provides-Extra: test
+
+# PyJATS
+
+This is a quick and dirty python tool to deserialise JATS xml into something more useable inside python.
+
+It ain't fast, and probably ain't pretty, but it gets text out of the XML and for now that's enough.
+
+To use it:
+
+```python
+from pyjats.parser import parse_xml
+
+article_sections = parse_xml(file_path)
+```
+
+This will only work with a file object because reasons, you should wrap a string (e.g. one you got from an xml request to the EuropePMC API) in a `io.StringIO` to have it work.
