@@ -1,0 +1,13 @@
+pandas>=2.0.0
+requests>=2.32.3
+tqdm>=4.67.0
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
