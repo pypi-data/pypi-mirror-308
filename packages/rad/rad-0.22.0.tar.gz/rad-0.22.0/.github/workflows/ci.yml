@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - "*"
+    tags:
+      - '*'
+  pull_request:
+  schedule:
+    # Weekly Monday 9AM build
+    - cron: '0 9 * * 1'
+
+jobs:
+  test:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@924441154cf3053034c6513d5e06c69d262fb9a6  # v1.13.0
+    with:
+      envs: |
+        - linux: py310-xdist
+        - linux: py311-xdist-cov
+          coverage: codecov
+        - linux: py312-xdist
+        - linux: py313-xdist
