@@ -1,0 +1,10 @@
+testforge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testforge/cli.py,sha256=zt7IrMw4GSDlFL1j-NfK6gmWpjgl4dFHYaOCr2qvTvg,6737
+testforge/context_fetcher.py,sha256=HvCLP7VBPOIvQTF5Nd0niuMHeL4PRiEh0rbBy92N1po,7748
+testforge/main.py,sha256=GfB949F2WmgD1DMqseZzRjgSNvd2n0dkDnOEmSI5R5A,62
+testforge-1.0.6.dist-info/LICENSE,sha256=weYGFVBm_u2VIUC3QSBpUKEm13mYQC9gFreMANqFlb4,1068
+testforge-1.0.6.dist-info/METADATA,sha256=0Hjb8vwdolCAzqtfP5dMkQMoHoJ4o1N8sYJJZdreR74,2148
+testforge-1.0.6.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+testforge-1.0.6.dist-info/entry_points.txt,sha256=gIoZjP3QOB_zdPOeULSI2M6g1bGbYx9p6xhTDpMHlYM,49
+testforge-1.0.6.dist-info/top_level.txt,sha256=YlnAe86SwUHL4RQ8lflp82pzevO6eAJyj1IbGkSWRnw,10
+testforge-1.0.6.dist-info/RECORD,,
