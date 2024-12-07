@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sulekha_holtwinters_python"
+version = "1.5.0"
+authors = [
+  { name="Sulekha Aloorravi", email="sulekha.aloorravi@gmail.com" },
+]
+description = "A Holt Winters implementation Python project using Pandas Dataframe"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ['numpy', 'pandas']
+
+[project.urls]
+"Homepage" = "https://github.com/sulekhaaloorravi/sulekha_holtwinters_python"
