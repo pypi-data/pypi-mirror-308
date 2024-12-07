@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: surfhub
+Version: 0.0.1
+Summary: A Python library for SERP and web scraping with multiple provider integration
+Home-page: https://github.com/nqbao/surfhub
+Author: Bao Nguyen
+Author-email: b@nqbao.com
+Project-URL: Bug Tracker, https://github.com/nqbao/surfhub/issues
+Keywords: serp,scraping,web,browserless,zyte
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: beautifulsoup4>=4.9.3
+
+# surfhub
+A python library for surfing and crawling website

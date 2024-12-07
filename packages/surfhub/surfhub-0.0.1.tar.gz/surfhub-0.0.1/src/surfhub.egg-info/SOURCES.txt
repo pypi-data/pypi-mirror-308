@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/surfhub/__init__.py
+src/surfhub.egg-info/PKG-INFO
+src/surfhub.egg-info/SOURCES.txt
+src/surfhub.egg-info/dependency_links.txt
+src/surfhub.egg-info/requires.txt
+src/surfhub.egg-info/top_level.txt
