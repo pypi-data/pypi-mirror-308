@@ -1,0 +1,11 @@
+shellviz/__init__.py,sha256=AXmd4vii01q_66tJsWlvgJHAtB9fITE9y1igHW-53HU,8182
+shellviz/build/index.html,sha256=v7DU0w9oHuIh5qRs47cztpViFPy76ZawHi4dB2vMIcI,623
+shellviz/build/static/css/main.css,sha256=kjhfh7TLqzHN5q5j4Rg99SXLrFZx3BEPesl539DXsKs,11843
+shellviz/build/static/js/main.js,sha256=v2toykHpGD6S6NxrMBDV1VvjKGaILYYkT3wkzDKC1Xo,771666
+shellviz/cli.py,sha256=ZZPHIfeY8lfmnjZcYGNJ8zDsGnqsjtGJ2247D3KUmc4,161
+shellviz/utils_html.py,sha256=MOasLFWLPJ7nrY3eCjmLjFLw8EH5BO4ef2jIFmNa9mc,6704
+shellviz/utils_websockets.py,sha256=GtLEGE1Te_tnIUIKSewYiBgstA5LeacEEfq7xZcHmKg,2847
+shellviz-0.3.1.dist-info/METADATA,sha256=ymWqilGJaJTOlh-E3oV1DzZt2SkF_xCik_OCfwP6bqA,1299
+shellviz-0.3.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shellviz-0.3.1.dist-info/entry_points.txt,sha256=8s90XrMzttmlK_9QVklLvYXYAXn7GFQFuhdV7EDvEK4,45
+shellviz-0.3.1.dist-info/RECORD,,
