@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: wcf-http-server
+Version: 39.2.4.0.4
+Summary: 一个玩微信的工具
+Author: sean
+Author-email: sean.li@vectorindex.cloud
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.115.5,<0.116.0)
+Requires-Dist: uvicorn (>=0.32.0,<0.33.0)
+Requires-Dist: wcferry (>=39.2.4,<39.3.0)
+Description-Content-Type: text/markdown
+
+# wcf-http
+Python HTTP server for [WeChatFerry](https://github.com/lich0821/WeChatFerry) [v39.2.4](https://github.com/lich0821/WeChatFerry/releases/tag/v39.2.4)
+
+[WeChatSetup-3.9.10.27.exe](https://github.com/lich0821/WeChatFerry/releases/download/v39.2.4/WeChatSetup-3.9.10.27.exe)
+
