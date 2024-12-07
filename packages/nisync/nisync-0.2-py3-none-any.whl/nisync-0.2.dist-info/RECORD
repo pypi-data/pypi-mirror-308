@@ -1,0 +1,14 @@
+nisync/__init__.py,sha256=-6dJOotY4m-xTpr3AA2_nzvCR67amA4B3RJAFjy9QH8,198
+nisync/_attributes.py,sha256=0jopd0PNyXlHEIkg38gQqG15Aw3TYG7m-XdzpFAU39E,1145
+nisync/_errorcodes.py,sha256=JjavuNUm6BmVlV_ZdhAwsQdvW9vnIFmd64HDfsIJt08,25092
+nisync/_library.py,sha256=InrPv-rH4v-Hkqimbmn7JkpAl391T1aHcjwmFC3u_U0,60706
+nisync/_library_singleton.py,sha256=A_vKO-8Ihvy46fQgzmFdPZI_TDtsvIHRZqfVX6yIIYk,1486
+nisync/_visatype.py,sha256=rFSpXRG61yk90BeVfNMsGoekFMJrIoPLJZ1D3chqu1Q,470
+nisync/constants.py,sha256=SObP2fPnG97fq11Xl4zx3POeozvlxhRxrfbIn90Tv-4,3163
+nisync/enums.py,sha256=K52xakegWKUAKpv8VsnSLglbeYqAoMB7FN5Hnuk6lLg,2645
+nisync/errors.py,sha256=4N-kAmgR5kNQUHBviqleq1niHVI7K8aBYqw8o8FdowI,2528
+nisync/session.py,sha256=gdV94mBnVZBF4xqXNRA19YDGLd_jR-CA_sG2GWfTf-g,48063
+nisync-0.2.dist-info/LICENSE,sha256=RDYwdvgkJSV0d9DIr_bguK8m-Tkz8ZcPhbgCWSFQnyo,1196
+nisync-0.2.dist-info/METADATA,sha256=JlwNuamQnYFD9g7fBwtAwMH4mlpzo-DEMQH8zetkKvo,5831
+nisync-0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+nisync-0.2.dist-info/RECORD,,
