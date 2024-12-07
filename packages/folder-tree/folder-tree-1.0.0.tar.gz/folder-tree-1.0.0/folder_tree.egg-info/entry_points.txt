@@ -1,0 +1,2 @@
+[console_scripts]
+folder-tree = folder_tree.tree:main
