@@ -1,0 +1,13 @@
+build/
+dist/
+tests/
+*.pyc
+*.pkl
+*.swp
+test.py
+itchat.pkl
+QR.jpg
+.DS_Store
+myexample
+.idea
+VChat.egg-info/
