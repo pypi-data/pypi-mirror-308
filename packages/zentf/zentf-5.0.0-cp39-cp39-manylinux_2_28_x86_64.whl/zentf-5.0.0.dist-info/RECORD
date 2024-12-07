@@ -1,0 +1,12 @@
+_solib_k8/_U_S_Stensorflow_Uplugin_Czen_Ulibs_Ulinux___Uexternal_Samd_Ublis/libblis-mt.so.5,sha256=bJ1pzlCSDaMZ7z7ZgKY6GYwx925Wbo4MCPjPxXTKEqs,13384408
+_solib_k8/_U_S_Stensorflow_Uplugin_Czen_Ulibs_Ulinux___Uexternal_Sllvm_Uopenmp/libiomp5.so,sha256=5qCa9rBcYLkY47krEpauVtoWftmVaYnqJ3OMonuFw50,823208
+_solib_k8/_U_S_Stensorflow_Uplugin_Czen_Ulibs_Ulinux___Uexternal_Szen_Udnn/libamdZenDNN.so,sha256=XuClbfCvBncR17BPne4twQ75xlkn_0aEUZLcuOxXdY4,38424872
+my_plugin_dir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_plugin_dir/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_plugin_dir/python/test.py,sha256=O0mVIqkg8mD7Ma1mByHNyvc6HD-LRtb0Twhf6Vclvgo,109
+tensorflow-plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow-plugins/libamdcpu_plugin.so,sha256=ebRpIin2RThimGwvyliT4_oPGVPOCPsNqXiwwnixD3M,11321264
+zentf-5.0.0.dist-info/METADATA,sha256=hmEksYgcpyFkVyOn-uQnxDk9n_E0g14nTp5qH84GuuE,2692
+zentf-5.0.0.dist-info/WHEEL,sha256=c7fm7CntAP4CB76e4qgkdpfoul4eIbgsFyo7c9yN4jE,102
+zentf-5.0.0.dist-info/top_level.txt,sha256=U8pEoRi6q_7JRw0RgHbLWlDkZ8B4LnRU8r-3rIB3uAc,33
+zentf-5.0.0.dist-info/RECORD,,
