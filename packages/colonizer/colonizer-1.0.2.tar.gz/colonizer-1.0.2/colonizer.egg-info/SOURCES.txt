@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+colonizer/__init__.py
+colonizer/__main__.py
+colonizer/colonizer.py
+colonizer/npm.py
+colonizer/pypi.py
+colonizer.egg-info/PKG-INFO
+colonizer.egg-info/SOURCES.txt
+colonizer.egg-info/dependency_links.txt
+colonizer.egg-info/entry_points.txt
+colonizer.egg-info/top_level.txt
