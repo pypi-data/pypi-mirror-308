@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tnsa.egg-info/PKG-INFO
+tnsa.egg-info/SOURCES.txt
+tnsa.egg-info/dependency_links.txt
+tnsa.egg-info/requires.txt
+tnsa.egg-info/top_level.txt
