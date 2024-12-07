@@ -1,0 +1,4 @@
+selenium>=4.0.0
+beautifulsoup4>=4.10.0
+python-dotenv>=1.0.0
+langchain-ollama>=0.1.0
