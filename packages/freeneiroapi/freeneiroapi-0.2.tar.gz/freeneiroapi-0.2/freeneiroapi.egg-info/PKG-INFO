@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: freeneiroapi
+Version: 0.2
+Summary: API library for interacting with DuckGPT
+Author: FutFut19
+Author-email: futfut19@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: requests
