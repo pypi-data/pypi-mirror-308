@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: scope-cli
+Version: 0.1.0
+Summary: A CLI tool for visualizing directory sizes and checking port usage.
+Home-page: https://github.com/deepampatel/scope-cli
+Author: Deepam Patel
+Author-email: deepam8155@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+
+# Scope
+
+Scope is a CLI tool that provides:
+- **Directory Size Visualization**: Displays the sizes of directories and files in a tree structure.
+- **Port Checker**: Checks if a specific port is in use and identifies the associated process.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+### Directory Size Visualization
+```bash
+scope tree /path/to/directory
+```
+
+### Port Checker
+```bash
+scope port 8080
+```
