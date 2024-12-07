@@ -1,0 +1,9 @@
+MANIFEST.in
+src/wagtail_seo_report/__init__.py
+src/wagtail_seo_report/settings.py
+src/wagtail_seo_report/views.py
+src/wagtail_seo_report/wagtail_hooks.py
+src/wagtail_seo_report/static/wagtail_seo_report/core.css
+src/wagtail_seo_report/templates/wagtail_seo_report/seo_score_report_results.html
+src/wagtail_seo_report/templates/wagtail_seo_report/wagtail_seo_report.svg
+src/wagtail_seo_report/templates/wagtail_seo_report/listing/_list_seo_page_report.html
