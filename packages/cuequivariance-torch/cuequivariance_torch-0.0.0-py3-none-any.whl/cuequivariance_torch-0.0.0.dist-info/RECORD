@@ -1,0 +1,5 @@
+cuequivariance_torch/VERSION,sha256=8LjHfZeNe0rr6x31osCmqnA5NomBndQGCCarbTa16pA,5
+cuequivariance_torch/__init__.py,sha256=-Y3m8FJZRPw9knD_BWCucZTQLrtKXsCtKtOjIIlSGDg,258
+cuequivariance_torch-0.0.0.dist-info/METADATA,sha256=3EaJU2ZJiNRW9jjBH_erpczELAOj9uKTjBHEqn1FOr8,13440
+cuequivariance_torch-0.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+cuequivariance_torch-0.0.0.dist-info/RECORD,,
