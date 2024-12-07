@@ -1,0 +1,4 @@
+pandas==1.5.2
+numpy==1.26.4
+biopython==1.80
+requests
