@@ -1,0 +1,3 @@
+django
+django-modeltrans
+django-pragmatic>=6.0.0
