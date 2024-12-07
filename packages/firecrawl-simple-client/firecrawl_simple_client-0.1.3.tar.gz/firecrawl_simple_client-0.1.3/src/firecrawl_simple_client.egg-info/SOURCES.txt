@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/firecrawl_simple_client.egg-info/PKG-INFO
+src/firecrawl_simple_client.egg-info/SOURCES.txt
+src/firecrawl_simple_client.egg-info/dependency_links.txt
+src/firecrawl_simple_client.egg-info/requires.txt
+src/firecrawl_simple_client.egg-info/top_level.txt
+src/simplecrawl/__init__.py
+src/simplecrawl/async_client.py
+src/simplecrawl/models.py
+src/simplecrawl/py.typed
+src/simplecrawl/sync_client.py
