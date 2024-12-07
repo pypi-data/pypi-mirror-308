@@ -1,0 +1,14 @@
+dataauto/__init__.py,sha256=UW9-VCSsUwYbDD7u8VfefrWW_FiXKfBrrtOQQGmruB8,44
+dataauto/analysis.py,sha256=BAemVbboN6ozKKvk2YQu1TkDel3nX88fxFrgbbR_dhc,2492
+dataauto/cli.py,sha256=hwerGC2TQNea-8nAhudfx6ZlMVuZn3Tu5jFrpv39_zc,2138
+dataauto/utils.py,sha256=eh9f1N7ZQ8UT9b09-aRhgSsa_wsxvbTVfG9cG1w17SM,285
+tests/__init__.py,sha256=OWz0Ua3ofMcvkBc9REOLWwUyCh7tL1XeAPZisU6wD2E,19
+tests/test_analysis.py,sha256=4MdYI49lQJjQSu5fcbGMZXMYQSUqi4OyguVfbL6sws4,701
+tests/test_cli.py,sha256=obdgZNrnAo36kU7rNjjWmdPjWEwLNIjVCFN-RZhR4uQ,1076
+tests/test_utils.py,sha256=bXaGFrfCwS02zmeatnoqGK6pjxQx-vcyiY9Bhz2GSjM,278
+dataauto-0.1.0.dist-info/LICENSE,sha256=8_MdRKpdHSVEEp7AC0FmNDGTX4m_ZCPWcHdh5QhKpZs,159
+dataauto-0.1.0.dist-info/METADATA,sha256=DgkdqD27gKshRyF53Or1DocqTSUsdx1cWp-LFAjwDNY,1150
+dataauto-0.1.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+dataauto-0.1.0.dist-info/entry_points.txt,sha256=qZHHfEEQ9Cbo7_eEiQpHKFMlmbf1ZcxFO5ObAqu8ENI,46
+dataauto-0.1.0.dist-info/top_level.txt,sha256=un1egB3YRmzkuo7NAu1cdm9Fsp60N1__twMIFPRmt3Y,15
+dataauto-0.1.0.dist-info/RECORD,,
