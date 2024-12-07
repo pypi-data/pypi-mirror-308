@@ -1,0 +1,9 @@
+labthings_picamera2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labthings_picamera2/recalibrate_utils.py,sha256=sgdKYRQwL_m7H-1Wt8rNLxDwRNDXsp_qPA5VxiZPRvY,21189
+labthings_picamera2/server.py,sha256=wSWxas5JLLOxrbmSULtjpVyP2qwtCQjhfInqM11wDyA,353
+labthings_picamera2/thing.py,sha256=tK9D7o-S-iNq6fTUq6MDwDJGp-Q49AfrVQpaLwCqz2M,32878
+labthings_picamera2-0.0.1.dev1.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+labthings_picamera2-0.0.1.dev1.dist-info/METADATA,sha256=tCafNMREK996Ma5PSj1hCJYwEyKXwQgeSJEV-D1SX4Q,2963
+labthings_picamera2-0.0.1.dev1.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+labthings_picamera2-0.0.1.dev1.dist-info/top_level.txt,sha256=y3l4Dhk5ax3Qvv0QdbqgVnVG1wkOavfEf1EwNnKW9YU,20
+labthings_picamera2-0.0.1.dev1.dist-info/RECORD,,
