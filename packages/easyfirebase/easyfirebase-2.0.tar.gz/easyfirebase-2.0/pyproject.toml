@@ -1,0 +1,38 @@
+[project]
+name = "easyfirebase"
+version = "2.0"
+authors = [
+  { name = "Md. Rubel H.", email = "mail.rubel.me@gmail.com" }
+]
+description = "A Firebase-django integration package where your files are uploaded to Firebase and the rest of the work is done by the package."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+    "Django>=3.0", 
+    "firebase-admin==6.5.0", 
+    "pillow==10.2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/rubelliumm/EasyFirebase"
+Issues = "https://github.com/rubelliumm/EasyFirebase/issues"
+
+[tool.setuptools]
+# Adjust this part to use 'src' directory structure if applicable
+package-dir = { "" = "src" }
+
+# Define where your packages are, e.g., find_packages will look in 'src' directory
+packages = [
+    "EasyFirebase"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

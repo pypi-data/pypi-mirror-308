@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/EasyFirebase/__init__.py
+src/EasyFirebase/apps.py
+src/EasyFirebase/fields.py
+src/EasyFirebase/storage.py
+src/easyfirebase.egg-info/PKG-INFO
+src/easyfirebase.egg-info/SOURCES.txt
+src/easyfirebase.egg-info/dependency_links.txt
+src/easyfirebase.egg-info/requires.txt
+src/easyfirebase.egg-info/top_level.txt
