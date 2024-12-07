@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: single-bot
+Version: 0.2.3
+Summary: Omnichannel state-based chatbot framework
+Author: Nikita Karfidov
+Author-email: krfdv.ai@gmail.com
+License: AGPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Description-Content-Type: text/markdown
+Requires-Dist: aiogram
+Requires-Dist: sqlitedict
+Requires-Dist: dill
+Requires-Dist: python-dotenv
+Requires-Dist: sqlalchemy
+
+Старая документация устарела. А новой пока нет.
