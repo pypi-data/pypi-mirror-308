@@ -1,0 +1,3 @@
+include README.md
+include maskgct/maskgct/tts/maskgct/config/*.json
+recursive-include maskgct *.py

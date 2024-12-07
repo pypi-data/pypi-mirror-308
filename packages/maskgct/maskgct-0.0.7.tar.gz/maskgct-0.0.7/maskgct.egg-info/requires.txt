@@ -1,0 +1,4 @@
+pykakasi
+pyopenjtalk
+phonemizer
+LangSegment
