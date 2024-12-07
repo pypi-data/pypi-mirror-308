@@ -1,0 +1,26 @@
+[project]
+name = "neuroimage_denoiser_gui"
+version = "1.1.0"
+authors = [
+  { name="Andreas B"},
+  { name="Stephan Weißbach"}
+]
+
+description = "GUI Implementation for Neuorimage Denoiser (https://github.com/s-weissbach/neuroimage_denoiser)"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "neuroimage_denoiser>=0.1.5",
+  "gpustat>=1.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/andreasmz/neuroimage_denoiser_gui"
+Issues = "https://github.com/andreasmz/neuroimage_denoiser_gui/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
