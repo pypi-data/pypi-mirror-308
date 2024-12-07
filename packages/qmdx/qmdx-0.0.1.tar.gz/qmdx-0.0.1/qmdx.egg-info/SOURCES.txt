@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+qmdx.egg-info/PKG-INFO
+qmdx.egg-info/SOURCES.txt
+qmdx.egg-info/dependency_links.txt
+qmdx.egg-info/entry_points.txt
+qmdx.egg-info/requires.txt
+qmdx.egg-info/top_level.txt
