@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: colonizer
+Version: 1.0.4
+Summary: A terrible tool for bad people
+Home-page: https://github.com/shobrook/colonizer
+Author: shobrook
+Author-email: shobrookj@gmail.com
+License: MIT
+Keywords: pypi npm node python package reserve template project generator
+Requires-Python: >=3
+License-File: LICENSE
