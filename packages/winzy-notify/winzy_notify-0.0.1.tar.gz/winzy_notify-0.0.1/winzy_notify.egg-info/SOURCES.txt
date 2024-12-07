@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_winzy_notify.py
+winzy_notify/__init__.py
+winzy_notify.egg-info/PKG-INFO
+winzy_notify.egg-info/SOURCES.txt
+winzy_notify.egg-info/dependency_links.txt
+winzy_notify.egg-info/entry_points.txt
+winzy_notify.egg-info/requires.txt
+winzy_notify.egg-info/top_level.txt

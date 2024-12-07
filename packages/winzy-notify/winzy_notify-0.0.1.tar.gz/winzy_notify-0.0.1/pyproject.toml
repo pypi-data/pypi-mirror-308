@@ -1,0 +1,33 @@
+[project]
+name = "winzy-notify"
+version = "0.0.1"
+description = "Notify in mac and windows"
+readme = "README.md"
+authors = [{name = "Sukhbinder Singh"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "winzy",
+]
+
+[project.urls]
+Homepage = "https://github.com/sukhbinder/winzy-notify"
+Changelog = "https://github.com/sukhbinder/winzy-notify/releases"
+Issues = "https://github.com/sukhbinder/winzy-notify/issues"
+CI = "https://github.com/sukhbinder/winzy-notify/actions"
+
+[project.entry-points."winzy.plugins"]
+notify = "winzy_notify:notify_plugin"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
