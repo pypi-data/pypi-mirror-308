@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+timetoread-zh=mkdocs_timetoread_zh.plugin:TimeToReadZh
+
