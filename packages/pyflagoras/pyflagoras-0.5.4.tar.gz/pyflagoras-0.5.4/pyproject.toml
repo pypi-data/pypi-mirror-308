@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+"setuptools>=61.0"
+]
+
+build-backend = "setuptools.build_meta"
+[project.scripts]
+pyflagoras = "pyflagoras:__main__.main"
+[project]
+name = "pyflagoras"
+version = "0.5.4"
+dependencies = [
+"pillow>=10.3.0",
+"pymupdf>=1.24.7",
+"svglib>=1.5.1",
+"numpy>=2.0.0"
+]
+authors = [
+  { name="Annabel Quach", email="annabelquach13@gmail.com" },
+]
+description = "A Python command line interface tool for theming .svg files using user-provided images."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/phthallo/pyflagoras"
+"Bug Tracker" = "https://github.com/phthallo/pyflagoras/issues"
