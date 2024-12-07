@@ -1,0 +1,22 @@
+[tool.pytype]
+inputs = ['src']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+lint.select = [
+    "F", # https://beta.ruff.rs/docs/rules/#pyflakes-f
+    "W", # https://beta.ruff.rs/docs/rules/#warning-w
+    "E", # https://beta.ruff.rs/docs/rules/#error-e
+    "I", # https://beta.ruff.rs/docs/rules/#isort-i
+    # "N", # https://beta.ruff.rs/docs/rules/#pep8-naming-n
+    "B",     # https://beta.ruff.rs/docs/rules/#flake8-bugbear-b
+    "ASYNC", # https://docs.astral.sh/ruff/rules/#flake8-async-async
+    "C4",    # https://docs.astral.sh/ruff/rules/#flake8-comprehensions-c4
+    "SIM",   # flake8-simplify
+]
+
+lint.ignore = ["B008"]
