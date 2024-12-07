@@ -1,0 +1,14 @@
+Click
+requests
+
+[async]
+aiohttp
+
+[dev]
+aioresponses
+pytest
+pytest-asyncio
+pytest-mock
+pytest-responses
+mypy
+types-requests
