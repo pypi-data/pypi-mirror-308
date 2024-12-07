@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bombcell
+Version: 0.1rc0
+Author: Julie Fabre and Sam Dodgson
+Author-email: samuel.dodgson@ucl.ac.uk
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BombCellPy
+Current WIP python version of BombCell
