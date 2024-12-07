@@ -1,0 +1,7 @@
+setup.py
+poshello/__init__.py
+poshello/poshello.py
+poshello.egg-info/PKG-INFO
+poshello.egg-info/SOURCES.txt
+poshello.egg-info/dependency_links.txt
+poshello.egg-info/top_level.txt
