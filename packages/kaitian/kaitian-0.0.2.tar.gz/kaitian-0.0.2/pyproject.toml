@@ -1,0 +1,65 @@
+[project]
+name = "kaitian"
+description = "High-level machine learning library."
+readme = { file = "README.rst", content-type = "text/x-rst" }
+authors = [{ name = "AshSwing", email = "ashswing@email.cn" }]
+requires-python = ">=3.8, <3.11"
+dynamic = ["version"]
+
+dependencies = [
+    # for python >= 3.9
+    "catboost~=1.2.7; python_version>='3.9'",
+    "lightgbm>=4.2.0; python_version>='3.9'",
+    "matplotlib~=3.7.5; python_version>='3.9'",
+    "numba~=0.60.0; python_version>='3.9'",
+    "numpy~=1.26.4; python_version>='3.9'",
+    "optuna~=4.0.0; python_version>='3.9'",
+    "pandas~=2.2.3; python_version>='3.9'",
+    "polars>=1.9.0; python_version>='3.9'",
+    "rich~=13.7.1; python_version>='3.9'",
+    "scikit-learn~=1.2.2; python_version>='3.9'",
+    "xgboost~=2.0.3; python_version>='3.9'",
+    # for python <= 3.8
+    "catboost~=1.2.7; python_version<'3.9'",
+    "lightgbm~=4.5.0; python_version<'3.9'",
+    "matplotlib~=3.7.5; python_version<'3.9'",
+    "numba~=0.58.0,<0.59; python_version<'3.9'",
+    "numpy~=1.24,<1.25; python_version<'3.9'",
+    "optuna-integration~=4.1.0; python_version<'3.9'",
+    "optuna~=4.0.0; python_version<'3.9'",
+    "pandas~=2.0,<2.1; python_version<'3.9'",
+    "polars~=1.8.2,<1.9; python_version<'3.9'",
+    "rich~=13.7.1; python_version<'3.9'",
+    "scikit-learn~=1.2.2; python_version<'3.9'",
+    "xgboost~=2.0.3; python_version<'3.9'",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+lint.extend-select = ["FA", "UP"]
+lint.extend-ignore = ["FA100", "E731"]
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.hatch.version]
+path = "src/kaitian/__about__.py"
+
+[tool.uv]
+dev-dependencies = ["ipykernel>=6.29.5", "pytest>=8.3.3", "twine>=5.1.1"]
+
+[tool.pytest.ini_options]
+python_files = "*.py"
+pythonpath = ["src", "test"]
+addopts = "--doctest-modules"
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE",
+    "IGNORE_EXCEPTION_DETAIL",
+    "ELLIPSIS",
+]
