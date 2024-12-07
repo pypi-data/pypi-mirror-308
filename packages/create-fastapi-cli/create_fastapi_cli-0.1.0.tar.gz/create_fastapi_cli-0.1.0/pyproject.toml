@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "create-fastapi-cli"
+version = "0.1.0"
+description = "A cli for creating fastapi project quickly."
+authors = ["yugangcao <yugang.cao12@gmail.com>"]
+readme = "README.md"
+
+packages = [{ include = "src" }]
+
+[tool.poetry.scripts]
+create-fastapi-cli = "src.main:main"
+dev = "poetry run uvicorn src.main:app --host 0.0.0.0 --port 8000 --log-level=info --reload --exclude-modules=tests"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4.0"
+jinja2 = "^3.1.4"
+importlib-resources = "^6.4.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

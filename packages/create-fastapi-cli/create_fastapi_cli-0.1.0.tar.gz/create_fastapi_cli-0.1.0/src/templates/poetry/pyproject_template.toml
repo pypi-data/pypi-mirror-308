@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "{{ name }}"
+version = "0.1.0"
+description = "FastAPI application for {{ name }} API."
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.pytype]
+inputs = ['src']
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+fastapi = "^0.115.5"
+uvicorn = { extras = ["standard"], version = "^0.32.0" }
+pydantic-settings = "^2.6.1"
+asgi-correlation-id = "^4.3.4"
+aiohttp = "^3.11.2"
+asyncio = "^3.4.3"
+httpx = "^0.27.2"
+
+async-asgi-testclient = "^1.4.11"
+pytest-asyncio = "^0.24.0"
+motor = "^3.6.0"
+
+testcontainers = { extras = ["mongo"], version = "*" }
+
+[tool.poetry.dev-dependencies]
+pytype = "^2024.10.11"
+pytest = "^8.3.3"
+ruff = "^0.7.3"
+pytest-env = "^1.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+lint.select = [
+    "F", # https://beta.ruff.rs/docs/rules/#pyflakes-f
+    "W", # https://beta.ruff.rs/docs/rules/#warning-w
+    "E", # https://beta.ruff.rs/docs/rules/#error-e
+    "I", # https://beta.ruff.rs/docs/rules/#isort-i
+    # "N", # https://beta.ruff.rs/docs/rules/#pep8-naming-n
+    "B",     # https://beta.ruff.rs/docs/rules/#flake8-bugbear-b
+    "ASYNC", # https://docs.astral.sh/ruff/rules/#flake8-async-async
+    "C4",    # https://docs.astral.sh/ruff/rules/#flake8-comprehensions-c4
+    "SIM",   # flake8-simplify
+]
+
+lint.ignore = ["B008"]

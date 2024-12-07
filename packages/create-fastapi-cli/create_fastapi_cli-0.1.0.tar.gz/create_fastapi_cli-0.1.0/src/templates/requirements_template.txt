@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic_settings
+asgi_correlation_id
+aiohttp
+asyncio
+httpx
+async_asgi_testclient
+pytest_asyncio
+motor
+pytype
+pytest
+ruff
+pytest_env
+testcontainers[mongo]
