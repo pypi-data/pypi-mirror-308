@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arcade_twilio
+Version: 0.1.0
+Summary: A twilio integration to send SMS and WhatsApps.
+Author: Sergio Serrano
+Author-email: sdserranog@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: arcade-ai (>=0.1.1,<0.2.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: twilio (>=9.3.6,<10.0.0)
