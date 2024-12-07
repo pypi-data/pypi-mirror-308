@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: samitizer
+Version: 0.2.4
+Summary: Python library for parsing SAMI files.
+Home-page: https://github.com/theeluwin/samitizer
+Author: Jamie Seol
+Author-email: theeluwin@gmail.com
+License: MIT
+License-File: LICENSE
