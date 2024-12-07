@@ -1,0 +1,8 @@
+django_stagers/__init__.py,sha256=o0m1wa65HgL2WUXCgZXj4eZCObStZNFmtFEVB5m4yDk,40
+django_stagers/fields.py,sha256=mlvWLjIEmiILIoai47aFivSAM3HvzC4zuV0fgrbrCr4,996
+django_stagers/stager.py,sha256=6UPDOIsssS8HOAx64zBSGPlNiVExVTwRRaGpZyjt_vk,14864
+django_stagers-0.0.10.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+django_stagers-0.0.10.dist-info/METADATA,sha256=IOujUXayopCJ6yMxIg8gTwVO1cU0QI_zfdGQvGiWxcU,2368
+django_stagers-0.0.10.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+django_stagers-0.0.10.dist-info/top_level.txt,sha256=dAvXt6VghKeGfOUwECh8Ov_T_RRhovWPVM53tTAtAnk,15
+django_stagers-0.0.10.dist-info/RECORD,,
