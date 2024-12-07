@@ -1,0 +1,2 @@
+[winzy.plugins]
+notify = winzy_notify:notify_plugin
