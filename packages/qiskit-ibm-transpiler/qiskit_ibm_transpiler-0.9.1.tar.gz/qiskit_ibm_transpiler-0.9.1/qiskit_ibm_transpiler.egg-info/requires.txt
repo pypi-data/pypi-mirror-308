@@ -1,0 +1,8 @@
+qiskit~=1.0
+backoff~=2.0
+qiskit-qasm3-import~=0.4
+requests~=2.0
+
+[ai-local-mode]
+qiskit-ibm-ai-local-transpiler
+qiskit-ibm-runtime>=0.23.0
