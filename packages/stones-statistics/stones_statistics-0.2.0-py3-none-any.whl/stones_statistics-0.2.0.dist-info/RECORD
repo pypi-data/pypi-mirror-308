@@ -1,0 +1,10 @@
+stone_statistics/__init__.py,sha256=WXt_oQF_RhKdJQmPmtvqIRMd8wDWSLJI_hUhID3GAT4,21
+stone_statistics/example.py,sha256=JKdM9mRw05RJMqSQ4Vf4mbjrwHlSft6jIUo7VzRG2Ts,5798
+stone_statistics/stat.py,sha256=h5uoJvkWxN8DGqjrhdBhKYc4KZIo8TlGR_Bw3k1kvys,1990
+stone_statistics/finder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stone_statistics/finder/representative_value_finder.py,sha256=jFQeMFiUkI2kkXZk3f2jXQBeypF_gCwdx4poSXN4MGQ,677
+stones_statistics-0.2.0.dist-info/LICENSE,sha256=Di6pOvpy1tc8wLFSactevizIQrNddG5QxsUayhX_cO0,1089
+stones_statistics-0.2.0.dist-info/METADATA,sha256=Nd8xeP3uX-e019k4qQCO0Dis19Oy5rHw8p4W70TidQg,834
+stones_statistics-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+stones_statistics-0.2.0.dist-info/top_level.txt,sha256=24K7GtAshWyBUO7XJCO7agAZDXz6kwnG4rAR0o_ji1c,17
+stones_statistics-0.2.0.dist-info/RECORD,,
