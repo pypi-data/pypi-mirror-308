@@ -1,0 +1,10 @@
+README.md
+setup.py
+EmojiText/EmojiText.py
+EmojiText/__init__.py
+EmojiText.egg-info/PKG-INFO
+EmojiText.egg-info/SOURCES.txt
+EmojiText.egg-info/dependency_links.txt
+EmojiText.egg-info/requires.txt
+EmojiText.egg-info/top_level.txt
+EmojiText/../emojis/293ab0f0-d19d-480f-8b01-c9f2197d44cc-8.png
