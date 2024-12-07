@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cognitive-space
+Version: 0.0.1
+Summary: The cognitive space package abstracts and stores Recall Space Cognitive Algorithms.
+Home-page: https://github.com/Recall-Space/cognitive-space
+Author: Recall Space
+Author-email: info@recall.space
+License: Open source
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: azure-search-documents<12.0.0
+Requires-Dist: langchain-openai<1.0.0
+Requires-Dist: agent-builder<1.0.0
+Requires-Dist: recall-space-benchmarks<1.0.0
+Requires-Dist: pymongo<5.0.0
+
