@@ -1,0 +1,9 @@
+cryptography
+django-advanced-search
+django-form-action>=2.0.0
+django-form-button>=1.0.0
+django-stubs-ext
+Django<5,>=3.1
+djangorestframework
+pytz
+requests-futures
