@@ -1,0 +1,2 @@
+[console_scripts]
+rhizonet = rhizonet.cli:main
