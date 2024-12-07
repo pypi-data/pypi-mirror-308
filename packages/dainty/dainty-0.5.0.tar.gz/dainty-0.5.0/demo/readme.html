@@ -1,0 +1,54 @@
+<form method="post" class="dainty-root">
+  <style type="text/css">
+    .dainty-root > label {
+      display: block;
+    }
+  </style>
+  <label for="name">
+    Name:
+    <input name="name" value="" required type="text" id="name" />
+  </label>
+  <label for="age"> Age: None </label>
+  <label for="gender">
+    Gender:
+    <select name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Non Binary">Non Binary</option>
+      <option selected value="Other">Other</option>
+    </select>
+  </label>
+  <label for="origin">
+    Origin:
+    <select name="origin" id="origin">
+      <option value="Earth">Earth</option>
+      <option value="Mars">Mars</option>
+      <option value="Venus">Venus</option>
+    </select>
+  </label>
+  <label for="parent">
+    Parent:
+    <div class="dainty-root">
+      <style type="text/css">
+        .dainty-root > label {
+          display: block;
+        }
+      </style>
+      <label for="name">
+        Name:
+        <input name="name" value="" required type="text" id="name" />
+      </label>
+      <label for="age">
+        Age:
+        <input name="age" value="" required type="number" step="1" id="age" />
+      </label>
+    </div>
+  </label>
+  <input
+    type="submit"
+    value="Submit"
+    formmethod="POST"
+    formaction="/submit"
+    method="post"
+  />
+</form>
