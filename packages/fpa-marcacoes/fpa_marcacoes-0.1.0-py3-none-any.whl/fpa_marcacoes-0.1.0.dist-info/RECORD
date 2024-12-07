@@ -1,0 +1,17 @@
+fpa_marcacoes/__init__.py,sha256=_5xoxBvqik7-PeMx5hwvFygQoUHpV34lQIJj__e4LaA,26
+fpa_marcacoes/client.py,sha256=xkljdH8CR7ja-eD2_JNGWN-rVwvg4fYdYAgPgNMhZm0,2845
+fpa_marcacoes/environment.py,sha256=VbnkkzLcMS4mglag4xC60qEQwkfl-PevlpAbCcZCQ1k,99
+fpa_marcacoes/auth/__init__.py,sha256=VSrgQ-ESDuy7ugp8LhdNwm3P-VZFenmadSwb5-WLbBA,30
+fpa_marcacoes/auth/client.py,sha256=Ml99YBp9HOLYncR3SdS95UaXBnFIsS8ZGMGo4TjjpLo,1048
+fpa_marcacoes/core/__init__.py,sha256=UfO6Z6R4R1dZ_AREajCe_2pjipbN3vQdO6BHx1nfWsE,31
+fpa_marcacoes/core/api_error.py,sha256=XavHisw6fwtOX38OR0Fjn61L_rft9-OSoXyAG24L3KU,316
+fpa_marcacoes/errors/__init__.py,sha256=i4ULz4IKSlKcWYT1UWTSamWXpLE-ERW2Lhq01umXbyk,52
+fpa_marcacoes/errors/payment_needed_error.py,sha256=ZtXGp94C5EzKo446l1R_hptsfvDGS70zTuAPDgjFLBQ,159
+fpa_marcacoes/events/__init__.py,sha256=ztpywWfduwNFKMZ4foK01F46fYqFaeywTpBMlCvtMss,32
+fpa_marcacoes/events/client.py,sha256=hqEKCbhDf9ZBq-M4KCI_YWhzQYc3K3ZHOs_VH4nEUX4,6384
+fpa_marcacoes/profile/__init__.py,sha256=2ztEcdGxGbBT7C6ZPls3OHzogIZCtCHUHsu2wpv6p9c,33
+fpa_marcacoes/profile/client.py,sha256=PvDwR5O6xcNPN2ePXebZAjqd0fo9yvBhTW2-XUfqF8I,2712
+fpa_marcacoes-0.1.0.dist-info/METADATA,sha256=ccgNKdZs83EZQskcD0M1_ebjD5HYTqx6OMIro5GXeG8,660
+fpa_marcacoes-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fpa_marcacoes-0.1.0.dist-info/top_level.txt,sha256=j3L0sJfbcNZWklCm6XzZWNEnsXTr9K9I3zXn22OZ828,14
+fpa_marcacoes-0.1.0.dist-info/RECORD,,
