@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: repro-uv-8148-a
+Version: 1.0.1
+Author-Email: =?utf-8?q?Timoth=C3=A9e_Mazzucotelli?= <dev@pawamoy.fr>
+License: ISC
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Repro package A
+
+For https://github.com/astral-sh/uv/issues/8148.
